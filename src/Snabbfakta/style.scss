@@ -1,0 +1,60 @@
+.Snabbfakta-preview {
+  border-right: 1px solid grey;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: bold;
+  padding: 0 20px 0 20px;
+  div {
+    word-break: break-word;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.button-preview {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 50px;
+  text-align: center;
+  background-color: #0c5ba9 !important;
+  font-size: 14px;
+  width: 40vw;
+  color: white !important;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid black;
+}
+.fakta-box-preview {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: whitesmoke;
+  padding: 15px;
+  h4 {
+    font-style: italic;
+  }
+}
+
+.snabb-title-preview {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 700px) and (orientation: portrait) {
+  .fakta-box-preview {
+    flex-direction: column;
+  }
+}

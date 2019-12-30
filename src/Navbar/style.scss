@@ -1,0 +1,153 @@
+.navbar {
+  background-color: #214467;
+  border-bottom: 1px white;
+  padding-top: 20px;
+}
+
+.arttonplusicon {
+  width: 30px;
+  height: 30px;
+}
+
+.hide-div {
+  display: none;
+}
+
+.nav-link.activenav {
+  color: #fed100 !important;
+  align-self: flex-end;
+}
+
+.nav-link {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  color: white !important;
+  font-size: 0.8em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 1px black;
+  cursor: pointer !important;
+}
+li {
+  align-self: flex-end;
+  padding-right: 30px;
+  font-family: "Manjari", sans-serif;
+}
+
+//web with
+@media screen and (max-width: 990px) {
+  li {
+    align-self: flex-start;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .collapse {
+    margin-left: 0px;
+  }
+}
+
+// Mobil potträtt
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .nav-link {
+    color: white !important;
+    font-size: 22px;
+    margin-top: 0px;
+    padding: 10px;
+  }
+  li {
+    align-self: flex-end;
+    margin: 0px;
+    padding: 0px;
+  }
+  .nav-link.activenav {
+    color: #fed100 !important;
+    border: none;
+  }
+
+  .collapse {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+// Ipad
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .nav-link {
+    color: white !important;
+    font-size: 18px;
+
+    margin-top: 0px;
+  }
+  li {
+    align-self: flex-start;
+    margin: 0px;
+    padding: 0px;
+  }
+  .nav-link.activenav {
+    color: #fed100 !important;
+    border: none;
+    margin: 0;
+    align-self: flex-end;
+  }
+
+  .collapse {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .nav-link {
+    color: white !important;
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  li {
+    margin: 0px;
+    align-self: flex-start;
+    padding: 0px;
+  }
+  .nav-link.activenav {
+    color: #fed100 !important;
+    border: none;
+    margin: 0;
+    align-self: flex-end;
+  }
+  .collapse {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .nav-link {
+    color: white !important;
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  li {
+    margin: 0px;
+    align-self: flex-start;
+    padding: 0px;
+  }
+  .nav-link.activenav {
+    color: #fed100 !important;
+    border: none;
+    margin: 0;
+    align-self: flex-end;
+  }
+  .collapse {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,22 @@
+.esport-wrap {
+  &.container {
+    padding: 0 !important;
+  }
+}
+
+.welcome-box-esport {
+  padding: 30px;
+  margin-bottom: 10px;
+  font-family: "Manjari", sans-serif;
+  flex-wrap: wrap;
+}
+
+.welcome-text-esport {
+  line-height: 1.5;
+  max-width: 770px;
+  font-family: "Manjari", sans-serif;
+}
+
+.alert {
+  margin-bottom: 0;
+}

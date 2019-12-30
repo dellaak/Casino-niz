@@ -1,0 +1,303 @@
+.recension-wrapper {
+  background: white;
+  padding-bottom: 20px;
+}
+
+.overlay-wrap {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  position: relative;
+}
+
+.publish-date {
+  margin-top: 50px;
+  color: #00000080;
+}
+
+.recension-header {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recension-image {
+  flex: 1;
+}
+.recension-image {
+  max-width: 200px;
+  max-height: 150px;
+}
+.recension-deposit {
+  font-family: "Manjari", sans-serif;
+  flex-wrap: wrap;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.terms-box {
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.villkor-obs {
+  padding: 20px;
+  margin: 0 auto;
+  font-style: italic;
+  text-align: center;
+}
+
+.recension-body {
+  font-family: "Manjari", sans-serif;
+
+  h5 {
+    font-size: 24px;
+  }
+}
+.regular-box {
+  max-width: 300px;
+  margin: 50px 0;
+  text-align: left;
+}
+
+.Snabbfakta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.snabb-icon {
+  max-width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.snabb-title {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.regular-margin-box {
+  margin: 30px 0px;
+}
+
+.recension-small-box {
+  margin: 30px 0;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+
+.fakta-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: whitesmoke;
+  padding: 15px;
+  margin: 80px 0;
+  h4 {
+    font-style: italic;
+  }
+}
+
+.recension-bars {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  align-items: center;
+}
+
+.circle-div {
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-icon-text {
+  font-size: 22px;
+}
+
+.recension-nocasino-wrap {
+  padding-top: 200px;
+  display: flex;
+  flex: 1;
+
+  color: black;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+
+// .recension-top-wrap{
+//   padding: 20px;
+//   display: flex;
+//  flex:1;
+//  background-image: linear-gradient(to left, #214467 60%, #005ca9);
+// background-size: cover;
+//  color: #fed100;
+//  justify-content: space-around;
+//  flex-wrap: wrap;
+//  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }
+
+.spela-lagom-terms {
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.bonusterms-top {
+  padding: 50px;
+  p {
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+
+.top-logo-holder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-rules-recension {
+  text-align: center;
+  font-size: 10px;
+}
+
+.top-deposit-offer-logo {
+  width: 70px;
+  height: 40px;
+}
+
+.recension-slot-icon {
+  margin-bottom: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  height: 120px;
+  width: 120px;
+}
+
+.rece-title {
+  margin: 50px;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+.buttonbox-recension {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  flex-direction: column;
+}
+.button-recension {
+  height: 50px;
+  text-align: center;
+  background-color: #fed100 !important;
+  font-size: 20px;
+  width: 40vw;
+  color: black !important;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.recension-box-icon-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  > img {
+    max-width: 200px;
+    max-height: 200px;
+    flex: 1;
+    margin-left: 20px;
+  }
+  > p {
+    flex: 1;
+  }
+}
+
+.recension-box-icon-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  > img {
+    max-width: 200px;
+    max-height: 200px;
+    flex: 1;
+    margin-right: 50px;
+  }
+  > p {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+.recension-bottom-title {
+  margin-top: 50px;
+}
+//MEIA QUERIES
+
+@media (max-width: 680px) {
+  .recension-bars {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+// Mobil potträtt
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .recension-bars {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .recension-deposit {
+    justify-content: center;
+  }
+}
+
+// Ipad
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .recension-bars {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Snabbfakta {
+    flex-direction: column;
+    justify-content: column;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+}

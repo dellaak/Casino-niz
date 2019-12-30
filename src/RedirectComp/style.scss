@@ -1,0 +1,77 @@
+.redir-wrap {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.redirect-box {
+  color: white;
+  text-align: center;
+  margin: auto;
+  border: 1px solid white;
+  padding: 20px;
+  background-color: #005ca9;
+  border-radius: 20px;
+}
+
+.redlogo {
+  margin-bottom: 20px;
+}
+
+.dirlink,
+.dirlink2,
+.dirname {
+  color: #fed100 !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.goback-text {
+  border-top: 1px solid white;
+  padding: 5px;
+}
+
+//redirect spinner
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #fed100;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%,
+  100% {
+    top: 19px;
+    height: 26px;
+  }
+}

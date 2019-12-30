@@ -1,0 +1,356 @@
+.casinowrap {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.info-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.freespins-text {
+  font-size: 10px;
+  text-align: right;
+  margin: 0 auto;
+  padding: 0 2px 2px 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: italic;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.2);
+}
+
+.full-box {
+  width: 1000px;
+  padding: 5px 0 0 0;
+  margin-bottom: 15px;
+  background-color: rgba($color: #ffffff, $alpha: 0.8);
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.full-box:hover {
+  transform: scale(1.05);
+
+  .to-botton {
+    box-shadow: inset 0 0 10px;
+    animation: shadow-pulse 1s infinite;
+    -webkit-animation: shadow-pulse 1s infinite;
+    -moz-animation: shadow-pulse 1s infinite;
+    -o-animation: shadow-pulse 1s infinite;
+    -ms-animation: shadow-pulse 1s infinite;
+  }
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(12, 92, 170, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(12, 92, 170, 0);
+  }
+}
+
+.link-style {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0b5ba8;
+}
+
+.spela-lagom {
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Quicksand", sans-serif;
+  padding: 5px 0px 5px 0px;
+}
+
+.extra-text {
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Quicksand", sans-serif;
+  padding: 2px 5px;
+}
+
+.depositbonus {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.deposittext {
+  margin-top: 2px;
+  font-size: 14px;
+  font-family: "Manjari", sans-serif;
+  width: 300px;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.buttonbox {
+  width: 172px;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.to-botton {
+  line-height: 3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  padding: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  background-color: #005ca9 !important;
+  font-size: 13px !important;
+  height: 48px;
+  width: 140px;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 30px !important;
+  text-align: center;
+  box-shadow: 5px 5px 7px 6px rgba(191, 191, 191, 0.3);
+}
+
+.to-botton:hover {
+  cursor: pointer;
+  background-color: #05727d;
+}
+
+.wager {
+  display: flex;
+  flex-direction: column;
+}
+
+.wagerinfo {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Manjari", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.bankid-text {
+  margin-bottom: 0;
+  margin-right: 15px;
+  font-family: "Righteous", cursive;
+  text-align: center;
+  font-size: 16px;
+}
+
+.casino-logo {
+  margin: 0 auto;
+  border-radius: 10px;
+  align-self: center;
+  width: 150px !important;
+  height: 100px !important;
+  background-color: white;
+  box-shadow: 5px 5px 7px 6px rgba(191, 191, 191, 0.3);
+}
+
+.divtitleone {
+  padding: 3px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Righteous", cursive;
+}
+
+.divtitle {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Righteous", cursive;
+}
+
+@media (max-width: 830px) {
+  .buttonbox {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .info-wrap {
+    margin-bottom: 20px;
+  }
+}
+
+// Mobil potträtt
+@media only screen and (min-device-width: 370px) and (max-device-width: 700px) and (orientation: portrait) {
+  .wrapit {
+    &.container {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    flex-wrap: wrap;
+  }
+
+  .divtitle {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .full-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .casino-logo {
+    margin: 0 auto;
+    border-radius: 15%;
+    align-self: center;
+    width: 200px !important;
+    height: 150px !important;
+    background-color: white;
+  }
+
+  .deposittext,
+  .divtitleone {
+    text-align: center;
+  }
+  .buttonbox {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .info-wrap {
+    margin-bottom: 10px;
+  }
+
+  .wrapit {
+    padding: 10px;
+  }
+
+  .filter-box {
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    padding: 0 30px 30px 30px;
+  }
+
+  .filter-type {
+    min-height: 50px;
+    width: 80%;
+    height: 50px;
+    cursor: pointer;
+  }
+  .casinowrap {
+    flex-direction: column;
+  }
+}
+
+// Ipad
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .divtitle {
+    font-size: 4vw;
+  }
+
+  .full-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter-type {
+    height: 80px;
+    cursor: pointer;
+  }
+  button {
+    cursor: pointer !important;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  .casino-logo {
+    margin: 0 auto;
+    border-radius: 15%;
+    align-self: center;
+    width: 200px !important;
+    height: 150px !important;
+    background-color: white;
+  }
+
+  .buttonbox {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .info-wrap {
+    margin-bottom: 10px;
+  }
+
+  .wrapit {
+    padding: 10px;
+  }
+
+  .spela-lagom {
+    width: 100%;
+  }
+
+  .extra-text {
+    width: 100%;
+  }
+}
+
+.question-head-preview {
+  font-size: 16px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke !important;
+  margin-bottom: 1rem;
+  color: black !important;
+  font-style: italic;
+  outline: none;
+  &:hover {
+    background-color: lightgray !important;
+  }
+}
+
+.single-q-preview {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.msg-preview {
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .buttonbox {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .depositbonus {
+    margin-right: 10px;
+  }
+}

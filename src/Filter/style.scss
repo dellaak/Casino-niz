@@ -1,0 +1,128 @@
+.filter-box {
+  display: flex;
+
+  justify-content: space-around;
+  padding: 1px 30px 30px 30px;
+  margin: 0 auto;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.filter-title {
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.svg-icon {
+  margin-right: 5px;
+}
+
+.svg-icon-star {
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.oui {
+  z-index: -10;
+}
+.filter-buttons {
+  min-width: 120px;
+  min-height: 50px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 0.5em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  font-size: 14px !important;
+  height: auto;
+  background-color: rgba(8, 91, 169, 1) !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: "Manjari", sans-serif;
+  text-decoration: none;
+
+  cursor: pointer !important;
+}
+
+.clear-filter {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 0.5em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-buttons-clear {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 0.5em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  font-size: 16px !important;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(169, 8, 64) !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: "Manjari", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+.active1 {
+  margin: 5px 0;
+  min-width: 120px;
+  min-height: 50px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 0.5em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  height: auto;
+  padding: 5px;
+  background-color: #e0b438 !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: black !important;
+  font-family: "Manjari", sans-serif;
+  font-size: 14px !important;
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+@media only screen and (max-device-width: 667px) and (min-device-width: 375px) and (orientation: portrait) {
+  .filter-buttons,
+  .active {
+    margin-bottom: 10px !important;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1200px) {
+  .filter-buttons,
+  .active {
+    margin-bottom: 10px !important;
+    cursor: pointer;
+  }
+}

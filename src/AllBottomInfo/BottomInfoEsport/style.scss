@@ -1,0 +1,14 @@
+.collapse {
+  padding-right: 0px;
+  margin-left: 0px;
+}
+
+.question-head {
+  background-color: white;
+  margin-bottom: 1rem;
+  color: black;
+  outline: none;
+  &:hover {
+    background-color: #607d8b !important;
+  }
+}

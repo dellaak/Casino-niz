@@ -1,0 +1,81 @@
+.footer {
+  flex-wrap: wrap;
+  background-color: #214467;
+
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+.copy-bot {
+  padding: 10px 20px;
+  background-color: #214467;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.stodlinje-logo {
+  width: 200px;
+}
+.responsible-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-braveta {
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  width: 250px;
+}
+.email-link > a {
+  color: white !important;
+  align-self: flex-end;
+  margin: 5px 0;
+}
+
+.footer-link {
+  align-self: flex-start;
+  color: white;
+  margin: 0px 20px;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.terms-policy {
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.hide-div {
+  display: none;
+}
+
+.email-link {
+  color: #fed100 !important;
+}
+
+@media (max-width: 667px) {
+  .footer {
+    flex-direction: column;
+  }
+}

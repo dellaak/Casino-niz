@@ -1,0 +1,351 @@
+.App {
+  background-color: #fff !important;
+}
+.start-wrap {
+  min-height: 500px;
+
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+}
+
+.link-start {
+  color: black;
+  text-decoration: underline;
+}
+
+.wrapit {
+  min-width: 100%;
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+}
+
+.medalj-box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
+  p {
+    margin: 0;
+  }
+}
+
+.welcome-box {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.new-casinos {
+  box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  width: 420px;
+  text-align: left;
+}
+
+.alert-success {
+  margin: 0 !important;
+}
+
+.button-recension {
+  height: auto;
+  background: #fed100;
+  text-align: center;
+  background-color: #fed100;
+  font-size: 20px;
+  width: 40vw;
+  color: black !important;
+  margin: 0 auto;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.newcas-botton {
+  color: white;
+  font-weight: 700;
+  background-color: #005ca9 !important;
+  font-size: 11px !important;
+  height: 40px !important;
+  width: 125px !important;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  padding: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+.newcas-text {
+  font-family: "Manjari", sans-serif;
+  padding: 0px 5px;
+  font-size: 12px;
+}
+
+.new-cas-box {
+  align-self: center;
+  width: 150px;
+  word-wrap: break-word;
+}
+
+.box1 {
+  min-height: 100px;
+  border-bottom: 1px solid lightgrey;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logonewcasino {
+  border-radius: 10px;
+  width: 80px;
+  height: 55px;
+}
+.readmorebutton {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.title-box {
+  background-color: #005ca9;
+  color: #fed100;
+  text-align: center;
+}
+
+.welcome-text {
+  text-align: left;
+  line-height: 1.5;
+  width: 770px;
+  font-family: "Manjari", sans-serif;
+}
+
+.small-text-new {
+  text-align: center;
+}
+
+.readmore {
+  display: none;
+}
+
+.casino-wrap {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#filterid {
+  cursor: pointer !important;
+}
+
+.swe-flag {
+  margin-left: 10px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-self: center;
+}
+
+.swe-license {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  color: black;
+
+  font-family: "Manjari", sans-serif;
+}
+
+.swe-lic-text {
+  font-size: 16px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  font-family: "Manjari", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Manjari", sans-serif;
+  font-weight: bold;
+}
+
+.welcome-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Manjari", sans-serif;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+.fade-in {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+.no-more-bonuses {
+  height: 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+.morebonus-box {
+  display: flex;
+  button {
+    height: auto;
+    background: #fed100;
+    text-align: center;
+    background-color: #fed100;
+    font-size: 20px;
+    width: 60vw;
+    max-width: 1000px;
+    color: #000;
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid #000;
+  }
+}
+.latest-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  padding: 0.5em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+.top-casinos-rec {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.update-text {
+  padding: 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: italic;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+}
+
+//BLINK
+.blink {
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-animation: blink normal 1.5s infinite ease-in-out;
+  /* Firefox */
+  -webkit-animation: blink normal 1.5s infinite ease-in-out;
+  /* Webkit */
+  -ms-animation: blink normal 1.5s infinite ease-in-out;
+  /* IE */
+  animation: blink normal 1.5s infinite ease-in-out;
+  /* Opera */
+}
+@keyframes blink {
+  0% {
+    background-color: rgba(254, 209, 0, 1);
+  }
+  50% {
+    background-color: rgba(254, 209, 0, 0.5);
+  }
+  100% {
+    background-color: rgba(254, 209, 0, 1);
+  }
+}
+
+@media (max-width: 450px) {
+  .welcome-box {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 2050px) {
+  .casino-wrap {
+    flex-direction: column;
+  }
+}

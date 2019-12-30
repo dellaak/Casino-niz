@@ -1,0 +1,24 @@
+.faktura-wrap {
+  .container {
+    padding: 0 !important;
+  }
+}
+
+.welcome-box-faktura {
+  padding: 30px;
+  margin-bottom: 10px;
+  font-family: "Manjari", sans-serif;
+  flex-wrap: wrap;
+  background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.welcome-text-faktura {
+  line-height: 1.5;
+  max-width: 770px;
+  font-family: "Manjari", sans-serif;
+}
+.spel-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

@@ -1,0 +1,103 @@
+.our-rec {
+  min-height: 300px;
+  margin-bottom: 10px;
+}
+
+.rec-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 0 auto;
+}
+
+.rec-box {
+  text-align: center;
+  border: 1px solid lightgray;
+  width: 200px;
+  height: 290px;
+  position: relative;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  margin-bottom: 10px;
+}
+
+.rec-box > a > img {
+  cursor: pointer;
+  width: 100%;
+  height: 120px;
+}
+
+.top3rules {
+  border-top: 1px solid lightgray;
+  cursor: pointer;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 10px;
+}
+
+.top3-text {
+  font-size: 14px;
+  padding: 10px 5px 0px 5px;
+  color: black;
+}
+
+.rec-botton {
+  color: white;
+  font-weight: 700;
+  background-color: #005ca9 !important;
+  font-size: 12px !important;
+  height: 30px;
+  width: 90%;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10% !important;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-style: normal;
+  padding: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .rec-wrap {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 930px) {
+  .rec-wrap {
+    justify-content: center;
+  }
+}
+
+// Ipad
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .rec-wrap {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .rec-wrap {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .rec-wrap {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,22 @@
+.dropdown-button {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  height: auto;
+  padding: 5px;
+  background-color: rgba(8, 91, 169, 1) !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: "Manjari", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+
+  cursor: pointer !important;
+}
