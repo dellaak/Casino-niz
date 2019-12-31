@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
 import EsportFilter from "../EsportFilter/index";
-import BottomInfoEsport from "../BottomInfoEsport/index"
+import BottomInfoEsport from "../AllBottomInfo/BottomInfoEsport/index"
 import { Container, Alert, Button } from "reactstrap";
 import sweflag from "../images/sweflag.png";
 import EsportCasinoComp from "../EsportCasinoComp/index";
 import { Helmet } from "react-helmet";
-// import BottominfoEsport from "../BottominfoEsport/index";
+
 
 const Esport = (props) => {
 
