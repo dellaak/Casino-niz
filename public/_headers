@@ -1,0 +1,11 @@
+/*
+  
+    X-Frame-Options: DENY
+    X-Content-Type-Options: nosniff
+    Content-Security-Policy: frame-ancestors 'none'; default-src *; object-src *; script-src-elem * data: 'unsafe-inline' www.google-analytics.com www.googletagmanager.com ajax.googleapis.com; img-src * data:; script-src *  'unsafe-eval' 'unsafe-inline'; style-src * 'unsafe-inline' https://fonts.googleapis.com; font-src * data: https://fonts.gstatic.com; 
+    X-XSS-Protection: 1;
+    Expires: Fri, 1 May 2020 07:28:00 GMT
+     cache-control: max-age=0
+  cache-control: no-cache
+  cache-control: no-store
+  cache-control: must-revalidate
