@@ -35,7 +35,7 @@ const FakturaCasino =(props)=> {
         </Link>
           <div className="info-wrap">
           <StyledNavlink 
-            to={{pathname: `/Recension/${props.casino.title}` }} >
+               to={{ pathname: `/Recension/${props.casino.title}`, match: `${props.casino.title}` }} > 
          Recension
    
         </StyledNavlink>

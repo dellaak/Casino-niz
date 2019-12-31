@@ -40,6 +40,8 @@ const StyledSpan = styled.span`
 
 
 const Recension = (props) => {
+	let casinotitle = props.match.params.casinotitle
+
 	const [overall, setOverall] = useState({
 		selectedCasino: false, recension: false, q1: false,
 		q2: false,
@@ -48,15 +50,12 @@ const Recension = (props) => {
 		sportsterms: [],
 		bonusterms: []
 	})
-	const [myurl] = useState(window.location.href)
-
-
-	const [final] = useState(myurl.split("/")[4].toUpperCase())
 	const [percentage, setPercentage] = useState({ game: 1, support: 1, exp: 1 })
 	let { selectedCasino, recension } = overall;
 
 
 	useEffect(() => {
+
 		let selec;
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
@@ -65,7 +64,8 @@ const Recension = (props) => {
 			let title;
 			for (let i of list) {
 				title = i.title.toUpperCase();
-				if (title === final) {
+				casinotitle = casinotitle.toUpperCase()
+				if (title === casinotitle) {
 					if (i.hasOwnProperty("recension")) {
 						try {
 							selec = i
@@ -81,6 +81,10 @@ const Recension = (props) => {
 						catch (e) {
 
 						}
+					} else {
+
+						return window.location.replace("/404")
+
 					}
 				}
 
@@ -91,6 +95,9 @@ const Recension = (props) => {
 
 		}
 		const setStats = () => {
+			if (!selec) {
+				return
+			}
 			let g = selec.recension[0]
 			return setPercentage({ game: g.gamebar, support: g.support, exp: g.experience })
 		}
@@ -162,7 +169,7 @@ const Recension = (props) => {
 		< div >
 			<Helmet>
 				<title>
-					{final} RECENSION ⇛{" "}
+					{casinotitle} RECENSION ⇛{" "}
 					{selectedCasino ? `${selectedCasino.slogan}` : "Snabbfakta"} |
 					Casinoniz
           </title>

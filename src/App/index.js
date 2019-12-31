@@ -28,7 +28,7 @@ const App = () => {
                     <main>
                         <Switch>
                             <Route exact path="/" render={(props) => (<Startpage start={Casinolist}  {...props} />)} />
-                            <Route path="/Recension" render={(props) => (<Recension list={Casinolist}  {...props} />)} />
+                            <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist}  {...props} />)} />
                             <Route path="/Esportbetting" render={(props) => (<Esport list={Casinolist}  {...props} />)} />
                             <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist}  {...props} />)} />
                             <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
@@ -36,6 +36,7 @@ const App = () => {
                             <Route path="/Terms" component={Terms} />
                             <Route path="/Policy" component={Policy} />
                             <Route path="*" component={NotFoundPage} />
+
 
                         </Switch>
 

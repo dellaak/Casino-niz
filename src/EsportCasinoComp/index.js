@@ -23,7 +23,7 @@ let esport = props.casino.esportinfo[0]
           </Link>
           <div className="info-wrap">
           <StyledNavlink 
-            to={{pathname: `/Recension/${casinoInfo.title}` }} >
+               to={{ pathname: `/Recension/${casinoInfo.title}`, match: `${casinoInfo.title}` }} > 
          Recension
    
         </StyledNavlink>

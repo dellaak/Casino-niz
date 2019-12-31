@@ -76,7 +76,7 @@ const Recommended =(props)=> {
         <p className="top3-text
         ">{casino.depositbonus}</p> 
            <StyledNavlink 
-            to={{pathname: `/Recension/${casino.title}` }} >
+              to={{ pathname: `/Recension/${casino.title}`, match: `${casino.title}` }} >
          Läs Mer
         </StyledNavlink>
       

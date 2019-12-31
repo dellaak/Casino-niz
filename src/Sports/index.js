@@ -54,7 +54,6 @@ const Sports = (props) => {
 
     const depositbutton = () => {
         let list = [...casinon.casino]
-        console.log(list)
         let wagerarr = [];
         let delItems = []
         for (let i of list) {

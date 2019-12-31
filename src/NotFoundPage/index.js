@@ -6,6 +6,8 @@ import styled from "styled-components"
 
 
 const Styled404Wrap = styled.div`
+position:absolute;
+left:0;
 width:100vw;
 height:100vh;
 background-color:#214467;
@@ -44,25 +46,25 @@ letter-spacing: 0.1em;
 
 
 const NotFoundPage = () => {
-    return <Styled404Wrap>  <Helmet>
-        <title>
-            404 - Sidan finns inte | Casinoniz
+  return <Styled404Wrap>  <Helmet>
+    <title>
+      404 - Sidan finns inte | Casinoniz
         </title>
-        <meta
-            name="description"
-            content="404 page"
-        />
-        <meta
-            name="keywords"
-            content="Casino,faktura casino, casino faktura, svensk casino , svenska casinon, Casinobonusar, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
-        />
-    </Helmet>
-        <StyledP>404</StyledP>
-        <Styledh3>
-            Tyvärr så finns inte sidan du letar efter
+    <meta
+      name="description"
+      content="404 page"
+    />
+    <meta
+      name="keywords"
+      content="Casino,faktura casino, casino faktura, svensk casino , svenska casinon, Casinobonusar, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
+    />
+  </Helmet>
+    <StyledP>404</StyledP>
+    <Styledh3>
+      Tyvärr så finns inte sidan du letar efter
               <StyledLink to="/">Klicka här för att gå till start </StyledLink>
-        </Styledh3>
-    </Styled404Wrap>;
+    </Styledh3>
+  </Styled404Wrap>;
 }
 
 export default NotFoundPage;
