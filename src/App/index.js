@@ -12,7 +12,7 @@ import RedirectComp from '../RedirectComp/index';
 import Sports from "../Sports/index"
 import Terms from "../Terms/index"
 import Policy from "../Policy/index"
-
+import NotFoundPage from "../NotFoundPage/index"
 
 const App = () => {
 
@@ -35,18 +35,8 @@ const App = () => {
                             <Route path="/odds" render={(props) => (<Sports list={Casinolist}  {...props} />)} />
                             <Route path="/Terms" component={Terms} />
                             <Route path="/Policy" component={Policy} />
-                            {/* <Route path="/Esportbetting" component={Esport} />
-                
-                <Route path="/odds" component={Sports} />
-                <Route path="/Terms" component={Terms} />
-                <Route path="/Policy" component={Policy} />
-               
-                <Route exact path="/Redirect/:casinotitle" component={RedirectComp} />
-                <Route path="/RedirectEsport" component={RedirectEsport} />
-                <Route exact path="/RedirectEsport/:casinotitle" component={RedirectEsport} />
-                <Route path="/Recension" component={Recension} />
-                <Route exact path="/Recension/:casinotitle" component={Recension} />
-                <Route path="*" component={NotFoundPage} /> */}
+                            <Route path="*" component={NotFoundPage} />
+
                         </Switch>
 
                     </main>
