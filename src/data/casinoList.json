@@ -345,7 +345,7 @@
                     "egentitel2": false,
                     "toprecension": "Casumo grundades 2012. Casinot har en väldigt användarvänlig design och utbudet på spel är väldigt bra. Supporten är öppen 24/7 och de är alltid trevliga. Casumo uppdaterar kontinuerligt sitt utbud av videoslots men har redan nu ett väldigt stort antal videoslots. Här kan du spela på videoslots, live casino och bordsspel.",
                     "secondrec": "Casumo är det roliga casinot. Layouten på casinosidan är väldigt fräsch och modern. Casumo har ett väldigt stort urval av slots på sin sida. Finns ingen direkt filter funktion men man kan söka bland alla spel. Har över 50 slots med jackpots. Casumo erbjuder även exklusiva slots som bara finns på Casumo och det tycker vi om. Casinot håller högsta klass och har videoslots från branschens bästa leverantörer. Vill man spela på något annat än slots så finns det Live casino, bordspel och även en sport sektion.  ",
-                    "sportsrec": "....",
+                    "sportsrec": "Casumo har en väldigt fräsch och snygg sport sektion. Casumo erbjuder esport betting, på spel som CSGO, Dota 2, Starcraft 2 och andra spel. Förutom esport så har de även fotboll,handboll,ishockey och massa andra sporter. Layouten på odds sektionen smälter väldigt bra in på casumo med dess äventyrliga stil. Casumo erbjuder även live odds inne på sin sport sida. Sidan är mobilanpassad och det är väldigt enkelt att navigera sig runt.",
                     "welcomeoffer": "Insättningsbonus på 100% upp till 20 000 kr i bonus",
                     "bonusterms": [
                         "Endast den första insättningen som görs på fullt verifierade konton, ska vara kvalificerade att motta insättningsbonusen"
@@ -365,6 +365,17 @@
                     "swish": true,
                     "livechat": true,
                     "summering": "Casumo har väldigt en väldigt bra onlinecasino och även en mobil applikation. Man märker att casinot siktar på kvalitet framför kvantitet. Videoslots sektion är väldigt bra och lätt att hitta sitt favoritspel. Att göra ett uttag hos casumo är väldigt enkelt och beroende på uttagsmetod så går det oftast väldigt snabbt.Casinoniz ger Casumo full poäng när det gäller design,spelutbud och support! Grattis!"
+                }
+            ],
+            "esportinfo": [
+                {
+                    "csgo": true,
+                    "dota2": true,
+                    "leagueoflegends": true,
+                    "overwatch": true,
+                    "starcraft2": true,
+                    "other": false,
+                    "spel": "CS:GO - Dota 2 - Overwatch - League of Legends - StarCraft 2"
                 }
             ]
         },
