@@ -145,7 +145,7 @@ const Casinon = (props) => {
 
       <Col className="single-q-preview" >
         <div className="holder-preview">
-          <Button onClick={qToggle} xs="6" className="question-head-preview col-sm" ><span className="q1logo" role="img" aria-labelledby="icon" ></span> <span >Snabbfakta om {props.casino.title}</span> <StyledSpan rotate={snabbFakta ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+          <Button onClick={qToggle} xs="6" className="question-head-preview col-sm" ><span className="q1logo" role="img" aria-hidden="true" ></span> <span >Snabbfakta om {props.casino.title}</span> <StyledSpan rotate={snabbFakta ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
 
           <StyledCollapse isOpen={snabbFakta} >
 

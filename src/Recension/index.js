@@ -528,7 +528,7 @@ const Recension = (props) => {
 
 										<Col className="single-q" >
 											<div   >
-												<Button onClick={() => { setOverall({ ...overall, q1: !overall.q1 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-labelledby="icon" ></span> <span >{selectedCasino.q1.name}</span> <StyledSpan rotate={overall.q1 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+												<Button onClick={() => { setOverall({ ...overall, q1: !overall.q1 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" ></span> <span >{selectedCasino.q1.name}</span> <StyledSpan rotate={overall.q1 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
 
 												<Collapse isOpen={overall.q1}>
 													<Card>
@@ -541,7 +541,7 @@ const Recension = (props) => {
 
 										<Col className="single-q">
 											<div   >
-												<Button onClick={() => { setOverall({ ...overall, q2: !overall.q2 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-labelledby="icon" > </span>
+												<Button onClick={() => { setOverall({ ...overall, q2: !overall.q2 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" > </span>
 													<span >{selectedCasino.q2.name}</span><StyledSpan rotate={overall.q2 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
 
 
@@ -556,7 +556,7 @@ const Recension = (props) => {
 
 										<Col className="single-q">
 											<div  >
-												<Button onClick={() => { setOverall({ ...overall, q3: !overall.q3 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-labelledby="icon" ></span>
+												<Button onClick={() => { setOverall({ ...overall, q3: !overall.q3 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" ></span>
 													<span >{selectedCasino.q3.name}</span> <StyledSpan rotate={overall.q3 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
 
 
