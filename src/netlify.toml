@@ -1,6 +1,0 @@
-[[redirects]]
-  from = "/Redirect/unibet"
-  to = "/https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34474"
-  status = 307
-  force = true
-  query = {path = ":path"}
