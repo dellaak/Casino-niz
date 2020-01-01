@@ -1,9 +1,8 @@
-import React, { useState, useLayoutEffect } from "react";
-import "./style.scss"
+import React, { useState, useEffect } from "react";
 import caslogo from "../images/casinonizlogo.svg"
 import { Link, withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import "./style.scss"
 
 
 const RedirectComp = (props) => {
@@ -19,7 +18,7 @@ const RedirectComp = (props) => {
 
 
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         let list = [...props.list.Casinon]
         const changeState = () => {
 
