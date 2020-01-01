@@ -185,7 +185,7 @@ const StartPage = (props) => {
     <div className="start-wrap">
       <Helmet>
         <title>
-          ⭐Svenska casinon🎰 2019 - Jämför casinobonusar | Casinoniz
+          Svenska Casinon🎰 2020 - Jämför casinobonusar | Casinoniz
           </title>
         <link rel="canonical" href="https://www.casinoniz.se" />
         <meta
@@ -194,7 +194,7 @@ const StartPage = (props) => {
         />
         <meta
           name="keywords"
-          content="Casino,faktura casino,välkomstbonus, julbonusar, casinobonusar jul, jul casino,välkomnstbonus, insättningsbonus, casino faktura, svensk casino , svenska casinon, Casinobonusar, omsättningsfritt, recension, review, recension casinon, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
+          content="Casino,faktura casino,välkomstbonus, julbonusar, casinobonusar jul, jul casino,välkomnstbonus, insättningsbonus, casino faktura, svensk casino , svenska casinon, Casinobonusar,2020,omsättningsfritt, recension, review, recension casinon, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
         />
         <script type="application/ld+json">{`
       {
@@ -285,7 +285,7 @@ const StartPage = (props) => {
           <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
         </span>
       </div>
-      <h1 className="welcome-title">Svenska Casinon 2019</h1>
+      <h1 className="welcome-title">Svenska Casinon 2020</h1>
       <div className="top-casinos-rec">
         <AnimatedCount list={props.start.Casinon} />
         <OurRec />
@@ -390,7 +390,7 @@ const StartPage = (props) => {
             </p>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 31 December 2019</p>
+        <p className="update-text">Senast uppdaterad: 1 Januari 2020</p>
 
       </Container>
 

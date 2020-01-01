@@ -17,7 +17,7 @@ const Terms = () => {
                 <meta name="description" content="Casinoniz allmäna vilkor. Vi har casinobonusar men läs gärna igenom våra villkor." />
                 <meta
                     name="keywords"
-                    content="Casino,faktura casino, casino faktura, svensk casino , svenska casinon, Casinobonusar, 2019, insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"
+                    content="Casino,faktura casino, casino faktura, svensk casino , svenska casinon, Casinobonusar, 2019,2020,insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"
                 />
             </Helmet>
 

@@ -56,7 +56,7 @@ const Footer = () => {
             }>
                 <p> Kontakta oss: <a className="email-link" href="mailto: contact@Casinoniz.se">contact@Casinoniz.se</a></p>
 
-                <p className="copyright"> &#9400; Casinoniz 2019</p><a href="https://delshadkogi.se" style={{ display: 'none' }}> </a>
+                <p className="copyright"> &#9400; Casinoniz 2020</p><a href="https://delshadkogi.se" style={{ display: 'none' }}> </a>
             </div>
         </div>
     );

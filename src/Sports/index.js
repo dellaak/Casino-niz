@@ -136,7 +136,7 @@ const Sports = (props) => {
                 />
                 <meta
                     name="keywords"
-                    content="Casino, Casinobonusar, 2019,bonus, spela, odds, livebetting, livebets , esportbetting, esport betting, insättningsbonus, välkomnsbonus, välkomstbonus, free spins, esports,betting, csgo betting, starcraft2, lol, leauge of legends, overwatch, dota2, the international betting"
+                    content="Casino, Casinobonusar, 2019,2020,bonus, spela, odds, livebetting, livebets , esportbetting, esport betting, insättningsbonus, välkomnsbonus, välkomstbonus, free spins, esports,betting, csgo betting, starcraft2, lol, leauge of legends, overwatch, dota2, the international betting"
                 />
                 <script type="application/ld+json">{`
       {
@@ -285,7 +285,7 @@ const Sports = (props) => {
                         )}
                     <BottomInfoSports />
                 </Container>
-                <p className="update-text">Senast uppdaterad: 31 December 2019</p>
+                <p className="update-text">Senast uppdaterad: 1 Januari 2020</p>
             </div>
         </div>
     );

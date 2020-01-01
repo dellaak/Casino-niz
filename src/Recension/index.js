@@ -177,7 +177,7 @@ const Recension = (props) => {
 				<meta name="description" content={recension.summering} />
 				<meta
 					name="keywords"
-					content="Casino,faktura casino, casino faktura,recension, review , recension, fakturacasino, casino med faktura,omsättningsfria, omsättningsfritt, svensk casino , svenska casinon. Casinobonusar, 2019,bonus, spela, insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"
+					content="Casino,faktura casino, casino faktura,recension, review , recension, fakturacasino, casino med faktura,omsättningsfria, omsättningsfritt, svensk casino , svenska casinon. Casinobonusar, 2019,2020, bonus, spela, insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"
 				/>
 
 				{selectedCasino.faq ? (<script type="application/ld+json">{`

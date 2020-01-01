@@ -56,7 +56,7 @@ const NotFoundPage = () => {
     />
     <meta
       name="keywords"
-      content="Casino,faktura casino, casino faktura, svensk casino , svenska casinon, Casinobonusar, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
+      content="Casino,faktura casino, casino faktura, svensk casino , svenska casinon, Casinobonusar, 2019,2020,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
     />
   </Helmet>
     <StyledP>404</StyledP>

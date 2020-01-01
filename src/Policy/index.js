@@ -36,7 +36,7 @@ const Policy = () => {
         />
         <meta
           name="keywords"
-          content="Casino, Casinobonusar, 2019, insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"
+          content="Casino, Casinobonusar, 2019,2020, insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"
         />
       </Helmet>
 

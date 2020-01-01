@@ -180,7 +180,7 @@ const CasinoMedFaktura = (props) => {
                     />
                     <meta
                         name="keywords"
-                        content="Casino, Casinobonusar, välkomstbonus, 2019,bonus, spela, insättningsbonus, free spins, faktura casino, casino faktura, spela på faktura , zimpler, smsvoucher,klarna,spela casino faktura, casino med faktura, casino zimpler lista,casino lista faktura"
+                        content="Casino, Casinobonusar, välkomstbonus, 2019,2020, bonus, spela, insättningsbonus, free spins, faktura casino, casino faktura, spela på faktura , zimpler, smsvoucher,klarna,spela casino faktura, casino med faktura, casino zimpler lista,casino lista faktura"
                     />
                     <script type="application/ld+json">{`
       {
@@ -260,7 +260,7 @@ const CasinoMedFaktura = (props) => {
                         <div className="welcome-text-faktura">
                             <h3>Här listar vi endast casinon som erbjuder insättning med faktura</h3>
                             <p>
-                                Att spela casino på faktura är ganska självklart 2019. Vi handlar
+                                Att spela casino på faktura är ganska självklart år 2020. Vi handlar
                                 allt mer på faktura så varför inte spela på faktura också.
                                 Flera av casinon erbjuder just nu faktura som ett alternativ
                                 till de traditionella insättningsmetoderna.
@@ -338,7 +338,7 @@ const CasinoMedFaktura = (props) => {
                 </div>
 
             </div>
-            <p className="update-text">Senast uppdaterad: 31 December 2019</p>
+            <p className="update-text">Senast uppdaterad: 1 Januari 2020</p>
         </Container>
     );
 }
