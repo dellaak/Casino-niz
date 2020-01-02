@@ -206,3 +206,117 @@ baseURL = "/"
   to = "https://record.pafpartners.com/_Q3mqd8ZyuHNd0WQkpqTgsGNd7ZgqdRLk/1"
   status = 301
   query = {path = "/Redirect/Paf"}
+
+                   [[redirects]]
+  from = "/Redirect/VoodooDreams"
+  to = "https://nvd.suprnation.com/redirect.aspx?pid=19381&bid=2244"
+  status = 301
+  query = {path = "/Redirect/VoodooDreams"}
+
+                    [[redirects]]
+  from = "/Redirect/Nyspins"
+  to = "https://nvd.suprnation.com/redirect.aspx?pid=19381&bid=2245"
+  status = 301
+  query = {path = "/Redirect/Nyspins"}
+
+                      [[redirects]]
+  from = "/Redirect/Duelz"
+  to = "https://nvd.suprnation.com/redirect.aspx?pid=19381&bid=2171"
+  status = 301
+  query = {path = "/Redirect/Duelz"}
+
+                        [[redirects]]
+  from = "/Redirect/RedKings"
+  to = "https://site.gotocasinoredkings.com/index.php?aname=delshad"
+  status = 301
+  query = {path = "/Redirect/RedKings"}
+
+                          [[redirects]]
+  from = "/Redirect/Lunacasino"
+  to = "http://site.lunacasino.com/index.php?aname=delshad&cg=swedish"
+  status = 301
+  query = {path = "/Redirect/Lunacasino"}
+
+                            [[redirects]]
+  from = "/Redirect/EUCasino"
+  to = "https://site.gotoeucasino.com/index.php?aname=delshad&cg=swedish"
+  status = 301
+  query = {path = "/Redirect/EUCasino"}
+
+                              [[redirects]]
+  from = "/Redirect/SlotsMagic"
+  to = "https://site.gotoslotsmagic.com/index.php?aname=delshad&cg=swedish"
+  status = 301
+  query = {path = "/Redirect/SlotsMagic"}
+
+                                [[redirects]]
+  from = "/Redirect/AhtiGames"
+  to = "https://site.ahtigames.com/index.php?aname=delshad&cg=swedish"
+  status = 301
+  query = {path = "/Redirect/AhtiGames"}
+
+                                  [[redirects]]
+  from = "/Redirect/Drueckglueck"
+  to = "https://site.gotodrueckglueck.com/index.php?aname=delshad&cg=swedish"
+  status = 301
+  query = {path = "/Redirect/Drueckglueck"}
+
+                                    [[redirects]]
+  from = "/Redirect/Karamba"
+  to = "http://www.karamba.com/?AFI=12004&MMI=15189"
+  status = 301
+  query = {path = "/Redirect/Karamba"}
+
+        [[redirects]]
+  from = "/Redirect/PlayOJO"
+  to = "https://site.gotoplayojo.com/index.php?aname=delshad&cg=swedish"
+  status = 301
+  query = {path = "/Redirect/PlayOJO"}
+
+          [[redirects]]
+  from = "/Redirect/Casinoroom"
+  to = "http://play.ellmountgaming.com/redirect.aspx?pid=406800&bid=4680"
+  status = 301
+  query = {path = "/Redirect/Casinoroom"}
+
+            [[redirects]]
+  from = "/Redirect/Hyper"
+  to = "http://affiliates.hypercasino.com/redirector?url=https://www.hypercasino.com&userid=1415&tracker=5531"
+  status = 301
+  query = {path = "/Redirect/Hyper"}
+
+              [[redirects]]
+  from = "/Redirect/LegolasBet"
+  to = "https://www.legolas.bet/affiliates/?btag=103909"
+  status = 301
+  query = {path = "/Redirect/LegolasBet"}
+
+                [[redirects]]
+  from = "/Redirect/CoolBet"
+  to = "https://track.adform.net/C/?bn=33028607"
+  status = 301
+  query = {path = "/Redirect/CoolBet"}
+
+                  [[redirects]]
+  from = "/Redirect/NoAccountBet"
+  to = "https://affiliatemedia.noaccountbet.com/redirect.aspx?pid=4468&bid=1589"
+  status = 301
+  query = {path = "/Redirect/NoAccountBet"}
+
+                  [[redirects]]
+  from = "/Redirect/iGame"
+  to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34376"
+  status = 301
+  query = {path = "/Redirect/iGame"}
+
+                    [[redirects]]
+  from = "/Redirect/MariaCasino"
+  to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34158"
+  status = 301
+  query = {path = "/Redirect/MariaCasino"}
+
+                      [[redirects]]
+  from = "/Redirect/Storspelare"
+  to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=33276"
+  status = 301
+  query = {path = "/Redirect/Storspelare"}

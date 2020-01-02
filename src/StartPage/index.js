@@ -390,7 +390,7 @@ const StartPage = (props) => {
             </p>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 1 Januari 2020</p>
+        <p className="update-text">Senast uppdaterad: 2 Januari 2020</p>
 
       </Container>
 
