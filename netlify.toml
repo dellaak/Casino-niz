@@ -1,7 +1,9 @@
-baseURL = "/"
-
+[build]
+  command = "npm run build"
+  publish = "public"
 
 [[redirects]]
-  from = "/Redirect/Unibet"
+  from = "https://www.casinoniz.se/Redirect/Unibet"
   to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34474"
   status = 301
+  force = true
