@@ -1712,21 +1712,21 @@
             "textcolor": "#6bcb88",
             "setTop": false,
             "slogan": "Svenskt casino med snabba uttag",
-            "depositbonus": "Alla nya spelare får EN MILJON kronor att dela på!",
+            "depositbonus": "Insättningsbonus på 100% upp till 1000kr!",
+            "sportsbonus": "Ingen bonus just nu!",
             "mylink": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=1968&sid=354226&pid=640",
             "rules": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=2758&sid=354226&pid=841",
             "caslogo": "/images/hajperlogo.svg",
-            "wager": 0,
-            "sportsbonus": "Alla nya spelare får EN MILJON kronor att dela på!",
+            "wager": 20,
             "sportswager": 0,
             "freespins": 0,
-            "publishdate": "10 december 2019",
+            "publishdate": "2 Januari 2020",
             "activebonus": true,
-            "extratext": "Detta erbjudande är giltigt under kampanjperioden 2019-11-18 00:01 fram tills 2019-12-23 23:59. Varje spelare garanterad minst 200kr",
+            "extratext": "Erbjudandet är giltigt under perioden 2019-12-24 00:01 fram tills 2020-01-06 23:59",
             "bankid": true,
             "sports": true,
-            "freefromwager": true,
-            "depositpercent": "x",
+            "freefromwager": false,
+            "depositpercent": 100,
             "depositpercentsports": 0,
             "faktura": false,
             "fakturatype": [],
@@ -1740,15 +1740,15 @@
                     "toprecension": "Hajper lanserades 2018 och fokuserar på svenska marknaden. Hajper erbjuder dig som spelare en Pay n Play lösning som innebär att du enkelt kan registrera dig eller logga in med bankid. Hajper är ett bra onlinecasino med väldigt snabba insättningar och uttag. Casinot erbjuder flera sorters spel som livecasino, bordsspel, odds, esportbetting och videoautomater. Med en simpel och klassisk layout så får du en grym spelupplevelse. Erbjuder två stycken insättningsmetoder som Trustly och swish. För att spela på Hajper så måste du ha tillgång till bankid. Erbjuder bra bonus med bra villkor. ",
                     "secondrec": "Casinosektion har ett stort utbud med slots. Erbjuder flera favoriter som Reel Rush, Hall of Gods, Mega Fortune Dreams, Immortal Romance, Book of Dead, Bonanza och många fler! Du kan inte filtrera slots men du kan söka efter ditt favoritspel. Hajper har tre slots med väldigt höga jackpots just nu där högsta jackpotten ligger på över 21 MILJONER kronor. Spelet heter Mega Fortune och är en klassiker på marknaden. Utöver filterfunktionen som vi på Casinoniz saknar så är casinosektionen väldigt stilren och bra. Det som vi tycker är riktigt bra hos Hajper är någon som de kallar för Hajpermiljonen. Vad är Hajpermiljonen ? Jo, det är jackpots som Hajper erbjuder på utvalda slots. Så om du klickar in dig på fliken Hajpermiljonen så hittar du alla slots som Hajper erbjuder jackpots på!",
                     "sportsrec": "Hajper har en väldigt bra sportsektion. Med höga odds och ett väldigt stort utbud av sporter. Oavsett om det är fotboll,tennis, hockey eller någon annan sport så har dem det. Hajper erbjuder även esport betting vilket vi på Casinoniz tycker är RIKTIGT grymt!. De erbjuder esport betting på spel som CSGO, Dota2, Warcraft 3, Starcraft och fler spel. Det som Hajper är bra på är spelupplevelsen på spelsektionen. Du kan enkelt lägga ett spel, starta en livestream och njuta av matchen. Med flera tusen direktsända sporter. Detta tycker vi är najs! ",
-                    "welcomeoffer": "Alla nya spelare får EN MILJON kronor att dela på! Varje spelare som är med i tävlingen är garanterad minst 200kr",
+                    "welcomeoffer": "Insättningsbonus på 100% upp till 1000kr!",
                     "bonusterms": [
-                        "Du kvalificerar dig till att dela lika på en miljon kronor automatiskt när du gör din första insättning. Du kan sätta in minsta möjliga belopp för att kvalificera. Varje spelare garanterad minst 200kr"
+                        "Din bonus kommer in på ditt spelkonto direkt efter du accepterat bonusen. Det gör du i samband med bekräftelsen efter att du gjort din första insättning."
                     ],
                     "casinoterms": [
-                        "Ingen omsättning krävs. Pengarna som sätts in på spelkontot är riktiga pengar och man kan som kund välja att antingen spela i vårt Casino eller Betting alternativt göra ett uttag."
+                        "Insättning + bonus måste omsättas 20 gånger på casinospel. Exempel: Sätt in 1000 kr och få 2000 kr att spela för i casinot ger 40 000 kr i omsättningskrav."
                     ],
                     "sportsterms": [
-                        "Ingen omsättning krävs. Pengarna som sätts in på spelkontot är riktiga pengar och man kan som kund välja att antingen spela i vårt Casino eller Betting alternativt göra ett uttag."
+                        ""
                     ],
                     "topslotgames": "Över 650+ slots av hög kvalitet. Med flera välkända leverantörer som NetEnt, Microgaming, Play'N Go, Yggdrasil, Thunderkick, NolimitCity Casino, Evolution gaming och många fler!!",
                     "deposittypes": "Trustly, Swish",
