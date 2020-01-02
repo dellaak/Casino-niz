@@ -287,8 +287,9 @@ const StartPage = (props) => {
       </div>
       <h1 className="welcome-title">Svenska Casinon 2020</h1>
       <div className="top-casinos-rec">
-        <AnimatedCount list={props.start.Casinon} />
         <OurRec />
+        <AnimatedCount list={props.start.Casinon} />
+
         {/* <LatestRec casinolist={this.state.casinon}/> */}
       </div>
 

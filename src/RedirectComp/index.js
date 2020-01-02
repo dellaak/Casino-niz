@@ -39,7 +39,7 @@ const RedirectComp = (props) => {
             setTimeout(() => {
                 window.location.replace(obj.link)
 
-            }, 5000);
+            }, 4000);
 
         }
         changeState()

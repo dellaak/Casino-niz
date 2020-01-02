@@ -13,7 +13,7 @@ import Sports from "../Sports/index"
 import Terms from "../Terms/index"
 import Policy from "../Policy/index"
 import NotFoundPage from "../NotFoundPage/index"
-
+import Top5 from "../Blogg/Top5"
 const App = () => {
 
     let w = window.innerWidth
@@ -35,6 +35,7 @@ const App = () => {
                             <Route path="/odds" render={(props) => (<Sports list={Casinolist}  {...props} />)} />
                             <Route path="/Terms" component={Terms} />
                             <Route path="/Policy" component={Policy} />
+                            <Route path="/5-bästa-casinon-2020" render={(props) => (<Top5 list={Casinolist}  {...props} />)} />
                             <Route path="*" component={NotFoundPage} />
 
 

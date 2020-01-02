@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
-// import monthnewimg from "../images/frankfred.png"
 import { Link } from "react-router-dom";
 
 const StyledWrapper = styled.section`
@@ -14,11 +12,12 @@ const StyledWrapper = styled.section`
   }
 `;
 const MonthBox = styled.div`
-  width: 400px;
-  height: 200px;
+  width:500px;
+  height: 300px;
   border: 1px solid black;
   position: relative;
-  background-image: url('/images/hajperlogo.svg');
+  background-color:#214467;
+  background-image: url('/images/top5.png');
   background-size: 100% 100%;
   box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.51);
 border-radius: 0 10px 0 0;
@@ -59,7 +58,7 @@ const StyledOverlay = styled.div`
   left:-1px;
   font-family: "Manjari", sans-serif;
   font-weight: bold;
-  text-align:center;
+  text-align:left;
   box-shadow: 6px 10px 13px 0px rgba(0,0,0,0.51);
 `;
 
@@ -96,15 +95,10 @@ const OurRec = () => {
       </Link> */}
 
       <Link
-        target="_blank"
-        rel="noopener noreferrer nofollow "
-        to={{ pathname: `/Redirect/${'Hajper'}`, match: `${'Hajper'}` }}>
-        >
+        to={{ pathname: `/5-bästa-casinon-2020` }}>
         <MonthBox>
-          <StyledH5>Vi rekommenderar</StyledH5>
-          <StyledPara>18+ | Regler&Villkor Gäller</StyledPara>
           <StyledOverlay>
-            Insättningsbonus på 100% upp till 1000kr! 20X OMS.KRAV
+            5 Bästa casinon att hålla koll på 2020
           </StyledOverlay>
         </MonthBox>
       </Link>

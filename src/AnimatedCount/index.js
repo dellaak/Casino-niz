@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { StyledDiv, StyledCount, StyledFreeText, StyledBox, StyledCountUp } from "./StyledAnimated";
 
 
@@ -11,7 +11,7 @@ const AnimatedCount = (props) => {
     const [casinoList] = useState(props.list)
 
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         let isCancelled = false;
         const counter = () => {
             const timer = setTimeout(() => {
