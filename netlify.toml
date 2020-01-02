@@ -1,0 +1,7 @@
+baseURL = "/"
+
+
+[[redirects]]
+  from = "/Redirect/Unibet"
+  to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34474"
+  status = 301
