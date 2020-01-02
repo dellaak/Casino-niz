@@ -34,17 +34,17 @@ const RedirectComp = (props) => {
         }
 
 
-        // const redirect = () => {
+        const redirect = () => {
 
-        //     setTimeout(() => {
-        //         window.location.replace(obj.link)
+            setTimeout(() => {
+                window.location.replace(obj.link)
 
-        //     }, 2000);
+            }, 5000);
 
-        // }
+        }
         changeState()
         setStuff({ link: obj.link, color: obj.color })
-        // redirect()
+        redirect()
 
 
     }, [url]);

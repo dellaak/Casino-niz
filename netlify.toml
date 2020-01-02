@@ -13,3 +13,196 @@ baseURL = "/"
   to = "https://ads.mrgreen.com/redirect.aspx?pid=4432076"
   status = 301
   query = {path = "/Redirect/MrGreen"}
+
+    [[redirects]]
+  from = "/Redirect/MrGreen"
+  to = "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1753&sid=354226&pid=457"
+  status = 301
+  query = {path = "/Redirect/ComeOn"}
+
+      [[redirects]]
+  from = "/Redirect/NordicBet"
+  to = "https://record.nordicbet.com/_zwvwrZh854rIUsd2cv5SdWNd7ZgqdRLk/1/"
+  status = 301
+  query = {path = "/Redirect/ComeOn"}
+
+
+       [[redirects]]
+  from = "/Redirect/Mobilautomaten"
+  to = "https://media.mobilautomaten.com/tracking.php?tracking_code&aid=107839&mid=1727&sid=354226&pid=410"
+  status = 301
+  query = {path = "/Redirect/Mobilautomaten"}
+
+         [[redirects]]
+  from = "/Redirect/Mobilautomaten"
+  to = "https://media.mobilautomaten.com/tracking.php?tracking_code&aid=107839&mid=1727&sid=354226&pid=410"
+  status = 301
+  query = {path = "/Redirect/Mobilautomaten"}
+
+           [[redirects]]
+  from = "/Redirect/LeoVegas"
+  to = "https://ads.leovegas.com/redirect.aspx?pid=3599439&bid=16049"
+  status = 301
+  query = {path = "/Redirect/LeoVegas"}
+
+             [[redirects]]
+  from = "/Redirect/Casumo"
+  to = "https://ads.casumoaffiliates.com/redirect.aspx?pid=1065670&bid=1906"
+  status = 301
+  query = {path = "/Redirect/Casumo"}
+
+             [[redirects]]
+  from = "/Redirect/SpeedyCasino"
+  to = "https://media.heroaffiliates.com/redirect.aspx?pid=265765&bid=3252"
+  status = 301
+  query = {path = "/Redirect/SpeedyCasino"}
+
+               [[redirects]]
+  from = "/Redirect/Vera&John"
+  to = "https://record.ppincome.net/_eTIfhuLY3wLQ5K5VC2FaW2Nd7ZgqdRLk/1/"
+  status = 301
+  query = {path = "/Redirect/Vera&John"}
+
+              [[redirects]]
+  from = "/Redirect/888Casino"
+  to = "https://mmwebhandler.aff-online.com/c/43499?sr=1704316"
+  status = 301
+  query = {path = "/Redirect/888Casino"}
+  
+              [[redirects]]
+  from = "/Redirect/CherryCasino"
+  to = "https://ads.cherrycasino.com/tracking.php?tracking_code&aid=107839&mid=2545&sid=354226&pid=802"
+  status = 301
+  query = {path = "/Redirect/CherryCasino"}
+
+                [[redirects]]
+  from = "/Redirect/Sverigeautomaten"
+  to = "https://record.sverigeautomaten.com/_zwvwrZh854qe7oPsq8PuNGNd7ZgqdRLk/1/"
+  status = 301
+  query = {path = "/Redirect/Sverigeautomaten"}
+
+                  [[redirects]]
+  from = "/Redirect/Bethard"
+  to = "http://wleuroearners.adsrv.eacdn.com/C.ashx?btag=a_9093b_2758c_&affid=2853&siteid=9093&adid=2758&c="
+  status = 301
+  query = {path = "/Redirect/Bethard"}
+
+                    [[redirects]]
+  from = "/Redirect/Betsson"
+  to = "https://record.betsson.com/_zwvwrZh854oK7p2EryfJhWNd7ZgqdRLk/1/"
+  status = 301
+  query = {path = "/Redirect/Betsson"}
+
+                     [[redirects]]
+  from = "/Redirect/SveaCasino"
+  to = "https://ads.sveacasino.com/tracking.php?tracking_code&aid=107839&mid=1135&sid=354226&pid=201"
+  status = 301
+  query = {path = "/Redirect/SveaCasino"}
+
+                       [[redirects]]
+  from = "/Redirect/Betsafe"
+  to = "https://record.betsafe.com/_zwvwrZh854oTfb_BYEk8c2Nd7ZgqdRLk/1/"
+  status = 301
+  query = {path = "/Redirect/Betsafe "}
+
+                        [[redirects]]
+  from = "/Redirect/Casinostugan"
+  to = "https://media.casinostugan.com/tracking.php?tracking_code&aid=107839&mid=1718&sid=354226&pid=434"
+  status = 301
+  query = {path = "/Redirect/Casinostugan"}
+
+                        [[redirects]]
+  from = "/Redirect/Guts"
+  to = "http://wlguts.adsrv.eacdn.com/C.ashx?btag=a_15321b_2721c_&affid=4381&siteid=15321&adid=2721&c="
+  status = 301
+  query = {path = "/Redirect/Guts"}
+
+                        [[redirects]]
+  from = "/Redirect/Thrills"
+  to = "http://ads.thrillsaffiliates.com/redirect.aspx?pid=878163&bid=4977"
+  status = 301
+  query = {path = "/Redirect/Thrills"}
+
+                        [[redirects]]
+  from = "/Redirect/Rizk"
+  to = "http://wlrizk.adsrv.eacdn.com/C.ashx?btag=a_15321b_1778c_&affid=4381&siteid=15321&adid=1778&c="
+  status = 301
+  query = {path = "/Redirect/Rizk"}
+
+                        [[redirects]]
+  from = "/Redirect/Casilando"
+  to = "http://welcome.branders.partners/afs/come.php?id=4145&cid=19911&ctgid=1067&atype=1"
+  status = 301
+  query = {path = "/Redirect/Casilando"}
+
+                          [[redirects]]
+  from = "/Redirect/Casinoheroes"
+  to = "https://media.heroaffiliates.com/redirect.aspx?pid=265765&bid=3219"
+  status = 301
+  query = {path = "/Redirect/Casinoheroes"}
+
+                          [[redirects]]
+  from = "/Redirect/Betway"
+  to = "https://casino.betway.se/?s=bw204937&mid=82884"
+  status = 301
+  query = {path = "/Redirect/Betway"}
+
+                            [[redirects]]
+  from = "/Redirect/NoAccountcasino"
+  to = "https://affiliatemedia.noaccountcasino.com/redirect.aspx?pid=4468&bid=1586&redirectURL=https://www.noaccountcasino.com/"
+  status = 301
+  query = {path = "/Redirect/NoAccountcasino"}
+
+                              [[redirects]]
+  from = "/Redirect/FrankFred"
+  to = "https://www.frankfred.com/sv/?mid=868&sid=4125&aid=100550&pid=2"
+  status = 301
+  query = {path = "/Redirect/FrankFred"}
+  
+                                [[redirects]]
+  from = "/Redirect/Snabbare"
+  to = "https://media.snabbare.com/tracking.php?tracking_code&aid=107839&mid=1960&sid=354226&pid=635"
+  status = 301
+  query = {path = "/Redirect/Snabbare"}
+
+      [[redirects]]
+  from = "/Redirect/Hajper"
+  to = "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=1968&sid=354226&pid=640"
+  status = 301
+  query = {path = "/Redirect/Hajper"}
+
+        [[redirects]]
+  from = "/Redirect/Chanz"
+  to = "http://wlchanz.adsrv.eacdn.com/C.ashx?btag=a_2934b_38c_&affid=828&siteid=2934&adid=38&c="
+  status = 301
+  query = {path = "/Redirect/Chanz"}
+
+         [[redirects]]
+  from = "/Redirect/Snabbis"
+  to = "https://record.snabbisaffiliates.com/_nBB8jrTuRQUWqcfzuvZcQGNd7ZgqdRLk/1/"
+  status = 301
+  query = {path = "/Redirect/Snabbis"}
+
+           [[redirects]]
+  from = "/Redirect/Pixelbet"
+  to = "https://ads.pixel.bet/redirect.aspx?pid=3216&bid=1639"
+  status = 301
+  query = {path = "/Redirect/Pixelbet"}
+
+             [[redirects]]
+  from = "/Redirect/Highroller"
+  to = "https://ads.highrolleraffiliates.com/redirect.aspx?pid=878163&bid=4911"
+  status = 301
+  query = {path = "/Redirect/Highroller"}
+  
+               [[redirects]]
+  from = "/Redirect/Videoslots"
+  to = "https://www.videoslots.com/?referral_id=casinoniz"
+  status = 301
+  query = {path = "/Redirect/Videoslots"}
+
+                 [[redirects]]
+  from = "/Redirect/Paf"
+  to = "https://record.pafpartners.com/_Q3mqd8ZyuHNd0WQkpqTgsGNd7ZgqdRLk/1"
+  status = 301
+  query = {path = "/Redirect/Paf"}
