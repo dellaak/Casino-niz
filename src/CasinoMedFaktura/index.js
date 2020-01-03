@@ -357,7 +357,7 @@ const CasinoMedFaktura = (props) => {
                 </div>
 
             </div>
-            <p className="update-text">Senast uppdaterad: 2 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 3 Januari 2020</p>
         </Container>
     );
 }

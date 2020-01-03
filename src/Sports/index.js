@@ -301,7 +301,7 @@ const Sports = (props) => {
                         )}
                     <BottomInfoSports />
                 </Container>
-                <p className="update-text">Senast uppdaterad: 2 Januari 2020</p>
+                <p className="update-text">Senast uppdaterad: 3 Januari 2020</p>
             </div>
         </div>
     );
