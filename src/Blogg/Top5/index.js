@@ -16,7 +16,6 @@ const Top5 = (props) => {
 
 
         list.filter(i => {
-            console.log(`"/Recension/${i.title}",`)
             i.title = i.title.toLowerCase()
             if (topArr.includes(i.title)) {
                 top.push(i)
@@ -70,7 +69,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         <Container>
             <div className="wrap-top5">
                 <h1>Fem bästa casinon 2020 </h1>
-
+                <p>Nu är vi inne på ett nytt år och med det kommer det flera saker. Vi på Casinoniz önskar er en riktigt god fortsättning och därför har vi listat de fem bästa casinon för januari 2020.</p>
+                <p>Casinon vi listar här är några casinon som vi tycker sticker ut lite extra. Det vi har tänkt på när vi valde ut fem casinon är layouten, spelutbudet på slots, supporten och även bonusen. Kom ihåg att spela lugnt och att spel ska vara kul. Spela aldrig för mer än du har råd med!</p>
                 <StyledDiv>
                     <StyledCircle >1</StyledCircle>
                     <h2>Casumo - Forfarande på toppen</h2>

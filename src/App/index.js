@@ -14,6 +14,8 @@ import Terms from "../Terms/index"
 import Policy from "../Policy/index"
 import NotFoundPage from "../NotFoundPage/index"
 import Top5 from "../Blogg/Top5"
+import TopButton from "../TopButton/index"
+
 const App = () => {
 
     let w = window.innerWidth
@@ -23,6 +25,7 @@ const App = () => {
         <Router>
 
             <div className="App">
+                <TopButton />
                 <NavBarApp />
                 <Container fluid={w < d ? true : false}>
                     <main>

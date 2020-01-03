@@ -4,6 +4,10 @@ import "./style.scss"
 
 
 const Snabbfakta = (props) => {
+    let nc = false
+    if (props.casino.title === 'NoAccountcasino') {
+        nc = true
+    }
 
     let recension = props.casino.recension[0]
     return (<React.Fragment>
@@ -13,7 +17,11 @@ const Snabbfakta = (props) => {
         <div className="fakta-box-preview">
 
             <div className="Snabbfakta-preview">
-                <p>Sportsbetting:  {props.casino.sports ? "✅" : "❌"}</p>
+                {nc ? (<p>Sportsbetting: Se     <Link
+                    to={{ pathname: "/Recension/NoAccountBet", match: "NoAccountBet" }}>
+                    NoAccountBet
+
+        </Link> </p>) : <p>Sportsbetting:  {props.casino.sports ? "✅" : "❌"}</p>}
 
                 <p>Freespins: {props.casino.freespins > 1 ? `${props.casino.freespins}` : "❌"}</p>
 
