@@ -169,7 +169,7 @@ const Recension = (props) => {
 		< div >
 			<Helmet>
 				<title>
-					{casinotitle} RECENSION ⇛{" "}
+					{casinotitle.length > 3 ? `${casinotitle} RECENSION ⇛` : ''}
 					{selectedCasino ? `${selectedCasino.slogan}` : "Snabbfakta"} |
 					Casinoniz
           </title>

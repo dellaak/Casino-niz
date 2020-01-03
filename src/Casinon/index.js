@@ -67,67 +67,66 @@ const Casinon = (props) => {
   }
 
 
-  return (
+  const CasinoComp = () => {
+    return <div><div className=" casinowrap">{" "}
+      <Link target="_blank" to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
+        <img className="casino-logo"
+          alt={props.casino.title}
+          src={props.casino.caslogo}
+        />
 
-    <div
-      className="full-box" >
-      <div className=" casinowrap">{" "}
-        <Link target="_blank" to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
-          <img className="casino-logo"
-            alt={props.casino.title}
-            src={props.casino.caslogo}
-          />
+      </Link>
+      <div className="info-wrap">
+        <StyledNavlink
+          to={{ pathname: `/Recension/${props.casino.title}`, match: `${props.casino.title}` }} >
+          Recension
+       {showStar ? (<img src={star} className="top-star" alt="star" />) : ''}
+        </StyledNavlink>
 
-        </Link>
-        <div className="info-wrap">
-          <StyledNavlink
-            to={{ pathname: `/Recension/${props.casino.title}`, match: `${props.casino.title}` }} >
-            Recension
-           {showStar ? (<img src={star} className="top-star" alt="star" />) : ''}
-          </StyledNavlink>
-
-          <div className="depositbonus">
-            <h3 className="divtitleone">CASINO BONUS SOM ERBJUDS JUST NU</h3>
-            <p className="deposittext"> {props.casino.depositbonus}</p>
-          </div>
-
-          <div className="wager">
-            <p className="divtitle" >OMSÄTTNINGSKRAV</p>
-            <b>
-              <p className="wagerinfo"> {props.casino.wager}x</p>
-            </b>
-          </div>
+        <div className="depositbonus">
+          <h3 className="divtitleone">CASINO BONUS SOM ERBJUDS JUST NU</h3>
+          <p className="deposittext"> {props.casino.depositbonus}</p>
         </div>
-        <div />
 
-        <div className="buttonbox">
-
-
-
-          <Link target="_blank"
-            rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
-            <Button className="to-botton">Hämta bonus</Button>
-          </Link>
-
-
-          {props.casino.bankid === true ? (
-            <p className="bankid-text">
-              <span className="checkmark">✓</span> Bankidentifiering
-                </p>
-          ) : (
-              ""
-            )}
+        <div className="wager">
+          <p className="divtitle" >OMSÄTTNINGSKRAV</p>
+          <b>
+            <p className="wagerinfo"> {props.casino.wager}x</p>
+          </b>
         </div>
       </div>
+      <div />
 
-      {props.casino.extratext ? (
-        <div className="extra-text">
+      <div className="buttonbox">
 
-          <span>{props.casino.extratext}</span>
-        </div>
-      ) : (
-          ""
-        )}
+
+
+        <Link target="_blank"
+          rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
+          <Button className="to-botton">Hämta bonus</Button>
+        </Link>
+
+
+        {props.casino.bankid === true ? (
+          <p className="bankid-text">
+            <span className="checkmark">✓</span> Bankidentifiering
+            </p>
+        ) : (
+            ""
+          )}
+      </div>
+    </div>
+
+      {
+        props.casino.extratext ? (
+          <div className="extra-text">
+
+            <span>{props.casino.extratext}</span>
+          </div>
+        ) : (
+            ""
+          )
+      }
 
       <div className="spela-lagom">
         <span>
@@ -137,7 +136,7 @@ const Casinon = (props) => {
             href={props.casino.rules}
           >
             Regler & villkor gäller
-              </a>{" "}
+          </a>{" "}
           &#8226; <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>
           &#8226;{" "}
         </span>
@@ -154,6 +153,14 @@ const Casinon = (props) => {
         </div>
         <p className="freespins-text">{props.casino.freefromwager ? 'Omsättningsfria freespins' : ''}</p>
       </Col>
+    </div>
+  }
+
+  return (
+
+    <div
+      className="full-box" >
+      <CasinoComp />
     </div >
 
   );
