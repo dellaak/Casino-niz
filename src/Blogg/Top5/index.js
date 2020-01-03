@@ -65,7 +65,21 @@ font-size: 30px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 
-    return (
+    return (<div>
+        <Helmet>
+            <title>Bästa Casinobonusar 2020 | Casinoniz</title>
+            <link rel="canonical" href="https://www.casinoniz.se/5-bästa-casinon-2020" />
+            <meta
+                name="description"
+                content="Vi listar de bästa casinon för 2020. Top 5 casinon som sticker ut 2020 i Januari. Med de bästa casinobonusar och casinon."
+            />
+            <meta
+                name="keywords"
+                content="Casino, Casinobonusar, välkomstbonus, 2019,2020, bonus, spela, insättningsbonus, free spins, faktura casino, casino faktura, bästa casinon, bästa casinon 2020, top5 , top10 casino"
+            />
+
+        </Helmet>
+
         <Container>
             <div className="wrap-top5">
                 <h1>Fem bästa casinon 2020 </h1>
@@ -141,7 +155,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 </StyledDiv>
 
             </div>
-        </Container>)
+        </Container>
+    </div>)
 }
 
 export default Top5
