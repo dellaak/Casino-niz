@@ -6,9 +6,17 @@ import "typeface-exo-2"
 import "typeface-open-sans"
 import "typeface-righteous"
 import "@openfonts/manjari_malayalam"
-
-
+import TagManager from 'react-gtm-module'
 import * as serviceWorker from './serviceWorker';
+
+
+const tagManagerArgs = {
+    gtmId: 'GTM-5QQXVLN'
+}
+
+TagManager.initialize(tagManagerArgs)
+
+
 
 render(
     <App />,
