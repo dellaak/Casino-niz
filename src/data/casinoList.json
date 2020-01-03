@@ -3419,26 +3419,26 @@
             "faq": true,
             "q1": {
                 "@type": "Question",
-                "name": "💰Vad är minsta insättningen samt uttag hos Storspelare?",
+                "name": "Vad är minsta insättningen samt uttag hos PrankCasino?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Minsta insättningen hos Storspelare är 25SEK. För att göra ett uttag är minsta beloppet 100SEK."
+                    "text": "Minsta insättningen hos PrankCasino är 100 SEK. För att göra ett uttag är minsta beloppet 200 SEK."
                 }
             },
             "q2": {
                 "@type": "Question",
-                "name": "❓Erbjuder Storspelare insättningar med faktura?",
+                "name": "Erbjuder PrankCasino insättningar med faktura?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nej det gör dem inte. Storspelare erbjuder insättning via dessa metoder: Visa, Mastercard, Trustly, Skrill, Paysafecard, Neteller, Swish och Bank överföring. "
+                    "text": "Nej det gör dem inte. PrankCasino erbjuder insättningar endast via Trustly"
                 }
             },
             "q3": {
                 "@type": "Question",
-                "name": "✅Kan vem som helst spela på Storspelare?",
+                "name": "Krävs det bankid för att göra en insättning på PrankCasino?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, Storspelare är en sida för alla som gillar att spela på ett snyggt onlinecasino. Men Storspelare riktar sig först och främst till så kallade 'High rollers' (spelare som gillar att spela stort)."
+                    "text": "Ja, PrankCasino accepterar endast insättningar via Trustly. När man använder Trustly så verifierar man sig mot sin bank vid bankid."
                 }
             },
             "title": "PrankCasino",
@@ -3446,7 +3446,7 @@
             "color": "#296ddb",
             "textcolor": "#e2e506",
             "setTop": false,
-            "depositbonus": "Sätt in 200 kr , spela för 400 kr. Vinsterna är omsättningsfria!",
+            "depositbonus": "Sätt in 200 kr, spela för 400 kr. Vinsterna är omsättningsfria!",
             "sportsbonus": "ingen sports bonus",
             "mylink": "  https://www.prankcasino.com/sv?btag=655781_3DC9A875061F492B82D2728492433FEC",
             "rules": "https://www.prankcasino.com/sv/terms",
