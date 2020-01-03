@@ -10,12 +10,12 @@ import { Helmet } from "react-helmet";
 
 const Esport = (props) => {
 
-    const [casinon, setCasinon] = useState({ casino: [], size: 9 })
+    const [casinon, setCasinon] = useState([])
     const [selectedGame, setSelectedGame] = useState(false)
     const [visible, setVisible] = useState(true)
     const [readmore, setReadMore] = useState(false);
     const [fade, setFade] = useState(false)
-
+    const [size, setSize] = useState(9)
 
 
 
@@ -30,7 +30,7 @@ const Esport = (props) => {
         });
 
 
-        return setCasinon({ ...casinon, casino: esportCasinos })
+        return setCasinon(esportCasinos)
 
     }
 
@@ -39,7 +39,7 @@ const Esport = (props) => {
     }, [])
 
     const depositbutton = () => {
-        let list = [...casinon.casino]
+        let list = [...casinon]
 
         let wagerarr = [];
         let delItems = []
@@ -74,7 +74,8 @@ const Esport = (props) => {
         if (delItems.length > 1) {
             wagerarr.concat(delItems)
         }
-        setCasinon({ ...casinon, casino: wagerarr })
+        setCasinon(wagerarr)
+        setSize(9)
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -82,7 +83,7 @@ const Esport = (props) => {
     }
 
     const wagerbutton = () => {
-        let list = [...casinon.casino]
+        let list = [...casinon]
         let wagerarr = [];
         let delItems = []
 
@@ -114,7 +115,8 @@ const Esport = (props) => {
 
 
 
-        setCasinon({ ...casinon, casino: wagerarr.concat(delItems) })
+        setCasinon(wagerarr.concat(delItems))
+        setSize(9)
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -136,7 +138,8 @@ const Esport = (props) => {
 
         });
 
-        setCasinon({ size: 9, casino: esportCasinos })
+        setCasinon(esportCasinos)
+        setSize(9)
         setFade(true)
         setTimeout(() => {
             setFade(false)
@@ -167,7 +170,8 @@ const Esport = (props) => {
             }
         }
 
-        setCasinon({ size: 9, casino: casinoarr })
+        setCasinon(casinoarr)
+        setSize(9)
         setFade(true)
         setSelectedGame(val)
         setTimeout(() => {
@@ -186,7 +190,14 @@ const Esport = (props) => {
 
 
     const loadMore = () => {
-        return setCasinon({ ...casinon, size: casinon.casino.length })
+        return setSize(prevState => prevState + 8)
+
+    }
+
+    const loadLess = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        return setSize(9)
 
     }
 
@@ -338,6 +349,7 @@ const Esport = (props) => {
                     </div>
                 </div>
                 <Container className="wrapit ">
+
                     <EsportFilter
                         id="esportsfilterid"
                         csgo={sortFunc}
@@ -351,15 +363,15 @@ const Esport = (props) => {
                         edeposit={depositbutton}
                     />
                     <div className={fade ? "fade-in" : "casino-wrap"}>
-                        {casinon.casino.slice(0, casinon.size).map(casino => (
+                        {casinon.length > 1 ? casinon.slice(0, size).map(casino => (
 
                             < EsportCasinoComp
                                 key={casino.title}
                                 casino={casino}
                             />
-                        ))}
+                        )) : ''}
                     </div>
-                    {casinon.size !== casinon.casino.length ? (
+                    {size <= casinon.length ? (
                         <div className="morebonus-box">
                             <Button
                                 className="button-recension blink"
@@ -369,9 +381,14 @@ const Esport = (props) => {
                             </Button>
                         </div>
                     ) : (
-                            <p className="no-more-bonuses">
-                                Inga fler bonusar att visa just nu
-            </p>
+                            <div className="no-more-bonuses">
+                                <Button
+                                    className="show-less-btn"
+                                    onClick={loadLess}
+                                >
+                                    Finns inte fler casinon att visa - Stäng{" "}
+                                </Button>
+                            </div>
                         )}
                 </Container>
 

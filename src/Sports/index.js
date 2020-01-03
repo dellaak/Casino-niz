@@ -9,10 +9,11 @@ import { Helmet } from "react-helmet";
 
 const Sports = (props) => {
 
-    const [casinon, setCasinon] = useState({ casino: [], size: 9 })
+    const [casinon, setCasinon] = useState([])
     const [visible, setVisible] = useState(true)
     const [readmore, setReadMore] = useState(false);
     const [fade, setFade] = useState(false)
+    const [size, setSize] = useState(9)
 
 
 
@@ -42,7 +43,8 @@ const Sports = (props) => {
         sportCasinon = sportCasinon.filter(item => !top.includes(item));
         sportCasinon = top.concat(sportCasinon);
 
-        return setCasinon({ ...casinon, casino: sportCasinon })
+
+        return setCasinon(sportCasinon)
 
     }
 
@@ -53,7 +55,7 @@ const Sports = (props) => {
 
 
     const depositbutton = () => {
-        let list = [...casinon.casino]
+        let list = [...casinon]
         let wagerarr = [];
         let delItems = []
         for (let i of list) {
@@ -69,7 +71,8 @@ const Sports = (props) => {
             return b.depositpercentsports - a.depositpercentsports;
         });
 
-        setCasinon({ size: 9, casino: wagerarr.concat(delItems) })
+        setCasinon(wagerarr.concat(delItems))
+        setSize(9)
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -77,7 +80,7 @@ const Sports = (props) => {
     }
 
     const wagerbutton = () => {
-        let list = [...casinon.casino]
+        let list = [...casinon]
         let wagerarr = [];
         let delItems = []
         for (let i of list) {
@@ -93,7 +96,8 @@ const Sports = (props) => {
             return a.sportswager - b.sportswager;
         });
 
-        setCasinon({ size: 9, casino: wagerarr.concat(delItems) })
+        setCasinon(wagerarr.concat(delItems))
+        setSize(9)
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -120,7 +124,14 @@ const Sports = (props) => {
     };
 
     const loadMore = () => {
-        return setCasinon({ ...casinon, size: casinon.casino.length })
+        return setSize(prevState => prevState + 8)
+
+    }
+
+    const loadLess = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        return setSize(9)
 
     }
 
@@ -262,14 +273,14 @@ const Sports = (props) => {
                         reset={resetList}
                     />
                     <div className={fade ? "fade-in" : "casino-wrap"}>
-                        {casinon.casino.slice(0, casinon.size).map(casino => (
+                        {casinon.slice(0, size).map(casino => (
                             <SportCasino
                                 key={casino.id + casino.title}
                                 casinon={casino}
                             />
                         ))}
                     </div>
-                    {casinon.size !== casinon.casino.length ? (
+                    {size <= casinon.length ? (
                         <div className="morebonus-box">
                             <Button
                                 className="button-recension blink"
@@ -279,9 +290,14 @@ const Sports = (props) => {
                             </Button>
                         </div>
                     ) : (
-                            <p className="no-more-bonuses">
-                                Inga fler bonusar att visa just nu
-            </p>
+                            <div className="no-more-bonuses">
+                                <Button
+                                    className="show-less-btn"
+                                    onClick={loadLess}
+                                >
+                                    Finns inte fler casinon att visa - Stäng{" "}
+                                </Button>
+                            </div>
                         )}
                     <BottomInfoSports />
                 </Container>

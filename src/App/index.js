@@ -15,6 +15,7 @@ import Policy from "../Policy/index"
 import NotFoundPage from "../NotFoundPage/index"
 import Top5 from "../Blogg/Top5"
 import TopButton from "../TopButton/index"
+import "./style.scss"
 
 const App = () => {
 
@@ -27,27 +28,31 @@ const App = () => {
             <div className="App">
                 <TopButton />
                 <NavBarApp />
-                <Container fluid={w < d ? true : false}>
-                    <main>
-                        <Switch>
-                            <Route exact path="/" render={(props) => (<Startpage start={Casinolist}  {...props} />)} />
-                            <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist}  {...props} />)} />
-                            <Route path="/Esportbetting" render={(props) => (<Esport list={Casinolist}  {...props} />)} />
-                            <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist}  {...props} />)} />
-                            <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
-                            <Route path="/odds" render={(props) => (<Sports list={Casinolist}  {...props} />)} />
-                            <Route path="/Terms" component={Terms} />
-                            <Route path="/Policy" component={Policy} />
-                            <Route path="/5-bästa-casinon-2020" render={(props) => (<Top5 list={Casinolist}  {...props} />)} />
-                            <Route path="*" component={NotFoundPage} />
+                <div className="myMain">
 
 
-                        </Switch>
+                    <Container fluid={w < d ? true : false}>
+                        <main>
 
-                    </main>
-                </Container>
-                <Footer />
+                            <Switch>
+                                <Route exact path="/" render={(props) => (<Startpage start={Casinolist}  {...props} />)} />
+                                <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist}  {...props} />)} />
+                                <Route path="/Esportbetting" render={(props) => (<Esport list={Casinolist}  {...props} />)} />
+                                <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist}  {...props} />)} />
+                                <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
+                                <Route path="/odds" render={(props) => (<Sports list={Casinolist}  {...props} />)} />
+                                <Route path="/Terms" component={Terms} />
+                                <Route path="/Policy" component={Policy} />
+                                <Route path="/5-bästa-casinon-2020" render={(props) => (<Top5 list={Casinolist}  {...props} />)} />
+                                <Route path="*" component={NotFoundPage} />
 
+
+                            </Switch>
+
+                        </main>
+                    </Container>
+                    <Footer />
+                </div>
             </div>
 
         </Router>

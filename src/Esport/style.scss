@@ -5,10 +5,13 @@
 }
 
 .welcome-box-esport {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
   margin-bottom: 10px;
-  font-family: "Manjari", sans-serif;
+  justify-content: space-around;
   flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .welcome-text-esport {

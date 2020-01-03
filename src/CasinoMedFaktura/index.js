@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 import BottomInfoFaktura from "../AllBottomInfo/BottomInfoFaktura/index";
 
 const CasinoMedFaktura = (props) => {
-    const [casinoList, setCasinoList] = useState({ size: 9, casinon: [] })
+    const [casinoList, setCasinoList] = useState([])
     const [button, setButton] = useState({
         activezimp: false,
         activesiru: false,
@@ -18,6 +18,7 @@ const CasinoMedFaktura = (props) => {
     const [visible, setVisible] = useState(true)
     const [readmore, setReadMore] = useState(false)
     const [fade, setFade] = useState(false)
+    const [size, setSize] = useState(9)
 
 
     useEffect(() => {
@@ -31,7 +32,7 @@ const CasinoMedFaktura = (props) => {
                 }
             }
 
-            return setCasinoList({ ...casinoList, casinon: fakturaCasinon })
+            return setCasinoList(fakturaCasinon)
 
         }
         getAllCas()
@@ -54,7 +55,8 @@ const CasinoMedFaktura = (props) => {
         }
 
 
-        setCasinoList({ size: 9, casinon: wagerarr })
+        setCasinoList(wagerarr)
+        setSize(9)
 
         setButton({
             activezimp: true,
@@ -79,7 +81,8 @@ const CasinoMedFaktura = (props) => {
             }
         }
 
-        setCasinoList({ size: 9, casinon: wagerarr })
+        setCasinoList(wagerarr)
+        setSize(9)
 
         setButton({
             activezimp: false,
@@ -103,7 +106,9 @@ const CasinoMedFaktura = (props) => {
             }
         }
 
-        setCasinoList({ size: 9, casinon: wagerarr })
+        setCasinoList(wagerarr)
+        setSize(9)
+
         setButton({
             activezimp: false,
             activesiru: true,
@@ -134,7 +139,9 @@ const CasinoMedFaktura = (props) => {
         setTimeout(() => {
             setFade(false)
         }, 500);
-        return setCasinoList({ size: 9, casinon: fakturaCasinon })
+        setSize(9)
+
+        return setCasinoList(fakturaCasinon)
 
 
     }
@@ -164,7 +171,14 @@ const CasinoMedFaktura = (props) => {
     };
 
     const loadMore = () => {
-        return setCasinoList({ ...casinoList, size: casinoList.casinon.length })
+        return setSize(prevState => prevState + 8)
+
+    }
+
+    const loadLess = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        return setSize(9)
 
     }
 
@@ -312,7 +326,7 @@ const CasinoMedFaktura = (props) => {
                         reset={resetlist}
                     />
                     <div className={fade ? "fade-in" : "casino-wrap"}>
-                        {casinoList.casinon.slice(0, casinoList.size).map(casino => (
+                        {casinoList.slice(0, size).map(casino => (
                             <FakturaCasino
                                 notfree={false}
                                 key={casino.title}
@@ -320,19 +334,24 @@ const CasinoMedFaktura = (props) => {
                             />
                         ))}
                     </div>
-                    {casinoList.size !== casinoList.casinon.length ? (
+                    {size <= casinoList.length ? (
                         <div className="morebonus-box">
                             <Button
                                 className="button-recension blink"
                                 onClick={loadMore}
                             >
-                                Hämta fler casinon{" "}
+                                Hämta fler bonusar{" "}
                             </Button>
                         </div>
                     ) : (
-                            <p className="no-more-bonuses">
-                                Inga fler casinon att visa just nu!
-            </p>
+                            <div className="no-more-bonuses">
+                                <Button
+                                    className="show-less-btn"
+                                    onClick={loadLess}
+                                >
+                                    Finns inte fler casinon att visa - Stäng{" "}
+                                </Button>
+                            </div>
                         )}
                     <BottomInfoFaktura />
                 </div>

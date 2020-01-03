@@ -8,8 +8,7 @@ export const StyledDiv = styled.div`
   position: relative;
   justify-content: center;
   align-items: flex-start;
-  max-width: 500px;
-  margin-bottom:50px;
+
 `;
 
 export const StyledFreeText = styled.p`

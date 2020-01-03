@@ -29,8 +29,8 @@ let esport = props.casino.esportinfo[0]
         </StyledNavlink>
             <div className="depositbonus">
               <h3 className="divtitle">CASINO BONUS FÖR ESPORT BETTING JUST NU</h3>
-              <p className="deposittext">{casinoInfo.depositbonus}</p>
-              
+              <p className="deposittext">{casinoInfo.sportsbonus}</p>
+              {casinoInfo.depositpercentsports > 0 ? (<p><b>INSÄTTNINGSBONUS:</b> {casinoInfo.depositpercentsports}%</p>) : ''}
             </div>
             <div className="wager">
               <p className="divtitle">OMSÄTTNINGSKRAV</p>

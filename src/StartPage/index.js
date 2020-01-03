@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from "react-helmet";
 import { Container, Alert, Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
@@ -16,16 +16,21 @@ import "./style.scss"
 
 
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+
+
 const StartPage = (props) => {
-  const [casinoList, setCasinoList] = useState({ Casino: props.start.Casinon, size: 9, showOrder: false });
+  const [casinoList, setCasinoList] = useState({ Casino: props.start.Casinon, showOrder: false });
+  const [size, setSize] = useState(9)
   const [visible, setVisible] = useState(true);
   const [readmore, setReadMore] = useState(false);
   const [showmedalj, setShowMedalj] = useState(true);
   const [fade, setFade] = useState(false);
   const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
-
+  const myRef = useRef(null)
 
   useEffect(() => {
+
     let list = [...props.start.Casinon]
     let newTop = []
     const getAllCas = () => {
@@ -77,7 +82,8 @@ const StartPage = (props) => {
     });
     wagerarr.concat(delItems)
     setShowMedalj(false)
-    setCasinoList({ ...casinoList, Casino: wagerarr, size: 9, showOrder: false })
+    setCasinoList({ ...casinoList, Casino: wagerarr, showOrder: false })
+    setSize(9)
     setButtons({ activebuttondep: false, activebuttonwager: true, activebuttonfree: false })
     setFade(true)
 
@@ -109,7 +115,8 @@ const StartPage = (props) => {
     });
     wagerarr.concat(depositdelete)
     setShowMedalj(false)
-    setCasinoList({ ...casinoList, Casino: wagerarr, size: 9, showOrder: false })
+    setCasinoList({ ...casinoList, Casino: wagerarr, showOrder: false })
+    setSize(9)
     setButtons({ activebuttonwager: false, activebuttondep: true, activebuttonfree: false })
     setFade(true)
 
@@ -143,7 +150,8 @@ const StartPage = (props) => {
       return (b.recension[0].gamebar + b.recension[0].experience + b.recension[0].support) - (a.recension[0].gamebar + a.recension[0].experience + a.recension[0].support)
     });
     setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
-    return setCasinoList({ Casino: orlist, size: 9, showOrder: true })
+    setSize(9)
+    return setCasinoList({ Casino: orlist, showOrder: true })
   }
 
 
@@ -160,7 +168,8 @@ const StartPage = (props) => {
     }
 
     setShowMedalj(false)
-    setCasinoList({ ...casinoList, Casino: wagerarr, size: 9, showOrder: false })
+    setCasinoList({ ...casinoList, Casino: wagerarr, showOrder: false })
+    setSize(9)
     setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: true })
     setFade(true)
 
@@ -174,10 +183,18 @@ const StartPage = (props) => {
 
 
   const loadMore = () => {
-    return setCasinoList({ ...casinoList, size: casinoList.Casino.length })
+
+    return setSize(prevState => prevState + 8)
 
   }
 
+
+  const loadLess = () => {
+    scrollToRef(myRef)
+
+    return setSize(9)
+
+  }
 
 
 
@@ -352,8 +369,8 @@ const StartPage = (props) => {
         <NewCasinos {...props} />
       </section>
 
-      <Container className="wrapit ">
-        <div className="top-box" />
+      <Container className="wrapit mofo">
+        <div ref={myRef} className="top-box" />
         <Filter
           id="filterid"
           wager={wagerbutton}
@@ -369,14 +386,14 @@ const StartPage = (props) => {
           <small className="medalj-text"><img src={star} className="top-star" alt="star" /><i>Medaljen visar casinon som har fått fulla poäng av oss i våran casino recension.</i></small>
         </section>) : null}
         <div className={fade ? "fade-in" : "casino-wrap"}>
-          {casinoList.Casino.slice(0, casinoList.size).map((casino, e) =>
+          {casinoList.Casino.slice(0, size).map((casino, e) =>
             < Casinon
               key={casino.id + casino.title}
               casino={casino}
             />
           )}
         </div>
-        {casinoList.size !== casinoList.Casino.length ? (
+        {size <= casinoList.Casino.length ? (
           <div className="morebonus-box">
             <Button
               className="button-recension blink"
@@ -386,9 +403,14 @@ const StartPage = (props) => {
             </Button>
           </div>
         ) : (
-            <p className="no-more-bonuses">
-              Inga fler bonusar att visa just nu
-            </p>
+            <div className="no-more-bonuses">
+              <Button
+                className="show-less-btn"
+                onClick={loadLess}
+              >
+                Finns inte fler casinon att visa - Stäng{" "}
+              </Button>
+            </div>
           )}
         <Bottominfo />
         <p className="update-text">Senast uppdaterad: 2 Januari 2020</p>

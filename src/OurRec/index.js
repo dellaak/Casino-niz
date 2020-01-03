@@ -12,6 +12,7 @@ const StyledWrapper = styled.section`
   }
 `;
 const MonthBox = styled.div`
+border-radius: 10px;
   width:500px;
   height: 300px;
   border: 1px solid black;
@@ -20,7 +21,7 @@ const MonthBox = styled.div`
   background-image: url('/images/top5.png');
   background-size: 100% 100%;
   box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.51);
-border-radius: 0 10px 0 0;
+
   @media (max-width: 450px) {
     width: 300px;
   }
@@ -48,10 +49,10 @@ const StyledH5 = styled.h5`
 
 const StyledOverlay = styled.div`
   border-radius: 0 0 30px 30px;
-  width: 101%;
+  width: 100%;
   position: absolute;
-  bottom: -70px;
-  height: 70px;
+  bottom: 0;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.8) !important;
   color: white;
   padding: 10px;
@@ -60,6 +61,13 @@ const StyledOverlay = styled.div`
   font-weight: bold;
   text-align:left;
   box-shadow: 6px 10px 13px 0px rgba(0,0,0,0.51);
+
+  h2{
+    font-size:18px;
+  }
+
+  p{font-size:12px;
+  padding:0;}
 `;
 
 const StyledPara = styled.p`
@@ -98,7 +106,8 @@ const OurRec = () => {
         to={{ pathname: `/5-bästa-casinon-2020` }}>
         <MonthBox>
           <StyledOverlay>
-            5 Bästa casinon att hålla koll på 2020
+            <h2>Fem bästa casinon att hålla koll på 2020.</h2>
+            <p>Lista på fem casinon som sticker ut lite extra.</p>
           </StyledOverlay>
         </MonthBox>
       </Link>
