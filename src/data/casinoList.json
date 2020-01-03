@@ -3430,7 +3430,7 @@
                 "name": "Erbjuder PrankCasino insättningar med faktura?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nej det gör dem inte. PrankCasino erbjuder insättningar endast via Trustly"
+                    "text": "Nej det gör dem inte. PrankCasino erbjuder endast insättningar via Trustly"
                 }
             },
             "q3": {
