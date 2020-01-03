@@ -196,6 +196,12 @@ const StartPage = (props) => {
 
   }
 
+  const showAll = () => {
+
+    return setSize(casinoList.Casino.length)
+
+  }
+
 
 
   return (<div>
@@ -393,23 +399,26 @@ const StartPage = (props) => {
             />
           )}
         </div>
-        {size <= casinoList.Casino.length ? (
-          <div className="morebonus-box">
+        {size >= casinoList.Casino.length ? (
+          <div className="no-more-bonuses">
             <Button
-              className="button-recension blink"
-              onClick={loadMore}
+              className="show-less-btn"
+              onClick={loadLess}
             >
-              Hämta fler bonusar{" "}
+              Finns inte fler casinon att visa - Stäng{" "}
             </Button>
           </div>
         ) : (
-            <div className="no-more-bonuses">
+
+            <div className="morebonus-box">
               <Button
-                className="show-less-btn"
-                onClick={loadLess}
+                className="button-recension blink"
+                onClick={loadMore}
               >
-                Finns inte fler casinon att visa - Stäng{" "}
+                Hämta fler bonusar{" "}
               </Button>
+
+              <span onClick={showAll}>Visa alla casinon</span>
             </div>
           )}
         <Bottominfo />

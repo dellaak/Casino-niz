@@ -1487,13 +1487,13 @@
             "mylink": "https://affiliatemedia.noaccountcasino.com/redirect.aspx?pid=4468&bid=1586&redirectURL=https://www.noaccountcasino.com/",
             "rules": "https://www.noaccountcasino.com/sv/terms",
             "caslogo": "/images/noaccountlogo.svg",
-            "wager": 1,
+            "wager": 0,
             "setTop": true,
             "sportsbonus": "Se NoAccountBet",
             "sportswager": "x",
             "freespins": 0,
             "activebonus": true,
-            "extratext": "Gäller endast nya insättande kunder som inte tidigare spelat på No Account Casino eller våra andra varumärken",
+            "extratext": "Vinster med bonuspengar blir till kontanter när man spelat för hela bonusbeloppet.",
             "bankid": true,
             "sports": false,
             "publishdate": "2 Januari 2020",
@@ -3123,9 +3123,9 @@
             "mylink": "https://affiliatemedia.noaccountbet.com/redirect.aspx?pid=4468&bid=1589",
             "rules": "https://affiliatemedia.noaccountbet.com/redirect.aspx?pid=4468&bid=1588",
             "caslogo": "/images/noaccountbet.svg",
-            "wager": 1,
-            "sportswager": 1,
-            "extratext": "Minsta insättningen är 200kr för att erhålla bonusen!",
+            "wager": 0,
+            "sportswager": 0,
+            "extratext": "Vinster med bonuspengar blir till kontanter när man spelat för hela bonusbeloppet",
             "bankid": true,
             "sports": true,
             "freespins": 0,
@@ -3181,7 +3181,7 @@
             "caslogo": "/images/igamepnglogo.png",
             "wager": 0,
             "sportswager": "x",
-            "extratext": "För att erhålla bonusen krävs en insätntings på minst 100kr",
+            "extratext": "När insättningen är förbrukad, kommer eventuella vinster uppnådda med bonuspengar finnas tillgängliga för uttag",
             "bankid": true,
             "sports": false,
             "freespins": 0,
@@ -3236,7 +3236,7 @@
             "caslogo": "/images/marialogo.svg",
             "wager": 0,
             "sportswager": "x",
-            "extratext": "För att erhålla bonusen krävs en insätntings på minst 100kr",
+            "extratext": "När insättningen är förbrukad, kommer eventuella vinster uppnådda med bonuspengar finnas tillgängliga för uttag",
             "bankid": true,
             "sports": false,
             "freespins": 0,
@@ -3291,7 +3291,7 @@
             "caslogo": "/images/bingologo.svg",
             "wager": 0,
             "sportswager": "x",
-            "extratext": "För att erhålla bonusen krävs en insätntings på minst 100kr",
+            "extratext": "När insättningen är förbrukad, kommer eventuella vinster uppnådda med bonuspengar finnas tillgängliga för uttag",
             "bankid": true,
             "sports": false,
             "freespins": 0,
@@ -3411,6 +3411,88 @@
                     "swish": true,
                     "livechat": true,
                     "summering": "Storspelare är ett väldigt bra casino för den erfarne spelaren. Casinot har en väldigt snygg layout och erbjuder just nu en väldigt generös insättningsbonus som är omsättningsfri. Har en väldigt bra supportsektion och även livechatt dygnet runt. För svensk support gäller tiderna 08:00 - 24:00. Minsta uttag är 100 SEK och minsta insättningen är 25 SEK. Casinot har en väldigt bra casinosektion med väldigt många spel. Vill man spela på annat än slots så finns det bordsspel, livecasino,kortspel och hexpro poker. Storspelare fick extra poäng för deras pokerjackpottspel hexpro poker som ger dig som spelare en chans på vinster upp till 1000x. Kort sagt ett väldigt bra casino för high rollers! "
+                }
+            ]
+        },
+        {
+            "id": 54,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Storspelare?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Storspelare är 25SEK. För att göra ett uttag är minsta beloppet 100SEK."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "❓Erbjuder Storspelare insättningar med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej det gör dem inte. Storspelare erbjuder insättning via dessa metoder: Visa, Mastercard, Trustly, Skrill, Paysafecard, Neteller, Swish och Bank överföring. "
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "✅Kan vem som helst spela på Storspelare?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Storspelare är en sida för alla som gillar att spela på ett snyggt onlinecasino. Men Storspelare riktar sig först och främst till så kallade 'High rollers' (spelare som gillar att spela stort)."
+                }
+            },
+            "title": "PrankCasino",
+            "slogan": "Enkel registrering",
+            "color": "#296ddb",
+            "textcolor": "#e2e506",
+            "setTop": false,
+            "depositbonus": "Sätt in 200 kr , spela för 400 kr. Vinsterna är omsättningsfria!",
+            "sportsbonus": "ingen sports bonus",
+            "mylink": "  https://www.prankcasino.com/sv?btag=655781_3DC9A875061F492B82D2728492433FEC",
+            "rules": "https://www.prankcasino.com/sv/terms",
+            "caslogo": "/images/prankcasino.svg",
+            "wager": 0,
+            "sportswager": "x",
+            "extratext": "Bonuspengarna måste användas för att spela med men du behåller alla vinster från din bonus",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": true,
+            "bankid": true,
+            "publishdate": "3 Januari 2020",
+            "freefromwager": true,
+            "depositpercent": 100,
+            "faktura": false,
+            "fakturatype": [
+                ""
+            ],
+            "recension": [
+                {
+                    "gamebar": 96,
+                    "experience": 95,
+                    "support": 92,
+                    "egentitel": "Omsättningsfri casino bonus",
+                    "egentitel2": false,
+                    "toprecension": "Prank Casino grundades 2018 av bolaget Mandalorian Technologies Ltd, bolaget ligger bakom det kända casinot NoAccountCasino. Prank casino har väldigt snabba uttag och insättningar. Att spela på Prank casino är väldigt enkelt och du göra insättningar med betaltjänsten Trustly så ett bankID är ett krav. Casinot erbjuder väldigt generösa bonusar och bonusen dem erbjuder just nu är omsättningsfri!. Casinot har svensk spellicens vilket innebär att alla eventuella vinster från PrankCasino är omsättningsfria. Erbjuder livechat mellan 10-22 under vardagarna och 10-18 under helgerna. Resterande tider får man hjälp via email. ",
+                    "secondrec": "Layouten på sidan är väldigt lekfull och har en väldigt enkel navigering. Casinosektionen är väldigt snygg och simpel. Man kan inte filtrera slots men du kan enkelt söka efter din favorit slot. Vill man spela på andra spel än slots så erbjuder Prank Casino även spel på Live Casino och Bordspel. Har ca 15 st spelautomater med jackpots just nu. PrankCasino lägger till nya spela med jämna mellanrum. ",
+                    "sportsrec": "Ingen sport sektion.",
+                    "welcomeoffer": "Sätt in 200 kr , spela för 400 kr. Vinsterna är omsättningsfria!",
+                    "bonusterms": [
+                        "Endast nya spelare"
+                    ],
+                    "casinoterms": [
+                        "Minsta insättning 200kr",
+                        "Bonuspengarna måste användas för att spela med men du behåller alla vinster från din bonus."
+                    ],
+                    "sportsterms": [
+                        "Ingen sports sektion"
+                    ],
+                    "topslotgames": "Över 600+ slots. Slots från kända leverantörer som NetEnt, Yggdrasil Gaming, Play'n GO, Elk Studios, Betsoft, Microgaming och Evolution Gaming och många fler!",
+                    "deposittypes": "Trustly",
+                    "mindeposit": 100,
+                    "minout": 200,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "PrankCasino har en väldigt simpel och snygg layout. Casinot erbjuder endast insättningar via Trustly och då krävs det bankid. Minsta insättningen är 100 kr och minsta uttaget är 200kr. Vill man chatta med supporten så kan man göra det mellan kl 10-22 på vardagar och 10-18 på helgerna,  resterande tid gäller email. Supporten är väldigt trevlig och proffsig. Har ett bredd utbud av slots. PrankCasino erbjuder en väldigt generös bonus vilket vi tycker om. Uttagen och insättningarna går väldigt snabbt.  "
                 }
             ]
         }

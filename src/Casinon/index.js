@@ -36,6 +36,23 @@ const StyledSpan = styled.span`
     }
   `
 
+const StyledCircle = styled.span`
+height:50px;
+width:50px;
+border-radius:50%;
+background-color:#214467;
+position:absolute;
+top:-25px;
+left:-25px;
+margin-bottom:5px;
+color:#fed100;
+text-align: center;
+display: table-cell;
+vertical-align:middle;
+font-size: 30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+`
+
 const StyledCollapse = styled(Collapse)`
 overflow:hidden !important;
 
@@ -69,6 +86,7 @@ const Casinon = (props) => {
 
   const CasinoComp = () => {
     return <div><div className=" casinowrap">{" "}
+
       <Link target="_blank" to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
         <img className="casino-logo"
           alt={props.casino.title}
@@ -151,7 +169,7 @@ const Casinon = (props) => {
             <SnabbFakta className="msg-preview" xs="6" casino={props.casino} />
           </StyledCollapse>
         </div>
-        <p className="freespins-text">{props.casino.freefromwager ? 'Omsättningsfria freespins' : ''}</p>
+        <p className="freespins-text">{props.casino.freefromwager ? 'Omsättningsfri bonus/freespins' : ''}</p>
       </Col>
     </div>
   }

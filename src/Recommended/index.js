@@ -48,11 +48,7 @@ const Recommended =(props)=> {
           });
        
           
-          for (let i of list) {
-            if ( i.setTop === true ){
-                 wagerarr.unshift(i);
-              }
-    }
+     
   
         wagerarr.slice()
     
