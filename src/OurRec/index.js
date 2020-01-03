@@ -103,7 +103,7 @@ const OurRec = () => {
       </Link> */}
 
       <Link
-        to={{ pathname: `/5-bästa-casinon-2020` }}>
+        to={{ pathname: `/5-basta-casinon-2020` }}>
         <MonthBox>
           <StyledOverlay>
             <h2>Fem bästa casinon att hålla koll på 2020.</h2>

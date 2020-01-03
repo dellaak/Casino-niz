@@ -69,7 +69,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     return (<div>
         <Helmet>
             <title>Bästa Casinobonusar 2020 | Casinoniz</title>
-            <link rel="canonical" href="https://www.casinoniz.se/5-bästa-casinon-2020" />
+            <link rel="canonical" href="https://www.casinoniz.se/5-basta-casinon-2020" />
             <meta
                 name="description"
                 content="Vi listar de bästa casinon för 2020. Top 5 casinon som sticker ut 2020 i Januari. Med de bästa casinobonusar och casinon."
