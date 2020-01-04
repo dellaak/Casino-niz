@@ -320,3 +320,12 @@ baseURL = "/"
   to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=33276"
   status = 301
   query = {path = "/Redirect/Storspelare"}
+
+                       [[redirects]]
+  from = "/Redirect/PrankCasino"
+  to = "https://www.prankcasino.com/sv?btag=655781_3DC9A875061F492B82D2728492433FEC"
+  status = 301
+  query = {path = "/Redirect/PrankCasino"}
+
+
+
