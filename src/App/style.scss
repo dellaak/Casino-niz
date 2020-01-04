@@ -1,15 +1,10 @@
 .myMain {
-  height: 500px;
+  height: 600px;
   background: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
-  transform: translatez(0);
-  -webkit-transform: translatez(0);
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 main {

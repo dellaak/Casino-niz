@@ -38,51 +38,48 @@ let esport = props.casino.esportinfo[0]
                 <p className="wagerinfo">{casinoInfo.sportswager}x</p>
               </b>
             </div>
+            <Link target="_blank"
+              rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casinoInfo.title}`, match: `${casinoInfo.title}` }}>
+               <Button className="to-botton">Hämta bonus</Button>
+            </Link>
           </div>
 
           <div />
 
-          <div className="buttonbox">
-          <Link target="_blank"
-              rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casinoInfo.title}`, match: `${casinoInfo.title}` }}>
-               <Button className="to-botton">Hämta bonus</Button>
-            </Link>
+         
+       
 
-            {casinoInfo.bankid === true ? (
-              <p className="bankid-text" >
-                <span className="checkmark">✓</span> Bankidentifiering
-              </p>
-            ) : (
-              ""
-            )}
-          </div>
+         
+  
         </div>
         <div>
           <p className="spel">
             <span className="checkmark">✓</span> {esport.spel}
           </p>
         </div>
-        {casinoInfo.extratext ? (
-          <div className="extra-text">
-            <span>{casinoInfo.extratext}</span>
-          </div>
-        ) : (
-          ""
-        )}
+        {props.casino.casinospecialterms ? <div className="extra-text"><span>{props.casino.casinospecialterms}</span></div> : ''}
 
-        <div className="spela-lagom">
-          <span>
-            18+ &#8226; Spela Ansvarfullt &#8226;{" "}
-            <a
-              target="_blank noopener noreferrer nofollow"
-              href={casinoInfo.rules}
-            >
-              Regler & villkor gäller
-            </a>{" "}
-            &#8226; <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>
-            &#8226;{" "}
-          </span>
-        </div>
+
+
+
+<div className="spela-lagom">
+
+  18+ | Spela Ansvarfullt | <a href="https://www.stodlinjen.se/#!/">Stödlinjen.se</a> |
+  <a
+    target="_blank noopener noreferrer nofollow"
+    href={props.casino.rules}
+  >
+    Regler & villkor gäller </a>{" "}
+  |
+  {props.casino.bankid === true ? (
+    <span className="bankid-text">
+      Bankidentifiering
+</span>
+  ) : (
+      ""
+    )}
+
+</div>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Col, Collapse } from "reactstrap";
+import { Button, Collapse } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
 import "./style.scss";
 import styled from "styled-components"
@@ -14,13 +14,14 @@ display:flex;
 align-items:center;
 color:#000;
 font-size:18px;
-font-family: 'Manjari', sans-serif;
+font-family: "Roboto", sans-serif;
 line-height:4;
 text-transform: uppercase;
   letter-spacing: 0.1em;
   font-style:normal;
   padding-top: 0.1em;
-  text-shadow: 0.07em 0.07em 0 #0c5ba95c;
+  text-shadow: 0.07em 0.07em 0 #000;
+  
 `
 const StyledSpan = styled.span`
     display: inline-block;
@@ -36,22 +37,7 @@ const StyledSpan = styled.span`
     }
   `
 
-const StyledCircle = styled.span`
-height:50px;
-width:50px;
-border-radius:50%;
-background-color:#214467;
-position:absolute;
-top:-25px;
-left:-25px;
-margin-bottom:5px;
-color:#fed100;
-text-align: center;
-display: table-cell;
-vertical-align:middle;
-font-size: 30px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-`
+
 
 const StyledCollapse = styled(Collapse)`
 overflow:hidden !important;
@@ -79,106 +65,91 @@ const Casinon = (props) => {
   }, []);
 
 
+
   const qToggle = () => {
     setSnabbFakta(!snabbFakta)
-  }
-
-
-  const CasinoComp = () => {
-    return <div><div className=" casinowrap">{" "}
-
-      <Link target="_blank" to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
-        <img className="casino-logo"
-          alt={props.casino.title}
-          src={props.casino.caslogo}
-        />
-
-      </Link>
-      <div className="info-wrap">
-        <StyledNavlink
-          to={{ pathname: `/Recension/${props.casino.title}`, match: `${props.casino.title}` }} >
-          Recension
-       {showStar ? (<img src={star} className="top-star" alt="star" />) : ''}
-        </StyledNavlink>
-
-        <div className="depositbonus">
-          <h3 className="divtitleone">CASINO BONUS SOM ERBJUDS JUST NU</h3>
-          <p className="deposittext"> {props.casino.depositbonus}</p>
-        </div>
-
-        <div className="wager">
-          <p className="divtitle" >OMSÄTTNINGSKRAV</p>
-          <b>
-            <p className="wagerinfo"> {props.casino.wager}x</p>
-          </b>
-        </div>
-      </div>
-      <div />
-
-      <div className="buttonbox">
-
-
-
-        <Link target="_blank"
-          rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
-          <Button className="to-botton">Hämta bonus</Button>
-        </Link>
-
-
-        {props.casino.bankid === true ? (
-          <p className="bankid-text">
-            <span className="checkmark">✓</span> Bankidentifiering
-            </p>
-        ) : (
-            ""
-          )}
-      </div>
-    </div>
-
-      {
-        props.casino.extratext ? (
-          <div className="extra-text">
-
-            <span>{props.casino.extratext}</span>
-          </div>
-        ) : (
-            ""
-          )
-      }
-
-      <div className="spela-lagom">
-        <span>
-          18+ &#8226; Spela Ansvarfullt &#8226;{" "}
-          <a
-            target="_blank noopener noreferrer nofollow"
-            href={props.casino.rules}
-          >
-            Regler & villkor gäller
-          </a>{" "}
-          &#8226; <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>
-          &#8226;{" "}
-        </span>
-      </div>
-
-      <Col className="single-q-preview" >
-        <div className="holder-preview">
-          <Button onClick={qToggle} xs="6" className="question-head-preview col-sm" ><span className="q1logo" role="img" aria-hidden="true" ></span> <span >Snabbfakta om {props.casino.title}</span> <StyledSpan rotate={snabbFakta ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
-
-          <StyledCollapse isOpen={snabbFakta} >
-
-            <SnabbFakta className="msg-preview" xs="6" casino={props.casino} />
-          </StyledCollapse>
-        </div>
-        <p className="freespins-text">{props.casino.freefromwager ? 'Omsättningsfri bonus/freespins' : ''}</p>
-      </Col>
-    </div>
   }
 
   return (
 
     <div
       className="full-box" >
-      <CasinoComp />
+      <div className=" casinowrap">{" "}
+
+        <Link target="_blank" to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
+          <img className="casino-logo"
+            alt={props.casino.title}
+            src={props.casino.caslogo}
+          />
+
+        </Link>
+
+        <div className="info-wrap">
+          <StyledNavlink
+            to={{ pathname: `/Recension/${props.casino.title}`, match: `${props.casino.title}` }} >
+            Recension
+{showStar ? (<img src={star} className="top-star" alt="star" />) : ''}
+          </StyledNavlink>
+
+          <div className="depositbonus">
+            <h3 className="divtitleone">CASINO BONUS SOM ERBJUDS JUST NU</h3>
+            <p className="deposittext"> {props.casino.depositbonus}</p>
+          </div>
+
+          <div className="wager">
+            <p className="divtitle" >OMSÄTTNINGSKRAV</p>
+            <b>
+              <p className="wagerinfo"> {props.casino.wager}x</p>
+            </b>
+          </div>
+          <Link target="_blank"
+            rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
+            <Button className="to-botton">Hämta bonus</Button>
+          </Link>
+
+        </div>
+        <div />
+
+
+      </div>
+
+
+
+      {props.casino.casinospecialterms ? <div className="extra-text"><span>{props.casino.casinospecialterms}</span></div> : ''}
+
+
+
+
+      <div className="spela-lagom">
+
+        18+ | Spela Ansvarfullt | <a href="https://www.stodlinjen.se/#!/">Stödlinjen.se</a> |
+        <a
+          target="_blank noopener noreferrer nofollow"
+          href={props.casino.rules}
+        >
+          Regler & villkor gäller </a>{" "}
+        |
+        {props.casino.bankid === true ? (
+          <span className="bankid-text">
+            Bankidentifiering
+    </span>
+        ) : (
+            ""
+          )}
+
+      </div>
+
+
+
+      <Button onClick={qToggle} xs="6" className="question-head-preview col-sm" ><span >Snabbfakta om {props.casino.title}</span> <StyledSpan rotate={snabbFakta ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+      <StyledCollapse isOpen={snabbFakta} >
+
+        <SnabbFakta className="msg-preview" xs="6" casino={props.casino} />
+      </StyledCollapse>
+
+      <p className="freespins-text">{props.casino.freefromwager ? 'Omsättningsfri bonus/freespins' : ''}</p>
+
     </div >
 
   );

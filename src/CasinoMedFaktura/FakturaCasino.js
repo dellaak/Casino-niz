@@ -9,13 +9,13 @@ display:flex;
 align-items:center;
 color:#000;
 font-size:18px;
-font-family: 'Manjari', sans-serif;
+font-family: 'Roboto', sans-serif;
 line-height:4;
 text-transform: uppercase;
   letter-spacing: 0.1em;
   font-style:normal;
   padding-top: 0.1em;
-  text-shadow: 0.07em 0.07em 0 #0c5ba95c;
+  text-shadow: 0.07em 0.07em 0 #000;
 `
 
 
@@ -57,54 +57,46 @@ const FakturaCasino =(props)=> {
                 <p className="wagerinfo"> {props.casino.wager}x</p>
               </b>
             </div>
-          </div>
-          <div />
-
-          <div className="buttonbox">
-           
-         
-
-          <Link target="_blank"
+            <Link target="_blank"
               rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
                <Button className="to-botton">Hämta bonus</Button>
               </Link>
            
-            
-            {props.casino.bankid === true ? (
-              <p className="bankid-text" >
-                <span className="checkmark">✓</span> Bankidentifiering
-              </p>
-            ) : (
-              ""
-            )}
           </div>
+          <div />
+
+         
+         
+
+            
+           
+        
         </div>
         <div className="spel-box">
           <p className="spel">
             <span className="checkmark">✓</span> {props.casino.fakturatype.join(' - ')}
           </p>
         </div>
-        {props.casino.extratext ? (
-          <div className="extra-text">
-            <span>{props.casino.extratext}</span>
-          </div>
-        ) : (
-          ""
-        )}
+        {props.casino.casinospecialterms ? <div className="extra-text"><span>{props.casino.casinospecialterms}</span></div> : ''}
 
         <div className="spela-lagom">
-          <span>
-            18+ &#8226; Spela Ansvarfullt &#8226;{" "}
-            <a
-              target="_blank noopener noreferrer nofollow"
-              href={props.casino.rules}
-            >
-              Regler & villkor gäller
-            </a>{" "}
-            &#8226; <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>
-            &#8226;{" "}
-          </span>
-        </div>
+
+18+ | Spela Ansvarfullt | <a href="https://www.stodlinjen.se/#!/">Stödlinjen.se</a> |
+<a
+  target="_blank noopener noreferrer nofollow"
+  href={props.casino.rules}
+>
+  Regler & villkor gäller </a>{" "}
+|
+{props.casino.bankid === true ? (
+  <span className="bankid-text">
+    Bankidentifiering
+</span>
+) : (
+    ""
+  )}
+
+</div>
       </div>
 
     );

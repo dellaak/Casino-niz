@@ -203,7 +203,6 @@ const StartPage = (props) => {
   }
 
 
-
   return (<div>
     <div className="start-wrap">
       <Helmet>
@@ -396,6 +395,7 @@ const StartPage = (props) => {
             < Casinon
               key={casino.id + casino.title}
               casino={casino}
+              reset={resetList}
             />
           )}
         </div>

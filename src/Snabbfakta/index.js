@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import { Card } from "reactstrap"
 import "./style.scss"
 
 
@@ -10,7 +11,7 @@ const Snabbfakta = (props) => {
     }
 
     let recension = props.casino.recension[0]
-    return (<React.Fragment>
+    return (<Card>
         <h4 className="snabb-title-preview">
             Snabbfakta om {props.casino.title}
         </h4>
@@ -23,9 +24,9 @@ const Snabbfakta = (props) => {
 
         </Link> </p>) : <p>Sportsbetting:  {props.casino.sports ? "✅" : "❌"}</p>}
 
-                <p>Freespins: {props.casino.freespins > 1 ? `${props.casino.freespins}` : "❌"}</p>
+                <p>Freespins: {props.casino.freespins > 1 ? <b>{props.casino.freespins} </b> : "❌"}</p>
 
-                <p>Bonusprocent: {props.casino.depositpercent}%</p>
+                <p>Bonusprocent: <b>{props.casino.depositpercent}%</b></p>
 
                 <p>Omsättningsfria spins:{" "}{props.casino.freefromwager ? "✅" : "❌"}
                 </p>
@@ -33,8 +34,8 @@ const Snabbfakta = (props) => {
 
             <div className="Snabbfakta-preview">
                 <p>Spel med Faktura: {props.casino.faktura ? "✅" : "❌"}</p>
-                <p>Minsta insättning: {recension.mindeposit} SEK</p>
-                <p> Minsta uttag: {recension.minout} SEK</p>
+                <p>Minsta insättning: <b>{recension.mindeposit} SEK</b></p>
+                <p> Minsta uttag: <b>{recension.minout} SEK</b></p>
                 <p> Bankid: {props.casino.bankid ? "✅" : "❌"}</p>
 
             </div>
@@ -56,7 +57,7 @@ const Snabbfakta = (props) => {
 
         </Link>
 
-    </React.Fragment>)
+    </Card>)
 
 }
 

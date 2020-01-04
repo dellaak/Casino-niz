@@ -27,25 +27,7 @@ border-radius: 10px;
   }
 `;
 
-const StyledH5 = styled.h5`
-  background-color: #fed100;
-  width: 60%;
-  text-align: center;
-  padding: 5px;
-  color: black;
-  font-family: "Manjari", sans-serif;
-  position: absolute;
-  top: -26px;
-  left: -1px;
-  border-radius: 5%;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-style:normal;
-  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
-  @media (max-width: 450px) {
-    width: 80%;
-  }
-`;
+
 
 const StyledOverlay = styled.div`
   border-radius: 0 0 30px 30px;
@@ -70,37 +52,11 @@ const StyledOverlay = styled.div`
   padding:0;}
 `;
 
-const StyledPara = styled.p`
-  font-size: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: white;
-`;
 
-// const MonthNew = styled.div`
-//   width: 400px;;
-//   height: 150px;
-//   border: 1px solid black;
-//   position: relative;
-//   background-image: url(${monthnewimg});
-//   background-size: cover;
-//   box-shadow: 6px 10px 13px 0px rgba(0,0,0,0.51);
-//   `
 
 const OurRec = () => {
   return (
     <StyledWrapper>
-      {/* <Link target="_blank"
-              rel="noopener noreferrer nofollow " to={{pathname: "/Redirect", search: `${'Frankfred'}` }} >
-    <MonthNew>
-        <StyledH5>Månadens nykomling</StyledH5>
-        <StyledPara>18+ | Regler&Villkor Gäller</StyledPara>
-        <StyledOverlay>
-        Tre olika välkomstbonusar på din första insättning. Välj mellan 25%, 50% och 100%
-        </StyledOverlay>
-      </MonthNew>
-      </Link> */}
 
       <Link
         to={{ pathname: `/5-basta-casinon-2020` }}>
