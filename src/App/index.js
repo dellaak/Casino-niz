@@ -27,7 +27,7 @@ const App = () => {
 
             <div className="App">
                 <TopButton />
-                <NavBarApp />
+                {window.location.pathname.includes('/Redirect') ? '' : <NavBarApp />}
                 <div className="myMain">
 
 

@@ -42,7 +42,7 @@ const RedirectComp = (props) => {
                 let casino_link = `/Go/${url}`;
 
 
-                window.location.assign(casino_link)
+                // window.location.assign(casino_link)
 
             }, 2000);
 
@@ -50,7 +50,7 @@ const RedirectComp = (props) => {
         changeState()
         setStuff({ link: obj.link, color: obj.color })
         redirect()
-
+        url = url.toLowerCase()
 
     }, [url]);
 
@@ -74,7 +74,7 @@ const RedirectComp = (props) => {
 
                 <img className="redlogo" src={caslogo} alt="casinologo"></img> <h2>Tack för ditt besök!</h2>
                 <p >Vi skickar dig vidare till <i><b className="dirname">{final}</b> </i></p>
-                <p><a className="dirlink" href={myStuff.link}>Klicka här</a> ifall det tar för lång tid.</p>
+                <p><a className="dirlink" href={`/Go/${url}`}>Klicka här</a> ifall det tar för lång tid.</p>
                 <div className="box-img-dir">
                     <div className="lds-facebook"><div></div><div></div><div></div></div> </div>
                 <p className="goback-text">För att komma tillbaka till Casinoniz <Link className="dirlink2" to="/" > Klicka här</Link></p>

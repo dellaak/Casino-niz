@@ -2,10 +2,10 @@ baseURL = "/"
 
 
 [[redirects]]
-  from = "/Redirect/Unibet"
+  from = "/Go/unibet"
   to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34474"
   status = 301
-  query = {path = "/Redirect/Unibet"}
+  query = {path = "/Go/unibet"}
 
 
   [[redirects]]
