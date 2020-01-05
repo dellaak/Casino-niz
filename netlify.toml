@@ -179,6 +179,12 @@ baseURL = "/"
   query = {path = "/Go/snabbis"}
 
            [[redirects]]
+  from = "/Go/bingocom"
+  to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34158"
+  status = 301
+  query = {path = "/Go/bingocom"}
+
+           [[redirects]]
   from = "/Go/pixelbet"
   to = "https://ads.pixel.bet/redirect.aspx?pid=3216&bid=1639"
   status = 301
