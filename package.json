@@ -110,7 +110,7 @@
       "/Recension/Storspelare"
     ],
     "exclude": [
-      "/redirect/**"
+      "/Go/**"
     ],
     "snapshotDelay": 300
   }
