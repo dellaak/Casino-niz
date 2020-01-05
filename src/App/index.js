@@ -22,12 +22,13 @@ const App = () => {
     let w = window.innerWidth
     let d = 2200
 
+    console.log(window.location.pathname)
     return (
         <Router>
 
             <div className="App">
                 <TopButton />
-                {window.location.pathname.includes('/Redirect') ? '' : <NavBarApp />}
+                {window.location.pathname.includes('/redirect') ? '' : <NavBarApp />}
                 <div className="myMain">
 
 
