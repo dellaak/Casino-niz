@@ -37,9 +37,14 @@ const RedirectComp = (props) => {
         const redirect = () => {
 
             setTimeout(() => {
-                window.location.replace(obj.link)
 
-            }, 4000);
+
+                let casino_link = `/Go/${url}`;
+
+
+                window.location.assign(casino_link)
+
+            }, 2000);
 
         }
         changeState()

@@ -9,13 +9,13 @@ baseURL = "/"
 
 
   [[redirects]]
-  from = "/Redirect/MrGreen"
+  from = "/Go/MrGreen"
   to = "https://ads.mrgreen.com/redirect.aspx?pid=4432076"
   status = 301
-  query = {path = "/Redirect/MrGreen"}
+  query = {path = "/Go/MrGreen"}
 
     [[redirects]]
-  from = "/Redirect/MrGreen"
+  from = "/Redirect/ComeOn"
   to = "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1753&sid=354226&pid=457"
   status = 301
   query = {path = "/Redirect/ComeOn"}
@@ -24,7 +24,7 @@ baseURL = "/"
   from = "/Redirect/NordicBet"
   to = "https://record.nordicbet.com/_zwvwrZh854rIUsd2cv5SdWNd7ZgqdRLk/1/"
   status = 301
-  query = {path = "/Redirect/ComeOn"}
+  query = {path = "/Redirect/NordicBet"}
 
 
        [[redirects]]
