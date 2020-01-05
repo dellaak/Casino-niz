@@ -107,7 +107,8 @@
       "/Recension/iGame",
       "/Recension/MariaCasino",
       "/Recension/Bingo.com",
-      "/Recension/Storspelare"
+      "/Recension/Storspelare",
+      "/Redirect/MrGreen"
     ],
     "exclude": [
       "/Go/**"
