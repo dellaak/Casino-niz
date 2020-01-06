@@ -31,24 +31,24 @@
             "color": "#373942",
             "textcolor": "#8eb50c",
             "slogan": "Casinobonus Comeon - välkomstbonus ",
-            "depositbonus": "Sätt in 100 kr - Få 100 Spins och var med och dela på 100 000 kr",
-            "sportsbonus": "Sätt in 100 kr - Få 100 Spins och var med och dela på 100 000 kr",
+            "depositbonus": "Sätt in 500 kr - Få 1500 kr att spela för",
+            "sportsbonus": "Sätt in 500 kr - Få 1500 kr att spela för",
             "mylink": "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1753&sid=354226&pid=457",
             "rules": "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1764&sid=354226&pid=469",
             "caslogo": "/images/comeonlogo.svg",
-            "extratext": "Välkomsterbjudandet är giltigt 12:00 26 december – 23:59 5 januari",
-            "wager": 0,
+            "extratext": "Detta erbjudande är giltigt för kunder som inte har placerat ett spel sedan 01/01/2019",
+            "wager": 35,
             "setTop": false,
-            "sportswager": 0,
-            "freespins": 100,
+            "sportswager": 8,
+            "freespins": 0,
             "activebonus": true,
             "bankid": true,
             "sports": true,
-            "freefromwager": true,
-            "depositpercentsports": 0,
-            "depositpercent": 0,
+            "freefromwager": false,
+            "depositpercentsports": 200,
+            "depositpercent": 200,
             "faktura": true,
-            "publishdate": "23 december 2019",
+            "publishdate": "7 Januari 2020",
             "fakturatype": [
                 "Siru",
                 "Zimpler",
@@ -64,15 +64,17 @@
                     "toprecension": "Casinot med ett av marknadernas unikaste välkomsterbjudanden. Comeon har funnit sedan 2010 och har snart 10 års jubileum. Casinot har en väldigt bra layout som är enkel att navigera runt i. ComeOn erbjuder de flesta insättningsmetoderna samt även insättning med faktura. Uttagen går väldigt snabbt beroende på uttagsmetod. ComeOn's välkomstbonusar brukar sticka ut bland de andra casinon, då de brukar erbjudera olika kombos. t.ex. en välomstbonus kan innehålla en insättningsbonus, freespins och biobiljett. Casinot är säkert och de har även en livechatt.",
                     "secondrec": "Utbudet av casinoslots är väldigt bra. Har de flesta leverantörer och har även casinoslots med enorma jackpotar. Har de flesta klassiska slots som Mega Fortune Dreams, Dead or Alive, Gonzos Quest och massor fler! Layouten på casinosidan är väldigt klassisk och simpel. Erbjuder även flera slots med jackpot. Har ingen direkt filter funktion men man kan söka efter specifika slots. Utöver videoslots så erbjuder de även live casino,odds och live odds",
                     "sportsrec": "Vi kan börja med att säga att ComeOn erbjuder esportsbetting *Applåder och busvislingar*. ComeOn erbjuder esportsbetting på bland annat CS:GO och Starcraft 2. Utöver esportbetting så har de en väldigt bra sport sektion. Här finns flera av de kända ligorna inom flera sporter. Har både vanliga odds och live odds.",
-                    "welcomeoffer": "Sätt in 100 kr - Få 100 Spins och var med och dela på 100 000 kr",
+                    "welcomeoffer": "Sätt in 500 kr - Få 1500 kr att spela för",
                     "bonusterms": [
                         " Insättningar gjorda med Moneybookers, Neteller, PaySafe samt Webmoney är exkluderade från aktivering av denna bonus"
                     ],
                     "casinoterms": [
-                        "För att kvalificera dig, gör en insättning på 100 kr eller mer och få 100 Spins på Book of Dead samt var med och dela på 100 000 omsättningsfria kr "
+                        "Du måste satsa 35x (din insats + bonusbelopp) för att fullfölja kraven för denna bonus."
                     ],
                     "sportsterms": [
-                        ""
+                        "Insatsbelopp: 8x (din insats + bonusbelopp)",
+                        "Minimum odds för varje insats: 2.0",
+                        "Minimum antal val med dessa odds: 2"
                     ],
                     "topslotgames": [
                         "Netent, Microgaming, Play N Go, Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX, Thunderkick, Evolution, Nextgen, ELK "
@@ -1713,7 +1715,7 @@
             "textcolor": "#6bcb88",
             "setTop": false,
             "slogan": "Svenskt casino med snabba uttag",
-            "depositbonus": "Insättningsbonus på 100% upp till 1000 kr!",
+            "depositbonus": "Insättningsbonus på 200% upp till 2000 kr!",
             "sportsbonus": "Ingen bonus just nu!",
             "mylink": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=1968&sid=354226&pid=640",
             "rules": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=2758&sid=354226&pid=841",
@@ -1721,13 +1723,13 @@
             "wager": 20,
             "sportswager": 0,
             "freespins": 0,
-            "publishdate": "2 Januari 2020",
+            "publishdate": "7 Januari 2020",
             "activebonus": true,
-            "extratext": "Erbjudandet är giltigt under perioden 2019-12-24 00:01 fram tills 2020-01-06 23:59",
+            "extratext": "Maximalt bonusbelopp per kund är 2000 kr",
             "bankid": true,
             "sports": true,
             "freefromwager": false,
-            "depositpercent": 100,
+            "depositpercent": 200,
             "depositpercentsports": 0,
             "faktura": false,
             "fakturatype": [],
@@ -1741,12 +1743,15 @@
                     "toprecension": "Hajper lanserades 2018 och fokuserar på svenska marknaden. Hajper erbjuder dig som spelare en Pay n Play lösning som innebär att du enkelt kan registrera dig eller logga in med bankid. Hajper är ett bra onlinecasino med väldigt snabba insättningar och uttag. Casinot erbjuder flera sorters spel som livecasino, bordsspel, odds, esportbetting och videoautomater. Med en simpel och klassisk layout så får du en grym spelupplevelse. Erbjuder två stycken insättningsmetoder som Trustly och swish. För att spela på Hajper så måste du ha tillgång till bankid. Erbjuder bra bonus med bra villkor. ",
                     "secondrec": "Casinosektion har ett stort utbud med slots. Erbjuder flera favoriter som Reel Rush, Hall of Gods, Mega Fortune Dreams, Immortal Romance, Book of Dead, Bonanza och många fler! Du kan inte filtrera slots men du kan söka efter ditt favoritspel. Hajper har tre slots med väldigt höga jackpots just nu där högsta jackpotten ligger på över 21 MILJONER kronor. Spelet heter Mega Fortune och är en klassiker på marknaden. Utöver filterfunktionen som vi på Casinoniz saknar så är casinosektionen väldigt stilren och bra. Det som vi tycker är riktigt bra hos Hajper är någon som de kallar för Hajpermiljonen. Vad är Hajpermiljonen ? Jo, det är jackpots som Hajper erbjuder på utvalda slots. Så om du klickar in dig på fliken Hajpermiljonen så hittar du alla slots som Hajper erbjuder jackpots på!",
                     "sportsrec": "Hajper har en väldigt bra sportsektion. Med höga odds och ett väldigt stort utbud av sporter. Oavsett om det är fotboll,tennis, hockey eller någon annan sport så har dem det. Hajper erbjuder även esport betting vilket vi på Casinoniz tycker är RIKTIGT grymt!. De erbjuder esport betting på spel som CSGO, Dota2, Warcraft 3, Starcraft och fler spel. Det som Hajper är bra på är spelupplevelsen på spelsektionen. Du kan enkelt lägga ett spel, starta en livestream och njuta av matchen. Med flera tusen direktsända sporter. Detta tycker vi är najs! ",
-                    "welcomeoffer": "Insättningsbonus på 100% upp till 1000 kr!",
+                    "welcomeoffer": "Insättningsbonus på 200% upp till 2000 kr!",
                     "bonusterms": [
-                        "Din bonus kommer in på ditt spelkonto direkt efter du accepterat bonusen. Det gör du i samband med bekräftelsen efter att du gjort din första insättning."
+                        "Erbjudandet är giltigt under perioden 2020-01-07 00:01 fram tills 2020-03-31 23:59",
+                        "Gäller alla kunder vid första speltillfälle 2020.",
+                        "Bonusen gäller i Casino, Live Casino och Hajpermiljonen"
                     ],
                     "casinoterms": [
-                        "Insättning + bonus måste omsättas 20 gånger på casinospel. Exempel: Sätt in 1000 kr och få 2000 kr att spela för i casinot ger 40 000 kr i omsättningskrav."
+                        "Omsättningskravet måste uppfyllas inom 60 dagar efter att bonusen aktiverats. Eventuella bonuspengar som inte har omsatts efter 60 dagar förverkas.",
+                        "Genom att aktivera din välkomstbonus tilldelas du även 10 gratisspel på spelet Hugo 2 som finns tillgängliga fram till 2020-03-31 23:59. Det är inga omsättningskrav på eventuella vinster från gratisspel"
                     ],
                     "sportsterms": [
                         ""
@@ -3279,7 +3284,7 @@
         },
         {
             "id": 52,
-            "title": "Bingo.com",
+            "title": "Bingocom",
             "color": "#fff",
             "textcolor": "#e73c41",
             "setTop": false,
@@ -3448,7 +3453,7 @@
             "setTop": false,
             "depositbonus": "Sätt in 200 kr, spela för 400 kr. Vinsterna är omsättningsfria!",
             "sportsbonus": "ingen sports bonus",
-            "mylink": "  https://www.prankcasino.com/sv?btag=655781_3DC9A875061F492B82D2728492433FEC",
+            "mylink": "https://www.prankcasino.com/sv?btag=655781_3DC9A875061F492B82D2728492433FEC",
             "rules": "https://www.prankcasino.com/sv/terms",
             "caslogo": "/images/prankcasino.svg",
             "wager": 0,
