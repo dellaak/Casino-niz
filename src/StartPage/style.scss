@@ -24,7 +24,7 @@
 
 .wrapit {
   background-color: rgba($color: #ffffff, $alpha: 0.5);
-  width: 1200px !important;
+  max-width: 1200px !important;
 }
 
 .medalj-box {
@@ -136,7 +136,7 @@
   text-align: left;
   line-height: 1.5;
   width: 770px;
-  font-family: "Manjari", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .small-text-new {

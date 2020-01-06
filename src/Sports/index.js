@@ -5,6 +5,7 @@ import sweflag from "../images/sweflag.png";
 import SportCasino from "./SportCasino"
 import BottomInfoSports from "../AllBottomInfo/BottomInfoSports/index"
 import { Helmet } from "react-helmet";
+import "./style.scss"
 
 
 const Sports = (props) => {
@@ -225,8 +226,8 @@ const Sports = (props) => {
                 Odds och sportsbetting
             </h1>
 
-            <div className="welcome-text-esport">
-                <h3>Sports betting - Här listar vi bolag med Live odds, Odds bonus och spel på sport  </h3>
+            <div className="welcome-text-sports">
+                <h3 className="second-welcome-title">Sports betting - Här listar vi bolag med Live odds, Odds bonus och spel på sport  </h3>
                 <p>
                     Odds och livebetting - Vill man spela på odds eller livebetting så kan man det också.
                     Vi lisar endast licenserade bettingsidor som erbjuder odds, livebetting, sportbetting och esport betting. För att göra det så enkelt som möjligt för dig att hitta ditt

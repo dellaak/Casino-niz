@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components"
-import { Container } from "reactstrap"
+import { Container, Alert } from "reactstrap"
 import { NavLink } from "react-router-dom";
 import Casinon from "../../Casinon/index"
 import { Helmet } from "react-helmet";
+import sweflag from "../../images/sweflag.png"
 import "./style.scss"
 
 const Top5 = (props) => {
 
     const [topArr] = useState(['casumo', 'snabbis', 'leovegas', 'storspelare', 'noaccountcasino'])
     const [topCasinon, setTopList] = useState([])
+    const [visible, setVisible] = useState(true)
 
     useEffect(() => {
         let list = [...props.list.Casinon]
@@ -31,6 +33,10 @@ const Top5 = (props) => {
         return setTopList(top)
 
     }, [])
+
+    const onDismiss = () => {
+        setVisible(false)
+    }
 
 
     const StyledDiv = styled.div`
@@ -83,7 +89,20 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         <Container>
             <div className="wrap-top5">
+                <Alert
+                    color="success"
+                    isOpen={visible}
+                    toggle={onDismiss}
+                >
+                    <div className="swe-license">
+                        <p className="swe-lic-text">
+                            Vi listar endast casinon med svensk spellicens!
+            </p>
+                        <img alt="swe-flag" className="swe-flag" src={sweflag} />
+                    </div>
+                </Alert>
                 <h1 className="banners">Fem bästa casinon 2020 </h1>
+                <small> Publicerad: 3 Januari 2020</small>
                 <p>Nu är vi inne på ett nytt år och med det kommer det flera saker. Vi på Casinoniz önskar er en riktigt god fortsättning och därför har vi listat de fem bästa casinon för januari 2020.</p>
                 <p>Casinon vi listar här är några casinon som vi tycker sticker ut lite extra. Det vi har tänkt på när vi valde ut fem casinon är layouten, spelutbudet på slots, supporten och även bonusen. Kom ihåg att spela lugnt och att spel ska vara kul. Spela aldrig för mer än du har råd med!</p>
                 <StyledDiv>
@@ -156,6 +175,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 </StyledDiv>
 
             </div>
+
         </Container>
     </div>)
 }

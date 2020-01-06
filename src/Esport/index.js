@@ -330,7 +330,7 @@ const Esport = (props) => {
             </h1>
 
             <div className="welcome-box-esport">
-
+                <h3 className="second-welcome-title"> Esport Betting - Här listar vi endast casinon som har esport betting t.ex. CSGO Betting</h3>
                 <div className="welcome-text-esport">
                     <p>
                         Senaste inom esport betting. CSGO, Dota2, League of Legends(LoL) och fler esport spel. Vi listar de bästa betting sidorna för esport betting. Vi på Casinoniz älskar E-sport.

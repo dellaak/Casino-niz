@@ -303,7 +303,7 @@ const CasinoMedFaktura = (props) => {
                         <h1 className="banners">Casino faktura</h1>
 
                         <div className="welcome-text-faktura">
-                            <h3>Här listar vi endast casinon som erbjuder insättning med faktura</h3>
+                            <h3 className="second-welcome-title">Casino med faktura - Här listar vi endast casinon som erbjuder insättning med faktura</h3>
                             <p>
                                 Att spela casino på faktura är ganska självklart år 2020. Vi handlar
                                 allt mer på faktura så varför inte spela på faktura också.

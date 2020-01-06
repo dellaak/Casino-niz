@@ -30,12 +30,12 @@
 .filter-buttons {
   min-width: 120px;
   min-height: 50px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-style: normal;
   padding: 0.5em;
   text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
-  font-size: 14px !important;
+  font-size: 12px !important;
   height: auto;
   background-color: rgba(8, 91, 169, 1) !important;
   -moz-border-radius: 5px;
@@ -45,7 +45,7 @@
   display: inline-block;
   cursor: pointer;
   color: white;
-  font-family: "Manjari", sans-serif;
+  font-family: "Robot", sans-serif;
   text-decoration: none;
 
   cursor: pointer !important;
