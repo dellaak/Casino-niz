@@ -16,7 +16,7 @@ text-transform: uppercase;
   letter-spacing: 0.1em;
   font-style:normal;
   padding-top: 0.1em;
-  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.2);
 `
 
 const ButtonRecBox = styled.div`

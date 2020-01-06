@@ -4,13 +4,13 @@ import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components"
 import star from "../images/fullstar.svg"
 
-export const StyledNavlink = styled(NavLink)`
+const StyledNavlink = styled(NavLink)`
 color:white;
 display:flex;
 align-items:center;
 color:#000;
 font-size:18px;
-font-family: 'Manjari', sans-serif;
+font-family: 'Roboto', sans-serif;
 line-height:4;
 text-transform: uppercase;
   letter-spacing: 0.1em;

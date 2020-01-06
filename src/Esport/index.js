@@ -22,13 +22,26 @@ const Esport = (props) => {
     const getEsportCasino = () => {
         let list = [...props.list.Casinon]
         let esportCasinos = []
+        let top;
         list.forEach((cas) => {
             if (cas.esportinfo) {
                 esportCasinos.push(cas)
             }
-
         });
 
+        top = esportCasinos.filter(function (i) {
+            if (i.recension && i.esportinfo) {
+                return (
+                    i.recension[0].gamebar === 100 &&
+                    i.recension[0].experience === 100 &&
+                    i.recension[0].support === 100
+                );
+            }
+            return top;
+        });
+
+        esportCasinos = esportCasinos.filter(item => !top.includes(item));
+        esportCasinos = top.concat(esportCasinos);
 
         return setCasinon(esportCasinos)
 
@@ -131,12 +144,26 @@ const Esport = (props) => {
 
         let list = [...props.list.Casinon]
         let esportCasinos = []
+        let top;
         list.forEach((cas) => {
             if (cas.esportinfo) {
                 esportCasinos.push(cas)
             }
-
         });
+
+        top = esportCasinos.filter(function (i) {
+            if (i.recension && i.esportinfo) {
+                return (
+                    i.recension[0].gamebar === 100 &&
+                    i.recension[0].experience === 100 &&
+                    i.recension[0].support === 100
+                );
+            }
+            return top;
+        });
+
+        esportCasinos = esportCasinos.filter(item => !top.includes(item));
+        esportCasinos = top.concat(esportCasinos);
 
         setCasinon(esportCasinos)
         setSize(9)
@@ -202,7 +229,7 @@ const Esport = (props) => {
     }
 
     return (
-        <div>
+        <Container className="wrapit">
             <Helmet>
                 <title>🎮CSGO Betting & Esport betting | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/esportbetting" />
@@ -297,105 +324,105 @@ const Esport = (props) => {
                     <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
                 </span>
             </div>
-            <div className="esport-wrap">
 
-                <div className="welcome-box-esport">
-                    <h1 className="welcome-title-esport">
-                        Csgo Betting och Esport betting
+            <h1 className="banners">
+                Csgo Betting och Esport betting
             </h1>
 
-                    <div className="welcome-text-esport">
-                        <p>
-                            Senaste inom esport betting. CSGO, Dota2, League of Legends(LoL) och fler esport spel. Vi listar de bästa betting sidorna för esport betting. Vi på Casinoniz älskar E-sport.
-                            Därför har vi valt att endast
-                             lista licenserade esport bettingsidor som erbjuder esport betting. För
-                             att göra det så enkelt som möjligt för dig att hitta ditt
-                             casino, så har vi lagt till en filterfunktion som kan hjälpa dig
-                             att hitta din sida som du vill spela på.
+            <div className="welcome-box-esport">
+
+                <div className="welcome-text-esport">
+                    <p>
+                        Senaste inom esport betting. CSGO, Dota2, League of Legends(LoL) och fler esport spel. Vi listar de bästa betting sidorna för esport betting. Vi på Casinoniz älskar E-sport.
+                        Därför har vi valt att endast
+                         lista licenserade esport bettingsidor som erbjuder esport betting. För
+                         att göra det så enkelt som möjligt för dig att hitta ditt
+                         casino, så har vi lagt till en filterfunktion som kan hjälpa dig
+                         att hitta din sida som du vill spela på.
               </p>
-                        <p>
-                            Casinoniz har samlat de senaste Esport bettingbonusar från
-                            svenska casinon. Vi väljer att endast lista bettingsidor med
-                            svensk spellicens eftersom det ger dig som spelare ett säkrare
-                            casino att spela på.
+                    <p>
+                        Casinoniz har samlat de senaste Esport bettingbonusar från
+                        svenska casinon. Vi väljer att endast lista bettingsidor med
+                        svensk spellicens eftersom det ger dig som spelare ett säkrare
+                        casino att spela på.
               </p>
-                        {readmore ? (
-                            <div>
-                                <p>
-                                    Längst ner på sidan så berättar vi mer om de olika spelen
-                                    och de kändaste lagen inom esports världen. Vi rekommenderar
-                                    att man är intresserad av esports eller har koll på de olika
-                                    esports lagen innan man satsar pengar på det. Då minskar du
-                                    risken att förlora pengar.
+                    {readmore ? (
+                        <div>
+                            <p>
+                                Längst ner på sidan så berättar vi mer om de olika spelen
+                                och de kändaste lagen inom esports världen. Vi rekommenderar
+                                att man är intresserad av esports eller har koll på de olika
+                                esports lagen innan man satsar pengar på det. Då minskar du
+                                risken att förlora pengar.
                   </p>
-                            </div>
-                        ) : (
-                                ""
-                            )}
-
-                        {readmore ? (
-                            <div>
-                                <p onClick={readMore} className="readmorebutton">
-                                    Läs mindre
-                  </p>
-                            </div>
-                        ) : (
-                                <div>
-                                    <p onClick={readMore} className="readmorebutton">
-                                        Läs mer
-                  </p>
-                                </div>
-                            )}
-                    </div>
-                </div>
-                <Container className="wrapit ">
-
-                    <EsportFilter
-                        id="esportsfilterid"
-                        csgo={sortFunc}
-                        dota={sortFunc}
-                        lol={sortFunc}
-                        overwatch={sortFunc}
-                        starcraft={sortFunc}
-                        other={sortFunc}
-                        reset={hardReset}
-                        ewager={wagerbutton}
-                        edeposit={depositbutton}
-                    />
-                    <div className={fade ? "fade-in" : "casino-wrap"}>
-                        {casinon.length > 1 ? casinon.slice(0, size).map(casino => (
-
-                            < EsportCasinoComp
-                                key={casino.title}
-                                casino={casino}
-                            />
-                        )) : ''}
-                    </div>
-                    {size <= casinon.length ? (
-                        <div className="morebonus-box">
-                            <Button
-                                className="button-recension blink"
-                                onClick={loadMore}
-                            >
-                                Hämta fler bonusar{" "}
-                            </Button>
                         </div>
                     ) : (
-                            <div className="no-more-bonuses">
-                                <Button
-                                    className="show-less-btn"
-                                    onClick={loadLess}
-                                >
-                                    Finns inte fler casinon att visa - Stäng{" "}
-                                </Button>
+                            ""
+                        )}
+
+                    {readmore ? (
+                        <div>
+                            <p onClick={readMore} className="readmorebutton">
+                                Läs mindre
+                  </p>
+                        </div>
+                    ) : (
+                            <div>
+                                <p onClick={readMore} className="readmorebutton">
+                                    Läs mer
+                  </p>
                             </div>
                         )}
-                </Container>
-
-                <BottomInfoEsport />
-                <p className="update-text">Senast uppdaterad: 3 Januari 2020</p>
+                </div>
             </div>
-        </div>
+
+
+            <EsportFilter
+                id="esportsfilterid"
+                csgo={sortFunc}
+                dota={sortFunc}
+                lol={sortFunc}
+                overwatch={sortFunc}
+                starcraft={sortFunc}
+                other={sortFunc}
+                reset={hardReset}
+                ewager={wagerbutton}
+                edeposit={depositbutton}
+            />
+            <div className={fade ? "fade-in" : "casino-wrap"}>
+                {casinon.length > 1 ? casinon.slice(0, size).map(casino => (
+
+                    < EsportCasinoComp
+                        key={casino.title}
+                        casino={casino}
+                    />
+                )) : ''}
+            </div>
+            {size <= casinon.length ? (
+                <div className="morebonus-box">
+                    <Button
+                        className="button-recension blink"
+                        onClick={loadMore}
+                    >
+                        Hämta fler bonusar{" "}
+                    </Button>
+                </div>
+            ) : (
+                    <div className="no-more-bonuses">
+                        <Button
+                            className="show-less-btn"
+                            onClick={loadLess}
+                        >
+                            Finns inte fler casinon att visa - Stäng{" "}
+                        </Button>
+                    </div>
+                )}
+
+
+            <BottomInfoEsport />
+            <p className="update-text">Senast uppdaterad: 3 Januari 2020</p>
+
+        </Container>
     );
 }
 

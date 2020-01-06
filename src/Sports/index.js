@@ -136,7 +136,7 @@ const Sports = (props) => {
     }
 
     return (
-        <div>
+        <Container className="wrapit ">
             <Helmet>
                 <title>Odds och sports betting | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/odds" />
@@ -147,7 +147,7 @@ const Sports = (props) => {
                 />
                 <meta
                     name="keywords"
-                    content="Casino, Casinobonusar, 2019,2020,bonus, spela, odds, livebetting, livebets , esportbetting, esport betting, insättningsbonus, välkomnsbonus, välkomstbonus, free spins, esports,betting, csgo betting, starcraft2, lol, leauge of legends, overwatch, dota2, the international betting"
+                    content="Casino, Casinobonusar, 2019,2020,bonus, oddsbonus, sportsbonus, spela, odds, livebetting, livebets , esportbetting, esport betting, insättningsbonus, välkomnsbonus, välkomstbonus, free spins, esports,betting, csgo betting, starcraft2, lol, leauge of legends, overwatch, dota2, the international betting"
                 />
                 <script type="application/ld+json">{`
       {
@@ -217,93 +217,97 @@ const Sports = (props) => {
                     <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
                 </span>
             </div>
-            <div className="esport-wrap">
 
-                <div className="welcome-box-esport">
-                    <h1 className="welcome-title-esport">
-                        Odds och sportsbetting
+
+
+
+            <h1 className="banners">
+                Odds och sportsbetting
             </h1>
 
-                    <div className="welcome-text-esport">
-                        <p>
-                            Odds och livebetting - Vill man spela på odds eller livebetting så kan man det också.
-                            Vi lisar endast licenserade bettingsidor som erbjuder odds, livebetting, sportbetting och esport betting. För att göra det så enkelt som möjligt för dig att hitta ditt
-                            casino, så har vi lagt till en filterfunktion som kan hjälpa dig
-                            att hitta din sida som du vill spela på och bästa välkomstbonusen.
+            <div className="welcome-text-esport">
+                <h3>Sports betting - Här listar vi bolag med Live odds, Odds bonus och spel på sport  </h3>
+                <p>
+                    Odds och livebetting - Vill man spela på odds eller livebetting så kan man det också.
+                    Vi lisar endast licenserade bettingsidor som erbjuder odds, livebetting, sportbetting och esport betting. För att göra det så enkelt som möjligt för dig att hitta ditt
+                    casino, så har vi lagt till en filterfunktion som kan hjälpa dig
+                    att hitta din sida som du vill spela på och bästa välkomstbonusen.
               </p>
+
+                {readmore ? (
+                    <div>
                         <p>
                             Casinoniz har samlat de senaste odds och sport betting välkomst bonusar från
                             svenska casinon. Vi väljer att endast lista bettingsidor med
                             svensk spellicens eftersom det ger dig som spelare ett säkrare
                             casino att spela på.
               </p>
-                        {readmore ? (
-                            <div>
-                                <p>
-                                    Vi rekommenderar att man är intresserad av sport eller har någon koll på de olika
-                                    lagen innan man satsar pengar på det. Då minskar du
-                                    risken att förlora pengar.
+                        <p>
+                            Vi rekommenderar att man är intresserad av sport eller har någon koll på de olika
+                            lagen innan man satsar pengar på det. Då minskar du
+                            risken att förlora pengar.
                   </p>
-                            </div>
-                        ) : (
-                                ""
-                            )}
-
-                        {readmore ? (
-                            <div>
-                                <p onClick={readMore} className="readmorebutton">
-                                    Läs mindre
-                  </p>
-                            </div>
-                        ) : (
-                                <div>
-                                    <p onClick={readMore} className="readmorebutton">
-                                        Läs mer
-                  </p>
-                                </div>
-                            )}
                     </div>
-                </div>
-                <Container className="wrapit ">
-                    <SportsFilter
-                        id="filterid"
-                        wager={wagerbutton}
-                        deposit={depositbutton}
+                ) : (
+                        ""
+                    )}
 
-                        reset={resetList}
-                    />
-                    <div className={fade ? "fade-in" : "casino-wrap"}>
-                        {casinon.slice(0, size).map(casino => (
-                            <SportCasino
-                                key={casino.id + casino.title}
-                                casinon={casino}
-                            />
-                        ))}
+                {readmore ? (
+                    <div>
+                        <p onClick={readMore} className="readmorebutton">
+                            Läs mindre
+                  </p>
                     </div>
-                    {size <= casinon.length ? (
-                        <div className="morebonus-box">
-                            <Button
-                                className="button-recension blink"
-                                onClick={loadMore}
-                            >
-                                Hämta fler bonusar{" "}
-                            </Button>
+                ) : (
+                        <div>
+                            <p onClick={readMore} className="readmorebutton">
+                                Läs mer
+                  </p>
                         </div>
-                    ) : (
-                            <div className="no-more-bonuses">
-                                <Button
-                                    className="show-less-btn"
-                                    onClick={loadLess}
-                                >
-                                    Finns inte fler casinon att visa - Stäng{" "}
-                                </Button>
-                            </div>
-                        )}
-                    <BottomInfoSports />
-                </Container>
-                <p className="update-text">Senast uppdaterad: 3 Januari 2020</p>
+                    )}
             </div>
-        </div>
+
+
+            <SportsFilter
+                id="filterid"
+                wager={wagerbutton}
+                deposit={depositbutton}
+
+                reset={resetList}
+            />
+            <div className={fade ? "fade-in" : "casino-wrap"}>
+                {casinon.slice(0, size).map(casino => (
+                    <SportCasino
+                        key={casino.id + casino.title}
+                        casinon={casino}
+                    />
+                ))}
+            </div>
+            {size <= casinon.length ? (
+                <div className="morebonus-box">
+                    <Button
+                        className="button-recension blink"
+                        onClick={loadMore}
+                    >
+                        Hämta fler bonusar{" "}
+                    </Button>
+                </div>
+            ) : (
+                    <div className="no-more-bonuses">
+                        <Button
+                            className="show-less-btn"
+                            onClick={loadLess}
+                        >
+                            Finns inte fler casinon att visa - Stäng{" "}
+                        </Button>
+                    </div>
+                )}
+            <BottomInfoSports />
+
+            <p className="update-text">Senast uppdaterad: 3 Januari 2020</p>
+
+
+        </Container>
     );
 }
 

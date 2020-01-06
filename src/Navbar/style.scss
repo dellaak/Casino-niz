@@ -13,9 +13,23 @@
   display: none;
 }
 
+.dropdown-divider {
+  border-top: 1px solid #fed100 !important;
+}
+
 .nav-link.activenav {
   color: #fed100 !important;
   align-self: flex-end;
+}
+
+.drop-nav {
+  .nav-link {
+    font-size: 12px;
+    margin: 0 !important;
+  }
+  &:hover {
+    background-color: #33608c !important;
+  }
 }
 
 .nav-link {
@@ -35,7 +49,7 @@
 li {
   align-self: flex-end;
   padding-right: 30px;
-  font-family: "Manjari", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 //web with

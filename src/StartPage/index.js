@@ -207,7 +207,7 @@ const StartPage = (props) => {
     <div className="start-wrap">
       <Helmet>
         <title>
-          Svenska Casinon🎰 2020 - Jämför casinobonusar | Casinoniz
+          Svenska Casino 2020 - Jämför casinobonusar | Casinoniz
           </title>
         <link rel="canonical" href="https://www.casinoniz.se" />
         <meta
@@ -320,7 +320,7 @@ const StartPage = (props) => {
           <Recommended list={[...props.start.Casinon]}></Recommended>
 
           <p>
-            Svenska casinon som erbjuder välkomstbonus är något som har gynnat spelare i den svenska spelmarknaden.
+            Svenska casino som erbjuder välkomstbonus även känt som casinobonusar är något som har gynnat spelare i den svenska spelmarknaden.
             Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens.
             Casinobonusar även kallat välkomstbonus är en bonus där man som spelare kan få lite extra
             pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
@@ -374,7 +374,7 @@ const StartPage = (props) => {
         <NewCasinos {...props} />
       </section>
 
-      <Container className="wrapit mofo">
+      <Container className="wrapit">
         <div ref={myRef} className="top-box" />
         <Filter
           id="filterid"

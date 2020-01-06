@@ -6,11 +6,20 @@ import {
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem
+    NavItem,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
 } from "reactstrap";
 import { withRouter, NavLink } from "react-router-dom";
 import logocas from "../images/casinonizlogo.svg";
+import styled from "styled-components"
 
+const StyledDownMenu = styled(DropdownMenu)`
+background-color: #214467 !important;
+color:white !important;
+`
 
 const NavBarApp = (props) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -72,6 +81,36 @@ const NavBarApp = (props) => {
                                 Odds & Sportsbetting
                 </NavLink>
                         </NavItem>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret >
+                                Kampanjer
+                        </DropdownToggle>
+                            <StyledDownMenu right>
+                                <DropdownItem className="drop-nav">
+                                    <NavLink
+                                        className="nav-link"
+                                        to="/Kampanjer-casino-2020"
+
+                                    >
+
+                                        Alla Kampanjer
+                </NavLink>
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem className="drop-nav">
+                                    <NavLink
+                                        className="nav-link"
+                                        to="/5-basta-casinon-2020"
+
+                                    >
+
+                                        Bästa Casinon 2020
+                </NavLink>
+                                </DropdownItem>
+
+
+                            </StyledDownMenu>
+                        </UncontrolledDropdown>
                     </Nav>
                 </Collapse>
             </Navbar>

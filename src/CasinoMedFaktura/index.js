@@ -26,11 +26,26 @@ const CasinoMedFaktura = (props) => {
         const getAllCas = () => {
 
             let fakturaCasinon = [];
+            let top;
             for (let i of list) {
                 if (i.faktura === true) {
                     fakturaCasinon.push(i);
                 }
             }
+
+            top = fakturaCasinon.filter(function (i) {
+                if (i.recension && i.esportinfo) {
+                    return (
+                        i.recension[0].gamebar === 100 &&
+                        i.recension[0].experience === 100 &&
+                        i.recension[0].support === 100
+                    );
+                }
+                return top;
+            });
+
+            fakturaCasinon = fakturaCasinon.filter(item => !top.includes(item));
+            fakturaCasinon = top.concat(fakturaCasinon);
 
             return setCasinoList(fakturaCasinon)
 
@@ -123,13 +138,29 @@ const CasinoMedFaktura = (props) => {
     const resetlist = () => {
         let list = [...props.list.Casinon]
 
-
         let fakturaCasinon = [];
+        let top;
         for (let i of list) {
             if (i.faktura === true) {
                 fakturaCasinon.push(i);
             }
         }
+
+        top = fakturaCasinon.filter(function (i) {
+            if (i.recension && i.esportinfo) {
+                return (
+                    i.recension[0].gamebar === 100 &&
+                    i.recension[0].experience === 100 &&
+                    i.recension[0].support === 100
+                );
+            }
+            return top;
+        });
+
+        fakturaCasinon = fakturaCasinon.filter(item => !top.includes(item));
+        fakturaCasinon = top.concat(fakturaCasinon);
+
+
         setButton({
             activezimp: false,
             activesiru: false,
@@ -269,7 +300,7 @@ const CasinoMedFaktura = (props) => {
                 <div className="faktura-wrap">
 
                     <div className="welcome-box-faktura">
-                        <h1 className="welcome-title-faktura">Casino faktura</h1>
+                        <h1 className="banners">Casino faktura</h1>
 
                         <div className="welcome-text-faktura">
                             <h3>Här listar vi endast casinon som erbjuder insättning med faktura</h3>

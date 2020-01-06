@@ -16,6 +16,7 @@ import NotFoundPage from "../NotFoundPage/index"
 import Top5 from "../Blogg/Top5"
 import TopButton from "../TopButton/index"
 import "./style.scss"
+import Blogg from "../Blogg/index"
 
 const App = () => {
 
@@ -41,6 +42,7 @@ const App = () => {
                                 <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist}  {...props} />)} />
                                 <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
                                 <Route path="/odds" render={(props) => (<Sports list={Casinolist}  {...props} />)} />
+                                <Route path="/Kampanjer-casino-2020" component={Blogg} />
                                 <Route path="/Terms" component={Terms} />
                                 <Route path="/Policy" component={Policy} />
                                 <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist}  {...props} />)} />

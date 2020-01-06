@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import "./style.scss"
 
 
+
 const RedirectComp = (props) => {
     let url = props.match.params.casinotitle
     let obj = {
@@ -19,6 +20,8 @@ const RedirectComp = (props) => {
 
 
     useEffect(() => {
+
+
         let list = [...props.list.Casinon]
         const changeState = () => {
 
@@ -34,18 +37,10 @@ const RedirectComp = (props) => {
         }
 
 
-        const redirect = () => {
 
-            setTimeout(() => {
-                window.location.replace(obj.link)
 
-            }, 4000);
-
-        }
         changeState()
         setStuff({ link: obj.link, color: obj.color })
-        redirect()
-
 
     }, [url]);
 
@@ -63,6 +58,7 @@ const RedirectComp = (props) => {
                     name="keywords"
                     content="Casino, Casinobonusar, 2019,2020,insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"
                 />
+
             </Helmet>
             <div className="redirect-box">
 

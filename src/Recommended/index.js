@@ -4,7 +4,7 @@ import { Button } from "reactstrap";
 import { Link, NavLink} from "react-router-dom";
 import styled from "styled-components"
 
-export const StyledNavlink = styled(NavLink)`
+ const StyledNavlink = styled(NavLink)`
 color:white;
 display:flex;
 padding:"0px 0px 5px 0px";
@@ -15,7 +15,7 @@ font-family: 'Manjari', sans-serif;
 text-transform: uppercase;
   letter-spacing: 0.1em;
   font-style:normal;
-  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.2);
 
 `
 
@@ -67,8 +67,8 @@ const Recommended =(props)=> {
             <div  className="rec-box" key={casino.title} >
                      <Link target="_blank"
               rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casino.title}`, match: `${casino.title}` }}>
-             <img  src={casino.caslogo} alt="casino-logo"
-             /> </Link>
+             <img src={casino.caslogo} alt="casino-logo"
+             className="rec-img-top" /> </Link>
         <p className="top3-text
         ">{casino.depositbonus}</p> 
            <StyledNavlink 
@@ -76,10 +76,12 @@ const Recommended =(props)=> {
          Läs Mer
         </StyledNavlink>
       
+      <div className="rec-buttonbox">
         <Link target="_blank"
               rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casino.title}`, match: `${casino.title}` }}>
               <Button className="rec-botton">Hämta bonus</Button></Link>
-        <a className="top3rules" href={casino.rules}>18+ | Regler & Villkor gäller</a>
+        <p className="top3rules" >18+ | <a href={casino.rules}>Regler & Villkor gäller</a></p>
+        </div>
         </div>
        
         ))}
