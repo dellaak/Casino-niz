@@ -27,6 +27,7 @@
 .dirlink,
 .dirlink2,
 .dirname {
+  text-transform: capitalize;
   color: #fed100 !important;
   font-weight: 600;
   cursor: pointer;
