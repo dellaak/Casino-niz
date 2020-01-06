@@ -34,23 +34,28 @@ const RedirectComp = (props) => {
         }
 
 
-        const redirect = () => {
 
-            setTimeout(() => {
-
-
-                let casino_link = `/Go/${url}`;
-
-
-                window.location.assign(casino_link)
-
-            }, 2000);
-
-        }
         changeState()
         setStuff({ link: obj.link, color: obj.color })
-        redirect()
         url = url.toLowerCase()
+        let tag = document.createElement('script');
+        tag.type = "text/javascript"
+        tag.async = true;
+        tag.innerHTML = setTimeout(
+            function () {
+                let casino_name = url;
+                let casino_link = `/Go/${casino_name}`
+                window.location.assign(casino_link);
+            }
+            , 2000
+        )
+        tag.src = "./RedirFunc.js";
+        let body = document.getElementsByTagName('body')[0];
+        body.appendChild(tag);
+
+
+
+
 
     }, [url]);
 
