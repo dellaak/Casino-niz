@@ -14,6 +14,9 @@ const Top5 = (props) => {
     const [visible, setVisible] = useState(true)
 
     useEffect(() => {
+
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         let list = [...props.list.Casinon]
         let top = []
 

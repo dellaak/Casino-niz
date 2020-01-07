@@ -26,9 +26,19 @@ display: flex;
 
   a {
     text-align: center;
-    color: grey;
-  }
+    color: white;
 
+    font-size:16px;
+    background-color:#214467;
+  }
+.readmore-blogg{
+    margin-bottom:5px;
+    border-radius:9px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:30px;
+}
   small {
     padding: 10px;
     border-top: 1px solid lightgrey;
@@ -46,9 +56,9 @@ const Top5 = (props) => {
     const Kampanj = (props) => {
         let { text, bild, publicerad, link } = props
         return (<StyledKampanj>
-            <img src={bild} />
+            <NavLink to={link}><img src={bild} /></NavLink>
             <p>{text}...</p>
-            <NavLink to={link}>Läs mer</NavLink>
+            <NavLink className="readmore-blogg" to={link}>Läs mer</NavLink>
 
             <small>{publicerad}</small>
         </StyledKampanj>)
