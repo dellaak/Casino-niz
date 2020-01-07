@@ -61,7 +61,7 @@ const NotFoundPage = () => {
   </Helmet>
     <StyledP>404</StyledP>
     <Styledh3>
-      Tyvärr så finns inte sidan du letar efter
+      Tyvärr så finns inte sidan du letar efter.
               <StyledLink to="/">Klicka här för att gå till start </StyledLink>
     </Styledh3>
   </Styled404Wrap>;
