@@ -3,7 +3,37 @@ import sweflag from "../images/sweflag.png"
 import { Container, Alert } from "reactstrap"
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import styled from "styled-components"
 import "./style.scss"
+
+
+const StyledKampanj = styled.section`
+display: flex;
+  max-width: 320px;
+  flex-direction: column;
+  margin: 50px 0;
+  -webkit-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  border: 1px solid grey;
+  padding: 10px;
+
+  img {
+    max-width: 320px !important;
+    width: 100%;
+    max-height: 200px !important;
+  }
+
+  a {
+    text-align: center;
+    color: grey;
+  }
+
+  small {
+    padding: 10px;
+    border-top: 1px solid lightgrey;
+  }
+`
 
 const Top5 = (props) => {
     const [visible, setVisible] = useState(true)
@@ -15,13 +45,13 @@ const Top5 = (props) => {
 
     const Kampanj = (props) => {
         let { text, bild, publicerad, link } = props
-        return (<div className="kampanj-div-wrap">
+        return (<StyledKampanj>
             <img src={bild} />
             <p>{text}...</p>
             <NavLink to={link}>Läs mer</NavLink>
 
             <small>{publicerad}</small>
-        </div>)
+        </StyledKampanj>)
     }
 
 
