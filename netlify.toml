@@ -328,5 +328,11 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/prankcasino"}
 
+                         [[redirects]]
+  from = "/Go/karlcasino"
+  to = "http://www.karlaffiliates.com/redirector?url=http://www.karlcasino.com&userid=580&tracker=36635"
+  status = 301
+  query = {path = "/Go/karlcasino"}
+
 
 
