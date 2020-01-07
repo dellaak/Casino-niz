@@ -1,10 +1,5 @@
 baseURL = "/"
 
-[[redirects]]
-  from = "/*"
-  to = "/404"
-  status = 404
-
 
 [[redirects]]
   from = "/Go/unibet"
