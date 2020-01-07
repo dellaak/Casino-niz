@@ -40,21 +40,7 @@ const RedirectComp = (props) => {
 
         changeState()
         setStuff({ link: obj.link, color: obj.color })
-        url = url.toLowerCase()
-        let tag = document.createElement('script');
-        tag.type = "text/javascript"
-        tag.async = true;
-        tag.innerHTML = setTimeout(
-            function () {
-                let casino_name = url;
-                let casino_link = `/Go/${casino_name}`
-                window.location.assign(casino_link);
-            }
-            , 2000
-        )
-        tag.src = "./RedirFunc.js";
-        let body = document.getElementsByTagName('body')[0];
-        body.appendChild(tag);
+
 
 
 
@@ -76,7 +62,17 @@ const RedirectComp = (props) => {
                     name="keywords"
                     content="Casino, Casinobonusar, 2019,2020,insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"
                 />
-
+                <script type="text/javascript">
+                    ` {setTimeout(
+                        function () {
+                            url = url.toLowerCase()
+                            let casino_name = url;
+                            let casino_link = `/Go/${casino_name}`
+                            window.location.assign(casino_link);
+                        }
+                        , 2000
+                    )}
+                </script>
             </Helmet>
             <div className="redirect-box">
 
