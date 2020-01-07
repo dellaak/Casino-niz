@@ -65,8 +65,8 @@ const RedirectComp = (props) => {
                 <script type="text/javascript">
                     ` {setTimeout(
                         function () {
-                            url = url.toLowerCase()
-                            let casino_name = url;
+
+                            let casino_name = url.toLowerCase();
                             let casino_link = `/Go/${casino_name}`
                             window.location.assign(casino_link);
                         }
