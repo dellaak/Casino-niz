@@ -1984,7 +1984,7 @@
             "recension": [
                 {
                     "gamebar": 100,
-                    "experience": 85,
+                    "experience": 94,
                     "support": 100,
                     "egentitel": "Grymma svenska casinot",
                     "egentitel2": false,
@@ -2043,7 +2043,7 @@
             "recension": [
                 {
                     "gamebar": 100,
-                    "experience": 88,
+                    "experience": 94,
                     "support": 95,
                     "egentitel": "Casino faktura",
                     "egentitel2": false,
@@ -3498,6 +3498,63 @@
                     "swish": false,
                     "livechat": true,
                     "summering": "PrankCasino har en väldigt simpel och snygg layout. Casinot erbjuder endast insättningar via Trustly och då krävs det bankid. Minsta insättningen är 100 kr och minsta uttaget är 200 kr. Vill man chatta med supporten så kan man göra det mellan kl 10-22 på vardagar och 10-18 på helgerna,  resterande tid gäller email. Supporten är väldigt trevlig och proffsig. Har ett bredd utbud av slots. PrankCasino erbjuder en väldigt generös bonus vilket vi tycker om. Uttagen och insättningarna går väldigt snabbt.  "
+                }
+            ]
+        },
+        {
+            "id": 55,
+            "title": "KarlCasino",
+            "slogan": "Svenskt Casino - över 1000 slots!",
+            "color": "#0b5a99",
+            "textcolor": "#fdd114",
+            "setTop": false,
+            "depositbonus": "Insättningsbonus på 100% upp till 1000kr!",
+            "sportsbonus": "ingen sports bonus",
+            "mylink": "http://www.karlaffiliates.com/redirector?url=http://www.karlcasino.com&userid=580&tracker=36635",
+            "rules": "https://www.karlcasino.com/sv/allmanna-villkor",
+            "caslogo": "/images/karlcasino.svg",
+            "wager": 40,
+            "sportswager": "x",
+            "extratext": "Regler och villkor gäller för alla bonusar och kompensationserbjudanden från KarlCasino",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": true,
+            "bankid": true,
+            "publishdate": "3 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 100,
+            "faktura": true,
+            "fakturatype": [
+                "Zimpler"
+            ],
+            "recension": [
+                {
+                    "gamebar": 100,
+                    "experience": 90,
+                    "support": 94,
+                    "egentitel": "Casino bonus - Över 1000 slots!",
+                    "egentitel2": false,
+                    "toprecension": "KarlCasino är ett casino som lanserades 2014 av L&L Europe Ltd. Casinot har vuxit sig stark på den svenska casino marknaden. När du kommer in på sidan möts du av dem svenska färgerna gul och blå. Har en väldigt snygg layout och väldigt enkelt att navigera sig runt på sidan. Casinot är säkert och dem är seriösa.  Erbjuder ett flertal insättningsmetoder samt insättning via faktua. Har en supportsida med dem vanligaste frågorna och svaren. Erbjuder livechat mellan 10-01 och resterande tid är det email som gäller. Går väldigt smidigt att registrera sig. Registreringen görs med hjälp av bankid. Uttagen och insättningarna går snabbt.",
+                    "secondrec": "Casino sektionen är väldigt bra! Med över 1000 slots så är detta ett casino för spelaren som tycker om slots. Har ingen filterfunktion men man kan söka på sitt favoritspel. Vill man spela på något annat än slots så finns det även Live Casino, Videopoker och Bordsspel. Har ett dussintal jackpotspel. Snygg och simpel layout på casinosektionen. Det är inte många casinon som har Novomatic slots men KarlCasino har det. Vi på Casinoniz tycker om Novomatic slots! Lägger till nya spela kontinuerligt",
+                    "sportsrec": "Ingen sport sektion.",
+                    "welcomeoffer": "Insättningsbonus på 100% upp till 1000kr",
+                    "bonusterms": [
+                        "Videopoker,Bordsspel och Live Casino är inte inkluderad i bonusprogrammet."
+                    ],
+                    "casinoterms": [
+                        "För att kunna ta mot välkomstbonusen måste minst 100 kr sättas in.",
+                        "Välkomstbonusen finns tillgänglig i 60 dagar så att omsättningskravet kan mötas. "
+                    ],
+                    "sportsterms": [
+                        "Ingen sports sektion"
+                    ],
+                    "topslotgames": "Över 1000+ slots. Slots från kända leverantörer som Microgaming, NetEnt, WMS,Elk Gaming,Novomatic Evolution Live, Amatic och många fler!",
+                    "deposittypes": "Trustly,Visa,Mastercard,Zimpler,Neteller,Paypal,Skrill och bank överföring",
+                    "mindeposit": 100,
+                    "minout": 200,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "KarlCasino är casinot för spelaren som tycker om slots! Med ett enormt utbud av slots, rättare sagt över 1000 kvalitativa slots från kända leverantörer. Casinot erbjuder insättningar via flera kända insättningsmetod samt även insättning via fakturametoden Zimpler. Minsta insättningen är 100 kr och lägsta uttag är 200kr. Har just nu en insättningsbonus på 100% upp till 1000kr. Snygg sida med enkel navigering. Utöver slot så erbjuder KarlCasino även Videopoker,Live Casino och Bordsspel.  "
                 }
             ]
         }

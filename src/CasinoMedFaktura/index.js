@@ -371,7 +371,7 @@ const CasinoMedFaktura = (props) => {
                                 className="button-recension blink"
                                 onClick={loadMore}
                             >
-                                Hämta fler bonusar{" "}
+                                Hämta fler casinon{" "}
                             </Button>
                         </div>
                     ) : (
