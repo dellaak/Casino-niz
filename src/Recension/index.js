@@ -501,7 +501,7 @@ const Recension = (props) => {
 
 								<div className="buttonbox-recension">
 									<Link className="button-recension"
-										target="_blank"
+										target={props.isBlocked ? '' : "_blank"}
 										rel="noopener noreferrer nofollow "
 										to={{ pathname: `/Redirect/${selectedCasino.title}`, match: `${selectedCasino.title}` }}>
 

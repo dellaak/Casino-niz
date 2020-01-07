@@ -50,7 +50,7 @@ const App = () => {
                             {adBlockEnabled.current ? <span className="blocker">OBS! Du har en Adblocker aktiverad. Sidan kan bete sig lite annorlunda än vanligt. </span> : ''}
                             <Switch>
                                 <Route exact path="/" render={(props) => (<Startpage start={Casinolist} isBlocked={adBlockEnabled.current} {...props} />)} />
-                                <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist}  {...props} />)} />
+                                <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist} isBlocked={adBlockEnabled.current} {...props} />)} />
                                 <Route path="/Esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled.current} {...props} />)} />
                                 <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled.current}  {...props} />)} />
                                 <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
