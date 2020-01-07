@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Button, Collapse } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
 import "./style.scss";
@@ -47,7 +47,7 @@ overflow:hidden !important;
 const Casinon = (props) => {
   const [showStar, setShowStar] = useState(false);
   const [snabbFakta, setSnabbFakta] = useState(false);
-
+  let adBlockEnabled = useRef(false);
 
 
   useEffect(() => {
@@ -61,6 +61,17 @@ const Casinon = (props) => {
 
 
 
+    let testAd = document.createElement('div');
+    testAd.innerHTML = '&nbsp;';
+    testAd.className = 'adsbox';
+    document.body.appendChild(testAd);
+    window.setTimeout(function () {
+      if (testAd.offsetHeight === 0) {
+        adBlockEnabled.current = true;
+      }
+      testAd.remove();
+      console.log('AdBlock Enabled? ', adBlockEnabled)
+    }, 100);
 
   }, []);
 
@@ -75,6 +86,7 @@ const Casinon = (props) => {
     <div
       className="full-box" >
       <div className=" casinowrap">{" "}
+
 
         <Link target="_blank" to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
           <img className="casino-logo"
@@ -102,10 +114,14 @@ const Casinon = (props) => {
               <p className="wagerinfo"> {props.casino.wager}x</p>
             </b>
           </div>
-          <Link target="_blank"
+          {adBlockEnabled ? <Link
             rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
             <Button className="to-botton">Hämta bonus</Button>
-          </Link>
+          </Link> : <Link target="_blank"
+            rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
+              <Button className="to-botton">Hämta bonus</Button>
+            </Link>}
+
 
         </div>
         <div />

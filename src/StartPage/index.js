@@ -55,9 +55,12 @@ const StartPage = (props) => {
     }
     getAllCas()
 
+
     return () => {
       setCasinoList({ ...casinoList, Casino: [...props.start.Casinon] })
     };
+
+
 
   }, [props.start.Casinon]);
 
