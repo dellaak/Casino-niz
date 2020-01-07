@@ -46,7 +46,7 @@ const App = () => {
                                 <Route path="/Terms" component={Terms} />
                                 <Route path="/Policy" component={Policy} />
                                 <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist}  {...props} />)} />
-                                <Route path="*" component={NotFoundPage} />
+                                <Route component={NotFoundPage} />
 
 
                             </Switch>
