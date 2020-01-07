@@ -47,7 +47,7 @@ overflow:hidden !important;
 const Casinon = (props) => {
   const [showStar, setShowStar] = useState(false);
   const [snabbFakta, setSnabbFakta] = useState(false);
-  let adBlockEnabled = useRef(false);
+
 
 
   useEffect(() => {
@@ -61,20 +61,6 @@ const Casinon = (props) => {
 
 
 
-    let testAd = document.createElement('div');
-    testAd.innerHTML = '&nbsp;';
-    testAd.className = 'adsbox';
-    document.body.appendChild(testAd);
-
-    if (testAd.offsetHeight === 0) {
-      adBlockEnabled.current = true;
-    }
-    testAd.remove();
-    console.log('AdBlock Enabled? ', adBlockEnabled)
-
-    return () => {
-      adBlockEnabled.current = false
-    }
 
   }, []);
 
@@ -91,7 +77,7 @@ const Casinon = (props) => {
       <div className=" casinowrap">{" "}
 
 
-        <Link target="_blank" to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
+        <Link target={props.isBlocked ? '' : "_blank"} to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
           <img className="casino-logo"
             alt={props.casino.title}
             src={props.casino.caslogo}
@@ -117,7 +103,7 @@ const Casinon = (props) => {
               <p className="wagerinfo"> {props.casino.wager}x</p>
             </b>
           </div>
-          <Link target={adBlockEnabled.current ? '' : "_blank"}
+          <Link target={props.isBlocked ? '' : "_blank"}
             rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
             <Button className="to-botton">Hämta bonus</Button>
           </Link>

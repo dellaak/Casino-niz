@@ -27,7 +27,7 @@ const EsportCasinoComp = (props) => {
   return (
     <div className="esport-box">
       <div className=" ecasinowrap">
-        <Link target="_blank"
+        <Link target={props.isBlocked ? '' : "_blank"}
           rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casinoInfo.title}`, match: `${casinoInfo.title}` }}>
           <img
             className="casino-logo"
@@ -53,7 +53,7 @@ const EsportCasinoComp = (props) => {
               <p className="wagerinfo">{casinoInfo.sportswager}x</p>
             </b>
           </div>
-          <Link target="_blank"
+          <Link target={props.isBlocked ? '' : "_blank"}
             rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casinoInfo.title}`, match: `${casinoInfo.title}` }}>
             <Button className="to-botton">Hämta bonus</Button>
           </Link>

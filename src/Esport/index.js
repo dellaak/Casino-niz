@@ -395,6 +395,7 @@ const Esport = (props) => {
                     < EsportCasinoComp
                         key={casino.title}
                         casino={casino}
+                        isBlocked={props.isBlocked}
                     />
                 )) : ''}
             </div>
@@ -420,7 +421,7 @@ const Esport = (props) => {
 
 
             <BottomInfoEsport />
-            <p className="update-text">Senast uppdaterad: 7 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 8 Januari 2020</p>
 
         </Container>
     );

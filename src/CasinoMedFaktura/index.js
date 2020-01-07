@@ -362,6 +362,7 @@ const CasinoMedFaktura = (props) => {
                                 notfree={false}
                                 key={casino.title}
                                 casino={casino}
+                                isBlocked={props.isBlocked}
                             />
                         ))}
                     </div>
@@ -388,7 +389,7 @@ const CasinoMedFaktura = (props) => {
                 </div>
 
             </div>
-            <p className="update-text">Senast uppdaterad: 7 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 8 Januari 2020</p>
         </Container>
     );
 }

@@ -42,7 +42,7 @@ const SportCasino = (props) => {
         <div
             className="full-box">
             <div className=" casinowrap">{" "}
-                <Link target="_blank" to={{ pathname: "/Redirect", search: `${props.casinon.title}` }} >
+                <Link target={props.isBlocked ? '' : "_blank"} to={{ pathname: "/Redirect", search: `${props.casinon.title}` }} >
                     <img className="casino-logo"
                         alt={props.casinon.title}
                         src={props.casinon.caslogo} />
@@ -82,7 +82,7 @@ const SportCasino = (props) => {
 
 
 
-                    <Link target="_blank"
+                    <Link target={props.isBlocked ? '' : "_blank"}
                         rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casinon.title}`, match: `${props.casinon.title}` }} >
                         <Button className="to-botton">Hämta bonus</Button>
                     </Link>

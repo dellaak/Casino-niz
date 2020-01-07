@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Casinolist from "../data/casinoList.json";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Startpage from "../StartPage/index";
@@ -19,6 +19,19 @@ import "./style.scss"
 import Blogg from "../Blogg/index"
 
 const App = () => {
+    let adBlockEnabled = useRef(false);
+
+
+    let testAd = document.createElement('div');
+    testAd.innerHTML = '&nbsp;';
+    testAd.className = 'adsbox';
+    document.body.appendChild(testAd);
+
+    if (testAd.offsetHeight === 0) {
+        adBlockEnabled.current = true;
+    }
+    testAd.remove();
+
 
     let w = window.innerWidth
     let d = 2200
@@ -34,18 +47,18 @@ const App = () => {
 
                     <Container fluid={w < d ? true : false}>
                         <main>
-
+                            {adBlockEnabled.current ? <span className="blocker">OBS! Du har en Adblocker aktiverad. Sidan kan bete sig lite annorlunda än vanligt. </span> : ''}
                             <Switch>
-                                <Route exact path="/" render={(props) => (<Startpage start={Casinolist}  {...props} />)} />
+                                <Route exact path="/" render={(props) => (<Startpage start={Casinolist} isBlocked={adBlockEnabled.current} {...props} />)} />
                                 <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist}  {...props} />)} />
-                                <Route path="/Esportbetting" render={(props) => (<Esport list={Casinolist}  {...props} />)} />
-                                <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist}  {...props} />)} />
+                                <Route path="/Esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled.current} {...props} />)} />
+                                <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled.current}  {...props} />)} />
                                 <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
-                                <Route path="/odds" render={(props) => (<Sports list={Casinolist}  {...props} />)} />
+                                <Route path="/odds" render={(props) => (<Sports list={Casinolist} isBlocked={adBlockEnabled.current} {...props} />)} />
                                 <Route path="/Kampanjer-casino-2020" component={Blogg} />
                                 <Route path="/Terms" component={Terms} />
                                 <Route path="/Policy" component={Policy} />
-                                <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist}  {...props} />)} />
+                                <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist} isBlocked={adBlockEnabled.current} {...props} />)} />
                                 <Route path="*" component={NotFoundPage} />
 
 

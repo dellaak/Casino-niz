@@ -281,6 +281,7 @@ const Sports = (props) => {
                     <SportCasino
                         key={casino.id + casino.title}
                         casinon={casino}
+                        isBlocked={props.isBlocked}
                     />
                 ))}
             </div>
@@ -305,7 +306,7 @@ const Sports = (props) => {
                 )}
             <BottomInfoSports />
 
-            <p className="update-text">Senast uppdaterad: 7 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 8 Januari 2020</p>
 
 
         </Container>

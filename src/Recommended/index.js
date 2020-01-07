@@ -65,7 +65,7 @@ const Recommended =(props)=> {
         <div className="rec-wrap" >
         {top3.map(casino => (
             <div  className="rec-box" key={casino.title} >
-                     <Link target="_blank"
+                     <Link target={props.isBlocked ? '' : "_blank"}
               rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casino.title}`, match: `${casino.title}` }}>
              <img src={casino.caslogo} alt="casino-logo"
              className="rec-img-top" /> </Link>
@@ -77,7 +77,7 @@ const Recommended =(props)=> {
         </StyledNavlink>
       
       <div className="rec-buttonbox">
-        <Link target="_blank"
+        <Link target={props.isBlocked ? '' : "_blank"}
               rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casino.title}`, match: `${casino.title}` }}>
               <Button className="rec-botton">Hämta bonus</Button></Link>
         <p className="top3rules" >18+ | <a href={casino.rules}>Regler & Villkor gäller</a></p>

@@ -38,7 +38,7 @@ const NewCasinos =(props)=> {
         {newCasino.slice(0,5).map(casino => (
           <div className="box1" key={casino.id + casino.color}>
             <Link
-              target="_blank"
+              target={props.isBlocked ? '' : "_blank"}
               rel="noopener noreferrer nofollow "
               to={{ pathname: `/Redirect/${casino.title}`, match: `${casino.title}` }}>
               <img
@@ -53,7 +53,7 @@ const NewCasinos =(props)=> {
 
             <ButtonRecBox>
             <Link
-              target="_blank"
+              target={props.isBlocked ? '' : "_blank"}
               rel="noopener noreferrer nofollow "
               to={{ pathname: `/Redirect/${casino.title}`, match: `${casino.title}` }}>
             

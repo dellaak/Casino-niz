@@ -29,6 +29,7 @@ const StartPage = (props) => {
   const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
   const myRef = useRef(null)
 
+
   useEffect(() => {
 
     let list = [...props.start.Casinon]
@@ -54,6 +55,7 @@ const StartPage = (props) => {
 
     }
     getAllCas()
+
 
 
     return () => {
@@ -310,6 +312,8 @@ const StartPage = (props) => {
           <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
         </span>
       </div>
+
+
       <h1 className="welcome-title">Svenska Casinon 2020</h1>
       <div className="top-casinos-rec">
         <OurRec />
@@ -320,7 +324,7 @@ const StartPage = (props) => {
 
       <section className="welcome-box">
         <section className="welcome-text">
-          <Recommended list={[...props.start.Casinon]}></Recommended>
+          <Recommended list={[...props.start.Casinon]} isBlocked={props.isBlocked}></Recommended>
 
           <p>
             Svenska casino som erbjuder välkomstbonus även känt som casinobonusar är något som har gynnat spelare i den svenska spelmarknaden.
@@ -374,7 +378,7 @@ const StartPage = (props) => {
         </section>
 
 
-        <NewCasinos {...props} />
+        <NewCasinos {...props} isBlocked={props.isBlocked} />
       </section>
 
       <Container className="wrapit">
@@ -393,12 +397,14 @@ const StartPage = (props) => {
           <p><i>Ordningen på listan är just nu är baserad på vår recension. Ju högre poäng desto högre upp på listan är casinot.</i></p>
           <small className="medalj-text"><img src={star} className="top-star" alt="star" /><i>Medaljen visar casinon som har fått fulla poäng av oss i våran casino recension.</i></small>
         </section>) : null}
+
         <div className={fade ? "fade-in" : "casino-wrap"}>
           {casinoList.Casino.slice(0, size).map((casino, e) =>
             < Casinon
               key={casino.id + casino.title}
               casino={casino}
               reset={resetList}
+              isBlocked={props.isBlocked}
             />
           )}
         </div>
@@ -425,7 +431,7 @@ const StartPage = (props) => {
             </div>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 7 Januari 2020</p>
+        <p className="update-text">Senast uppdaterad: 8 Januari 2020</p>
 
       </Container>
 

@@ -42,7 +42,7 @@ const FakturaCasino = (props) => {
 
       <div className=" casinowrap">{" "}
 
-        <Link target="_blank" to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
+        <Link target={props.isBlocked ? '' : "_blank"} to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
           <img className="casino-logo"
             alt={props.casino.title}
             src={props.casino.caslogo} />
@@ -71,7 +71,7 @@ const FakturaCasino = (props) => {
               <p className="wagerinfo"> {props.casino.wager}x</p>
             </b>
           </div>
-          <Link target="_blank"
+          <Link target={props.isBlocked ? '' : "_blank"}
             rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
             <Button className="to-botton">Hämta bonus</Button>
           </Link>
