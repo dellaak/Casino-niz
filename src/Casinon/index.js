@@ -65,13 +65,16 @@ const Casinon = (props) => {
     testAd.innerHTML = '&nbsp;';
     testAd.className = 'adsbox';
     document.body.appendChild(testAd);
-    window.setTimeout(function () {
-      if (testAd.offsetHeight === 0) {
-        adBlockEnabled.current = true;
-      }
-      testAd.remove();
-      console.log('AdBlock Enabled? ', adBlockEnabled)
-    }, 100);
+
+    if (testAd.offsetHeight === 0) {
+      adBlockEnabled.current = true;
+    }
+    testAd.remove();
+    console.log('AdBlock Enabled? ', adBlockEnabled)
+
+    return () => {
+      adBlockEnabled.current = false
+    }
 
   }, []);
 
@@ -114,13 +117,10 @@ const Casinon = (props) => {
               <p className="wagerinfo"> {props.casino.wager}x</p>
             </b>
           </div>
-          {adBlockEnabled ? <Link
+          <Link target={adBlockEnabled.current ? '' : "_blank"}
             rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
             <Button className="to-botton">Hämta bonus</Button>
-          </Link> : <Link target="_blank"
-            rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
-              <Button className="to-botton">Hämta bonus</Button>
-            </Link>}
+          </Link>
 
 
         </div>
