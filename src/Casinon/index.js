@@ -147,7 +147,7 @@ const Casinon = (props) => {
 
       <StyledCollapse isOpen={snabbFakta} >
 
-        <SnabbFakta className="msg-preview" xs="6" casino={props.casino} />
+        <SnabbFakta className="msg-preview" xs="6" casino={props.casino} isBlocked={props.isBlocked} />
       </StyledCollapse>
 
       <p className="freespins-text">{props.casino.freefromwager ? 'Omsättningsfri bonus/freespins' : ''}</p>

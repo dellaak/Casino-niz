@@ -50,7 +50,7 @@ const Snabbfakta = (props) => {
             </div>
         </div>
         <Link className="button-preview"
-            target="_blank"
+            target={props.isBlocked ? '' : "_blank"}
             rel="noopener noreferrer nofollow "
             to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
             Gå till {props.casino.title}
