@@ -334,5 +334,11 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/karlcasino"}
 
+                           [[redirects]]
+  from = "/Go/gogocasino"
+  to = "https://www.gogocasino.com/"
+  status = 301
+  query = {path = "/Go/gogocasino"}
+
 
 

@@ -3557,6 +3557,60 @@
                     "summering": "KarlCasino är casinot för spelaren som tycker om slots! Med ett enormt utbud av slots, rättare sagt över 1000 kvalitativa slots från kända leverantörer. Casinot erbjuder insättningar via flera kända insättningsmetod samt även insättning via fakturametoden Zimpler. Minsta insättningen är 100 kr och lägsta uttag är 200kr. Har just nu en insättningsbonus på 100% upp till 1000kr. Snygg sida med enkel navigering. Utöver slot så erbjuder KarlCasino även Videopoker,Live Casino och Bordsspel.  "
                 }
             ]
+        },
+        {
+            "id": 56,
+            "title": "GoGoCasino",
+            "slogan": "Casino utan registrering",
+            "color": "#120f0a",
+            "textcolor": "#ecdfd1",
+            "setTop": false,
+            "depositbonus": "Ingen casino bonus",
+            "sportsbonus": "ingen sports bonus",
+            "mylink": "https://www.gogocasino.com/",
+            "rules": "https://www.gogocasino.com/terms/terms-and-conditions",
+            "caslogo": "/images/gogocasino.svg",
+            "wager": 0,
+            "sportswager": "x",
+            "extratext": "",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": false,
+            "bankid": true,
+            "publishdate": "8 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 0,
+            "faktura": false,
+            "fakturatype": [],
+            "recension": [
+                {
+                    "gamebar": 100,
+                    "experience": 94,
+                    "support": 90,
+                    "egentitel": "GoGo Casino - Casino utan registrering!",
+                    "egentitel2": false,
+                    "toprecension": "GoGo Casino är ett casino som grundades  2019 av bolaget som ligger bakom succecasinot LeoVegas. GoGo Casino är ett fräsch casino med väldigt modern och snygg layout. Hemsidan är mobilanpassad och har ett riktigt bra utbud av slots. Casinot vill att spelaren ska få en känsla av att spela i Las Vegas när man spelar hos dem. Utan några bonusar och jobbiga omsättningskrav. Har en simpel supportsida med svar på dem vanligaste frågorna. Erbjuder livechatt dygnet runt. Att spela på sidan är väldigt simpelt eftersom de erbjuder insättningar via Trustly och swish. Med det krävs det endast ankidentifiering.",
+                    "secondrec": "Casino sektionen hos GoGo casino är väldigt snygg. De har valt att sortera slots efter spelutvecklare vilket är väldigt smidigt ifall man har koll på dem olika speltillverkare. Erbjuder över 500 kvalitativa slots från de kändaste leverantörerna på marknaden. Har ca 12 st aktuella jackpotspel just nu. Vill man spela på något annat än slots, så har GoGo Casino olika typer av borddspel Live som t.ex. Live Baccarat, Live Roulette, Live Poker m.fl. Casinosidan uppdateras kontinuerligt med nya spel.",
+                    "sportsrec": "Ingen sport sektion.",
+                    "welcomeoffer": "Ingen casino bonus.",
+                    "bonusterms": [
+                        ""
+                    ],
+                    "casinoterms": [
+                        ""
+                    ],
+                    "sportsterms": [
+                        "Ingen sports sektion"
+                    ],
+                    "topslotgames": "Över 500+ slots. Slots från kända leverantörer som Microgaming, NetEnt, Williams, Thunderkick, Red Tiger Gaming, Novomatic,Play n Go, Big Time Gaming och många fler!",
+                    "deposittypes": "Trustly,Swish",
+                    "mindeposit": 200,
+                    "minout": 200,
+                    "swish": true,
+                    "livechat": true,
+                    "summering": "GoGo Casino är ett väldigt modernt casino. Erbjuder ett väldigt brett utbud av slots. Minsta insättningen är 200 kr och minsta uttaget är 200 kr. För att spela på casinot krävs det bankid eftersom dem endast accepterar insättningar via Trustly och Swish. Registreringen går väldigt snabbt. Erbjuder livechatt dygnet runt. Uttagen och insättningarna går väldigt snabbt. För personen som tycker om slots är detta ett väldigt bra casino."
+                }
+            ]
         }
     ]
 }

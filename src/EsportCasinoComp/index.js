@@ -1,9 +1,33 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
-import { Button } from "reactstrap";
+import { Button, Collapse } from "reactstrap";
 import { Link } from "react-router-dom";
 import { StyledNavlink } from "../Casinon/"
 import star from "../images/fullstar.svg"
+import SnabbFakta from "../Snabbfakta"
+import styled from "styled-components"
+
+
+const StyledSpan = styled.span`
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+    transition: all 0.3s ease-out;
+    transform: ${props => (props.rotate ? `rotate(180deg)` : "")};
+    svg{
+    display: block;
+    height: 100%;
+    width: 100%;
+    }
+  `
+
+
+
+const StyledCollapse = styled(Collapse)`
+overflow:hidden !important;
+
+`
 
 const EsportCasinoComp = (props) => {
 
@@ -11,7 +35,7 @@ const EsportCasinoComp = (props) => {
   let esport = props.casino.esportinfo[0]
 
   const [showStar, setStar] = useState(false)
-
+  const [snabbFakta, setSnabbFakta] = useState(false);
 
   useEffect(() => {
 
@@ -23,6 +47,12 @@ const EsportCasinoComp = (props) => {
       }
     }
   }, []);
+
+
+  const qToggle = () => {
+    setSnabbFakta(!snabbFakta)
+  }
+
 
   return (
     <div className="esport-box">
@@ -95,6 +125,13 @@ const EsportCasinoComp = (props) => {
           )}
 
       </div>
+
+      <Button onClick={qToggle} xs="6" className="question-head-preview col-sm" ><span >Snabbfakta om {props.casino.title}</span> <StyledSpan rotate={snabbFakta ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+      <StyledCollapse isOpen={snabbFakta} >
+
+        <SnabbFakta className="msg-preview" xs="6" casino={props.casino} isBlocked={props.isBlocked} />
+      </StyledCollapse>
     </div>
   );
 }

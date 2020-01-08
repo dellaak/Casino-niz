@@ -444,15 +444,17 @@ const Recension = (props) => {
 										src={Sloticon}
 									/>
 								</div>
+
 								<h3 className="recension-bottom-title"> {recension.egentitel2 ? recension.egentitel2 : "Sport och Odds"}</h3>
-								<div className="recension-box-icon-left">
-									<img
-										className="recension-bigicon"
-										alt="slot-icon"
-										src={Sportsicon}
-									/>
-									<p>{recension.sportsrec}</p>
-								</div>
+								{selectedCasino.sports ? <React.Fragment>
+									<div className="recension-box-icon-left">
+										<img
+											className="recension-bigicon"
+											alt="slot-icon"
+											src={Sportsicon}
+										/>
+										<p>{recension.sportsrec}</p>
+									</div></React.Fragment> : <p>Ingen sport sektion</p>}
 
 								<div className="regular-margin-box">
 									<h3 className="recension-bottom-title">Summering</h3>
