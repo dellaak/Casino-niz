@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Collapse } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
 import "./style.scss";

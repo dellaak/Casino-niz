@@ -56,7 +56,7 @@ const Top5 = (props) => {
     const Kampanj = (props) => {
         let { text, bild, publicerad, link } = props
         return (<StyledKampanj>
-            <NavLink to={link}><img src={bild} /></NavLink>
+            <NavLink to={link}><img src={bild} alt="blogg-img" /></NavLink>
             <p>{text}...</p>
             <NavLink className="readmore-blogg" to={link}>Läs mer</NavLink>
 

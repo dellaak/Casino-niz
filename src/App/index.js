@@ -38,7 +38,7 @@ const App = () => {
         testAd.remove();
         testAd2.remove()
 
-    })
+    }, [])
 
 
 
