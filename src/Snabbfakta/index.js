@@ -5,6 +5,7 @@ import "./style.scss"
 
 
 const Snabbfakta = (props) => {
+    console.log(props)
     let nc = false
     if (props.casino.title === 'NoAccountcasino') {
         nc = true

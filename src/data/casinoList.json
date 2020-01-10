@@ -2987,7 +2987,7 @@
                     ],
                     "topslotgames": "Över 700+ slots från de bästa leverantörerna på marknaden . Några av leverantörerna är Big Time Gaming, Microgaming, NetEnt, Play `n GO, Quickspin, Thunderkick och Yggdrasil",
                     "deposittypes": "VISA, Mastercard, Neteller, Skrill, Trustly, Banköverföring, Paysafecard och Swish ",
-                    "mindeposit": 100,
+                    "mindeposit": 25,
                     "minout": 100,
                     "swish": true,
                     "livechat": true,

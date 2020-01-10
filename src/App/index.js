@@ -17,6 +17,7 @@ import Top5 from "../Blogg/Top5"
 import TopButton from "../TopButton/index"
 import "./style.scss"
 import Blogg from "../Blogg/index"
+import MinstaInsCasino from "../Blogg/MinstaInsCasino/index"
 
 const App = () => {
 
@@ -68,10 +69,12 @@ const App = () => {
                                 <Route path="/Kampanjer-casino-2020" component={Blogg} />
                                 <Route path="/Terms" component={Terms} />
                                 <Route path="/Policy" component={Policy} />
+
+
+                                {/* BLOGG */}
                                 <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                                <Route path="/minsta-insattning-casino" render={(props) => (<MinstaInsCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                                 <Route path="*" component={NotFoundPage} />
-
-
                             </Switch>
 
                         </main>

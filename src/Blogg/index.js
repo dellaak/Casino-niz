@@ -7,6 +7,12 @@ import styled from "styled-components"
 import "./style.scss"
 
 
+const BloggSection = styled.section`
+display: flex;
+ justify-content:space-evenly;
+ flex-wrap:wrap;
+`
+
 const StyledKampanj = styled.section`
 display: flex;
   max-width: 320px;
@@ -100,16 +106,17 @@ const Top5 = (props) => {
             <p>
                 Hoppas att det vi skriver ut här får dig som läsare att finna det intressant :)
             </p>
+            <h2>Våra kampanjer 2020</h2>
+            <BloggSection>
 
-            <section className="blogg-wrap">
 
-                <h2>Våra kampanjer 2020</h2>
+                <Kampanj text='Här ger vi dig en filtrerad lista på casino med minsta insättningen under 100 kr. Perfekt för dig som vill prova på ett nytt casino. Minsta insättningar från 10kr, 20kr och 50 kr.' bild="/images/mindep.svg" publicerad="11 Januari 2020" link="minsta-insattning-casino" />
 
                 <Kampanj text='Casinon vi listar här är några casinon som vi tycker sticker ut lite extra. Det vi har tänkt på när vi valde ut fem casinon är layouten, spelutbudet på slots, supporten och även' bild="/images/top5.png" publicerad="3 Januari 2020" link="5-basta-casinon-2020" />
 
 
 
-            </section>
+            </BloggSection>
 
 
         </section>

@@ -47,7 +47,7 @@ position:relative;
 
         <StyledDiv >
 
-            <p className="recommend-text-top">Månadens rekommendatin</p>
+            <p className="recommend-text-top">Månadens </p>
         </StyledDiv>
 
 
