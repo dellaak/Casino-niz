@@ -196,9 +196,7 @@ const Sports = (props) => {
             "@type": "Answer",
             "text": "Beroende på spelbolag så kan nästan odds på i princip allt. Vem som blir nästa president, vem som vinner melodifestivalen, flera typer av sport events, esport och mycket mer!"
           }
-        }}]
-      }
-      }`}</script>
+        }]}`}</script>
             </Helmet>
             <Alert
                 color="success"
@@ -306,7 +304,7 @@ const Sports = (props) => {
                 )}
             <BottomInfoSports />
 
-            <p className="update-text">Senast uppdaterad: 9 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 10 Januari 2020</p>
 
 
         </Container>

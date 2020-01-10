@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const StyledWrapper = styled.section`
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
+
   /* background: linear-gradient(45deg, #02284f 0%, #02284f 50%, transparent 50%) */
-  @media (max-width: 450px) {
-    margin-bottom: 80px;
+  @media (max-width: 750px) {
+    margin-bottom: 25px;
   }
 `;
 const MonthBox = styled.div`

@@ -59,7 +59,7 @@ const AnimatedCount = (props) => {
 
 
     return (
-        <StyledDiv>
+        <React.Fragment>
             <StyledCount>
                 <StyledBox>
                     <StyledFreeText>Antal freespins</StyledFreeText>
@@ -77,7 +77,7 @@ const AnimatedCount = (props) => {
                 </StyledBox>
             </StyledCount>
 
-        </StyledDiv>
+        </React.Fragment>
     );
 
 }

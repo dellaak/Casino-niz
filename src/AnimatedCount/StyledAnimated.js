@@ -47,7 +47,7 @@ export const StyledCount = styled.div`
 border-radius: 10px;
     background-color: #032a52e0;
     color: #fed100;
-
+justify-content:space-evenly;
   font-size: 16px;
   font-family: "Manjari", sans-serif;
   text-transform: uppercase;

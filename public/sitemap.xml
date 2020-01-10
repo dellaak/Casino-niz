@@ -9,27 +9,27 @@
 
 <url>
   <loc>https://www.casinoniz.se</loc>
-  <lastmod>2020-01-09T00:10:00+01:00</lastmod>
+  <lastmod>2020-01-10T00:10:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.casinoniz.se/esportbetting</loc>
-  <lastmod>2020-01-09T00:10:00+01:00</lastmod>
+  <lastmod>2020-01-10T00:10:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://www.casinoniz.se/faktura-casino</loc>
-  <lastmod>2020-01-09T00:10:00+01:00</lastmod>
+  <lastmod>2020-01-10T00:10:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://www.casinoniz.se/odds</loc>
-  <lastmod>2020-01-09T00:10:00+01:00</lastmod>
+  <lastmod>2020-01-10T00:10:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
@@ -93,7 +93,7 @@
 
 <url>
   <loc>https://www.casinoniz.se/recension/888casino/</loc>
-  <lastmod>2019-12-31T01:05:48+00:00</lastmod>
+  <lastmod>2020-01-10T01:05:48+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 
@@ -343,6 +343,12 @@
 <url>
   <loc>https://www.casinoniz.se/recension/karlcasino/</loc>
   <lastmod>2020-01-08T00:00:01+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+
+<url>
+  <loc>https://www.casinoniz.se/recension/turbico/</loc>
+  <lastmod>2020-01-10T00:00:01+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 

@@ -500,44 +500,42 @@
             "color": "#000",
             "textcolor": "#7cfa00",
             "setTop": false,
-            "slogan": "Pionjärerna i nätcasinobranschen",
-            "nodeposit": "Inget för tillfälle",
-            "depositbonus": "Sätt in 100 kr, så får du direkt 600 kr totalt att spela för!(500%!) ",
+            "slogan": "Casinobonus",
+            "depositbonus": "Insättningsbonus på 250% upp till 2500 kr + 25 Freespins",
             "sportsbonus": "Sätt in 100 kr, så får du direkt 600 kr totalt att spela för!(500%!)",
             "mylink": "https://mmwebhandler.aff-online.com/c/43499?sr=1704316",
             "rules": "https://mmwebhandler.aff-online.com/c/44227?sr=1704316",
             "caslogo": "/images/888casino.png",
-            "extratext": "Du måste sätta in minst 100 kr för att bonusen ska gälla. Om du sätter in mer än 100 kr, får du fortfarande 140EUR extra att spela för",
+            "extratext": "Du måste sätta in minst 100 kr för att bonusen ska gälla.",
             "wager": 20,
             "sportswager": 8,
-            "freespins": 0,
-            "publishdate": "16 september 2019",
+            "freespins": 25,
+            "publishdate": "10 Januari 2020",
             "activebonus": true,
             "bankid": true,
             "sports": true,
             "freefromwager": false,
-            "depositpercent": 500,
+            "depositpercent": 250,
             "depositpercentsports": 500,
             "faktura": false,
             "fakturatype": [],
             "recension": [
                 {
-                    "gamebar": 72,
-                    "experience": 78,
-                    "support": 70,
+                    "gamebar": 79,
+                    "experience": 85,
+                    "support": 75,
                     "egentitel": false,
                     "egentitel2": false,
                     "toprecension": "888 Casino är verkligen en gammal goding som har varit med i branschen länge. De grundades 1997 och har vuxit till ett väldigt stort casino internationellt. 888 har svensk spellicens så vi svenskar kan även spela där. Casinot har ingen livechat och vill man kontakt dem får man göra det via email. De har en supportsida med de vanligaste frågorna samt svar. Har ett okej utbud på videoslots. Vill man inte spela på videoslots så erbjuder de live casino, poker och sportsbetting. De erbjuder även esports betting och det tycker vi om!",
-                    "secondrec": "Layouten på sidan är ganska unik för att vara i casinobranschen. Den är svart och stilren och det är väldigt enkelt att navigera runt. 888 har exklusiva slots och det tycker vi på Casinoniz är ett stort plus. Exklusiva slots menar vi med att man kan endast spela exklusiva slots hos casinot som erbjuder det. 888 har ett väldigt brett spelsortiment. De har slots races",
+                    "secondrec": "Layouten på sidan är ganska unik för att vara i casinobranschen. Den är svart och stilren och det är väldigt enkelt att navigera runt. 888 har exklusiva slots och det tycker vi på Casinoniz är ett stort plus. Exklusiva slots menar vi med att man kan endast spela exklusiva slots hos casinot som erbjuder det. 888 har ett väldigt brett spelsortiment. De har även slots races. ",
                     "sportsrec": "Väldigt bra sportsektion. Att man kan betta på esports ger vi 888 en klapp på axeln för. Stort utbud av spel och vill man odds på sitt favoritlag så hittar du det där.",
-                    "welcomeoffer": "Sätt in 100 kr, så får du direkt 600 kr totalt att spela för! ",
+                    "welcomeoffer": "Insättningsbonus på 250% upp till 2500 kr + 25 Freespins i casinot.",
                     "bonusterms": [
-                        "Välkomstbonusen består av en omedelbar bonus på €140 för en minsta insättning av 100 kr.",
-                        "Bonus måste hämtas inom 60 dagar efter insättning."
+                        "Bonusen måste hämtas inom 60 dagar efter insättning",
+                        "Freespins är giltiga på utvalda spel och löper ut efter 14 dagar"
                     ],
                     "casinoterms": [
-                        "För att ta ut bonus och tillhörande vinster, krävs spel 20 x bonusbeloppet inom 90 dagar.",
-                        "Du kommer endast att ha rätt till en välkomstbonus och välkomstbonusar är begränsade till en (1) spelare per hushåll"
+                        "Bonusvinster från freespins har ett maxtak på 2500 kr"
                     ],
                     "sportsterms": [
                         "Insättningar med Neteller eller Skrill kommer inte att vara berättigade till bonusen.",
@@ -3609,6 +3607,60 @@
                     "swish": true,
                     "livechat": true,
                     "summering": "GoGo Casino är ett väldigt modernt casino. Erbjuder ett väldigt brett utbud av slots. Minsta insättningen är 200 kr och minsta uttaget är 200 kr. För att spela på casinot krävs det bankid eftersom dem endast accepterar insättningar via Trustly och Swish. Registreringen går väldigt snabbt. Erbjuder livechatt dygnet runt. Uttagen och insättningarna går väldigt snabbt. För personen som tycker om slots är detta ett väldigt bra casino."
+                }
+            ]
+        },
+        {
+            "id": 57,
+            "title": "Turbico",
+            "slogan": "Casino utan registrering",
+            "color": "#2c163b",
+            "textcolor": "#22d0a1",
+            "setTop": false,
+            "depositbonus": "Ingen casino bonus",
+            "sportsbonus": "ingen sports bonus",
+            "mylink": "https://wlturbico.adsrv.eacdn.com/C.ashx?btag=a_17781b_1621c_&affid=4979&siteid=17781&adid=1621&c=",
+            "rules": "https://wlturbico.adsrv.eacdn.com/C.ashx?btag=a_17781b_1622c_&affid=4979&siteid=17781&adid=1622&c=",
+            "caslogo": "/images/turbicologo.svg",
+            "wager": 0,
+            "sportswager": "x",
+            "extratext": "",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": false,
+            "bankid": true,
+            "publishdate": "10 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 0,
+            "faktura": false,
+            "fakturatype": [],
+            "recension": [
+                {
+                    "gamebar": 95,
+                    "experience": 100,
+                    "support": 95,
+                    "egentitel": "Turbico - Snabbt casino!",
+                    "egentitel2": false,
+                    "toprecension": "Turbico casino är ett nytt spelbolag som grundades 2019 av välkända BetHard Group som bl.a driver Bethard som har Zlatan Ibrahimovic som delägare och ambassadör. Sidan är väldigt modern och erbjuder Pay n Play, som innebär att man kan spela utan att registrera sig. Du gör insättning enkelt via betaltjänsten Trustly och vips så har du ett konto. Uttagen och insättningarna går väldigt snabbt. Turbico har en liten supportsida där man hittar kortfattade svar bland de vanligaste frågorna. Skulle man vilja ha mer hjälp så har dem en livechatt som har öppet dygnet runt. Turbico är även anpassad för mobilen.",
+                    "secondrec": "Turbico har slots från leverantörer som håller högsta klass inom marknaden. Med över 700+ spel så finns det mycket att välja mellan. Casinosektionen är väldigt snygg. Vill man prova på att vinna en jackpot så har de ca 11 slots där det erbjuds jackpot. Vill man spela på något annat än slots så erbjuder Turbico Live Casino med Roulette, Blackjack, Hold'Em, Caribbean stud poker och andra spel. Casinot erbjuder ingen direkt filterfunktion för casinon utan man kan söka på sitt favoritspel. Spelautomaten uppdateras kontinuerligt på sidan.",
+                    "sportsrec": "Ingen sport sektion.",
+                    "welcomeoffer": "Ingen casino bonus.",
+                    "bonusterms": [
+                        ""
+                    ],
+                    "casinoterms": [
+                        ""
+                    ],
+                    "sportsterms": [
+                        "Ingen sports sektion"
+                    ],
+                    "topslotgames": "Över 700+ slots. Slots från kända leverantörer som Microgaming, NetEnt, Quickspin, Thunderkick, iSoftbet ,Big Time Gaming och många fler !",
+                    "deposittypes": "Trustly",
+                    "mindeposit": 200,
+                    "minout": 200,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "Turbico är ett bra casino som innehar svensk spellicens. Casinot har över 700+ spel och har en väldigt modern och snygg design. Bra support med livechatt och väldigt snabba insättningar samt uttag via betaltjänsten Trustly. Minsta insättningen/uttag är på 200 kr. För spelaren som tycker om slots och Live Casino så är Turbico casinot för er."
                 }
             ]
         }

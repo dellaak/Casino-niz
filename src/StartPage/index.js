@@ -12,7 +12,7 @@ import NewCasinos from "../NewCasinos";
 import star from "../images/fullstar.svg";
 import sweflag from "../images/sweflag.png"
 import "./style.scss"
-
+import MonthCasino from "../MonthCasino"
 
 
 
@@ -208,8 +208,8 @@ const StartPage = (props) => {
   }
 
 
-  return (<div>
-    <div className="start-wrap">
+  return (<React.Fragment>
+    <section className="start-wrap">
       <Helmet>
         <title>
           Svenska Casino 2020 - Jämför casinobonusar | Casinoniz
@@ -289,7 +289,7 @@ const StartPage = (props) => {
           }
         }]
       }
-      }`}</script>
+      `}</script>
 
       </Helmet>
 
@@ -316,10 +316,12 @@ const StartPage = (props) => {
 
       <h1 className="welcome-title">Svenska Casinon 2020</h1>
       <div className="top-casinos-rec">
+
         <OurRec />
+        {/* <MonthCasino list={props.start.Casinon} /> */}
         <AnimatedCount list={props.start.Casinon} />
 
-        {/* <LatestRec casinolist={this.state.casinon}/> */}
+
       </div>
 
       <section className="welcome-box">
@@ -431,12 +433,12 @@ const StartPage = (props) => {
             </div>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 9 Januari 2020</p>
+        <p className="update-text">Senast uppdaterad: 10 Januari 2020</p>
 
       </Container>
 
-    </div>
-  </div>)
+    </section>
+  </React.Fragment>)
 }
 
 

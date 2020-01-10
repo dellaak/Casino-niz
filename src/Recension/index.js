@@ -166,7 +166,7 @@ const Recension = (props) => {
 
 	return (
 
-		< div >
+		<React.Fragment>
 			<Helmet>
 				<title>
 					{casinotitle.length > 3 ? `${casinotitle} RECENSION ⇛` : ''}
@@ -195,7 +195,7 @@ const Recension = (props) => {
          
        ]
       }
-      }`}</script>) : ''}
+      `}</script>) : ''}
 
 			</Helmet>
 			<div className="spela-lagom">
@@ -282,7 +282,7 @@ const Recension = (props) => {
 										text={function text(steps, percentage) { return (Math.floor(steps * percentage * 10) / 10).toFixed(0) }}
 										width={100}
 									/>
-									<StyledCircleP>Layout</StyledCircleP>
+									<StyledCircleP>Upplevelse</StyledCircleP>
 								</div>
 
 
@@ -425,6 +425,7 @@ const Recension = (props) => {
 										Swish: {recension.swish ? "✅" : "❌"}
 									</p>
 								</div>
+								{selectedCasino.sports ? <p className="bottom-top-slot-games">{recension.topslotgames}</p> : ''}
 							</div>
 
 
@@ -590,7 +591,7 @@ const Recension = (props) => {
 					</div>
 				)
 			}
-		</div >
+		</React.Fragment>
 	);
 
 }
