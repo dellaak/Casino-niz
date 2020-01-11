@@ -34,7 +34,7 @@ const Bottominfo = (props) => {
 
                 <div className="question-wrap">
                     <div className="head-q">
-                        <h2>Casinon med faktura - Frågor och svar </h2>
+                        <h2>Casinon faktura - Frågor och svar </h2>
                         <p>Här har vi har samlat några av svaren på de vanligaste frågorna gällande insättning med faktura. Har du fler frågar kan du alltid kontakta oss. Casinoniz listar casinon som erbjuder esportsbetting, casino med faktura och odds. Alla casinon som vi listar har svensk spellicens!  </p>
                     </div>
                     <Row className="q-box" >
@@ -42,7 +42,7 @@ const Bottominfo = (props) => {
 
                             <Col className="single-q" >
                                 <div  >
-                                    <Button onClick={() => { setQ1(!q1) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >💰</span><span > Kan man göra ett uttag när man spelar på faktura?</span> <StyledSpan rotate={q1 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+                                    <Button onClick={() => { setQ1(!q1) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >💰</span><span > Uttag när man spelar på casino faktura?</span> <StyledSpan rotate={q1 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
                                     <Collapse isOpen={q1}>
                                         <Card>
                                             <CardBody ><div className="msg" xs="6" ><div ><p> När man spelar hos ett casino på faktura så är det inga problem att ta ut uttagen när man vill det. Läs igenom villkoren för respektive tjänst du väljer att använda. Tänk på att aldrig spela för mer än du har råd med!</p></div>
@@ -98,7 +98,7 @@ const Bottominfo = (props) => {
                             <Col className="single-q">
                                 <div  >
                                     <Button onClick={() => { setQ4(!q4) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >❓</span><span >
-                                        Är det svårt och göra insättningar på faktura? </span> <StyledSpan rotate={q4 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+                                        Är det svårt och göra insättningar på casino med faktura? </span> <StyledSpan rotate={q4 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
 
 
                                     <Collapse isOpen={q4}>
@@ -127,7 +127,7 @@ const Bottominfo = (props) => {
 
                             <Col className="single-q">
                                 <div  >
-                                    <Button onClick={() => { setQ6(!q6) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >✨</span><span >Betalar jag skatt när jag spelar med faktura?</span> <StyledSpan rotate={q6 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+                                    <Button onClick={() => { setQ6(!q6) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >✨</span><span >Betalar jag skatt när jag spelar casino på faktura?</span> <StyledSpan rotate={q6 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
 
 
                                     <Collapse isOpen={q6}>
@@ -154,6 +154,19 @@ const Bottominfo = (props) => {
                 </div>
 
                 <div className="info-bottom-box">
+                    <h3>Fördelar med casino faktura?</h3>
+                    <p>Fördelen med casino faktura är att du i slutet på månaden kan få en överblick på hur mycket du har spelat för.
+       </p>
+                </div>
+
+                <div className="info-bottom-box">
+                    <h3>Faktura casino - risker med casino på faktura?</h3>
+                    <p>
+                        När man spelar casino på faktura så måste man verkligen tänka på ifall man har råd med att spela casino på faktura. Du betalar fakturan i efterhand så ta reda på eventuella räntor och kostnader som varje fakturametod har.
+          </p>
+                </div>
+
+                <div className="info-bottom-box">
                     <h3>Casino faktura med SMS-Voucher</h3>
                     <p>
                         SMS-Voucher startade sin verksamhet i stockholm och växer. Att göra insättningar med SMS-voucher går smidigt och snabbt.
@@ -164,7 +177,7 @@ const Bottominfo = (props) => {
                 <div className="info-bottom-box">
                     <h3>Svenska Casinon faktura?</h3>
                     <p>I dagens moderna samhälle och med mer teknisk kunskap så utvecklas insättningsmetoder och hela användarupplevelsen.
-                    Att spela casino på svenska casinon med faktura är alltså inga problem.
+                    Att spela casino på svenska casinon med faktura är alltså inga problem. Tänk på att aldrig försöka vinna tillbaka eventuella förluster!
        </p>
                 </div>
 

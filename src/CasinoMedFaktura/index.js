@@ -221,7 +221,7 @@ const CasinoMedFaktura = (props) => {
                     <link rel="canonical" href="https://www.casinoniz.se/faktura-casino" />
                     <meta
                         name="description"
-                        content="[Uppdaterad✅]Spela casino på faktura. Vi listar Svenska casino med faktura som insättningsmetod. Hitta ditt casino här."
+                        content="[Uppdaterad✅]Spela casino på faktura. Vi listar Svenska casino med faktura som insättningsmetod. Hitta ditt faktura casino här."
                     />
                     <meta
                         name="keywords"
@@ -233,7 +233,7 @@ const CasinoMedFaktura = (props) => {
          "@type": "FAQPage",
          "mainEntity": [{
           "@type": "Question",
-          "name": "💰Kan man göra ett uttag när man spelar på faktura?",
+          "name": "💰Uttag när man spelar på casino faktura?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "När man spelar hos ett casino på faktura så är det inga problem att ta ut uttagen när man vill det. Läs igenom villkoren för respektive tjänst du väljer att använda. Tänk på att aldrig spela för mer än du har råd med!."
@@ -254,7 +254,7 @@ const CasinoMedFaktura = (props) => {
           }
         }, {
           "@type": "Question",
-         "name": "❓Är det svårt och göra insättningar på faktura?",
+         "name": "❓Är det svårt och göra insättningar på casino med faktura?",
          "acceptedAnswer": {
            "@type": "Answer",
            "text": "Att spela casino på faktura är väldigt smidigt och enkelt. Med några få knapptryck så har du fått in pengar på ditt spelkonto. Du måste ha tillgång till en mobiltelefon. Tänk på att aldrig spela för mer än vad du har råd med."
@@ -268,7 +268,7 @@ const CasinoMedFaktura = (props) => {
           }
         }, {
           "@type": "Question",
-         "name": "✨Betalar jag skatt när jag spelar med faktura?",
+         "name": "✨Betalar jag skatt när jag spelar casino på faktura?",
          "acceptedAnswer": {
            "@type": "Answer",
            "text": "Om ett casino har svensk spellicens innebär det helt skattefria vinster för alla spelare. Även när man spelar på faktura. Spelar man på diverse casinon utan svensk spellicens på faktura så får man vara beredd på att skatta på sina vinster oavsett hur det såg ut innan den svenska spellicensen."
@@ -303,7 +303,7 @@ const CasinoMedFaktura = (props) => {
                         <h1 className="banners">Casino faktura</h1>
 
                         <div className="welcome-text-faktura">
-                            <h3 className="second-welcome-title">Casino med faktura - Här listar vi endast casinon som erbjuder insättning med faktura</h3>
+                            <h3 className="second-welcome-title">Casino faktura - Här listar vi endast casinon som erbjuder insättning med faktura</h3>
                             <p>
                                 Att spela casino på faktura är ganska självklart år 2020. Vi handlar
                                 allt mer på faktura så varför inte spela på faktura också.
@@ -372,7 +372,7 @@ const CasinoMedFaktura = (props) => {
                                 className="button-recension blink"
                                 onClick={loadMore}
                             >
-                                Hämta fler casinon{" "}
+                                Hämta fler casino med faktura{" "}
                             </Button>
                         </div>
                     ) : (
