@@ -16,6 +16,13 @@ const StyledButton = styled.button`
   cursor: pointer;
   padding: 15px;
   border-radius: 50px;
+
+  @media (max-width: 800px) {
+      right:3px;
+      bottom:104px;
+      border-radius:0;
+      z-index:1;
+  }
 `
 
 const TopButton = () => {

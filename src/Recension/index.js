@@ -53,12 +53,20 @@ const Recension = (props) => {
 	const [percentage, setPercentage] = useState({ game: 1, support: 1, exp: 1 })
 	let { selectedCasino, recension } = overall;
 
+	let recBox;
+	window.addEventListener('scroll', scrollFunction);
+
 
 	useEffect(() => {
 
 		let selec;
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
+
+		window.addEventListener('scroll', scrollFunction);
+		recBox = document.getElementById("myBtn")
+
+
 		const GetCasino = () => {
 			let list = props.list.Casinon
 			let title;
@@ -108,6 +116,14 @@ const Recension = (props) => {
 	}, [])
 
 
+	const scrollFunction = () => {
+		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			recBox.style.display = "block";
+		} else {
+			recBox.style.display = "none";
+		}
+
+	}
 
 
 
@@ -160,13 +176,69 @@ const Recension = (props) => {
 
 
 
+	const StyledButtonBox = styled.div`
+	z-index:9;
+	background-color: ${selectedCasino.color};
+	position: sticky;
+	position: -webkit-sticky; /* Safari */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-top:10px;
+	top:0;
+	-webkit-box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
+-moz-box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
+box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
+	@media (max-width: 800px) {
+		z-index:10;
+		position: fixed;
+		top:auto;
+		bottom:0;
+		left:0;
+		right:0;
+		padding-bottom:10px;
+		box-shadow:0px -2px 10px rgba(0, 0, 0, 0.4);
+	}
+    
+	span{
+		padding:10px;
+		color:${selectedCasino.textcolor};
+		font-size:12px;
+		padding-bottom:0;
+		text-align:center;
+	}
+
+	.button-recension{
+		font-size:18px;
+		text-decoration:none;
+	}
+
+	a{
+		color:${selectedCasino.textcolor};
+		text-decoration:underline;
+		font-size:12px;
+	}
+
+	`
+
+	const StyledHiddenBonus = styled.div`
+	display:flex;
+	justify-content:center;
+	color:${selectedCasino.textcolor};
+	@media (max-width: 800px) {
+	display:none;
+	}
+`
+
+
+
 
 
 
 
 	return (
 
-		<React.Fragment>
+		<Container >
 			<Helmet>
 				<title>
 					{casinotitle.length > 3 ? `${casinotitle} RECENSION ⇛` : ''}
@@ -198,12 +270,7 @@ const Recension = (props) => {
       `}</script>) : ''}
 
 			</Helmet>
-			<div className="spela-lagom">
-				<span>
-					18+ &#8226; Spela Ansvarfullt &#8226;{" "}
-					<a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
-				</span>
-			</div>
+
 
 			{recension ? (
 				<div className="recension-wrapper">
@@ -290,292 +357,312 @@ const Recension = (props) => {
 						</StyledTopWrap>
 
 
+						<StyledButtonBox>
+
+							<StyledHiddenBonus>
+								{selectedCasino.activebonus ? <p>{selectedCasino.depositbonus}</p> : ''}
+							</StyledHiddenBonus>
+							<Link className="button-recension"
+								target={props.isBlocked ? '' : "_blank"}
+								rel="noopener noreferrer nofollow "
+								to={{ pathname: `/Redirect/${selectedCasino.title}`, match: `${selectedCasino.title}` }}>
+
+								Besök {selectedCasino.title}
+
+							</Link>
+
+							{selectedCasino.casinospecialterms ? <span>{selectedCasino.casinospecialterms}</span> : <span>	18+ &#8226; Spela Ansvarfullt &#8226;{" "}<a href={selectedCasino.rules}>Regler&Villkor gäller</a> &#8226;{" "}
+								<a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
+							</span>}
+						</StyledButtonBox>
 
 
-						<Container>
-							<h2 className="rece-title"> Casino Recension {selectedCasino.title}</h2>
-							<i className="fas fa-star"></i>
-							<div className="recension-deposit">
-								<div className="recension-small-box">
-									<h2 className="top-icon-text">Aktuell casino bonus</h2>
-									<img
-										className="recension-slot-icon"
-										alt="welcome-icon"
-										src={Presenticon}
-									/>
-									<p>  {selectedCasino.depositbonus}</p>
-									{selectedCasino.casinospecialterms ? <small> 18+ | <a href={selectedCasino.rules}>Regler&Villkor gäller</a> | <a href="https://www.stodlinjen.se/"> www.stodlinjen.se</a> | {selectedCasino.special}</small> : (<small>       18+ | {" "}
-										<a href={selectedCasino.rules}>Regler&Villkor gäller</a> |
+						<h2 className="rece-title"> Casino Recension {selectedCasino.title}</h2>
+						<i className="fas fa-star"></i>
+						<div className="recension-deposit">
+							<div className="recension-small-box">
+								<h2 className="top-icon-text">Aktuell casino bonus</h2>
+								<img
+									className="recension-slot-icon"
+									alt="welcome-icon"
+									src={Presenticon}
+								/>
+								<p>  {selectedCasino.depositbonus}</p>
+								{selectedCasino.casinospecialterms ? <small> 18+ | <a href={selectedCasino.rules}>Regler&Villkor gäller</a> | <a href="https://www.stodlinjen.se/"> www.stodlinjen.se</a> | {selectedCasino.special}</small> : (<small>       18+ | {" "}
+									<a href={selectedCasino.rules}>Regler&Villkor gäller</a> |
 									<a href="https://www.stodlinjen.se/"> www.stodlinjen.se</a>{" "}</small>)}
 
-								</div>
-
-
-								{selectedCasino.sportsbonus && selectedCasino.sports && selectedCasino.activebonus ? <div className="recension-small-box">
-									<h2 className="top-icon-text">Aktuell Sportbonus</h2>
-									<img
-										className="recension-slot-icon"
-										alt="slot-icon"
-										src={Sportsicon}
-									/>
-									<p>{selectedCasino.sportsbonus}</p>
-								</div> : <div className="recension-small-box">
-										<h2 className="top-icon-text">Slots</h2>
-										<img
-											className="recension-slot-icon"
-											alt="slot-icon"
-											src={Sloticon}
-										/>
-										<p>{recension.topslotgames}</p>
-									</div>}
-								<div className="recension-small-box">
-									<h2 className="top-icon-text">Insättningsmetoder</h2>
-									<img
-										className="recension-slot-icon"
-										alt="cash-icon"
-										src={Cashicon}
-									/>
-									<p>{recension.deposittypes}</p>
-								</div>
 							</div>
 
 
-							<div className="fakta-box">
-								<h4 className="snabb-title">
-									Snabbfakta om {selectedCasino.title} och aktuell casino bonus
-							</h4>
-								<div className="Snabbfakta">
-									<p>
-										<img
-											className="snabb-icon"
-											alt="Wager-icon"
-											src={Wagericon}
-										/>
-										Omsättningskrav: {selectedCasino.wager}X
-                  </p>
-
-									<p>
-										<img
-											className="snabb-icon"
-											alt="spinner-icon"
-											src={freespinsicon}
-										/>
-										Freespins:{selectedCasino.freespins > 1 ? `${selectedCasino.freespins}` : "❌"}
-									</p>
-
-									<p>
-										<img
-											className="snabb-icon"
-											alt="Wager-icon"
-											src={Bonusbagicon}
-										/>
-										Bonusprocent: {selectedCasino.depositpercent}%
-                  </p>
-
-									<p>
-										<img
-											className="snabb-icon"
-											alt="mobil-icon"
-											src={Freewagericon}
-										/>
-										Omsättningsfria spins:{" "}
-										{selectedCasino.freefromwager ? "✅" : "❌"}
-									</p>
-								</div>
-
-								<div className="Snabbfakta">
-									<p>
-										<img
-											className="snabb-icon"
-											alt="deposit-icon"
-											src={Depositicon}
-										/>
-										Minsta insättning: {recension.mindeposit} SEK
-                  </p>
-									<p>
-										<img
-											className="snabb-icon"
-											alt="uttag-icon"
-											src={Uttagicon}
-										/>
-										Minsta uttag: {recension.minout} SEK
-                  </p>
-									<p>
-										<img
-											className="snabb-icon"
-											alt="mobil-icon"
-											src={Mobilonlyicon}
-										/>
-										Bankid: {selectedCasino.bankid ? "✅" : "❌"}
-									</p>
-									<p>
-										<img
-											className="snabb-icon"
-											alt="chat-icon"
-											src={Chaticon}
-										/>
-										Livechat: {recension.livechat ? "✅" : "❌"}{" "}
-									</p>
-									<p>
-										<img
-											className="snabb-icon"
-											alt="mobil-icon"
-											src={Mobilicon}
-										/>
-										Swish: {recension.swish ? "✅" : "❌"}
-									</p>
-								</div>
-								{selectedCasino.sports ? <p className="bottom-top-slot-games">{recension.topslotgames}</p> : ''}
-							</div>
-
-
-
-							<div className="recension-body">
-								<h3>Recension {selectedCasino.title} </h3>
-								<p>{recension.toprecension}</p>
-
-								<h3 className="recension-bottom-title">
-									{recension.egentitel ? recension.egentitel : "Casinot"}
-								</h3>
-								<div className="recension-box-icon-right">
-									<p>{recension.secondrec}</p>
+							{selectedCasino.sportsbonus && selectedCasino.sports && selectedCasino.activebonus ? <div className="recension-small-box">
+								<h2 className="top-icon-text">Aktuell Sportbonus</h2>
+								<img
+									className="recension-slot-icon"
+									alt="slot-icon"
+									src={Sportsicon}
+								/>
+								<p>{selectedCasino.sportsbonus}</p>
+							</div> : <div className="recension-small-box">
+									<h2 className="top-icon-text">Slots</h2>
 									<img
-										className="recension-bigicon"
+										className="recension-slot-icon"
 										alt="slot-icon"
 										src={Sloticon}
 									/>
-								</div>
+									<p>{recension.topslotgames}</p>
+								</div>}
+							<div className="recension-small-box">
+								<h2 className="top-icon-text">Insättningsmetoder</h2>
+								<img
+									className="recension-slot-icon"
+									alt="cash-icon"
+									src={Cashicon}
+								/>
+								<p>{recension.deposittypes}</p>
+							</div>
+						</div>
 
-								<h3 className="recension-bottom-title"> {recension.egentitel2 ? recension.egentitel2 : "Sport och Odds"}</h3>
-								{selectedCasino.sports ? <React.Fragment>
-									<div className="recension-box-icon-left">
-										<img
-											className="recension-bigicon"
-											alt="slot-icon"
-											src={Sportsicon}
-										/>
-										<p>{recension.sportsrec}</p>
-									</div></React.Fragment> : <p>Ingen sport sektion</p>}
 
-								<div className="regular-margin-box">
-									<h3 className="recension-bottom-title">Summering</h3>
-									<p>{recension.summering}</p>
-								</div>
+						<div className="fakta-box">
+							<h4 className="snabb-title">
+								Snabbfakta om {selectedCasino.title} och aktuell casino bonus
+							</h4>
+							<div className="Snabbfakta">
+								<p>
+									<img
+										className="snabb-icon"
+										alt="Wager-icon"
+										src={Wagericon}
+									/>
+									Omsättningskrav: {selectedCasino.wager}X
+                  </p>
 
-								<div className="terms-box">
+								<p>
+									<img
+										className="snabb-icon"
+										alt="spinner-icon"
+										src={freespinsicon}
+									/>
+									Freespins:{selectedCasino.freespins > 1 ? `${selectedCasino.freespins}` : "❌"}
+								</p>
 
-									<div className="regular-box">
-										<h5>Bonusvillkor</h5>
-										<ul className="bonus-terms-box">
-											{overall.bonusterms.map(bonus => (
-												<li key={selectedCasino.id++}>{bonus}</li>
-											))}
-										</ul>
-									</div>
-									<div className="regular-box">
-										<h5>Villkor för spel på slots</h5>
-										<ul className="bonus-terms-box">
-											{overall.casinoterms.map(bonus => (
-												<li key={selectedCasino.id++}>{bonus}</li>
-											))}
-										</ul>
-									</div>
-									<div className="regular-box">
-										<h5>Villkor för spel på odds</h5>
-										<ul className="bonus-terms-box">
-											{overall.sportsterms.map(bonus => (
-												<li key={selectedCasino.id++}>{bonus}</li>
-											))}
-										</ul>
-									</div>
-									{selectedCasino.activebonus ? <div className="villkor-obs">
+								<p>
+									<img
+										className="snabb-icon"
+										alt="Wager-icon"
+										src={Bonusbagicon}
+									/>
+									Bonusprocent: {selectedCasino.depositpercent}%
+                  </p>
 
-										<small>
-											Läs igenom fullständiga villkor för aktuell bonus  hos {selectedCasino.title}! Då vi
-											endast skriver ut några enstaka villkor.
-		</small>
-										<p className="bottom-rules-recension">
-											18+ | {" "}
-											<a href={selectedCasino.rules}>Regler&Villkor gäller</a> |
-		<a href="https://www.stodlinjen.se/"> www.stodlinjen.se</a>{" "}
-										</p>
-									</div> : null}
-								</div>
-
-								<div className="buttonbox-recension">
-									<Link className="button-recension"
-										target={props.isBlocked ? '' : "_blank"}
-										rel="noopener noreferrer nofollow "
-										to={{ pathname: `/Redirect/${selectedCasino.title}`, match: `${selectedCasino.title}` }}>
-
-										Hämta bonus hos {selectedCasino.title}
-
-									</Link>
-								</div>
-
-								<p className="bottom-rules-recension">
-									18+ | {" "}
-									<a href={selectedCasino.rules}>Regler&Villkor gäller</a> |
-                    <a href="https://www.stodlinjen.se/"> www.stodlinjen.se</a>{" "}
+								<p>
+									<img
+										className="snabb-icon"
+										alt="mobil-icon"
+										src={Freewagericon}
+									/>
+									Omsättningsfria spins:{" "}
+									{selectedCasino.freefromwager ? "✅" : "❌"}
 								</p>
 							</div>
 
+							<div className="Snabbfakta">
+								<p>
+									<img
+										className="snabb-icon"
+										alt="deposit-icon"
+										src={Depositicon}
+									/>
+									Minsta insättning: {recension.mindeposit} SEK
+                  </p>
+								<p>
+									<img
+										className="snabb-icon"
+										alt="uttag-icon"
+										src={Uttagicon}
+									/>
+									Minsta uttag: {recension.minout} SEK
+                  </p>
+								<p>
+									<img
+										className="snabb-icon"
+										alt="mobil-icon"
+										src={Mobilonlyicon}
+									/>
+									Bankid: {selectedCasino.bankid ? "✅" : "❌"}
+								</p>
+								<p>
+									<img
+										className="snabb-icon"
+										alt="chat-icon"
+										src={Chaticon}
+									/>
+									Livechat: {recension.livechat ? "✅" : "❌"}{" "}
+								</p>
+								<p>
+									<img
+										className="snabb-icon"
+										alt="mobil-icon"
+										src={Mobilicon}
+									/>
+									Swish: {recension.swish ? "✅" : "❌"}
+								</p>
+							</div>
+							{selectedCasino.sports ? <p className="bottom-top-slot-games">{recension.topslotgames}</p> : ''}
+						</div>
 
-							{selectedCasino.faq ? (<div className="question-wrap">
-								<div className="head-q">
-									<h2>Frågor och svar om {selectedCasino.title}</h2>
-									<p>Här har vi har samlat några av svaren på de vanligaste frågorna gällande {selectedCasino.title}. Har du fler frågar kan du alltid kontakta själva casinot eller fråga oss!</p>
+
+
+						<div className="recension-body">
+							<h3>Recension {selectedCasino.title} </h3>
+							<p>{recension.toprecension}</p>
+
+							<h3 className="recension-bottom-title">
+								{recension.egentitel ? recension.egentitel : "Casinot"}
+							</h3>
+							<div className="recension-box-icon-right">
+								<p>{recension.secondrec}</p>
+								<img
+									className="recension-bigicon"
+									alt="slot-icon"
+									src={Sloticon}
+								/>
+							</div>
+
+							<h3 className="recension-bottom-title"> {recension.egentitel2 ? recension.egentitel2 : "Sport och Odds"}</h3>
+							{selectedCasino.sports ? <React.Fragment>
+								<div className="recension-box-icon-left">
+									<img
+										className="recension-bigicon"
+										alt="slot-icon"
+										src={Sportsicon}
+									/>
+									<p>{recension.sportsrec}</p>
+								</div></React.Fragment> : <p>Ingen sport sektion</p>}
+
+							<div className="regular-margin-box">
+								<h3 className="recension-bottom-title">Summering</h3>
+								<p>{recension.summering}</p>
+							</div>
+
+							<div className="terms-box">
+
+								<div className="regular-box">
+									<h5>Bonusvillkor</h5>
+									<ul className="bonus-terms-box">
+										{overall.bonusterms.map(bonus => (
+											<li key={selectedCasino.id++}>{bonus}</li>
+										))}
+									</ul>
 								</div>
-								<Row className="q-box" >
-									<Col xs="12" m="12" lg="12" sm="12" >
+								<div className="regular-box">
+									<h5>Villkor för spel på slots</h5>
+									<ul className="bonus-terms-box">
+										{overall.casinoterms.map(bonus => (
+											<li key={selectedCasino.id++}>{bonus}</li>
+										))}
+									</ul>
+								</div>
+								<div className="regular-box">
+									<h5>Villkor för spel på odds</h5>
+									<ul className="bonus-terms-box">
+										{overall.sportsterms.map(bonus => (
+											<li key={selectedCasino.id++}>{bonus}</li>
+										))}
+									</ul>
+								</div>
+								{selectedCasino.activebonus ? <div className="villkor-obs">
 
-										<Col className="single-q" >
-											<div   >
-												<Button onClick={() => { setOverall({ ...overall, q1: !overall.q1 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" ></span> <span >{selectedCasino.q1.name}</span> <StyledSpan rotate={overall.q1 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+									<small>
+										Läs igenom fullständiga villkor för aktuell bonus  hos {selectedCasino.title}! Då vi
+										endast skriver ut några enstaka villkor.
+		</small>
+									<p className="bottom-rules-recension">
+										18+ | {" "}
+										<a href={selectedCasino.rules}>Regler&Villkor gäller</a> |
+		<a href="https://www.stodlinjen.se/"> www.stodlinjen.se</a>{" "}
+									</p>
+								</div> : null}
+							</div>
 
-												<Collapse isOpen={overall.q1}>
-													<Card>
-														<CardBody ><div className="msg" xs="6"><div ><p>{selectedCasino.q1.acceptedAnswer.text}</p></div>
-														</div></CardBody>
-													</Card>
-												</Collapse>
-											</div>
-										</Col>
+							<StyledButtonBox>
 
-										<Col className="single-q">
-											<div   >
-												<Button onClick={() => { setOverall({ ...overall, q2: !overall.q2 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" > </span>
-													<span >{selectedCasino.q2.name}</span><StyledSpan rotate={overall.q2 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+								<StyledHiddenBonus>
+									{selectedCasino.activebonus ? <p>{selectedCasino.depositbonus}</p> : ''}
+								</StyledHiddenBonus>
+								<Link className="button-recension"
+									target={props.isBlocked ? '' : "_blank"}
+									rel="noopener noreferrer nofollow "
+									to={{ pathname: `/Redirect/${selectedCasino.title}`, match: `${selectedCasino.title}` }}>
 
+									Besök {selectedCasino.title}
 
-												<Collapse isOpen={overall.q2}>
-													<Card>
-														<CardBody ><div className="msg" xs="6"  ><div ><p>{selectedCasino.q2.acceptedAnswer.text}</p></div>
-														</div></CardBody>
-													</Card>
-												</Collapse>
-											</div>
-										</Col>
+								</Link>
 
-										<Col className="single-q">
-											<div  >
-												<Button onClick={() => { setOverall({ ...overall, q3: !overall.q3 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" ></span>
-													<span >{selectedCasino.q3.name}</span> <StyledSpan rotate={overall.q3 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+								{selectedCasino.casinospecialterms ? <span>{selectedCasino.casinospecialterms}</span> : <span>	18+ &#8226; Spela Ansvarfullt &#8226;{" "}
+									<a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
+								</span>}
+							</StyledButtonBox>
+
+						</div>
 
 
-												<Collapse isOpen={overall.q3}>
-													<Card>
-														<CardBody ><div className="msg" xs="6"  ><div ><p>{selectedCasino.q3.acceptedAnswer.text} </p></div>
-														</div></CardBody>
-													</Card>
-												</Collapse>
-											</div>
-										</Col>
+						{selectedCasino.faq ? (<div className="question-wrap">
+							<div className="head-q">
+								<h2>Frågor och svar om {selectedCasino.title}</h2>
+								<p>Här har vi har samlat några av svaren på de vanligaste frågorna gällande {selectedCasino.title}. Har du fler frågar kan du alltid kontakta själva casinot eller fråga oss!</p>
+							</div>
+							<Row className="q-box" >
+								<Col xs="12" m="12" lg="12" sm="12" >
 
+									<Col className="single-q" >
+										<div   >
+											<Button onClick={() => { setOverall({ ...overall, q1: !overall.q1 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" ></span> <span >{selectedCasino.q1.name}</span> <StyledSpan rotate={overall.q1 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+											<Collapse isOpen={overall.q1}>
+												<Card>
+													<CardBody ><div className="msg" xs="6"><div ><p>{selectedCasino.q1.acceptedAnswer.text}</p></div>
+													</div></CardBody>
+												</Card>
+											</Collapse>
+										</div>
 									</Col>
-								</Row>
-							</div>) : ''}
-						</Container>
+
+									<Col className="single-q">
+										<div   >
+											<Button onClick={() => { setOverall({ ...overall, q2: !overall.q2 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" > </span>
+												<span >{selectedCasino.q2.name}</span><StyledSpan rotate={overall.q2 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+
+											<Collapse isOpen={overall.q2}>
+												<Card>
+													<CardBody ><div className="msg" xs="6"  ><div ><p>{selectedCasino.q2.acceptedAnswer.text}</p></div>
+													</div></CardBody>
+												</Card>
+											</Collapse>
+										</div>
+									</Col>
+
+									<Col className="single-q">
+										<div  >
+											<Button onClick={() => { setOverall({ ...overall, q3: !overall.q3 }) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" ></span>
+												<span >{selectedCasino.q3.name}</span> <StyledSpan rotate={overall.q3 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+
+											<Collapse isOpen={overall.q3}>
+												<Card>
+													<CardBody ><div className="msg" xs="6"  ><div ><p>{selectedCasino.q3.acceptedAnswer.text} </p></div>
+													</div></CardBody>
+												</Card>
+											</Collapse>
+										</div>
+									</Col>
+
+								</Col>
+							</Row>
+						</div>) : ''}
+
 					</div>
 					<p className="publish-date"><b>Senast uppdaterad: </b><i> {selectedCasino ? `${selectedCasino.publishdate}` : '...'}</i></p>
 				</div>
@@ -591,7 +678,7 @@ const Recension = (props) => {
 					</div>
 				)
 			}
-		</React.Fragment>
+		</Container>
 	);
 
 }
