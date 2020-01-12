@@ -214,7 +214,7 @@ const StartPage = (props) => {
         <title>
           Svenska Casino 2020 - Jämför casinobonusar | Casinoniz
           </title>
-        <link rel="canonical" href="https://www.casinoniz.se" />
+        <link rel="canonical" href="https://www.casinoniz.se/" />
         <meta
           name="description"
           content="[Uppdaterad✅]Svenska casinon och casino på faktura. Filtrera casinon efter önskemål och hitta välkomstbonus samt casinobonus som passar just dig."
