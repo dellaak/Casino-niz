@@ -1,6 +1,7 @@
 import React from "react";
 import { render } from 'react-snapshot';
 import App from "./App/index";
+import "./index.scss"
 import 'bootstrap/dist/css/bootstrap.css';
 import "typeface-exo-2"
 import "typeface-open-sans"
@@ -8,6 +9,7 @@ import "typeface-righteous"
 import "@openfonts/manjari_malayalam"
 import TagManager from 'react-gtm-module'
 import * as serviceWorker from './serviceWorker';
+
 
 
 const tagManagerArgs = {

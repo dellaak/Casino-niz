@@ -15,9 +15,11 @@ import Policy from "../Policy/index"
 // import NotFoundPage from "../NotFoundPage/index"
 import Top5 from "../Blogg/Top5"
 import TopButton from "../TopButton/index"
-import "./style.scss"
 import Blogg from "../Blogg/index"
 import MinstaInsCasino from "../Blogg/MinstaInsCasino/index"
+import "./style.scss"
+
+
 
 const App = () => {
 

@@ -176,6 +176,6 @@
     "exclude": [
       "/Go/**"
     ],
-    "snapshotDelay": 300
+    "snapshotDelay": 400
   }
 }

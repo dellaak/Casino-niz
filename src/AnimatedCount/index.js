@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { StyledDiv, StyledCount, StyledFreeText, StyledBox, StyledCountUp } from "./StyledAnimated";
+import "./style.scss"
+import CountUp from 'react-countup';
+import styled from "styled-components";
+
+
+
+const StyledCountUp = styled(CountUp)`
+  font-size:18px;
+  font-style:italic;
+`;
 
 
 const AnimatedCount = (props) => {
@@ -60,22 +69,22 @@ const AnimatedCount = (props) => {
 
     return (
         <React.Fragment>
-            <StyledCount>
-                <StyledBox>
-                    <StyledFreeText>Antal freespins</StyledFreeText>
+            <div className="counter-wrap">
+                <div className="counter-box">
+                    <p>Antal freespins</p>
                     <StyledCountUp duration={2} end={count.freespins} />
-                </StyledBox>
-                <StyledBox>
-                    <StyledFreeText>Omsättningsfria bonusar</StyledFreeText>
+                </div>
+                <div className="counter-box">
+                    <p>Omsättningsfria bonusar</p>
                     <StyledCountUp duration={2} end={count.wagerFree} />
-                </StyledBox>
-                <StyledBox>
-                    <StyledFreeText>Högsta insättningsbonus</StyledFreeText>
+                </div>
+                <div className="counter-box">
+                    <p>Högsta insättningsbonus</p>
                     <StyledCountUp duration={2} end={count.deposit}
                         suffix="%"
                     />
-                </StyledBox>
-            </StyledCount>
+                </div>
+            </div>
 
         </React.Fragment>
     );
