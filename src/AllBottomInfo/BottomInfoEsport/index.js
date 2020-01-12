@@ -217,6 +217,25 @@ const BottominfoEsport = (props) => {
                     </div>
 
                     <div className="info-bottom-box">
+                        <h3>Dota2 Betting med de bästa lagen</h3>
+                        <p>
+                            Bästa 10 lagen inom Dota 2 2020. (Enligt eslgaming) </p>
+                        <ol>
+                            <li>Vici Gaming</li>
+                            <li>TNC Predator</li>{" "}
+                            <li>Evil Geniuses</li>
+                            <li>Alliance</li>
+                            <li>Gambit Esports</li>
+                            <li>OG</li>
+                            <li>beastcoast</li>
+                            <li>Nigma</li>
+                            <li>Team Secret </li>
+                            <li>Virtus.pro</li>
+                        </ol>
+
+                    </div>
+
+                    <div className="info-bottom-box">
                         <h3>Kända CS:GO turneringar</h3>
                         <p>
                             Det finns otroligt många cs:go turneringar som man kan spela på. Men bästa turneringarna

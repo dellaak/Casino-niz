@@ -10,13 +10,15 @@
   padding-top: 30px;
 }
 .copy-bot {
-  margin-bottom: 100px;
   padding: 10px 20px;
   background-color: #214467;
   color: white;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: 800px) {
+    margin-bottom: 100px;
+  }
   a {
     color: white;
     text-decoration: none;

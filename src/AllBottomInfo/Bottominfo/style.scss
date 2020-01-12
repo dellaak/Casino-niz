@@ -11,9 +11,13 @@
 .info-bottom-box {
   height: auto;
   font-family: "Manjari", sans-serif;
-
+  margin-bottom: 5px;
   padding-top: 20px;
   text-align: left;
+  border-bottom: 1px solid lightgrey;
+  h3 {
+    padding-top: 10px;
+  }
 }
 
 .example {
