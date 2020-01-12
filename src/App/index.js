@@ -12,7 +12,7 @@ import RedirectComp from '../RedirectComp/index';
 import Sports from "../Sports/index"
 import Terms from "../Terms/index"
 import Policy from "../Policy/index"
-import NotFoundPage from "../NotFoundPage/index"
+// import NotFoundPage from "../NotFoundPage/index"
 import Top5 from "../Blogg/Top5"
 import TopButton from "../TopButton/index"
 import "./style.scss"
@@ -74,7 +74,7 @@ const App = () => {
                                 {/* BLOGG */}
                                 <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                                 <Route path="/minsta-insattning-casino" render={(props) => (<MinstaInsCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route path="*" component={NotFoundPage} />
+
                             </Switch>
 
                         </main>
