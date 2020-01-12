@@ -170,7 +170,8 @@
       "/Redirect/MariaCasino",
       "/Redirect/Bingocom",
       "/Redirect/Storspelare",
-      "/Redirect/PrankCasino"
+      "/Redirect/PrankCasino",
+      "/Redirect/Turbico"
     ],
     "exclude": [
       "/Go/**"

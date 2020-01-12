@@ -50,7 +50,7 @@ const RedirectComp = (props) => {
                 let casino_link = `/Go/${casino_name}`
                 window.location.assign(casino_link);
             }
-            , 2000
+            , 700
         )
 
         let body = document.getElementsByTagName('body')[0];
