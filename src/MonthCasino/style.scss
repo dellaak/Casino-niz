@@ -11,3 +11,34 @@
   background: rgb(254, 209, 0);
   background: linear-gradient(132deg, rgba(254, 209, 0, 1) 70%, rgba(0, 0, 0, 0) 30%);
 }
+
+.this-month-div {
+  border-radius: 9px;
+  border: 1px solid lightgrey;
+  box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.51);
+  position: relative;
+
+  img {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+.latest-art-div {
+  background-color: #214467;
+  border-radius: 9px;
+  border: 1px solid lightgrey;
+  width: 250px;
+  height: 150px;
+  background-image: url("/images/mindep.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.51);
+  position: relative;
+}
+
+.month-wrap {
+  @media (max-width: 830px) {
+    margin: 15px;
+  }
+}

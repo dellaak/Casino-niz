@@ -1,6 +1,5 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
-import styled from "styled-components"
+import { NavLink } from "react-router-dom";
 import "./style.scss"
 
 
@@ -10,59 +9,22 @@ const MonthCasino = (props) => {
 
     const month = 'Turbico'
 
-
-    const StyledDiv = styled.div`
-    border-radius:9px;
-    border:1px solid lightgrey;
-   width:250px;
-   height:150px;
-   background-image:url('/images/turbicologo.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.51);
-    position:relative;
-`
-
-    const StyledLatestArt = styled.div`
-    background-color:#214467;
-    border-radius:9px;
-    border:1px solid lightgrey;
-   width:250px;
-   height:150px;
-   background-image:url('/images/mindep.svg');
-    background-repeat: no-repeat;
-  background-size: 100% 100%;
-  box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.51);
-position:relative;
-`
-
-
-    const StyledStartWrap = styled.div`
-
-@media (max-width: 830px) {
- margin:15px;
- }
-`
-
-
-
-
-    return (<StyledStartWrap>
+    return (<div className="month-wrap">
         <NavLink
             to={{ pathname: `/Recension/${month}`, match: `${month}` }} >
-            <StyledDiv >
-
+            <div className="this-month-div">
+                <img src="/images/turbicologo.svg" alt="turbico-logo" />
                 <p className="recommend-text-top">Månadens doldis </p>
-            </StyledDiv>
+            </div>
         </NavLink>
 
         <NavLink
             to={{ pathname: '/minsta-insattning-casino' }} >
-            <StyledLatestArt>
+            <div className="latest-art-div">
                 <p className="recommend-text-top">Filtrerad lista </p>
-            </StyledLatestArt>
+            </div>
         </NavLink>
-    </StyledStartWrap>
+    </div>
     );
 
 }
