@@ -19,7 +19,9 @@ const Sports = (props) => {
 
 
 
-    const getSportCasino = () => {
+
+
+    useEffect(() => {
         let list = [...props.list.Casinon]
         let top = []
         let sportCasinon = []
@@ -46,12 +48,7 @@ const Sports = (props) => {
 
 
         return setCasinon(sportCasinon)
-
-    }
-
-    useEffect(() => {
-        getSportCasino()
-    }, [])
+    }, [props.list.Casinon])
 
 
 
@@ -107,7 +104,32 @@ const Sports = (props) => {
 
 
     const resetList = () => {
-        getSportCasino()
+        let list = [...props.list.Casinon]
+        let top = []
+        let sportCasinon = []
+        list.forEach((cas) => {
+            if (cas.sports) {
+                sportCasinon.push(cas)
+            }
+
+        });
+
+        top = sportCasinon.filter(function (i) {
+            if (i.recension && i.sports) {
+                return (
+                    i.recension[0].gamebar === 100 &&
+                    i.recension[0].experience === 100 &&
+                    i.recension[0].support === 100
+                );
+            }
+            return top;
+        });
+
+        sportCasinon = sportCasinon.filter(item => !top.includes(item));
+        sportCasinon = top.concat(sportCasinon);
+
+
+        setCasinon(sportCasinon)
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -304,7 +326,7 @@ const Sports = (props) => {
                 )}
             <BottomInfoSports />
 
-            <p className="update-text">Senast uppdaterad: 12 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 13 Januari 2020</p>
 
 
         </Container>

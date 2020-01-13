@@ -46,7 +46,7 @@ const EsportCasinoComp = (props) => {
         setStar(true)
       }
     }
-  }, []);
+  }, [props.casino.recension]);
 
 
   const qToggle = () => {

@@ -19,7 +19,9 @@ const Esport = (props) => {
 
 
 
-    const getEsportCasino = () => {
+
+
+    useEffect(() => {
         let list = [...props.list.Casinon]
         let esportCasinos = []
         let top;
@@ -44,12 +46,7 @@ const Esport = (props) => {
         esportCasinos = top.concat(esportCasinos);
 
         return setCasinon(esportCasinos)
-
-    }
-
-    useEffect(() => {
-        getEsportCasino()
-    }, [])
+    }, [props.list.Casinon])
 
     const depositbutton = () => {
         let list = [...casinon]
@@ -231,7 +228,7 @@ const Esport = (props) => {
     return (
         <Container className="wrapit">
             <Helmet>
-                <title>🎮CSGO Betting & Esport betting | Casinoniz</title>
+                <title>CSGO Betting & Esport betting | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/esportbetting" />
                 <meta
                     name="description"
@@ -421,7 +418,7 @@ const Esport = (props) => {
 
 
             <BottomInfoEsport />
-            <p className="update-text">Senast uppdaterad: 12 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 13 Januari 2020</p>
 
         </Container>
     );

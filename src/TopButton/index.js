@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
@@ -28,12 +28,14 @@ const StyledButton = styled.button`
 const TopButton = () => {
 
 
-    let myButton;
-    window.addEventListener('scroll', scrollFunction);
+
+    let myButton = useRef();
 
     useEffect(() => {
+
         window.addEventListener('scroll', scrollFunction);
-        myButton = document.getElementById("myBtn")
+
+        myButton.current = document.getElementById("myBtn")
 
 
 
@@ -41,15 +43,16 @@ const TopButton = () => {
     });
 
     const scrollFunction = () => {
+
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            myButton.style.display = "block";
+            myButton.current.style.display = "block";
         } else {
-            myButton.style.display = "none";
+            myButton.current.style.display = "none";
         }
     }
 
 
-
+    window.addEventListener('scroll', scrollFunction);
 
 
 

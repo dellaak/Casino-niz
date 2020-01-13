@@ -54,7 +54,7 @@ const SportCasino = (props) => {
                 setStar(true)
             }
         }
-    }, []);
+    }, [props.casinon.recension]);
 
 
 

@@ -52,11 +52,8 @@ const CasinoMedFaktura = (props) => {
         }
         getAllCas()
 
-        // return () => {
-        //   setCasinoList({ ...casinoList, Casino: [...props.start.Casinon] })
-        // };
 
-    }, []);
+    }, [props.list.Casinon]);
 
     const zimplerbutton = () => {
         resetlist();
@@ -389,7 +386,7 @@ const CasinoMedFaktura = (props) => {
                 </div>
 
             </div>
-            <p className="update-text">Senast uppdaterad: 12 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 13 Januari 2020</p>
         </Container>
     );
 }

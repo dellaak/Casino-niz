@@ -5,6 +5,10 @@
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
+  @media (max-width: 830px) {
+    background: #fff;
+    background-attachment: none;
+  }
 }
 
 .adsBanner {

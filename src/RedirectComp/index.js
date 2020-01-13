@@ -12,7 +12,7 @@ const RedirectComp = (props) => {
         link: '',
         color: ''
     };
-    const [myStuff, setStuff] = useState({ link: '', bgcolor: '' })
+
     const [final] = useState(url)
 
 
@@ -39,7 +39,7 @@ const RedirectComp = (props) => {
 
 
         changeState()
-        setStuff({ link: obj.link, color: obj.color })
+        // eslint-disable-next-line
         url = url.toLowerCase()
         let tag = document.createElement('script');
         tag.type = "text/javascript"
@@ -71,7 +71,7 @@ const RedirectComp = (props) => {
         <div className="redir-wrap">
             <Helmet>
                 <title>Casino Bonus {final} </title>
-                <meta name="description" content={'hop'} />
+                <meta name="description" content={'Vi tar dig vidare till casinot'} />
                 <meta
                     name="keywords"
                     content="Casino, Casinobonusar, 2019,2020,insättningsbonus,esport,csgo.dota2.starcraft, leauge of legends, lol, free spins, esports,betting"

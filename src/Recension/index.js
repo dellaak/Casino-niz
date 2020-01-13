@@ -53,17 +53,19 @@ const Recension = (props) => {
 	const [percentage, setPercentage] = useState({ game: 1, support: 1, exp: 1 })
 	let { selectedCasino, recension } = overall;
 
+
+
 	let recBox;
-	window.addEventListener('scroll', scrollFunction);
+
 
 
 	useEffect(() => {
-
 		let selec;
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
 
 		window.addEventListener('scroll', scrollFunction);
+		// eslint-disable-next-line
 		recBox = document.getElementById("myBtn")
 
 
@@ -72,6 +74,7 @@ const Recension = (props) => {
 			let title;
 			for (let i of list) {
 				title = i.title.toUpperCase();
+				// eslint-disable-next-line
 				casinotitle = casinotitle.toUpperCase()
 				if (title === casinotitle) {
 					if (i.hasOwnProperty("recension")) {

@@ -62,7 +62,7 @@ const Casinon = (props) => {
 
 
 
-  }, []);
+  }, [props.casino.recension]);
 
 
 

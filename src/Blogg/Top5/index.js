@@ -26,6 +26,7 @@ const Top5 = (props) => {
             if (topArr.includes(i.title)) {
                 top.push(i)
             }
+            return list
         })
 
         top.sort(function (a, b) {
@@ -35,7 +36,7 @@ const Top5 = (props) => {
 
         return setTopList(top)
 
-    }, [])
+    }, [props.list.Casinon, topArr])
 
     const onDismiss = () => {
         setVisible(false)

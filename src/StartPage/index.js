@@ -2,17 +2,21 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from "react-helmet";
 import { Container, Alert, Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import Casinon from "../Casinon/index";
+import Casinon from "../Casinon/index"
+import Filter from "../Filter/index"
+import AnimatedCount from "../AnimatedCount"
+import Bottominfo from "../AllBottomInfo/Bottominfo/index"
 import OurRec from "../OurRec/index";
-import Filter from "../Filter/index";
 import Recommended from "../Recommended/index";
-import AnimatedCount from "../AnimatedCount";
-import Bottominfo from "../AllBottomInfo/Bottominfo/index";
 import NewCasinos from "../NewCasinos";
 import star from "../images/fullstar.svg";
 import sweflag from "../images/sweflag.png"
 import "./style.scss"
 import MonthCasino from "../MonthCasino"
+
+
+
+
 
 
 
@@ -63,7 +67,7 @@ const StartPage = (props) => {
     };
 
 
-
+    // eslint-disable-next-line
   }, [props.start.Casinon]);
 
 
@@ -433,7 +437,7 @@ const StartPage = (props) => {
             </div>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 12 Januari 2020</p>
+        <p className="update-text">Senast uppdaterad: 13 Januari 2020</p>
 
       </Container>
 

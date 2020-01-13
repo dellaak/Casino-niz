@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components"
-import { Container, Alert, Button, Collapse } from "reactstrap"
+import { Container, Alert, Button } from "reactstrap"
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import sweflag from "../../images/sweflag.png"
@@ -124,6 +124,7 @@ const MinstaInsCasino = (props) => {
             if (i.recension[0].mindeposit < 100) {
                 minList.push(i)
             }
+            return list
         })
 
         minList.sort(function (a, b) {
@@ -134,7 +135,7 @@ const MinstaInsCasino = (props) => {
 
         return setminDepList(minList)
 
-    }, [])
+    }, [props.list.Casinon])
 
     const onDismiss = () => {
         setVisible(false)
