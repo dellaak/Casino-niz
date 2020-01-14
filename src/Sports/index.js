@@ -161,7 +161,7 @@ const Sports = (props) => {
     return (
         <Container className="wrapit ">
             <Helmet>
-                <title>Odds och sports betting | Casinoniz</title>
+                <title>Odds & Sports Betting 2020 | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/odds" />
 
                 <meta
@@ -326,7 +326,7 @@ const Sports = (props) => {
                 )}
             <BottomInfoSports />
 
-            <p className="update-text">Senast uppdaterad: 13 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 14 Januari 2020</p>
 
 
         </Container>

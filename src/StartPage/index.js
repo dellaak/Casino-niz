@@ -215,9 +215,7 @@ const StartPage = (props) => {
   return (<React.Fragment>
     <section className="start-wrap">
       <Helmet>
-        <title>
-          Svenska Casino 2020 - Jämför casinobonusar | Casinoniz
-          </title>
+        <title>Svenska Casino 2020 - Jämför casinobonusar | Casinoniz</title>
         <link rel="canonical" href="https://www.casinoniz.se/" />
         <meta
           name="description"
@@ -437,7 +435,7 @@ const StartPage = (props) => {
             </div>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 13 Januari 2020</p>
+        <p className="update-text">Senast uppdaterad: 14 Januari 2020</p>
 
       </Container>
 

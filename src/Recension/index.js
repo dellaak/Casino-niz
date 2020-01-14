@@ -244,7 +244,7 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 		<Container >
 			<Helmet>
 				<title>
-					{casinotitle.length > 3 ? `${casinotitle} RECENSION ⇛` : ''}
+					{casinotitle.length > 3 ? `${casinotitle} Recension & Snabbfakta ⇛ ` : ''}
 					{selectedCasino ? `${selectedCasino.slogan}` : "Snabbfakta"} |
 					Casinoniz
           </title>
@@ -550,8 +550,7 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 							</div>
 
 							<div className="terms-box">
-
-								<div className="regular-box">
+								{selectedCasino.activebonus ? (<React.Fragment><div className="regular-box">
 									<h5>Bonusvillkor</h5>
 									<ul className="bonus-terms-box">
 										{overall.bonusterms.map(bonus => (
@@ -559,22 +558,24 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 										))}
 									</ul>
 								</div>
-								<div className="regular-box">
-									<h5>Villkor för spel på slots</h5>
-									<ul className="bonus-terms-box">
-										{overall.casinoterms.map(bonus => (
-											<li key={selectedCasino.id++}>{bonus}</li>
-										))}
-									</ul>
-								</div>
-								<div className="regular-box">
-									<h5>Villkor för spel på odds</h5>
-									<ul className="bonus-terms-box">
-										{overall.sportsterms.map(bonus => (
-											<li key={selectedCasino.id++}>{bonus}</li>
-										))}
-									</ul>
-								</div>
+									<div className="regular-box">
+										<h5>Villkor för spel på slots</h5>
+										<ul className="bonus-terms-box">
+											{overall.casinoterms.map(bonus => (
+												<li key={selectedCasino.id++}>{bonus}</li>
+											))}
+										</ul>
+									</div>
+									<div className="regular-box">
+										<h5>Villkor för spel på odds</h5>
+										<ul className="bonus-terms-box">
+											{overall.sportsterms.map(bonus => (
+												<li key={selectedCasino.id++}>{bonus}</li>
+											))}
+										</ul>
+									</div>
+								</React.Fragment>) : ''}
+
 								{selectedCasino.activebonus ? <div className="villkor-obs">
 
 									<small>

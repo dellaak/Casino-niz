@@ -418,7 +418,7 @@ const Esport = (props) => {
 
 
             <BottomInfoEsport />
-            <p className="update-text">Senast uppdaterad: 13 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 14 Januari 2020</p>
 
         </Container>
     );

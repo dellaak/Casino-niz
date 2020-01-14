@@ -17,6 +17,7 @@ import Top5 from "../Blogg/Top5"
 import TopButton from "../TopButton/index"
 import Blogg from "../Blogg/index"
 import MinstaInsCasino from "../Blogg/MinstaInsCasino/index"
+import NyaCasino from "../Blogg/NyaCasinon/index"
 import "./style.scss"
 
 
@@ -76,6 +77,7 @@ const App = () => {
                                 {/* BLOGG */}
                                 <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                                 <Route path="/minsta-insattning-casino" render={(props) => (<MinstaInsCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                                <Route path="/nya-casino-2020" render={(props) => (<NyaCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
 
                             </Switch>
 

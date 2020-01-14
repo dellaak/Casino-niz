@@ -15,7 +15,7 @@
   border: 1px solid black;
   position: relative;
   background-color: #214467;
-  background-image: url("/images/top5.png");
+  background-image: url("/images/2020new.svg");
   background-size: 100% 100%;
   box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.51);
 
@@ -30,7 +30,7 @@
   position: absolute;
   bottom: 0;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
   color: white;
   padding: 10px;
   left: -1px;
@@ -44,7 +44,7 @@
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0;
   }
 }

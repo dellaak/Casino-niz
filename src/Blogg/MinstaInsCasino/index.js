@@ -143,7 +143,7 @@ const MinstaInsCasino = (props) => {
 
     return (<Container>
         <Helmet>
-            <title>Minsta insättning Casino ➼Från 10 kr! (Lista 2020) | Casinoniz</title>
+            <title>Minsta insättning Casino ➼ Från 10 kr! (Lista 2020) | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/minsta-insattning-casino" />
             <meta
                 name="description"

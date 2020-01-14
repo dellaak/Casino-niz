@@ -47,9 +47,7 @@ letter-spacing: 0.1em;
 
 const NotFoundPage = () => {
   return <Styled404Wrap>  <Helmet>
-    <title>
-      404 - Sidan finns inte | Casinoniz
-        </title>
+    <title>404 - Sidan finns inte | Casinoniz</title>
     <meta
       name="description"
       content="404 page"

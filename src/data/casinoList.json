@@ -2779,9 +2779,9 @@
             "fakturatype": [],
             "recension": [
                 {
-                    "gamebar": 88,
-                    "experience": 87,
-                    "support": 84,
+                    "gamebar": 95,
+                    "experience": 94,
+                    "support": 90,
                     "egentitel": "Flera casino bonusar",
                     "egentitel2": false,
                     "toprecension": "Casinoroom är ett casino som lanserades 2005. Casinot har vuxit sig starkt och är ett bra casino. Casinot erbjuder spel på livecasino, slots och bordsspel. Med flera av de vanligaste insättningsmetoderna så är det inga problem att sätta in pengar. Uttagen från Casinoroom går relativt snabbt. Att spela på Casinoroom ger dig som spelare en smidig och modern upplevelse. Casinot erbjuder även swish!  ",
@@ -3661,6 +3661,62 @@
                     "swish": false,
                     "livechat": true,
                     "summering": "Turbico är ett bra casino som innehar svensk spellicens. Casinot har över 700+ spel och har en väldigt modern och snygg design. Bra support med livechatt och väldigt snabba insättningar samt uttag via betaltjänsten Trustly. Minsta insättningen/uttag är på 200 kr. För spelaren som tycker om slots och Live Casino så är Turbico casinot för er."
+                }
+            ]
+        },
+        {
+            "id": 58,
+            "title": "LuckyVegas",
+            "slogan": "Nytt Svenskt Casino",
+            "color": "#2a0241",
+            "textcolor": "#fff",
+            "setTop": false,
+            "depositbonus": "Ingen casino bonus",
+            "sportsbonus": "ingen sports bonus",
+            "mylink": "https://m.vegasfolks.com/Redirect.aspx?mid=4&sid=91&cid=XXX&pid=&affid=63",
+            "rules": "https://www.luckyvegas.com/se/terms-and-conditions/",
+            "caslogo": "/images/luckyvegaslogo.png",
+            "wager": 0,
+            "sportswager": "x",
+            "extratext": "",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": false,
+            "bankid": false,
+            "publishdate": "14 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 0,
+            "faktura": true,
+            "fakturatype": [
+                "Zimpler"
+            ],
+            "recension": [
+                {
+                    "gamebar": 100,
+                    "experience": 95,
+                    "support": 90,
+                    "egentitel": "LuckyVegas - Nytt Casino 2020!",
+                    "egentitel2": false,
+                    "toprecension": "LuckyVegas är ett nytt casino på marknaden. Bakom Casinot står bolaget SkillOnNet. De har flera års erfarenhet från casinobransche,med flera stora namn som bland annat PlayOJO. Casinot har en väldigt klassiskt design och man får en känsla av att vara i vegas när man kommer in på sidan. Casinot har svensk licens och har flera populära insättningsmetoder samt även insättning med faktura. Casinot har dock ingen bankidentifiering vilket vi tycker är ett måste för svenska casinon. Eftersom registreringen går extremt snabbt med bankid. LuckyVegas erbjuder livechatt från kl 06:00 - 00:00 på engelska. Resterande tid är det email som gäller.",
+                    "secondrec": "Casino sidan är bra och har en snygg och simpel layout. Har 1200+ spel och ca 800 av dem är slots. Erbjuder slots från världskända leverantörer som BigTimeGaming, Yggdrasil,  NetEnt, Microgaming m.fl är några av namnen. Uttagen från casinot ska ta från några minuter till timmar. Beroende på uttagsmetod. Har ingen direkt filterfunktion men man kan söka efter spel. Vill man spela på något annat än slots så finns det Bordsspel, Live Casino och Blackjack. ",
+                    "sportsrec": "Ingen sport sektion.",
+                    "welcomeoffer": "Ingen casino bonus.",
+                    "bonusterms": [
+                        ""
+                    ],
+                    "casinoterms": [
+                        ""
+                    ],
+                    "sportsterms": [
+                        "Ingen sports sektion"
+                    ],
+                    "topslotgames": "Över 800+ slots. Slots från kända leverantörer som Microgaming, NetEnt, RedTiger, Play n Go, YggDrasil, Elk studios, och många fler !",
+                    "deposittypes": "Visa, Zimpler, Paysafe Card, Skrill, Neteller",
+                    "mindeposit": 100,
+                    "minout": 100,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "LuckyVegas är som ett digitalt Las Vegas. Ett väldigt stort slotutbud. Minsta insättningen samt uttag är 100kr. Erbjuder livechatt mellan 06:00 - 00:00. Resterande tid är det email som gäller. Har utöver slots även Live Casino, Bordsspel och Blackjack. Erbjuder insättning med faktura. Har tyvärr inget bankid vilket sänker betyget lite. Innehar svensk spellicens vilket innebär att vinsterna är skattefria. Detta är ett av årets nyaste casinon, som ger spelaren en Las Vegas känsla. "
                 }
             ]
         }

@@ -100,6 +100,16 @@ const NavBarApp = (props) => {
                                 <DropdownItem className="drop-nav">
                                     <NavLink
                                         className="nav-link"
+                                        to="/nya-casino-2020"
+
+                                    >
+
+                                        Nya casino 2020
+                </NavLink>
+                                </DropdownItem>
+                                <DropdownItem className="drop-nav">
+                                    <NavLink
+                                        className="nav-link"
                                         to="/minsta-insattning-casino"
 
                                     >

@@ -14,6 +14,7 @@ display: flex;
 `
 
 const StyledKampanj = styled.section`
+justify-content:space-between;
 display: flex;
   max-width: 320px;
   flex-direction: column;
@@ -73,7 +74,7 @@ const Top5 = (props) => {
 
     return (<Container>
         <Helmet>
-            <title>Bästa Casinobonusar 2020 | Casinokampanjer Casinoniz</title>
+            <title>Casino Kampanjer & Tips 2020 | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/Kampanjer-casino-2020" />
             <meta
                 name="description"
@@ -108,6 +109,8 @@ const Top5 = (props) => {
             </p>
             <h2>Våra kampanjer 2020</h2>
             <BloggSection>
+
+                <Kampanj text='I år tror vi att casinon kommer att fokusera på tema och upplevelse.Här har du en lista på alla nya casino som lanserats under 2020. Listan kommer uppdateras med alla nya casino 2020 kontinuerligt. Så håll utkik' bild="/images/2020new.svg" publicerad="14 Januari 2020" link="nya-casino-2020" />
 
 
                 <Kampanj text='Här ger vi dig en filtrerad lista på casino med minsta insättningen under 100 kr. Perfekt för dig som vill prova på ett nytt casino. Minsta insättningar från 10kr, 20kr och 50 kr.' bild="/images/mindep.svg" publicerad="11 Januari 2020" link="minsta-insattning-casino" />

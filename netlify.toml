@@ -354,5 +354,10 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/turbico"}
 
+                             [[redirects]]
+  from = "/Go/luckyvegas"
+  to = "https://m.vegasfolks.com/Redirect.aspx?mid=4&sid=91&cid=XXX&pid=&affid=63"
+  status = 301
+  query = {path = "/Go/luckyvegas"}
 
 
