@@ -20,6 +20,35 @@
   }
 }
 
+.info-bottom-box-img {
+  height: auto;
+  font-family: "Manjari", sans-serif;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 830px) {
+      flex-direction: column;
+    }
+    p {
+      flex: 1;
+    }
+
+    img {
+      flex: 1;
+      height: 200px;
+      @media (max-width: 830px) {
+        display: none;
+      }
+    }
+  }
+}
+
 .example {
   font-style: oblique;
   font-weight: bold;

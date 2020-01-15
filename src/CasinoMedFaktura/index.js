@@ -22,6 +22,8 @@ const CasinoMedFaktura = (props) => {
 
 
     useEffect(() => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         let list = [...props.list.Casinon]
         const getAllCas = () => {
 
@@ -381,7 +383,7 @@ const CasinoMedFaktura = (props) => {
                 </div>
 
             </div>
-            <p className="update-text">Senast uppdaterad: 15 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 16 Januari 2020</p>
         </Container>
     );
 }

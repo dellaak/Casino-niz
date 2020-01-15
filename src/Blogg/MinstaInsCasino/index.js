@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components"
-import { Container, Alert, Button } from "reactstrap"
+import { Container, Alert, Button,Collapse } from "reactstrap"
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import sweflag from "../../images/sweflag.png"
 import "./style.scss"
 import { StyledNavlink } from "../../Casinon/"
-
+import SnabbFaktaMin from "./SnabbFaktaMin"
+import BottomInfoMinstaCasino from "../../AllBottomInfo/BottomInfoMinstaCasino"
 
 const StyledDiv = styled.div`
 
-padding: 0 20px;
+padding: 10px 20px;
 margin: 40px 0;
-margin-bottom:0px ;
+margin-bottom:40px ;
 border: 2px solid #fed100;
 background-color:white;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -109,7 +110,7 @@ const MinstaInsCasino = (props) => {
 
     const [mindepCasino, setminDepList] = useState([])
     const [visible, setVisible] = useState(true)
-
+   
 
     useEffect(() => {
 
@@ -140,6 +141,14 @@ const MinstaInsCasino = (props) => {
     const onDismiss = () => {
         setVisible(false)
     }
+
+
+ 
+    
+
+
+    
+
 
     return (<Container>
         <Helmet>
@@ -225,13 +234,15 @@ const MinstaInsCasino = (props) => {
                                 <span className="bankid-text">
                                     Bankidentifiering
 </span>
-                            ) : (
+
+) : (
                                     ""
                                 )}
 
                         </div>
 
-
+                      <SnabbFaktaMin casino={casino} onClick={props.onClick}/>  
+    
                     </StyledDivWrap>
                 )}
 
@@ -239,7 +250,7 @@ const MinstaInsCasino = (props) => {
             </div>
         </StyledDiv>
 
-
+<BottomInfoMinstaCasino/>
 
 
     </Container>

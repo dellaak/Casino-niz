@@ -59,6 +59,8 @@ const SwishCasino = (props) => {
 
 
     useEffect(() => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         let list = [...props.list.Casinon]
         let swishCasino = []
         let newTop = []
@@ -295,14 +297,14 @@ const SwishCasino = (props) => {
      text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
      font-size: 12px !important;
      height: auto;
-   background-color: ${props => props.isActive ? ' #e0b438 ' : 'rgba(8, 91, 169, 1)'}!important;
+   background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 169, 1)'}!important;
      -moz-border-radius: 5px;
      -webkit-border-radius: 5px;
      border-radius: 5px;
      border: 1px solid #337bc4;
      display: inline-block;
      cursor: pointer;
-     color: ${props => props.isActive ? 'black' : 'white'} !important;
+     color: ${props => props.isactivebutton ? 'black' : 'white'} !important;
      font-family: "Robot", sans-serif;
      text-decoration: none;
    
@@ -361,7 +363,7 @@ const SwishCasino = (props) => {
 
             <StyledH3>Alla casinon med Swish</StyledH3>
             <StyledSecondFilter>
-                <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} isActive={sports ? 1 : undefined}>Sportsbetting</StyledButton>
+                <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} isactivebutton={sports ? 1 : undefined}>Sportsbetting</StyledButton>
 
             </StyledSecondFilter>
             <FilterCasinoMed
@@ -413,7 +415,7 @@ const SwishCasino = (props) => {
 
             <BottomInfoSwish />
 
-            <p className="update-text">Senast uppdaterad: 15 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 16 Januari 2020</p>
 
 
         </Container>

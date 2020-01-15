@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Container } from "reactstrap"
 import "./style.scss";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
@@ -26,7 +27,7 @@ const Policy = () => {
 
 
   return (
-    <div className="policy-wrap">
+    <Container className="policy-wrap">
       <Helmet>
         <title>Integritetspolicy | Casinoniz</title>
 
@@ -74,7 +75,7 @@ const Policy = () => {
           <StyledLi>Exempelvis vilka länkar du som besökare klickar på och hur länge du som besökare stannar på respektive sida.</StyledLi>
         </StyledUl>
       </div>
-    </div>
+    </Container>
   );
 }
 

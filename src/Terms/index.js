@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Container } from "reactstrap"
 import "./style.scss";
 import { Helmet } from "react-helmet";
 
@@ -11,7 +12,7 @@ const Terms = () => {
 
 
     return (
-        <div className="terms-wrap">
+        <Container className="terms-wrap">
             <Helmet>
                 <title>Allmänna Villkor | Casinoniz</title>
                 <meta name="description" content="Casinoniz allmäna vilkor. Vi har casinobonusar men läs gärna igenom våra villkor." />
@@ -56,7 +57,7 @@ const Terms = () => {
             </a>
                 </p>
             </div>
-        </div>
+        </Container>
     );
 
 }

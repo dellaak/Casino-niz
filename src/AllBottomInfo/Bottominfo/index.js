@@ -4,6 +4,11 @@ import { Container, Row, Col, Collapse, Button, CardBody, Card } from 'reactstra
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 import "./style.scss";
+import minpig from "../../images/minpig.svg"
+import handicon from "../../images/handicon.svg"
+import spinnericon from "../../images/spinnericon.svg"
+import bonusicon from "../../images/bonusicon.svg"
+import wagericon from "../../images/wagericon.svg"
 
 const Bottominfo = (props) => {
     const [q1, setQ1] = useState(false);
@@ -116,7 +121,7 @@ const Bottominfo = (props) => {
 
                                 <Collapse isOpen={q5}>
                                     <Card>
-                                        <CardBody ><div className="msg" xs="6"  ><div ><p>Det varierar beroende på casino. Hos vissa bolag som <Link to="/recension/snabbare">Snabbare</Link>, <Link to="/recension/Hajper">Hajper</Link> och <Link to="/recension/Speedycasino">SpeedyCasino</Link>  så är minsta insättningen 50kr. Vanligtvis brukar standarden vara minst 100kr för en insättning. Finns även casinon som <Link to="/recension/Storspelare">Storspelare</Link> där minsta insättningen är 25 SEK.</p></div>
+                                        <CardBody ><div className="msg" xs="6"  ><div ><p>Det varierar beroende på casino. Hos vissa bolag som <Link to="/recension/snabbare">Snabbare</Link>, <Link to="/recension/Hajper">Hajper</Link> och <Link to="/recension/Speedycasino">SpeedyCasino</Link>  så är minsta insättningen 50kr. Vanligtvis brukar standarden vara minst 100kr för en insättning. Finns även casinon som <Link to="/recension/Storspelare">Storspelare</Link> där minsta insättningen är 25 SEK.I vår sektion <Link to="minsta-insattning-casino">minsta insättning casino</Link> listar vi alla casinon som har minsta insättning under 100kr.</p></div>
                                         </div></CardBody>
                                     </Card>
                                 </Collapse>
@@ -186,43 +191,78 @@ const Bottominfo = (props) => {
           </p>
             </div>
 
-            <div className="info-bottom-box">
-                <h3>Freespins utan insättning</h3>
-                <p>
-                    Att få freespins för att prova på att spela slotar är ett stort plus för spelaren. Spelaren får prova på att spela på olika casinon för att hitta det spel eller casino som faller en i smaken. När lagen om svensk spellicens trädde i kraft den 1 januari 2019 så försvann de flesta freespins utan insättningar från de flesta casinon.
-          </p>
+
+            <div className="info-bottom-box-img">
+                <h3>Minsta insättning casino</h3>
+                <div>
+                    <p>
+                        Ibland vill man prova på andra casinon och spela för lite mindre summa än vanligt. Vi har en lista för alla casinon som har <Link to="/minsta-insattning-casino"> minsta insättning under 100kr</Link>.
+                    Ibland så kanske man även hittar ett generöst casino som erbjuder insättningsbonus på ett X antal procent på minsta insättningen. Då är det ett smidigt tillfälle att prova på hur casinot sköter inbetalningar och utbetalningar.</p>
+                    <img src={minpig} alt="minsta insattning icon" />
+                </div>
             </div>
 
 
 
+
+
+
+            <div className="info-bottom-box-img">
+                <h3>Freespins utan insättning</h3>
+                <div>
+                    <p>
+                        Att få freespins för att prova på att spela slotar är ett stort plus för spelaren. Spelaren får prova på att spela på olika casinon för att hitta det spel eller casino som faller en i smaken. När lagen om svensk spellicens trädde i kraft den 1 januari 2019 så försvann de flesta freespins utan insättningar från de flesta casinon.
+          </p>
+                    <img src={spinnericon} alt="freespinsicon" />
+                </div>
+            </div>
+
+            <div className="info-bottom-box-img">
+                <h3>Casino Swish</h3>
+                <div>
+
+                    <p >
+                        Vi använder swish i vardagen och det har underlättat för många när man vill betala något eller bara skicka över pengar till ett annat konto. Casinon är inte sena med att hänga på <b>Swish betalning på casinon</b>. Det går väldigt fort och är väldigt säkert tack vare sin avancerade krypteringsteknik och mobila bankid. Du hittar lista på alla <Link to="/casino-Swish">Swish Casino</Link> på länken.
+                    </p>
+                    <img src={handicon} alt="swishcasinoicon" />
+                </div>
+            </div>
+
+
+
+
+            <div className="info-bottom-box-img">
+                <h3>Vad är ett omsättningskrav?</h3>
+                <div>
+                    <p>
+                        Ibland så är det omsättningskrav på bonusar. Om du får 100kr extra i
+                        bonus av casinot att spela för och casinot sätter ett
+                        omsättningskrav på 35x. Då måste du omsätta 100kr som du fick av
+                        casinot. 100kr * 35 = 3500kr. Du måste alltså ha spelat för minst
+                        3500kr och allt över 3500kr kan du ta ut i vinst.
+          </p>
+                    <img src={wagericon} alt="wagericon" />
+                </div>
+            </div>
+
+
+
+
+            <div className="info-bottom-box-img">
+                <h3>Insättningsbonus</h3>
+                <div>
+                    <p>
+                        insättningsbonusar är när ett casino erbjuder att plussa på ett visst antal procent på din insättning.
+<i className="example">Exempel: Om du väljer att sätta in 100kr att spel för och casinot erbjuder insättningsbonus på 100%, då får du 100kr i casinobonus och totalt 200kr att spela för.</i>
+                    </p>
+                    <img src={bonusicon} alt="casinobonus" />
+                </div>
+            </div>
             <div className="info-bottom-box">
                 <h3>Spela på casino utan svensk spellicens</h3>
                 <p>Det är inte olagligt för dig som spelare att spela på ett casino utan svenskt spellicens. Man har mindre skydd som spelare och på diverse casinon utan svenskt spellicens när det gäller spel/insättningsgränser.
                Om du som spelare väljer att spela på ett casino utan svensk spellicens så får du vara beredd på att skatta 30% på din vinst. Det finns även en risk att det blir förbjudet för svenska banker att tillåta transaktioner mellan svenska spelare och casino utan svensk spellicens.
           </p>
-            </div>
-
-
-            <div className="info-bottom-box">
-                <h3>Vad är ett omsättningskrav?</h3>
-                <p>
-                    Ibland så är det omsättningskrav på bonusar. Om du får 100kr extra i
-                    bonus av casinot att spela för och casinot sätter ett
-                    omsättningskrav på 35x. Då måste du omsätta 100kr som du fick av
-                    casinot. 100kr * 35 = 3500kr. Du måste alltså ha spelat för minst
-                    3500kr och allt över 3500kr kan du ta ut i vinst.
-          </p>
-            </div>
-
-
-
-
-            <div className="info-bottom-box">
-                <h3>Insättningsbonus</h3>
-                <p>
-                    insättningsbonusar är när ett casino erbjuder att plussa på ett visst antal procent på din insättning.
-<i className="example">Exempel: Om du väljer att sätta in 100kr att spel för och casinot erbjuder insättningsbonus på 100%, då får du 100kr i casinobonus och totalt 200kr att spela för.</i>
-                </p>
             </div>
 
             <div className="info-bottom-box">

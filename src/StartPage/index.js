@@ -263,7 +263,7 @@ const StartPage = (props) => {
          "name": "✨ Minsta insättningen hos ett casino?",
          "acceptedAnswer": {
            "@type": "Answer",
-           "text": "Det varierar beroende på casino. Hos vissa bolag som Snabbare, Hajper och SpeedyCasino så är minsta insättningen 50 SEK. Vanligtvis brukar standarden vara minst 100 SEK för en insättning. Finns även casinon som Storspelare där minsta insättningen är 25 SEK."
+           "text": "Det varierar beroende på casino. Hos vissa bolag som Snabbare, Hajper och SpeedyCasino så är minsta insättningen 50 SEK. Vanligtvis brukar standarden vara minst 100 SEK för en insättning. Finns även casinon som Storspelare där minsta insättningen är 25 SEK. I vår sektion minsta insättning casino listar vi alla casinon som har minsta insättning under 100kr."
          }
        }, {
            "@type": "Question",
@@ -430,7 +430,7 @@ const StartPage = (props) => {
             </div>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 15 Januari 2020</p>
+        <p className="update-text">Senast uppdaterad: 16 Januari 2020</p>
 
       </Container>
 
