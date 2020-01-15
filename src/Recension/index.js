@@ -192,16 +192,7 @@ const Recension = (props) => {
 	-webkit-box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 -moz-box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
-	@media (max-width: 800px) {
-		z-index:10;
-		position: fixed;
-		top:auto;
-		bottom:0;
-		left:0;
-		right:0;
-		padding-bottom:10px;
-		box-shadow:0px -2px 10px rgba(0, 0, 0, 0.4);
-	}
+
     
 	span{
 		padding:10px;
@@ -221,7 +212,18 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 		text-decoration:underline;
 		font-size:12px;
 	}
+	@media (max-width: 800px) {
+	
+	z-index:1000;
+	position: fixed;
+	top:auto;
+	bottom:0;
+	left:0;
+	width:100vw;
+	padding-bottom:10px;
+	box-shadow:0px -2px 10px rgba(0, 0, 0, 0.4);
 
+}
 	`
 
 	const StyledHiddenBonus = styled.div`

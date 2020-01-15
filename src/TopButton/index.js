@@ -37,9 +37,6 @@ const TopButton = () => {
 
         myButton.current = document.getElementById("myBtn")
 
-
-
-
     });
 
     const scrollFunction = () => {

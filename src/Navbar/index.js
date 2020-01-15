@@ -132,6 +132,37 @@ const NavBarApp = (props) => {
 
                             </StyledDownMenu>
                         </UncontrolledDropdown>
+
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret >
+                                Casino med..
+                        </DropdownToggle>
+                            <StyledDownMenu right>
+                                <DropdownItem className="drop-nav">
+                                    <NavLink
+                                        className="nav-link"
+                                        to="/Casino-trustly"
+
+                                    >
+
+                                        Casino med Trustly
+                </NavLink>
+                                </DropdownItem>
+                                <DropdownItem className="drop-nav">
+                                    <NavLink
+                                        className="nav-link"
+                                        to="/Casino-Swish"
+
+                                    >
+
+                                        Casino med Swish
+                </NavLink>
+                                </DropdownItem>
+
+
+
+                            </StyledDownMenu>
+                        </UncontrolledDropdown>
                     </Nav>
                 </Collapse>
             </Navbar>

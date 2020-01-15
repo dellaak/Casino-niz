@@ -18,6 +18,8 @@ import TopButton from "../TopButton/index"
 import Blogg from "../Blogg/index"
 import MinstaInsCasino from "../Blogg/MinstaInsCasino/index"
 import NyaCasino from "../Blogg/NyaCasinon/index"
+import TrustlyCasino from "../CasinonMed/Trustly"
+import SwishCasino from "../CasinonMed/Swish"
 import "./style.scss"
 
 
@@ -25,6 +27,7 @@ import "./style.scss"
 const App = () => {
 
     const [adBlockEnabled, setAdBlock] = useState(false);
+    const [recen, SetRecen] = useState(false);
 
     useEffect(() => {
         let testAd2 = document.createElement('div');
@@ -42,8 +45,8 @@ const App = () => {
         testAd.remove();
         testAd2.remove()
 
-    }, [])
 
+    }, [])
 
 
 
@@ -67,6 +70,8 @@ const App = () => {
                                 <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                                 <Route path="/Esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                                 <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                                <Route path="/Casino-Trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                                <Route path="/Casino-Swish" render={(props) => (<SwishCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
                                 <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
                                 <Route path="/odds" render={(props) => (<Sports list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                                 <Route path="/Kampanjer-casino-2020" component={Blogg} />

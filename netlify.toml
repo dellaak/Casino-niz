@@ -361,3 +361,16 @@ baseURL = "/"
   query = {path = "/Go/luckyvegas"}
 
 
+                             [[redirects]]
+  from = "/Go/dreamz"
+  to = "https://wlarmstrongaffiliates.adsrv.eacdn.com/C.ashx?btag=a_1024b_9c_&affid=372&siteid=1024&adid=9&c="
+  status = 301
+  query = {path = "/Go/dreamz"}
+
+
+                             [[redirects]]
+  from = "/Go/inandoutbet"
+  to = "http://wlinandoutbet.adsrv.eacdn.com/C.ashx?btag=a_17881b_1657c_&affid=5016&siteid=17881&adid=1657&c="
+  status = 301
+  query = {path = "/Go/inandoutbet"}
+

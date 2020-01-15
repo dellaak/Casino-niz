@@ -85,13 +85,13 @@ const StartPage = (props) => {
         wagerarr.push(i);
       }
     }
-
+    console.log(orlist)
     wagerarr.sort(function (a, b) {
       return a.wager - b.wager;
     });
-    wagerarr.concat(delItems)
+
     setShowMedalj(false)
-    setCasinoList({ ...casinoList, Casino: wagerarr, showOrder: false })
+    setCasinoList({ ...casinoList, Casino: wagerarr.concat(delItems), showOrder: false })
     setSize(9)
     setButtons({ activebuttondep: false, activebuttonwager: true, activebuttonfree: false })
     setFade(true)
@@ -122,9 +122,9 @@ const StartPage = (props) => {
     wagerarr.sort(function (a, b) {
       return b.depositpercent - a.depositpercent;
     });
-    wagerarr.concat(depositdelete)
+
     setShowMedalj(false)
-    setCasinoList({ ...casinoList, Casino: wagerarr, showOrder: false })
+    setCasinoList({ ...casinoList, Casino: wagerarr.concat(depositdelete), showOrder: false })
     setSize(9)
     setButtons({ activebuttonwager: false, activebuttondep: true, activebuttonfree: false })
     setFade(true)
@@ -166,7 +166,7 @@ const StartPage = (props) => {
 
   const freewagerbutton = () => {
     resetList()
-    let orlist = props.start.Casinon
+    let orlist = [...props.start.Casinon]
 
     let wagerarr = [];
     for (let i of orlist) {
@@ -435,7 +435,7 @@ const StartPage = (props) => {
             </div>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 14 Januari 2020</p>
+        <p className="update-text">Senast uppdaterad: 15 Januari 2020</p>
 
       </Container>
 

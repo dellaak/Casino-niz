@@ -766,7 +766,7 @@
             "textcolor": "#fff",
             "setTop": false,
             "slogan": "Casinon och odds online",
-            "depositbonus": "Få 100 % bonus upp till 1 000 kr",
+            "depositbonus": "Insättningsbonus på 100% upp till 3 500 kr + 100 cashspinn!",
             "sportsbonus": "Insättningsbonus på 100% upp till 1000 KR",
             "mylink": "https://record.betsson.com/_zwvwrZh854oK7p2EryfJhWNd7ZgqdRLk/1/",
             "rules": "https://record.betsson.com/_zwvwrZh854r_hO4-31EF1WNd7ZgqdRLk/1/",
@@ -1719,7 +1719,7 @@
             "rules": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=2758&sid=354226&pid=841",
             "caslogo": "/images/hajperlogo.svg",
             "wager": 20,
-            "sportswager": 0,
+            "sportswager": "x",
             "freespins": 0,
             "publishdate": "7 Januari 2020",
             "activebonus": true,
@@ -3568,7 +3568,7 @@
             "mylink": "https://www.gogocasino.com/",
             "rules": "https://www.gogocasino.com/terms/terms-and-conditions",
             "caslogo": "/images/gogocasino.svg",
-            "wager": 0,
+            "wager": "x",
             "sportswager": "x",
             "extratext": "",
             "sports": false,
@@ -3622,7 +3622,7 @@
             "mylink": "https://wlturbico.adsrv.eacdn.com/C.ashx?btag=a_17781b_1621c_&affid=4979&siteid=17781&adid=1621&c=",
             "rules": "https://wlturbico.adsrv.eacdn.com/C.ashx?btag=a_17781b_1622c_&affid=4979&siteid=17781&adid=1622&c=",
             "caslogo": "/images/turbicologo.svg",
-            "wager": 0,
+            "wager": "x",
             "sportswager": "x",
             "extratext": "",
             "sports": false,
@@ -3676,7 +3676,7 @@
             "mylink": "https://m.vegasfolks.com/Redirect.aspx?mid=4&sid=91&cid=XXX&pid=&affid=63",
             "rules": "https://www.luckyvegas.com/se/terms-and-conditions/",
             "caslogo": "/images/luckyvegaslogo.png",
-            "wager": 0,
+            "wager": "x",
             "sportswager": "x",
             "extratext": "",
             "sports": false,
@@ -3710,13 +3710,121 @@
                     "sportsterms": [
                         "Ingen sports sektion"
                     ],
-                    "topslotgames": "Över 800+ slots. Slots från kända leverantörer som Microgaming, NetEnt, RedTiger, Play n Go, YggDrasil, Elk studios, och många fler !",
+                    "topslotgames": "Över 800+ slots. Slots från kända leverantörer som Microgaming, NetEnt, RedTiger, Play n Go, YggDrasil, Elk studios och många fler !",
                     "deposittypes": "Visa, Zimpler, Paysafe Card, Skrill, Neteller",
                     "mindeposit": 100,
                     "minout": 100,
                     "swish": false,
                     "livechat": true,
                     "summering": "LuckyVegas är som ett digitalt Las Vegas. Ett väldigt stort slotutbud. Minsta insättningen samt uttag är 100kr. Erbjuder livechatt mellan 06:00 - 00:00. Resterande tid är det email som gäller. Har utöver slots även Live Casino, Bordsspel och Blackjack. Erbjuder insättning med faktura. Har tyvärr inget bankid vilket sänker betyget lite. Innehar svensk spellicens vilket innebär att vinsterna är skattefria. Detta är ett av årets nyaste casinon, som ger spelaren en Las Vegas känsla. "
+                }
+            ]
+        },
+        {
+            "id": 59,
+            "title": "Dreamz",
+            "slogan": "Nytt Svenskt Casino",
+            "color": "#ffffff",
+            "textcolor": "#4a4a4a",
+            "setTop": false,
+            "depositbonus": "Ingen casino bonus",
+            "sportsbonus": "ingen sports bonus",
+            "mylink": "https://wlarmstrongaffiliates.adsrv.eacdn.com/C.ashx?btag=a_1024b_9c_&affid=372&siteid=1024&adid=9&c=",
+            "rules": "https://wlarmstrongaffiliates.adsrv.eacdn.com/C.ashx?btag=a_1024b_20c_&affid=372&siteid=1024&adid=20&c=",
+            "caslogo": "/images/dreamzlogo.png",
+            "wager": "x",
+            "sportswager": "x",
+            "extratext": "",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": false,
+            "bankid": true,
+            "publishdate": "15 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 0,
+            "faktura": false,
+            "fakturatype": [],
+            "recension": [
+                {
+                    "gamebar": 100,
+                    "experience": 100,
+                    "support": 100,
+                    "egentitel": "Casinot & Expressuttag!",
+                    "egentitel2": false,
+                    "toprecension": "Dreamz casino är ett svenskt casino. Med flera anställda som har rötter i Sverige. Casinot har en väldigt snygg och färgrik design. Sidan är extremt användarvänlig och att registrera ett konto går väldigt snabbt med hjälp av bankidentifiering. Med över 1300 spel och snygg design så är detta casinot verkligen ett casino som sticker ut från mängden. Dreamz erbjuder livechatt dygnet runt på svenska vilket vi tycker är toppen. Erbjuder tre stycken insättningsmetoder som Trustly, Visa och MasterCard. Uttagen samt insättningarna går extremt snabbt.",
+                    "secondrec": "Casinosidan är väldigt snygg. Med extremt bra filterfunktion så kan man hitta sin favoritslot utan problem. Du kan t.ex. filtrera på Teman, Wildfunktioner, Spelfunktioner och mycket mer. Hur bra är inte det ?!. Dreamz erbjuder jackpott på över 20 slots vilket vi tycker är grymt. Vill man spela på något annat än slots så erbjuder Dreamz även spel i Live Casinot. Där finns det Blackjack, Roulette och mycket mer. Casinosektionen uppdateras nästan varje vecka med nya slots. Ett grymt bra casino.  ",
+                    "sportsrec": "Ingen sport sektion.",
+                    "welcomeoffer": "Ingen casino bonus.",
+                    "bonusterms": [
+                        ""
+                    ],
+                    "casinoterms": [
+                        ""
+                    ],
+                    "sportsterms": [
+                        "Ingen sports sektion"
+                    ],
+                    "topslotgames": "Över 1100+ slots från över 40+ kända leverantörer som  Microgaming, NetEnt, RedTiger, Play n Go, YggDrasil, Elk studios och många fler !",
+                    "deposittypes": "Visa, Mastercard, Trustly",
+                    "mindeposit": 200,
+                    "minout": 200,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "Dreamz casino är ett väldigt grym designad sida med snygga färger och väldigt användarvänlig layout. Casinot har ett enormt speluttbud. Minsta insättning samt uttag är på minst 200 kr. Uttagen och insättningarna går extremt snabbt via tjänsten Trustly. Att registrera ett konto på Dreamz går på nolltid. Casinot har en väldigt bra support, livechatten är öppen dygnet runt på svenska. Kort sagt så är detta ett riktigt bra casino för personen som vill spela på en simpel sida med grymt utbud av slots. Dreamz får full pott av Casinoniz!"
+                }
+            ]
+        },
+        {
+            "id": 60,
+            "title": "InAndOutBet",
+            "slogan": "Ett Snabbt casino",
+            "color": "#151515",
+            "textcolor": "#fff",
+            "setTop": false,
+            "depositbonus": "Ingen casino bonus",
+            "sportsbonus": "ingen sports bonus",
+            "mylink": "http://wlinandoutbet.adsrv.eacdn.com/C.ashx?btag=a_17881b_1657c_&affid=5016&siteid=17881&adid=1657&c=",
+            "rules": "http://wlinandoutbet.adsrv.eacdn.com/C.ashx?btag=a_17881b_1663c_&affid=5016&siteid=17881&adid=1663&c=",
+            "caslogo": "/images/inoutbetlogo.png",
+            "wager": "x",
+            "sportswager": "x",
+            "extratext": "",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": false,
+            "bankid": true,
+            "publishdate": "15 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 0,
+            "faktura": false,
+            "fakturatype": [],
+            "recension": [
+                {
+                    "gamebar": 100,
+                    "experience": 98,
+                    "support": 96,
+                    "egentitel": "Snabbt casino",
+                    "egentitel2": false,
+                    "toprecension": "InAndOutBet grundades i september 2019 av bolaget Manisol Gaming. Manisol Gaming har flera års erfarnhet av casinobranschen. Sidan har en väldigt fräsch och modern design. När du först kommer in på sidan kan du välja mellan att spela på Casino, Live Casino eller på Sports. InAndOutBet sportsektion har dock ännu inte öppnat utan kommer snart. Vi håller tummarna att de tillåter esportbetting. Det går väldigt enkelt att registrera och spela på sidan. Med insättningsmetoder Trustly så går uttagen samt insättningarna väldigt snabbt. Minsta insättningssumman samt uttag är på 200kr. InAndOutBet erbjuder livechatt alla dagar mellan 08:30 - 00:30. Resterande tid är det email som gäller. Har en liten FAQ sida med svaren på dem vanligaste frågorna.",
+                    "secondrec": "Casinsektionen på InAndOutBet är väldigt snygg. Har dock ingen direkt filter funktion utan man kan söka på sitt favoritspel. Finns redan färdigfiltrerade kategorier som Megawaysspel,Jackpotspel, Spel med spännande bonusrundor, Spel från enskild leverantör m.m. Utbud på slots är väldigt bra med över 1000+ slots. Skulle man vilja spela på något annat än slots så kan man just nu i skrivandets stund spela på Live Casino. Sportsektionen är forfarande inte öppen.",
+                    "sportsrec": "Ingen sport sektion just nu men öppnar inom kort! Då hoppas vi att det finns esport betting på deras sida.",
+                    "welcomeoffer": "Ingen casino bonus.",
+                    "bonusterms": [
+                        ""
+                    ],
+                    "casinoterms": [
+                        ""
+                    ],
+                    "sportsterms": [
+                        "Ingen sports sektion"
+                    ],
+                    "topslotgames": "Över 1000+ slots från kända leverantörer som  Microgaming, NetEnt, Big Time Gaming, Bluepring och många fler !",
+                    "deposittypes": "Trustly",
+                    "mindeposit": 200,
+                    "minout": 200,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "InAndOutBet är ett väldigt bra casino! Casinot har väldigt snabba insättningar och uttag. Vill man ha hjälp så finns det livechatt mellan 08:00 - 00:30 alla dagar. Minsta insättningen samt uttag är på minst 200 kr. Registrering av nytt konto går extremt snabbt med hjälp av bankidentifiering. Ett riktigt bra casino för personen som tycker om slots!"
                 }
             ]
         }
