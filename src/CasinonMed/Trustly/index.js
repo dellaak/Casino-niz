@@ -6,6 +6,7 @@ import Casinon from "../../Casinon"
 import styled from "styled-components"
 import { Helmet } from "react-helmet";
 import SportCasino from "../../Sports/SportCasino";
+import "../style.scss"
 
 
 const StyledH3 = styled.h3`
@@ -332,12 +333,7 @@ const TrustlyCasino = (props) => {
                     <img alt="swe-flag" className="swe-flag" src={sweflag} />
                 </div>
             </Alert>
-            <div className="spela-lagom">
-                <span>
-                    18+ &#8226; Spela Ansvarfullt &#8226;{" "}
-                    <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
-                </span>
-            </div>
+
 
 
 
@@ -361,7 +357,7 @@ const TrustlyCasino = (props) => {
 
             <StyledH3>Alla casinon med Trustly</StyledH3>
             <StyledSecondFilter>
-                <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} className={sports ? "active1" : ''}>Sportsbetting</StyledButton>
+                <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} className={sports ? "activesecond" : ''}>Sportsbetting</StyledButton>
 
             </StyledSecondFilter>
             <FilterCasinoMed

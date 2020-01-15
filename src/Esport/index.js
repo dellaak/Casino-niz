@@ -315,12 +315,7 @@ const Esport = (props) => {
                     <img alt="swe-flag" className="swe-flag" src={sweflag} />
                 </div>
             </Alert>
-            <div className="spela-lagom">
-                <span>
-                    18+ &#8226; Spela Ansvarfullt &#8226;{" "}
-                    <a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
-                </span>
-            </div>
+
 
             <h1 className="banners">
                 Csgo Betting och Esport betting

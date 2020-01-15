@@ -1,0 +1,22 @@
+.activesecond {
+  min-width: 120px;
+  min-height: 50px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 0.5em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  font-size: 12px !important;
+  height: auto;
+  background-color: #e0b438 !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  color: black !important;
+  font-family: "Robot", sans-serif;
+  text-decoration: none;
+
+  cursor: pointer !important;
+}
