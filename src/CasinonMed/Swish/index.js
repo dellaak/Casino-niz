@@ -6,7 +6,6 @@ import styled from "styled-components"
 import { Helmet } from "react-helmet";
 import FilterCasinoMed from "../../FilterCasinoMed";
 import SportCasino from "../../Sports/SportCasino"
-import "../style.scss"
 
 const StyledH3 = styled.h3`
 text-align:center;
@@ -33,29 +32,6 @@ span{
 }
 `
 
-const StyledButton = styled(Button)`
- min-width: 120px;
-  min-height: 50px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-style: normal;
-  padding: 0.5em;
-  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
-  font-size: 12px !important;
-  height: auto;
-  background-color: rgba(8, 91, 169, 1) !important;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #337bc4;
-  display: inline-block;
-  cursor: pointer;
-  color: white;
-  font-family: "Robot", sans-serif;
-  text-decoration: none;
-
-  cursor: pointer !important;
-`
 
 const StyledH3Sports = styled.h3`
 text-align:center;
@@ -307,6 +283,30 @@ const SwishCasino = (props) => {
 
     }
 
+    const StyledButton = styled(Button)`
+    min-width: 120px;
+     min-height: 50px;
+     letter-spacing: 0.05em;
+     text-transform: uppercase;
+     font-style: normal;
+     padding: 0.5em;
+     text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+     font-size: 12px !important;
+     height: auto;
+   background-color: ${props => props.isActive ? ' #e0b438 ' : 'rgba(8, 91, 169, 1)'}!important;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+     border: 1px solid #337bc4;
+     display: inline-block;
+     cursor: pointer;
+     color: ${props => props.isActive ? 'black' : 'white'} !important;
+     font-family: "Robot", sans-serif;
+     text-decoration: none;
+   
+     cursor: pointer !important;
+   `
+
     return (
         <Container className="wrapit ">
             <Helmet>
@@ -359,7 +359,7 @@ const SwishCasino = (props) => {
 
             <StyledH3>Alla casinon med Swish</StyledH3>
             <StyledSecondFilter>
-                <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} className={sports ? "activesecond" : ''}>Sportsbetting</StyledButton>
+                <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} isActive={sports ? 1 : undefined}>Sportsbetting</StyledButton>
 
             </StyledSecondFilter>
             <FilterCasinoMed
