@@ -374,3 +374,11 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/inandoutbet"}
 
+                               [[redirects]]
+  from = "/Go/gate777"
+  to = "https://begin.gate777.com/redirect.aspx?pid=5933&lpid=75&bid=1794"
+  status = 301
+  query = {path = "/Go/gate777"}
+
+
+

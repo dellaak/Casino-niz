@@ -245,7 +245,7 @@ const Sports = (props) => {
                 <h3 className="second-welcome-title">Sports betting - Här listar vi bolag med Live odds, Odds bonus och spel på sport  </h3>
                 <p>
                     Odds och livebetting - Vill man spela på odds eller livebetting så kan man det också.
-                    Vi lisar endast licenserade bettingsidor som erbjuder odds, livebetting, sportbetting och esport betting. För att göra det så enkelt som möjligt för dig att hitta ditt
+                    Vi lisar endast Licensierade bettingsidor som erbjuder odds, livebetting, sportbetting och esport betting. För att göra det så enkelt som möjligt för dig att hitta ditt
                     casino, så har vi lagt till en filterfunktion som kan hjälpa dig
                     att hitta din sida som du vill spela på och bästa välkomstbonusen.
               </p>

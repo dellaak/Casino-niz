@@ -327,7 +327,7 @@ const Esport = (props) => {
                     <p>
                         Senaste inom esport betting. CSGO, Dota2, League of Legends(LoL) och fler esport spel. Vi listar de bästa betting sidorna för esport betting. Vi på Casinoniz älskar E-sport.
                         Därför har vi valt att endast
-                         lista licenserade esport bettingsidor som erbjuder esport betting. För
+                         lista licensierade esport bettingsidor som erbjuder esport betting. För
                          att göra det så enkelt som möjligt för dig att hitta ditt
                          casino, så har vi lagt till en filterfunktion som kan hjälpa dig
                          att hitta din sida som du vill spela på.

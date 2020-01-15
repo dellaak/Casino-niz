@@ -6,6 +6,7 @@ import Casinon from "../../Casinon"
 import styled from "styled-components"
 import { Helmet } from "react-helmet";
 import SportCasino from "../../Sports/SportCasino";
+import BottomInfoTrustly from "../../AllBottomInfo/BottomInfoTrustly";
 
 
 const StyledH3 = styled.h3`
@@ -353,6 +354,8 @@ background-color: ${props => props.isActive ? ' #e0b438 ' : 'rgba(8, 91, 169, 1)
                 <p>Här har vi valt att filtrera alla casinon som har Trustly. För att använda Trustly på ett casino så måste man ha tillgång till ett personligt bankid. Bankid brukar oftast vara installerad på datorn eller i mobilen.</p>
 
 
+
+
             </div>
 
 
@@ -398,7 +401,7 @@ background-color: ${props => props.isActive ? ' #e0b438 ' : 'rgba(8, 91, 169, 1)
                             className="button-recension blink"
                             onClick={loadMore}
                         >
-                            Hämta fler casinon{" "}
+                            Hämta fler Trustly Casinon{" "}
                         </Button>
                     </div>
                 ) : (
@@ -414,9 +417,11 @@ background-color: ${props => props.isActive ? ' #e0b438 ' : 'rgba(8, 91, 169, 1)
             }
 
 
+
+
+            <BottomInfoTrustly />
+
             <p className="update-text">Senast uppdaterad: 15 Januari 2020</p>
-
-
         </Container >
     );
 }

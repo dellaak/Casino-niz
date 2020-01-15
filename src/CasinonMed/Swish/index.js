@@ -6,6 +6,8 @@ import styled from "styled-components"
 import { Helmet } from "react-helmet";
 import FilterCasinoMed from "../../FilterCasinoMed";
 import SportCasino from "../../Sports/SportCasino"
+import BottomInfoSwish from "../../AllBottomInfo/BottomInfoSwish"
+
 
 const StyledH3 = styled.h3`
 text-align:center;
@@ -395,7 +397,7 @@ const SwishCasino = (props) => {
                         className="button-recension blink"
                         onClick={loadMore}
                     >
-                        Hämta fler bonusar{" "}
+                        Hämta fler Swish Casinon{" "}
                     </Button>
                 </div>
             ) : (
@@ -409,6 +411,7 @@ const SwishCasino = (props) => {
                     </div>
                 )}
 
+            <BottomInfoSwish />
 
             <p className="update-text">Senast uppdaterad: 15 Januari 2020</p>
 

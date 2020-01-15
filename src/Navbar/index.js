@@ -82,16 +82,16 @@ const NavBarApp = (props) => {
                 </NavLink>
                         </NavItem>
 
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret >
-                                Casino med..
+                        <UncontrolledDropdown nav inNavbar >
+                            <DropdownToggle nav caret  >
+                                Casino med...
                         </DropdownToggle>
                             <StyledDownMenu right>
                                 <DropdownItem className="drop-nav">
                                     <NavLink
                                         className="nav-link"
                                         to="/Casino-trustly"
-
+                                        activeClassName="activenav"
                                     >
 
                                         Casino med Trustly
@@ -101,7 +101,7 @@ const NavBarApp = (props) => {
                                     <NavLink
                                         className="nav-link"
                                         to="/Casino-Swish"
-
+                                        activeClassName="activenav"
                                     >
 
                                         Casino med Swish
@@ -122,7 +122,7 @@ const NavBarApp = (props) => {
                                     <NavLink
                                         className="nav-link"
                                         to="/Kampanjer-casino-2020"
-
+                                        activeClassName="activenav"
                                     >
 
                                         Alla Kampanjer
@@ -133,7 +133,7 @@ const NavBarApp = (props) => {
                                     <NavLink
                                         className="nav-link"
                                         to="/nya-casino-2020"
-
+                                        activeClassName="activenav"
                                     >
 
                                         Nya casino 2020
@@ -143,7 +143,7 @@ const NavBarApp = (props) => {
                                     <NavLink
                                         className="nav-link"
                                         to="/minsta-insattning-casino"
-
+                                        activeClassName="activenav"
                                     >
 
                                         Minsta insättning casino
@@ -154,7 +154,7 @@ const NavBarApp = (props) => {
                                     <NavLink
                                         className="nav-link"
                                         to="/5-basta-casinon-2020"
-
+                                        activeClassName="activenav"
                                     >
 
                                         Bästa Casinon 2020
