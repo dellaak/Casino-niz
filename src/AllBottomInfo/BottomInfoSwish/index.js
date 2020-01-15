@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 
 const BottomInfoSwish = (props) => {
@@ -43,7 +44,13 @@ const BottomInfoSwish = (props) => {
                 </div>
 
                 <div className="info-bottom-box">
-                    <h3>Hur sätter jag in pengar på ett casino med swish?.</h3>
+                    <h3>Minsta insättningen på casino med Swish? </h3>
+                    <p>
+                        Minsta insättningen på ett casino kan vara så lågt som 10kr.  Men dem flesta casinon har en minsta insättning på 100kr. På vissa casinon med Swish så brukar det vara 50kr. Vi har en lista med dem minsta insättningarna på ett casino. Här är länken till vår filtrerade lista: <Link to="/minsta-insattning-casino">Minsta insättning casino</Link></p>
+                </div>
+
+                <div className="info-bottom-box">
+                    <h3>Hur sätter jag in pengar på ett casino med swish?</h3>
 
                     <ol>
                         <li>Du klickar på insättning på casinot.</li>
