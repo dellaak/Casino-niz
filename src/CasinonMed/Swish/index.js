@@ -59,8 +59,7 @@ const SwishCasino = (props) => {
 
 
     useEffect(() => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+
         let list = [...props.list.Casinon]
         let swishCasino = []
         let newTop = []
@@ -69,6 +68,7 @@ const SwishCasino = (props) => {
             if (i.recension[0].swish === true) {
                 swishCasino.push(i)
             }
+            return list;
         })
 
         swishCasino.forEach(i => {
@@ -115,6 +115,7 @@ const SwishCasino = (props) => {
 
 
         return setSwishList(swishCasino)
+        // eslint-disable-next-line
     }, [sports, props.list.Casinon])
 
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components"
 import { Container, Alert } from "reactstrap"
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Casinon from "../../Casinon/index"
 import { Helmet } from "react-helmet";
 import sweflag from "../../images/sweflag.png"
@@ -55,25 +55,6 @@ const NyaCasino = (props) => {
     margin-top: 30px;
     }
     `
-
-
-    const StyledCircle = styled.span`
-height:50px;
-width:50px;
-border-radius:50%;
-background-color:#214467;
-position:absolute;
-top:-25px;
-left:-25px;
-margin-bottom:5px;
-color:#fed100;
-text-align: center;
-display: table-cell;
-overflow: hidden;
-vertical-align:middle;
-font-size: 30px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-`
 
     return (<div>
         <Helmet>

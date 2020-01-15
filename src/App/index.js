@@ -27,7 +27,6 @@ import "./style.scss"
 const App = () => {
 
     const [adBlockEnabled, setAdBlock] = useState(false);
-    const [recen, SetRecen] = useState(false);
 
     useEffect(() => {
         let testAd2 = document.createElement('div');

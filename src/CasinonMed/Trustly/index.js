@@ -63,8 +63,7 @@ const TrustlyCasino = (props) => {
 
 
     useEffect(() => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+
         let list = [...props.list.Casinon]
         let trustlyCasino = []
         let newTop = []
@@ -73,6 +72,7 @@ const TrustlyCasino = (props) => {
             if (i.recension[0].deposittypes.includes("Trustly")) {
                 trustlyCasino.push(i)
             }
+            return list;
         })
 
         trustlyCasino.forEach(i => {
@@ -121,6 +121,7 @@ const TrustlyCasino = (props) => {
 
 
         return setTrustlyList(trustlyCasino)
+        // eslint-disable-next-line
     }, [sports, props.list.Casinon])
 
 
