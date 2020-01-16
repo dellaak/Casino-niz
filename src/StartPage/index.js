@@ -433,9 +433,7 @@ const StartPage = (props) => {
         <p className="update-text">Senast uppdaterad: 16 Januari 2020</p>
 
       </Container>
-      <div className="backlinks-hidden">
-        <a href="http://xn--svenskalnkar-ncb.com">SvenskaLänkar.com</a>
-      </div>
+
     </section>
   </React.Fragment>)
 }
