@@ -63,29 +63,29 @@ const App = () => {
 
                     <Container fluid={w < d ? true : false}>
                         <main>
-                            {adBlockEnabled ? <span className="blocker">OBS! Du har en Adblocker aktiverad. Sidan kan bete sig lite annorlunda än vanligt. </span> : ''}
-                            <Switch>
-                                <Route exact path="/" render={(props) => (<Startpage start={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route path="/esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
-                                <Route path="/casino-Trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
-                                <Route path="/casino-Swish" render={(props) => (<SwishCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
-                                <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
-                                <Route path="/odds" render={(props) => (<Sports list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route path="/kampanjer-casino-2020" component={Blogg} />
-                                <Route path="/terms" component={Terms} />
-                                <Route path="/policy" component={Policy} />
+                        {adBlockEnabled ? <span className="blocker">OBS! Du har en Adblocker aktiverad. Sidan kan bete sig lite annorlunda än vanligt. </span> : ''}
+                        <Switch>
+                            <Route exact path="/" render={(props) => (<Startpage start={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            <Route path="/esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                            <Route path="/casino-Trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                            <Route path="/casino-Swish" render={(props) => (<SwishCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                            <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
+                            <Route path="/odds" render={(props) => (<Sports list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            <Route path="/kampanjer-casino-2020" component={Blogg} />
+                            <Route path="/terms" component={Terms} />
+                            <Route path="/policy" component={Policy} />
 
 
-                                {/* BLOGG */}
-                                <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route path="/minsta-insattning-casino" render={(props) => (<MinstaInsCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route path="/nya-casino-2020" render={(props) => (<NyaCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            {/* BLOGG */}
+                            <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            <Route path="/minsta-insattning-casino" render={(props) => (<MinstaInsCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            <Route path="/nya-casino-2020" render={(props) => (<NyaCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
 
-                            </Switch>
+                        </Switch>
 
-                        </main>
+                    </main>
                     </Container>
                     <Footer />
                 </div>
