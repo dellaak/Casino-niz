@@ -67,15 +67,15 @@ const App = () => {
                             <Switch>
                                 <Route exact path="/" render={(props) => (<Startpage start={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                                 <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route path="/Esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                                <Route path="/esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                                 <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
-                                <Route path="/Casino-Trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
-                                <Route path="/Casino-Swish" render={(props) => (<SwishCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                                <Route path="/casino-Trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                                <Route path="/casino-Swish" render={(props) => (<SwishCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
                                 <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
                                 <Route path="/odds" render={(props) => (<Sports list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                                <Route path="/Kampanjer-casino-2020" component={Blogg} />
-                                <Route path="/Terms" component={Terms} />
-                                <Route path="/Policy" component={Policy} />
+                                <Route path="/kampanjer-casino-2020" component={Blogg} />
+                                <Route path="/terms" component={Terms} />
+                                <Route path="/policy" component={Policy} />
 
 
                                 {/* BLOGG */}

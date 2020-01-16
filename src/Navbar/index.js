@@ -90,7 +90,7 @@ const NavBarApp = (props) => {
                                 <DropdownItem className="drop-nav">
                                     <NavLink
                                         className="nav-link"
-                                        to="/Casino-trustly"
+                                        to="/casino-trustly"
                                         activeClassName="activenav"
                                     >
 
@@ -100,7 +100,7 @@ const NavBarApp = (props) => {
                                 <DropdownItem className="drop-nav">
                                     <NavLink
                                         className="nav-link"
-                                        to="/Casino-Swish"
+                                        to="/casino-Swish"
                                         activeClassName="activenav"
                                     >
 
@@ -121,7 +121,7 @@ const NavBarApp = (props) => {
                                 <DropdownItem className="drop-nav">
                                     <NavLink
                                         className="nav-link"
-                                        to="/Kampanjer-casino-2020"
+                                        to="/kampanjer-casino-2020"
                                         activeClassName="activenav"
                                     >
 

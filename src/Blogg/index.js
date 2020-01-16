@@ -75,7 +75,7 @@ const Top5 = (props) => {
     return (<Container>
         <Helmet>
             <title>Casino Kampanjer & Tips 2020 | Casinoniz</title>
-            <link rel="canonical" href="https://www.casinoniz.se/Kampanjer-casino-2020" />
+            <link rel="canonical" href="https://www.casinoniz.se/kampanjer-casino-2020" />
             <meta
                 name="description"
                 content="Kampanjer för casino 2020. Här lägger vi på Casinoniz ut våra kampanjer om casinon och de bästa casino bonusar för esport, sport/odds och casino!."

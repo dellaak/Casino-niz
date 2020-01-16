@@ -316,7 +316,7 @@ const SwishCasino = (props) => {
         <Container className="wrapit ">
             <Helmet>
                 <title>Casino Swish - Lista På Swish Casino | Casinoniz</title>
-                <link rel="canonical" href="https://www.casinoniz.se/Casino-swish" />
+                <link rel="canonical" href="https://www.casinoniz.se/casino-swish" />
 
                 <meta
                     name="description"
