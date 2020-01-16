@@ -100,7 +100,7 @@ const NavBarApp = (props) => {
                                 <DropdownItem className="drop-nav">
                                     <NavLink
                                         className="nav-link"
-                                        to="/casino-Swish"
+                                        to="/casino-swish"
                                         activeClassName="activenav"
                                     >
 
