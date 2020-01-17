@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
-import { Container, Alert, Button } from "reactstrap";
-import sweflag from "../images/sweflag.png";
+import { Container, Button } from "reactstrap";
 import FakturaCasino from "./FakturaCasino";
 import FakturaFilter from "../FakturaFilter";
 import { Helmet } from "react-helmet";
 import BottomInfoFaktura from "../AllBottomInfo/BottomInfoFaktura/index";
+
 
 const CasinoMedFaktura = (props) => {
     const [casinoList, setCasinoList] = useState([])
@@ -15,7 +15,7 @@ const CasinoMedFaktura = (props) => {
         activesms: false,
         activeklarna: false
     })
-    const [visible, setVisible] = useState(true)
+
     const [readmore, setReadMore] = useState(false)
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
@@ -192,9 +192,7 @@ const CasinoMedFaktura = (props) => {
     //     }, 1000);
     //   }
 
-    const onDismiss = () => {
-        setVisible(false);
-    }
+
 
     const readMore = () => {
         setReadMore(!readmore);
@@ -276,18 +274,7 @@ const CasinoMedFaktura = (props) => {
       }
       `}</script>
                 </Helmet>
-                <Alert
-                    color="success"
-                    isOpen={visible}
-                    toggle={onDismiss}
-                >
-                    <div className="swe-license">
-                        <p className="swe-lic-text">
-                            Vi listar endast casinon med svensk spellicens!
-            </p>
-                        <img alt="swe-flag" className="swe-flag" src={sweflag} />
-                    </div>
-                </Alert>
+
 
 
 

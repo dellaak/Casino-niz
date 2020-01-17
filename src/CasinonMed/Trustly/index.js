@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Alert, Button } from "reactstrap";
-import sweflag from "../../images/sweflag.png";
+import { Container, Button } from "reactstrap";
 import FilterCasinoMed from "../../FilterCasinoMed"
 import Casinon from "../../Casinon"
 import styled from "styled-components"
@@ -50,7 +49,7 @@ const TrustlyCasino = (props) => {
 
     const [casinon, setCasinon] = useState([])
     const [trustlyList, setTrustlyList] = useState([])
-    const [visible, setVisible] = useState(true)
+
     const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
@@ -269,9 +268,7 @@ const TrustlyCasino = (props) => {
 
 
 
-    const onDismiss = () => {
-        setVisible(false);
-    }
+
 
 
     const loadMore = () => {
@@ -327,18 +324,6 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
                 />
 
             </Helmet>
-            <Alert
-                color="success"
-                isOpen={visible}
-                toggle={onDismiss}
-            >
-                <div className="swe-license">
-                    <p className="swe-lic-text">
-                        Vi listar endast casinon med svensk spellicens!
-            </p>
-                    <img alt="swe-flag" className="swe-flag" src={sweflag} />
-                </div>
-            </Alert>
 
 
 

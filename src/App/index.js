@@ -6,7 +6,7 @@ import NavBarApp from "../Navbar/index";
 import Recension from "../Recension/index"
 import Footer from "../Footer/index"
 import Esport from "../Esport/index"
-import { Container } from "reactstrap"
+import { Container, Alert } from "reactstrap"
 import CasinoMedFaktura from "../CasinoMedFaktura/index"
 import RedirectComp from '../RedirectComp/index';
 import Sports from "../Sports/index"
@@ -21,12 +21,14 @@ import NyaCasino from "../Blogg/NyaCasinon/index"
 import TrustlyCasino from "../CasinonMed/Trustly"
 import SwishCasino from "../CasinonMed/Swish"
 import "./style.scss"
+import sweflag from "../images/sweflag.png"
 
 
 
 const App = () => {
 
     const [adBlockEnabled, setAdBlock] = useState(false);
+    const [visible, setVisible] = useState(true);
 
     useEffect(() => {
         let testAd2 = document.createElement('div');
@@ -47,22 +49,41 @@ const App = () => {
 
     }, [])
 
-
+    const onDismiss = () => {
+        setVisible(false)
+    }
 
     let w = window.innerWidth
     let d = 2200
 
     return (
         <Router>
-
+            <img id="bg" src="/images/bg.svg" alt="casinbonuslogo" />
             <div className="App">
+
                 <TopButton />
                 {window.location.pathname.includes('/redirect') ? '' : <NavBarApp />}
-                <div className="myMain">
 
 
-                    <Container fluid={w < d ? true : false}>
-                        <main>
+
+                <Container fluid={w < d ? true : false}>
+                    <main>
+
+                        <Alert
+                            color="success"
+                            isOpen={visible}
+                            toggle={onDismiss}
+                        >
+                            <div className="swe-license">
+                                <p className="swe-lic-text">
+                                    Vi listar endast casinon med svensk spellicens!
+            </p>
+                                <img alt="swe-flag" className="swe-flag" src={sweflag} />
+                            </div>
+                        </Alert>
+
+
+
                         {adBlockEnabled ? <span className="blocker">OBS! Du har en Adblocker aktiverad. Sidan kan bete sig lite annorlunda än vanligt. </span> : ''}
                         <Switch>
                             <Route exact path="/" render={(props) => (<Startpage start={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
@@ -86,9 +107,9 @@ const App = () => {
                         </Switch>
 
                     </main>
-                    </Container>
-                    <Footer />
-                </div>
+                </Container>
+                <Footer />
+
             </div>
 
         </Router>

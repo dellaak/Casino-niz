@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components"
-import { Container, Alert, Button } from "reactstrap"
+import { Container , Button } from "reactstrap"
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import sweflag from "../../images/sweflag.png"
 import "./style.scss"
 import { StyledNavlink } from "../../Casinon/"
 import SnabbFaktaMin from "./SnabbFaktaMin"
@@ -101,7 +100,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 
 const Styledtopwrap  = styled.div`
-background-color:white;
+
 padding:20px;
 `
 
@@ -109,7 +108,7 @@ const MinstaInsCasino = (props) => {
 
 
     const [mindepCasino, setminDepList] = useState([])
-    const [visible, setVisible] = useState(true)
+  
    
 
     useEffect(() => {
@@ -138,9 +137,7 @@ const MinstaInsCasino = (props) => {
 
     }, [props.list.Casinon])
 
-    const onDismiss = () => {
-        setVisible(false)
-    }
+
 
 
  
@@ -150,7 +147,7 @@ const MinstaInsCasino = (props) => {
     
 
 
-    return (<Container>
+    return (<Container className="wrap-top5">
         <Helmet>
             <title>Minsta insättning Casino ➼ Från 10 kr! (Lista 2020) | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/minsta-insattning-casino" />
@@ -166,18 +163,7 @@ const MinstaInsCasino = (props) => {
         </Helmet>
 
 
-        <Alert
-            color="success"
-            isOpen={visible}
-            toggle={onDismiss}
-        >
-            <div className="swe-license">
-                <p className="swe-lic-text">
-                    Vi listar endast casinon med svensk spellicens!
-            </p>
-                <img alt="swe-flag" className="swe-flag" src={sweflag} />
-            </div>
-        </Alert>
+ 
         <h1 className="banners">Minsta insättning casino</h1>
         <Styledtopwrap>
         <small> Publicerad: 11 Januari 2020</small>

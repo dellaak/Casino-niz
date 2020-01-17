@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components"
-import { Container, Alert } from "reactstrap"
+import { Container } from "reactstrap"
 import { Link } from "react-router-dom";
 import Casinon from "../../Casinon/index"
 import { Helmet } from "react-helmet";
-import sweflag from "../../images/sweflag.png"
 // import "./style.scss"
 
 const NyaCasino = (props) => {
 
     const [topArr] = useState(['luckyvegas'])
     const [topCasinon, setTopList] = useState([])
-    const [visible, setVisible] = useState(true)
+
 
     useEffect(() => {
 
@@ -38,9 +37,7 @@ const NyaCasino = (props) => {
 
     }, [props.list.Casinon, topArr])
 
-    const onDismiss = () => {
-        setVisible(false)
-    }
+
 
 
     const StyledDiv = styled.div`
@@ -73,18 +70,7 @@ const NyaCasino = (props) => {
 
         <Container>
             <div className="wrap-top5">
-                <Alert
-                    color="success"
-                    isOpen={visible}
-                    toggle={onDismiss}
-                >
-                    <div className="swe-license">
-                        <p className="swe-lic-text">
-                            Vi listar endast casinon med svensk spellicens!
-            </p>
-                        <img alt="swe-flag" className="swe-flag" src={sweflag} />
-                    </div>
-                </Alert>
+
                 <h1 className="banners">Nya Casino 2020 </h1>
                 <small> Publicerad: 14 Januari 2020</small>
                 <p>Nya casino 2020</p>

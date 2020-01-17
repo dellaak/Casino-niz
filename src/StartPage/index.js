@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from "react-helmet";
-import { Container, Alert, Button } from "reactstrap";
+import { Container, Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import Casinon from "../Casinon/index"
 import Filter from "../Filter/index"
@@ -10,7 +10,7 @@ import OurRec from "../OurRec/index";
 import Recommended from "../Recommended/index";
 import NewCasinos from "../NewCasinos";
 import star from "../images/fullstar.svg";
-import sweflag from "../images/sweflag.png"
+
 import "./style.scss"
 import MonthCasino from "../MonthCasino"
 
@@ -26,7 +26,6 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 const StartPage = (props) => {
   const [casinoList, setCasinoList] = useState({ Casino: props.start.Casinon, showOrder: false });
   const [size, setSize] = useState(9)
-  const [visible, setVisible] = useState(true);
   const [readmore, setReadMore] = useState(false);
   const [showmedalj, setShowMedalj] = useState(true);
   const [fade, setFade] = useState(false);
@@ -85,7 +84,7 @@ const StartPage = (props) => {
         wagerarr.push(i);
       }
     }
-    console.log(orlist)
+
     wagerarr.sort(function (a, b) {
       return a.wager - b.wager;
     });
@@ -137,9 +136,7 @@ const StartPage = (props) => {
 
 
 
-  const onDismiss = () => {
-    setVisible(false)
-  }
+
   const readMore = () => {
     setReadMore(!readmore);
   }
@@ -213,7 +210,7 @@ const StartPage = (props) => {
 
 
   return (<React.Fragment>
-    <section className="start-wrap">
+    <section >
       <Helmet>
         <title>Svenska Casino 2020 - Jämför casinobonusar | Casinoniz</title>
         <link rel="canonical" href="https://www.casinoniz.se/" />
@@ -295,19 +292,6 @@ const StartPage = (props) => {
 
       </Helmet>
 
-      <Alert
-        color="success"
-        isOpen={visible}
-        toggle={onDismiss}
-      >
-        <div className="swe-license">
-          <p className="swe-lic-text">
-            Vi listar endast casinon med svensk spellicens!
-            </p>
-          <img alt="swe-flag" className="swe-flag" src={sweflag} />
-        </div>
-      </Alert>
-
 
 
 
@@ -374,6 +358,7 @@ const StartPage = (props) => {
                 </p>
               </div>
             )}
+
         </section>
 
 

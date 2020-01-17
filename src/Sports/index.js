@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SportsFilter from "../SportsFilter/index";
-import { Container, Alert, Button } from "reactstrap";
-import sweflag from "../images/sweflag.png";
+import { Container, Button } from "reactstrap";
 import SportCasino from "./SportCasino"
 import BottomInfoSports from "../AllBottomInfo/BottomInfoSports/index"
 import { Helmet } from "react-helmet";
@@ -11,7 +10,7 @@ import "./style.scss"
 const Sports = (props) => {
 
     const [casinon, setCasinon] = useState([])
-    const [visible, setVisible] = useState(true)
+
     const [readmore, setReadMore] = useState(false);
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
@@ -138,9 +137,7 @@ const Sports = (props) => {
 
 
 
-    const onDismiss = () => {
-        setVisible(false);
-    }
+
 
     const readMore = () => {
         setReadMore(!readmore)
@@ -220,20 +217,6 @@ const Sports = (props) => {
           }
         }]}`}</script>
             </Helmet>
-            <Alert
-                color="success"
-                isOpen={visible}
-                toggle={onDismiss}
-            >
-                <div className="swe-license">
-                    <p className="swe-lic-text">
-                        Vi listar endast casinon med svensk spellicens!
-            </p>
-                    <img alt="swe-flag" className="swe-flag" src={sweflag} />
-                </div>
-            </Alert>
-
-
 
 
 

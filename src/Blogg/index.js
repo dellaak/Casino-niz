@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import sweflag from "../images/sweflag.png"
-import { Container, Alert } from "reactstrap"
+import React from "react";
+import { Container } from "reactstrap"
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import styled from "styled-components"
@@ -53,12 +52,10 @@ display: flex;
 `
 
 const Top5 = (props) => {
-    const [visible, setVisible] = useState(true)
 
 
-    const onDismiss = () => {
-        setVisible(false)
-    }
+
+
 
     const Kampanj = (props) => {
         let { text, bild, publicerad, link } = props
@@ -89,18 +86,7 @@ const Top5 = (props) => {
 
 
         <section className="blogg">
-            <Alert
-                color="success"
-                isOpen={visible}
-                toggle={onDismiss}
-            >
-                <div className="swe-license">
-                    <p className="swe-lic-text">
-                        Vi listar endast casinon med svensk spellicens!
-            </p>
-                    <img alt="swe-flag" className="swe-flag" src={sweflag} />
-                </div>
-            </Alert>
+
             <h1 className="banners">Kampanjer casino 2020 </h1>
             <p>Välkomna till Casinoniz kampanjer/casinoblogg. Här skriver vi ut allt som har med casinobonusar, betting, sports,esport, slots och massa annat. Typ allt som har med spel att göra. </p>
 

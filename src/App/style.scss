@@ -1,13 +1,19 @@
-.myMain {
-  height: 600px;
-  background: url("../images/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center;
-  background-size: cover;
-  @media (max-width: 830px) {
-    background: #fff;
-    background-attachment: none;
+#bg {
+  z-index: -1;
+  opacity: 0.6;
+
+  /* Set rules to fill background */
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+
+  /* Set up proportionate scaling */
+
+  /* Set up positioning */
+  position: fixed;
+  @media (max-width: 930px) {
+    display: none;
   }
 }
 

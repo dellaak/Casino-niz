@@ -1,7 +1,8 @@
 .App {
-  background-color: #fff !important;
+  background-image: linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 0) 0%, #1e4467 100%);
 }
 // .start-wrap {
+//   background-image: linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 0) 0%, #1e4467 100%);
 // }
 
 .link-start {
@@ -10,8 +11,11 @@
 }
 
 .wrapit {
-  background-color: rgba($color: #ffffff, $alpha: 0.5);
+  background-color: rgba($color: #ffffff, $alpha: 1);
   max-width: 1200px !important;
+  border-radius: 10px;
+  padding-top: 20px;
+  box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
 }
 
 .medalj-box {
@@ -30,10 +34,15 @@
 .welcome-box {
   display: flex;
   padding: 5px;
-  margin: 15px 0;
+
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba($color: #ffffff, $alpha: 0.8);
+  border-radius: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
 }
 
 .new-casinos {
@@ -48,12 +57,14 @@
 }
 
 .blocker {
+  box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
   display: flex;
   justify-content: center;
   font-size: 20px;
   color: red;
   background-color: white;
   text-align: center;
+  margin-bottom: 7px;
 }
 
 .button-recension {
@@ -75,9 +86,9 @@
 }
 
 .newcas-botton {
-  color: white;
-  font-weight: 700;
-  background-color: #005ca9 !important;
+  color: black !important;
+  font-weight: 500 !important;
+  background-color: #fed100 !important;
   font-size: 11px !important;
   height: 40px !important;
   width: 125px !important;
@@ -124,7 +135,7 @@
 }
 
 .title-box {
-  background-color: #005ca9;
+  background-color: #214467;
   color: #fed100;
   text-align: center;
 }
@@ -262,6 +273,9 @@ h4 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 @keyframes fadeIn {
