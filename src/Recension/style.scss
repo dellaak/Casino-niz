@@ -2,6 +2,9 @@
   background: white;
   padding-bottom: 20px;
   position: relative;
+  max-width: 1200px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5px;
 }
 
 .overlay-wrap {
@@ -62,10 +65,14 @@
 }
 
 .recension-body {
-  font-family: "Manjari", sans-serif;
+  font-family: "Roboto", sans-serif;
 
   h5 {
     font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: 1px;
   }
 }
 .regular-box {

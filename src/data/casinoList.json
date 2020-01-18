@@ -3873,13 +3873,136 @@
                     "sportsterms": [
                         "Ingen sports sektion"
                     ],
-                    "topslotgames": "Över 800+ slots från kända leverantörer som  Microgaming, NetEnt, Big Time Gaming, Blueprint, Quickspin, Play n  Go och många fler !",
+                    "topslotgames": "Över 800+ slots från kända leverantörer som  Microgaming, NetEnt, Big Time Gaming, Blueprint, Quickspin, Play n Go och många fler !",
                     "deposittypes": "Trustly, Visa, Mastercard, Skrill, Neteller, PaysafeCard och Banköverföring",
                     "mindeposit": 200,
                     "minout": 250,
                     "swish": false,
                     "livechat": true,
                     "summering": "Gate777 är ett väldigt bra casino med en väldesignad sida samt väldigt användarvänlig. Att göra insättningar samt begära ut ett uttag går väldigt snabbt och smidigt. Har ett väldigt brett spelsortiment med över 1200+ spel från branschens bästa leverantörer. Supporten hos Gate777 är väldigt professionell. Livechatt på svenska finns tillgängligt mellan 08:00-24:00, resterande tid är det engelska som gäller. Erbjuder flera kända insättningsmetoder som t.ex. Trustly, Visa m.m. Vill man flyga iväg i tankarna och få en annourlunda spelupplevelse så är Gate777 casinot för dig! "
+                }
+            ]
+        },
+        {
+            "id": 62,
+            "title": "SpinStationX",
+            "slogan": "Casino med Trustly",
+            "color": "#fcfbf9",
+            "textcolor": "#c2252b",
+            "setTop": false,
+            "depositbonus": "Ingen casino bonus",
+            "sportsbonus": "ingen sports bonus",
+            "mylink": "http://wlivyaffiliates.adsrv.eacdn.com/C.ashx?btag=a_7131b_114c_&affid=1491&siteid=7131&adid=114&c=",
+            "rules": "http://wlivyaffiliates.adsrv.eacdn.com/C.ashx?btag=a_7131b_199c_&affid=1491&siteid=7131&adid=199&c=",
+            "caslogo": "/images/ssximg.png",
+            "wager": "x",
+            "sportswager": "x",
+            "extratext": "",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": false,
+            "bankid": true,
+            "publishdate": "18 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 0,
+            "faktura": false,
+            "fakturatype": [],
+            "recension": [
+                {
+                    "gamebar": 90,
+                    "experience": 100,
+                    "support": 94,
+                    "egentitel": "Snabbt och snyggt casino",
+                    "egentitel2": false,
+                    "toprecension": "Spin Station X lanserades under första kvartalet 2019. Bolaget bakom är ingen mindre än White Hat Gaming Limited. Casinot har skippat allt krångel och har gjort sidan så användarvänlig som möjligt. När man kommer in på sidan så möts man av en logo och en liten textruta, I textrutan skriver man in beloppet man vill spela med. Casinot använder endast Trustly så uttagen och insättningarna går väldigt snabbt. Du kan få ditt uttag inom 15 minuter! Har tyvärr ingen supportsektion med vanliga frågor och svar. Men man behöver inte bli besviken för det. Dem har istället en grym och tillgänglig livechatt dygnet runt! Casinot har en väldigt skön design och är väldigt inbjudande. Slots verkar vara den kategorin som är populärst på Spin Station X.",
+                    "secondrec": "Casino sektionen hos Spin Station X är väldigt simpel men bra. Dem har ingen direkt filterfunktion. Dem har istället en sökfunktion där du kan söka efter din favoritslot. Dem har en kategori 'Leverantörer' där dem listar alla slots baserat på spel leverantör. Layouten på casinosektionen är snygg och dem har ett väldigt bra utbud av spel och leverantörer. Spin Station X är väldigt bra på att lägga till nya slots. Skulle man vilja spela på något annat än slots så finns det även Live Casino, Bordsspel, Roulette och Poker.",
+                    "sportsrec": "Ingen sport sektion.",
+                    "welcomeoffer": "Ingen bonus",
+                    "bonusterms": [
+                        ""
+                    ],
+                    "casinoterms": [
+                        ""
+                    ],
+                    "sportsterms": [
+                        "Ingen sports sektion"
+                    ],
+                    "topslotgames": "Över 650+ slots från kända leverantörer som  Microgaming, NetEnt, Big Time Gaming, Red Tiger, Quickspin, Play n Go och många fler !",
+                    "deposittypes": "Trustly",
+                    "mindeposit": 200,
+                    "minout": 300,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "Ett väldigt bra och modernt casino. Casinot använder betalmetoden Trustly för insättningar och uttag. Vilket gör att du får ut din vinst väldigt snabbt! Dem har i skrivandet stund ingen casinobonus. Casinot är väldigt användarvänligt och det är väldigt enkelt att navigera sig runt på sidan. Minsta insättning på Spin Station X är 200 kr och uttag 300 kr. Casinot har ett bra utbud av slots från välkända leverantörer. Erbjuder förutom slots även spel på Live Casino, Roulette, Bordsspel och Poker. "
+                }
+            ]
+        },
+        {
+            "id": 63,
+            "title": "10bet",
+            "slogan": "Hämta Bonuskod fö Odds bonus",
+            "color": "#efefef",
+            "textcolor": "#000",
+            "setTop": false,
+            "depositbonus": "Ingen casino bonus dock sportsbonus",
+            "sportsbonus": "'Insättningsbonus på 100% upp till 500kr. Bonuskod : IN10'",
+            "mylink": "https://track.10bet.com/C.ashx?btag=a_53735b_5382c_&affid=1680928&siteid=53735&adid=5382&c=",
+            "rules": "https://track.10bet.com/C.ashx?btag=a_53735b_5382c_&affid=1680928&siteid=53735&adid=5382&c=",
+            "caslogo": "/images/10betlogo.svg",
+            "wager": "x",
+            "sportswager": 8,
+            "extratext": "",
+            "sports": true,
+            "freespins": 0,
+            "activebonus": true,
+            "bankid": true,
+            "publishdate": "18 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 0,
+            "depositpercentsports": 100,
+            "faktura": true,
+            "fakturatype": [
+                "Zimpler"
+            ],
+            "recension": [
+                {
+                    "gamebar": 50,
+                    "experience": 100,
+                    "support": 95,
+                    "egentitel": "Casinot hos 10Bet",
+                    "egentitel2": "10Bet Bonuskod - Odds & Esportbetting",
+                    "toprecension": "10Bet är en extremt välgjord sida. Bolaget bakom sidan är Blue Star Planet. Tittar man mycket på fotboll så vet man nog att 10Bet just nu är Juventus officiella sponsorer. Dem har mer än 16års erfarenhet vilket tyder på att dem är seriösa. 10Bet har svensk spellicens vilket ger dig skattefria vinster. Registrering går väldigt smidigt med bankid. 10Bet erbjuder dem vanligaste insättningsmetoderna och även insättning med faktura. Uttagen går väldigt snabbt beroende på uttagsmetod. Har ingen direkt supportsida utan vill man få hjälp så får man det via livechatten. Chatten är öppen dygnet runt! ",
+                    "secondrec": "Man märker att 10Bet lägger mer fokus på betting än slots. Deras slotsutbud är lite klent men förhoppningsvis så utökar dem utbudet. Utbudet håller dock högtsa kvaliten. 10Bet har slots från leverantörer som Microgaming, NetEnt, PlaynGo och fler. Erbjuder jackpot på ca 16 slots. Har ingen direkt filterfunktion för slots utan man kan sortera på leverantör, a-z och populäritet. Sedan är alla slots indelade i olika kategorirer t.ex. Jackpotspel.",
+                    "sportsrec": "Detta är 10Bet's bästa sektion. Sport sidan är väldigt strukturerad och det är väldigt lätt att navigera sig runt. Du hittar bra odds på flera typer av sporter och ett enorm utbud. Erbjuder betting på dem flesta av dem vanligaste ligorna. Vill man så kan man se statistik på varje lag hur det har gått med t.ex. spelade matcher, truppen m.m. Det bästa av allt är att 10Bet erbjuder esportbetting. Vilket vi tycker är riktigt bra! Erbjuder nu en väldigt bra välkomstbonus på 100% upp till 500kr. 10Bet erbjuder även betting på Virtuella sporter, Live Casino och Live Odds",
+                    "welcomeoffer": "100% i insättningsbonus upp till 500kr",
+                    "bonusterms": [
+                        "Din kvalificerade insättning och bonus måste omsättas (8) gånger på (1) fast singel sport bet med odds på minst 1.80 eller (2) fasta kombospel med odds på minst 1.40 per match."
+                    ],
+                    "casinoterms": [
+                        ""
+                    ],
+                    "sportsterms": [
+                        "Minsta kvalificerade insättning för denna kampanj är 100 kr",
+                        "Insättning med Skrill eller Neteller är inte en kvalificerad insättning."
+                    ],
+                    "topslotgames": "Över 250+ slots från kända leverantörer som  Microgaming, NetEnt, Rabcat, iSoftBet, JTW och Play n Go !",
+                    "deposittypes": "Trustly,Visa,Mastercard,Skrill,Neteller,Zimpler,Paysafecard",
+                    "mindeposit": 100,
+                    "minout": 100,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "10Bet är en väldigt bra sida för personer som tycker om sportsbetting. Utbudet av slots kunde ha varit bättre och vi hoppas att 10Bet utökar utbudet snart. Casinot har en livechatt dygnet runt ifall man vill ha hjälp. Erbjuder snabb registrering med hjälp av bankid. Vill man sätta in pengar så kan man använda dem vanligaste betalmetoder samt även insättning med faktura. Insättningar går väldigt snabbt och även uttagen. Minsta insättningen samt uttag är på 100kr. 10Bet erbjuder esportbetting för personen som är intresserad av esport. Bra och säkert casino med svensk spellicens!"
+                }
+            ],
+            "esportinfo": [
+                {
+                    "csgo": true,
+                    "dota2": true,
+                    "leagueoflegends": true,
+                    "overwatch": false,
+                    "starcraft2": false,
+                    "other": false,
+                    "spel": "CS:GO - Dota2 - League of Legends "
                 }
             ]
         }

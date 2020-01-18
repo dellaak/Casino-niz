@@ -73,9 +73,9 @@ const Recension = (props) => {
 			let list = props.list.Casinon
 			let title;
 			for (let i of list) {
-				title = i.title.toUpperCase();
+				title = i.title.toLowerCase();
 				// eslint-disable-next-line
-				casinotitle = casinotitle.toUpperCase()
+				casinotitle = casinotitle.toLowerCase()
 				if (title === casinotitle) {
 					if (i.hasOwnProperty("recension")) {
 						try {
@@ -92,10 +92,6 @@ const Recension = (props) => {
 						catch (e) {
 
 						}
-					} else {
-
-						return window.location.replace("/404")
-
 					}
 				}
 
@@ -243,7 +239,7 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 
 	return (
 
-		<Container >
+		<Container className="recension-wrapper">
 			<Helmet>
 				<title>
 					{casinotitle.length > 3 ? `${casinotitle} Recension & Snabbfakta ⇛ ` : ''}
@@ -278,7 +274,7 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 
 
 			{recension ? (
-				<div className="recension-wrapper">
+				<React.Fragment>
 					<div className="overlay-wrap">
 						<StyledTopWrap>
 							<Link
@@ -671,7 +667,7 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 
 					</div>
 					<p className="publish-date"><b>Senast uppdaterad: </b><i> {selectedCasino ? `${selectedCasino.publishdate}` : '...'}</i></p>
-				</div>
+				</React.Fragment>
 
 			) : (
 					<div className="recension-wrapper">

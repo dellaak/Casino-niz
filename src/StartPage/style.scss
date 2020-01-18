@@ -372,16 +372,6 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 1000px) and (max-device-width: 2100px) and (orientation: portrait) {
-  .top-casinos-rec {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-}
-
 @media (min-width: 2050px) {
   .casino-wrap {
     flex-direction: column;

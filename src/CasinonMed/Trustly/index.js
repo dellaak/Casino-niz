@@ -409,7 +409,7 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
 
             <BottomInfoTrustly />
 
-            <p className="update-text">Senast uppdaterad: 16 Januari 2020</p>
+            <p className="update-text">Senast uppdaterad: 18 Januari 2020</p>
         </Container >
     );
 }
