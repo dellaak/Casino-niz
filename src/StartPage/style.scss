@@ -1,9 +1,7 @@
 .App {
-  background-image: linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 0) 0%, #1e4467 100%);
+  background: rgb(30, 68, 103);
+  background: linear-gradient(0deg, #1e4467 80%, white 92%);
 }
-// .start-wrap {
-//   background-image: linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 0) 0%, #1e4467 100%);
-// }
 
 .link-start {
   color: black;
@@ -50,6 +48,7 @@
   box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
   width: 420px;
   text-align: left;
+  max-width: 100%;
 }
 
 .alert-success {

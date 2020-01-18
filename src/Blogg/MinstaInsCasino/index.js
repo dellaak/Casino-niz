@@ -8,22 +8,16 @@ import { StyledNavlink } from "../../Casinon/"
 import SnabbFaktaMin from "./SnabbFaktaMin"
 import BottomInfoMinstaCasino from "../../AllBottomInfo/BottomInfoMinstaCasino"
 
-const StyledDiv = styled.div`
 
-padding: 10px 20px;
-margin: 40px 0;
-margin-bottom:40px ;
-border: 2px solid #fed100;
+
+const StyledWrapper = styled(Container)`
+display:flex;
 background-color:white;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-border-radius:9px;
 flex-direction: column;
-h2 {
-margin-top: 30px;
-}
-
-
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin:20px;
 `
+
 
 const StyledCasinoDiv = styled.div`
 border-radius:9px;
@@ -101,7 +95,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 const Styledtopwrap  = styled.div`
 
-padding:20px;
+margin-bottom:10px;
 `
 
 const MinstaInsCasino = (props) => {
@@ -147,7 +141,7 @@ const MinstaInsCasino = (props) => {
     
 
 
-    return (<Container className="wrap-top5">
+    return (<StyledWrapper>
         <Helmet>
             <title>Minsta insättning Casino ➼ Från 10 kr! (Lista 2020) | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/minsta-insattning-casino" />
@@ -172,7 +166,7 @@ const MinstaInsCasino = (props) => {
         <h2>Minsta insättning casino</h2>
        <p>Här listar vi endast casinon som har mindre än 100 kr i minsta insättning. Insättningar på 10, 25 samt 50 kr på casino,bettingsidor och esportbetting. Ibland vill man bara prova på att spela hos ett casino och då passar det utmärkt att endast sätta in en summa under 100-lappen.</p>
         </Styledtopwrap>
-        <StyledDiv>
+        
             <StyledCircle > </StyledCircle>
             <h2>10kr - 25kr - 50 kr casino</h2>
 <p>Listan innehåller alla casinon som har minsta insättning under 100 kr. Oftast brukar det vara 10,25 eller 50 kr som är minsta insättningen under 100 kr. Alla casinon på listan har svensk spellicens. Vi strävar alltid efter att ha så korrekt information som möjligt på vår sida från varje casino. Listan kan komma att uppdateras, så håll utkick!</p>
@@ -234,12 +228,12 @@ const MinstaInsCasino = (props) => {
 
 
             </div>
-        </StyledDiv>
+        
 
 <BottomInfoMinstaCasino/>
 
 
-    </Container>
+    </StyledWrapper>
     )
 }
 

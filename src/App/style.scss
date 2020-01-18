@@ -1,22 +1,3 @@
-#bg {
-  z-index: -1;
-  opacity: 0.6;
-
-  /* Set rules to fill background */
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-
-  /* Set up proportionate scaling */
-
-  /* Set up positioning */
-  position: fixed;
-  @media (max-width: 930px) {
-    display: none;
-  }
-}
-
 .adsBanner {
   height: 20px;
 }

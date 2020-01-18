@@ -393,3 +393,8 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/10bet"}
 
+[[redirects]]
+ from = "/Go/casimba"
+  to = "http://wlivyaffiliates.adsrv.eacdn.com/C.ashx?btag=a_7131b_374c_&affid=1491&siteid=7131&adid=374&c="
+  status = 301
+  query = {path = "/Go/casimba"}

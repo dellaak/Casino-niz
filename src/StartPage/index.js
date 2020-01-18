@@ -315,10 +315,7 @@ const StartPage = (props) => {
             Casinobonusar även kallat välkomstbonus är en bonus där man som spelare kan få lite extra
             pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
             Den vanligaste casinobonusen som brukar
-            erbjudas är en insättningsbonus. Man kan även få så kallade
-            Freespins, som ger spelaren gratissnurr på utvalda slotmaskiner.
-            Vissa casinon erbjuder även en kombo av freespins och en
-            insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
+            erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
             Välkommen!
             </p>
           <p>
@@ -334,7 +331,10 @@ const StartPage = (props) => {
           </p>
           {readmore ? (
             <div>
-              <p>
+              <p>Man kan även få så kallade
+            Freespins, som ger spelaren gratissnurr på utvalda slotmaskiner.
+            Vissa casinon erbjuder även en kombo av freespins och en
+            insättningsbonus.
                 På Casinoniz har vi samlat de senaste casinobonusar från
                 svenska casinon. Vi väljer att endast lista casinon med svensk
                 spellicens eftersom det ger dig som spelare ett säkrare casino
@@ -415,7 +415,7 @@ const StartPage = (props) => {
             </div>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 18 Januari 2020</p>
+        <p className="update-text">Senast uppdaterad: 19 Januari 2020</p>
 
       </Container>
 

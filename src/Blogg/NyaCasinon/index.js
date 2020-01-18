@@ -38,7 +38,13 @@ const NyaCasino = (props) => {
     }, [props.list.Casinon, topArr])
 
 
-
+    const StyledWrapper = styled(Container)`
+    display:flex;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:20px;
+    `
 
     const StyledDiv = styled.div`
     padding: 0 20px;
@@ -53,7 +59,7 @@ const NyaCasino = (props) => {
     }
     `
 
-    return (<div>
+    return (<StyledWrapper>
         <Helmet>
             <title>Nya Casino 2020 (På riktigt) - Alla med svensk licens | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/nya-casino-2020" />
@@ -68,36 +74,35 @@ const NyaCasino = (props) => {
 
         </Helmet>
 
-        <Container>
-            <div className="wrap-top5">
-
-                <h1 className="banners">Nya Casino 2020 </h1>
-                <small> Publicerad: 14 Januari 2020</small>
-                <p>Nya casino 2020</p>
-                <p>Vi listar nya casinon för detta året. Denna sektionen kommer uppdateras kontinuerligt så håll koll på denna sidan. Vi på Casinoniz.se tror att detta året kommer bjuda oss på nya spännande casinon med väldigt spännande teman. Senaste tiden så har casinon satsat väldigt hårt på sina teman. </p>
-
-                <p>Det tycker vi är bra, vilket ger spelaren en helt ny spelupplevelse. Vi kommer endast lista nya casinon här.</p>
-                <StyledDiv>
-
-                    <h2>Nya casino - LuckyVegas</h2>
-                    {topCasinon.length > 0 ? <div><p>LuckyVegas är först ut 2020. Bolaget som står bakom detta nya casinot är SkillOnNet som står bakom populära <Link to={{ pathname: `/Recension/PlayOjo`, match: `PlayOjo` }} >
-                        PlayOJO</Link>. Casinot erbjuder en Las Vegas känsla på sin sida. LuckyVegas har svensk spellicens med det innebär det att alla vinster är skattefria.</p></div> : ''}
-                    <div className="casino-wrap">
-                        {topCasinon.slice(0, 1).map((casino) =>
-                            < Casinon
-                                key={casino.id + casino.title}
-                                casino={casino}
-                                isBlocked={props.isBlocked}
-                            />)}
-                    </div>
-                </StyledDiv>
 
 
+        <h1 className="banners">Nya Casino 2020 </h1>
+        <small> Publicerad: 14 Januari 2020</small>
+        <p>Nya casino 2020</p>
+        <p>Vi listar nya casinon för detta året. Denna sektionen kommer uppdateras kontinuerligt så håll koll på denna sidan. Vi på Casinoniz.se tror att detta året kommer bjuda oss på nya spännande casinon med väldigt spännande teman. Senaste tiden så har casinon satsat väldigt hårt på sina teman. </p>
 
+        <p>Det tycker vi är bra, vilket ger spelaren en helt ny spelupplevelse. Vi kommer endast lista nya casinon här.</p>
+        <StyledDiv>
+
+            <h2>Nya casino - LuckyVegas</h2>
+            {topCasinon.length > 0 ? <div><p>LuckyVegas är först ut 2020. Bolaget som står bakom detta nya casinot är SkillOnNet som står bakom populära <Link to={{ pathname: `/Recension/PlayOjo`, match: `PlayOjo` }} >
+                PlayOJO</Link>. Casinot erbjuder en Las Vegas känsla på sin sida. LuckyVegas har svensk spellicens med det innebär det att alla vinster är skattefria.</p></div> : ''}
+            <div className="casino-wrap">
+                {topCasinon.slice(0, 1).map((casino) =>
+                    < Casinon
+                        key={casino.id + casino.title}
+                        casino={casino}
+                        isBlocked={props.isBlocked}
+                    />)}
             </div>
+        </StyledDiv>
 
-        </Container>
-    </div>)
+
+
+
+
+
+    </StyledWrapper>)
 }
 
 export default NyaCasino

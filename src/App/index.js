@@ -58,7 +58,7 @@ const App = () => {
 
     return (
         <Router>
-            <img id="bg" src="/images/bg.svg" alt="casinbonuslogo" />
+
             <div className="App">
 
                 <TopButton />
@@ -109,8 +109,8 @@ const App = () => {
                     </main>
                 </Container>
                 <Footer />
-
             </div>
+
 
         </Router>
     );
