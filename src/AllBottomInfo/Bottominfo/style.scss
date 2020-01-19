@@ -48,6 +48,11 @@
   }
 }
 
+.faktura-info {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .example {
   font-style: oblique;
   font-weight: bold;

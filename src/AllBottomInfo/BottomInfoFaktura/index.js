@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Collapse, Button, CardBody, Card } from 'reactstrap';
 import styled from "styled-components"
+import env from "../../images/env.svg"
 
 const Bottominfo = (props) => {
     const [q1, setQ1] = useState(false);
@@ -146,31 +147,66 @@ const Bottominfo = (props) => {
                     </Row>
                 </div>
 
-                <div className="info-bottom-box">
-                    <h3>18+ på spel</h3>
-                    <p>
-                        Är du under 18 år? För att få spela på onlinecasinon i Sverige så måste man vara över 18 år gammal. Är du under 18 år så måste vi tyvärr be dig att lämna vår hemsida nu!
-          </p>
+
+
+
+                <div className="info-bottom-box-img">
+                    <h2>Casino Faktura</h2>
+                    <div>
+                        <div className="faktura-info">
+                            <p >
+                                <b>Casino med faktura</b> är ett väldigt smidigt och enkelt sätt att sätta in pengar på ett casino. Insättningarna går väldigt smidigt till och det är en väldigt säker betalmetod. Allt som krävs är en mobiltelefon.
+                    </p>
+
+                            <p>Ibland kan man vilja sätta sina egna spelgränser som endast du själv har koll på. Då kan man sätta en gräns hos bolaget som erbjuder insättning med faktura. Du kontaktar bolaget och ber dem sätta en gräns på X antal kronor. Detta är ett bra sätt att hålla koll på sitt spelande och spela ansvarsfullt. </p>
+
+                            <h3>Faktura hos Svenska casinon</h3>
+                            <p>Det finns väldigt många online casinon idag och vi väljer att endast lista svenska casinon med svensk spellicens. När man väljer att spela på faktura så vill man såklart att faktura aktören är en seriös aktör på marknaden. Seriösa aktörer får man på svenska casinon eftersom varje faktura tjänst som ska implementeras hos casinot måste godkännas av svenska myndigheter.</p>
+                        </div>
+                        <img src={env} alt="swishcasinoicon" />
+                    </div>
                 </div>
+
+
+
 
                 <div className="info-bottom-box">
                     <h3>Fördelar med casino faktura?</h3>
-                    <p>Fördelen med casino faktura är att du i slutet på månaden kan få en överblick på hur mycket du har spelat för.
+                    <p>Casino på faktura är en väldigt bra betallösning för enskilde personen. Att betala med faktura är en säker insättningsmetod och du kan känna dig trygg. Oftast går det väldigt snabbt att spela med faktura på casino.
        </p>
+                    <ul>
+                        <li>Alla fakturatjänster som finns tillgängliga på sidor med svensk spellicens måste godkännas av svenska myndigheter. </li>
+                        <li>Du har god koll på hur mycket du har förbrukat på onlincasinon i slutet av månaden. </li>
+                        <li>Du har tid på dig att betala din faktura. Du väljer själv när du vill betala fakturan. </li>
+
+                    </ul>
+
                 </div>
 
                 <div className="info-bottom-box">
                     <h3>Faktura casino - risker med casino på faktura?</h3>
                     <p>
-                        När man spelar casino på faktura så måste man verkligen tänka på ifall man har råd med att spela casino på faktura. Du betalar fakturan i efterhand så ta reda på eventuella räntor och kostnader som varje fakturametod har.
+                        När man spelar casino på faktura så måste man verkligen tänka på ifall man verkligen har råd med att spela casino på faktura. Eftersom det är en faktura tjänst så kan det tillkomma avgifter och räntor när du ska betala fakturan. Du betalar fakturan i efterhand så man måste verkligen hålla koll på eventuella räntor och kostnader som varje fakturametod har.
           </p>
+
+                    <h3>Faktura och Casino bonusar</h3>
+                    <p>När man har hittat en casino bonus som passar och vill utnyttja erbjudandet så måste man ta reda på villkor först. Oftast så får man inte ta del av casino bonusen ifall man gör insättning på casino via faktura. Alla villkor om vilka betalningsmetoder som gäller och inte gäller kan man läsa om på respektive casino sida. </p>
+
+
                 </div>
 
                 <div className="info-bottom-box">
                     <h3>Casino faktura med SMS-Voucher</h3>
                     <p>
-                        SMS-Voucher startade sin verksamhet i stockholm och växer. Att göra insättningar med SMS-voucher går smidigt och snabbt.
+                        SMS-Voucher startade sin verksamhet i stockholm och växer. Att göra insättningar med SMS-voucher går väldigt smidigt och snabbt. För att spela casino med SMS-Voucher måste du ha tillgång till en mobiltelefon.
+                        För att göra en insättning på ett online casino måste du:
           </p>
+                    <ul>
+                        <li>Klicka på insättning och välj SMS-Voucher som insättninsmetod </li>
+                        <li>Skriv in ditt mobilnummer. Du får tillbaka en kod som du ska mata in för att fortsätta. </li>
+                        <li>Du verifierar och godkänner insättningen med mobilt bankID och din insättning är klar. </li>
+
+                    </ul>
                 </div>
 
 
