@@ -10,7 +10,7 @@ import OurRec from "../OurRec/index";
 import Recommended from "../Recommended/index";
 import NewCasinos from "../NewCasinos";
 import star from "../images/fullstar.svg";
-
+import LatestUpdate from "../LastUpdated"
 import "./style.scss"
 import MonthCasino from "../MonthCasino"
 
@@ -415,7 +415,7 @@ const StartPage = (props) => {
             </div>
           )}
         <Bottominfo />
-        <p className="update-text">Senast uppdaterad: 19 Januari 2020</p>
+        <LatestUpdate />
 
       </Container>
 

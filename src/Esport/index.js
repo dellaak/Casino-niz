@@ -5,7 +5,7 @@ import BottomInfoEsport from "../AllBottomInfo/BottomInfoEsport/index"
 import { Container, Button } from "reactstrap";
 import EsportCasinoComp from "../EsportCasinoComp/index";
 import { Helmet } from "react-helmet";
-
+import LatestUpdate from "../LastUpdated"
 
 const Esport = (props) => {
 
@@ -397,7 +397,7 @@ const Esport = (props) => {
 
 
             <BottomInfoEsport />
-            <p className="update-text">Senast uppdaterad: 19 Januari 2020</p>
+            <LatestUpdate />
 
         </Container>
     );

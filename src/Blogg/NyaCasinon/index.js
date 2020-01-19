@@ -101,7 +101,7 @@ const NyaCasino = (props) => {
 
 
 
-
+        <p className="update-text">Senast uppdaterad: 19 Januari 2020</p>
     </StyledWrapper>)
 }
 

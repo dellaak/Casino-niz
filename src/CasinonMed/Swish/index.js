@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import FilterCasinoMed from "../../FilterCasinoMed";
 import SportCasino from "../../Sports/SportCasino"
 import BottomInfoSwish from "../../AllBottomInfo/BottomInfoSwish"
-
+import LatestUpdate from "../../LastUpdated"
 
 const StyledH3 = styled.h3`
 text-align:center;
@@ -394,7 +394,7 @@ const SwishCasino = (props) => {
 
             <BottomInfoSwish />
 
-            <p className="update-text">Senast uppdaterad: 19 Januari 2020</p>
+            <LatestUpdate />
 
 
         </Container>

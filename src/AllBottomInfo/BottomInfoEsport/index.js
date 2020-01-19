@@ -3,6 +3,9 @@ import "./style.scss";
 import { Container, Row, Col, Collapse, Button, CardBody, Card } from 'reactstrap';
 import { Link } from "react-router-dom"
 import styled from "styled-components"
+import esporticon from "../../images/esporticon.svg"
+import comp from "../../images/compicon.svg"
+
 
 const BottominfoEsport = (props) => {
     const [q1, setQ1] = useState(false);
@@ -184,18 +187,71 @@ const BottominfoEsport = (props) => {
                 </div>
 
 
+                <div className="info-bottom-box-img">
+                    <h2>Bettingsidor Esport</h2>
+                    <div>
+                        <div className="faktura-info">
+                            <p >
+                                <b>Bettingsidor för esport och csgo</b> växer i enorm fart. Världskända analys bolaget <i>Newzoo</i> har gjort en teknsik analys av esport och ökandet av publik för esportscenen. År 2021 så förväntas det finnas över 550 personer som tittar på esport. Alltså över en halv miljard persone. Vad det kommer göra för esportsbetting får vi se. Du hittar artikeln som finns på engelska här <a href="https://resources.newzoo.com/hubfs/Reports/Newzoo_2018_Global_Esports_Market_Report_Excerpt.pdf?">Newzoo analys om esport</a>.
+                    </p>
+
+                            <h3>Esportbetting</h3>
+
+                            <p>Redan nu så finns det casinon som är inriktade på just esport betting. Ta t.ex. det svenska bettingbolaget <Link to="/recension/pixelbet">Pixel.bet</Link>. Dem siktar just på esport betting och har flera kända spel som CSGO, Dota2, Overwatch och många fler.</p>
+                            <p>De stora bettingbolagen som  t.ex.<Link to="/recension/unibet">unibet</Link>,<Link to="/recension/mrgreen">Mr.green</Link> är inte sena med att hänga på. Just nu är dock esport betting inte så stort som sports betting men vi tror att esport betting kommer att ta lika stor plats som vanliga sports betting i framtiden. </p>
+
+
+                        </div>
+                        <img src={esporticon} alt="esportbetting-icon" />
+                    </div>
+                </div>
+
+
 
                 <div className="info-bottom-box">
                     <h2>Counter-Strike Global Offensive</h2>
-                    <div className="info-bottom-box">
-                        <h3>CSGO Betting (Counter-Strike: Global Offensive)</h3>
-                        <p>
-                            Csgo är ett av världens bästa och kändaste spel. Counter-strike har
-                            funnits i många olika versioner men det är Counter-Strike: Global
-                            Offensive som har tagit esport världen med storm. CSGO betting bara
-                            växer. Scenen får fler tittare och turneringar.
+                    <h3>CSGO Betting (Counter-Strike: Global Offensive)</h3>
+                    <div className="esport-info-box">
+
+                        <div>
+                            <p>Counter Strike har funnits sedan 1999 och är ett så kallat FPS spel(Förstapersonsskjutspel). Detta spelet är ett av världens mest spelade spel. Counter strike Global Offensive släpptes 2012 och har verkligen lyckats. Spelet uppdateras kontinuerligt från utvecklare.</p>
+                            <p>
+                                Csgo är ett av världens bästa och kändaste spel. Counter-strike har
+                                funnits i många olika versioner men det är Counter-Strike: Global
+                                Offensive som har tagit esport världen med storm. Betting inom CSGO har blivit extremt stort på senaste tiden och kommer att fortsätta växa tror vi. CSGO får fler tittare under åren som går och massor med nya turneringar.
           </p>
+                        </div>
+                        <img src={comp} alt="esportbetting-icon" />
                     </div>
+
+
+                    <div className="info-bottom-box">
+                        <h3>CS:GO betting -  Tävlingsregler </h3>
+                        <p>En tävling inom CS:GO körs mellan två lag, fem spelare i vardera lag. Ett lag börjar som terrorister och ett lag börjar som counter-terrorist. Varje matchrunda är på 2 minuter. En tävlingsmatch slutar när ett av lagen vunnit 16 matchrundor. Skulle turneringen kräva att ett lag måste vinna matchen och det skulle sluta 15-15 efter 30 matchrundor så spelas övertid(OT). Då slutar endast ett lag som vinnare.</p>
+
+
+                        <p>Spelet går ut på att terroristerna ska placera ut en bomb på kartan. Dem har oftast bara två platser på hela kartan att sätta ut bomben. Counter-Terroristerna ska skydda dessa platser och inte låta terroristerna placera ut bomben inom matchrundans slut. Skulle terroristerna eliminera alla counter-terrorister så vinner terroristerna. För Counter-terroristerna så måste dem eliminera alla i motståndarlaget eller desarmera bomben när den har blivit utplacerad. Skulle alla vara vid liv och tiden på rundan tar slut så vinner Counter-terrorist.</p>
+                        <p>Varje lag startar med samma ekonomi i spelet. I början på matchrundan så köper varje lagmedlem sitt vapen. Skulle man bli eliminerad under rundan så försvinner vapnet ifall inte en medspelare plockar upp det. Man får ökad ekonomi om man vinner rundan eller eliminerar en motståndare. Så ju bättre ekonomi laget har ju bättre vapen har laget. </p>
+
+                        <h3>Tävlingsbanor CSGO</h3>
+                        <p>Varje bana är väldigt annourlunda. På vissa banor är det lite svårare att spela som ett visst lag. Då banan endast kan ha 2 ingångar till bombplatsen eller att banan är väldigt stor med flera ingångar till bombplatsen.  </p>
+
+                        <p>Lagen som tävlar mot varandra i CSGO har oftast olika taktiker för att ta över bombplats och vinna matchrundan.</p>
+                        <ul>
+                            <li>Mirage</li>
+                            <li>Dust2</li>{" "}
+                            <li>Inferno </li>
+                            <li>Nuke</li>
+                            <li>Cache</li>
+                            <li>Cobblestone</li>
+                            <li>Overpass </li>
+
+                        </ul>
+
+                    </div>
+
+
+
 
                     <div className="info-bottom-box">
                         <h3>CSGO Betting med de bästa lagen</h3>
@@ -216,24 +272,6 @@ const BottominfoEsport = (props) => {
 
                     </div>
 
-                    <div className="info-bottom-box">
-                        <h3>Dota2 Betting med de bästa lagen</h3>
-                        <p>
-                            Bästa 10 lagen inom Dota 2 2020. (Enligt eslgaming) </p>
-                        <ol>
-                            <li>Vici Gaming</li>
-                            <li>TNC Predator</li>{" "}
-                            <li>Evil Geniuses</li>
-                            <li>Alliance</li>
-                            <li>Gambit Esports</li>
-                            <li>OG</li>
-                            <li>beastcoast</li>
-                            <li>Nigma</li>
-                            <li>Team Secret </li>
-                            <li>Virtus.pro</li>
-                        </ol>
-
-                    </div>
 
                     <div className="info-bottom-box">
                         <h3>Kända CS:GO turneringar</h3>
@@ -265,6 +303,26 @@ const BottominfoEsport = (props) => {
                             vinna.
           </p>
                     </div>
+
+                    <div className="info-bottom-box">
+                        <h3>Dota2 Betting med de bästa lagen</h3>
+                        <p>
+                            Bästa 10 lagen inom Dota 2 2020. (Enligt eslgaming) </p>
+                        <ol>
+                            <li>Vici Gaming</li>
+                            <li>TNC Predator</li>{" "}
+                            <li>Evil Geniuses</li>
+                            <li>Alliance</li>
+                            <li>Gambit Esports</li>
+                            <li>OG</li>
+                            <li>beastcoast</li>
+                            <li>Nigma</li>
+                            <li>Team Secret </li>
+                            <li>Virtus.pro</li>
+                        </ol>
+
+                    </div>
+
                     <div className="info-bottom-box">
                         <h3>Kända Dota2 turneringar</h3>
                         <p>

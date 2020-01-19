@@ -107,6 +107,16 @@ const NavBarApp = (props) => {
                                         Casino med Swish
                 </NavLink>
                                 </DropdownItem>
+                                <DropdownItem className="drop-nav">
+                                    <NavLink
+                                        className="nav-link"
+                                        to="/casino-paysafecard"
+                                        activeClassName="activenav"
+                                    >
+
+                                        Casino med PaysafeCard
+                </NavLink>
+                                </DropdownItem>
 
 
 

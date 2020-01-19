@@ -5,6 +5,7 @@ import FakturaCasino from "./FakturaCasino";
 import FakturaFilter from "../FakturaFilter";
 import { Helmet } from "react-helmet";
 import BottomInfoFaktura from "../AllBottomInfo/BottomInfoFaktura/index";
+import LatestUpdate from "../LastUpdated"
 
 
 const CasinoMedFaktura = (props) => {
@@ -370,7 +371,7 @@ const CasinoMedFaktura = (props) => {
                 </div>
 
             </div>
-            <p className="update-text">Senast uppdaterad: 19 Januari 2020</p>
+            <LatestUpdate />
         </Container>
     );
 }

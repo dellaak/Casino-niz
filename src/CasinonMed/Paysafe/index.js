@@ -5,8 +5,9 @@ import Casinon from "../../Casinon"
 import styled from "styled-components"
 import { Helmet } from "react-helmet";
 import SportCasino from "../../Sports/SportCasino";
-import BottomInfoTrustly from "../../AllBottomInfo/BottomInfoTrustly";
 import LatestUpdate from "../../LastUpdated"
+import BottomInfoPaysafe from "../../AllBottomInfo/Bottominfopaysafe";
+
 
 const StyledH3 = styled.h3`
 text-align:center;
@@ -45,7 +46,7 @@ span{
 
 
 
-const TrustlyCasino = (props) => {
+const PaysafeCasino = (props) => {
 
     const [casinon, setCasinon] = useState([])
     const [trustlyList, setTrustlyList] = useState([])
@@ -68,7 +69,7 @@ const TrustlyCasino = (props) => {
         let newTop = []
 
         list.filter(i => {
-            if (i.recension[0].deposittypes.includes("Trustly")) {
+            if (i.recension[0].deposittypes.includes("Paysafe")) {
                 trustlyCasino.push(i)
             }
             return list;
@@ -311,16 +312,16 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
     return (
         <Container className="wrapit ">
             <Helmet>
-                <title>Casino Trustly - Lista På Trustly Casino | Casinoniz</title>
-                <link rel="canonical" href="https://www.casinoniz.se/casino-trustly" />
+                <title>Casino PaysafeCard - Lista På Svenska Casino Med PaysafeCard | Casinoniz</title>
+                <link rel="canonical" href="https://www.casinoniz.se/casino-paysafecard" />
 
                 <meta
                     name="description"
-                    content="Trustly Casino. Letar du efter Trustly Casino? Vi har listan med alla casinon med Trustly samt svensk Spellicens. Med en grym filterfunktion också! "
+                    content="Casino med PaysafeCard. Letar du efter Casinon med Paysafecard? Vi har listan med alla casinon med Paysafecard samt svensk Spellicens. Med en grym filterfunktion också! "
                 />
                 <meta
                     name="keywords"
-                    content="Casino, Casinobonusar,filter,filterfunktion 2019,2020 ,esport betting, insättningsbonus, välkomnsbonus, välkomstbonus, trustly, casino trustly, casinon med trustly, svensk , licens"
+                    content="Casino, Casinobonusar,filter,filterfunktion 2019,2020 ,esport betting, paysafe, paysafecard, paysafevoucher, code, depsot, insättning, insättningsbonus, välkomnsbonus, välkomstbonus, trustly, casino trustly, casinon med trustly, svensk , licens"
                 />
 
             </Helmet>
@@ -330,16 +331,16 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
 
 
             <h1 className="banners">
-                Casino Trustly
+                Casino PaysafeCard
             </h1>
 
             <div className="welcome-text-sports">
-                <h2 className="second-welcome-title">Casinon med Trustly </h2>
+                <h2 className="second-welcome-title">Casinon med PaysafeCard </h2>
                 <p>
-                    Casinon Trustly är något som varje casino borde använda. Eftersom casinon med Trustly har extremt snabba inbetalning och utbetalningar. Med trustly så går ett uttag på max 15 minuter!.
+                    PaysafeCard är ett säkert och smidigt sätt att göra en insättning på casino med. PaysafeCard är en betallösning som inte kräver något bankkort. Du hittar ditt paysafecard hos någon av 500 000 återförsäljare i landet. Hela listan på återförsäljare hittar du på bolagets hemsida. Är du extra försiktig online så är denna insättningsmetod bäst för att skydda din personliga integritet. Du hittar PaysafeCard i många bensinmackar och t.ex. Pressbyrån runt om i landet.
               </p>
 
-                <p>Här har vi valt att filtrera alla casinon som har Trustly. För att använda Trustly på ett casino så måste man ha tillgång till ett personligt bankid. Bankid brukar oftast vara installerad på datorn eller i mobilen.</p>
+                <p>PaysafeCard säljs i flera butiker.För att göra en insättning på ett casino med PaysafeCard, måste du köpa ett kort med en 16-siffrig pinkod. Kortet kan vara värt 100, 250, 500, och 1 000 kronor. För att göra en insättning med ditt PaysafeCard så klickar du dig fram till insättningar på ditt casino. Sedan skrapar du fram din 16-siffriga kod och matar in koden på casinot. Svåraren så är det inte. Ett väldigt smidigt och säkert sätt att göra en betalning på ett casino. </p>
 
 
 
@@ -348,7 +349,7 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
 
 
 
-            <StyledH3>Alla casinon med Trustly</StyledH3>
+            <StyledH3>Alla casinon med PaysafeCard</StyledH3>
             <StyledSecondFilter>
                 <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} isactivebutton={sports ? 1 : undefined}>Sportsbetting</StyledButton>
 
@@ -364,7 +365,7 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
                 reset={resetList}
             />
 
-            <StyledH3Sports className={fade ? "fade-in" : "showsports"}>{sports ? 'Visar endast casinon med Trustly & Sportsbetting' : 'Visar alla casinon med Trustly'}</StyledH3Sports>
+            <StyledH3Sports className={fade ? "fade-in" : "showsports"}>{sports ? 'Visar endast casinon med PaysafeCard & Sportsbetting' : 'Visar alla casinon med PaysafeCard'}</StyledH3Sports>
             <div className={fade ? "fade-in" : "casino-wrap"}>
 
                 {sports ?
@@ -389,7 +390,7 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
                             className="button-recension blink"
                             onClick={loadMore}
                         >
-                            Hämta fler Trustly Casinon{" "}
+                            Hämta fler Casinon med PaysafeCard{" "}
                         </Button>
                     </div>
                 ) : (
@@ -407,7 +408,7 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
 
 
 
-            <BottomInfoTrustly />
+            <BottomInfoPaysafe />
 
             <LatestUpdate />
         </Container >
@@ -415,4 +416,4 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
 }
 
 
-export default TrustlyCasino;
+export default PaysafeCasino;

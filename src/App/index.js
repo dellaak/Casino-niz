@@ -20,6 +20,7 @@ import MinstaInsCasino from "../Blogg/MinstaInsCasino/index"
 import NyaCasino from "../Blogg/NyaCasinon/index"
 import TrustlyCasino from "../CasinonMed/Trustly"
 import SwishCasino from "../CasinonMed/Swish"
+import PaysafeCasino from "../CasinonMed/Paysafe"
 import "./style.scss"
 import sweflag from "../images/sweflag.png"
 
@@ -93,6 +94,7 @@ const App = () => {
                             <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
                             <Route path="/casino-Trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
                             <Route path="/casino-Swish" render={(props) => (<SwishCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                            <Route path="/casino-paysafecard" render={(props) => (<PaysafeCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
                             <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
                             <Route path="/odds" render={(props) => (<Sports list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                             <Route path="/kampanjer-casino-2020" component={Blogg} />

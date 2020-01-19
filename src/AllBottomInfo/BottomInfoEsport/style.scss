@@ -12,3 +12,19 @@
     background-color: #607d8b !important;
   }
 }
+
+.esport-info-box {
+  display: flex;
+  flex-direction: row;
+
+  div {
+    flex-direction: column;
+  }
+  img {
+    flex: 1;
+    height: 200px;
+    @media (max-width: 830px) {
+      display: none;
+    }
+  }
+}
