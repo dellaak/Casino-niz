@@ -216,7 +216,7 @@ const StartPage = (props) => {
         <link rel="canonical" href="https://www.casinoniz.se/" />
         <meta
           name="description"
-          content="[Uppdaterad✅]Svenska casinon och casino på faktura. Filtrera casinon efter önskemål och hitta välkomstbonus samt casinobonus som passar just dig."
+          content="[Uppdaterad✅]Svenska casinon och casino bonusar. Jämför bonusar och filtrera casinon efter dina önskemål och hitta en välkomstbonus samt casino bonus som passar just dig. "
         />
         <meta
           name="keywords"
