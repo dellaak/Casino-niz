@@ -27,7 +27,7 @@ display: flex;
   img {
     max-width: 320px !important;
     width: 100%;
-    max-height: 200px !important;
+    max-height: 180px !important;
   }
 
   a {
@@ -95,6 +95,9 @@ const Top5 = (props) => {
             </p>
             <h2>Våra kampanjer 2020</h2>
             <BloggSection>
+
+
+                <Kampanj text='Hur roligt är det inte med nya och bra slots? Vi listar nya slots 2020. Listan är baserad på spel som vi tror man borde prova. Listan kommer uppdateras med nya slots under året 2020. Så håll utkik' bild="/images/newslots.svg" publicerad="22 Januari 2020" link="nya-slots-2020" />
 
                 <Kampanj text='I år tror vi att casinon kommer att fokusera på tema och upplevelse.Här har du en lista på alla nya casino som lanserats under 2020. Listan kommer uppdateras med alla nya casino 2020 kontinuerligt. Så håll utkik' bild="/images/2020new.svg" publicerad="14 Januari 2020" link="nya-casino-2020" />
 

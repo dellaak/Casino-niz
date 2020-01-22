@@ -18,6 +18,7 @@ import TopButton from "../TopButton/index"
 import Blogg from "../Blogg/index"
 import MinstaInsCasino from "../Blogg/MinstaInsCasino/index"
 import NyaCasino from "../Blogg/NyaCasinon/index"
+import NyaSlots from "../Blogg/NyaSlots/index"
 import TrustlyCasino from "../CasinonMed/Trustly"
 import SwishCasino from "../CasinonMed/Swish"
 import PaysafeCasino from "../CasinonMed/Paysafe"
@@ -106,6 +107,7 @@ const App = () => {
                             <Route path="/5-basta-casinon-2020" render={(props) => (<Top5 list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                             <Route path="/minsta-insattning-casino" render={(props) => (<MinstaInsCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                             <Route path="/nya-casino-2020" render={(props) => (<NyaCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            <Route path="/nya-slots-2020" render={(props) => (<NyaSlots list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
 
                         </Switch>
 

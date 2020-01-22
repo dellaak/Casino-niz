@@ -13,11 +13,11 @@ const OurRec = () => {
     <div className="ourrec-wrap">
 
       <Link
-        to={{ pathname: `/nya-casino-2020` }}>
+        to={{ pathname: `/nya-slots-2020` }}>
         <div className="ourrec-box">
           <div className="ourrec-overlay">
-            <h2>Nya Casino 2020.</h2>
-            <p>Lista på nya casino 2020 som vi kontinuerligt uppdaterar.</p>
+            <h2>Nya Slots 2020.</h2>
+            <p>Lista på nya slots 2020. Uppdateras med jämna mellanrum!</p>
           </div>
         </div>
       </Link>

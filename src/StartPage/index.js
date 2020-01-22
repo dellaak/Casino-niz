@@ -299,6 +299,8 @@ const StartPage = (props) => {
       <div className="top-casinos-rec">
 
         <OurRec />
+
+
         <MonthCasino list={props.start.Casinon} />
         <AnimatedCount list={props.start.Casinon} />
 
