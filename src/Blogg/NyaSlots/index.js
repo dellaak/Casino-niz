@@ -62,7 +62,6 @@ const NyaSlots = (props) => {
     const StyledDiv = styled.div`
     border-bottom:5px solid lightgrey;
     display:flex;
-    align-items:center;
     padding: 10px 20px;
     border-radius:9px;
     flex-direction: column;
@@ -80,7 +79,7 @@ const NyaSlots = (props) => {
         width:600px;
         height:auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom:10px;
+        margin:0 auto;
     }
 
    .slot-review{
@@ -95,13 +94,15 @@ const NyaSlots = (props) => {
             text-align:center;
         }
     }
+
+    ul{padding-top:10px;}
     `
 
     const StyledSlotButton = styled(Button)`
 height: auto;
 min-height:50px;
 background-color: #fed100 !important;
- padding:20px;
+ padding:10px;
   text-align: center;
   font-size: 20px;
   margin-bottom:20px !important;
@@ -121,7 +122,7 @@ background-color: #fed100 !important;
 height: auto;
 min-height:30px;
 background-color: lightcoral !important;
- padding:50px;
+ padding:10px;
   text-align: center;
   font-size: 20px;
   margin:20px !important;
@@ -345,7 +346,7 @@ background-color: lightcoral !important;
                         />)}
                 </div>
 
-                <p>Visar alla casinon</p>
+
                 <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, exo2: !isOpen.exo2 }) }} > Stäng Esqueleto Explosivo 2
 </StyledCloseButton>
             </StyledDiv>
@@ -384,7 +385,7 @@ background-color: lightcoral !important;
                         />)}
                 </div>
 
-                <p>Visar alla casinon</p>
+
                 <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, pros: !isOpen.pros }) }} > Stäng Prosperity Ox
 </StyledCloseButton>
             </StyledDiv>
