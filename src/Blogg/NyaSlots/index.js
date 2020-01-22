@@ -101,7 +101,7 @@ const NyaSlots = (props) => {
 height: auto;
 min-height:50px;
 background-color: #fed100 !important;
- padding:50px;
+ padding:20px;
   text-align: center;
   font-size: 20px;
   margin-bottom:20px !important;
