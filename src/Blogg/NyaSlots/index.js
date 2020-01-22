@@ -3,13 +3,13 @@ import styled from "styled-components"
 import { Container, Button, Collapse } from "reactstrap"
 import Casinon from "../../Casinon/index"
 import { Helmet } from "react-helmet";
-
+import BottomInfoNyaSlots from "../../AllBottomInfo/BottomInfoNyaSlots"
 
 
 const NyaSlots = (props) => {
 
-    const [slotCasinon] = useState({ monte: ['mrgreen', 'leovegas'], exo2: ['casumo', 'vera&john'], pros: ['leovegas'], monmeg: ['casimba', 'videoslots', 'karlcasino', 'mrgreen', 'leovegas', 'sverigeautomaten', 'betsafe', 'betsson', 'vera&john', 'gogocasino', 'prankcasino', 'noaccountcasino', 'hyper', 'dreamz', 'voodoodreams'] })
-    const [casinoSize, setCasinoSize] = useState({ monte: 2, monmeg: 2 })
+    const [slotCasinon] = useState({ monte: ['mrgreen', 'betsafe', 'leovegas', 'prankcasino', 'noaccountcasino'], exo2: ['casumo', 'vera&john', 'prankcasino', 'noaccountcasino'], pros: ['leovegas'], monmeg: ['casimba', 'videoslots', 'karlcasino', 'mrgreen', 'leovegas', 'sverigeautomaten', 'betsafe', 'betsson', 'vera&john', 'gogocasino', 'prankcasino', 'noaccountcasino', 'hyper', 'dreamz', 'voodoodreams'] })
+    const [casinoSize, setCasinoSize] = useState({ monte: 2, monmeg: 2, exo2: 2 })
     const [topCasinon, setTopList] = useState({ monte: [], exo2: [], pros: [], monmeg: [] })
     const [isOpen, setIsOpen] = useState({ monte: false, exo2: false, pros: false, monmeg: false })
 
@@ -57,6 +57,9 @@ const NyaSlots = (props) => {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin:0 auto;
     font-family: "Roboto", sans-serif;
+    .btn-title{
+        text-align:center;
+    }
     `
 
     const StyledDiv = styled.div`
@@ -183,7 +186,7 @@ background-color: lightcoral !important;
 
         <p>Här kommer vi lista nya slots från detta året. Listan kommer att uppdateras med slots som vi på Casinoniz tycker är värda att nämna. Klicka på namnet på önskad slot för läsa mer om spelet!</p>
 
-
+        <h2 className="btn-title">Klicka på knapparna för mer information om enskild slot</h2>
         <StyledSlotButton onClick={() => { setIsOpen({ ...isOpen, monte: !isOpen.monte }) }} > Montezuma MegaWays - Nu med ännu fler vinstlinjer!
 
     </StyledSlotButton>
@@ -205,7 +208,7 @@ background-color: lightcoral !important;
                     <p>Spelet innehåller så kallade scatters. Skulle du få 3 eller fler scatters vart som helst på spelet så triggas bonusen igång. När du kommer in på bonusen så snurrar det ett hjul som visar hur många freespins du får. Varje gång du får in minst 1 kombination under freespins så ökar multipliceringen på vinsten. Skulle du få två stycken scatters under freespins så aktiveras multipliceringshjulet. Hjulet snurrar och du kan få upp till 20x i multiplicering på varje vinst. Varje bonusrunda garanterar minst 30x. </p>
 
 
-                    <h6>Här är några casinon där du KOMMER KUNNA spela Montezuma Megaway</h6></div>
+                    <h6>Här är några casinon där du kan spela Montezuma Megaway</h6></div>
                 <div className="casino-wrap">
                     {topCasinon.monte.slice(0, casinoSize.monte).map((casino) =>
                         < Casinon
@@ -338,7 +341,7 @@ background-color: lightcoral !important;
 
                     <h6>Här är några casinon där du kan spela Esqueleto Explosivo 2</h6></div>
                 <div className="casino-wrap">
-                    {topCasinon.exo2.map((casino) =>
+                    {topCasinon.exo2.slice(0, casinoSize.exo2).map((casino) =>
                         < Casinon
                             key={'exo' + casino.id + casino.title}
                             casino={casino}
@@ -346,6 +349,26 @@ background-color: lightcoral !important;
                         />)}
                 </div>
 
+                {casinoSize.exo2 >= topCasinon.exo2.length ? (
+                    <div className="no-more-bonuses">
+                        <StyledButton
+                            className="show-less-btn"
+                            onClick={() => { setCasinoSize({ ...casinoSize, exo2: 2 }) }}
+                        >
+                            Finns inte fler casinon att visa  {" "}
+                        </StyledButton>
+                    </div>
+                ) : (
+
+                        <div className="morebonus-box">
+                            <StyledButton
+                                className="button-recension blink"
+                                onClick={() => { setCasinoSize({ ...casinoSize, exo2: topCasinon.monte.length }) }}
+                            >
+                                Visa alla casinon{" "}
+                            </StyledButton>
+                        </div>
+                    )}
 
                 <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, exo2: !isOpen.exo2 }) }} > Stäng Esqueleto Explosivo 2
 </StyledCloseButton>
@@ -366,14 +389,14 @@ background-color: lightcoral !important;
                     <li>Max-vinst(mynt): <b>96 640</b></li>
                     <li>Vinstlinjer:<b>4096</b></li>
                 </ul>
-                <div className="slot-review"><p>Prosperity Ox är ett spel från iSoftBet. Spelet har ett kinsesikt tema med väldigt snygg grafik. När du spelar på sloten så kan du få wilds, men endast i dem fyra raderna i mitten. För att få freespins så krävs det minst tre stycken Ox scatters</p>
+                <div className="slot-review"><p>Prosperity Ox är ett spel från iSoftBet. Spelet har ett kinesiskt tema med väldigt snygg grafik. När du spelar på sloten så kan du få wilds, men endast i dem fyra raderna i mitten. För att få freespins så krävs det minst tre stycken Ox scatters</p>
 
 
 
 
 
                     <h4>Prosperity Ox Bonus</h4>
-                    <p>Bonusen är freespins med extra multiplikation. Varje wild kan multiplicera med 2x eller 3x. För att få mer freespins så måste du få minst 3 st scatters. Du kan endast få max 100 freespins totalt.</p>
+                    <p>Bonusrundan är freespins med extra multiplikation. Varje wild kan multipliceras med 2x eller 3x. För att få ytterligare freespins under bonusrundan så måste du få minst 3 st scatters. Du kan endast få 100 freespins extra under bonusrunda.</p>
 
                     <h6>Här är några casinon där du kan spela Prosperity Ox</h6></div>
                 <div className="casino-wrap">
@@ -392,6 +415,7 @@ background-color: lightcoral !important;
         </Collapse>
 
         <p className="update-text">Senast uppdaterad: 22 Januari 2020</p>
+        <BottomInfoNyaSlots />
     </StyledWrapper >)
 }
 

@@ -11,7 +11,7 @@ import LatestUpdate from "../LastUpdated"
 const Sports = (props) => {
 
     const [casinon, setCasinon] = useState([])
-
+    const [myactiveButton, setActiveButton] = useState({ wager: false, deposit: false })
     const [readmore, setReadMore] = useState(false);
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
@@ -71,6 +71,7 @@ const Sports = (props) => {
 
         setCasinon(wagerarr.concat(delItems))
         setSize(9)
+        setActiveButton({ wager: false, deposit: true })
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -96,6 +97,7 @@ const Sports = (props) => {
 
         setCasinon(wagerarr.concat(delItems))
         setSize(9)
+        setActiveButton({ deposit: false, wager: true })
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -130,6 +132,7 @@ const Sports = (props) => {
 
 
         setCasinon(sportCasinon)
+        setActiveButton({ deposit: false, wager: false })
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -272,7 +275,8 @@ const Sports = (props) => {
                 id="filterid"
                 wager={wagerbutton}
                 deposit={depositbutton}
-
+                activebuttonwager={myactiveButton.wager}
+                activebuttondep={myactiveButton.deposit}
                 reset={resetList}
             />
             <div className={fade ? "fade-in" : "casino-wrap"}>
