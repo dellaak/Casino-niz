@@ -75,6 +75,13 @@ const Footer = () => {
                         >
                             Nya slots 2020
             </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/odds"
+                            activeClassName="active"
+                        >
+                            Odds & Sports betting
+            </NavLink>
 
                     </div>
                 </div>
