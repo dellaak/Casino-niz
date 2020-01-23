@@ -225,7 +225,7 @@ const Esport = (props) => {
     return (
         <Container className="wrapit">
             <Helmet>
-                <title>CSGO Betting & Esport betting | Casinoniz</title>
+                <title>CSGO Betting & Esport betting 🎮 | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/esportbetting" />
                 <meta
                     name="description"

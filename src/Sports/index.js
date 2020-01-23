@@ -162,7 +162,7 @@ const Sports = (props) => {
     return (
         <Container className="wrapit ">
             <Helmet>
-                <title>Odds & Sports Betting 2020 | Casinoniz</title>
+                <title>Odds & Sports Betting 2020 ⭐ | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/odds" />
 
                 <meta

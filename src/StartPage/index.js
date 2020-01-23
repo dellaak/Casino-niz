@@ -212,7 +212,7 @@ const StartPage = (props) => {
   return (<React.Fragment>
     <section >
       <Helmet>
-        <title>Svenska Casino 2020 - Jämför casinobonusar | Casinoniz</title>
+        <title>Svenska Casino 2020 ⭐ - Jämför casinobonusar | Casinoniz</title>
         <link rel="canonical" href="https://www.casinoniz.se/" />
         <meta
           name="description"

@@ -61,7 +61,7 @@ const NyaCasino = (props) => {
 
     return (<StyledWrapper>
         <Helmet>
-            <title>Nya Casino 2020 (På riktigt) - Alla med svensk licens | Casinoniz</title>
+            <title>Nya Casino 2020 (På riktigt) ➼ Alla med svensk licens | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/nya-casino-2020" />
             <meta
                 name="description"
