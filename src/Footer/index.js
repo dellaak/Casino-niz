@@ -18,7 +18,58 @@ const Footer = () => {
                     <a href="https://www.stodlinjen.se"><img className="arrtonplusicon" alt="18+icon" src="/images/18plus.svg" /></a>
                 </div>
                 <div className="socials">
+                    <div className="links-niz">
+                        <NavLink
+                            className="footer-link"
+                            to="/casino-swish"
+                            activeClassName="active"
+                        >
+                            Casino Swish
+            </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/faktura-casino"
+                            activeClassName="active"
+                        >
+                            Casino Faktura
+            </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/casino-trustly"
+                            activeClassName="active"
+                        >
+                            Casino Trustly
+            </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/casino-paysafecard"
+                            activeClassName="active"
+                        >
+                            Casino Paysafecard
+            </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/nya-casino-2020"
+                            activeClassName="active"
+                        >
+                            Nya Casino 2020
+            </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/esportbetting"
+                            activeClassName="active"
+                        >
+                            Esportbetting
+            </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/minsta-insattning-casino"
+                            activeClassName="active"
+                        >
+                            Minsta insättning casino 2020
+            </NavLink>
 
+                    </div>
                 </div>
                 <Socials />
                 <div className="terms-policy">
