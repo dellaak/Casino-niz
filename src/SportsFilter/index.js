@@ -8,9 +8,6 @@ import star from "../images/star.svg"
 
 const SportsFilter = (props) => {
 
-
-    console.log(props)
-
     return (
         <div className="oui">
             <div>
