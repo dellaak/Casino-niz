@@ -8,10 +8,16 @@ import BottomInfoNyaSlots from "../../AllBottomInfo/BottomInfoNyaSlots"
 
 const NyaSlots = (props) => {
 
-    const [slotCasinon] = useState({ monte: ['mrgreen', 'betsafe', 'leovegas', 'prankcasino', 'noaccountcasino'], exo2: ['casumo', 'vera&john', 'prankcasino', 'noaccountcasino'], pros: ['leovegas'], monmeg: ['casimba', 'videoslots', 'karlcasino', 'mrgreen', 'leovegas', 'sverigeautomaten', 'betsafe', 'betsson', 'vera&john', 'gogocasino', 'prankcasino', 'noaccountcasino', 'hyper', 'dreamz', 'voodoodreams'] })
-    const [casinoSize, setCasinoSize] = useState({ monte: 2, monmeg: 2, exo2: 2 })
-    const [topCasinon, setTopList] = useState({ monte: [], exo2: [], pros: [], monmeg: [] })
-    const [isOpen, setIsOpen] = useState({ monte: false, exo2: false, pros: false, monmeg: false })
+    const [slotCasinon] = useState({
+        monte: ['mrgreen', 'gate777', 'snabbis', 'betsafe', 'leovegas', 'prankcasino', 'noaccountcasino'],
+        exo2: ['casumo', 'vera&john', 'prankcasino', 'noaccountcasino', 'snabbis'],
+        pros: ['leovegas'],
+        monmeg: ['casimba', 'ahtigames', 'playojo', 'videoslots', 'karlcasino', 'snabbis', 'mrgreen', 'leovegas', 'sverigeautomaten', 'betsafe', 'betsson', 'vera&john', 'gogocasino', 'prankcasino', 'noaccountcasino', 'hyper', 'dreamz', 'voodoodreams'],
+        pigmeg: ['leovegas', 'ahtigames', 'dreamz', 'comeon', 'hajper', 'snabbare', 'unibet', 'noaccountcasino', 'videoslots', 'snabbis', 'playojo']
+    })
+    const [casinoSize, setCasinoSize] = useState({ monte: 2, monmeg: 2, exo2: 2, pigmeg: 2 })
+    const [topCasinon, setTopList] = useState({ monte: [], exo2: [], pros: [], monmeg: [], pigmeg: [] })
+    const [isOpen, setIsOpen] = useState({ monte: false, exo2: false, pros: false, monmeg: false, pigmeg: false })
 
     useEffect(() => {
 
@@ -22,7 +28,7 @@ const NyaSlots = (props) => {
         let exo2 = []
         let pros = []
         let monmeg = []
-
+        let pigmeg = []
 
 
         list.filter(i => {
@@ -39,13 +45,16 @@ const NyaSlots = (props) => {
             if (slotCasinon.monmeg.includes(i.title)) {
                 monmeg.push(i)
             }
+            if (slotCasinon.pigmeg.includes(i.title)) {
+                pigmeg.push(i)
+            }
             return list
         })
 
 
 
 
-        return setTopList({ monte: monte, exo2: exo2, pros: pros, monmeg: monmeg })
+        return setTopList({ monte: monte, exo2: exo2, pros: pros, monmeg: monmeg, pigmeg: pigmeg })
 
     }, [props.list.Casinon, slotCasinon])
 
@@ -57,6 +66,18 @@ const NyaSlots = (props) => {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin:0 auto;
     font-family: "Roboto", sans-serif;
+
+    .welcome-box-newslots{
+        display:flex;
+        align-items:center;
+      
+    }
+    .piggy{
+            width:200px;
+            @media (max-width: 750px) {
+    display:none;
+  }
+        }
     .btn-title{
         text-align:center;
     }
@@ -124,7 +145,7 @@ background-color: #fed100 !important;
     const StyledCloseButton = styled(Button)`
 height: auto;
 min-height:30px;
-background-color: lightcoral !important;
+background-color: #ffc10736 !important;
  padding:10px;
   text-align: center;
   font-size: 20px;
@@ -160,6 +181,10 @@ background-color: lightcoral !important;
 `
 
 
+    const getUp = () => {
+        document.body.scrollTop = 150;
+        document.documentElement.scrollTop = 150;
+    }
 
     return (<StyledWrapper>
         <Helmet>
@@ -179,14 +204,77 @@ background-color: lightcoral !important;
 
 
         <h1 className="banners">Nya Slots 2020 </h1>
-        <small> Publicerad: 22 Januari 2020</small>
+        <small> Uppdaterad: 23 Januari 2020</small>
 
         <h2>Nya Slots 2020 - Lista på nya grymma videoslots för 2020</h2>
-        <p>Nya slots 2020 som är värda att nämna. Denna sektionen kommer uppdateras kontinuerligt så håll koll på denna sidan. Vi på Casinoniz.se tror att detta året kommer bjuda på många nya videoslots med väldigt spännande och grymma upplevelser. </p>
+        <section className="welcome-box-newslots">
+            <div>
+                <p>Nya slots 2020 som är värda att nämna. Denna sektionen kommer uppdateras kontinuerligt så håll koll på denna sidan. Vi på Casinoniz.se tror att detta året kommer bjuda på många nya videoslots med väldigt spännande och grymma upplevelser. </p>
 
-        <p>Här kommer vi lista nya slots från detta året. Listan kommer att uppdateras med slots som vi på Casinoniz tycker är värda att nämna. Klicka på namnet på önskad slot för läsa mer om spelet!</p>
-
+                <p>Här kommer vi lista nya slots från detta året. Listan kommer att uppdateras med slots som vi på Casinoniz tycker är värda att nämna. Klicka på namnet på önskad slot för läsa mer om spelet!</p>
+            </div>
+            <img className="piggy" src="/images/pig.svg" alt="piggy" />
+        </section>
         <h2 className="btn-title">Klicka på knapparna för mer information om enskild slot</h2>
+        <StyledSlotButton onClick={() => { setIsOpen({ ...isOpen, pigmeg: !isOpen.pigmeg }) }} > Piggy Riches MEGAWAYS- Med Mega Wilds!
+
+</StyledSlotButton>
+        <Collapse isOpen={isOpen.pigmeg} >
+            <StyledDiv >
+                <h2>Piggy Riches MEGAWAYS- Med Mega Wilds!</h2>
+                <img className="slot-img" src="/images/piggyslot.png" alt="piggyrichesmegawaysslot2020" />
+                <ul>
+                    <li>RTP: <b>95.71%</b></li>
+                    <li>Max-vinst(mynt): <b>104 740</b></li>
+                    <li>Vinstlinjer:<b>117 649</b></li>
+                </ul>
+                <div className="slot-review"><p>Piggy Riches Megaways är en ny slot 2020. Inspirerad från NetEnt klassiker Piggy Riches. Det är leverantöreren Red Tiger som ligger bakom Piggy Riches Megaways. Spelet är anpassat både för dator och mobil. Detta är en väldigt underhållande slot med chans till en väldigt hög multiplikator.</p>
+
+
+                    <p>Spelet består utav 6 huvud hjul. Antalet vinstlinjer är 117 649. Spelet innehåller så kallade <b>Mega Wilds</b> som är en wild som täcker ett helt hjul med en multiplikator upp till 7x. Efter varje vinst så exploderar symbolerna och nya faller ner under rundan. Skulle det bli en förlust så slutar symbolerna explodera och en ny runda startar.</p>
+
+                    <h4>Piggy Riches Megaways Bonus</h4>
+                    <p>Spelet innehåller så kallade scatters. Skulle du få 3 eller fler scatters vart som helst på spelet under en runda så triggas bonusen igång. Bonusen startar med ett hjul som börjar snurra. Hjulet stannar på antal freespins och hur hög multiplikator du får från första freespins rundan. Efter varje vinst under bonusrundan så ökar multiplikatorn med 1(ett). Får du 1 scatter <i>så ökar dina freespins med ett</i>.</p>
+
+
+                    <h6>Några svenska casinon där du kan spela Piggy Riches Megaways</h6></div>
+                <div className="casino-wrap">
+                    {topCasinon.pigmeg.slice(0, casinoSize.pigmeg).map((casino) =>
+                        < Casinon
+                            key={'monte' + casino.id + casino.title}
+                            casino={casino}
+                            isBlocked={props.isBlocked}
+                        />)}
+                </div>
+
+                {casinoSize.pigmeg >= topCasinon.pigmeg.length ? (
+                    <div className="no-more-bonuses">
+                        <StyledButton
+                            className="show-less-btn"
+                            onClick={() => { setCasinoSize({ ...casinoSize, pigmeg: 2 }) }}
+                        >
+                            Finns inte fler casinon att visa  {" "}
+                        </StyledButton>
+                    </div>
+                ) : (
+
+                        <div className="morebonus-box">
+                            <StyledButton
+                                className="button-recension blink"
+                                onClick={() => { setCasinoSize({ ...casinoSize, pigmeg: (casinoSize.pigmeg) + 5 }) }}
+                            >
+                                Ladda fler casinon{" "}
+                            </StyledButton>
+                        </div>
+                    )}
+
+                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, pigmeg: !isOpen.pigmeg }); getUp() }} > Stäng Piggy Riches MegaWays
+
+</StyledCloseButton>
+            </StyledDiv>
+        </Collapse>
+
+
         <StyledSlotButton onClick={() => { setIsOpen({ ...isOpen, monte: !isOpen.monte }) }} > Montezuma MegaWays - Nu med ännu fler vinstlinjer!
 
     </StyledSlotButton>
@@ -208,7 +296,7 @@ background-color: lightcoral !important;
                     <p>Spelet innehåller så kallade scatters. Skulle du få 3 eller fler scatters vart som helst på spelet så triggas bonusen igång. När du kommer in på bonusen så snurrar det ett hjul som visar hur många freespins du får. Varje gång du får in minst 1 kombination under freespins så ökar multipliceringen på vinsten. Skulle du få två stycken scatters under freespins så aktiveras multipliceringshjulet. Hjulet snurrar och du kan få upp till 20x i multiplicering på varje vinst. Varje bonusrunda garanterar minst 30x. </p>
 
 
-                    <h6>Här är några casinon där du kan spela Montezuma Megaway</h6></div>
+                    <h6>Några svenska casinon där du kan spela Montezuma Megaway</h6></div>
                 <div className="casino-wrap">
                     {topCasinon.monte.slice(0, casinoSize.monte).map((casino) =>
                         < Casinon
@@ -239,7 +327,7 @@ background-color: lightcoral !important;
                         </div>
                     )}
 
-                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, monte: !isOpen.monte }) }} > Stäng Montezuma MegaWays
+                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, monte: !isOpen.monte }); getUp() }} > Stäng Montezuma MegaWays
 
 </StyledCloseButton>
             </StyledDiv>
@@ -283,7 +371,7 @@ background-color: lightcoral !important;
 
                     <p>Ett extremt roligt slotspel med väldigt många extra triggers och funktioner direkt hämtade från det klassiska brädspelet Monopol. Tror du att du kan äga flera fastigeter? In och prova.</p>
 
-                    <h6>Här är några casinon där du kan spela Monopoly MegaWays</h6></div>
+                    <h6>Några svenska casinon där du kan spela Monopoly MegaWays</h6></div>
                 <div className="casino-wrap">
                     {topCasinon.monmeg.slice(0, casinoSize.monmeg).map((casino) =>
                         < Casinon
@@ -313,7 +401,7 @@ background-color: lightcoral !important;
                             </StyledButton>
                         </div>
                     )}
-                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, monmeg: !isOpen.monmeg }) }} > Stäng Monopoly MegaWays
+                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, monmeg: !isOpen.monmeg }); getUp() }} > Stäng Monopoly MegaWays
 </StyledCloseButton>
             </StyledDiv>
         </Collapse>
@@ -339,7 +427,7 @@ background-color: lightcoral !important;
                     <h4>Esqueleto Explosivo 2 Bonus</h4>
                     <p>Väl inne i bonusen så belönas du med extre freespins ifall du skulle få minst 2 scatters. Var tredje wild som du får i bonusen , tilldelas 1 freespin samtidigt som lägsta multiplikatorn tas bort och nästa öppnas upp. I bonusen så öppnas det upp en ny högsta basmultiplikator, den ligger på 64x! För att nå den måste du får 32x som din basmultiplikator. Maximal vinst för bonusrundan är 5000x.</p>
 
-                    <h6>Här är några casinon där du kan spela Esqueleto Explosivo 2</h6></div>
+                    <h6>Några svenska casinon där du kan spela Esqueleto Explosivo 2</h6></div>
                 <div className="casino-wrap">
                     {topCasinon.exo2.slice(0, casinoSize.exo2).map((casino) =>
                         < Casinon
@@ -370,7 +458,7 @@ background-color: lightcoral !important;
                         </div>
                     )}
 
-                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, exo2: !isOpen.exo2 }) }} > Stäng Esqueleto Explosivo 2
+                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, exo2: !isOpen.exo2 }); getUp() }} > Stäng Esqueleto Explosivo 2
 </StyledCloseButton>
             </StyledDiv>
         </Collapse>
@@ -398,7 +486,7 @@ background-color: lightcoral !important;
                     <h4>Prosperity Ox Bonus</h4>
                     <p>Bonusrundan är freespins med extra multiplikation. Varje wild kan multipliceras med 2x eller 3x. För att få ytterligare freespins under bonusrundan så måste du få minst 3 st scatters. Du kan endast få 100 freespins extra under bonusrunda.</p>
 
-                    <h6>Här är några casinon där du kan spela Prosperity Ox</h6></div>
+                    <h6>Några svenska casinon där du kan spela Prosperity Ox</h6></div>
                 <div className="casino-wrap">
                     {topCasinon.pros.map((casino) =>
                         < Casinon
@@ -409,12 +497,12 @@ background-color: lightcoral !important;
                 </div>
 
 
-                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, pros: !isOpen.pros }) }} > Stäng Prosperity Ox
+                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, pros: !isOpen.pros }); getUp() }} > Stäng Prosperity Ox
 </StyledCloseButton>
             </StyledDiv>
         </Collapse>
 
-        <p className="update-text">Senast uppdaterad: 22 Januari 2020</p>
+
         <BottomInfoNyaSlots />
     </StyledWrapper >)
 }

@@ -122,7 +122,7 @@
             "depositpercentsports": 100,
             "depositpercent": 100,
             "faktura": true,
-            "publishdate": "11 November 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -182,7 +182,7 @@
             "freefromwager": false,
             "depositpercent": 300,
             "faktura": true,
-            "publishdate": "14 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [
                 "Siru",
@@ -327,7 +327,7 @@
             "sportswager": 6,
             "freespins": 0,
             "activebonus": true,
-            "publishdate": "15 september 2019",
+            "publishdate": "23 Januari 2020",
             "extratext": "Free Spinshjulet är öppet dina första 60 dagar efter din första insättning.Vinster från Free Spins är utan omsättningskrav.",
             "bankid": true,
             "sports": true,
@@ -397,7 +397,7 @@
             "sportswager": "x",
             "freespins": 0,
             "activebonus": true,
-            "publishdate": "15 september 2019",
+            "publishdate": "23 Januari 2020",
             "extratext": "Minsta insättning för att få bonusen är 500 kr",
             "bankid": true,
             "sports": false,
@@ -459,7 +459,7 @@
             "freefromwager": false,
             "depositpercent": 200,
             "faktura": true,
-            "publishdate": "15 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -584,7 +584,7 @@
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": false,
-            "publishdate": "26 november 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [],
             "recension": [
                 {
@@ -647,7 +647,7 @@
             "freespins": 0,
             "activebonus": false,
             "bankid": true,
-            "publishdate": "16 september 2019",
+            "publishdate": "23 Januari 2020",
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": true,
@@ -699,7 +699,7 @@
             "wager": 20,
             "sportswager": 4,
             "freespins": 250,
-            "publishdate": "16 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "extratext": "Välkomsterbjudandet måste hämtas inom 14 dagar efter registrering. Free Spinsen varierar beroende på insättningssumman. Se villkor",
             "bankid": true,
@@ -782,7 +782,7 @@
             "depositpercent": 100,
             "depositpercentsports": 100,
             "faktura": true,
-            "publishdate": "16 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -841,7 +841,7 @@
             "freefromwager": false,
             "depositpercent": 100,
             "faktura": false,
-            "publishdate": "16 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [],
             "recension": [
                 {
@@ -898,7 +898,7 @@
             "depositpercent": 100,
             "depositpercentsports": 100,
             "faktura": true,
-            "publishdate": "17 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -980,7 +980,7 @@
             "bankid": true,
             "sports": true,
             "freefromwager": true,
-            "publishdate": "17 september 2019",
+            "publishdate": "23 Januari 2020",
             "depositpercent": 200,
             "depositpercentsports": 200,
             "faktura": true,
@@ -1049,7 +1049,7 @@
             "sportswager": "x",
             "freespins": "x",
             "extratext": "",
-            "publishdate": "17 september 2019",
+            "publishdate": "23 Januari 2020",
             "bankid": true,
             "sports": false,
             "activebonus": false,
@@ -1110,7 +1110,7 @@
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": false,
-            "publishdate": "23 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [],
             "recension": [
                 {
@@ -1158,7 +1158,7 @@
             "sportswager": "x",
             "freespins": 50,
             "activebonus": true,
-            "publishdate": "24 september 2019",
+            "publishdate": "23 Januari 2020",
             "extratext": "Free Spins gäller på utvalda spel. Free Spins är endast giltiga i 24 h. Bonuspengar måste omsättas 45x inom 60 dagar ",
             "bankid": true,
             "sports": false,
@@ -1214,7 +1214,7 @@
             "sportsbonus": "Ingen bonus",
             "sportswager": "x",
             "freespins": 90,
-            "publishdate": "24 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "extratext": "Freespins kan endast användas på följande spel: Book of Dead",
             "bankid": false,
@@ -1270,7 +1270,7 @@
             "sportswager": 0,
             "freespins": 200,
             "activebonus": true,
-            "publishdate": "24 september 2019",
+            "publishdate": "23 Januari 2020",
             "extratext": "Insättning på minst 200 kr krävs för att aktivera bonusen. Vinster från Free Spins är omsättningsfria",
             "bankid": true,
             "sports": true,
@@ -1340,7 +1340,7 @@
             "sportsbonus": "Ingen bonus!",
             "sportswager": "x",
             "freespins": 200,
-            "publishdate": "28 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "extratext": "Maximala insatsen som är tillåten med bonuspengar är 50 kr",
             "bankid": true,
@@ -1400,7 +1400,7 @@
             "extratext": "Minsta insättning 100 kr. Insättning krävs med kredit-/betalkort, Zimpler, Paysafe, Instant Banking eller Entropay.",
             "bankid": true,
             "sports": true,
-            "publishdate": "28 september 2019",
+            "publishdate": "23 Januari 2020",
             "freefromwager": false,
             "depositpercent": 100,
             "depositpercentsports": 100,
@@ -1551,7 +1551,7 @@
             "extratext": "25% extra upp till 5 000 kr,  50% extra upp till 2 500 kr & 100% extra upp till 1 000 kr. ",
             "bankid": true,
             "sports": false,
-            "publishdate": "29 september 2019",
+            "publishdate": "23 Januari 2020",
             "freefromwager": false,
             "depositpercent": 100,
             "faktura": true,
@@ -1790,7 +1790,7 @@
             "sportsbonus": "Ingen bonus",
             "sportswager": "x",
             "freespins": 50,
-            "publishdate": "29 september 2019",
+            "publishdate": "23 Januari 2020",
             "extratext": "Min. insättning 100 kr. Bonuskod: CHANZ1. Gäller endast först insättningen",
             "bankid": true,
             "sports": false,
@@ -1902,7 +1902,7 @@
             "sportsbonus": "Ingen bonus",
             "sportswager": "x",
             "freespins": 0,
-            "publishdate": "29 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": false,
             "extratext": "",
             "bankid": true,
@@ -1975,7 +1975,7 @@
             "freefromwager": false,
             "depositpercent": 200,
             "faktura": true,
-            "publishdate": "19 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -2029,7 +2029,7 @@
             "extratext": "Du måste göra en insättning inom 24 timmar efter registrering för att vara berättigad till Freespins",
             "bankid": true,
             "sports": false,
-            "publishdate": "19 september 2019",
+            "publishdate": "23 Januari 2020",
             "freefromwager": true,
             "depositpercent": 100,
             "faktura": true,
@@ -2093,7 +2093,7 @@
             "depositpercentsports": 0,
             "faktura": false,
             "freespins": 25,
-            "publishdate": "19 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [],
             "recension": [
                 {
@@ -2159,7 +2159,7 @@
             "depositpercent": "x",
             "faktura": true,
             "freespins": "x",
-            "publishdate": "21 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -2214,7 +2214,7 @@
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": true,
-            "publishdate": "21 september 2019",
+            "publishdate": "23 Januari 2020",
             "freespins": "x",
             "fakturatype": [
                 "Zimpler"
@@ -2270,7 +2270,7 @@
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": true,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "freespins": "x",
             "fakturatype": [
                 "Zimpler"
@@ -2327,7 +2327,7 @@
             "freefromwager": false,
             "depositpercent": 100,
             "faktura": true,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -2439,7 +2439,7 @@
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": true,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -2495,7 +2495,7 @@
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": true,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "fakturatype": [
                 "Zimpler"
             ],
@@ -2548,7 +2548,7 @@
             "bankid": false,
             "sports": false,
             "freespins": 0,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": true,
@@ -2606,7 +2606,7 @@
             "freefromwager": false,
             "depositpercent": "x",
             "faktura": false,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": false,
             "fakturatype": [],
             "recension": [
@@ -2660,7 +2660,7 @@
             "freefromwager": false,
             "depositpercent": 100,
             "faktura": true,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [
                 "Zimpler"
@@ -2717,7 +2717,7 @@
             "freefromwager": true,
             "depositpercent": "x",
             "faktura": true,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [
                 "Zimpler",
@@ -2774,7 +2774,7 @@
             "freefromwager": false,
             "depositpercent": 200,
             "faktura": false,
-            "publishdate": "22 september 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [],
             "recension": [
@@ -2830,7 +2830,7 @@
             "freefromwager": false,
             "depositpercent": 100,
             "faktura": true,
-            "publishdate": "3 Oktober 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [
                 "Zimpler"
@@ -2888,7 +2888,7 @@
             "depositpercent": 150,
             "depositpercentsports": 150,
             "faktura": false,
-            "publishdate": "4 Oktober 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [],
             "recension": [
@@ -2960,7 +2960,7 @@
             "depositpercent": 500,
             "depositpercentsports": 500,
             "faktura": false,
-            "publishdate": "9 Oktober 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [],
             "recension": [
@@ -3053,7 +3053,7 @@
             "depositpercent": 100,
             "depositpercentsports": 250,
             "faktura": false,
-            "publishdate": "20 December 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [],
             "recension": [
@@ -3136,7 +3136,7 @@
             "depositpercent": 200,
             "depositpercentsports": 100,
             "faktura": false,
-            "publishdate": "25 Oktober 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [],
             "recension": [
@@ -3191,7 +3191,7 @@
             "freefromwager": true,
             "depositpercent": 100,
             "faktura": false,
-            "publishdate": "13 Oktober 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [],
             "recension": [
@@ -3301,7 +3301,7 @@
             "freefromwager": true,
             "depositpercent": 100,
             "faktura": false,
-            "publishdate": "21 Oktober 2019",
+            "publishdate": "23 Januari 2020",
             "activebonus": true,
             "fakturatype": [],
             "recension": [
@@ -3379,7 +3379,7 @@
             "freespins": 0,
             "activebonus": true,
             "bankid": true,
-            "publishdate": "18 December 2019",
+            "publishdate": "23 Januari 2020",
             "freefromwager": true,
             "depositpercent": 100,
             "faktura": false,
