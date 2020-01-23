@@ -68,6 +68,13 @@ const Footer = () => {
                         >
                             Minsta insättning casino 2020
             </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/nya-slots-2020"
+                            activeClassName="active"
+                        >
+                            Nya slots 2020
+            </NavLink>
 
                     </div>
                 </div>
