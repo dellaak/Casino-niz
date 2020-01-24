@@ -83,7 +83,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     return (
         <StyledWrapper>
             <Helmet>
-                <title>5 Bästa Casinon 2020 (Med Casino Bonus) | Casinoniz</title>
+                <title>5 Bästa Casinon 2020 ➼ (Med Casino Bonus) | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/5-basta-casinon-2020" />
                 <meta
                     name="description"
