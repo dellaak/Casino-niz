@@ -1,6 +1,6 @@
 User-agent: *
-Disallow:
-
+Disallow:/redirect/
+Disallow:/Go/
 
 # Sitemap files
 Sitemap: https://www.casinoniz.se/sitemap.xml
