@@ -308,12 +308,12 @@ const SwishCasino = (props) => {
     return (
         <Container className="wrapit ">
             <Helmet>
-                <title>Casino Swish📱 ➼ Lista På Swish Casino | Casinoniz</title>
+                <title>Casino Swish📱 | Lista På Swish Casino | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/casino-swish" />
 
                 <meta
                     name="description"
-                    content=" Casino med Swish. Letar du efter casinon med Swish, då har du hittat rätt. Vi listar enbart svenska casinon med swish här. Filtrera bonusar genom en grym filter funktion. "
+                    content=" Casino med Swish ✅ ➼ Letar du efter casinon med Swish, då har du hittat rätt. Vi listar enbart svenska casinon med swish här. Filtrera bonusar genom en grym filter funktion. "
                 />
                 <meta
                     name="keywords"

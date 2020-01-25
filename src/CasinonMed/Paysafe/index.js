@@ -312,12 +312,12 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
     return (
         <Container className="wrapit ">
             <Helmet>
-                <title>Casino PaysafeCard 📳 ➼ Lista Svenska Casino Med PaysafeCard | Casinoniz</title>
+                <title>Casino PaysafeCard 📳 | Lista Svenska Casino Med PaysafeCard | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/casino-paysafecard" />
 
                 <meta
                     name="description"
-                    content="Casino med PaysafeCard. Letar du efter Casinon med Paysafecard? Vi har listan med alla casinon med Paysafecard samt svensk Spellicens. Med en grym filterfunktion också! "
+                    content="Casino med PaysafeCard ✅ ➼ Letar du efter Casinon med Paysafecard? Vi har listan med alla casinon med Paysafecard samt svensk Spellicens. Med en grym filterfunktion också! "
                 />
                 <meta
                     name="keywords"

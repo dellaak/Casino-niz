@@ -188,11 +188,11 @@ background-color: #ffc10736 !important;
 
     return (<StyledWrapper>
         <Helmet>
-            <title>Nya Slots 2020 ➼ Prova Årets Hetaste Slots🔥 | Casinoniz</title>
+            <title>Nya Slots 2020 | Prova Årets Hetaste Slots🔥 | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/nya-slots-2020" />
             <meta
                 name="description"
-                content="Nya Slots 2020 ➼ Prova årets nyaste och hetaste videoslots. Vi listar svenska casinon som släpper nya och grymma slots. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
+                content="Nya Slots 2020✅ ➼ Prova årets nyaste och hetaste videoslots. Vi listar svenska casinon som släpper nya och grymma slots. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
             />
             <meta
                 name="keywords"

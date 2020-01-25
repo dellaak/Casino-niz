@@ -216,7 +216,7 @@ const StartPage = (props) => {
         <link rel="canonical" href="https://www.casinoniz.se/" />
         <meta
           name="description"
-          content="[Uppdaterad✅]Svenska casinon och casino bonusar. Jämför bonusar och filtrera casinon efter dina önskemål och hitta en välkomstbonus samt casino bonus som passar just dig. "
+          content="[Uppdaterad 2020✅] Svenska casinon och casino bonusar ➼ Jämför bonusar och filtrera casinon efter dina önskemål och hitta en välkomstbonus samt casino bonus som passar just dig. "
         />
         <meta
           name="keywords"
@@ -314,11 +314,11 @@ const StartPage = (props) => {
           <p>
             Svenska casino som erbjuder välkomstbonus även känt som casinobonusar är något som har gynnat spelare i den svenska spelmarknaden.
  Du hittar alla casinon med <Link to="/casino-bonus">aktiv casino bonus</Link> på vår bonus sektion. Den vanligaste casinobonusen som brukar
-                                           erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
-                                           Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens.
-                                           Casinobonusar även kallat välkomstbonus är en bonus där man som spelare kan få lite extra
-                                           pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
-                                           Välkommen!
+                                                                 erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
+                                                                 Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens.
+                                                                 Casinobonusar även kallat välkomstbonus är en bonus där man som spelare kan få lite extra
+                                                                 pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
+                                                                 Välkommen!
             </p>
           <p>
             Betta på E-sport ? Vi har även en esport sektion där vi listar

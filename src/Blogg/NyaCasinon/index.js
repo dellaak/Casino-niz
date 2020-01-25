@@ -61,11 +61,11 @@ const NyaCasino = (props) => {
 
     return (<StyledWrapper>
         <Helmet>
-            <title>Nya Casino 2020 (På riktigt) ➼ Alla med svensk licens | Casinoniz</title>
+            <title>Nya Casino 2020 (På riktigt) | Alla med svensk licens | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/nya-casino-2020" />
             <meta
                 name="description"
-                content="Ny lista för nya casino 2020. Här hittar du nya lanserade casinon från 2020. Alla casinon är nya svenska casinon med licens. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
+                content="Ny lista för nya casino 2020 ✅ ➼ Här hittar du nya lanserade casinon från 2020. Alla casinon är nya svenska casinon med licens. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
             />
             <meta
                 name="keywords"

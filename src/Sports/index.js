@@ -167,7 +167,7 @@ const Sports = (props) => {
 
                 <meta
                     name="description"
-                    content="[Uppdaterad✅] Odds, livebetting även esport betting. Vi listar casinon som har sports betting med höga odds och live betting. Självklart med välkomstbonus vid registrering"
+                    content="[Uppdaterad✅] Odds, livebetting även esport betting ➼ Vi listar casinon som har sports betting med höga odds och live betting. Självklart med välkomstbonus vid registrering"
                 />
                 <meta
                     name="keywords"

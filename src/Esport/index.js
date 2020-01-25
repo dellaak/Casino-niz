@@ -229,7 +229,7 @@ const Esport = (props) => {
                 <link rel="canonical" href="https://www.casinoniz.se/esportbetting" />
                 <meta
                     name="description"
-                    content="[Uppdaterad✅]CSGO Betting och Esportbetting med flera spel! Vi listar casinon som har esport betting. Självklart med välkomstbonus vid registrering"
+                    content="[Uppdaterad 2020✅] CSGO Betting och Esportbetting med flera spel ➼ Vi listar casinon som har esport betting. Självklart med välkomstbonus vid registrering"
                 />
                 <meta
                     name="keywords"
