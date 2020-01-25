@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from "react-helmet";
 import { Container, Button } from "reactstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Casinon from "../Casinon/index"
 import Filter from "../Filter/index"
 import AnimatedCount from "../AnimatedCount"
@@ -313,12 +313,12 @@ const StartPage = (props) => {
 
           <p>
             Svenska casino som erbjuder välkomstbonus även känt som casinobonusar är något som har gynnat spelare i den svenska spelmarknaden.
-            Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens.
-            Casinobonusar även kallat välkomstbonus är en bonus där man som spelare kan få lite extra
-            pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
-            Den vanligaste casinobonusen som brukar
-            erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
-            Välkommen!
+ Du hittar alla casinon med <Link to="/casino-bonus">aktiv casino bonus</Link> på vår bonus sektion. Den vanligaste casinobonusen som brukar
+                                           erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
+                                           Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens.
+                                           Casinobonusar även kallat välkomstbonus är en bonus där man som spelare kan få lite extra
+                                           pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
+                                           Välkommen!
             </p>
           <p>
             Betta på E-sport ? Vi har även en esport sektion där vi listar

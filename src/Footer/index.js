@@ -16,10 +16,11 @@ const Footer = () => {
                     <a href="https://www.stodlinjen.se">
                         <img className="stodlinje-logo" src="/images/stodlinjenlogo.svg" alt="stodlinjen-logo" /></a>
                     <a href="https://www.stodlinjen.se"><img className="arrtonplusicon" alt="18+icon" src="/images/18plus.svg" /></a>
-                    <a href="//www.dmca.com/Protection/Status.aspx?ID=fce88a77-1d46-4edf-a331-775f8656d6ae" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/DMCA_badge_trn_100w.png?ID=fce88a77-1d46-4edf-a331-775f8656d6ae" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+                    <a href="//www.dmca.com/Protection/Status.aspx?ID=fce88a77-1d46-4edf-a331-775f8656d6ae" title="DMCA.com Protection Status" className="dmca-badge"> <img src="https://images.dmca.com/Badges/DMCA_badge_trn_100w.png?ID=fce88a77-1d46-4edf-a331-775f8656d6ae" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
                 </div>
                 <div className="socials">
                     <div className="links-niz">
+
                         <NavLink
                             className="footer-link"
                             to="/casino-swish"
@@ -83,7 +84,12 @@ const Footer = () => {
                         >
                             Odds & Sports betting
             </NavLink>
-
+                        <NavLink
+                            className="footer-link"
+                            to="/casino-bonus"
+                            activeClassName="active"
+                        > Casino bonusar
+            </NavLink>
                     </div>
                 </div>
                 <Socials />

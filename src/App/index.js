@@ -24,6 +24,7 @@ import SwishCasino from "../CasinonMed/Swish"
 import PaysafeCasino from "../CasinonMed/Paysafe"
 import "./style.scss"
 import sweflag from "../images/sweflag.png"
+import Casinobonuscomp from '../CasinonMed/Casinobonusar/index.js';
 
 
 
@@ -93,8 +94,9 @@ const App = () => {
                             <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                             <Route path="/esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                             <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
-                            <Route path="/casino-Trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
-                            <Route path="/casino-Swish" render={(props) => (<SwishCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                            <Route path="/casino-trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                            <Route path="/casino-bonus" render={(props) => (<Casinobonuscomp list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
+                            <Route path="/casino-swish" render={(props) => (<SwishCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
                             <Route path="/casino-paysafecard" render={(props) => (<PaysafeCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
                             <Route path="/Redirect/:casinotitle" render={(props) => (<RedirectComp list={Casinolist}  {...props} />)} />
                             <Route path="/odds" render={(props) => (<Sports list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />

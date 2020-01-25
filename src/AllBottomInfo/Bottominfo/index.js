@@ -222,7 +222,7 @@ const Bottominfo = (props) => {
                 <div>
 
                     <p >
-                        Vi använder swish i vardagen och det har underlättat för många när man vill betala något eller bara skicka över pengar till ett annat konto. Casinon är inte sena med att hänga på <b>Swish betalning på casinon</b>. Det går väldigt fort och är väldigt säkert tack vare sin avancerade krypteringsteknik och mobila bankid. Du hittar lista på alla <Link to="/casino-Swish">Swish Casino</Link> på länken.
+                        Vi använder swish i vardagen och det har underlättat för många när man vill betala något eller bara skicka över pengar till ett annat konto. Casinon är inte sena med att hänga på <b>Swish betalning på casinon</b>. Det går väldigt fort och är väldigt säkert tack vare sin avancerade krypteringsteknik och mobila bankid. Du hittar lista på alla <Link to="/casino-swish">Swish Casino</Link> på länken.
                     </p>
                     <img src={handicon} alt="swishcasinoicon" />
                 </div>

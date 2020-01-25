@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { Container, Button } from "reactstrap";
+import FilterCasinoMed from "../../FilterCasinoMed"
 import Casinon from "../../Casinon"
 import styled from "styled-components"
 import { Helmet } from "react-helmet";
-import FilterCasinoMed from "../../FilterCasinoMed";
-import SportCasino from "../../Sports/SportCasino"
-import BottomInfoSwish from "../../AllBottomInfo/BottomInfoSwish"
+import SportCasino from "../../Sports/SportCasino";
 import LatestUpdate from "../../LastUpdated"
+import BottomInfoCasinobonus from "../../AllBottomInfo/BottominfoCasinoBonus"
+import present from "../../images/bonusicon.svg"
 
 const StyledH3 = styled.h3`
 text-align:center;
 padding:10px;
 font-size:28px;
+`
+
+const StyledH3Sports = styled.h3`
+text-align:center;
+padding:10px;
+font-size:28px;
+color:#fed100;
+background:#204467;
+border-radius:9px;
 `
 
 const StyledSecondFilter = styled.div`
@@ -34,19 +44,25 @@ span{
 `
 
 
-const StyledH3Sports = styled.h3`
-text-align:center;
-padding:10px;
-font-size:28px;
-color:#fed100;
-background:#204467;
-border-radius:9px;
+const StyledSection = styled.section`
+display:flex;
+
+div{
+    flex-direction:column;
+    overflow-wrap: break-word;
+}
+.presicon{
+    width:400px;
+    @media (max-width: 830px) {
+        display: none;
+      }
+}
 `
 
-const SwishCasino = (props) => {
+const Casinobonuscomp = (props) => {
 
     const [casinon, setCasinon] = useState([])
-    const [swishList, setSwishList] = useState([])
+    const [activebonusList, setactiveList] = useState([])
 
     const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
     const [fade, setFade] = useState(false)
@@ -57,51 +73,57 @@ const SwishCasino = (props) => {
 
 
 
+
+
     useEffect(() => {
 
         let list = [...props.list.Casinon]
-        let swishCasino = []
+        let activeCasino = []
         let newTop = []
 
         list.filter(i => {
-            if (i.recension[0].swish === true) {
-                swishCasino.push(i)
+            if (i.activebonus === true) {
+
+                activeCasino.push(i)
             }
             return list;
         })
 
-        swishCasino.forEach(i => {
+
+
+        activeCasino.forEach(i => {
             if (i.recension[0].gamebar === 100 && i.recension[0].experience === 100 && i.recension[0].support === 100) {
                 newTop.push(i)
             }
         })
 
 
-        swishCasino.filter(item => !newTop.includes(item))
-        newTop.concat(swishCasino)
+        activeCasino.filter(item => !newTop.includes(item))
+        newTop.concat(activeCasino)
 
-        swishCasino.sort((a, b) => {
+        activeCasino.sort((a, b) => {
             return (b.recension[0].gamebar + b.recension[0].experience + b.recension[0].support) - (a.recension[0].gamebar + a.recension[0].experience + a.recension[0].support)
         });
+        setCasinon(activeCasino)
 
-        setCasinon(swishCasino)
+
 
         const filterSports = () => {
 
-            let orlist = [...swishList]
-
+            let orlist = [...activebonusList]
             let wagerarr = [];
             if (sports) {
                 for (let i of orlist) {
-                    if (i.sports === true) {
+                    if (i.sports === true && i.activebonus === true) {
                         wagerarr.push(i);
                     }
                 }
             } else {
-                wagerarr = [...swishList]
+                wagerarr = [...activebonusList]
             }
 
             setCasinon(wagerarr)
+
             setSize(9)
             setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
             setFade(true)
@@ -110,16 +132,17 @@ const SwishCasino = (props) => {
                 setFade(false);
             }, 1000);
         }
+
         if (sports) { filterSports() }
 
 
-        return setSwishList(swishCasino)
+        return setactiveList(activeCasino)
         // eslint-disable-next-line
     }, [sports, props.list.Casinon])
 
 
     const wagerbutton = () => {
-        let orlist = [...swishList]
+        let orlist = [...activebonusList]
         let delItems = [];
         let wagerarr = [];
         if (sports) {
@@ -141,6 +164,7 @@ const SwishCasino = (props) => {
             }
         }
 
+
         if (sports) {
             wagerarr.sort(function (a, b) {
                 return a.sportswager - b.sportswager;
@@ -151,13 +175,10 @@ const SwishCasino = (props) => {
             });
         }
 
-        wagerarr.concat(delItems)
-        setCasinon(wagerarr)
+
+        setCasinon(wagerarr.concat(delItems))
         setSize(9)
-
         setButtons({ activebuttondep: false, activebuttonwager: true, activebuttonfree: false })
-
-
         setFade(true)
 
 
@@ -169,7 +190,7 @@ const SwishCasino = (props) => {
     }
 
     const depositbutton = () => {
-        let orlist = [...swishList]
+        let orlist = [...activebonusList]
 
         let wagerarr = [];
         let depositdelete = [];
@@ -201,13 +222,10 @@ const SwishCasino = (props) => {
             });
         }
 
-        wagerarr.concat(depositdelete)
-        setCasinon(wagerarr)
+
+        setCasinon(wagerarr.concat(depositdelete))
         setSize(9)
-
         setButtons({ activebuttondep: true, activebuttonwager: false, activebuttonfree: false })
-
-
 
         setFade(true)
 
@@ -218,8 +236,7 @@ const SwishCasino = (props) => {
 
 
     const freewagerbutton = () => {
-
-        let orlist = [...swishList]
+        let orlist = [...activebonusList]
 
         let wagerarr = [];
         if (sports) {
@@ -238,11 +255,10 @@ const SwishCasino = (props) => {
             }
         }
 
+
         setCasinon(wagerarr)
         setSize(9)
-
         setButtons({ activebuttondep: false, activebuttonwager: false, activebuttonfree: true })
-
 
         setFade(true)
 
@@ -255,17 +271,20 @@ const SwishCasino = (props) => {
     }
 
     const resetList = () => {
-
-        setCasinon(swishList)
+        setCasinon(activebonusList)
         setSports(false)
         setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
-        setFade(true)
         setSize(9)
+        setFade(true)
         setTimeout(() => {
             setFade(false);
         }, 1000);
 
     }
+
+
+
+
 
 
 
@@ -281,43 +300,45 @@ const SwishCasino = (props) => {
 
     }
 
+
     const StyledButton = styled(Button)`
-    min-width: 120px;
-     min-height: 50px;
-     letter-spacing: 0.05em;
-     text-transform: uppercase;
-     font-style: normal;
-     padding: 0.5em;
-     text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
-     font-size: 12px !important;
-     height: auto;
-   background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 169, 1)'}!important;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;
-     border-radius: 5px;
-     border: 1px solid #337bc4;
-     display: inline-block;
-     cursor: pointer;
-     color: ${props => props.isactivebutton ? 'black' : 'white'} !important;
-     font-family: "Robot", sans-serif;
-     text-decoration: none;
-   
-     cursor: pointer !important;
-   `
+ min-width: 120px;
+  min-height: 50px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 0.5em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  font-size: 12px !important;
+  height: auto;
+background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 169, 1)'}!important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: ${props => props.isactivebutton ? 'black' : 'white'} !important;
+  font-family: "Robot", sans-serif;
+  text-decoration: none;
+
+  cursor: pointer !important;
+`
 
     return (
         <Container className="wrapit ">
             <Helmet>
-                <title>Casino Swish📱 ➼ Lista På Swish Casino | Casinoniz</title>
-                <link rel="canonical" href="https://www.casinoniz.se/casino-swish" />
+                <title>Casino Bonus 2020⭐ ➼ Bonus Från Svenska Casinon | Casinoniz</title>
+                <link rel="canonical" href="https://www.casinoniz.se/casino-bonus" />
 
                 <meta
                     name="description"
-                    content=" Casino med Swish. Letar du efter casinon med Swish, då har du hittat rätt. Vi listar enbart svenska casinon med swish här. Filtrera bonusar genom en grym filter funktion. "
+                    content="Lista på alla casinon som erbjuder en casino bonus just nu! 
+                    Hitta din välkomstbonus. Vi erbjuder en grym filterfunktion som hjälper dig att hitta den bästa casino bonusen 2020."
                 />
                 <meta
                     name="keywords"
-                    content="Casino, Casinobonusar, 2019,2020,swish, insättning, med, swish, casino swish, nya, casinon, odds,filter, filterfunktion casino ,sport, esportbetting."
+                    content="Casino, Casinobonusar,filter,filterfunktion 2019,2020 ,esport casinobonus, casino , bonus, filterfunktion, filter, filtrera, bonus trustly, bästa casinobonus, casno, casin, bonos"
                 />
                 <script type="application/ld+json">{`
       {
@@ -325,45 +346,45 @@ const SwishCasino = (props) => {
          "@type": "FAQPage",
          "mainEntity": [{
             "@type": "Question",
-            "name": "📱 Vad är Swish?",
+            "name": "⭐ Vad är en casino bonus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Swish är resultatet av ett samarbete mellan sex av dem största bankerna i Sverige. Det är en mobilapplikation där man på några få sekunder gör en betalning online eller skickar pengar mellan personer. Just nu är det över 7 miljoner svenskar som är anslutna till Swish."
+              "text": "Casino bonus även känt som välkomstbonus är ett erbjudande från casinon till spelaren. Casinon väljer att ge spelaren lite extra kronor att spela för. Tänk på att casinots regler och villkor gäller för bonusen. Casino bonusen brukar oftast bestå av en insättningsbonus mellan 100% - 500%. Vissa även casinon som erbjuder freespins som en välkomst bonus. Du hittar alla casino bonusar på vår sida. "
             }
           },{
             "@type": "Question",
-            "name": "⭐ Hur använder man Swish på casino?",
+            "name": "❓ Måste man ta emot en casino bonus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "För att använda Swish på ett online casino så väljer du Swish som betalningsmetod. Du skriver in casinots nummer i Swish appen eller scannar QR-koden. Sedan skriver du in beloppet du vill sätta in. Du godkänner överföring med ditt bankid och så är det klart!"
+              "text": "Nej det måste man inte. Att ta emot en casino bonus är frivilligt. Tänk på att du endast kan ta emot en bonus hos ett enskilt casino bolag. Läs igenom regler och villkor för varje bonus."
             }
           },{
           "@type": "Question",
-          "name": "✨ Krävs det bankid för att använda Swish?",
+          "name": "✨ Casino bonus och omsättningskrav?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ja, det krävs ett mobilt bankid för att göra insättningar med Swish. Det krävs dock inte ett bankid om du endast vill ta emot pengar via Swish."
+            "text": "Oftast när man tar emot en casino bonus så brukar ett omsättningskrav gälla. Storleken på omsättningskravet varierar från casino. Omsättningskrav är ett krav där du som spelare måste spela för en viss summa innan du kan ta ut dina eventuella vinster. Du kan filtrera på omsättningskrav med vår filterfunktion."
           }
         }, {
           "@type": "Question",
-           "name": "⭐ Är det säkert att använda Swish för spel i casino?",
+           "name": "⭐ Skillnaden på cash spins och free spins?",
            "acceptedAnswer": {
              "@type": "Answer",
-            "text": "Ja, Swish är ett av dem säkraste insättningsmetoderna du kan använda på ett casino. För att kunna verifiera en betalning måste man mata in sin privata kod hos bankid som endast du har tillgång till."
+            "text": "Cash spins brukar vara omsättningsfria spins på videoslots. Freespins brukar oftast ha ett omsättningskrav. Läs igenom villkoren för cash spins eventuellt freespins hos casinot du väljer ta emot bonusen från. Där står det vad som gäller."
           }
         },  {
           "@type": "Question",
-          "name": "✅ Insättningar och uttag med Swish?",
+          "name": "🚫 Casino bonusar och ogilitiga insättningsmetoder?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Insättningarna går oftast väldigt snabbt med Swish på casino. Oftast inom någon minut! Att göra ett uttag med hjälp av Swish går dock inte men du kan ta ut vinsten via Trustly."
+            "text": "När man vill ta emot en casino bonus så får man tänka på vilken insättningsmetod man använder. Oftast så gäller inte PaysafeCard, Skrill eller Neteller som en insättningsmetod för att ta emot en casino bonus. Det står i villkoren för varje bonus vilka metoder som inte gäller. "
           }
         }, {
           "@type": "Question",
-         "name": "⭐ Hur ansluter jag till Swish?",
+         "name": "✅ Kan jag avbryta en aktiv casino bonus?",
          "acceptedAnswer": {
            "@type": "Answer",
-           "text": "För att ansluta dig till Swish måste du logga in på din bank. Navigera dig fram till mobila tjänser (Swish) och skriv in ditt mobilnummer. Ladda sedan ner Swish appen. Klart!"
+           "text": "Hos dem flesta casinon kan du avbryta en pågående casino bonus. Kontakta supporten på casinot för att få hjälp med att avbryta casino bonusen. Ta även reda på vad som gäller när du avbryter bonusen."
           
          }
        }]
@@ -372,26 +393,31 @@ const SwishCasino = (props) => {
             </Helmet>
 
 
+
+
+
             <h1 className="banners">
-                Casino Swish
+                Casino Bonus
             </h1>
-
-            <div className="welcome-text-sports">
-                <h2 className="second-welcome-title">Casinon med Swish </h2>
+            <h2 className="second-welcome-title">Casinon med bonusar </h2>
+            <StyledSection>
+             <div>
                 <p>
-                    Casino med Swish är så himla smidigt och säkert att använda. Med swish i vardagen så är det en självklarhet att alla casinon ska implementera Swish på sin sida. Alla svenska casinon har dock inte swish just men några få har det. Du kan i nuläget inte få en utbetalning i Swish.
-              </p>
+                    En bra casino bonus ger dig extra kronor att spela för. Beroende på casino bonus så kan du även få freespins, ibland <b>omsättningsfria freespins</b>. Den bästa casino bonusen som kan erbjudas från ett casino är <b>omsättningsfria casino bonusar</b>. Det är väldigt få casinon som erbjuder omsättningsfria casino bonusar men det finns! Efter att den nya spellagen trädde i kraft den <i>1 januari 2019</i> så kan varje casino endast erbjuda 1(en) välkomstbonus till spelaren.
+                </p>
 
-                <p>Här har vi valt att filtrera alla casinon som har Swish som en insättningsmetod. För att använda Swish på ett casino så måste man ha tillgång till ett personligt bankid och en mobiltelefon.</p>
+                <p>Vi har listat alla casinon som har en aktiv casino bonus på denna sidan. Du kan filtrera casino bonusar och jämföra casino bonusar för att hitta en bonus som passar just dig. För att endast filtera casinon som erbjuder sport bonus så klickar du in knappen <b>Sportbonus</b> nedanför. Annars listas alla casinon som har en aktiv bonus. Hoppas du hittar en casino bonus som ger dig chansen till en grym casino upplevelse! </p>
+
+                </div>
+                <img className="presicon" src={present} alt="piggy" />
+
+                </StyledSection>
 
 
-            </div>
 
-
-
-            <StyledH3>Alla casinon med Swish</StyledH3>
+            <StyledH3>Alla casinon med bonusar</StyledH3>
             <StyledSecondFilter>
-                <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} isactivebutton={sports ? 1 : undefined}>Sportsbetting</StyledButton>
+                <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} isactivebutton={sports ? 1 : undefined}>Sportsbonus</StyledButton>
 
             </StyledSecondFilter>
             <FilterCasinoMed
@@ -404,8 +430,10 @@ const SwishCasino = (props) => {
                 activebuttondep={buttons.activebuttondep}
                 reset={resetList}
             />
-            <StyledH3Sports className={fade ? "fade-in" : "showsports"}>{sports ? 'Visar endast casinon med Swish & Sportsbetting' : 'Visar alla casinon med Swish'}</StyledH3Sports>
+
+            <StyledH3Sports className={fade ? "fade-in" : "showsports"}>{sports ? 'Visar endast casinon med bonusar & Sportsbetting' : 'Visar alla casinon med bonusar'}</StyledH3Sports>
             <div className={fade ? "fade-in" : "casino-wrap"}>
+
                 {sports ?
                     casinon.slice(0, size).map(casino => (
                         <SportCasino
@@ -421,34 +449,37 @@ const SwishCasino = (props) => {
                         />
                     ))}
             </div>
-            {size <= casinon.length ? (
-                <div className="morebonus-box">
-                    <Button
-                        className="button-recension blink"
-                        onClick={loadMore}
-                    >
-                        Hämta fler Swish Casinon{" "}
-                    </Button>
-                </div>
-            ) : (
-                    <div className="no-more-bonuses">
+            {
+                size <= casinon.length ? (
+                    <div className="morebonus-box">
                         <Button
-                            className="show-less-btn"
-                            onClick={loadLess}
+                            className="button-recension blink"
+                            onClick={loadMore}
                         >
-                            Finns inte fler casinon att visa - Stäng{" "}
+                            Hämta fler casino bonusar{" "}
                         </Button>
                     </div>
-                )}
+                ) : (
+                        <div className="no-more-bonuses">
+                            <Button
+                                className="show-less-btn"
+                                onClick={loadLess}
+                            >
+                                Finns inte fler casino bonusar att visa - Stäng{" "}
+                            </Button>
+                        </div>
+                    )
+            }
 
-            <BottomInfoSwish />
 
+
+
+
+            <BottomInfoCasinobonus />
             <LatestUpdate />
-
-
-        </Container>
+        </Container >
     );
 }
 
 
-export default SwishCasino;
+export default Casinobonuscomp;

@@ -1,21 +1,148 @@
-import React from 'react';
-import { Container } from 'reactstrap';
+import React, { useState } from 'react';
+import { Container, Col, Button, Card, CardBody, Row, Collapse } from 'reactstrap';
+import styled from "styled-components"
 import { Link } from "react-router-dom";
 
 
 const BottomInfoSwish = (props) => {
+    const [q1, setQ1] = useState(false);
+    const [q2, setQ2] = useState(false);
+    const [q3, setQ3] = useState(false);
+    const [q4, setQ4] = useState(false);
+    const [q5, setQ5] = useState(false);
+    const [q6, setQ6] = useState(false);
 
+
+    const StyledSpan = styled.span`
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+    position:absolute;
+    right:0;
+    transition: all 0.3s ease-out;
+    transform: ${props => (props.rotate ? `rotate(180deg)` : "")};
+    svg{
+    display: block;
+    height: 100%;
+    width: 100%;
+    }
+  `
 
     return (
         <Container fluid={false}>
             <div className="bottom-container">
 
-                <div className="info-bottom-box">
-                    <h2>Swish Casino - Frågor och svar </h2>
-                    <p>Här har vi har samlat några av svaren på de vanligaste frågorna gällande Casino Swish. Har du fler frågar kan du alltid kontakta oss. Casinoniz listar casinon som erbjuder esportsbetting, casino med faktura och odds. Alla casinon som vi listar har svensk spellicens!  </p>
+                <div className="question-wrap">
+                    <div className="head-q">
+
+                        <h2>Swish Casino - Frågor och svar </h2>
+                        <p>Här har vi har samlat några av svaren på de vanligaste frågorna gällande Casino Swish. Har du fler frågar kan du alltid kontakta oss. Casinoniz listar casinon som erbjuder esportsbetting, casino med faktura och odds. Alla casinon som vi listar har svensk spellicens!  </p>
+
+                    </div>
+                    <Row className="q-box" >
+                        <Col xs="12" m="12" lg="6" sm="12" >
+
+                            <Col className="single-q" >
+                                <div   >
+                                    <Button onClick={() => { setQ1(!q1) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >📱</span> <span >Vad är Swish?</span> <StyledSpan rotate={q1 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+                                    <Collapse isOpen={q1}>
+                                        <Card>
+                                            <CardBody ><div className="msg" xs="6"  ><div ><p>Swish är resultatet av ett samarbete mellan sex av dem största bankerna i Sverige. Det är en mobilapplikation där man på några få sekunder gör en betalning online eller skickar pengar mellan personer. Just nu är det över 7 miljoner svenskar som är anslutna till Swish.</p></div>
+                                            </div></CardBody>
+                                        </Card>
+                                    </Collapse>
+                                </div>
+                            </Col>
+
+                            <Col className="single-q">
+                                <div   >
+                                    <Button onClick={() => { setQ2(!q2) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >⭐</span>
+                                        <span >Hur använder man Swish på casino?</span><StyledSpan rotate={q2 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
 
 
+                                    <Collapse isOpen={q2}>
+                                        <Card>
+                                            <CardBody ><div className="msg" xs="6"  ><div ><p>För att använda Swish på ett online casino så väljer du Swish som betalningsmetod. Du skriver in casinots nummer i Swish appen eller scannar QR-koden. Sedan skriver du in beloppet du vill sätta in. Du godkänner överföring med ditt bankid och så är det klart! </p></div>
+                                            </div></CardBody>
+                                        </Card>
+                                    </Collapse>
+                                </div>
+                            </Col>
+
+                            <Col className="single-q">
+                                <div  >
+                                    <Button onClick={() => { setQ3(!q3) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >✨</span>
+                                        <span >Krävs det bankid för att använda Swish?</span> <StyledSpan rotate={q3 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+
+                                    <Collapse isOpen={q3}>
+                                        <Card>
+                                            <CardBody ><div className="msg" xs="6"  ><div ><p>Ja, det krävs ett mobilt bankid för att göra insättningar med Swish. Det krävs dock inte ett bankid om du endast vill ta emot pengar via Swish. </p></div>
+                                            </div></CardBody>
+                                        </Card>
+                                    </Collapse>
+                                </div>
+                            </Col>
+
+
+
+                        </Col>
+
+                        <Col xs="12" m="12" lg="6" sm="12"  >
+
+                            <Col className="single-q">
+                                <div  >
+                                    <Button onClick={() => { setQ4(!q4) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >⭐</span>
+                                        <span >Är det säkert att använda Swish för spel i casino?</span>
+                                        <StyledSpan rotate={q4 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+
+                                    <Collapse isOpen={q4}>
+                                        <Card>
+                                            <CardBody ><div className="msg" xs="6"  ><div >Ja, Swish är ett av dem säkraste insättningsmetoderna du kan använda på ett casino. För att kunna verifiera en betalning måste man mata in sin privata kod hos bankid som endast du har tillgång till.</div>
+                                            </div></CardBody>
+                                        </Card>
+                                    </Collapse>
+                                </div>
+                            </Col>
+
+                            <Col className="single-q">
+                                <div   >
+                                    <Button onClick={() => { setQ5(!q5) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >✅</span>
+                                        <span > Insättningar och uttag med Swish?</span>
+                                        <StyledSpan rotate={q5 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+                                    <Collapse isOpen={q5}>
+                                        <Card>
+                                            <CardBody ><div className="msg" xs="6"  ><div ><p>Insättningarna går oftast väldigt snabbt med Swish på casino. Oftast inom någon minut! Att göra ett uttag med hjälp av Swish går dock inte men du kan ta ut vinsten via Trustly.</p></div>
+                                            </div></CardBody>
+                                        </Card>
+                                    </Collapse>
+                                </div>
+                            </Col>
+
+
+                            <Col className="single-q">
+                                <div  >
+                                    <Button onClick={() => { setQ6(!q6) }} xs="6" className="question-head col-sm" style={{ marginBottom: '1rem', textAlign: "left" }}><span className="q1logo" role="img" aria-hidden="true" >⭐</span>
+                                        <span >Hur ansluter jag till Swish?</span><StyledSpan rotate={q6 ? 1 : undefined}><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></StyledSpan></Button>
+
+
+                                    <Collapse isOpen={q6}>
+                                        <Card>
+                                            <CardBody ><div className="msg" xs="6"  ><div ><p>För att ansluta dig till Swish måste du logga in på din bank. Navigera dig fram till mobila tjänser (Swish) och skriv in ditt mobilnummer. Ladda sedan ner Swish appen. Klart!</p></div>
+                                            </div></CardBody>
+                                        </Card>
+                                    </Collapse>
+                                </div>
+                            </Col>
+                        </Col>
+                    </Row>
                 </div>
+
 
                 <div className="info-bottom-box">
                     <h3>Hur skaffar jag Swish för casino? Steg för steg.</h3>

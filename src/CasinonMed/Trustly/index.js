@@ -322,7 +322,56 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
                     name="keywords"
                     content="Casino, Casinobonusar,filter,filterfunktion 2019,2020 ,esport betting, insättningsbonus, välkomnsbonus, välkomstbonus, trustly, casino trustly, casinon med trustly, svensk , licens"
                 />
-
+                <script type="application/ld+json">{`
+      {
+        "@context": "https://schema.org",
+         "@type": "FAQPage",
+         "mainEntity": [{
+            "@type": "Question",
+            "name": "⭐ Vad är Trustly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trustly är en väldigt populär betalningsmetod online. Trustly grundades 2008 och är i grunden ett svenskt IT-företag. Trustly används runt om i världen och har över 9 miljoner betalningar i månaden."
+            }
+          },{
+            "@type": "Question",
+            "name": "❓ Hur använder man Trustly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Med hjälp av en e-legitimation och Trustly så kan du göra en betalning på nolltid. Du väljer en bank där du har ett konto och pengar på. Sedan så verifierar du dig med din e-legitimation och så är betalning gjord. En väldigt smidig betaltjänst."
+            }
+          },{
+          "@type": "Question",
+          "name": "✨ Krävs det bankid för att använda Trustly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej, Du kan verifiera dig med hjälp av bankdosa eller mobilt bankid. Någon sorts av e-legitimation."
+          }
+        }, {
+          "@type": "Question",
+           "name": "⭐ Är det säkert att använda Trustly för spel i casino?",
+           "acceptedAnswer": {
+             "@type": "Answer",
+            "text": "Ja, det är säkert att använda Trustly som en insättningsmetod på casinon. Trustly har en europeisk licens för betaltjänstleverantörer och varje överföring sker under en avancerad krypterings teknik."
+          }
+        },  {
+          "@type": "Question",
+          "name": "✅ Insättningar och uttag med Trustly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "När man använder Trustly på ett casino så går insättningar samt uttag väldigt snabbt. Oftast inom några minuter!"
+          }
+        }, {
+          "@type": "Question",
+         "name": "⭐ Vilka svenska banker är anslutna till Trustly?",
+         "acceptedAnswer": {
+           "@type": "Answer",
+           "text": "Just nu är de flesta stora banker anslutna till Trustly. I skrivandets stund är det Swedbank, Nordea, Handelsbanken, Alla Sparbanker, SEB ,Danske Bank, Skandia, Länsförsäkringar, ICA, Forex som är ansluta till Trustly."
+          
+         }
+       }]
+      }
+      `}</script>
             </Helmet>
 
 
