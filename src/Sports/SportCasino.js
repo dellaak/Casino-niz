@@ -77,7 +77,7 @@ const SportCasino = (props) => {
                 </Link>
                 <div className="info-wrap">
                     <StyledNavlink
-                        to={{ pathname: `/recension/${props.casinon.title}`, match: `${props.casinon.title}` }} >
+                        to={{ pathname: `/recension/${props.casinon.title.toLowerCase()}`, match: `${props.casinon.title.toLowerCase()}` }} >
                         Recension
          {showStar ? (<img src={star} className="top-star" alt="star" />) : ''}
                     </StyledNavlink>

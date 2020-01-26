@@ -7,7 +7,7 @@ import "./style.scss"
 
 const MonthCasino = (props) => {
 
-    const month = 'Turbico'
+    const month = 'turbico'
 
     return (<div className="month-wrap">
         <NavLink

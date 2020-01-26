@@ -68,7 +68,7 @@ const EsportCasinoComp = (props) => {
         </Link>
         <div className="info-wrap">
           <StyledNavlink
-            to={{ pathname: `/recension/${casinoInfo.title}`, match: `${casinoInfo.title}` }} >
+            to={{ pathname: `/recension/${casinoInfo.title.toLowerCase()}`, match: `${casinoInfo.title.toLowerCase()}` }} >
             Recension
          {showStar ? (<img src={star} className="top-star" alt="star" />) : ''}
           </StyledNavlink>
