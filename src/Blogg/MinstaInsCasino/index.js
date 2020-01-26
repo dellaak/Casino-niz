@@ -181,7 +181,7 @@ const MinstaInsCasino = (props) => {
                         >
                             <img src={casino.caslogo} alt={casino.title + "logo"} />
                             <StyledNavlink
-            to={{ pathname: `/Recension/${casino.title}`, match: `${casino.title}` }} >
+            to={{ pathname: `/recension/${casino.title}`, match: `${casino.title}` }} >
             Recension
          
           </StyledNavlink>

@@ -61,7 +61,7 @@ const NewCasinos =(props)=> {
             </Link>
 
             <StyledNavlink 
-               to={{ pathname: `/Recension/${casino.title}`, match: `${casino.title}` }} > 
+               to={{ pathname: `/recension/${casino.title}`, match: `${casino.title}` }} > 
          Recension
       
         </StyledNavlink>

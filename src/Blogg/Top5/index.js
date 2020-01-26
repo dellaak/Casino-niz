@@ -162,7 +162,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             <StyledDiv>
                 <StyledCircle >5</StyledCircle>
                 <h2>NoAccountCasino - Grymma bonusar!</h2>
-                {topCasinon.length > 1 ? <div><p>NoAccountCasino är ett casino för den som vill spela smidigt och snabbt. Med väldigt snabba insättningar och uttag via betaltjänsten Trustly. NoAccountCasino lanserades 2015 och drivs av Mandalorian Technologies Ltd. Har ett väldigt brett utbud av slots och erbjuder även spel på Live Casino och Bordspel. Vill man spela på sport så kan man göra det på <NavLink to={{ pathname: `/Recension/NoAccountBet`, match: `NoAccountBet` }} >NoAccountBet</NavLink>.</p><p>Med en väldigt generös välkomstbonus. Sätt in 200 KR och få 400kr att spela för! Vinster är helt utan omsättningskrav!  </p></div> : ''}
+                {topCasinon.length > 1 ? <div><p>NoAccountCasino är ett casino för den som vill spela smidigt och snabbt. Med väldigt snabba insättningar och uttag via betaltjänsten Trustly. NoAccountCasino lanserades 2015 och drivs av Mandalorian Technologies Ltd. Har ett väldigt brett utbud av slots och erbjuder även spel på Live Casino och Bordspel. Vill man spela på sport så kan man göra det på <NavLink to={{ pathname: `/recension/NoAccountBet`, match: `NoAccountBet` }} >NoAccountBet</NavLink>.</p><p>Med en väldigt generös välkomstbonus. Sätt in 200 KR och få 400kr att spela för! Vinster är helt utan omsättningskrav!  </p></div> : ''}
                 <div className="casino-wrap">
                     {topCasinon.slice(4, 5).map((casino) =>
                         < Casinon

@@ -91,7 +91,7 @@ const App = () => {
                         {adBlockEnabled ? <span className="blocker">OBS! Du har en Adblocker aktiverad. Sidan kan bete sig lite annorlunda än vanligt. </span> : ''}
                         <Switch>
                             <Route exact path="/" render={(props) => (<Startpage start={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                            <Route exact path="/Recension/:casinotitle" render={(props) => (<Recension list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
+                            <Route exact path="/recension/:casinotitle" render={(props) => (<Recension list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                             <Route path="/esportbetting" render={(props) => (<Esport list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                             <Route path="/faktura-casino" render={(props) => (<CasinoMedFaktura list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />
                             <Route path="/casino-trustly" render={(props) => (<TrustlyCasino list={Casinolist} isBlocked={adBlockEnabled}  {...props} />)} />

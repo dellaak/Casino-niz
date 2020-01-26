@@ -11,7 +11,7 @@ const MonthCasino = (props) => {
 
     return (<div className="month-wrap">
         <NavLink
-            to={{ pathname: `/Recension/${month}`, match: `${month}` }} >
+            to={{ pathname: `/recension/${month}`, match: `${month}` }} >
             <div className="this-month-div">
                 <img src="/images/turbicologo.svg" alt="turbico-logo" />
                 <p className="recommend-text-top">Månadens doldis </p>

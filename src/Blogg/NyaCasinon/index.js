@@ -85,7 +85,7 @@ const NyaCasino = (props) => {
         <StyledDiv>
 
             <h2>Nya casino - LuckyVegas</h2>
-            {topCasinon.length > 0 ? <div><p>LuckyVegas är först ut 2020. Bolaget som står bakom detta nya casinot är SkillOnNet som står bakom populära <Link to={{ pathname: `/Recension/PlayOjo`, match: `PlayOjo` }} >
+            {topCasinon.length > 0 ? <div><p>LuckyVegas är först ut 2020. Bolaget som står bakom detta nya casinot är SkillOnNet som står bakom populära <Link to={{ pathname: `/recension/PlayOjo`, match: `PlayOjo` }} >
                 PlayOJO</Link>. Casinot erbjuder en Las Vegas känsla på sin sida. LuckyVegas har svensk spellicens med det innebär det att alla vinster är skattefria.</p></div> : ''}
             <div className="casino-wrap">
                 {topCasinon.slice(0, 1).map((casino) =>

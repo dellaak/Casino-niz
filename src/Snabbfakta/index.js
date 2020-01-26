@@ -28,7 +28,7 @@ const Snabbfakta = (props) => {
     
             <div className="Snabbfakta-preview">
                     {nc ? (<p>Sportsbetting: Se     <Link
-                        to={{ pathname: "/Recension/NoAccountBet", match: "NoAccountBet" }}>
+                        to={{ pathname: "/recension/NoAccountBet", match: "NoAccountBet" }}>
                         NoAccountBet
     
         </Link> </p>) : <p>Sportsbetting:  {props.casino.sports ? "✅" : "❌"}</p>}
