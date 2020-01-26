@@ -241,6 +241,7 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 
 		<Container className="recension-wrapper">
 			<Helmet>
+				<link rel="canonical" href={`https://www.casinoniz.se/recension/${casinotitle.toLowerCase()}`} />
 				<title>
 					{casinotitle.length > 3 ? `${casinotitle} Recension & Snabbfakta ⇛ ` : ''}
 					{selectedCasino ? `${selectedCasino.slogan}` : "Snabbfakta"} |
