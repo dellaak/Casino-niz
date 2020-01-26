@@ -44,6 +44,7 @@
             "activebonus": true,
             "bankid": true,
             "sports": true,
+            "minodds": 2.0,
             "freefromwager": false,
             "depositpercentsports": 200,
             "depositpercent": 200,
@@ -101,6 +102,31 @@
         },
         {
             "id": 2,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos NordicBet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos NordicBet är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder NordicBet insättningar med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja det gör de. NordicBet erbjuder insättning med faktura via fakturametoden Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "✅Hur många slots har NordicBet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nordicbet har över 1000+ videoslots. Med kända leverantörer som NetEnt, Evolution Gaming, Quickfire,Yggdrasil, Play’n GO, Red Tiger Gaming och många fler!."
+                }
+            },
             "title": "NordicBet",
             "color": "#fff",
             "textcolor": "#0f6eb4",
@@ -116,6 +142,7 @@
             "extratext": "Sätter du in 500 kr eller mer får du 100 cashspinn helt utan omsättningskrav",
             "bankid": true,
             "sports": true,
+            "minodds": 1.80,
             "freespins": 100,
             "activebonus": true,
             "freefromwager": true,
@@ -163,6 +190,31 @@
         },
         {
             "id": 3,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Mobilautomaten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Mobilautomaten är 35 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Mobilautomaten insättningar med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja det gör de. Mobilautomaten erbjuder insättning med faktura via dessa tre fakturametoder: Siru, Zimpler och SMS-voucher"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "📱Erbjuder Mobilautomaten insättning med Swish?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Mobilautomaten erbjuder insättningar med Swish!."
+                }
+            },
             "title": "Mobilautomaten",
             "color": "#d6102b",
             "textcolor": "#feec00",
@@ -197,7 +249,7 @@
                     "egentitel": "Casino i mobilen",
                     "egentitel2": false,
                     "toprecension": "Mobilautomaten är ett relativt ungt casino som vuxit sig stora på otrolig kort tid. Casinot grundades 2016 och är ett av sverige största casinon just nu. Mobilautomaten fokuserar mest på casino och live casino. De erbjuder just nu ingen betting på sports. Layouten på casinot är väldigt likt andra casinon och det hade varit najs med lite variation på design hos casinon. Casinot erbjuder just nu 300% insättningsbonus + upp till 1200 freespin. Att spela casino på mobilen är inga problem hos Mobilautomaten. Casinot finns även som app för mobiltelefoner",
-                    "secondrec": "Casinot har väldigt många slots och just nu har de tre enormajackpotar på över 10 MILJONER kronor.",
+                    "secondrec": "Casinot har väldigt många slots och just nu har de tre enormajackpotar på över 10 MILJONER kronor. Sektionen är väldigt snygg och simpel. Casino sektionen är även anpassad för spel på alla skärmar.",
                     "sportsrec": "Ingen sports sektion",
                     "welcomeoffer": "300% insättningsbonus + upp till 1200 freespins",
                     "bonusterms": [
@@ -265,6 +317,7 @@
             "extratext": "Bonusen är giltig i 60 dagar. Cash Free Spins är omsättningsfria så ev vinster sker i riktiga pengar.",
             "bankid": true,
             "sports": true,
+            "minodds": 1.80,
             "publishdate": "31 December 2019",
             "freespins": 30,
             "freefromwager": true,
@@ -313,6 +366,31 @@
         },
         {
             "id": 5,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Casumo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Casumo är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "🏅Erbjuder Casumo sportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja det gör de. Casumo har nyligen öppnat upp en sektion med sports betting!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "📱Erbjuder Casumo insättning med Swish?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Casumo erbjuder insättningar med Swish!"
+                }
+            },
             "title": "Casumo",
             "color": "#fff",
             "textcolor": "#23d0cd",
@@ -331,6 +409,7 @@
             "extratext": "Free Spinshjulet är öppet dina första 60 dagar efter din första insättning.Vinster från Free Spins är utan omsättningskrav.",
             "bankid": true,
             "sports": true,
+            "minodds": 1.60,
             "freefromwager": false,
             "depositpercent": 100,
             "depositpercentsports": 100,
@@ -383,6 +462,31 @@
         },
         {
             "id": 6,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos SpeedyCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos SpeedyCasino är 50 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "🏅Har SpeedyCasino svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, SpeedyCasino har haft svensk spellicens sedan 2018-12-21."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "📱Erbjuder SpeedyCasino insättning med Swish?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, SpeedyCasino erbjuder insättningar med Swish!"
+                }
+            },
             "title": "SpeedyCasino",
             "slogan": "Casino utan krångel",
             "color": "#ebf1f2",
@@ -412,7 +516,7 @@
                     "support": 80,
                     "egentitel": "Casino utan registrering",
                     "egentitel2": false,
-                    "toprecension": "SpeedyCasino är ett nytt casino där målet är att kunna spela på casino utan krångel. Det tycker vi att de har lyckats med. Du loggar in enkelt med bankId och så är det bara att börja spela. Enkelt att spela i webbläsaren som på mobil. Såklart så har de snabba uttag också!",
+                    "toprecension": "SpeedyCasino är ett nytt casino där målet är att kunna spela på casino utan krångel. Det tycker vi att de har lyckats med. Du loggar in enkelt med bankId och så är det bara att börja spela. Enkelt att spela i webbläsaren som på mobil. Snygg design och en bra support.För att slippa krångla så har dem gjort det väldigt enkelt med insättningar. Du kan göra insättningar via Swish och Trustly. Såklart så har de även snabba uttag också!",
                     "secondrec": "Sidan ser bra ut och är enkel att navigera sig runt i. Kollar man på casinosidan så listar de alla videoslots. Casinoniz hade velat se en filter funktion för varje leverantör. Med favoritspel som Bonanza, Book of Dead, Dead or Alive och många fler så vet vi att man kan ha kul där. Enkelt och snabbt utan krångel. Supporten är öppen 24/7, svensktalande på dagtid och engelsktalande på kvällstid. ",
                     "sportsrec": "Ingen sport sektion",
                     "welcomeoffer": "Insättningsbonus på 100% upp till 5 000 kr",
@@ -439,6 +543,31 @@
         },
         {
             "id": 7,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Vera&John?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Vera&John är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "🏅Erbjuder Vera&John insättning med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Vera&John erbjuder insättning med fakturametoder Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "✅Hur många slots har Vera&John?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dem har över 1050+ slots. Från leverantörer som NetEnt,Microgaming,PlayNGo,Yggdrasil,Quickspin, Scientific Games och många fler!"
+                }
+            },
             "title": "Vera&John",
             "color": "#7f1844",
             "textcolor": "#f3efed",
@@ -496,6 +625,31 @@
         },
         {
             "id": 8,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos 888 Casino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos 888 Casino är 100 kr. För att göra ett uttag är minsta beloppet 150 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder 888 Casino esportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Esportsbetting erbjuds på 888 Sport. Du kan odds på spel som CSGO, Overwatch, Leauge of Legends och fler!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "✅Har 888 Casino svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, 888 Casino har svensk spellicens sedan 2018-12-18!"
+                }
+            },
             "title": "888Casino",
             "color": "#000",
             "textcolor": "#7cfa00",
@@ -514,6 +668,7 @@
             "activebonus": true,
             "bankid": true,
             "sports": true,
+            "minodds": 1.80,
             "freefromwager": false,
             "depositpercent": 250,
             "depositpercentsports": 500,
@@ -564,6 +719,31 @@
         },
         {
             "id": 9,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos CherryCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos CherryCasino är 10 kr (Ja, 10 kr). För att göra ett uttag är minsta beloppet 150 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder CherryCasino esportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Esportsbetting erbjuds hos CherryCasino. Du kan odds på spel som CSGO, Overwatch, Leauge of Legends och fler!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "✅Hur många slots har CherryCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dem har över 700+ slots. Från kända leverantörer som NetEnt, Microgaming, Yggdrasil, Amaya, Merkur,Elk studios och fler!"
+                }
+            },
             "title": "CherryCasino",
             "color": "#fc0100",
             "textcolor": "#fff",
@@ -630,6 +810,31 @@
         },
         {
             "id": 10,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Sverigeautomaten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos CherryCasino är 150 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Sverigeautomaten insättning med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Du kan göra en insättning med fakturatjänsten Zimpler hos Sverigeautomaten!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Hur många slots har Sverigeautomaten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sverigeautomaten har över 1400+ slots. Slots från kända leverantörer som Evolution, IGT, ISoftBet,Microgaming, NetEnt, NoLimitCity, Novomatic och många fler!"
+                }
+            },
             "title": "Sverigeautomaten",
             "slogan": "Online casino med svenska spelautomater",
             "color": "#2770c9",
@@ -674,8 +879,8 @@
                     "sportsterms": [
                         "Ingen sports sektion"
                     ],
-                    "topslotgames": "Över 1400+ slots. Slots från kända leverantörer som Evolution, GameIncCasino, IGTCasino, ISoftBetCasino,LeanderCasino, MicrogamingCasino, NetEntCasino, NoLimitCityCasino, NovomaticCasino och fler!",
-                    "deposittypes": "Visa,, Mastercard, Trustly, Skrill, Paysafecard, Zimpler, Neteller,Swish",
+                    "topslotgames": "Över 1400+ slots. Slots från kända leverantörer som Evolution, IGT, ISoftBet,Microgaming, NetEnt, NoLimitCity, Novomatic och många fler!",
+                    "deposittypes": "Visa, Mastercard, Trustly, Skrill, Paysafecard, Zimpler, Neteller,Swish",
                     "mindeposit": 150,
                     "minout": 200,
                     "swish": true,
@@ -686,6 +891,31 @@
         },
         {
             "id": 11,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Bethard?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Bethard är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Bethard insättning med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Du kan göra en insättning med fakturatjänsterna Zimpler och Siru hos Bethard!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Erbjuder Bethard esportbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Bethard erbjuder esportsbetting på spel som CSGO, Dota2, Leauge of Legends, Overwatch och fler spel!"
+                }
+            },
             "title": "Bethard",
             "color": "#000",
             "textcolor": "#facf0e",
@@ -704,6 +934,7 @@
             "extratext": "Välkomsterbjudandet måste hämtas inom 14 dagar efter registrering. Free Spinsen varierar beroende på insättningssumman. Se villkor",
             "bankid": true,
             "sports": true,
+            "minodds": 1.80,
             "freefromwager": true,
             "depositpercent": 100,
             "depositpercentsports": 100,
@@ -761,6 +992,31 @@
         },
         {
             "id": 12,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Betsson?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Betsson är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Betsson insättning med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Du kan göra en insättning med fakturatjänsten Zimpler hos Betsson!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Erbjuder Betsson insättning med Swish?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Betsson har Swish som en insättningsmetod!"
+                }
+            },
             "title": "Betsson",
             "color": "#fc6600",
             "textcolor": "#fff",
@@ -778,6 +1034,7 @@
             "extratext": "Om du sätter in 500 kr eller mer får du just nu också 100 cashspinn på utvalda spel",
             "bankid": true,
             "sports": true,
+            "minodds": 1.50,
             "freefromwager": true,
             "depositpercent": 100,
             "depositpercentsports": 100,
@@ -822,6 +1079,31 @@
         },
         {
             "id": 13,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos SveaCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos SveaCasino är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder SveaCasino insättning med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, Sveacasino erbjuder inte insättning med faktura. Deras insättningsmetoder är Trustly, Visa, Mastercard, Skrill, Paysafecard, Swish och Neteller!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Är Sveacasino mobilanpassad?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, SveaCasino är anpassad för att spela på alla skärmar."
+                }
+            },
             "title": "SveaCasino",
             "color": "#0c2d50",
             "textcolor": "#f7c204",
@@ -877,6 +1159,31 @@
         },
         {
             "id": 14,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Betsafe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Betsafe är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Betsafe insättning med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Betsafe erbjuder insättning med fakturatjänsten Zimpler!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Hur många slots har Betsafe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Betsafe har över 400+ slots av hög kvalitet. Från leverantörer som NetEnt, GTS, Evolution Gaming, Cryptologic, Quickfire och Play’n GO!"
+                }
+            },
             "title": "Betsafe",
             "color": "#fff",
             "textcolor": "#000",
@@ -894,6 +1201,7 @@
             "extratext": "Om du sätter in 500 kr eller mer får du just nu också 100 cashspinn på utvalda spel. Måste omsättas inom 7 dagar från det att bonusen hämtats",
             "bankid": true,
             "sports": true,
+            "minodds": 1.50,
             "freefromwager": true,
             "depositpercent": 100,
             "depositpercentsports": 100,
@@ -979,6 +1287,7 @@
             "extratext": "Du har 60 dagar på att omsätta bonusen efter aktivering. Vinster från Free Spinsen är omsättningsfria!",
             "bankid": true,
             "sports": true,
+            "minodds": 2.0,
             "freefromwager": true,
             "publishdate": "23 Januari 2020",
             "depositpercent": 200,
@@ -1035,6 +1344,31 @@
         },
         {
             "id": 16,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Guts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Guts är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Guts insättning med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Guts erbjuder insättning med fakturatjänsten Zimpler!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Hur många slots har Betsafe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Guts har över 900+ slots av hög kvalitet. Leverantörer som NetEnt, Microgaming, Quickspin, Evolution, Betsoft, NYX, Thunderkick och fler"
+                }
+            },
             "title": "Guts",
             "color": "#fff",
             "textcolor": "#000",
@@ -1144,6 +1478,31 @@
         },
         {
             "id": 18,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Rizk?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Rizk är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Rizk insättning med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Rizk erbjuder insättning med fakturatjänsten Zimpler!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Erbjuder Rizk sportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, Rizk erbjuder tyvärr ingen sportsbetting för tillfället!"
+                }
+            },
             "title": "Rizk",
             "color": "#ef4135",
             "textcolor": "#fee502",
@@ -1201,6 +1560,31 @@
         },
         {
             "id": 19,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Casilando?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Casilando är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Casilando insättning via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, Casilando erbjuder insättning via Visa,Mastercard,Skrill,Paysafecard,Neteller och Banköverföring!"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Erbjuder Casilando sportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, Casilando erbjuder tyvärr ingen sportsbetting för tillfället!"
+                }
+            },
             "title": "Casilando",
             "color": "#fff",
             "textcolor": "#000",
@@ -1256,6 +1640,31 @@
         },
         {
             "id": 20,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos MrGreen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos MrGreen är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder MrGreen insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, MrGreen erbjuder insättning via fakturametoden Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Hur många slots har MrGreen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "MrGreen har ett väldigt brett slots utbud. Med över 2000+ slots av hög kvalitet. Från leverantörer som Betsoft, Big Time Gaming, Evolution Gaming, Microgaming, NetEnt, Play `n GO, IGT, Push Gaming, Quickspin, Thunderkick, Scientific Games, Yggdrasil, Red Tiger Gaming, Pragmatic Play, NextGen, WMS, och många fler!"
+                }
+            },
             "title": "MrGreen",
             "color": "#17723c",
             "textcolor": "#fff",
@@ -1274,6 +1683,7 @@
             "extratext": "Insättning på minst 200 kr krävs för att aktivera bonusen. Vinster från Free Spins är omsättningsfria",
             "bankid": true,
             "sports": true,
+            "minodds": 0,
             "freefromwager": true,
             "depositpercent": 100,
             "depositpercentsports": 100,
@@ -1289,8 +1699,8 @@
                     "egentitel": "Snabba uttag och casino på faktura",
                     "egentitel2": "CSGO betting och odds",
                     "toprecension": "MrGreen Casino är den gröna gentlemannen i den svenska casinobranschen. MrGreen lanserades 2008 och har snabbt blivit ett av Sveriges bästa casinon. Casinot har en väldigt snygg och modern design. Med gröna färger ger casinot dig som spelare en skön och lugn upplevelse. MrGreen erbjuder flera av de vanligaste insättningsmetoderna. När det kommer till uttag så är MrGreen ett av de snabbaste casinon på marknaden. Beroende på uttagsmetod så kan du få ut din vinst på ca 5 minuter, det kallar vi expressuttag! Casinot har en väldigt bra supportsektion samt livechatt. Livechatten ger dig väldigt bra och snabb service. ",
-                    "secondrec": "MrGreens casinoutbud är riktigt bra. Med över 2000+ slots så hittar du som spelare precis den videoautomaten du söker efter. Casinot har även exklusiva slots som endast finns på MrGreen och det tycker vi Casinoniz är riktigt najs!. Skulle man ha turen på sin sida så har MrGreen även något som kallas 'Din personliga jackpott'. Om du spelar på speciellt utvalda slots så har du chans och vinna jackpotten. Utöver 'Din dagliga jackpot' så finns det över 20+ slots med riktigt höga jackpots. Skulle du tröttna på slots så finns det livecasino, sportsbetting, esportbetting och bordsspel.",
-                    "sportsrec": "MrGreen har ett av de bästa sportsektionerna i branschen. Med väldigt stort utbud på sporter och som pricket över i:et så erbjuder de även esportsbetting. Det tycker vi är grymt!. Sportsektionen är riktigt snygg och modern. MrGreen erbjuder höga odds samt även så kallade Boostade odds. Boostade odds gäller på utvalda matcher. När man tror man har fått allt så kommer det mer. MrGreen erbjuder även Oddsjackpot där du väljer vilken jackpot du vill spela på. För att vinna jackpotten måste du få alla rätt. Just nu får du 100% vinstboost upp till 5000 kr - helt omsättningsfritt!",
+                    "secondrec": "MrGreens casinoutbud är riktigt bra. Med över 2000+ slots så hittar du som spelare precis den videoautomaten du söker efter. Casinot har även exklusiva slots som endast finns på MrGreen och det tycker vi Casinoniz är riktigt najs! Skulle man ha turen på sin sida så har MrGreen även något som kallas 'Din personliga jackpott'. Om du spelar på speciellt utvalda slots så har du chans och vinna jackpotten. Utöver 'Din dagliga jackpot' så finns det över 20+ slots med riktigt höga jackpots. Skulle du tröttna på slots så finns det livecasino, sportsbetting, esportbetting och bordsspel.",
+                    "sportsrec": "MrGreen's sportsektion är en av de bästa i branschen. Med väldigt stort utbud på sporter och som pricket över i:et så erbjuder de även esportsbetting. Det tycker vi är grymt!. Sportsektionen är riktigt snygg och modern. MrGreen erbjuder höga odds samt även så kallade Boostade odds. Boostade odds gäller på utvalda matcher. När man tror man har fått allt så kommer det mer. MrGreen erbjuder även Oddsjackpot där du väljer vilken jackpot du vill spela på. För att vinna jackpotten måste du få alla rätt. Just nu får du 100% vinstboost upp till 5000 kr - helt omsättningsfritt!",
                     "welcomeoffer": "Insättningsbonus på 100% upp till 1000 kr och 200 omsättningsfria Free Spins",
                     "bonusterms": [
                         "Välkomstbonusen är enbart för nya spelare",
@@ -1327,6 +1737,31 @@
         },
         {
             "id": 21,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Casinoheroes?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Casinoheroes är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Casinoheroes insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Casinoheroes insättningsmetoder är Visa,Mastercard,Skrill,Neteller, Trustly"
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Erbjuder Casinoheroes sports betting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, Casinoheroes har ingen sport betting på sin sida."
+                }
+            },
             "title": "Casinoheroes",
             "color": "#0d2857",
             "textcolor": "#fff",
@@ -1372,7 +1807,7 @@
                         "Ingen sport sektion"
                     ],
                     "topslotgames": "Över 1000+ slots av hög kvalitet. Med leverantörer som NetEnt, Evoulution Gaming, Playson, Yggdrasil, Pushgaming, Quickspin, Microgaming, Play N Go, Nyx så får du det bästa.!",
-                    "deposittypes": "Visa,Mastercard,Skrill,Neteller, Trustly, ecoPayz",
+                    "deposittypes": "Visa,Mastercard,Skrill,Neteller, Trustly",
                     "mindeposit": 100,
                     "minout": 100,
                     "swish": false,
@@ -1383,6 +1818,31 @@
         },
         {
             "id": 22,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Betway?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Betway är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Betway insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Betway erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har Betway svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Betway har haft svensk spellicens sedan 2018-12-10."
+                }
+            },
             "title": "Betway",
             "color": "#fff",
             "textcolor": "#000",
@@ -1400,6 +1860,7 @@
             "extratext": "Minsta insättning 100 kr. Insättning krävs med kredit-/betalkort, Zimpler, Paysafe, Instant Banking eller Entropay.",
             "bankid": true,
             "sports": true,
+            "minodds": 1.75,
             "publishdate": "23 Januari 2020",
             "freefromwager": false,
             "depositpercent": 100,
@@ -1622,17 +2083,18 @@
             "setTop": false,
             "slogan": "Spela utan krångel!",
             "depositbonus": "Insättningsbonus på 100% upp till 2 500 kr",
+            "sportsbonus": "Ingen bonus just nu!",
             "mylink": "https://media.snabbare.com/tracking.php?tracking_code&aid=107839&mid=1960&sid=354226&pid=635",
             "rules": "https://media.snabbare.com/tracking.php?tracking_code&aid=107839&mid=2755&sid=354226&pid=838",
             "caslogo": "/images/snabbarelogo.svg",
             "wager": 20,
-            "sportsbonus": "Ingen bonus just nu!",
             "sportswager": "x",
             "freespins": "x",
             "activebonus": true,
             "extratext": "Bonuserbjudandet gäller endast nya kunder vid första speltillfälle 2019-2020 och kan endast omsättas på Casino",
             "bankid": true,
             "sports": true,
+            "minodds": 0,
             "freefromwager": false,
             "publishdate": "2 Januari 2020",
             "depositpercent": 100,
@@ -1726,6 +2188,7 @@
             "extratext": "Maximalt bonusbelopp per kund är 2000 kr",
             "bankid": true,
             "sports": true,
+            "minodds": 0,
             "freefromwager": false,
             "depositpercent": 200,
             "depositpercentsports": 0,
@@ -1777,6 +2240,31 @@
         },
         {
             "id": 27,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Chanz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Chanz är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Chanz insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Chanz erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har Chanz svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Chanz har haft svensk spellicens sedan 2019-01-18."
+                }
+            },
             "title": "Chanz",
             "color": "#1aa8ab",
             "textcolor": "#fff",
@@ -1834,6 +2322,31 @@
         },
         {
             "id": 28,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Snabbis?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Snabbis är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Snabbis insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Snabbis erbjuder endast Trustly som insättningsmetod."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Hur många slots har Snabbis?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Snabbis har över 900+ slots av hög kvalitet. Med flera leverantörer som NetEnt, Microgaming, Yggdrasil, Pragmatic Play, Nolimit City, Red Tiger, SG Williams och många fler!"
+                }
+            },
             "title": "Snabbis",
             "color": "#1f1e1e",
             "textcolor": "#f49e1e",
@@ -1877,7 +2390,7 @@
                     "sportsterms": [
                         ""
                     ],
-                    "topslotgames": "Över 900+ slots av hög kvalitet. Med flera leverantörer NetEnt, Microgaming, Yggdrasil, Pragmatic Play, Nolimit City, Red Tiger, SG Williams och många fler!!",
+                    "topslotgames": "Över 900+ slots av hög kvalitet. Med flera leverantörer NetEnt, Microgaming, Yggdrasil, Pragmatic Play, Nolimit City, Red Tiger, SG Williams och många fler!",
                     "deposittypes": "Trustly",
                     "mindeposit": 100,
                     "minout": 200,
@@ -1889,6 +2402,31 @@
         },
         {
             "id": 29,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Pixelbet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Pixelbet är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Pixelbet insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Pixelbet erbjuder endast Trustly som insättningsmetod."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "🎮Erbjuder Pixelbet esportbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Pixelbet främsta fokus är faktiskt esportsbetting. Du kan oddsa på alla populära spel som CSGO, Dota2, Overwatch, Leauge of Legends och många fler spel!"
+                }
+            },
             "title": "Pixelbet",
             "color": "#5914c5",
             "textcolor": "#fff",
@@ -1907,6 +2445,7 @@
             "extratext": "",
             "bankid": true,
             "sports": true,
+            "minodds": 0,
             "freefromwager": false,
             "depositpercent": "x",
             "depositpercentsports": 0,
@@ -1955,6 +2494,31 @@
         },
         {
             "id": 30,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Highroller?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Highroller är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Highroller insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Highroller erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Erbjuder Highroller sportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Hos Highroller kan du spela Casino och Live Casino!"
+                }
+            },
             "title": "Highroller",
             "color": "#f9ec68",
             "textcolor": "#000",
@@ -2002,7 +2566,7 @@
                         "Ingen sport sektion."
                     ],
                     "topslotgames": "Över 800+ slots! Från leverantörer som Betsoft, Big Time Gaming, Evolution Gaming, IGT (Wagerworks), iSoftBet, Microgaming, NetEnt, NYX Gaming, Play `n GO, Push Gaming, Quickspin, Thunderkick, Scientific Games, Yggdrasil och fler!",
-                    "deposittypes": "Visa, Master Card, Visa electronic, Maestro, Swish, Sofort, Trustly, Neteller, Skrill, Zimpler, Paysafe card",
+                    "deposittypes": "Visa, Master Card, Visa electronic, Maestro, Swish, Trustly, Neteller, Skrill, Zimpler, Paysafe card",
                     "mindeposit": 100,
                     "minout": 200,
                     "swish": true,
@@ -2013,6 +2577,31 @@
         },
         {
             "id": 31,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Videoslots?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Videoslots är 35 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Videoslots insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Videoslots erbjuder Siru och Zimpler som insättningsmetod via faktura."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Hur många slots har Videoslots?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Videoslots har ett väldigt stort utbud, med över 3500+ slots! Från leverantörer som Betsoft, Big Time Gaming, Evolution Gaming, IGT (Wagerworks), iSoftBet, Microgaming, NetEnt, NYX Gaming, Play `n GO, Push Gaming, Quickspin, Thunderkick, Scientific Games, Yggdrasil och många fler!"
+                }
+            },
             "title": "Videoslots",
             "color": "#000",
             "textcolor": "#fed430",
@@ -2073,12 +2662,37 @@
         {
             "id": 32,
             "title": "Paf",
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Paf ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Paf är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Paf insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Paf erbjuder insättningar via Visa, Master Card, Neteller,Banköverföring och Swish."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "🎮Kan man spela esport hos Paf?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det kan man. Du kan spela på dem flesta esport spelen hos Paf. På spel som Leauge of Legends, CSGO, Dota2, Overwatch m.m!"
+                }
+            },
             "color": "#fff",
             "textcolor": "#25ac60",
             "setTop": false,
             "slogan": "Gratis freespins utan insättning",
-            "depositbonus": "Vinn upp till 25 freespins vid registrering & utan omsättningskrav!",
-            "mylink": "https://record.pafpartners.com/_Q3mqd8ZyuHNd0WQkpqTgsGNd7ZgqdRLk/1",
+            "depositbonus": "Upp till 25 omsättningsfria freespins vid registrering + 100kr vid första insättning!",
+            "mylink": "https://record.pafpartners.com/_Q3mqd8ZyuHPmrrUA0p2HVWNd7ZgqdRLk/1",
             "rules": "https://record.pafpartners.com/_Q3mqd8ZyuHNz490aNru3V2Nd7ZgqdRLk/1",
             "caslogo": "/images/paflogo.svg",
             "wager": 0,
@@ -2088,6 +2702,7 @@
             "extratext": "Dina freespins är giltiga i en vecka och varje spin är värd 2 kr. Du får även 100 kr extra när du gör din första insättning.",
             "bankid": true,
             "sports": true,
+            "minodds": 0,
             "freefromwager": true,
             "depositpercent": 100,
             "depositpercentsports": 0,
@@ -2117,7 +2732,7 @@
                         "Ingen sportsbonus"
                     ],
                     "topslotgames": "Över 500+ slots! Från kända leverantörer som NetEnt, Microgaming, GreenTube, IGT,Novomatic,PlayNGo,Yggdrasil,SG och många fler!!",
-                    "deposittypes": "Visa, Master Card, Neteller,Banköverföring, Swish, ",
+                    "deposittypes": "Visa, Master Card, Neteller,Banköverföring, Swish ",
                     "mindeposit": 100,
                     "minout": 200,
                     "swish": true,
@@ -2139,6 +2754,31 @@
         },
         {
             "id": 33,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos VoodooDreams?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos VoodooDreams är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder VoodooDreams insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. VoodooDreams erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har VoodooDreams svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, VoodooDreams har svensk spellicens sedan 2018-11-29"
+                }
+            },
             "title": "VoodooDreams",
             "color": "#161616",
             "textcolor": "#2debf2",
@@ -2184,7 +2824,7 @@
                         "Ingen sport sektion."
                     ],
                     "topslotgames": "Över 700+ slots! Från leverantörer som NetEnt, Play `n GO, RedTiger,Kalamba, Rela Gaming , och många fler!",
-                    "deposittypes": "Visa, Master Card,Trustly,Entercash,Zimpler",
+                    "deposittypes": "Visa, Master Card,Trustly,Zimpler",
                     "mindeposit": 100,
                     "minout": 200,
                     "swish": false,
@@ -2195,6 +2835,31 @@
         },
         {
             "id": 34,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos NySpins?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos NySpins är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder NySpins insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. NySpins erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har NySpins svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, NySpins har svensk spellicens sedan 2018-11-29."
+                }
+            },
             "title": "NySpins",
             "color": "#fff",
             "textcolor": "#333333",
@@ -2251,6 +2916,31 @@
         },
         {
             "id": 35,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Duelz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Duelz är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Duelz insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Duelz erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "📱Kan man göra insättningar via Swish hos Duelz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det kan man. Duelz erbjuder Swish som en insättningsmetod."
+                }
+            },
             "title": "Duelz",
             "color": "#d02638",
             "textcolor": "#fff",
@@ -2307,6 +2997,31 @@
         },
         {
             "id": 36,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos RedKings?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos RedKings är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder RedKings insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. RedKings erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har RedKings svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, RedKings har svensk spellicens sedan 2018-11-29.."
+                }
+            },
             "title": "RedKings",
             "color": "#fff",
             "textcolor": "#d60100",
@@ -2363,6 +3078,31 @@
         },
         {
             "id": 37,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos LunaCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos LunaCasino är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder LunaCasino insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. LunaCasino erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har LunaCasino svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, LunaCasino har haft svensk spellicens sedan 2018-11-29."
+                }
+            },
             "title": "Lunacasino",
             "color": "#258dc5",
             "textcolor": "#fff",
@@ -2475,6 +3215,31 @@
         },
         {
             "id": 39,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos SlotsMagic?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos SlotsMagic är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder SlotsMagic insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. SlotsMagic erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har SlotsMagic svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja,det har dem. SlotsMagic har haft svensk spellicens sedan 2018-11-29."
+                }
+            },
             "title": "SlotsMagic",
             "color": "#341335",
             "textcolor": "#fedc00",
@@ -2531,6 +3296,31 @@
         },
         {
             "id": 40,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos AhtiGames?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos AhtiGames är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder AhtiGames insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. AhtiGames erbjuder fakturametoderna Siru och Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har AhtiGames svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja,det har dem. AhtiGames har haft svensk spellicens sedan 2018-11-29."
+                }
+            },
             "title": "AhtiGames",
             "color": "#052fa1",
             "textcolor": "#fff",
@@ -2641,6 +3431,31 @@
         },
         {
             "id": 42,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Karamba?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Karamba är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Karamba insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Karamba erbjuder insättningar via fakturametoden Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Kan man spela på sport hos Karamba?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det kan man inte. Du kan endast spela på Slots och Live Casino."
+                }
+            },
             "title": "Karamba",
             "color": "#b7b6bb",
             "textcolor": "#fff",
@@ -2692,12 +3507,37 @@
                     "minout": 200,
                     "swish": false,
                     "livechat": true,
-                    "summering": "Ett väldigt snyggt casino som ger dig som spelare en smidig spelupplevelse. Flera av de vanligaste insättningsmetoderna. Har ett lagom utbud av slots samt även ne livecasino sektion. Uttagen går snabbt. Karamba har funnits i över 18 år så säkerheten finns där. Ett säkert casino med enkel navigering. "
+                    "summering": "Ett väldigt snyggt casino som ger dig som spelare en smidig spelupplevelse. Flera av de vanligaste insättningsmetoderna. Har ett lagom utbud av slots samt även en livecasino sektion. Uttagen går snabbt. Karamba har funnits i över 18 år så säkerheten finns där. Ett säkert casino med enkel navigering. "
                 }
             ]
         },
         {
             "id": 43,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos PlayOJO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos PlayOJO är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder PlayOJO insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. PlayOJO erbjuder insättningar via fakturametoderna Zimpler och Siru Mobile."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Kan man spela på sport hos PlayOJO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det kan man inte. Du kan spela på Slots, Roulette, Blackjack och Live Casino."
+                }
+            },
             "title": "PlayOJO",
             "color": "#e7f1f2",
             "textcolor": "#bb51e2",
@@ -2755,6 +3595,31 @@
         },
         {
             "id": 44,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Casinoroom?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Casinoroom är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Casinoroom insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Casinoroom erbjuder insättningar via fakturametoden Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Kan man spela på sport hos Casinoroom?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det kan man inte. Du kan spela på Slots, Bordsspel och Live Casino."
+                }
+            },
             "title": "Casinoroom",
             "slogan": "Svenskt Casino - Casino bonus",
             "color": "#329cd2",
@@ -2811,6 +3676,31 @@
         },
         {
             "id": 45,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Hyper?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Hyper är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Hyper insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. Hyper erbjuder insättningar via fakturametoden Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har Hyper svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det har dem. Hyper har haft svensk spellicens sedan 2018-12-14."
+                }
+            },
             "title": "Hyper",
             "color": "#000",
             "textcolor": "#fff",
@@ -2868,6 +3758,31 @@
         },
         {
             "id": 46,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos LegolasBet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos LegolasBet är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder LegolasBet insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. LegolasBet erbjuder VISA, Mastercard, Neteller, Skrill och Trustly som insättningsmetoder."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har LegolasBet svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det har dem. LegolasBet har haft svensk spellicens sedan 2019-01-17."
+                }
+            },
             "title": "LegolasBet",
             "color": "#fff",
             "textcolor": "#f02e3a",
@@ -2883,6 +3798,7 @@
             "extratext": "Lägsta insättningsbeloppet för att ta del av erbjudandet är 200 kr",
             "bankid": true,
             "sports": true,
+            "minodds": 1.50,
             "freespins": 150,
             "freefromwager": true,
             "depositpercent": 150,
@@ -2940,6 +3856,31 @@
         },
         {
             "id": 47,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Unibet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Unibet är 35 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Unibet insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Unibet erbjuder insättningsmetoder som VISA, Mastercard, Neteller, Skrill, Trustly, Banköverföring, Paysafecard och Swish."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "🎮Har Unibet esportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det har dem. Unibet erbjuder esportsbetting på spel som CS:GO, Dota2, League of Legends m.m."
+                }
+            },
             "title": "Unibet",
             "color": "#147b44",
             "textcolor": "#fff",
@@ -2955,6 +3896,7 @@
             "extratext": "Erbjudandet gäller endast nya kunder",
             "bankid": true,
             "sports": true,
+            "minodds": 1.40,
             "freespins": 0,
             "freefromwager": false,
             "depositpercent": 500,
@@ -3048,6 +3990,7 @@
             "extratext": "Erbjudandet gäller endast nya kunder",
             "bankid": true,
             "sports": true,
+            "minodds": 0,
             "freespins": 50,
             "freefromwager": false,
             "depositpercent": 100,
@@ -3172,6 +4115,31 @@
         },
         {
             "id": 50,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos iGame?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos iGame är 25 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder iGame insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. iGame erbjuder insättningsmetoder som VISA, Mastercard, Neteller, Skrill, Trustly, Banköverföring, Paysafecard och Swish."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har iGame sportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det har dem. iGame erbjuder spel som Videopoker, Live casino och slots! "
+                }
+            },
             "title": "iGame",
             "color": "#fff",
             "textcolor": "#1e1747",
@@ -3227,6 +4195,31 @@
         },
         {
             "id": 51,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos MariaCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos MariaCasino är 25 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder MariaCasino insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. MariaCasino erbjuder insättningsmetoder som VISA, Mastercard, Neteller, Skrill, Trustly och Swish."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har MariaCasino sportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det har dem. MariaCasino erbjuder spel på Bordsspel, Live casino,Bingo och slots! "
+                }
+            },
             "title": "MariaCasino",
             "color": "#242433",
             "textcolor": "#db0934",
@@ -3257,7 +4250,7 @@
                     "egentitel": "Svenskt casino med generösa bonusar",
                     "egentitel2": "Odds och sport",
                     "toprecension": "MariaCasino hette tidigare MariaBingo. Casinot grundades 2006 och har blivit ett stabilt casino på den svenska marknaden. Sajten fick en total makeover på sitt 10-årsjubileum. Layouten på sidan är väldigt modern och snygg. Väldigt simpelt att navigera sig runt på sidan också. Surfar man in på MariaCasino på paddan eller mobilen så möts man av en väldigt snygg och väldesignad mobilversion. Så spel i mobilen/paddan är inga problem.  Erbjuder de vanligaste insättningsmetoderna. Med lägsta insättning på 25kr. Uttagen går snabbt beroende på vilken uttagsmetod man väljer. Har en väldigt bra supportsida med flertal frågor samt svar på dem. MariaCasino har en väldigt bra bingo sektion för spelarna som tycker om bingo",
-                    "secondrec": "Casinosektionen hos MariaCasino är väldigt simpel men snygg. Har en kategori som kallas 'Supercasino', där finns det utvalda slots som har en RTP(Revenue to player) på 98%. Har väldigt många slots med jackpot. Har ingen direkt filterfunktion utan du kan endast söka efter spel. Erbjuder flera klassiker som Bonanza,Dead or Alive, Starburst,Gonzo Quest, Mega Fortune Dreams och många fler!. MariaCasino erbjuder även exklusiva slots. Utöver slots så erbjuder casinot även spel på bordsspel och bingo. Har väldigt många slots med jackpots. ",
+                    "secondrec": "Casinosektionen hos MariaCasino är väldigt simpel men snygg. Har en kategori som kallas 'Supercasino', där finns det utvalda slots som har en RTP(Revenue to player) på 98%. Har väldigt många slots med jackpot. Har ingen direkt filterfunktion utan du kan endast söka efter spel. Erbjuder flera klassiker som Bonanza,Dead or Alive, Starburst,Gonzo Quest, Mega Fortune Dreams och många fler!. MariaCasino erbjuder även exklusiva slots. Utöver slots så erbjuder casinot även spel på Bordsspel,Live Casino och bingo. Har väldigt många slots med jackpots. ",
                     "sportsrec": "Ingen sports sektion",
                     "welcomeoffer": "Välj mellan tre välkomstbonusar. 100% upp till 500 kr(omsättningsfritt), 500% upp till 2000 kr & 100% upp till 1000 kr",
                     "bonusterms": [
@@ -3282,6 +4275,31 @@
         },
         {
             "id": 52,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Bingo.com?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Bingo.com är 25 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Bingo.com insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Bingo.com erbjuder insättningsmetoder som VISA, Mastercard, Neteller, Skrill, Trustly, Swish och PaysafeCard."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har Bingo.com sportsbetting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det har dem. Bingo.com erbjuder spel på Bordsspel, Live casino,Bingo och slots! "
+                }
+            },
             "title": "Bingocom",
             "color": "#fff",
             "textcolor": "#e73c41",
@@ -3501,6 +4519,31 @@
         },
         {
             "id": 55,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos KarlCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos KarlCasino är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder KarlCasino insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. KarlCasino erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Hur många slots har KarlCasino ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KarlCasino har över 1000+ slots. Från kända leverantörer som Microgaming, NetEnt, WMS,Elk Gaming,Novomatic Evolution Live, Amatic och många fler!"
+                }
+            },
             "title": "KarlCasino",
             "slogan": "Svenskt Casino - över 1000 slots!",
             "color": "#0b5a99",
@@ -3558,6 +4601,31 @@
         },
         {
             "id": 56,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos GoGoCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos GoGoCasino är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder GoGoCasino insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, Det gör dem inte. GoGoCasino erbjuder endast insättningar via Swish och Trustly."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har GoGoCasino svensk spellicens ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det har dem. GoGoCasino har haft svensk spellicens sedan 2018-11-26."
+                }
+            },
             "title": "GoGoCasino",
             "slogan": "Casino utan registrering",
             "color": "#120f0a",
@@ -3613,6 +4681,31 @@
         {
             "id": 57,
             "title": "Turbico",
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Turbico?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Turbico är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Turbico insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, Det gör dem inte. Turbico erbjuder endast insättningar och uttag via Trustly."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har Turbico svensk spellicens ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det har dem. Turbico har haft svensk spellicens sedan 2018-12-12."
+                }
+            },
             "slogan": "Casino utan registrering",
             "color": "#2c163b",
             "textcolor": "#22d0a1",
@@ -3666,6 +4759,31 @@
         },
         {
             "id": 58,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos LuckyVegas?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos LuckyVegas är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder LuckyVegas insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. LuckyVegas erbjuder insättningar via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har LuckyVegas svensk spellicens ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det har dem. LuckyVegas har haft svensk spellicens sedan 2018-11-29."
+                }
+            },
             "title": "LuckyVegas",
             "slogan": "Nytt Svenskt Casino",
             "color": "#2a0241",
@@ -3722,6 +4840,31 @@
         },
         {
             "id": 59,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Dreamz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Dreamz är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Dreamz insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Dreamz erbjuder insättningar endast via Visa, Mastercard och Trustly."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Hur många slots har Dreamz ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dreamz har över 1100+ slots från över 40+ kända leverantörer som  Microgaming, NetEnt, RedTiger, Play n Go, YggDrasil, Elk studios och många fler !"
+                }
+            },
             "title": "Dreamz",
             "slogan": "Nytt Svenskt Casino",
             "color": "#ffffff",
@@ -3776,6 +4919,31 @@
         },
         {
             "id": 60,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos InAndOutBet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos InAndOutBet är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder InAndOutBet insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. InAndOutBet erbjuder endast insättningar via Trustly."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har InAndOutBet svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja,det har dem. InAndOutBet har haft svensk spellicens sedan 2018-12-12."
+                }
+            },
             "title": "InAndOutBet",
             "slogan": "Ett Snabbt casino",
             "color": "#151515",
@@ -3830,6 +4998,31 @@
         },
         {
             "id": 61,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Gate777?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Gate777 är 200 kr. För att göra ett uttag är minsta beloppet 250 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Gate777 insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. Gate777 erbjuder insättningar via Trustly, Visa, Mastercard, Skrill, Neteller, PaysafeCard och Banköverföring."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har Gate777 svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja,det har dem. Gate777 har haft svensk spellicens sedan 2018-12-27."
+                }
+            },
             "title": "Gate777",
             "slogan": "Casino med Trustly",
             "color": "#232629",
@@ -3885,6 +5078,31 @@
         },
         {
             "id": 62,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos SpinStationX ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos SpinStationX är 200 kr. För att göra ett uttag är minsta beloppet 300 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder SpinStationX insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. SpinStationX erbjuder endast insättningar och uttag via Trustly."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har SpinStationX svensk spellicens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja,det har dem. SpinStationX har haft svensk spellicens sedan 2018-12-27."
+                }
+            },
             "title": "SpinStationX",
             "slogan": "Casino med Trustly",
             "color": "#fcfbf9",
@@ -3939,6 +5157,31 @@
         },
         {
             "id": 63,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos 10Bet ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos 10Bet är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder 10Bet insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem. 10Bet erbjuder insättning via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "🎮 Har 10Bet betting på esport?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja,det har dem. Du kan spela på esportsbetting hos 10Bet. På spel som CSGO,Dota2 och Leauge of Legends."
+                }
+            },
             "title": "10bet",
             "slogan": "Hämta Bonuskod fö Odds bonus",
             "color": "#efefef",
@@ -4008,6 +5251,31 @@
         },
         {
             "id": 64,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos Casimba ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos Casimba är 200 kr. För att göra ett uttag är minsta beloppet 100 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder Casimba  insättningar via faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem. Casimba erbjuder insättning via Trustly, Visa, Mastercard, Paysafecard, Skrill, Neteller och Banköverföring."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓ Har Casimba sports betting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det har dem inte. Casimba erbjuder spel på Slots, Live Casino och Bordsspel."
+                }
+            },
             "title": "Casimba",
             "slogan": "Casino med Trustly",
             "color": "#2c2c2c",
@@ -4057,6 +5325,89 @@
                     "swish": false,
                     "livechat": true,
                     "summering": "Casimba är ett säkert och bra nätcasino. Layouten är modern och anpassad för alla enheter. Casimba erbjuder livechatt dygnet runt. Erbjuder snabba utbetalningar och insättningar. Har ett grymt utbud av slots från kända leverantörer. Alla eventuella vinster är skattefria eftersom Casimba har svensk spellicens. Erbjuder utöver slots även spel på Live Casino, Bordsspel, Poker och Roulette. Har just nu ett av marknadens bästa erbjudanden. Grymt casino! "
+                }
+            ]
+        },
+        {
+            "id": 65,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos YoBetIt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos YoBetIt är 100 kr. För att göra ett uttag är minsta beloppet 250 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder YoBetIt insättningar med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, det gör dem inte. YoBetIt erbjuder insättningar via insättningsmetoder som Trustly, Visa, Mastercard, Skrill och bank överföring."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "✨Hur många slots har YoBetIt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "I skrivandet stund har YoBetIt ca 273 slots som man kan spela på."
+                }
+            },
+            "title": "Yobetit",
+            "slogan": "Pay n Play Casino",
+            "color": "#fff",
+            "textcolor": "#4b0854",
+            "setTop": false,
+            "depositbonus": "Insättningsbonus på 150% upp till 1500kr",
+            "sportsbonus": "Insättningsbonus på 150% upp till 1500kr",
+            "mylink": "https://media.yoaffiliates.com/redirect.aspx?pid=3054&bid=2066",
+            "rules": "https://media.yoaffiliates.com/redirect.aspx?pid=3054&bid=2050",
+            "caslogo": "/images/yobetit.png",
+            "wager": 35,
+            "sportswager": 10,
+            "extratext": "",
+            "sports": true,
+            "freespins": 0,
+            "activebonus": true,
+            "bankid": true,
+            "publishdate": "26 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 150,
+            "faktura": false,
+            "fakturatype": [],
+            "recension": [
+                {
+                    "gamebar": 75,
+                    "experience": 90,
+                    "support": 70,
+                    "egentitel": "Fokus på betting",
+                    "egentitel2": false,
+                    "toprecension": "YoBetIt grundades 2012 vilket bevisar att casinot har flera års erfarenhet. Casinot har haft en svensk spellicens sedan maj 2019. När du kommer in på casinot så möts du av en hundskål som laddar. Hundskålen tillhör en av deras maskotar, hunden Skeeve. Sidan har en snygg layout med ett inslag av lila. Väldigt enkelt att navigera sig rung på sidan. Har en liten supportsektion där man kan hitta svar på dem vanligaste frågorna. Har även en livechatt med öppettider 09:00-18:00. Livechatten är på engelska. YoBetIt har fokus på betting, men på senare år har även casino tillkommit. Utbudet av slots är väldigt klent, vi hoppas att dem fyller på med mer slots. Casinot erbjuder ett gratis uttag under 30 dagar, därefter tillkommer det en avgift på 2%. YoBetIt har även en uttagsgräns på 50.000kr per 7 dagar. Att registrera ett konto samt logga in är väldigt enkelt med hjälp av bankid.",
+                    "secondrec": "Casinosektionen hos YoBetIt är okej. Man märker att dem har fokus på betting. Casinot har inte så många slots men dem videoslottar som dem har tillgängliga för spel är bra. Slotsen som dem har kommer från bra leverantörer som håller hög kvalitet. Layouten på casino sektionen är väldigt simpel men snygg. Vi hoppas att dem lägger till fler slots. ",
+                    "sportsrec": "YoBetIt fokuserar mest på betting. Dem har en väldigt simpel men snygg bettingsektion. Erbjuder betting på flera sporter och toppligor från hela världen. Vill man betta på något annat än sports så erbjuder dem även betting på events som t.ex. Oscars, Melodifestivalen, Politik m.m. När det kommer till esportsbetting så finns det tyvärr inte. Vill man spela på Live Betting så kan man det.",
+                    "welcomeoffer": "Insättningsbonus på 150% upp till 1500kr",
+                    "bonusterms": [
+                        "Minsta insättning är 100 SEK.",
+                        "Tillgänglig i 14 dagar efter registrering.",
+                        "Bonusvillkor för casinobonus och  bettingbonus gäller."
+                    ],
+                    "casinoterms": [
+                        "Omsättningskravet är 35x det totala värdet av din insättning och mottagen bonus.",
+                        "Maximalt belopp som kan konverteras från bonuspengar till riktiga pengar efter att omsättningskravet uppnåtts är 10.000 SEK."
+                    ],
+                    "sportsterms": [
+                        "Innan du gör ett uttag ska du ha avgjorda insatser till ett värde av minst 10x din insättning och bonus.",
+                        "Endast satsningar med odds på 1.75 eller högre räknas till omsättningskravet."
+                    ],
+                    "topslotgames": "Har ca 273 slots från kända leverantörer som  Evolution, Microgaming, Yggdrasil, Nyx, Thunderkick och Quickspin!",
+                    "deposittypes": "Trustly, Visa, Mastercard,Skrill, Banköverföring",
+                    "mindeposit": 100,
+                    "minout": 250,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "YoBetIt är en bra casinosida. Vi hade dock gärna sett mycket fler slots på casinosektionen. Erbjuder livechatt med engelsk talande support under 09:00-18:00. Har en sektion med de vanligaste frågorna och svar. Minsta insättningen är 100kr och uttaget är 250kr. Vill man göra fler än ett uttag under 30 dagar så tillkommer det en avgift på 2%. Finns en uttagsgräns på 50.000 kr per 7 dagar. Har ett bredd spelutbud med spel på Casino, Bordsspel, Live Casino, Betting och Live Betting."
                 }
             ]
         }

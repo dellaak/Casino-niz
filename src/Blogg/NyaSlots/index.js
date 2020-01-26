@@ -192,13 +192,47 @@ background-color: #ffc10736 !important;
             <link rel="canonical" href="https://www.casinoniz.se/nya-slots-2020" />
             <meta
                 name="description"
-                content="Nya Slots 2020✅ ➼ Prova årets nyaste och hetaste videoslots. Vi listar svenska casinon som släpper nya och grymma slots. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
+                content="Nya Slots 2020 ✅ ➼ Prova årets nyaste och hetaste videoslots. Vi listar svenska casinon som släpper nya och grymma slots. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
             />
             <meta
                 name="keywords"
                 content="Casino, Casinobonusar, välkomstbonus, 2019,2020, bonus, spela, insättningsbonus,videoslots,nytt free spins, faktura casino, casino faktura, bästa casinon,nya,publicerade,licenserade,svenska,casinon, bästa casinon 2020, nya slots 2020, videospel,"
             />
-
+            <script type="application/ld+json">{`
+      {
+        "@context": "https://schema.org",
+         "@type": "FAQPage",
+         "mainEntity": [{
+            "@type": "Question",
+            "name": "❓Vad är en bonusrunda?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bonusrundan är ett läge i spelet som aktiveras på olika sätt. Oftast så brukar det vara minst tre unika symboler, även kända som scatters som aktiverar bonusläget under en spelrunda. Oftast får man x antal gratisspins och någon sorts av extra funktion som t.ex. multiplikator eller låsta wilds."
+            }
+          },{
+            "@type": "Question",
+            "name": "✨Vad är RTP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RTP (Revenue to player) förenklat på svenska vinstutdelning till spelaren. Det är hur mycket av insatsen spelaren är beräknad på att få tillbaka på videoslotten. En RTP på exempelvis 94% betyder att videoslotten ger tillbaka 94kr per satsad hundralapp. RTP är dock beräknat på flera tusen spins så man ska inte stirra sig blind på det."
+            }
+          },{
+            "@type": "Question",
+            "name": "💰Är RTP viktigt när man väljer slot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Det ger spelaren en överblick på hur mycket videoslotten ger tillbaka. Men vi på Casinoniz tycker inte RTP är super viktigt eftersom det baseras på flera tusen spins. RTP ger däremot en insikt i att slotar är skapade för husets fördel."
+            }
+          },{
+          "@type": "Question",
+           "name": "⭐Tips för att hitta en bra slot?",
+           "acceptedAnswer": {
+             "@type": "Answer",
+            "text": "Vi tycker att man borde välja en slot som har bonusrundor. Bonusrundorna ska ha en multiplikator utan maxtak, retriggers och låsta wilds. Har en slot det så tycker vi att den är bra! Det är dock upp till varje person att hitta en slot som passar. Alla videoslots har egna teman och bonusfunktioner."
+          }
+        }]
+      }
+      `}</script>
         </Helmet>
 
 

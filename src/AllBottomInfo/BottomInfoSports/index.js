@@ -124,7 +124,7 @@ const BottomInfoSports = (props) => {
 
                                     <Collapse isOpen={q6}>
                                         <Card>
-                                            <CardBody ><div className="msg" xs="6" ><div >   <p>Beroende på spelbolag så kan nästan odds på i princip allt. Vem som blir nästa president, vem som vinner melodifestivalen, flera typer av sport events, esport och mycket mer!
+                                            <CardBody ><div className="msg" xs="6" ><div >   <p>Beroende på spelbolag så kan man oddsa på i princip allt. Vem som blir nästa president, vem som vinner melodifestivalen, flera typer av sport events, esport och mycket mer!
           </p></div>
                                             </div></CardBody>
                                         </Card>

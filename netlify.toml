@@ -398,3 +398,10 @@ baseURL = "/"
   to = "http://wlivyaffiliates.adsrv.eacdn.com/C.ashx?btag=a_7131b_374c_&affid=1491&siteid=7131&adid=374&c="
   status = 301
   query = {path = "/Go/casimba"}
+
+  [[redirects]]
+ from = "/Go/yobetit"
+  to = "https://media.yoaffiliates.com/redirect.aspx?pid=3054&bid=2066"
+  status = 301
+  query = {path = "/Go/yobetit"}
+

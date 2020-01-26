@@ -11,7 +11,7 @@ import LatestUpdate from "../LastUpdated"
 const Sports = (props) => {
 
     const [casinon, setCasinon] = useState([])
-    const [myactiveButton, setActiveButton] = useState({ wager: false, deposit: false })
+    const [myactiveButton, setActiveButton] = useState({ wager: false, deposit: false, odds: false })
     const [readmore, setReadMore] = useState(false);
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
@@ -71,7 +71,7 @@ const Sports = (props) => {
 
         setCasinon(wagerarr.concat(delItems))
         setSize(9)
-        setActiveButton({ wager: false, deposit: true })
+        setActiveButton({ odds: false, wager: false, deposit: true })
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -97,7 +97,33 @@ const Sports = (props) => {
 
         setCasinon(wagerarr.concat(delItems))
         setSize(9)
-        setActiveButton({ deposit: false, wager: true })
+        setActiveButton({ odds: false, deposit: false, wager: true })
+        setFade(true)
+        setTimeout(() => {
+            setFade(false);
+        }, 1000);
+    }
+
+    const oddsbutton = () => {
+        let list = [...casinon]
+        let wagerarr = [];
+        let delItems = []
+        for (let i of list) {
+            if (i.minodds > 0) {
+                wagerarr.push(i);
+            } else {
+                delItems.push(i)
+            }
+
+        }
+
+        wagerarr.sort((a, b) => {
+            return a.minodds - b.minodds;
+        });
+
+        setCasinon(wagerarr.concat(delItems))
+        setSize(9)
+        setActiveButton({ odds: true, deposit: false, wager: false })
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -132,7 +158,7 @@ const Sports = (props) => {
 
 
         setCasinon(sportCasinon)
-        setActiveButton({ deposit: false, wager: false })
+        setActiveButton({ deposit: false, wager: false, odds: false })
         setFade(true)
         setTimeout(() => {
             setFade(false);
@@ -179,45 +205,45 @@ const Sports = (props) => {
          "@type": "FAQPage",
          "mainEntity": [{
           "@type": "Question",
-          "name": "Hur fungerar en sports bonus?",
+          "name": "💰Hur fungerar en sports bonus?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Sportbonus även oddsbonus får man när ett casino ger spelaren ett erbjudande. Oftast när man registrerar sig på ett nytt casino. Då kan man få en insättningsbonus på X antal procent eller så kan man få en vinstboost."
           }
         }, {
           "@type": "Question",
-           "name": "Vad är vinstboost?",
+           "name": "❓Vad är vinstboost?",
            "acceptedAnswer": {
              "@type": "Answer",
             "text": "Vinstboost är när spelbolaget ger dig chansen att vinna lite extra på dina eventuella vinster. Vinstboosten brukar vara X antal procent. Oftast är det kombinationsspel som vinstboosten erbjuds på eller på utvalda ligor. Beroende på spelbolagets villkor så kan vinstboosten vara omsättningsfri eller omfattas av ett omsättningskrav."
           }
         }, {
           "@type": "Question",
-          "name": "Vad är ett kombinationsspel inom odds?",
+          "name": "⭐Vad är ett kombinationsspel inom odds?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Kombinationsspel är när spelaren satsar på två eller flera events samtidigt på en kupong. Alla individuella odds multipliceras och ger dig ett total odds på din kupong. Man måste vinna på alla individuella events för att vinna. Förlorar du på ett event så förlorar du hela din kupong."
           }
         }, {
           "@type": "Question",
-          "name": "Vad är ett omsättningskrav på odds?",
+          "name": "❓Vad är ett omsättningskrav på odds?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Har du mottagit en bonus med omsättningskrav så måste du omsätta X antal kronor innan du kan ta ut dina pengar. Exempel: Insättningsbonus 100% och 6x i omsättningskrav på bonusen. Du sätter in 100kr och får 200kr att spela för. 100kr är dina egna pengar och 100kr är bonusen.Då måste du omsätta 6 * 100  = 600. Så för att kunna ta ut vinsten så måste du spela för(omsätta) minst 600kr!"
           }
         }, {
           "@type": "Question",
-         "name": "Vad är ett odds?",
+         "name": "✅Vad är ett odds?",
          "acceptedAnswer": {
            "@type": "Answer",
            "text": "Odds är sannolikheten på att något specifikt ska inträffa. Om vi tar fotboll som exempel. Du tror att det blir över 5 hörnor under första  halvleken, du spelar för 100 kr och du får 1.44 i odds. Blir det över 5 hörnor under första halvleken så vinner du 1.44 + 100 = 144 kr."
          }
        }, {
            "@type": "Question",
-          "name": "Vad kan man oddsa på?",
+          "name": "✨Vad kan man oddsa på?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Beroende på spelbolag så kan nästan odds på i princip allt. Vem som blir nästa president, vem som vinner melodifestivalen, flera typer av sport events, esport och mycket mer!"
+            "text": "Beroende på spelbolag så kan man oddsa på i princip allt. Vem som blir nästa president, vem som vinner melodifestivalen, flera typer av sport events, esport och mycket mer!"
           }
         }]}`}</script>
             </Helmet>
@@ -275,8 +301,10 @@ const Sports = (props) => {
                 id="filterid"
                 wager={wagerbutton}
                 deposit={depositbutton}
+                odds={oddsbutton}
                 activebuttonwager={myactiveButton.wager}
                 activebuttondep={myactiveButton.deposit}
+                activebuttonodds={myactiveButton.odds}
                 reset={resetList}
             />
             <div className={fade ? "fade-in" : "casino-wrap"}>

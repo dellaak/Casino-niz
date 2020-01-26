@@ -215,11 +215,11 @@ const CasinoMedFaktura = (props) => {
         <Container className="wrapit">
             <div>
                 <Helmet>
-                    <title>Faktura Casino ⭐  | Spela på faktura | Casinoniz</title>
+                    <title>Faktura Casino ⭐ | Spela på faktura | Casinoniz</title>
                     <link rel="canonical" href="https://www.casinoniz.se/faktura-casino" />
                     <meta
                         name="description"
-                        content="[Uppdaterad✅]Spela casino på faktura. Vi listar Svenska casino med faktura som insättningsmetod. Hitta ditt faktura casino här."
+                        content="[Ny lista 2020✅] Spela casino på faktura ➼ Vi listar Svenska casino med faktura som insättningsmetod. Hitta ditt faktura casino här."
                     />
                     <meta
                         name="keywords"
