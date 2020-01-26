@@ -48,7 +48,7 @@ const SwishCasino = (props) => {
     const [casinon, setCasinon] = useState([])
     const [swishList, setSwishList] = useState([])
 
-    const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
+    const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false, activebuttonodds: false })
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
     const [sports, setSports] = useState(false)
@@ -103,7 +103,7 @@ const SwishCasino = (props) => {
 
             setCasinon(wagerarr)
             setSize(9)
-            setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+            setButtons({ activebuttonodds: false, activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
             setFade(true)
 
             setTimeout(() => {
@@ -155,7 +155,7 @@ const SwishCasino = (props) => {
         setCasinon(wagerarr)
         setSize(9)
 
-        setButtons({ activebuttondep: false, activebuttonwager: true, activebuttonfree: false })
+        setButtons({ activebuttonodds: false, activebuttondep: false, activebuttonwager: true, activebuttonfree: false })
 
 
         setFade(true)
@@ -205,7 +205,7 @@ const SwishCasino = (props) => {
         setCasinon(wagerarr)
         setSize(9)
 
-        setButtons({ activebuttondep: true, activebuttonwager: false, activebuttonfree: false })
+        setButtons({ activebuttonodds: false, activebuttondep: true, activebuttonwager: false, activebuttonfree: false })
 
 
 
@@ -241,7 +241,7 @@ const SwishCasino = (props) => {
         setCasinon(wagerarr)
         setSize(9)
 
-        setButtons({ activebuttondep: false, activebuttonwager: false, activebuttonfree: true })
+        setButtons({ activebuttonodds: false, activebuttondep: false, activebuttonwager: false, activebuttonfree: true })
 
 
         setFade(true)
@@ -249,16 +249,42 @@ const SwishCasino = (props) => {
         setTimeout(() => {
             setFade(false);
         }, 1000);
-
-
-
     }
+
+
+
+    const oddsbutton = () => {
+        let list = [...swishList]
+        let wagerarr = [];
+        let delItems = []
+        for (let i of list) {
+            if (i.minodds > 0) {
+                wagerarr.push(i);
+            } else {
+                delItems.push(i)
+            }
+
+        }
+
+        wagerarr.sort((a, b) => {
+            return a.minodds - b.minodds;
+        });
+
+        setCasinon(wagerarr.concat(delItems))
+        setSize(9)
+        setButtons({ activebuttonodds: true, activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+        setFade(true)
+        setTimeout(() => {
+            setFade(false);
+        }, 1000);
+    }
+
 
     const resetList = () => {
 
         setCasinon(swishList)
         setSports(false)
-        setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+        setButtons({ activebuttonodds: false, activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
         setFade(true)
         setSize(9)
         setTimeout(() => {
@@ -395,10 +421,13 @@ const SwishCasino = (props) => {
 
             </StyledSecondFilter>
             <FilterCasinoMed
+                issport={sports}
                 id="filterid"
                 wager={wagerbutton}
                 free={freewagerbutton}
                 deposit={depositbutton}
+                odds={oddsbutton}
+                activebuttonodds={buttons.activebuttonodds}
                 activebuttonwager={buttons.activebuttonwager}
                 activebuttonfree={buttons.activebuttonfree}
                 activebuttondep={buttons.activebuttondep}

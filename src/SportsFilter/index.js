@@ -12,7 +12,7 @@ const SportsFilter = (props) => {
         <div className="oui">
             <div>
                 <h2 className="filter-title">
-                    Filtrera sportsbonusar genom att klicka på knapparna nedanför
+                    Filtrera sport bonus genom att klicka på knapparna nedanför
           </h2>
             </div>
             <div className="filter-box">

@@ -64,7 +64,7 @@ const Casinobonuscomp = (props) => {
     const [casinon, setCasinon] = useState([])
     const [activebonusList, setactiveList] = useState([])
 
-    const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
+    const [buttons, setButtons] = useState({ activebuttonodds: false ,activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
     const [sports, setSports] = useState(false)
@@ -125,7 +125,7 @@ const Casinobonuscomp = (props) => {
             setCasinon(wagerarr)
 
             setSize(9)
-            setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+            setButtons({activebuttonodds: false , activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
             setFade(true)
 
             setTimeout(() => {
@@ -178,7 +178,7 @@ const Casinobonuscomp = (props) => {
 
         setCasinon(wagerarr.concat(delItems))
         setSize(9)
-        setButtons({ activebuttondep: false, activebuttonwager: true, activebuttonfree: false })
+        setButtons({activebuttonodds: false , activebuttondep: false, activebuttonwager: true, activebuttonfree: false })
         setFade(true)
 
 
@@ -225,7 +225,7 @@ const Casinobonuscomp = (props) => {
 
         setCasinon(wagerarr.concat(depositdelete))
         setSize(9)
-        setButtons({ activebuttondep: true, activebuttonwager: false, activebuttonfree: false })
+        setButtons({activebuttonodds: false , activebuttondep: true, activebuttonwager: false, activebuttonfree: false })
 
         setFade(true)
 
@@ -258,7 +258,7 @@ const Casinobonuscomp = (props) => {
 
         setCasinon(wagerarr)
         setSize(9)
-        setButtons({ activebuttondep: false, activebuttonwager: false, activebuttonfree: true })
+        setButtons({ activebuttonodds: false ,activebuttondep: false, activebuttonwager: false, activebuttonfree: true })
 
         setFade(true)
 
@@ -266,14 +266,38 @@ const Casinobonuscomp = (props) => {
             setFade(false);
         }, 1000);
 
+    }
 
+    const oddsbutton = () => {
+        let list = [...activebonusList]
+        let wagerarr = [];
+        let delItems = []
+        for (let i of list) {
+            if (i.minodds > 0) {
+                wagerarr.push(i);
+            } else {
+                delItems.push(i)
+            }
 
+        }
+
+        wagerarr.sort((a, b) => {
+            return a.minodds - b.minodds;
+        });
+
+        setCasinon(wagerarr.concat(delItems))
+        setSize(9)
+        setButtons({ activebuttonodds: true, activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+        setFade(true)
+        setTimeout(() => {
+            setFade(false);
+        }, 1000);
     }
 
     const resetList = () => {
         setCasinon(activebonusList)
         setSports(false)
-        setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+        setButtons({activebuttonodds: false , activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
         setSize(9)
         setFade(true)
         setTimeout(() => {
@@ -421,10 +445,13 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
 
             </StyledSecondFilter>
             <FilterCasinoMed
+            issport={sports}
                 id="filterid"
+                odds={oddsbutton}
                 wager={wagerbutton}
                 free={freewagerbutton}
                 deposit={depositbutton}
+                activebuttonodds={buttons.activebuttonodds}
                 activebuttonwager={buttons.activebuttonwager}
                 activebuttonfree={buttons.activebuttonfree}
                 activebuttondep={buttons.activebuttondep}

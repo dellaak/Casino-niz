@@ -67,10 +67,20 @@
   .Snabbfakta-preview {
     border: none;
   }
+
+  .Snabbfakta-preview:first-child {
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (orientation: portrait) {
   .Snabbfakta-preview {
     border: none;
+  }
+
+  .Snabbfakta-preview:first-child {
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
   }
 }

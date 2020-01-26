@@ -15,7 +15,7 @@ const StyledButton = styled.button`
   color: black;
   cursor: pointer;
   padding: 15px;
-  border-radius: 50px;
+  border-radius: 9px;
 
   @media (max-width: 800px) {
       right:3px;

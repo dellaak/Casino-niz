@@ -16,7 +16,7 @@ const Filter = (props) => {
         <div className="oui">
             <div>
                 <h2 className="filter-title">
-                    Filtrera casinobonusar genom att klicka på knapparna nedanför
+                    Filtrera casino bonus genom att klicka på knapparna nedanför
           </h2>
             </div>
             <div className="filter-box">

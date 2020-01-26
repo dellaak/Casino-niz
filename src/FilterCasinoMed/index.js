@@ -35,15 +35,24 @@ const FilterCasinoMed = (props) => {
                     <img src={cash} className="svg-icon" alt="cash-icon" />
                     Högst Insättningsbonus
           </Button>
-                <Button
-                    onClick={props.free}
+                {props.issport ? <Button
+                    onClick={props.odds}
                     className={
-                        props.activebuttonfree ? "active1" : "filter-buttons "
+                        props.activebuttonodds ? "active1" : "filter-buttons "
                     }
                 >
                     <img src={icon} className="svg-icon" alt="freespin-icon" />
-                    Omsättningsfria Freespins
-          </Button>{" "}
+                    Minsta Odds
+          </Button> : <Button
+                        onClick={props.free}
+                        className={
+                            props.activebuttonfree ? "active1" : "filter-buttons "
+                        }
+                    >
+                        <img src={icon} className="svg-icon" alt="freespin-icon" />
+                        Omsättningsfria Freespins
+                </Button>}
+
             </div>
             <div className="clear-filter">
                 <Button

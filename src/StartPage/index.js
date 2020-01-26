@@ -212,7 +212,7 @@ const StartPage = (props) => {
   return (<React.Fragment>
     <section >
       <Helmet>
-        <title>Svenska Casino 2020 ⭐ - Jämför casinobonusar | Casinoniz</title>
+        <title>Svenska Casino 2020 ⭐ - Jämför casino bonus | Casinoniz</title>
         <link rel="canonical" href="https://www.casinoniz.se/" />
         <meta
           name="description"
@@ -312,13 +312,13 @@ const StartPage = (props) => {
           <Recommended list={[...props.start.Casinon]} isBlocked={props.isBlocked}></Recommended>
 
           <p>
-            Svenska casino som erbjuder välkomstbonus även känt som casinobonusar är något som har gynnat spelare i den svenska spelmarknaden.
+            Svenska casino som erbjuder välkomstbonus även känt som casino bonus är något som har gynnat spelare i den svenska spelmarknaden.
  Du hittar alla casinon med <Link to="/casino-bonus">aktiv casino bonus</Link> på vår bonus sektion. Den vanligaste casinobonusen som brukar
-                                                                 erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
-                                                                 Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens.
-                                                                 Casinobonusar även kallat välkomstbonus är en bonus där man som spelare kan få lite extra
-                                                                 pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
-                                                                 Välkommen!
+                                                                            erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
+                                                                            Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens.
+                                                                            Casino bonus även kallat välkomstbonus är en bonus där man som spelare kan få lite extra
+                                                                            pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
+                                                                            Välkommen!
             </p>
           <p>
             Betta på E-sport ? Vi har även en esport sektion där vi listar
@@ -337,7 +337,7 @@ const StartPage = (props) => {
             Freespins, som ger spelaren gratissnurr på utvalda slotmaskiner.
             Vissa casinon erbjuder även en kombo av freespins och en
             insättningsbonus.
-                På Casinoniz har vi samlat de senaste casinobonusar från
+                På Casinoniz har vi samlat de senaste casino bonusar från
                 svenska casinon. Vi väljer att endast lista casinon med svensk
                 spellicens eftersom det ger dig som spelare ett säkrare casino
                 att spela på. På både epsort betting och casino faktura sektionen kan du filtrera casinon efter just dina önskemål.

@@ -32,7 +32,7 @@ const EsportsFilter = (props) => {
         <div className="oui">
             {" "}
             <div>
-                <h4 className="filter-title">Vilket spel vill du betta på ?</h4>{" "}
+                <h4 className="filter-title"><b>1</b>. Vilket spel vill du betta på?<small>(Frivilligt)</small></h4>{" "}
             </div>{" "}
             <div className="filter-box">
                 <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -94,7 +94,7 @@ const EsportsFilter = (props) => {
                 </Dropdown>
             </div>
             <div>
-                <h4 className="filter-title">Filtrera efter {selection} </h4>
+                <h4 className="filter-title"><b>2</b>. Filtrera efter {selection === "Välj spel" ? '' : selection} </h4>
             </div>
             <div className="filter-box">
                 <Button

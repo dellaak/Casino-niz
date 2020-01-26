@@ -54,7 +54,7 @@ const Bottominfo = (props) => {
 
                                 <Collapse isOpen={q1}>
                                     <Card>
-                                        <CardBody ><div className="msg" xs="6"  ><div ><p>Casinobonus även kallade välkomstbonusar är ett erbjudande casinot erbjuder spelaren. Den vanligaste casinobonusen är att man får ett visst antal procent i insättningsbonus. Casinoniz listar aktuella casinobonusar från svenska licensierade casinon. Tänk på att läsa villkoren och kolla upp eventuella omsättningskrav på bonusar</p></div>
+                                        <CardBody ><div className="msg" xs="6"  ><div ><p>Casinobonus även kallade välkomstbonusar är ett erbjudande casinot erbjuder spelaren. Den vanligaste casinobonusen är att man får ett visst antal procent i insättningsbonus. Casinoniz listar aktuella casino bonus från svenska licensierade casinon. Tänk på att läsa villkoren och kolla upp eventuella omsättningskrav på bonusar</p></div>
                                         </div></CardBody>
                                     </Card>
                                 </Collapse>
@@ -266,14 +266,14 @@ const Bottominfo = (props) => {
             </div>
 
             <div className="info-bottom-box">
-                <h3>Casinobonusar svensk spellicens</h3>
+                <h3>Casino bonus svensk spellicens</h3>
                 <p>
                     Lagen anger att ett online casino endast får erbjuda en enda insättningsbonus per ny spelare.
           </p>
             </div>
 
             <div className="info-bottom-box">
-                <h3>Casinobonusar i iPhone/iPad</h3>
+                <h3>Casino bonus i iPhone/iPad</h3>
                 <p>
                     De flesta casinon är mobilanpassade så det finns inga hinder att ta emot en casinobonus med mobilen eller paddan.
           </p>

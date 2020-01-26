@@ -27,12 +27,12 @@ const Terms = () => {
                 <p>
                     Casinoniz.se är en fristående sida och vi uppmuntrar inte till spel.
                     Vi tillhandahåller endast en tjänst som listar casinon eller
-                    casinobonusar.
+                    casino bonusar.
           </p>
                 <p>
                     För att besöka casinoniz.se så måste man vara över 18 år gammal och
                     inte vara registrerad hos spelpaus.se . Denna sida är endast till
-                    för marknadsföring av casinon och diverse casinobonusar.
+                    för marknadsföring av casinon och diverse casino bonus.
           </p>
                 <p>
                     Våra besökare ska vara införstådda om att spel med pengar inte

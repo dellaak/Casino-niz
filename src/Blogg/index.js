@@ -88,7 +88,7 @@ const Top5 = (props) => {
         <section className="blogg">
 
             <h1 className="banners">Kampanjer casino 2020 </h1>
-            <p>Välkomna till Casinoniz kampanjer/casinoblogg. Här skriver vi ut allt som har med casinobonusar, betting, sports,esport, slots och massa annat. Typ allt som har med spel att göra. </p>
+            <p>Välkomna till Casinoniz kampanjer/casinoblogg. Här skriver vi ut allt som har med casino bonus, betting, sports,esport, slots och massa annat. Typ allt som har med spel att göra. </p>
 
             <p>
                 Hoppas att det vi skriver ut här får dig som läsare att finna det intressant :)
