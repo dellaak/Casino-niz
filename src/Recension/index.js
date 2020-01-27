@@ -44,6 +44,7 @@ const Recension = (props) => {
 
 
 	const [overall, setOverall] = useState({
+		title: '',
 		selectedCasino: false, recension: false, q1: false,
 		q2: false,
 		q3: false,
@@ -83,6 +84,7 @@ const Recension = (props) => {
 							selec = i
 							return setOverall({
 								...overall,
+								title: i.title,
 								selectedCasino: i,
 								recension: i.recension[0],
 								casinoterms: i.recension[0].casinoterms,
@@ -233,18 +235,13 @@ box-shadow: 2px 21px 35px -13px rgba(173,173,173,1);
 `
 
 
-
-
-
-
-
 	return (
 
 		<Container className="recension-wrapper">
 			<Helmet>
 				<link rel="canonical" href={`https://www.casinoniz.se/recension/${casinotitle.toLowerCase()}`} />
 				<title>
-					{casinotitle.length > 3 ? `${casinotitle} Recension & Snabbfakta ⇛ ` : ''}
+					{casinotitle.length > 3 ? `${selectedCasino.title} Recension & Snabbfakta ⇛ ` : ''}
 					{selectedCasino ? `${selectedCasino.slogan}` : "Snabbfakta"} |
 					Casinoniz
           </title>

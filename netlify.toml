@@ -405,3 +405,12 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/yobetit"}
 
+
+   [[redirects]]
+ from = "/Go/21casino"
+  to = "https://welcome.twentyoneaffiliates.com/afs/come.php?cid=27871&ctgid=1044&atype=1&brandid=17"
+  status = 301
+  query = {path = "/Go/21casino"}
+
+
+

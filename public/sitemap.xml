@@ -9,20 +9,20 @@
 
 <url>
   <loc>https://www.casinoniz.se/</loc>
-  <lastmod>2020-01-27T00:15:00+01:00</lastmod>
+  <lastmod>2020-01-27T18:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.casinoniz.se/esportbetting</loc>
-  <lastmod>2020-01-27T00:15:00+01:00</lastmod>
+  <lastmod>2020-01-27T18:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://www.casinoniz.se/faktura-casino</loc>
- <lastmod>2020-01-27T00:15:00+01:00</lastmod>
+ <lastmod>2020-01-27T18:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
@@ -52,7 +52,7 @@
 
 <url>
   <loc>https://www.casinoniz.se/casino-trustly</loc>
-  <lastmod>2020-01-27T00:15:00+01:00</lastmod>
+  <lastmod>2020-01-27T18:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
@@ -135,6 +135,12 @@
 <url>
   <loc>https://www.casinoniz.se/recension/storspelare/</loc>
   <lastmod>2020-01-26T04:00:00+01:00</lastmod>
+  <priority>0.50</priority>
+</url>
+
+<url>
+  <loc>https://www.casinoniz.se/recension/21casino</loc>
+<lastmod>2020-01-27T18:00:00+01:00</lastmod>
   <priority>0.50</priority>
 </url>
 

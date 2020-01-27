@@ -53,7 +53,7 @@ const Snabbfakta = (props) => {
                     <p>Livechat: {recension.livechat ? "✅" : "❌"}{" "}</p>
                     <p>Swish: {recension.swish ? "✅" : "❌"}</p>
                     <div>
-                        <p>Insättningsmetoder: {recension.deposittypes}</p>
+                        <p>Insättningsmetoder: <b>{recension.deposittypes}</b></p>
                     </div>
 
                 </div>
