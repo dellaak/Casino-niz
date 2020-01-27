@@ -299,7 +299,7 @@ ul{
 
                         <p>Med asiatiska symboler så är detta ett väldigt underhållande spel. Det finns även en symbol som är en guldig drake som agerar som wild. Spelet är väldigt likt ett lite äldre spel från NetEnt som heter <b>Dazzle Me</b>. </p>
 
-                        <h4>Forunte Rangers Bonus</h4>
+                        <h4>Fortune Rangers Bonus</h4>
                         <p>Spelet innehåller så kallade scatters. Skulle du få 3 eller fler scatters vart som helst på spelet under en runda så triggas bonusen igång.För 3 scatters får du 8 freespins, 4 scatters ger 12 freespins och 5 scatters ger 16 freespins. Får du fler scatters under bonusen så får du fler freespins. Under bonusrundan så kan 2 hjul länka till varandra och visa samma symboler. Finns även slumpmässiga wilds som täcker hela hjul, med chans på wilds upp till alla 5 hjul samtidigt. </p>
 
 
