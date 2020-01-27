@@ -12,12 +12,13 @@ const NyaSlots = (props) => {
         monte: ['mrgreen', 'gate777', 'snabbis', 'betsafe', 'leovegas', 'prankcasino', 'noaccountcasino'],
         exo2: ['casumo', 'vera&john', 'prankcasino', 'noaccountcasino', 'snabbis'],
         pros: ['leovegas'],
-        monmeg: ['casimba', 'ahtigames', 'playojo', 'videoslots', 'karlcasino', 'snabbis', 'mrgreen', 'leovegas', 'sverigeautomaten', 'betsafe', 'betsson', 'vera&john', 'gogocasino', 'prankcasino', 'noaccountcasino', 'hyper', 'dreamz', 'voodoodreams'],
-        pigmeg: ['leovegas', 'ahtigames', 'dreamz', 'comeon', 'hajper', 'snabbare', 'unibet', 'noaccountcasino', 'videoslots', 'snabbis', 'playojo']
+        forran: ['dreamz', 'comeon', 'snabbare', 'unibet', 'noaccountcasino', 'hajper', 'vera&john'],
+        monmeg: ['casimba', 'playojo', 'videoslots', 'karlcasino', 'snabbis', 'mrgreen', 'leovegas'],
+        pigmeg: ['leovegas', 'unibet', 'dreamz', 'comeon', 'hajper', 'snabbare']
     })
-    const [casinoSize, setCasinoSize] = useState({ monte: 2, monmeg: 2, exo2: 2, pigmeg: 2 })
-    const [topCasinon, setTopList] = useState({ monte: [], exo2: [], pros: [], monmeg: [], pigmeg: [] })
-    const [isOpen, setIsOpen] = useState({ monte: false, exo2: false, pros: false, monmeg: false, pigmeg: false })
+    const [casinoSize, setCasinoSize] = useState({ monte: 2, monmeg: 2, exo2: 2, pigmeg: 2, forran: 2 })
+    const [topCasinon, setTopList] = useState({ monte: [], exo2: [], pros: [], monmeg: [], pigmeg: [], forran: [] })
+    const [isOpen, setIsOpen] = useState({ monte: false, exo2: false, pros: false, monmeg: false, pigmeg: false, forran: false })
 
     useEffect(() => {
 
@@ -29,6 +30,7 @@ const NyaSlots = (props) => {
         let pros = []
         let monmeg = []
         let pigmeg = []
+        let forran = []
 
 
         list.filter(i => {
@@ -48,13 +50,16 @@ const NyaSlots = (props) => {
             if (slotCasinon.pigmeg.includes(i.title)) {
                 pigmeg.push(i)
             }
+            if (slotCasinon.forran.includes(i.title)) {
+                forran.push(i)
+            }
             return list
         })
 
 
 
 
-        return setTopList({ monte: monte, exo2: exo2, pros: pros, monmeg: monmeg, pigmeg: pigmeg })
+        return setTopList({ monte: monte, exo2: exo2, pros: pros, monmeg: monmeg, pigmeg: pigmeg, forran: forran })
 
     }, [props.list.Casinon, slotCasinon])
 
@@ -86,7 +91,6 @@ const NyaSlots = (props) => {
     const StyledDiv = styled.div`
     border-bottom:5px solid lightgrey;
     display:flex;
-    padding: 10px 20px;
     border-radius:9px;
     flex-direction: column;
     margin-bottom: 40px ;
@@ -180,6 +184,31 @@ background-color: #ffc10736 !important;
   border: 1px solid black;
 `
 
+    const StyledKommande = styled.div`
+display:flex;
+flex-direction:column;
+border-bottom:3px solid lightgray;
+border-top:3px solid lightgray;
+border-radius:9px;
+padding:10px 0 ;
+margin:10px 0 ;
+h2{
+    text-align:center;
+    font-size:18px;
+}
+
+ul{
+    list-style:none;
+}
+
+.kommande-btn{
+    background-color:lightblue !important;
+    width:50%;
+    margin:0 auto;
+}
+`
+
+
 
     const getUp = () => {
         document.body.scrollTop = 150;
@@ -238,7 +267,7 @@ background-color: #ffc10736 !important;
 
 
         <h1 className="banners">Nya Slots 2020 </h1>
-        <small> Uppdaterad: 23 Januari 2020</small>
+        <small> Uppdaterad: 28 Januari 2020</small>
 
         <h2>Nya Slots 2020 - Lista på nya grymma videoslots för 2020</h2>
         <section className="welcome-box-newslots">
@@ -250,6 +279,69 @@ background-color: #ffc10736 !important;
             <img className="piggy" src="/images/pig.svg" alt="piggy" />
         </section>
         <h2 className="btn-title">Klicka på knapparna för mer information om enskild slot</h2>
+
+        <StyledKommande>
+            <h2>Kommande slots 2020</h2>
+            <StyledSlotButton className="kommande-btn" onClick={() => { setIsOpen({ ...isOpen, forran: !isOpen.forran }) }} > Fortune Rangers - 30 Januari
+
+</StyledSlotButton>
+            <Collapse isOpen={isOpen.forran} >
+                <StyledDiv >
+                    <h2>Fortune Rangers - 30 Januari</h2>
+                    <img className="slot-img" src="/images/fortune-rangers.png" alt="fortune-rangers" />
+                    <ul>
+                        <li>RTP: <b>96.90%</b></li>
+                        <li>Max-vinst(mynt): <b>160 000</b></li>
+                        <li>Vinstlinjer:<b>76</b></li>
+                    </ul>
+                    <div className="slot-review"><p>Fortune Ranger är en ny slot från 2020. Spelet har ett asiatiskt tema med ninja symboler. Layouten på slotten är asymmetrisk. Första hjuler har 3 rader och går sedan uppåt mot fem. Layouten är 3-3-4-4-5 rader med 76 vinstlinjer.</p>
+
+
+                        <p>Med asiatiska symboler så är detta ett väldigt underhållande spel. Det finns även en symbol som är en guldig drake som agerar som wild. Spelet är väldigt likt ett lite äldre spel från NetEnt som heter <b>Dazzle Me</b>. </p>
+
+                        <h4>Forunte Rangers Bonus</h4>
+                        <p>Spelet innehåller så kallade scatters. Skulle du få 3 eller fler scatters vart som helst på spelet under en runda så triggas bonusen igång.För 3 scatters får du 8 freespins, 4 scatters ger 12 freespins och 5 scatters ger 16 freespins. Får du fler scatters under bonusen så får du fler freespins. Under bonusrundan så kan 2 hjul länka till varandra och visa samma symboler. Finns även slumpmässiga wilds som täcker hela hjul, med chans på wilds upp till alla 5 hjul samtidigt. </p>
+
+
+                        <h6>Några svenska casinon där du kommer kunna spela Fortune Rangers</h6></div>
+                    <div className="casino-wrap">
+                        {topCasinon.forran.slice(0, casinoSize.forran).map((casino) =>
+                            < Casinon
+                                key={'monte' + casino.id + casino.title}
+                                casino={casino}
+                                isBlocked={props.isBlocked}
+                            />)}
+                    </div>
+
+                    {casinoSize.forran >= topCasinon.forran.length ? (
+                        <div className="no-more-bonuses">
+                            <StyledButton
+                                className="show-less-btn"
+                                onClick={() => { setCasinoSize({ ...casinoSize, forran: 2 }); getUp() }}
+                            >
+                                Finns inte fler casinon att visa  {" "}
+                            </StyledButton>
+                        </div>
+                    ) : (
+
+                            <div className="morebonus-box">
+                                <StyledButton
+                                    className="button-recension blink"
+                                    onClick={() => { setCasinoSize({ ...casinoSize, forran: (casinoSize.forran) + 5 }) }}
+                                >
+                                    Ladda fler casinon{" "}
+                                </StyledButton>
+                            </div>
+                        )}
+
+                    <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, forran: !isOpen.forran }); getUp() }} > Stäng Forunte Rangers
+
+</StyledCloseButton>
+                </StyledDiv>
+            </Collapse>
+
+        </StyledKommande>
+
         <StyledSlotButton onClick={() => { setIsOpen({ ...isOpen, pigmeg: !isOpen.pigmeg }) }} > Piggy Riches MEGAWAYS- Med Mega Wilds!
 
 </StyledSlotButton>
@@ -285,7 +377,7 @@ background-color: #ffc10736 !important;
                     <div className="no-more-bonuses">
                         <StyledButton
                             className="show-less-btn"
-                            onClick={() => { setCasinoSize({ ...casinoSize, pigmeg: 2 }) }}
+                            onClick={() => { setCasinoSize({ ...casinoSize, pigmeg: 2 }); getUp() }}
                         >
                             Finns inte fler casinon att visa  {" "}
                         </StyledButton>
@@ -344,7 +436,7 @@ background-color: #ffc10736 !important;
                     <div className="no-more-bonuses">
                         <StyledButton
                             className="show-less-btn"
-                            onClick={() => { setCasinoSize({ ...casinoSize, monte: 2 }) }}
+                            onClick={() => { setCasinoSize({ ...casinoSize, monte: 2 }); getUp() }}
                         >
                             Finns inte fler casinon att visa  {" "}
                         </StyledButton>
@@ -419,7 +511,7 @@ background-color: #ffc10736 !important;
                     <div className="no-more-bonuses">
                         <StyledButton
                             className="show-less-btn"
-                            onClick={() => { setCasinoSize({ ...casinoSize, monmeg: 2 }) }}
+                            onClick={() => { setCasinoSize({ ...casinoSize, monmeg: 2 }); getUp() }}
                         >
                             Finns inte fler casinon att visa{" "}
                         </StyledButton>
@@ -475,7 +567,7 @@ background-color: #ffc10736 !important;
                     <div className="no-more-bonuses">
                         <StyledButton
                             className="show-less-btn"
-                            onClick={() => { setCasinoSize({ ...casinoSize, exo2: 2 }) }}
+                            onClick={() => { setCasinoSize({ ...casinoSize, exo2: 2 }); getUp() }}
                         >
                             Finns inte fler casinon att visa  {" "}
                         </StyledButton>
