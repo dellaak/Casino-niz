@@ -5,50 +5,49 @@ import { Helmet } from "react-helmet";
 require('typeface-muli')
 // import "./style.scss"
 
-const NinjaNews = (props) => {
 
 
 
+const StyledWrapper = styled(Container)`
+font-family: 'Muli', sans-serif;
+display:flex;
+background-color:white;
+flex-direction: column;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin:0 auto;
+margin-top:10px;
+margin-bottom:10px;
 
+h1{
+    padding:20px 0 ;
+}
+img{
+    max-width:100%;
+}
 
-
-    const StyledWrapper = styled(Container)`
-    font-family: 'Muli', sans-serif;
-    display:flex;
-    background-color:white;
-    flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin:0 auto;
-    margin-top:10px;
-    margin-bottom:10px;
-
-    h1{
-        padding:20px 0 ;
-    }
-    img{
-        max-width:100%;
-    }
-   
-    .news-section{
-        padding:10px;
-        padding-top:20px;
-        font-size:18px;
-        
-    }
-
-    small{
-        display:flex;
-        flex-direction:column;
-        padding:5px;
-        font-size:14px;
-        a{
-            font-size:14px;
-            margin:10px;
-        }
-    }
+.news-section{
+    padding:10px;
+    padding-top:20px;
+    font-size:18px;
     
-    `
+}
 
+.kalla{
+    display:flex;
+    flex-direction:column;
+    padding:5px;
+    
+    a{
+     
+        margin:5px;
+    }
+}
+
+`
+
+
+
+const NinjaNews = (props) => {
 
 
     return (<StyledWrapper>
@@ -85,9 +84,9 @@ const NinjaNews = (props) => {
 
 
 
-        <small>Källor:   <a href="https://www.di.se/live/kammarratten-ger-provningstillstand-till-spelbolaget-global-gaming/">Di.se prövningstillstånd</a>
+        <p className="kalla">Källor:   <a href="https://www.di.se/live/kammarratten-ger-provningstillstand-till-spelbolaget-global-gaming/">Di.se prövningstillstånd</a> ,
             <a href="https://www.di.se/live/global-gaming-tecknar-avtal-med-leverantor-med-svensk-spellicens/">DI.se Finnplay</a>
-        </small>
+        </p>
 
     </StyledWrapper>)
 }
