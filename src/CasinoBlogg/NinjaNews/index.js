@@ -82,7 +82,7 @@ const NinjaNews = (props) => {
             <p>Det kanske har märkts att det varit ganska tyst från det populära onlinecasinot Ninjacasino.se. Casinot blev av med sin svenska spellicens den 17 juni 2019 sedan spelinspektionen upptäckt allvarliga brister gällande arbetet mot penningtvätt och spelansvar. Ninjacasino.se drivs av bolaget Safenet som är ett dotterbolag åt  Global Gaming 555.</p>
             <p> Beslutet från spelinspektionen överklagades till förvaltningsrätten som avslog överklagandet. Global Gaming 555 överklagade beslutet från förvaltningsrätten till Kammarrätten som meddelade prövningstillstånd den 8 januari 2020. Att Kammarrätten beslutade prövningstillstånd innebär att fallet ska tas upp på nytt och det är Kammarrättens beslut som kommer att gälla. </p>
 
-            <p>Förutom den juridiska processen så tecknade Global Gaming 555 ett avtal med plattformsleverantören Finnplay förra året. Finnplay har svensk spellicens som kan öppna upp återkomst för Ninjacasino.se med en spellicens från Finnplay. </p>
+            <p>Förutom den juridiska processen så tecknade Global Gaming 555 ett avtal med plattformsleverantören Finnplay förra året. Finnplay har svensk spellicens via dotter bolaget Viral Interactive Limited, vilket innebär en eventuell återkomst för Ninjacasino.se med en spellicens från Viral Interactive Limited. </p>
 
             <p>Vi på Casinoniz.se tror att <a href="https://www.ninjacasino.se">Ninjacasino.se</a> kommer att öppna portarna igen under året eller början på nästa år. Det verkar iallafall som att Ninjacasino räknar med det ifall man går in på deras sida. Då möts man av en text där det står <b>COMING SOON</b>. Vad som egentligen händer med ninjacasino.se återstår att se.</p>
 
