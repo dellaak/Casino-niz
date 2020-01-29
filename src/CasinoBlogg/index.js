@@ -95,7 +95,7 @@ const NewsSection = (props) => {
       <BloggSection>
 
 
-        <Kampanj text='Det kanske har märkts att det varit ganska tyst från det populära onlinecasinot Ninjacasino.se. Casinot blev av med sin svenska spellicens den 17 juni 2019 sedan spelinspektionen upptäckt allvarliga brister gällande arbetet mot penningtvätt och spelansvar' bild="/images/ninja-min.png" publicerad="29 Januari 2020" link="/ninjacasino-aterkomst" />
+        <Kampanj text='Det kanske har märkts att det varit ganska tyst från det populära onlinecasinot Ninjacasino.se. Casinot blev av med sin svenska spellicens den 17 juni 2019 sedan spelinspektionen upptäckt allvarliga brister gällande arbetet mot penningtvätt och spelansvar' bild="/images/mininja.png" publicerad="29 Januari 2020" link="/ninjacasino-aterkomst" />
 
 
 

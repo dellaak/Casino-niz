@@ -17,12 +17,16 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 margin:0 auto;
 margin-top:10px;
 margin-bottom:10px;
+word-break:break-all;
 
 h1{
     padding:20px 0 ;
 }
-img{
-    max-width:100%;
+.bg-ninja{
+  height:300px;
+    background-image:url('/images/ninja-min.png');
+background-size:cover;
+  background-color: #464646;
 }
 
 .news-section{
@@ -50,6 +54,10 @@ img{
 const NinjaNews = (props) => {
 
 
+
+
+
+
     return (<StyledWrapper>
         <Helmet>
             <title>Kommer Ninja Casino Återlanseras? » Läs Casino Nyheter | Casinoniz</title>
@@ -68,7 +76,7 @@ const NinjaNews = (props) => {
 
 
         <h1 >Ninja Casino återvänder till den Svenska spelmarknaden? </h1>
-        <img src="/images/ninja-min.png" alt="ninjacasino" />
+        <div className="bg-ninja" alt="ninjacasino" />
         <small> Publicerad: 29 Januari 2020</small>
         <section className="news-section">
             <h2>Ninja Casino kanske kommer tillbaka</h2>
