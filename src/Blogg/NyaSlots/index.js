@@ -217,7 +217,7 @@ ul{
 
     return (<StyledWrapper>
         <Helmet>
-            <title>Nya Slots 2020 | Prova Årets Hetaste Slots🔥 | Casinoniz</title>
+            <title>Nya Slots 2020 » Prova Årets Hetaste Slots🔥 | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/nya-slots-2020" />
             <meta
                 name="description"

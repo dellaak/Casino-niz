@@ -352,7 +352,7 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
     return (
         <Container className="wrapit ">
             <Helmet>
-                <title>Casino Bonus 2020⭐ | Bonus Från Svenska Casinon | Casinoniz</title>
+                <title>Casino Bonus 2020⭐ » Bonus Från Svenska Casinon | Casinoniz</title>
                 <link rel="canonical" href="https://www.casinoniz.se/casino-bonus" />
 
                 <meta

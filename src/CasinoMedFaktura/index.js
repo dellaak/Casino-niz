@@ -215,7 +215,7 @@ const CasinoMedFaktura = (props) => {
         <Container className="wrapit">
             <div>
                 <Helmet>
-                    <title>Faktura Casino ⭐ | Spela på faktura | Casinoniz</title>
+                    <title>Faktura Casino ⭐ » Spela på faktura 2020 | Casinoniz</title>
                     <link rel="canonical" href="https://www.casinoniz.se/faktura-casino" />
                     <meta
                         name="description"

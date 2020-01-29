@@ -12,7 +12,7 @@ import RedirectComp from '../RedirectComp/index';
 import Sports from "../Sports/index"
 import Terms from "../Terms/index"
 import Policy from "../Policy/index"
-// import NotFoundPage from "../NotFoundPage/index"
+import NotFoundPage from "../NotFoundPage/index"
 import Top5 from "../Blogg/Top5"
 import TopButton from "../TopButton/index"
 import Blogg from "../Blogg/index"
@@ -57,6 +57,10 @@ const App = () => {
         setVisible(false)
     }
 
+
+    const Go = () => {
+        return <h6>Redirecting....</h6>
+    }
 
 
     return (
@@ -109,7 +113,8 @@ const App = () => {
                         <Route path="/minsta-insattning-casino" render={(props) => (<MinstaInsCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                         <Route path="/nya-casino-2020" render={(props) => (<NyaCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                         <Route path="/nya-slots-2020" render={(props) => (<NyaSlots list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-
+                        <Route path="/Go/:casinotitle" render={(props) => (<Go />)} />
+                        <Route path="/*" component={NotFoundPage} />
                     </Switch>
 
 
