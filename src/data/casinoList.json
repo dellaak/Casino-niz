@@ -5350,7 +5350,7 @@
             },
             "q3": {
                 "@type": "Question",
-                "name": "✨Hur många slots har YoBetIt?",
+                "name": "❓Hur många slots har YoBetIt?",
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "I skrivandet stund har YoBetIt ca 273 slots som man kan spela på."
@@ -5433,7 +5433,7 @@
             },
             "q3": {
                 "@type": "Question",
-                "name": "✨Har 21Casino en aktiv casino bonus?",
+                "name": "❓Har 21Casino en aktiv casino bonus?",
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Ja. 21Casino erbjuder en casino bonus, en insättningsbonus på 121% upp till 3000kr. Regler och villkor tillkommer."
@@ -5514,7 +5514,7 @@
             },
             "q3": {
                 "@type": "Question",
-                "name": "✨Har LuckyCasino en aktiv casino bonus?",
+                "name": "❓Har LuckyCasino en aktiv casino bonus?",
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Ja. LuckyCasino har nog ett av marknadens bästa erbjudanden just nu för casinon. Dubbla upp eller få pengarna tillbaka. Regler och villkor tillkommer. Läs mer på vår sida."
@@ -5537,7 +5537,7 @@
             "freespins": 0,
             "activebonus": true,
             "bankid": true,
-            "publishdate": "29 Januari 2020",
+            "publishdate": "30 Januari 2020",
             "minodds": 2.0,
             "freefromwager": true,
             "depositpercentsports": 100,
@@ -5572,6 +5572,88 @@
                     "swish": false,
                     "livechat": true,
                     "summering": "LuckyCasino överraskade oss väldigt positivt. Casinot är ett väldigt snygg casino med ett av marknadens bästa välkomstbonus. Erbjuder snabba insättningar och uttag via betalmetoden Trustly. Har en livechatt på svenska med öppettider mellan 08:00-00:00. Har en bra sportsektion med ca 15 sporten. Casinot har ett väldigt bra spelutbud. Minsta insättning och uttag är på 100kr. Ett bra och säkert casino att spela på enligt Casinoniz.se "
+                }
+            ]
+        },
+        {
+            "id": 68,
+            "faq": true,
+            "q1": {
+                "@type": "Question",
+                "name": "💰Vad är minsta insättningen samt uttag hos SpinCasino?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minsta insättningen hos SpinCasino är 100 kr. För att göra ett uttag är minsta beloppet 300 kr."
+                }
+            },
+            "q2": {
+                "@type": "Question",
+                "name": "✨Erbjuder SpinCasino insättningar med faktura?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, det gör dem . SpinCasino erbjuder insättning med faktura via fakturatjänsten Zimpler."
+                }
+            },
+            "q3": {
+                "@type": "Question",
+                "name": "❓Har SpinCasino en aktiv casino bonus?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. SpinCasino har en aktiv casin bonus. Insättningsbonus upp till 40 000 kronor. Regler och villkor tillkommer. Läs mer på vår sida."
+                }
+            },
+            "title": "SpinCasino",
+            "slogan": "Casino med faktura",
+            "color": "#fff",
+            "textcolor": "#e0046b",
+            "setTop": false,
+            "depositbonus": "Insättningsbonus på 100% upp till 40 000 kr",
+            "sportsbonus": "Ingen sport bonus",
+            "mylink": "https://www.spincasino.se/",
+            "rules": "https://www.spincasino.se/erbjudanden/regler/",
+            "caslogo": "/images/spincasino.svg",
+            "wager": 50,
+            "sportswager": "x",
+            "extratext": "",
+            "sports": false,
+            "freespins": 0,
+            "activebonus": true,
+            "bankid": true,
+            "publishdate": "30 Januari 2020",
+            "freefromwager": false,
+            "depositpercent": 100,
+            "faktura": true,
+            "fakturatype": [
+                "Zimpler"
+            ],
+            "recension": [
+                {
+                    "gamebar": 60,
+                    "experience": 65,
+                    "support": 80,
+                    "egentitel": "Casino med faktura",
+                    "egentitel2": false,
+                    "toprecension": "SpinCasino lanserades redan 2001 som Spin Palace. Casinot har sedan dess fått en rejäl uppdatering. När du kommer in på sidan så möts du av en stor text som beskriver deras massiva insättningsbonus på 100% upp till 40 000kr. Sidan har ganska mycket text, vilket kan bli lite rörigt. Har en ganska simpel navigering med meny och support uppe i vänsta hörnet. Casinot erbjuder dem flesta insättningsmetoderna samt insättning med faktura. Livechatten har öppet mellan 08:00-00:00, vilket är helt okej tider. Casinot erbjuder spel på Slots, Videopoker, Live Casino och Bordsspel. Är lite drygt att man inte kan navigera sig runt fritt utan att behöva logga in.",
+                    "secondrec": "Casinosektionen har ett helt okej utbud med slots från kända leverantörer inom branschen. Vi hade gärna sett mer slots eftersom det är ganska svagt utbud av slots. Men det finns klassiska slotar som Avalon, Immortal Romance och jackpotspel som Mega Moolah m.m. Har en simpel filterfunktion där du kan sortera slots efter antalet rader. Spincasino är anpassat för varje enhet, så att spela på casinot i mobilen är alltså inga problem. ",
+                    "sportsrec": "Spincasino erbjuder tyvärr ingen sportsbetting.",
+                    "welcomeoffer": "Insättningsbonus på 100% upp till 40 000 kr",
+                    "bonusterms": [
+                        "Välkomsterbjudandet kan inte användas i samband med någon annan kampanj som erbjuds av Bayton Limited och är föremål för fortlöpande granskning. Casinot förbehåller sig rätten att ändra erbjudandet och dess regler när som helst."
+                    ],
+                    "casinoterms": [
+                        "Du behöver göra en insättning av minst 100 SEK för att bli tilldelad matchbonusen från välkomsterbjudandet.",
+                        "Välkomsterbjudandet som krediterats ditt spelkonto är föremål för ett omsättningskrav på 50 gånger (50x) innan bonusen går över till ditt kontantsaldo."
+                    ],
+                    "sportsterms": [
+                        ""
+                    ],
+                    "topslotgames": "400+ spel från kända leverantörer som  Evolution och Microgaming!",
+                    "deposittypes": "Trustly,Visa,Skrill,MasterCard,Paysafecard,Neteller,Zimpler",
+                    "mindeposit": 100,
+                    "minout": 300,
+                    "swish": false,
+                    "livechat": true,
+                    "summering": "Spincasino erbjuder insättningar via flera av dem vanligaste metoderna samt även insättning via faktura. Insättningar går väldigt snabbt och beroende på uttagsmetod så kan uttagen ta upp till 24 timmar. Casinot har bankid vilket gör det smidigt att logga in och skapa konto. Har en simpel sida med vanligaste frågor och svar. Skulle man behöva mer hjälp så har livechatten öppet mellan 08:00-00:00. Ett simpelt casino som passar alla."
                 }
             ]
         }

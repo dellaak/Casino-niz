@@ -421,3 +421,9 @@ baseURL = "/"
   to = "https://record.glitnoraffiliates.com/_RzGld47HRjDKto_EPcZApGNd7ZgqdRLk/1"
   status = 301
   query = {path = "/Go/luckycasino"}
+
+    [[redirects]]
+ from = "/Go/spincasino"
+  to = "https://www.spincasino.se/"
+  status = 301
+  query = {path = "/Go/spincasino"}

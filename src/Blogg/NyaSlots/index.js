@@ -192,6 +192,7 @@ border-top:3px solid lightgray;
 border-radius:9px;
 padding:10px 0 ;
 margin:10px 0 ;
+text-align:center;
 h2{
     text-align:center;
     font-size:18px;
@@ -282,7 +283,8 @@ ul{
 
         <StyledKommande>
             <h2>Kommande slots 2020</h2>
-            <StyledSlotButton className="kommande-btn" onClick={() => { setIsOpen({ ...isOpen, forran: !isOpen.forran }) }} > Fortune Rangers - 30 Januari
+            <p>Kommer snart nya kommande slots 2020</p>
+            {/* <StyledSlotButton className="kommande-btn" onClick={() => { setIsOpen({ ...isOpen, forran: !isOpen.forran }) }} > Fortune Rangers - 30 Januari
 
 </StyledSlotButton>
             <Collapse isOpen={isOpen.forran} >
@@ -338,9 +340,70 @@ ul{
 
 </StyledCloseButton>
                 </StyledDiv>
-            </Collapse>
+            </Collapse> */}
 
         </StyledKommande>
+
+
+
+        <StyledSlotButton onClick={() => { setIsOpen({ ...isOpen, forran: !isOpen.forran }) }} > Fortune Rangers - Asiatiskt Tema
+
+</StyledSlotButton>
+        <Collapse isOpen={isOpen.forran} >
+            <StyledDiv >
+                <h2>Fortune Rangers</h2>
+                <img className="slot-img" src="/images/fortune-rangers.png" alt="fortune-rangers" />
+                <ul>
+                    <li>RTP: <b>96.90%</b></li>
+                    <li>Max-vinst(mynt): <b>160 000</b></li>
+                    <li>Vinstlinjer:<b>76</b></li>
+                </ul>
+                <div className="slot-review"><p>Fortune Ranger är en ny slot från 2020 som lanserades 30 januari. Spelet har ett asiatiskt tema med ninja symboler. Layouten på slotten är asymmetrisk. Första hjuler har 3 rader och går sedan uppåt mot fem. Layouten är 3-3-4-4-5 rader med 76 vinstlinjer.</p>
+
+
+                    <p>Med asiatiska symboler så är detta ett väldigt underhållande spel. Det finns även en symbol som är en guldig drake som agerar som wild. Spelet är väldigt likt ett lite äldre spel från NetEnt som heter <b>Dazzle Me</b>. </p>
+
+                    <h4>Fortune Rangers Bonus</h4>
+                    <p>Spelet innehåller så kallade scatters. Skulle du få 3 eller fler scatters vart som helst på spelet under en runda så triggas bonusen igång.För 3 scatters får du 8 freespins, 4 scatters ger 12 freespins och 5 scatters ger 16 freespins. Får du fler scatters under bonusen så får du fler freespins. Under bonusrundan så kan 2 hjul länka till varandra och visa samma symboler. Finns även slumpmässiga wilds som täcker hela hjul, med chans på wilds upp till alla 5 hjul samtidigt. </p>
+
+
+                    <h6>Några svenska casinon där du kommer kunna spela Fortune Rangers</h6></div>
+                <div className="casino-wrap">
+                    {topCasinon.forran.slice(0, casinoSize.forran).map((casino) =>
+                        < Casinon
+                            key={'monte' + casino.id + casino.title}
+                            casino={casino}
+                            isBlocked={props.isBlocked}
+                        />)}
+                </div>
+
+                {casinoSize.forran >= topCasinon.forran.length ? (
+                    <div className="no-more-bonuses">
+                        <StyledButton
+                            className="show-less-btn"
+                            onClick={() => { setCasinoSize({ ...casinoSize, forran: 2 }); getUp() }}
+                        >
+                            Finns inte fler casinon att visa  {" "}
+                        </StyledButton>
+                    </div>
+                ) : (
+
+                        <div className="morebonus-box">
+                            <StyledButton
+                                className="button-recension blink"
+                                onClick={() => { setCasinoSize({ ...casinoSize, forran: (casinoSize.forran) + 5 }) }}
+                            >
+                                Ladda fler casinon{" "}
+                            </StyledButton>
+                        </div>
+                    )}
+
+                <StyledCloseButton onClick={() => { setIsOpen({ ...isOpen, forran: !isOpen.forran }); getUp() }} > Stäng Forunte Rangers
+
+</StyledCloseButton>
+            </StyledDiv>
+        </Collapse>
+
 
         <StyledSlotButton onClick={() => { setIsOpen({ ...isOpen, pigmeg: !isOpen.pigmeg }) }} > Piggy Riches MEGAWAYS- Med Mega Wilds!
 
