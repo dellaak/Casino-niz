@@ -416,4 +416,8 @@ baseURL = "/"
   query = {path = "/Go/21casino"}
 
 
-
+   [[redirects]]
+ from = "/Go/luckycasino"
+  to = "https://record.glitnoraffiliates.com/_RzGld47HRjDKto_EPcZApGNd7ZgqdRLk/1"
+  status = 301
+  query = {path = "/Go/luckycasino"}

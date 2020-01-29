@@ -70,6 +70,14 @@ const NinjaNews = (props) => {
                 name="keywords"
                 content="ninja casino , ninjacaisno, återlansering, samarbete, svensk spellicens,tillbaka,2020,artikel, finnplay, globalgaming555,licens,tillbaka,senaste,nytt,casino,nytt"
             />
+            <meta property="og:title" content="Ninja Casino återvänder till den Svenska spelmarknaden?" />
+            <meta property="og:description" content="Det kanske har märkts att det varit ganska tyst från det populära onlinecasinot Ninjacasino.se." />
+            <meta property="og:image" content="https://www.casinoniz.se/images/ninja-min.png" />
+            <meta property="og:url" content="https://www.casinoniz.se/ninjacasino-aterkomst" />
+
+            <meta name="twitter:title" content="Ninja Casino återvänder ?" />
+            <meta name="twitter:description" content="Det kanske har märkts att det varit ganska tyst från det populära onlinecasinot Ninjacasino.se." />
+            <meta name="twitter:image" content="https://www.casinoniz.se/images/ninja-min.png" />
 
         </Helmet>
 
