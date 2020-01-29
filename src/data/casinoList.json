@@ -5183,25 +5183,25 @@
                 }
             },
             "title": "10bet",
-            "slogan": "Hämta Bonuskod fö Odds bonus",
+            "slogan": "Casino & Sports bonus",
             "color": "#efefef",
             "textcolor": "#000",
             "setTop": false,
-            "depositbonus": "Sportsbonus: Insättningsbonus på 100% upp till 500kr",
+            "depositbonus": "Exklusiv Insättningsbonus på 50% upp till 1000kr via vår länk!",
             "sportsbonus": "Insättningsbonus på 100% upp till 500kr. Bonuskod : IN10'",
             "mylink": "https://track.10bet.com/C.ashx?btag=a_53735b_5382c_&affid=1680928&siteid=53735&adid=5382&c=",
             "rules": "https://track.10bet.com/C.ashx?btag=a_53735b_5382c_&affid=1680928&siteid=53735&adid=5382&c=",
             "caslogo": "/images/10betlogo.svg",
-            "wager": "x",
+            "wager": 40,
             "sportswager": 8,
             "extratext": "",
             "sports": true,
             "freespins": 0,
             "activebonus": true,
             "bankid": true,
-            "publishdate": "18 Januari 2020",
+            "publishdate": "29 Januari 2020",
             "freefromwager": false,
-            "depositpercent": 0,
+            "depositpercent": 50,
             "depositpercentsports": 100,
             "faktura": true,
             "fakturatype": [
@@ -5222,7 +5222,8 @@
                         "Din kvalificerade insättning och bonus måste omsättas (8) gånger på (1) fast singel sport bet med odds på minst 1.80 eller (2) fasta kombospel med odds på minst 1.40 per match."
                     ],
                     "casinoterms": [
-                        ""
+                        "Insättning via Skrill eller Neteller är inte kvalificerande.",
+                        "För att kvalificera till bonusen måste du registrera ditt 10bet-konto via en länk från en av våra samarbetspartners som marknadsför erbjudandet."
                     ],
                     "sportsterms": [
                         "Minsta kvalificerade insättning för denna kampanj är 100 kr",
