@@ -40,22 +40,16 @@ const NinjaNews = (props) => {
         display:flex;
         flex-direction:column;
         padding:5px;
+        font-size:14px;
+        a{
+            font-size:14px;
+            margin:10px;
+        }
     }
     
     `
 
-    const StyledDiv = styled.div`
-    padding: 0 20px;
-    border-radius:9px;
-    flex-direction: column;
-    margin: 40px 0;
-    margin-bottom:0px ;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    h2 {
-    margin-top: 30px;
-    }
-    `
+
 
     return (<StyledWrapper>
         <Helmet>
