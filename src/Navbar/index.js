@@ -196,6 +196,17 @@ const NavBarApp = (props) => {
                         </UncontrolledDropdown>
 
 
+
+                        <NavItem>
+                            <NavLink
+                                className="nav-link"
+                                to="/casino-nyheter"
+                                activeClassName="activenav"
+                            >
+
+                                Casino Nyheter
+                </NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Navbar>

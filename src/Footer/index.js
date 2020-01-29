@@ -90,6 +90,13 @@ const Footer = () => {
                             activeClassName="active"
                         > Casino bonusar
             </NavLink>
+                        <NavLink
+                            className="footer-link"
+                            to="/casino-nyheter"
+                            activeClassName="active"
+                        >
+                            Casino Nyheter
+            </NavLink>
                     </div>
                 </div>
                 <Socials />

@@ -280,7 +280,7 @@ color: ${ selectedCasino.textcolor};
 			<Helmet>
 				<link rel="canonical" href={`https://www.casinoniz.se/recension/${casinotitle.toLowerCase()}`} />
 				<title>
-					{casinotitle.length > 3 ? `${selectedCasino.title} Recension & Snabbfakta ⇛ ` : ''}
+					{casinotitle.length > 3 ? `${selectedCasino.title} Recension & Snabbfakta » ` : ''}
 					{selectedCasino ? `${selectedCasino.slogan}` : "Snabbfakta"} |
 					Casinoniz
           </title>
