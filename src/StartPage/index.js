@@ -13,6 +13,7 @@ import star from "../images/fullstar.svg";
 import LatestUpdate from "../LastUpdated"
 import "./style.scss"
 import MonthCasino from "../MonthCasino"
+import SearchComp from '../SearchComp';
 
 
 
@@ -31,7 +32,7 @@ const StartPage = (props) => {
   const [fade, setFade] = useState(false);
   const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
   const myRef = useRef(null)
-
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
 
@@ -155,6 +156,7 @@ const StartPage = (props) => {
     orlist.sort(function (a, b) {
       return (b.recension[0].gamebar + b.recension[0].experience + b.recension[0].support) - (a.recension[0].gamebar + a.recension[0].experience + a.recension[0].support)
     });
+    setSearchTerm("")
     setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
     setSize(9)
     return setCasinoList({ Casino: orlist, showOrder: true })
@@ -207,6 +209,27 @@ const StartPage = (props) => {
     return setSize(casinoList.Casino.length)
 
   }
+
+  const handleChange = event => {
+    event.target.value = event.target.value.toLowerCase()
+    let orlist = [...props.start.Casinon]
+    let wagerarr = [];
+    if (event.target.value.length > 0) {
+      for (let i of orlist) {
+        i.title = i.title.toLowerCase()
+        if (i.title.includes(event.target.value)) {
+          wagerarr.push(i);
+          setCasinoList({ ...casinoList, Casino: wagerarr })
+          setSize(9)
+        }
+      }
+
+    } else {
+      return resetList()
+    }
+
+    setSearchTerm(event.target.value);
+  };
 
 
   return (<React.Fragment>
@@ -314,8 +337,8 @@ const StartPage = (props) => {
           <p>
             Svenska casino som erbjuder välkomstbonus även känt som casino bonus är något som har gynnat spelare i den svenska spelmarknaden.
  Du hittar alla casinon med <Link to="/casino-bonus">aktiv casino bonus</Link> på vår bonus sektion. Den vanligaste casinobonusen som brukar erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
-                                  Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens. Casino bonus även kallat välkomstbonus är en bonus där man som spelare kan få lite extra pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
-                                 Välkommen!
+                                                                                                                                                                                                                                                                                                                                                                                                             Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens. Casino bonus även kallat välkomstbonus är en bonus där man som spelare kan få lite extra pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
+                                                                                                                                                                                                                                                                                                                                                                                                            Välkommen!
             </p>
           <p>
             Betta på E-sport ? Vi har även en esport sektion där vi listar
@@ -376,6 +399,7 @@ const StartPage = (props) => {
           activebuttondep={buttons.activebuttondep}
           reset={resetList}
         />
+        <SearchComp handleChange={handleChange} value={searchTerm} />
         {showmedalj ? (<section className="medalj-box">
           <p><i>Ordningen på listan är just nu är baserad på vår recension. Ju högre poäng desto högre upp på listan är casinot.</i></p>
           <small className="medalj-text"><img src={star} className="top-star" alt="star" /><i>Medaljen visar casinon som har fått fulla poäng av oss i våran casino recension.</i></small>

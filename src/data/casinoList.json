@@ -158,11 +158,11 @@
                     "gamebar": 90,
                     "experience": 75,
                     "support": 100,
-                    "egentitel": "Videoslots med jackpottar",
-                    "egentitel2": false,
-                    "toprecension": "Det nordiska casinot. Nordicbet grundades 2002 och har snabbt vuxit till en av marknadens seriösa casinon. Hos Nordicbet känner man sig trygg och casinot har stort utbud av slots och odds. Simpel layout som gör det enkelt att navigera runt. ",
-                    "secondrec": "Har över 1000 slots. Väldigt stort utbud av spel och många slots som har ENORMA jackpottar. Högsta jackpoten just nu på slots hos Nordicbet ligger på över 47 MILJONER KRONOR!",
-                    "sportsrec": "Enkel design på bettingsidan med stort utbud av sporter. Nordicbet är ett av casinon med stört utbud på svensk sport.",
+                    "egentitel": "Casino Med Casino Bonus",
+                    "egentitel2": "Esport och sports betting",
+                    "toprecension": "Det nordiska casinot. Nordicbet grundades 2002 och har snabbt vuxit till en av marknadens seriösa casinon. Hos Nordicbet känner man sig trygg och casinot har stort utbud av slots och odds. Simpel layout som gör det enkelt att navigera runt. Har en bra support samt även livechatt. Erbjuder dem vanligaste insättningsmetoderna samt insättning med Swish. Vill man spela med faktura så fungerar det också via fakturatjänsten Zimpler. Nordicbet har funnits på spelmarknaden väldigt länge, vilket bevisar att dem är ett seriöst och säkert spelbolag att spela på. Har ett grymt utbud av spel. Du hittar Sport betting, Live Casino, Trav och Galopp, Poker, Bordsspel, Livebetting och massa annat. En väldigt grym sida med ett brett utbud.",
+                    "secondrec": "Har över 1000 slots från ledande spelleverantörer. Ett väldigt stort utbud av spel och många slots som har ENORMA jackpottar. Högsta jackpoten just nu på slots hos Nordicbet ligger på över 47 MILJONER KRONOR!. Layouten på på casinosidan är väldigt snygg. Du kan filtrera spel efter bokstavsordning eller via leverantör. Nordicbet uppdaterar sin spellista regelbundet vilket vi tycket är bra. På Nordicbet hittar du även grymma exklusiva slots.",
+                    "sportsrec": "Nordicbets utbud på sportsbetting är väldigt bra. Du hittar det mesta hos Nordicbet. Allt från fotboll,dart till politik och näringsliv. Nordicbet får även en applåd av oss på Casinoniz eftersom dem listar esportbetting, vilket vi tycker om. Sportsektionen har en väldigt snygg och elegant layout med simpel navigering. Man hittar det man letar efter enkelt på sidan. Ett av dem bättre sportsektionerna på den svenska spelmarknaden.",
                     "welcomeoffer": "100% upp till 2 000 kr + 100 cashspinn på utvalda spel",
                     "bonusterms": [
                         "Bonusbeloppet måste omsättas 35 gånger i casinot efter aktivering innan det går att göra ett uttag",
@@ -179,12 +179,23 @@
                         "Minsta insättning för att ta del av erbjudandet är 100 kr."
                     ],
                     "topslotgames": "Över 1000 slotar. Med leverantörer som NetEnt, Evolution Gaming, Quickfire and Play’n GO.",
-                    "deposittypes": "Skrill, Neteller, Visa, MasterCard, Ukash, Zimpler, Banköverföring, Trustly, Swish",
+                    "deposittypes": "Skrill, Neteller, Visa, MasterCard, Zimpler, Banköverföring, Trustly, Swish",
                     "mindeposit": 100,
                     "minout": 200,
                     "swish": true,
                     "livechat": true,
-                    "summering": "Bra casino med en riktigt bra supportsida. Snabba uttag och stort utbud av spel både för casino och odds."
+                    "summering": "Nordicbet är ett väldigt säker och bra casino. Erbjuder dem flesta insättningsmetoderna samt insättning via Swish och fakturametoden Zimpler. Minsta insättningen är 100 kr och uttagen ligger på minst 200kr. Har ett väldigt brett spelutbud med spel på Slots, Sport betting, Live Casino, Trav & Galopp, Poker, Bordsspel, Livebetting och massa annat. Har en bra support med livechatt. Ett väldigt bra casino med många års erfarenhet. Här finns något för alla."
+                }
+            ],
+            "esportinfo": [
+                {
+                    "csgo": true,
+                    "dota2": false,
+                    "leagueoflegends": false,
+                    "overwatch": false,
+                    "starcraft2": false,
+                    "other": false,
+                    "spel": "CS:GO "
                 }
             ]
         },
@@ -234,7 +245,7 @@
             "freefromwager": false,
             "depositpercent": 300,
             "faktura": true,
-            "publishdate": "23 Januari 2020",
+            "publishdate": "30 Januari 2020",
             "activebonus": true,
             "fakturatype": [
                 "Siru",
@@ -246,10 +257,10 @@
                     "gamebar": 90,
                     "experience": 70,
                     "support": 90,
-                    "egentitel": "Casino i mobilen",
+                    "egentitel": "Casino Bonus Mobilautomaten",
                     "egentitel2": false,
-                    "toprecension": "Mobilautomaten är ett relativt ungt casino som vuxit sig stora på otrolig kort tid. Casinot grundades 2016 och är ett av sverige största casinon just nu. Mobilautomaten fokuserar mest på casino och live casino. De erbjuder just nu ingen betting på sports. Layouten på casinot är väldigt likt andra casinon och det hade varit najs med lite variation på design hos casinon. Casinot erbjuder just nu 300% insättningsbonus + upp till 1200 freespin. Att spela casino på mobilen är inga problem hos Mobilautomaten. Casinot finns även som app för mobiltelefoner",
-                    "secondrec": "Casinot har väldigt många slots och just nu har de tre enormajackpotar på över 10 MILJONER kronor. Sektionen är väldigt snygg och simpel. Casino sektionen är även anpassad för spel på alla skärmar.",
+                    "toprecension": "Mobilautomaten är ett relativt ungt casino som vuxit sig stora på otrolig kort tid. Casinot grundades 2016 och är ett av sverige största casinon just nu. Mobilautomaten fokuserar mest på casino och live casino. De erbjuder just nu ingen betting på sports. Layouten på casinot är väldigt likt andra casinon och det hade varit najs med lite variation på design hos casinon. Casinot erbjuder just nu 300% insättningsbonus + upp till 1200 freespin. Att spela casino på mobilen är inga problem hos Mobilautomaten. Casinot finns även som app för mobiltelefoner. Mobilautomaten erbjuder just nu en grym bonus. En insättningsbonus på 300% + 1200 freespins.",
+                    "secondrec": "Casinot har väldigt många slots och just nu har de tre enormajackpotar på över 10 MILJONER kronor. Sektionen är väldigt snygg och simpel. Casino sektionen är även anpassad för spel på alla skärmar. Har ingen direkt filter funktion men du kan söka efter spel. Mobilautomaten uppdaterar med slots väldigt ofta vilket vi tycker är väldigt bra. En grym sida för spelare som tycker om slots!",
                     "sportsrec": "Ingen sports sektion",
                     "welcomeoffer": "300% insättningsbonus + upp till 1200 freespins",
                     "bonusterms": [
@@ -263,13 +274,13 @@
                     "sportsterms": [
                         "Ingen sports sektion"
                     ],
-                    "topslotgames": "Netent, Microgaming, Play N Go, Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX ,Thunderkick, Evolution, Nextgen, ELK",
-                    "deposittypes": "Maestro, MasterCard, Paysafe Card, Visa, Electron, Entropay,Skrill, Neteller, Siru,Zimpler, Trustly, SMS-voucher, Paypal, Swish",
+                    "topslotgames": "Över 800+ slots från leverantörer som Netent, Microgaming, Play N Go, Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX ,Thunderkick, Evolution, Nextgen, ELK",
+                    "deposittypes": "Maestro, MasterCard, Paysafe Card, Visa, Electron, Entropay,Skrill, Neteller, Siru,Zimpler, Trustly, SMS-voucher, Paypal,Swish",
                     "mindeposit": 35,
                     "minout": 200,
                     "swish": true,
                     "livechat": true,
-                    "summering": "Ett simpelt casino med fokus på slots och livecasino. Snabba uttag och bra kundservice."
+                    "summering": "Mobilautomaten är ett simpelt men snyggt casino. Casinots fokus ligger på slots och live casino. Erbjuder väldigt många insättningsmetoder samt även insättningar via Swish och faktura. Minsta insättningen är på 35 kr och lägsta uttaget ligger på 200kr. Supporten hos mobilautomaten är väldigt bra och dem har även en livechatt. Har ett väldigt bra slotsutbud med videoslots från dem bästa leverantörerna på marknaden. Registrering samt inloggning sker väldigt smidigt med hjälp av bankid. Tycker man om slots så är detta ett väldigt bra casino för att spela slots på."
                 }
             ]
         },
@@ -468,7 +479,7 @@
                 "name": "💰Vad är minsta insättningen samt uttag hos SpeedyCasino?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Minsta insättningen hos SpeedyCasino är 50 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                    "text": "Minsta insättningen hos SpeedyCasino är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
                 }
             },
             "q2": {
@@ -484,7 +495,7 @@
                 "name": "📱Erbjuder SpeedyCasino insättning med Swish?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, SpeedyCasino erbjuder insättningar med Swish!"
+                    "text": "Nej, SpeedyCasino erbjuder endast insättningar via betaltjänsten Trustly!"
                 }
             },
             "title": "SpeedyCasino",
@@ -516,9 +527,9 @@
                     "support": 80,
                     "egentitel": "Casino utan registrering",
                     "egentitel2": false,
-                    "toprecension": "SpeedyCasino är ett nytt casino där målet är att kunna spela på casino utan krångel. Det tycker vi att de har lyckats med. Du loggar in enkelt med bankId och så är det bara att börja spela. Enkelt att spela i webbläsaren som på mobil. Snygg design och en bra support.För att slippa krångla så har dem gjort det väldigt enkelt med insättningar. Du kan göra insättningar via Swish och Trustly. Såklart så har de även snabba uttag också!",
+                    "toprecension": "SpeedyCasino är ett nytt casino där målet är att kunna spela på casino utan krångel. Det tycker vi att de har lyckats med. Du loggar in enkelt med bankId och så är det bara att börja spela. Enkelt att spela i webbläsaren som på mobil. En väldigt snygg design och en bra support med livechatt dygnet runt alla dagar. För att slippa krångel så har valt att använda betaltjänsten Trustly för snabba insättningar och uttag.",
                     "secondrec": "Sidan ser bra ut och är enkel att navigera sig runt i. Kollar man på casinosidan så listar de alla videoslots. Casinoniz hade velat se en filter funktion för varje leverantör. Med favoritspel som Bonanza, Book of Dead, Dead or Alive och många fler så vet vi att man kan ha kul där. Enkelt och snabbt utan krångel. Supporten är öppen 24/7, svensktalande på dagtid och engelsktalande på kvällstid. ",
-                    "sportsrec": "Ingen sport sektion",
+                    "sportsrec": "SpeedyBet är deras sportsektion, vilket är en annan sida.",
                     "welcomeoffer": "Insättningsbonus på 100% upp till 5 000 kr",
                     "bonusterms": [
                         "Välkomstbonusen är tyvärr inte tillgänglig för spelare som har satt in riktiga pengar på någon av spelsidorna (SpeedyCasino.com, SpeedyBet.com och CasinoHeroes.com) sedan den 1:a Januari 2019",
@@ -529,15 +540,15 @@
                         "Välkomstbonusens omsättningskrav är 40 gånger den givna bonussumman"
                     ],
                     "sportsterms": [
-                        "Ingen sport sektion"
+                        ""
                     ],
-                    "topslotgames": "Stort utbud av videoslots från leverantörer som NetEnt,Big Time Gaming, Pushgaming,Play’n GO, RedTider och fler.",
-                    "deposittypes": "Trustly, Swish",
-                    "mindeposit": 50,
+                    "topslotgames": "Ca 500+ slots från leverantörer som NetEnt,Big Time Gaming, Pushgaming,Play’n GO, RedTider och fler.",
+                    "deposittypes": "Trustly",
+                    "mindeposit": 100,
                     "minout": 200,
-                    "swish": true,
+                    "swish": false,
                     "livechat": true,
-                    "summering": "Casinot grundades 2018 och har snabbt blivit populär. Det kan bero på att man kan spela utan att behöva registrera ett spelkonto. Du loggar enkelt in via bankid."
+                    "summering": "Casinot grundades 2018 och har snabbt blivit ett väldigt populärt casino.Registrering samt inloggning sker väldigt smidigt med hjälp av bankid. Casinot erbjuder insättning via Trustly. Lägsta insättningen ligger på 100kr och lägsta uttaget ligger på 200kr. Insättingar samt uttagen går väldigt snabbt. Har en bra support med en livechatt. Ett bra och simpelt casino."
                 }
             ]
         },
@@ -565,7 +576,7 @@
                 "name": "✅Hur många slots har Vera&John?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Dem har över 1050+ slots. Från leverantörer som NetEnt,Microgaming,PlayNGo,Yggdrasil,Quickspin, Scientific Games och många fler!"
+                    "text": "Dem har över 1200+ slots. Från leverantörer som NetEnt,Microgaming,PlayNGo,Yggdrasil,Quickspin, Scientific Games och många fler!"
                 }
             },
             "title": "Vera&John",
@@ -594,13 +605,13 @@
             ],
             "recension": [
                 {
-                    "gamebar": 90,
-                    "experience": 90,
-                    "support": 90,
-                    "egentitel": false,
+                    "gamebar": 100,
+                    "experience": 100,
+                    "support": 100,
+                    "egentitel": "Casino bonus hos Vera&John",
                     "egentitel2": false,
-                    "toprecension": "Vera&John grundades 2011 och är ett fräscht casino. Har en väldigt användarvänlig sida och layouten är simpel och snygg. Vera&John fokuserar mest på videoslots. De har ett väldigt bra utbud av slots och skulle man vilja prova på något annat än slots så har de även live casino. Vera&John delar ut jackpots varje dag. Man kan vinna jackpoten genom att spela på några av de utvalda spelen. ",
-                    "secondrec": "Supporten är bra och snabb. Vill man göra en insättning så finns det bra med alternativ och man kan även göra en insättning med swish. Har man turen på sin sida och vill ta ut en vinst så är det inga problem. De har snabba utbetalningar.",
+                    "toprecension": "Vera&John grundades 2011 och är ett fräscht casino. Har en väldigt användarvänlig sida och layouten är simpel och snygg. Vera&John fokuserar mest på videoslots. De har ett väldigt bra utbud av slots och skulle man vilja prova på något annat än slots så har de även live casino. Vera&John delar ut jackpots varje dag. Man kan vinna jackpoten genom att spela på några av de utvalda spelen. Supporten är väldigt bra och snabb. Vill man göra en insättning så finns det bra med alternativ och man kan även göra en insättningar med Swish. Har man turen på sin sida och vill ta ut en vinst så är det inga problem. Vera&John har snabba utbetalningar, oftast inom 15 minuter! Du kan logga in med bankid hos Vera&John, men ska du registrera dig så görs det via ett forumlär. Det går dock väldigt snabbt!",
+                    "secondrec": "Casinosektionen hos Vera&John är enligt oss ett av Sveriges bästa. Sidan är väldigt snygg gjord och sticker ut från dem andra casinon. Har en grym filterfunktion där du kan filtrera efter leverantör, lanseringsdatum,kategorier och bokstavsordning. Det är inte många casinos som erbjuder det. Utbudet av slots är väldigt stort. Med över 1200 slots från marknadsledande leverantörer. Casinot lägger till slots kontinuerligt vilket är väldigt bra. Hos Vera&John finns det något för alla som tycker om slots. ",
                     "sportsrec": "Ingen sport sektion",
                     "welcomeoffer": "Insättningsbonus på 200% bonus upp till 2 000 kr",
                     "bonusterms": [
@@ -613,13 +624,13 @@
                     "sportsterms": [
                         "Ingen sport sektion"
                     ],
-                    "topslotgames": "Över 1050+ spel. Hög kvalitet på videoslots från leverantörer som NetEnt,Microgaming,PlayNGo,Yggdrasil,Quickspin,Scientific Games och många fler!",
+                    "topslotgames": "Över 1200+ spel. Hög kvalitet på videoslots från leverantörer som NetEnt,Microgaming,PlayNGo,Yggdrasil,Quickspin,Scientific Games och många fler!",
                     "deposittypes": "Swish, VISA, Mastercard, Skrill, Neteller, PaysafeCard, Zimpler och Trustly",
                     "mindeposit": 100,
                     "minout": 200,
                     "swish": true,
                     "livechat": true,
-                    "summering": "Spelupplevelsen hos Vera&John är väldigt positiv. Man trivs verkligen att spela där. Casinot har snabba uttag och flera av de vanligaste insättningsmetoderna. Stort uttbud av slots och även livecasino. De delar ut en jackpot varje dag om man spelar på några av de utvalda slots. Vi rekommenderar att alltid läsa igenom regler och villkor innan insättning."
+                    "summering": "Spelupplevelsen hos Vera&John är väldigt positiv och bra. Man trivs verkligen att spela där. Casinot har snabba uttag och flera av de vanligaste insättningsmetoderna. Erbjuder även insättning via Swish och faktura. Stort uttbud av slots och även livecasino. De delar ut en jackpot varje dag om man spelar på några av de utvalda slots. Minsta insättningen är på 100 kr och uttagen ligger på minst 200kr. Ett bra casino för personer som tycker om slots."
                 }
             ]
         },
