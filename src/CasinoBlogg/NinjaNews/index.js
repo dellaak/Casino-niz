@@ -33,7 +33,7 @@ const NinjaNews = () => {
 
 
 
-  }
+  
         <h1 >Ninja Casino återvänder till den Svenska spelmarknaden? </h1>
         <img srcSet="/images/ninja-min.png 300w,
              /images/ninja-min.png 800w"
