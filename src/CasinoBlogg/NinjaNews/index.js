@@ -33,8 +33,12 @@ const NinjaNews = () => {
 
 
 
+  }
         <h1 >Ninja Casino återvänder till den Svenska spelmarknaden? </h1>
-        <div className="bg-ninja" alt="ninjacasino" />
+        <img srcSet="/images/ninja-min.png 300w,
+             /images/ninja-min.png 800w"
+     sizes="(max-width: 500px) 300px,800px"
+     src="/images/ninja-min.png"  alt="ninjacasino" />
         <small> Publicerad: 29 Januari 2020</small>
         <section className="news-section">
             <h2>Ninja Casino kanske kommer tillbaka</h2>
