@@ -424,6 +424,6 @@ baseURL = "/"
 
     [[redirects]]
  from = "/Go/spincasino"
-  to = "https://www.spincasino.se/"
+  to = "https://www.spincasino.se/?s=bfp20248&a=bfpadid116296"
   status = 301
   query = {path = "/Go/spincasino"}

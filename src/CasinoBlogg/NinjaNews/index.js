@@ -1,64 +1,14 @@
 import React from "react";
-import styled from "styled-components"
 import { Container } from "reactstrap"
 import { Helmet } from "react-helmet";
+import '../style.scss'
 require('typeface-muli')
-// import "./style.scss"
 
 
+const NinjaNews = () => {
 
 
-const StyledWrapper = styled(Container)`
-font-family: 'Muli', sans-serif;
-display:flex;
-background-color:white;
-flex-direction: column;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-margin:0 auto;
-margin-top:10px;
-margin-bottom:10px;
-word-break:break-word;
-
-h1{
-    padding:20px 0 ;
-}
-.bg-ninja{
-  height:300px;
-    background-image:url('/images/ninja-min.png');
-background-size:cover;
-  background-color: #464646;
-}
-
-.news-section{
-    padding:10px;
-    padding-top:20px;
-    font-size:18px;
-    
-}
-
-.kalla{
-    display:flex;
-    flex-direction:column;
-    padding:5px;
-    
-    a{
-     
-        margin:5px;
-    }
-}
-
-`
-
-
-
-const NinjaNews = (props) => {
-
-
-
-
-
-
-    return (<StyledWrapper>
+    return (<Container className="wrapper-ninja">
         <Helmet>
             <title>Kommer Ninja Casino Återlanseras? » Läs Casino Nyheter | Casinoniz</title>
             <link rel="canonical" href="https://www.casinoniz.se/ninjacasino-aterkomst" />
@@ -104,7 +54,7 @@ const NinjaNews = (props) => {
             <a href="https://www.di.se/live/global-gaming-tecknar-avtal-med-leverantor-med-svensk-spellicens/">DI.se Finnplay</a>
         </p>
 
-    </StyledWrapper>)
+    </Container>)
 }
 
 export default NinjaNews

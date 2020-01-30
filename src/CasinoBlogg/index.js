@@ -3,6 +3,7 @@ import { Container } from "reactstrap"
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import styled from "styled-components"
+import './style.scss'
 
 
 
@@ -12,44 +13,6 @@ display: flex;
  flex-wrap:wrap;
 `
 
-const StyledKampanj = styled.section`
-justify-content:space-between;
-display: flex;
-  max-width: 320px;
-  flex-direction: column;
-  margin: 50px 0;
-  -webkit-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
-  box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
-  border: 1px solid grey;
-  padding: 10px;
-
-  img {
-    max-width: 320px !important;
-    width: 100%;
-    max-height: 180px !important;
-  }
-
-  a {
-    text-align: center;
-    color: white;
-
-    font-size:16px;
-    background-color:#214467;
-  }
-.readmore-blogg{
-    margin-bottom:5px;
-    border-radius:9px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:30px;
-}
-  small {
-    padding: 10px;
-    border-top: 1px solid lightgrey;
-  }
-`
 
 const NewsSection = (props) => {
 
@@ -59,13 +22,13 @@ const NewsSection = (props) => {
 
   const Kampanj = (props) => {
     let { text, bild, publicerad, link } = props
-    return (<StyledKampanj>
+    return (<section className="kampanj">
       <NavLink to={link}><img src={bild} alt="blogg-img" /></NavLink>
       <p>{text}...</p>
       <NavLink className="readmore-blogg" to={link}>Läs mer</NavLink>
 
       <small>{publicerad}</small>
-    </StyledKampanj>)
+    </section>)
   }
 
 

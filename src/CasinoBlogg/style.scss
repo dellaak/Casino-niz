@@ -1,0 +1,76 @@
+.kampanj {
+  justify-content: space-between;
+  display: flex;
+  max-width: 320px;
+  flex-direction: column;
+  margin: 50px 0;
+  -webkit-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
+  border: 1px solid grey;
+  padding: 10px;
+
+  img {
+    max-width: 320px !important;
+    width: 100%;
+    max-height: 180px !important;
+  }
+
+  a {
+    text-align: center;
+    color: white;
+
+    font-size: 16px;
+    background-color: #214467;
+  }
+  .readmore-blogg {
+    margin-bottom: 5px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+  }
+  small {
+    padding: 10px;
+    border-top: 1px solid lightgrey;
+  }
+}
+
+.wrapper-ninja {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  word-break: break-word;
+
+  h1 {
+    padding: 20px 0;
+  }
+  .bg-ninja {
+    height: 300px;
+    background-image: url("/images/ninja-min.png");
+    background-size: cover;
+    background-color: #464646;
+  }
+
+  .news-section {
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+
+  .kalla {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    a {
+      margin: 5px;
+    }
+  }
+}
