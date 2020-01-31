@@ -63,7 +63,7 @@ const NewsSection = (props) => {
       <h2>Casino Nyheter 2020</h2>
       <BloggSection>
 
-        <Kampanj title="Slotsons stänger ner sin verksamhet" text='Viral Interactive Limited har beslutat att stänga ner onlinecasinot Slotsons.com. Från och med 1 februari 2020 så stänger man registreringar hos casinot. Alla aktiva spelare kommer tillåtas att ta ut sitt saldo under en period' bild="/images/slotson.png" publicerad="30 Januari 2020" link="/slotsons-laggerner" />
+        <Kampanj title="Slotsons stänger ner sin verksamhet" text='Viral Interactive Limited har beslutat att stänga ner onlinecasinot Slotsons.com. Från och med 1 februari 2020 så stänger man registreringar hos casinot. Alla aktiva spelare kommer tillåtas att ta ut sitt saldo under en period' bild="/images/slotson.png" publicerad="31 Januari 2020" link="/slotsons-laggerner" />
 
         <Kampanj title="Ninja casino kommer tillbaka?" text='Det kanske har märkts att det varit ganska tyst från det populära onlinecasinot Ninjacasino.se. Casinot blev av med sin svenska spellicens den 17 juni 2019 sedan spelinspektionen upptäckt allvarliga brister gällande arbetet mot penningtvätt och spelansvar' bild="/images/mininja.png" publicerad="29 Januari 2020" link="/ninjacasino-aterkomst" />
 

@@ -40,7 +40,7 @@ const SlotsonClosing= () => {
              /images/slotson.png 600w"
      sizes="(max-width: 500px) 300px,800px"
      src="/images/slotson.png"  alt="slotsonsclosing" />
-        <small> Publicerad: 30 Januari 2020</small>
+        <small> Publicerad: 31 Januari 2020</small>
         <section className="news-section">
             <h2>Slotsons lägger ner sin verksamhet från den 1 februari.</h2>
             <p>Viral Interactive Limited har beslutat att stänga ner onlinecasinot Slotsons.com. Från och med 1 februari 2020 så stänger man registreringar hos casinot. Alla spelare som har ett aktivt konto kommer sedan att tillåtas ta ut sitt kvarvarande saldo.</p>
