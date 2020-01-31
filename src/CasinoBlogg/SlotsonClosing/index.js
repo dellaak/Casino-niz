@@ -46,7 +46,7 @@ const SlotsonClosing= () => {
             <p>Viral Interactive Limited har beslutat att stänga ner onlinecasinot Slotsons.com. Från och med 1 februari 2020 så stänger man registreringar hos casinot. Alla spelare som har ett aktivt konto kommer sedan att tillåtas ta ut sitt kvarvarande saldo.</p>
             <p> Varför Viral Interactive Limited lägger ner verksamheten vet vi inte helt säkert. Enligt källor så är det ett "styrelsebeslut att inte fortsätta verksamheten". Vi vet inte om det har något med den nya spellagen att göra. </p>
 
-            <p>Slotsons.com har grundades 2018 och har sedan dess varit aktivt i två år. Casinot erbjöd spel på Slots, Live Casino och Bordsspel. Viral Interactive Limited har forfarande aktiva casinon som går väldigt bra som t.ex. <Link to="/recension/snabbis">Snabbis Casino</Link>.</p>
+            <p>Slotsons.com grundades 2018 och har sedan dess varit aktivt i två år. Casinot erbjöd spel på Slots, Live Casino och Bordsspel. Viral Interactive Limited har forfarande aktiva casinon som går väldigt bra som t.ex. <Link to="/recension/snabbis">Snabbis Casino</Link>.</p>
 
             <p>Alla frågor gällande Slotsons.com som uttag eller liknande hänvisar vi till Slotsons kundservice!</p>
 
