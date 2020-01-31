@@ -19,7 +19,7 @@ const SlotsonClosing= () => {
             />
             <meta
                 name="keywords"
-                content="Slotsons, stänger, läggerner, avslutar,verksamhet,casino,onlinecasino,2020"
+                content="Slotsons, stänger, läggerner, avslutar,verksamhet,casino,onlinecasino,2020, stängs, avslut, nere, slutar"
             />
             <meta property="og:title" content="Slotsons stänger ner sin verksamhet!" />
             <meta property="og:description" content="Viral Interactive Limited har beslutat att stänga ner onlinecasinot Slotsons.com. Från och med 1 februari 2020 så stänger man registreringar hos casinot." />
@@ -56,9 +56,16 @@ const SlotsonClosing= () => {
 
 
 
-        <p className="kalla">Källor: Email konversation från Slotsons medarbetare.
+        <p className="kalla">Källor: Email konversation från Slotsons medarbetare. 
         </p>
+        <p>"We regret to inform you that it has been decided to close down Slotsons.com.
 
+As of 1st February 2020, Viral Interactive Limited will no longer accept registrations on Slotsons.com and existing players will be asked to login and withdraw their balances."</p>
+<p>Ett screenshot från Slotsons medarbetare under (med texten som står ovan).</p>
+        <img srcSet="/images/mailslots.png 300w,
+             /images/mailslots.png 600w"
+     sizes="(max-width: 500px) 300px,800px"
+     src="/images/mailslots.png"  alt="slotsonsclosingmail" />
     </Container>)
 }
 
