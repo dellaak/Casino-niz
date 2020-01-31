@@ -27,6 +27,7 @@ import sweflag from "../images/sweflag.png"
 import Casinobonuscomp from '../CasinonMed/Casinobonusar/index.js';
 import NinjaNews from '../CasinoBlogg/NinjaNews/index.js';
 import NewsSection from '../CasinoBlogg/index.js';
+import SlotsonClosing from '../CasinoBlogg/SlotsonClosing/index.js';
 
 
 
@@ -117,6 +118,7 @@ const App = () => {
                         <Route path="/nya-slots-2020" render={(props) => (<NyaSlots list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                         <Route path="/casino-nyheter" render={(props) => (<NewsSection />)} />
                         <Route path="/ninjacasino-aterkomst" render={(props) => (<NinjaNews />)} />
+                        <Route path="/slotsons-laggerner" render={(props) => (<SlotsonClosing />)} />
                         <Route path="/Go/:casinotitle" render={(props) => (<Go />)} />
                         <Route path="/*" component={NotFoundPage} />
                     </Switch>
