@@ -4,6 +4,8 @@ import { Container } from "reactstrap"
 import { Link } from "react-router-dom";
 import Casinon from "../../Casinon/index"
 import { Helmet } from "react-helmet";
+import RandomCasinos from "../../RandomCasinos";
+import BottomInfoNyaCasino from "../../AllBottomInfo/BottomInfoNyaCasino";
 // import "./style.scss"
 
 const NyaCasino = (props) => {
@@ -71,7 +73,41 @@ const NyaCasino = (props) => {
                 name="keywords"
                 content="Casino, Casinobonusar, välkomstbonus, 2019,2020, bonus, spela, insättningsbonus, free spins, faktura casino, casino faktura, bästa casinon,nya,publicerade,licenserade,svenska,casinon, bästa casinon 2020, top5 , top10 casino"
             />
-
+            <script type="application/ld+json">{`
+      {
+        "@context": "https://schema.org",
+         "@type": "FAQPage",
+         "mainEntity": [{
+          "@type": "Question",
+          "name": "❓ Tänka på när man väljer nytt casino 2020?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Det släpps nya casinon till och från. Det viktigaste man ska tänka på när man väljer ett nytt casino är att casinot har svensk spellicens. Det ger dig som spelare en säkrare spelupplevelse och ett bättre skydd. Alla eventuella vinster är även skattefria."
+          }
+        }, {
+          "@type": "Question",
+           "name": "✨ Listar Casinoniz alla nya casinon 2020?",
+           "acceptedAnswer": {
+             "@type": "Answer",
+            "text": "Ja, Casinoniz.se kommer endast lista alla nya casinon som lanseras eller registreras under 2020 med svensk spellicens."
+          }
+        }, {
+          "@type": "Question",
+          "name": "💰 Nyttja casino bonus som erbjuds av det nya casinot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Om du inte har nyttjat ett erbjudande från ett onlinecasino med samma spellicens. Då kan du ta emot eventuell välkomstbonus från det nya casinot."
+          }
+        }, {
+          "@type": "Question",
+          "name": "⭐ Vad förväntas man av dem nya casinon 2020?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eftersom konkurrensen är så tuff inom casinobranschen så förväntas dem nya casinon ha ett väldigt snyggt tema, bra säkerhet, grym support med livechatt, snabba insättningar samt uttag och ett bra spelutbud. Har casinot även ett grymt välkomsterbjudanden är det ännu bättre."
+          }
+        }]
+      }
+      `}</script>
         </Helmet>
 
 
@@ -100,8 +136,10 @@ const NyaCasino = (props) => {
 
 
 
+        <RandomCasinos list={[...props.list.Casinon]} />
 
-        <p className="update-text">Senast uppdaterad: 19 Januari 2020</p>
+        <BottomInfoNyaCasino />
+        <p className="update-text">Senast uppdaterad: 1 februari 2020</p>
     </StyledWrapper>)
 }
 

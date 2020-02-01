@@ -117,7 +117,7 @@ const App = () => {
                         <Route path="/nya-casino-2020" render={(props) => (<NyaCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                         <Route path="/nya-slots-2020" render={(props) => (<NyaSlots list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                         <Route path="/casino-nyheter/" render={(props) => (<NewsSection  {...props} />)} />
-                        <Route path="/nyheter/:news" render={(props) => (<News  {...props} />)} />
+                        <Route path="/nyheter/:news" render={(props) => (<News list={Casinolist} {...props} />)} />
                         <Route path="/Go/:casinotitle" render={(props) => (<Go />)} />
                         <Route path="/*" component={NotFoundPage} />
                     </Switch>
