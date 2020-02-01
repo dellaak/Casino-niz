@@ -25,9 +25,9 @@ import PaysafeCasino from "../CasinonMed/Paysafe"
 import "./style.scss"
 import sweflag from "../images/sweflag.png"
 import Casinobonuscomp from '../CasinonMed/Casinobonusar/index.js';
-import NinjaNews from '../CasinoBlogg/NinjaNews/index.js';
+import News from "../CasinoBlogg/News"
 import NewsSection from '../CasinoBlogg/index.js';
-import SlotsonClosing from '../CasinoBlogg/SlotsonClosing/index.js';
+
 
 
 
@@ -116,9 +116,8 @@ const App = () => {
                         <Route path="/minsta-insattning-casino" render={(props) => (<MinstaInsCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                         <Route path="/nya-casino-2020" render={(props) => (<NyaCasino list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
                         <Route path="/nya-slots-2020" render={(props) => (<NyaSlots list={Casinolist} isBlocked={adBlockEnabled} {...props} />)} />
-                        <Route path="/casino-nyheter" render={(props) => (<NewsSection />)} />
-                        <Route path="/ninjacasino-aterkomst" render={(props) => (<NinjaNews />)} />
-                        <Route path="/slotsons-laggerner" render={(props) => (<SlotsonClosing />)} />
+                        <Route path="/casino-nyheter/" render={(props) => (<NewsSection  {...props} />)} />
+                        <Route path="/nyheter/:news" render={(props) => (<News  {...props} />)} />
                         <Route path="/Go/:casinotitle" render={(props) => (<Go />)} />
                         <Route path="/*" component={NotFoundPage} />
                     </Switch>

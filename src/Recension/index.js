@@ -42,7 +42,6 @@ const StyledSpan = styled.span`
 const Recension = (props) => {
 	let casinotitle = props.match.params.casinotitle
 
-
 	const [overall, setOverall] = useState({
 		title: '',
 		selectedCasino: false, recension: false, q1: false,
