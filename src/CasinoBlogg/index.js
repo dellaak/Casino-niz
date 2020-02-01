@@ -18,15 +18,19 @@ const NewsSection = (props) => {
 
 
 
-
-
   const Kampanj = (props) => {
-    let { text, bild, publicerad, link, title } = props
+    let { text, bild, publicerad, link, title, alttxt } = props
     return (<section className="kampanj">
-      <NavLink to={link}><img src={bild} alt="blogg-img" /></NavLink>
+      <NavLink to={{ pathname: `/nyheter/${link}`, match: `${link}` }}><img
+        srcSet={`${bild} 300w,${bild} 200w`}
+        sizes="(max-width: 500px) 200px,400px"
+        src={bild} alt={alttxt} /></NavLink>
       <h5>{title}</h5>
       <p>{text}...</p>
-      <NavLink className="readmore-blogg" to={link}>Läs mer</NavLink>
+
+      <NavLink className="readmore-blogg" to={{
+        pathname: `/nyheter/${link}`, match: `${link}`
+      }}>Läs mer</NavLink>
 
       <small>{publicerad}</small>
     </section>)
@@ -46,7 +50,7 @@ const NewsSection = (props) => {
         content="Casino, Casinobonusar, kasino, kasinobonusar,välkomstbonus, 2019,2020, casinonyheter,nyheter om casino, casinoblogg, kasinonyheter,casinonews"
       />
 
-      <meta property="og:title" content="Nyheter om casinbranschen 2020. " />
+      <meta property="og:title" content="Nyheter om casinobranschen 2020. " />
       <meta property="og:description" content="Vill du hålla dig uppdaterad om vilka casinon som t.ex. blir av med sin svenska spellicens eller liknande så hittar du det här." />
       <meta property="og:image" content="https://www.casinoniz.se/images/ninja-min.png" />
       <meta property="og:url" content="https://www.casinoniz.se/nyheter" />
@@ -63,9 +67,11 @@ const NewsSection = (props) => {
       <h2>Casino Nyheter 2020</h2>
       <BloggSection>
 
-        <Kampanj title="Slotsons stänger ner sin verksamhet" text='Viral Interactive Limited har beslutat att stänga ner onlinecasinot Slotsons.com. Från och med 1 februari 2020 så stänger man registreringar hos casinot. Alla aktiva spelare kommer tillåtas att ta ut sitt saldo under en period' bild="/images/slotson.png" publicerad="31 Januari 2020" link="/slotsons-laggerner" />
+        <Kampanj title="Nytt casino lanseras 2020 - förhoppningsvis under februari" text='Nu är det dags för ett nytt casino 2020. Casinot är SlotV.com. Casinot grundades 2017 och är aktiva i över 20 länder just nu. Bolaget bakom casinot är Avento MT Limited.' bild="/images/slotvimg.png" publicerad="1 februari 2020" link="slotv-nyttcasino" alttxt="slotvlogo" />
 
-        <Kampanj title="Ninja casino kommer tillbaka?" text='Det kanske har märkts att det varit ganska tyst från det populära onlinecasinot Ninjacasino.se. Casinot blev av med sin svenska spellicens den 17 juni 2019 sedan spelinspektionen upptäckt allvarliga brister gällande arbetet mot penningtvätt och spelansvar' bild="/images/mininja.png" publicerad="29 Januari 2020" link="/ninjacasino-aterkomst" />
+        <Kampanj title="Slotsons stänger ner sin verksamhet" text='Viral Interactive Limited har beslutat att stänga ner onlinecasinot Slotsons.com. Från och med 1 februari 2020 så stänger man registreringar hos casinot. Alla aktiva spelare kommer tillåtas att ta ut sitt saldo under en period' bild="/images/slotson.png" publicerad="31 januari 2020" link="slotsons-laggerner" alttxt="slotsonlogo" />
+
+        <Kampanj title="Ninja casino kommer tillbaka?" text='Det kanske har märkts att det varit ganska tyst från det populära onlinecasinot Ninjacasino.se. Casinot blev av med sin svenska spellicens den 17 juni 2019 sedan spelinspektionen upptäckt allvarliga brister gällande arbetet mot penningtvätt och spelansvar' bild="/images/mininja.png" publicerad="29 januari 2020" link="ninjacasino-aterkomst" alttxt="ninjacasinologo" />
 
 
 
@@ -77,6 +83,8 @@ const NewsSection = (props) => {
 
     </section>
   </Container>
+
+
   )
 }
 

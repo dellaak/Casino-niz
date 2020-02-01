@@ -68,4 +68,16 @@
       margin: 5px;
     }
   }
+
+  .kalla-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.wrapper-wrong {
+  padding: 50px;
+  background-color: white;
 }

@@ -1577,7 +1577,7 @@
                 "name": "💰Vad är minsta insättningen samt uttag hos Casilando?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Minsta insättningen hos Casilando är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+                    "text": "Minsta insättningen hos Casilando är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
                 }
             },
             "q2": {
@@ -1585,7 +1585,7 @@
                 "name": "✨Erbjuder Casilando insättning via faktura?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nej, Casilando erbjuder insättning via Visa,Mastercard,Skrill,Paysafecard,Neteller och Banköverföring!"
+                    "text": "Nej,det gör dem inte. Casilando erbjuder insättning via MasterCard,Skrill, Neteller, Trustly, Visa och PaysafeCard!"
                 }
             },
             "q3": {
@@ -1612,7 +1612,7 @@
             "publishdate": "23 Januari 2020",
             "activebonus": true,
             "extratext": "Freespins kan endast användas på följande spel: Book of Dead",
-            "bankid": false,
+            "bankid": true,
             "sports": false,
             "freefromwager": false,
             "depositpercent": 100,
@@ -1620,13 +1620,13 @@
             "fakturatype": [],
             "recension": [
                 {
-                    "gamebar": 89,
+                    "gamebar": 90,
                     "experience": 70,
                     "support": 86,
-                    "egentitel": "Casinobonus",
-                    "egentitel2": "Sports och casino",
-                    "toprecension": "Casilando är ett väldigt simpelt casino. Med en stilren design och extrem simpel navigering. Casinot har lagom med insättningsmetoder. Om du har verifierat ditt konto så går uttagen relativt snabbt. Supporten har livechatt som är öppen dygnet runt. ",
-                    "secondrec": "Casinot har ett bra utbud av slots. Med flera ledande leverantörer på sin lista så ger Casilando spelaren en bra upplevelse slots. Casinosektionen är väldigt simpel med en bra filter funktion. Erbjuder en bra bonus på 100 % upp till 3000 kr i insättningsbonus samt 90 Free Spins.",
+                    "egentitel": "Casino med Trustly",
+                    "egentitel2": false,
+                    "toprecension": "Casilando är ett väldigt simpelt men snyggt casino. Med en stilren design och extrem simpel navigering. Casinot erbjuder ett flertal populära insättningsmetoder, som t.ex. betalningsmetoden Trustly. Vilket betyder att dina insättningar och uttag går snabbt! Supporten har en livechatt som är öppen dygnet runt, vilket är väldigt bra. Att registrera ett konto är väldigt simpelt. Du klickar på insättning och sätter in önskat belopp och veriferar dig med bank identifiering eller säkerhetsdosa.",
+                    "secondrec": "Casinot har ett väldigt bra utbud av slots. Med flera ledande leverantörer på sin lista så ger Casilando spelaren flera möjligheter när det gäller slots. Här hittar man något som passar alla.  Casinosektionen är väldigt simpel med en bra filter funktion. Erbjuder en bra bonus på 100 % upp till 3000 kr i insättningsbonus samt 90 Free Spins.",
                     "sportsrec": "Ingen sportsektion",
                     "welcomeoffer": "Insättningsbonus på 100 % upp till 3000 kr i insättningsbonus + 90 Free Spins",
                     "bonusterms": [
@@ -1640,12 +1640,12 @@
                         "Ingen välkomstbonus just nu"
                     ],
                     "topslotgames": "Över 1000+ slots av hög kvalitet. Leverantörer som NetEnt, Big Time Gaming, Elk Studios, Evoulution Gaming, Microgaming, NetEnt, Nyx, Thunderkick , Red Tiger, Quickspin och många fler!",
-                    "deposittypes": "Visa,Mastercard,Skrill,Paysafecard,Neteller, Banköverföring",
-                    "mindeposit": 100,
+                    "deposittypes": "MasterCard,Skrill,Neteller,Trustly,Visa,PaysafeCard",
+                    "mindeposit": 200,
                     "minout": 200,
                     "swish": false,
                     "livechat": true,
-                    "summering": "Casilando är ett väldigt simpelt casino. Man registrerar sig utan bankid. Casinosektione är väldigt simpel med enkel navigering. Bra utbud av spel från flera av de kända leverantörerna.Erbjuder de vanligaste insättningsmetoder. Casinobonusen som erbjuder är bra. Supporten på sidan är öppen dygnet runt med livechatt."
+                    "summering": "Casilando är ett väldigt simpelt och snyggt casino. Bra utbud av spel från flera av de kända leverantörerna på marknades. Erbjuder de vanligaste insättningsmetoder, insättningarna och uttagen går väldigt snabbt. Minsta insättning samt uttag ligger på 200kr.  Supporten på sidan är öppen dygnet runt med livechatt. Du kan spela med bank identifiering eller säkerhetsdosa."
                 }
             ]
         },
