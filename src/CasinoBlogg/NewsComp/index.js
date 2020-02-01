@@ -37,7 +37,7 @@ const NewsComp = (props) => {
 
 
         <h1 >{props.news.maintitle} </h1>
-        <img srcSet={`${props.news.artimg} 300w,${props.news.artimg} 200w`}
+        <img className="news-img" srcSet={`${props.news.artimg} 300w,${props.news.artimg} 200w`}
             sizes="(max-width: 500px) 200px,400px"
             src={props.news.artimg} alt={props.news.altimt} />
         <small> Publicerad:{props.news.publish}</small>

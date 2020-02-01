@@ -48,11 +48,13 @@
 }
 
 .new-casinos {
+  border-radius: 9px;
   max-height: 590px;
   box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, 0.51);
   width: 420px;
   text-align: left;
   max-width: 100%;
+  align-self: center;
 }
 
 .alert-success {
@@ -139,6 +141,7 @@
 }
 
 .title-box {
+  border-radius: 9px 9px 0 0;
   background-color: #214467;
   color: #fed100;
   text-align: center;
@@ -370,13 +373,13 @@ h4 {
 
 @media (max-width: 450px) {
   .welcome-box {
-    padding: 15px;
+    padding: 5px;
   }
 }
 
 @media (min-width: 450px) {
   .welcome-box {
-    padding: 15px;
+    padding: 5px;
   }
 }
 

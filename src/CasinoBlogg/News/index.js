@@ -39,7 +39,9 @@ const News = (props) => {
     padding:0 20px;
     margin-bottom:20px;
     height:auto;
-background-color:white !important;
+    @media (max-width: 830px) {
+     padding:0;
+    }
 `
 
 
