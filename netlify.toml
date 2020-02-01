@@ -13,6 +13,19 @@ baseURL = "/"
 
 
 [[redirects]]
+  from = "https://www.casinoniz.se/slotsons-laggerner"
+  to = "https://www.casinoniz.se/nyheter/slotsons-laggerner"
+  status = 301
+  query = {path = "https://www.casinoniz.se/slotsons-laggerner"}
+
+
+[[redirects]]
+  from = "https://www.casinoniz.se/ninjacasino-aterkomst"
+  to = "https://www.casinoniz.se/nyheter/ninjacasino-aterkomst"
+  status = 301
+  query = {path = "https://www.casinoniz.se/ninjacasino-aterkomst"}
+
+[[redirects]]
   from = "/Go/unibet"
   to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34474"
   status = 301
