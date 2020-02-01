@@ -12,7 +12,7 @@ const NewsComp = (props) => {
 
     return (<Container className="wrapper-ninja">
         <Helmet>
-            <title>{props.news.maintitle}</title>
+            <title>{props.news.maintitle} | Casinoniz</title>
             <link rel="canonical" href={`https://www.casinoniz.se/casino-nyheter/${props.news.metaurl}`} />
             <meta
                 name="description"
