@@ -70,11 +70,7 @@ ul{
     list-style:none;
 }
 
-.kommande-btn{
-    background-color:lightblue !important;
-    width:50%;
-    margin:0 auto;
-}
+
 `
 
 
@@ -147,7 +143,7 @@ ul{
         <StyledKommande>
             <h2>Kommande slots 2020</h2>
 
-            {slotLists.coming.map((slot, e) =>
+            {slotLists.coming.slice(0).reverse().map((slot, e) =>
                 < NewSlotComp
                     key={slot.id}
                     slot={slot}

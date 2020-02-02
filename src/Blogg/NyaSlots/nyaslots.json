@@ -19,7 +19,7 @@
             "name": "Esqueleto Explosivo 2",
             "extratitle": "Upp till 64x!",
             "img": "/images/esqueleto2.png",
-            "provider": "thunderkick",
+            "provider": "Thunderkick",
             "rtp": 93.14,
             "maxwin": 500000,
             "winlines": 99,
@@ -39,7 +39,7 @@
             "name": "Monopoly MegaWays",
             "extratitle": "117 649 vinstlinjer!",
             "img": "/images/molopolyslot.png",
-            "provider": "thunderkick",
+            "provider": "Thunderkick",
             "rtp": 96.39,
             "maxwin": 250000,
             "winlines": 117649,
@@ -204,6 +204,39 @@
                 "videoslots",
                 "casumo",
                 "rizk"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Desert Shark",
+            "extratitle": "Lansering 25 Februari",
+            "img": "/images/desertshark.jpg",
+            "provider": "Fantasma Games",
+            "coming": true,
+            "rtp": 96.33,
+            "maxwin": 1679400,
+            "winlines": 40,
+            "firstp": "Det svenska bolaget Fantasma Games släpper en ny slot i år. Bolaget har varit aktivt sedan 2017 och har släppt slots som håller väldigt hög kvalitet. Videoslottens kolumner och rader är 5*4. Spelets symboler är guldiga hajar som agerar som wilds, guldmynt, kameler och massa annat som kommer från öknen. ",
+            "listtitle": "",
+            "list": [],
+            "boldlist": [],
+            "secondp": "Desert Shark har något som kallas The Swim Swim future. När du får minst två guldiga hajar då börjar hajen simma till vänster och byter ut alla symboler på raden till wilds. Spelet har väldigt snygg design och en väldigt bra bonusrunda. Du kan spela videosloten på datorn och även i mobilen.",
+            "bonustext": "Spelet innehåller så kallade scatters. Får du 3 scatters under en vanlig spelrunda så aktiveras bonusfunktionen freespins. Då får du 8 freespins tillgodo. I freespins funktionen så läggs det mellan 1-6 Dynamite wilds ut slumpmässigt på kolumner 1-3 på varje bonusrunda! Dynamite wilds exploderar när Swim funktionen aktiveras på raden. När en Dynamite Wild exploderar så byter den ut 2-6 symboler till wilds. Varje wild kan ha upp till 9x multiplikator. I bonusrundan så aktiveras Swim funktionen när endast 1 haj dyker upp. ",
+            "bonuslist": [],
+            "bonuslistbold": [],
+            "bonustext2": "",
+            "casinos": [
+                "leovegas",
+                "unibet",
+                "21casino",
+                "betsafe",
+                "nordicbet",
+                "rizk",
+                "spinit",
+                "karlcasino",
+                "luckycasino",
+                "mrgreen",
+                "comeon"
             ]
         }
     ]

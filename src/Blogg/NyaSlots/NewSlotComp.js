@@ -71,14 +71,14 @@ const NewSlotComp = (props) => {
     const StyledSlotButton = styled(Button)`
 height: auto;
 min-height:50px;
-background-color: ${props => props.coming ? '#F0FFFF' : '#fed100'} !important;
+background-color: ${props => props.coming ? '#214467' : '#fed100'} !important;
  padding:10px;
   text-align: center;
   font-size: 20px;
   margin-bottom:20px !important;
   width: 100% ;
   max-width: 1000px;
-  color: black !important;
+  color: ${props => props.coming ? '#fed100' : 'black'} !important;;
   margin: 0 auto;
   align-self: center;
   display: flex;
@@ -140,6 +140,7 @@ background-color: #ffc10736 !important;
                         <li>RTP: <b>{props.slot.rtp} %</b></li>
                         <li>Max-vinst(mynt): <b>{props.slot.maxwin.toLocaleString()}</b></li>
                         <li>Vinstlinjer:<b>{props.slot.winlines.toLocaleString()}</b></li>
+                        <li>Spelleverantör:<b>{props.slot.provider}</b></li>
                     </ul>
                     <div className="slot-review">
                         <p>{props.slot.firstp} </p>
