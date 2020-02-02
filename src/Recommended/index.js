@@ -26,14 +26,9 @@ const Recommended =(props)=> {
 
         useEffect(() => {  
           const topCasinos = () =>{
+            let force=[]
             let wagerarr = []
         let size = 3;
-        for (let i of list) {
-          if ( i.setTop === true ){
-              wagerarr.push(i);
-            }
-  }
-      
     
         for (let i of list) {
                 if ( i.freefromwager === true ){
@@ -51,6 +46,13 @@ const Recommended =(props)=> {
      
   
         wagerarr.slice()
+        
+        for (let i of list) {
+          if ( i.setTop === true ){
+              wagerarr.unshift(i);
+            }
+  }
+    
     
         setTop3(wagerarr.slice(0, size))
       }   

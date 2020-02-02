@@ -1,4 +1,4 @@
-.form-control {
+.casino-search {
   margin: 0 auto;
   margin-bottom: 10px;
   max-width: 500px !important;
@@ -6,4 +6,42 @@
   border-radius: 9px !important;
   padding: 10px !important;
   background: url("/images/searchicon.svg") no-repeat right;
+}
+
+.input-group {
+  width: 250px !important;
+  max-width: 100%;
+  height: 50px;
+
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  input {
+    font-size: 18px;
+    height: 50px;
+    font-family: "Roboto", sans-serif;
+  }
+  ::placeholder {
+    font-size: 14px !important;
+  }
+}
+
+.calc-box {
+  border-radius: 9px;
+  background-color: #214467;
+  color: #fed100 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none !important;
+  outline: none !important;
+  padding: 20px 10px;
+  max-width: 350px;
+  .addon {
+    width: 70px;
+    background-color: #fed100 !important;
+    font-family: "Roboto", sans-serif;
+  }
 }

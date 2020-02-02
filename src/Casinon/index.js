@@ -47,6 +47,7 @@ overflow:hidden !important;
 const Casinon = (props) => {
   const [showStar, setShowStar] = useState(false);
   const [snabbFakta, setSnabbFakta] = useState(false);
+  const [value, setValue] = useState(Number)
 
   const castitle = props.casino.title
 
@@ -58,11 +59,26 @@ const Casinon = (props) => {
         setShowStar(true)
       }
     }
+    if (props.calc) {
+      if (props.casino.getextracash) {
+        let extra = parseInt(props.calcVal) + props.casino.getextracash
+
+        return setValue(extra)
+      } else if (props.casino.doubleup) {
+        setValue(parseInt(props.calcVal))
+        if (props.calcVal > 150 && props.calcVal < 250)
+          return setValue(props.casino.doubleup)
+      } else {
+        const x = props.casino.depositpercent / 100;
+        const y = parseInt(props.calcVal);
+        let sum = x * y;
+        setValue(sum += y)
+      }
+
+    }
 
 
-
-
-  }, [props.casino.recension]);
+  }, [props.calcVal, props.casino.recension]);
 
 
 
@@ -117,9 +133,15 @@ const Casinon = (props) => {
 
 
       </div>
+      <div className={props.calc && props.casino.depositpercent >= 1 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 ? "calc-wrap" : ''}>
 
+        {props.calc && props.casino.depositpercent > 0 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 ? <p className="calc-p">Du får: <b>{value}kr {props.casino.freespins > 0 ? `+ ${props.casino.freespins} Freespins` : ''}</b> och måste omsätta minst:
+        <b> {parseInt(props.calcVal) <= props.casino.maxbonus && props.casino.wager === 1 ?
+            `${props.casino.doubleup && parseInt(props.calcVal) <= props.casino.maxbonus ?
+              `${props.casino.maxbonus <= parseInt(props.calcVal) ? props.casino.maxbonus : 0}` : value}` : value * props.casino.wager}kr</b></p> : ''}
 
-
+      </div>
+      {props.calc && props.casino.depositpercent > 0 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 ? <p className="calc-small">Detta är en uppskattad bonus. Läs igenom regler & villkor för varje enskild bonus</p> : ''}
       {props.casino.casinospecialterms ? <div className="extra-text"><span>{props.casino.casinospecialterms}</span></div> : ''}
 
 

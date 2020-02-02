@@ -8,6 +8,7 @@ import SportCasino from "../../Sports/SportCasino";
 import LatestUpdate from "../../LastUpdated"
 import BottomInfoCasinobonus from "../../AllBottomInfo/BottominfoCasinoBonus"
 import present from "../../images/bonusicon.svg"
+import CalcSearch from "../../SearchComp/calcSearch";
 
 const StyledH3 = styled.h3`
 text-align:center;
@@ -68,8 +69,8 @@ const Casinobonuscomp = (props) => {
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
     const [sports, setSports] = useState(false)
-
-
+    const [searchNr, setSearchNr] = useState('');
+    const [calculate, setCalculate] = useState(false);
 
 
 
@@ -297,6 +298,8 @@ const Casinobonuscomp = (props) => {
     const resetList = () => {
         setCasinon(activebonusList)
         setSports(false)
+        setCalculate(false)
+        setSearchNr('')
         setButtons({activebuttonodds: false , activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
         setSize(9)
         setFade(true)
@@ -307,6 +310,36 @@ const Casinobonuscomp = (props) => {
     }
 
 
+    const calculateBonus = event => {
+        if (event.target.value.length === 0) {
+            setCalculate(false)
+            return setSearchNr('')
+        }
+        let regex = /^\d+$/;
+        if (!event.target.value.match(regex)) {
+            return
+        }
+        if (event.target.value.length > 5) {
+            return;
+        }
+
+        let orlist = [...casinon]
+        if (event.target.value.length > 0) {
+            for (let i of orlist) {
+                if (i.depositpercentsports > 0) {
+
+                    setCalculate(true)
+                    setSize(9)
+                }
+
+            }
+
+        } else {
+            return resetList()
+        }
+
+        setSearchNr(event.target.value);
+    };
 
 
 
@@ -358,11 +391,11 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
                 <meta
                     name="description"
                     content="Casino bonusar 2020 ✅ ➼ Lista på alla svenska casinon som erbjuder en casino bonus just nu! 
-                    Hitta din välkomstbonus. Vi erbjuder en grym filterfunktion som hjälper dig att hitta den bästa casino bonusen 2020."
+                    Hitta din välkomstbonus. Vi erbjuder en kanske Sverige bästa filterfunktion som hjälper dig att hitta bästa casino bonusen 2020."
                 />
                 <meta
                     name="keywords"
-                    content="Casino, Casinobonusar,filter,filterfunktion 2019,2020 ,esport casinobonus, casino , bonus, filterfunktion, filter, filtrera, bonus trustly, bästa casinobonus, casno, casin, bonos"
+                    content="Casino, Casinobonusar,filter,2019,2020 ,esport casinobonus, casino , bonus, filterfunktion, filter, filtrera, bonus trustly, bästa casinobonus, casno, casin, bonos"
                 />
                 <script type="application/ld+json">{`
       {
@@ -440,6 +473,7 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
 
 
             <StyledH3>Alla casinon med bonusar</StyledH3>
+            <CalcSearch calculateBonus={calculateBonus} value={searchNr} />
             <StyledSecondFilter>
                 <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} isactivebutton={sports ? 1 : undefined}>Sportsbonus</StyledButton>
 
@@ -467,12 +501,16 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
                             key={casino.id + casino.title}
                             casinon={casino}
                             isBlocked={props.isBlocked}
+                            calc={calculate}
+                        calcVal={searchNr}
                         />
                     )) : casinon.slice(0, size).map(casino => (
                         <Casinon
                             key={casino.id + casino.title}
                             casino={casino}
                             isBlocked={props.isBlocked}
+                            calc={calculate}
+                        calcVal={searchNr}
                         />
                     ))}
             </div>

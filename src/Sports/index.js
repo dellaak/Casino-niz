@@ -6,6 +6,7 @@ import BottomInfoSports from "../AllBottomInfo/BottomInfoSports/index"
 import { Helmet } from "react-helmet";
 import "./style.scss"
 import LatestUpdate from "../LastUpdated"
+import CalcSearch from "../SearchComp/calcSearch";
 
 
 const Sports = (props) => {
@@ -15,7 +16,8 @@ const Sports = (props) => {
     const [readmore, setReadMore] = useState(false);
     const [fade, setFade] = useState(false)
     const [size, setSize] = useState(9)
-
+    const [searchNr, setSearchNr] = useState('');
+    const [calculate, setCalculate] = useState(false);
 
 
 
@@ -156,7 +158,8 @@ const Sports = (props) => {
         sportCasinon = sportCasinon.filter(item => !top.includes(item));
         sportCasinon = top.concat(sportCasinon);
 
-
+        setCalculate(false)
+        setSearchNr('')
         setCasinon(sportCasinon)
         setActiveButton({ deposit: false, wager: false, odds: false })
         setFade(true)
@@ -166,7 +169,36 @@ const Sports = (props) => {
     }
 
 
+    const calculateBonus = event => {
+        if (event.target.value.length === 0) {
+            setCalculate(false)
+            return setSearchNr('')
+        }
+        let regex = /^\d+$/;
+        if (!event.target.value.match(regex)) {
+            return
+        }
+        if (event.target.value.length > 5) {
+            return;
+        }
 
+        let orlist = [...casinon]
+        if (event.target.value.length > 0) {
+            for (let i of orlist) {
+                if (i.depositpercentsports > 0) {
+
+                    setCalculate(true)
+                    setSize(9)
+                }
+
+            }
+
+        } else {
+            return resetList()
+        }
+
+        setSearchNr(event.target.value);
+    };
 
 
     const readMore = () => {
@@ -296,7 +328,7 @@ const Sports = (props) => {
                     )}
             </div>
 
-
+            <CalcSearch calculateBonus={calculateBonus} value={searchNr} />
             <SportsFilter
                 id="filterid"
                 wager={wagerbutton}
@@ -313,6 +345,8 @@ const Sports = (props) => {
                         key={casino.id + casino.title}
                         casinon={casino}
                         isBlocked={props.isBlocked}
+                        calc={calculate}
+                        calcVal={searchNr}
                     />
                 ))}
             </div>

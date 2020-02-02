@@ -14,7 +14,7 @@ import LatestUpdate from "../LastUpdated"
 import "./style.scss"
 import MonthCasino from "../MonthCasino"
 import SearchComp from '../SearchComp';
-
+import CalcSearch from '../SearchComp/calcSearch';
 
 
 
@@ -30,9 +30,12 @@ const StartPage = (props) => {
   const [readmore, setReadMore] = useState(false);
   const [showmedalj, setShowMedalj] = useState(true);
   const [fade, setFade] = useState(false);
+  const [calculate, setCalculate] = useState(false);
   const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
   const myRef = useRef(null)
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchNr, setSearchNr] = useState('');
+
 
   useEffect(() => {
 
@@ -105,13 +108,13 @@ const StartPage = (props) => {
   }
 
   const depositbutton = () => {
-
     resetList()
     let orlist = [...props.start.Casinon]
 
     let wagerarr = [];
     let depositdelete = [];
     for (let i of orlist) {
+
       if (i.depositpercent === "x") {
         depositdelete.push(i);
       } else {
@@ -122,6 +125,7 @@ const StartPage = (props) => {
     wagerarr.sort(function (a, b) {
       return b.depositpercent - a.depositpercent;
     });
+
 
     setShowMedalj(false)
     setCasinoList({ ...casinoList, Casino: wagerarr.concat(depositdelete), showOrder: false })
@@ -158,10 +162,40 @@ const StartPage = (props) => {
     });
     setSearchTerm("")
     setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+
+    if (searchNr.length > 0) {
+      setSearchNr(searchNr)
+    } else {
+      setSearchNr("")
+    }
+
+
     setSize(9)
     return setCasinoList({ Casino: orlist, showOrder: true })
   }
 
+
+  const hardReset = () => {
+    let orlist = [...props.start.Casinon]
+    let newTop = orlist.filter(function (i) {
+      if (i.recension) {
+        return i.recension[0].gamebar === 100 && i.recension[0].experience === 100 && i.recension[0].support === 100
+      }
+      return newTop
+    })
+
+    orlist.filter(item => !newTop.includes(item))
+    newTop.concat(orlist)
+    orlist.sort(function (a, b) {
+      return (b.recension[0].gamebar + b.recension[0].experience + b.recension[0].support) - (a.recension[0].gamebar + a.recension[0].experience + a.recension[0].support)
+    });
+    setSearchTerm("")
+    setSearchNr('')
+    setCalculate(false)
+    setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+    setSize(9)
+    return setCasinoList({ Casino: orlist, showOrder: true })
+  }
 
   const freewagerbutton = () => {
     resetList()
@@ -232,18 +266,49 @@ const StartPage = (props) => {
   };
 
 
+  const calculateBonus = event => {
+    if (event.target.value.length === 0) {
+      setCalculate(false)
+      return setSearchNr('')
+    }
+    let regex = /^\d+$/;
+    if (!event.target.value.match(regex)) {
+      return
+    }
+    if (event.target.value.length > 5) {
+      return;
+    }
+
+    let orlist = [...props.start.Casinon]
+    if (event.target.value.length > 0 && event.target.value > 0) {
+      for (let i of orlist) {
+        if (i.depositpercent > 0) {
+
+          setCalculate(true)
+          setSize(9)
+        }
+
+      }
+
+    } else {
+      return resetList()
+    }
+
+    setSearchNr(event.target.value);
+  };
+
   return (<React.Fragment>
     <section >
       <Helmet>
-        <title>Svenska Casino 2020 ⭐ » Jämför casino bonus | Casinoniz</title>
+        <title>Svenska Casino 2020 ⭐ » Jämför och Beräkna Din Casino Bonus | Casinoniz</title>
         <link rel="canonical" href="https://www.casinoniz.se/" />
         <meta
           name="description"
-          content="[Uppdaterad 2020✅] Svenska casinon och casino bonusar ➼ Jämför bonusar och filtrera casinon efter dina önskemål och hitta en välkomstbonus samt casino bonus som passar just dig. "
+          content="[Uppdaterad 2020✅] Svenska casinon och casino bonusar ➼ Jämför bonusar och filtrera casinon efter dina önskemål. Du kan även beräkna din bonus! Hitta en välkomstbonus samt casino bonus som passar just dig. Beräkna din "
         />
         <meta
           name="keywords"
-          content="Casino,faktura casino,välkomstbonus, julbonusar, casinobonusar jul, jul casino,välkomnstbonus, insättningsbonus, casino faktura, svensk casino , svenska casinon, Casinobonusar,2020,omsättningsfritt, recension, review, recension casinon, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
+          content="Casino,faktura casino,välkomstbonus, julbonusar, casinobonusar jul, jul casino,välkomnstbonus, insättningsbonus,beräkna, filtrer, filtrera casino faktura, svensk casino , svenska casinon, Casinobonusar,2020,omsättningsfritt, recension, review, recension casinon, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
         />
         <script type="application/ld+json">{`
       {
@@ -335,10 +400,9 @@ const StartPage = (props) => {
           <Recommended list={[...props.start.Casinon]} isBlocked={props.isBlocked}></Recommended>
 
           <p>
-            Svenska casino som erbjuder välkomstbonus även känt som casino bonus är något som har gynnat spelare i den svenska spelmarknaden.
- Du hittar alla casinon med <Link to="/casino-bonus">aktiv casino bonus</Link> på vår bonus sektion. Den vanligaste casinobonusen som brukar erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens!
-                                                                                                                                                                                                                                                                                                                                                                                                             Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens. Casino bonus även kallat välkomstbonus är en bonus där man som spelare kan få lite extra pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
-                                                                                                                                                                                                                                                                                                                                                                                                            Välkommen!
+            Svenska casino som erbjuder välkomstbonus även känt som casino bonus är något som har gynnat spelare i den svenska spelmarknaden. Välkommen till kanske Sverige bästa filterfunktion för  casino bonusar!
+ Du hittar alla casinon med <Link to="/casino-bonus">aktiv casino bonus</Link> på vår bonus sektion. Den vanligaste casinobonusen som brukar erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens! Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens. Casino bonus även kallat välkomstbonus är en bonus där man som spelare kan få lite extra pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Välkommen!
             </p>
           <p>
             Betta på E-sport ? Vi har även en esport sektion där vi listar
@@ -388,6 +452,7 @@ const StartPage = (props) => {
       </section>
 
       <Container className="wrapit">
+        <CalcSearch calculateBonus={calculateBonus} value={searchNr} />
         <div ref={myRef} className="top-box" />
         <Filter
           id="filterid"
@@ -397,13 +462,18 @@ const StartPage = (props) => {
           activebuttonwager={buttons.activebuttonwager}
           activebuttonfree={buttons.activebuttonfree}
           activebuttondep={buttons.activebuttondep}
-          reset={resetList}
+          reset={hardReset}
+
         />
         <SearchComp handleChange={handleChange} value={searchTerm} />
+
+
         {showmedalj ? (<section className="medalj-box">
           <p><i>Ordningen på listan är just nu är baserad på vår recension. Ju högre poäng desto högre upp på listan är casinot.</i></p>
           <small className="medalj-text"><img src={star} className="top-star" alt="star" /><i>Medaljen visar casinon som har fått fulla poäng av oss i våran casino recension.</i></small>
         </section>) : null}
+
+
 
         <div className={fade ? "fade-in" : "casino-wrap"}>
           {casinoList.Casino.slice(0, size).map((casino, e) =>
@@ -412,6 +482,9 @@ const StartPage = (props) => {
               casino={casino}
               reset={resetList}
               isBlocked={props.isBlocked}
+              calc={calculate}
+              calcVal={searchNr}
+
             />
           )}
         </div>
