@@ -48,6 +48,7 @@ const Casinon = (props) => {
   const [showStar, setShowStar] = useState(false);
   const [snabbFakta, setSnabbFakta] = useState(false);
   const [value, setValue] = useState(Number)
+  const [bonusVal, setBonusVal] = useState(Number)
 
   const castitle = props.casino.title
 
@@ -60,6 +61,8 @@ const Casinon = (props) => {
       }
     }
     if (props.calc) {
+
+
       if (props.casino.getextracash) {
         let extra = parseInt(props.calcVal) + props.casino.getextracash
 
@@ -72,6 +75,7 @@ const Casinon = (props) => {
         const x = props.casino.depositpercent / 100;
         const y = parseInt(props.calcVal);
         let sum = x * y;
+        setBonusVal(sum)
         setValue(sum += y)
       }
 
@@ -138,7 +142,7 @@ const Casinon = (props) => {
         {props.calc && props.casino.depositpercent > 0 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 ? <p className="calc-p">Du får: <b>{value}kr {props.casino.freespins > 0 ? `+ ${props.casino.freespins} Freespins` : ''}</b> och måste omsätta minst:
         <b> {parseInt(props.calcVal) <= props.casino.maxbonus && props.casino.wager === 1 ?
             `${props.casino.doubleup && parseInt(props.calcVal) <= props.casino.maxbonus ?
-              `${props.casino.maxbonus <= parseInt(props.calcVal) ? props.casino.maxbonus : 0}` : value}` : value * props.casino.wager}kr</b></p> : ''}
+              `${props.casino.maxbonus <= parseInt(props.calcVal) ? props.casino.maxbonus : 0}` : props.calcVal}` : `${props.casino.casinobonuswager ? bonusVal * props.casino.wager : value * props.casino.wager}`}kr</b ></p> : ''}
 
       </div>
       {props.calc && props.casino.depositpercent > 0 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 ? <p className="calc-small">Detta är en uppskattad bonus. Läs igenom regler & villkor för varje enskild bonus</p> : ''}

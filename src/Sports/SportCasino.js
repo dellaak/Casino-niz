@@ -46,6 +46,7 @@ const SportCasino = (props) => {
     const [showStar, setStar] = useState(false)
     const [snabbFakta, setSnabbFakta] = useState(false);
     const [value, setValue] = useState(Number)
+    const [bonusVal, setBonusVal] = useState(Number)
 
     useEffect(() => {
         let fullstar = props.casinon.recension[0]
@@ -68,9 +69,10 @@ const SportCasino = (props) => {
                 if (props.calcVal > 150 && props.calcVal < 250)
                     return setValue(props.casinon.doubleup)
             } else {
-                const x = props.casinon.depositpercent / 100;
+                const x = props.casinon.depositpercentsports / 100;
                 const y = parseInt(props.calcVal);
                 let sum = x * y;
+                setBonusVal(sum)
                 setValue(sum += y)
             }
 
@@ -132,16 +134,17 @@ const SportCasino = (props) => {
 
             </div>
 
-            <div className={props.calc && props.casinon.depositpercent >= 1 && props.calcVal <= props.casinon.maxbonus && props.calcVal >= 100 ? "calc-wrap" : ''}>
+            <div className={props.calc && props.casinon.depositpercentsports >= 1 && props.calcVal <= props.casinon.maxbonus && props.calcVal >= 100 ? "calc-wrap" : ''}>
 
-                {props.calc && props.casinon.depositpercent > 0 && props.calcVal <= props.casinon.maxbonus && props.calcVal >= 100 ? <p className="calc-p">Du får: <b>{value}kr {props.casinon.freespins > 0 ? `+ ${props.casinon.freespins} Freespins` : ''}</b> och måste omsätta minst:
+                {props.calc && props.casinon.depositpercentsports > 0 && props.calcVal <= props.casinon.maxbonus && props.calcVal >= 100 ? <p className="calc-p">Du får: <b>{value}kr {props.casinon.freespins > 0 ? `+ ${props.casinon.freespins} Freespins` : ''}</b> och måste omsätta minst:
 <b> {parseInt(props.calcVal) <= props.casinon.maxbonus && props.casinon.sportswager === 1 ?
                         `${props.casinon.doubleup && parseInt(props.calcVal) <= props.casinon.maxbonus ?
-                            `${props.casinon.maxbonus <= parseInt(props.calcVal) ? props.casinon.maxbonus : 0}` : value}` : value * props.casinon.sportswager}kr</b></p> : ''}
+                            `${props.casinon.maxbonus <= parseInt(props.calcVal) ? props.casinon.maxbonus : 0}` : props.calcVal}` : `${props.casinon.casinobonuswager ? bonusVal * props.casinon.sportswager : value * props.casinon.sportswager}`}kr</b ></p> : ''}
 
             </div>
-            {props.calc && props.casinon.depositpercent > 0 && props.calcVal <= props.casinon.maxbonus && props.calcVal >= 100 ? <p className="calc-small">Detta är en uppskattad bonus. Läs igenom regler & villkor för varje enskild bonus</p> : ''}
+            {props.calc && props.casinon.depositpercentsports > 0 && props.calcVal <= props.casinon.maxbonus && props.calcVal >= 100 ? <p className="calc-small">Detta är en uppskattad bonus. Läs igenom regler & villkor för varje enskild bonus</p> : ''}
             {props.casinon.casinospecialterms ? <div className="extra-text"><span>{props.casinon.casinospecialterms}</span></div> : ''}
+
 
 
             <div className="spela-lagom">
