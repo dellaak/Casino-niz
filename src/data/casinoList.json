@@ -3909,26 +3909,26 @@
             "textcolor": "#f02e3a",
             "setTop": false,
             "slogan": "Casino med många spel",
-            "depositbonus": "Insättningsbonus på 150% upp till 3000 kr + 150 OMSÄTTNINGSFRIA freespins",
+            "depositbonus": "Ingen aktiv bonus just nu",
             "mylink": "https://www.legolas.bet/affiliates/?btag=103909",
-            "rules": "https://www.legolas.bet/affiliates/?btag=103909_l46248",
+            "rules": "https://www.legolas.bet/affiliates/?btag=10n 0.10.333909_l46248",
             "caslogo": "/images/legolasbet.svg",
-            "wager": 40,
-            "sportsbonus": "Erbjuder en insättningsbonus på 50%, 100% eller 400%",
-            "sportswager": 10,
-            "extratext": "Lägsta insättningsbeloppet för att ta del av erbjudandet är 200 kr",
+            "wager": "x",
+            "sportsbonus": "Ingen aktiv bonus just nu",
+            "sportswager": "x",
+            "extratext": "",
             "bankid": true,
             "sports": true,
-            "minodds": 1.50,
-            "freespins": 150,
-            "maxbonus": 3000,
-            "maxbonussports": 1000,
-            "freefromwager": true,
-            "depositpercent": 150,
-            "depositpercentsports": 150,
+            "minodds": "X",
+            "freespins": 0,
+            "maxbonus": 0,
+            "maxbonussports": 0,
+            "freefromwager": false,
+            "depositpercent": "x",
+            "depositpercentsports": "x",
             "faktura": false,
             "publishdate": "23 Januari 2020",
-            "activebonus": true,
+            "activebonus": false,
             "fakturatype": [],
             "recension": [
                 {
@@ -3940,21 +3940,15 @@
                     "toprecension": "Legolasbet är ett svenskt casino som lanserades 2017. När man landar på Legolasbet så möts man av en snygg men simpel sida. Övergripande designen är röd och vit. Sidan är snygg och lätt att navigera sig runt. Legolasbet erbjuder fyra av de vanligaste insättningsmetoderna. Beroende på uttagsmetod så går uttagen snabbt. Har en livechatt men den har särskila öppettider. Erbjuder spel på odds, casino och livebetting. Trav finns också som ett alternativ men är just nu ur funktion.",
                     "secondrec": "Casinosektionen på Legolasbet är inte så stor. Erbjuder slots från NetEnt och Pragmatic Play, med favoritslots som Dead or Alive, Starbust, Gonzo Quest och fler. Casinosektionen är väldigt simpel och du kan filtrera casinon på leverantör samt söka efter spel. Utöver slots så erbjuder Legolasbet även videopoker och bordsspel på casinosektionen. ",
                     "sportsrec": "Man märker att Legolasbet satsar på betting, det står ju i namnet också. Legolasbet sportssektion är väldigt bra. Erbjuder betting på många kategorier inklusive esport betting. Med spel som CSGO, Starcraft2, Dota2 och andra esporter. Navigering på sportsektionen är okej men det kan kännas lite rörigt ibland när man får upp flera rutor. Har även en sportsbonus för nya kunder. Du kan välja din egen bonus. Det som de erbjuder är en insättningsbonus på 50%,100% eller 400%. ",
-                    "welcomeoffer": "Legolasbet erbjuder en saftig insättningsbonus på 150% upp till 3000 kr + 150 OMSÄTTNINGSFRIA freespins. Erbjuder även en sportsbonus, där du väljer mellan en insättningsbonus på 50%, 100% eller 400%.",
+                    "welcomeoffer": "",
                     "bonusterms": [
-                        "Välkomstbonusen finns tillgänglig i 60 dagar så att omsättningskravet kan mötas"
+                        "Ingen aktiv bonus"
                     ],
                     "casinoterms": [
-                        "Du kan endast använda bonusen i casinots spelautomater. Bordsspel och Livespel är uteslutna från bonusen",
-                        "Lägsta insättningsbeloppet för att ta del av erbjudandet är 200 kr"
+                        "Ingen aktiv bonus"
                     ],
                     "sportsterms": [
-                        "Erbjuder en insättningsbonus på 50%, 100% eller 400%",
-                        "Minsta insättningen för ta del av bonusen är 100 kr",
-                        "Omsättningskravet på sportsbonus varierar",
-                        "Omsättningskrav 50% - 15x",
-                        "Omsättningskrav 100% - 10x",
-                        "Omsättningskrav 400% - 15x"
+                        "Ingen aktiv bonus"
                     ],
                     "topslotgames": "Över 100+ slots! Från kända leverantörer som NetEnt och Pragmatic Play",
                     "deposittypes": "VISA, Mastercard, Neteller, Skrill, Trustly ",
