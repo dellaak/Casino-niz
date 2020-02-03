@@ -4,7 +4,7 @@ import React from "react"
 
 const LatestUpdate = () => {
 
-    return (<p className="update-text">Senast uppdaterad: 3 Februari 2020</p>)
+    return (<p className="update-text">Senast uppdaterad: 4 Februari 2020</p>)
 
 }
 
