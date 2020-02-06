@@ -137,9 +137,9 @@ const Casinon = (props) => {
 
 
       </div>
-      <div className={props.calc && props.casino.depositpercent >= 1 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 ? "calc-wrap" : ''}>
+      <div className={props.calc && props.casino.depositpercent >= 1 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 && !props.casino.specialbonus ? "calc-wrap" : ''}>
 
-        {props.calc && props.casino.depositpercent > 0 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 ? <p className="calc-p">Du får: <b>{value}kr {props.casino.freespins > 0 ? `+ ${props.casino.freespins} Freespins` : ''}</b> och måste omsätta minst:
+        {props.calc && props.casino.depositpercent > 0 && props.calcVal <= props.casino.maxbonus && !props.casino.specialbonus && props.calcVal >= 100 ? <p className="calc-p">Du får: <b>{value}kr {props.casino.freespins > 0 ? `+ ${props.casino.freespins} Freespins` : ''}</b> och måste omsätta minst:
         <b> {parseInt(props.calcVal) <= props.casino.maxbonus && props.casino.wager === 1 ?
             `${props.casino.doubleup && parseInt(props.calcVal) <= props.casino.maxbonus ?
               `${props.casino.maxbonus <= parseInt(props.calcVal) ? props.casino.maxbonus : 0}` : props.calcVal}` : `${props.casino.casinobonuswager ? bonusVal * props.casino.wager : value * props.casino.wager}`}kr</b ></p> : ''}

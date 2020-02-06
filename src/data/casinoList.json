@@ -31,28 +31,28 @@
             "color": "#373942",
             "textcolor": "#8eb50c",
             "slogan": "Casinobonus Comeon - välkomstbonus ",
-            "depositbonus": "Ingen aktiv casinobonus",
-            "sportsbonus": "Ingen aktiv bonus",
+            "depositbonus": "Sätt in 500kr - Få 1500kr att spela för",
+            "sportsbonus": "Sätt in 500kr - Få 1500kr att spela för",
             "mylink": "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1753&sid=354226&pid=457",
             "rules": "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1764&sid=354226&pid=469",
             "caslogo": "/images/comeonlogo.svg",
             "extratext": "",
-            "wager": "x",
+            "wager": 35,
+            "specialbonus": true,
             "setTop": false,
-            "sportswager": "x",
+            "sportswager": 8,
             "freespins": 0,
-            "activebonus": false,
+            "activebonus": true,
             "bankid": true,
             "sports": true,
-            "minodds": "x",
-            "maxbonus": "x",
-            "maxbonussports": 0,
-            "doubleup": 0,
+            "minodds": 2.00,
+            "maxbonus": 500,
+            "maxbonussports": 500,
             "freefromwager": false,
-            "depositpercentsports": 0,
-            "depositpercent": 0,
+            "depositpercentsports": 200,
+            "depositpercent": 200,
             "faktura": true,
-            "publishdate": "7 Januari 2020",
+            "publishdate": "6 Februari 2020",
             "fakturatype": [
                 "Siru",
                 "Zimpler",
@@ -70,13 +70,17 @@
                     "sportsrec": "Vi kan börja med att säga att ComeOn erbjuder esportsbetting *Applåder och busvislingar*. ComeOn erbjuder esportsbetting på bland annat CS:GO och Starcraft 2. Utöver esportbetting så har de en väldigt bra sport sektion. Här finns flera av de kända ligorna inom flera sporter. Har både vanliga odds och live odds.",
                     "welcomeoffer": "",
                     "bonusterms": [
-                        "Ingen aktiv bonus"
+                        "Detta erbjudande är giltigt för kunder som inte har placerat ett spel sedan 01/01/2019.",
+                        "Denna bonus kan användas både i casinot och på odds."
                     ],
                     "casinoterms": [
-                        "Ingen aktiv bonus, senaste kampanjen avslutades 31 Januari"
+                        "Du har totalt 60 dagar på dig att omsätta bonusen.",
+                        "Du måste satsa 35x (din insats + bonusbelopp) för att fullfölja kraven för denna bonus."
                     ],
                     "sportsterms": [
-                        "ingen aktiv bonus"
+                        "Insatsbelopp: 8x (din insats + bonusbelopp)",
+                        "Minimum odds för varje insats: 2.0",
+                        "Minimum antal val med dessa odds: 2"
                     ],
                     "topslotgames": [
                         "Netent, Microgaming, Play N Go, Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX, Thunderkick, Evolution, Nextgen, ELK "
@@ -5769,7 +5773,7 @@
                 "name": "❓Har SpinCasino en aktiv casino bonus?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja. SpinCasino har en aktiv casin bonus. Insättningsbonus upp till 40 000 kronor. Regler och villkor tillkommer. Läs mer på vår sida."
+                    "text": "Ja. SpinCasino har en aktiv casino bonus. Insättningsbonus upp till 40 000 kronor. Regler och villkor tillkommer. Läs mer på vår sida."
                 }
             },
             "title": "SpinCasino",
