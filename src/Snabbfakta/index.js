@@ -18,7 +18,7 @@ const Snabbfakta = (props) => {
         </h4>
         <div className="fakta-box-preview">
             <div className="Snabbfakta-preview">
-               <p><b>Bonuskrav:</b></p> 
+               <p><b>Bonuskrav</b></p> 
                <p>Oms.krav: <b>{props.casino.casinobonuswager? 'Endast bonus': 'Insättning + bonus'}</b></p>
                 <p> Omsättningskrav Casino<b>: {props.casino.wager}x </b></p>
                 {props.casino.sports === true && props.casino.sportswager >= 0 ? <p>Omsättningskrav Sport: <b>{props.casino.sportswager}x</b></p> : ''}

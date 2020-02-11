@@ -440,3 +440,11 @@ baseURL = "/"
   to = "https://www.spincasino.se/?s=bfp20248&a=bfpadid116296"
   status = 301
   query = {path = "/Go/spincasino"}
+  
+
+      [[redirects]]
+ from = "/Go/hellocasino"
+  to = "http://welcome.fullcreamaffiliates.com/afs/come.php?cid=27955&ctgid=1001&atype=1&brandid=23"
+  status = 301
+  query = {path = "/Go/hellocasino"}
+
