@@ -127,7 +127,7 @@ ul{
 
 
         <h1 className="banners">Nya Slots 2020 </h1>
-        <small> Uppdaterad: 31 Januari 2020</small>
+        <small> Uppdaterad: 12 Februari 2020</small>
 
         <h2>Nya Slots 2020 - Lista på nya grymma videoslots för 2020</h2>
         <section className="welcome-box-newslots">
