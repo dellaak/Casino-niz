@@ -2485,88 +2485,6 @@
       ]
     },
     {
-      "id": 30,
-      "faq": true,
-      "q1": {
-        "@type": "Question",
-        "name": "💰Vad är minsta insättningen samt uttag hos Highroller?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Minsta insättningen hos Highroller är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
-        }
-      },
-      "q2": {
-        "@type": "Question",
-        "name": "✨Erbjuder Highroller insättningar via faktura?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja, det gör dem. Highroller erbjuder insättning via fakturatjänsten Zimpler."
-        }
-      },
-      "q3": {
-        "@type": "Question",
-        "name": "❓Erbjuder Highroller sportsbetting?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nej, det gör dem inte. Hos Highroller kan du spela Casino och Live Casino!"
-        }
-      },
-      "title": "Highroller",
-      "color": "#f9ec68",
-      "textcolor": "#000",
-      "setTop": false,
-      "slogan": "Svensk casino recension",
-      "depositbonus": "Insättningsbonus på 200% upp till 1000KR +  50 Free Spins",
-      "mylink": "https://ads.highrolleraffiliates.com/redirect.aspx?pid=878163&bid=4911",
-      "rules": "https://ads.highrolleraffiliates.com/redirect.aspx?pid=878163&bid=4945",
-      "caslogo": "/images/highroller.svg",
-      "casinobonuswager": true,
-      "wager": 45,
-      "sportsbonus": "Ingen bonus",
-      "sportswager": "x",
-      "activebonus": true,
-      "freespins": 50,
-      "maxbonus": 1000,
-      "maxbonussports": 0,
-      "extratext": "Minst 100 kr måste sättas in för att hämta välkomstbonusen, 50 Freespins fördelas på 5 spel.",
-      "bankid": true,
-      "sports": false,
-      "freefromwager": false,
-      "depositpercent": 200,
-      "faktura": true,
-      "publishdate": "23 Januari 2020",
-      "fakturatype": ["Zimpler"],
-      "recension": [
-        {
-          "gamebar": 100,
-          "experience": 94,
-          "support": 100,
-          "egentitel": "Grymma svenska casinot",
-          "egentitel2": false,
-          "toprecension": "Highroller är ett riktigt snygg casino. Lanserades under 2017. När du registrerar dig får en egen avatar. Highroller har flera insättningsmetoder och erbjuder även spel via faktura. Uttagen går väldigt snabbt och det gör även insättningarna. Supporten är väldigt bra och hjälper snabbt till vid dina frågor. Hjälpsidan hos Highroller är väldigt simpel och där får man svar på de flesta frågorna man har.  ",
-          "secondrec": "Casinot har ett riktigt bra spelutbud. Spelen håller hög kvalitet med seriösa leverantörer. Att spela casino hos Highroller ger spelaren en väldigt rolig upplevelse. Desginen på sidan lutar mer åt det avslappnande och roliga hållet. Med sköna färgval och enkelhet  så får casinot full pott av Casinoniz. Tröttnar man på videoslots så har highroller även livecasino. Väldigt mobilanpassad casino. ",
-          "sportsrec": "Ingen sport sektion.",
-          "welcomeoffer": "Insättningsbonus på 200% upp till 1000KR + 50 Free Spins",
-          "bonusterms": [
-            "Insatta pengar och eventuella vinster kopplade till en bonus är låsta tills omsättningskravet är uppfyllt",
-            ""
-          ],
-          "casinoterms": [
-            "Bonusen måste omsättas 40 gånger innan du kan göra ett uttag.",
-            "Freespinsen har ett omsättningskrav på 35x."
-          ],
-          "sportsterms": ["Ingen sport sektion."],
-          "topslotgames": "Över 800+ slots! Från leverantörer som Betsoft, Big Time Gaming, Evolution Gaming, IGT (Wagerworks), iSoftBet, Microgaming, NetEnt, NYX Gaming, Play `n GO, Push Gaming, Quickspin, Thunderkick, Scientific Games, Yggdrasil och fler!",
-          "deposittypes": "Visa, Master Card, Visa electronic, Maestro, Swish, Trustly, Neteller, Skrill, Zimpler, Paysafe card",
-          "mindeposit": 100,
-          "minout": 200,
-          "swish": true,
-          "livechat": true,
-          "summering": "Man märker att Highroller casino ger användaren en riktigt rolig spelupplevelse. Med fokus på designen och slots så är detta casinot ett väldigt bra casino för slots. Flera insättningsmetoder samt spel på faktura. Insättningar och uttag går väldigt fort. Supporten är väldigt grym och hjälpsam. Om vi på Casinoniz ska klaga på något så är det omsättningskraven på freespins."
-        }
-      ]
-    },
-    {
       "id": 31,
       "faq": true,
       "q1": {
@@ -5636,6 +5554,81 @@
           "swish": false,
           "livechat": true,
           "summering": "HelloCasino är ett simpelt casino för spelare som tycker om slots och livecasino. Casinot erbjuder en väldigt bra support med livechatt på svenska mellan 08:00-24:00 och resterande tid på engelska. Erbjuder dem vanligaste insättningsmetoderna. Insättningar och uttag går snabbt beroende på metod. Minsta insättningen samt uttag ligger på 100 kr. Du kan man göra ett uttag på 50 000SEK/vecka. Erbjuder tyvärr inte registrering eller inloggning via bank identifiering. Annars ett bra casino för spelare som tycker om slots och LiveCasino. "
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "faq": true,
+      "q1": {
+        "@type": "Question",
+        "name": "💰Vad är minsta insättningen samt uttag hos CasinoCalzone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minsta insättningen hos CasinoCalzone är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
+        }
+      },
+      "q2": {
+        "@type": "Question",
+        "name": "✨Erbjuder CasinoCalzone insättningar med faktura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, det gör dem tyvärr inte. CasinoCalzone erbjuder endast insättningar samt uttag via den populära betalningsmetoden Trustly."
+        }
+      },
+      "q3": {
+        "@type": "Question",
+        "name": "❓Har CasinoCalzone en aktiv casino bonus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, inte just nu. Men håll utkick för kommande välkomstbonus hos CasinoCalzone."
+        }
+      },
+      "title": "CasinoCalzone",
+      "slogan": "Casino med Trustly",
+      "color": "#ff3300",
+      "textcolor": "#fff",
+      "setTop": false,
+      "depositbonus": "Ingen casino bonus just nu!",
+      "sportsbonus": "Ingen sport bonus",
+      "mylink": "https://ads.fasttrack-ignite.com/redirect.aspx?pid=4891&bid=1665",
+      "rules": "https://www.casinocalzone.com/sv/terms-conditions/",
+      "caslogo": "/images/casinocalzone.png",
+      "wager": "x",
+      "sportswager": "x",
+      "extratext": "",
+      "sports": false,
+      "freespins": 0,
+      "maxbonus": 0,
+      "maxbonussports": 0,
+      "activebonus": false,
+      "bankid": true,
+      "publishdate": "16 Februari 2020",
+      "freefromwager": false,
+      "depositpercent": 0,
+      "faktura": false,
+      "fakturatype": [],
+      "recension": [
+        {
+          "gamebar": 90,
+          "experience": 95,
+          "support": 85,
+          "egentitel": "Casino med Trustly",
+          "egentitel2": false,
+          "toprecension": "CasinoCalzone är ett svenskt casino som lanserades 2017 av företaget MT SecureTrade Limited. Casinots tema är inte så svårt att lista ut om man läser namnet hos casinot. Temat hos casinot är ett pizza tema. Casinot är väldigt snyggt och har en väldigt najs design. Det är väldigt enkelt att navigera sig runt på sidan. Känslan hos casinot är väldigt lekfullt. Casinot erbjuder just nu ingen välkomstbonus. Det går väldigt snabbt att göra insättningar samt uttag hos CasinoCalzone, eftersom dem erbjuder endast betalningsmetoden Trustly för uttag och insättningar. Registreringen går väldigt snabbt med hjälp av mobil bankidentifiering. Du kan även spela på express hos CasinoCalzone. Har en supportsida med vanligaste frågor med svar. Livechatten var avstängd när vi gjorde recensionen, så supporter betyget kan komma att uppdateras. Insättningarna samt uttagen är utan några avgifter.",
+          "secondrec": "CasinoCalzone har ett väldigt brett och bra spelutbud, med över 800+ spel från välkända högkvalitativa leverantörer. Har ingen avancerad filterfunktion utan du kan söka på spel och leverantör. Här finns favoriter som Mega Fortune, Book of Ra, Starburst och många fler. Erbjuder även spel på Novomatic slots vilket vi på Casinoniz.se tycker om. Casinot lägger till dem senaste videoslotten kontinuerligt. Casinosektionen är snygg, där varje videoslot har en smarrig pizzakant. Casinot erbjuder jackpot på ett dussintal videoslots. Vill man spela på något annat än slots så ebjuder CasinoCalzone även spel på LiveCasino och Bordsspel.",
+          "sportsrec": "CasinoCalzone erbjuder tyvärr ingen sportsbetting.",
+          "welcomeoffer": "Ingen bonus just nu",
+          "bonusterms": ["ingen bonus"],
+          "casinoterms": ["ingen bonus."],
+          "sportsterms": [""],
+          "topslotgames": "650+ slots från välkända leverantörer som NetEnt, Big Time Gaming, Novomatic, Microgaming, Thunderkick, Play n Go och många fler!",
+          "deposittypes": "Trustly",
+          "mindeposit": 100,
+          "minout": 100,
+          "swish": false,
+          "livechat": true,
+          "summering": "CasinoCalzone är det ultimata casinot för personer som tycker om pizza och slots. Har en väldigt snygg deisgn och väldigt användarvänlig sida. Casinot erbjuder ett bra utbud av slots och spel på Live Casino och Borddspel. Minsta insättningen samt uttag ligger på 100kr. Registreringen går väldigt smidigt till med hjälp av moil bank identifiering. Insättningarna samt uttagen går väldigt snabbt med hjälp av betalningsmetoden Trustly. Har livechatt och en supportersektion. Grymt casino för alla slots och pizza älskare! "
         }
       ]
     }

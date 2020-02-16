@@ -83,6 +83,13 @@
   <priority>0.50</priority>
 </url>
 
+
+<url>
+  <loc>https://www.casinoniz.se/nyheter/highroller-stanger</loc>
+ <lastmod>2020-02-16T12:34:00+01:00</lastmod>
+  <priority>0.50</priority>
+</url>
+
 <url>
   <loc>https://www.casinoniz.se/nyheter/slotv-nyttcasino</loc>
 <lastmod>2020-02-01T10:34:00+01:00</lastmod>
@@ -125,6 +132,12 @@
 <url>
   <loc>https://www.casinoniz.se/recension/yobetit</loc>
   <lastmod>2020-01-26T04:00:00+01:00</lastmod>
+  <priority>0.50</priority>
+</url>
+
+<url>
+  <loc>https://www.casinoniz.se/recension/casinocalzone</loc>
+  <lastmod>2020-02-16T13:40:00+01:00</lastmod>
   <priority>0.50</priority>
 </url>
 

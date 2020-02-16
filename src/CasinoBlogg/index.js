@@ -67,6 +67,9 @@ const NewsSection = (props) => {
       <h2>Casino Nyheter 2020</h2>
       <BloggSection>
 
+
+        <Kampanj title="Highroller - Casinot stänger verksamhet i Sverige" text='Zecure Gaming Limited är bolaget som driver Highroller. Bolaget har valt att stänga ner Highroller för svenska spelare och hänvisar istället till deras systercasino som är Casinoroom.se' bild="/images/highrollerclose.png" publicerad="16 februari 2020" link="highroller-stanger" alttxt="highrollerclose" />
+
         <Kampanj title="Nytt casino lanseras 2020 - förhoppningsvis under februari" text='Nu är det dags för ett nytt casino 2020. Casinot är SlotV.com. Casinot grundades 2017 och är aktiva i över 20 länder just nu. Bolaget bakom casinot är Avento MT Limited.' bild="/images/slotvimg.png" publicerad="1 februari 2020" link="slotv-nyttcasino" alttxt="slotvlogo" />
 
         <Kampanj title="Slotsons stänger ner sin verksamhet" text='Viral Interactive Limited har beslutat att stänga ner onlinecasinot Slotsons.com. Från och med 1 februari 2020 så stänger man registreringar hos casinot. Alla aktiva spelare kommer tillåtas att ta ut sitt saldo under en period' bild="/images/slotson.png" publicerad="31 januari 2020" link="slotsons-laggerner" alttxt="slotsonlogo" />

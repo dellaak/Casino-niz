@@ -448,3 +448,11 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/hellocasino"}
 
+        [[redirects]]
+ from = "/Go/casinocalzone"
+  to = "https://ads.fasttrack-ignite.com/redirect.aspx?pid=4891&bid=1665"
+  status = 301
+  query = {path = "/Go/casinocalzone"}
+
+
+
