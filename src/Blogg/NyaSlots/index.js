@@ -127,7 +127,7 @@ ul{
 
 
         <h1 className="banners">Nya Slots 2020 </h1>
-        <small> Uppdaterad: 12 Februari 2020</small>
+        <small> Uppdaterad: 27 Februari 2020</small>
 
         <h2>Nya Slots 2020 - Lista på nya grymma videoslots för 2020</h2>
         <section className="welcome-box-newslots">
@@ -142,14 +142,16 @@ ul{
 
         <StyledKommande>
             <h2>Kommande slots 2020</h2>
-
-            {slotLists.coming.slice(0).reverse().map((slot, e) =>
-                < NewSlotComp
-                    key={slot.id}
-                    slot={slot}
-                    casino={props.list.Casinon}
-                />
-            )}
+            {slotLists.coming.length === 0 ?
+                <h3>Inga kommande slots</h3> :
+                slotLists.coming.slice(0).reverse().map((slot, e) =>
+                    < NewSlotComp
+                        key={slot.id}
+                        slot={slot}
+                        casino={props.list.Casinon}
+                    />
+                )
+            }
         </StyledKommande>
 
 

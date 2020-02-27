@@ -191,27 +191,14 @@
       "bonuslist": [],
       "bonuslistbold": [],
       "bonustext2": "",
-      "casinos": [
-        "leovegas",
-        "unibet",
-        "Casimba",
-        "vooodoodreams",
-        "noaccountcasino",
-        "videoslots",
-        "vera&john",
-        "spinstationx",
-        "videoslots",
-        "casumo",
-        "rizk"
-      ]
+      "casinos": ["leovegas", "bethard", "gogocasino", "hyper", "guts"]
     },
     {
       "id": 8,
       "name": "Desert Shark",
-      "extratitle": "Lansering 25 Februari",
+      "extratitle": "Med grymma wilds!",
       "img": "/images/desertshark.jpg",
       "provider": "Fantasma Games",
-      "coming": true,
       "rtp": 96.33,
       "maxwin": 1679400,
       "winlines": 40,
@@ -225,17 +212,13 @@
       "bonuslistbold": [],
       "bonustext2": "",
       "casinos": [
-        "leovegas",
-        "unibet",
-        "21casino",
-        "betsafe",
-        "nordicbet",
-        "rizk",
-        "spinit",
-        "karlcasino",
-        "luckycasino",
-        "mrgreen",
-        "comeon"
+        "guts",
+        "casumo",
+        "vera&john",
+        "bethard",
+        "thrills",
+        "noaccountcasino",
+        "prankcasino"
       ]
     }
   ]
