@@ -222,7 +222,7 @@ baseURL = "/"
   
                [[redirects]]
   from = "/Go/videoslots"
-  to = "https://www.videoslots.com/?referral_id=casinoniz"
+  to = "http://affiliates.videoslots.com/click/?campid=28396"
   status = 301
   query = {path = "/Go/videoslots"}
 
