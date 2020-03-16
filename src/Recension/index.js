@@ -424,7 +424,7 @@ color: ${ selectedCasino.textcolor};
 							<i className="fas fa-star"></i>
 							<div className="recension-deposit">
 								<div className="recension-small-box">
-									<h2 className="top-icon-text">Aktuell casino bonus</h2>
+									{selectedCasino.specialtitle ? <h2 className="top-icon-text">Aktuell {selectedCasino.specialtitle}</h2> : <h2 className="top-icon-text">Aktuell casino bonus</h2>}
 									<img
 										className="recension-slot-icon"
 										alt="welcome-icon"
@@ -487,7 +487,7 @@ color: ${ selectedCasino.textcolor};
 											alt="spinner-icon"
 											src={freespinsicon}
 										/>
-										Freespins:{selectedCasino.freespins > 1 ? `${selectedCasino.freespins}` : "❌"}
+										{selectedCasino.specialoffer ? `${selectedCasino.specialoffer}` : 'Freespins'}:{selectedCasino.freespins > 1 ? `${selectedCasino.freespins}` : "❌"}
 									</p>
 
 									<p>
@@ -644,9 +644,11 @@ color: ${ selectedCasino.textcolor};
 
 									</Link>
 
-									{selectedCasino.casinospecialterms ? <span>{selectedCasino.casinospecialterms}</span> : <span>	18+ &#8226; Spela Ansvarfullt &#8226;{" "}
+									{selectedCasino.casinospecialterms ? <span>{selectedCasino.casinospecialterms} <span>	18+ &#8226; Spela Ansvarfullt &#8226;{" "}<a href={selectedCasino.rules}>Regler&Villkor gäller</a> &#8226;{" "}
 										<a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
-									</span>}
+									</span></span> : <span>	18+ &#8226; Spela Ansvarfullt &#8226;{" "}<a href={selectedCasino.rules}>Regler&Villkor gäller</a> &#8226;{" "}
+											<a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
+										</span>}
 								</StyledButtonBox>
 
 							</div>

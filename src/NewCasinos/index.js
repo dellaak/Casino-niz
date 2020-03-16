@@ -25,6 +25,19 @@ align-items:center;
 flex-direction:column;
 justify-content:center;
 `
+
+const NewWrapper = styled.div`
+display:flex;
+align-items:center;
+flex-direction:column;
+justify-content:center;
+border:1px solid lightgray;
+padding-bottom:10px;
+.small-new-text{
+  font-size:10px;
+}
+`
+
 const NewCasinos =(props)=> {
   let newCasino = [...props.start.Casinon]
   newCasino.reverse()
@@ -35,8 +48,9 @@ const NewCasinos =(props)=> {
           <h5 className="latest-title">Senast tillagda casino bonusar 2020</h5>
         </div>
 
-        {newCasino.slice(0,5).map(casino => (
-          <div className="box1" key={casino.id + casino.color}>
+        {newCasino.slice(0, 5).map(casino => (
+          <NewWrapper  key={casino.id + casino.color}>
+          <div className="box1">
             <Link
               target={props.isBlocked ? '' : "_blank"}
               rel="noopener noreferrer nofollow "
@@ -63,17 +77,16 @@ const NewCasinos =(props)=> {
             <StyledNavlink 
                to={{ pathname: `/recension/${casino.title.toLowerCase()}`, match: `${casino.title.toLowerCase()}` }} > 
          Recension
-      
+             
         </StyledNavlink>
+             
         </ButtonRecBox>
-          </div>
+            </div>
+            <small className="small-new-text"> 18+ | {casino.casinospecialterms} | <a href={casino.rules}>Regler & villkor gäller </a> | {" "}
+            <a href="https://www.stodlinjen.se/#!/">www.stodlinjen.se </a></small>
+            </NewWrapper>
         ))}
-        <div className="small-text-new">
-          <small>
-            18+ | Regler & villkor gäller |{" "}
-            <a href="https://www.stodlinjen.se/#!/">www.stodlinjen.se </a>
-          </small>
-        </div>
+           
       </aside>
     );
   

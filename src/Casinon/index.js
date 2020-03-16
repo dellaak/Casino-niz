@@ -116,7 +116,7 @@ const Casinon = (props) => {
           </StyledNavlink>
 
           <div className="depositbonus">
-            <h3 className="divtitleone">CASINO BONUS SOM ERBJUDS JUST NU</h3>
+            {props.casino.specialtitle ? <h3 className="divtitleone">{props.casino.specialtitle.toUpperCase()}</h3> : <h3 className="divtitleone">CASINO BONUS SOM ERBJUDS JUST NU</h3>}
             <p className="deposittext"> {props.casino.depositbonus}</p>
           </div>
 

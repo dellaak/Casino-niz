@@ -34,7 +34,7 @@ const Snabbfakta = (props) => {
     
         </Link> </p>) : <p>Sportsbetting:  {props.casino.sports ? "✅" : "❌"}</p>}
 
-                    <p>Freespins: {props.casino.freespins > 1 ? <b>{props.casino.freespins} </b> : "❌"}</p>
+                <p>{props.casino.specialoffer ? `${props.casino.specialoffer}` : 'Freespins'}: {props.casino.freespins > 1 ? <b>{props.casino.freespins} </b> : "❌"}</p>
 
                     <p>Bonusprocent: <b>{props.casino.depositpercent}%</b></p>
 
