@@ -82,7 +82,7 @@ const NewCasinos =(props)=> {
              
         </ButtonRecBox>
             </div>
-            <small className="small-new-text"> 18+ | {casino.casinospecialterms} | <a href={casino.rules}>Regler & villkor gäller </a> | {" "}
+            <small className="small-new-text"> 18+ | {casino.casinospecialterms}  <a href={casino.rules}>Regler & villkor gäller </a> | {" "}
             <a href="https://www.stodlinjen.se/#!/">www.stodlinjen.se </a></small>
             </NewWrapper>
         ))}
