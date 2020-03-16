@@ -412,9 +412,11 @@ color: ${ selectedCasino.textcolor};
 
 								</Link>
 
-								{selectedCasino.casinospecialterms ? <span>{selectedCasino.casinospecialterms}</span> : <span>	18+ &#8226; Spela Ansvarfullt &#8226;{" "}<a href={selectedCasino.rules}>Regler&Villkor gäller</a> &#8226;{" "}
+								{selectedCasino.casinospecialterms ? <span>{selectedCasino.casinospecialterms} <span>	18+ &#8226; Spela Ansvarfullt &#8226;{" "}<a href={selectedCasino.rules}>Regler&Villkor gäller</a> &#8226;{" "}
 									<a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
-								</span>}
+								</span></span> : <span>	18+ &#8226; Spela Ansvarfullt &#8226;{" "}<a href={selectedCasino.rules}>Regler&Villkor gäller</a> &#8226;{" "}
+										<a href="https://www.stodlinjen.se">www.stodlinjen.se</a>{" "}
+									</span>}
 							</StyledTopButtonBox>
 
 

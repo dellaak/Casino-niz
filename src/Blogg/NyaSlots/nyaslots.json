@@ -220,6 +220,34 @@
         "noaccountcasino",
         "prankcasino"
       ]
+    },
+    {
+      "id": 9,
+      "coming": true,
+      "name": "Gods of Death",
+      "extratitle": "Publiceras 23 Mars ",
+      "img": "/images/godsslot.png",
+      "provider": "StakeLogic",
+      "rtp": 96,
+      "maxwin": 11800,
+      "winlines": 10,
+      "firstp": "StageLogic släpper en grym ny slot med expanderade symboler. ",
+      "listtitle": "",
+      "list": [],
+      "boldlist": [],
+      "secondp": "Gods of Death har ett egyptiskt och antikt tema. Spelet har 10st vinstrader. Man kan under spelet gång få något som heter Super Stake vilket innebär att en slumpvald symbol läggs till x antal på varje hjul.",
+      "bonustext": "Spelet innehåller så kallade scatters. Får du 3 scatters under en vanlig spelrunda så aktiveras bonusfunktionen. I bonusrundan så kan wilds expandera och täcka hela hjulet. Vilket ger spelaren en bra chans att få in en så kallad Big Win.",
+      "bonuslist": [],
+      "bonuslistbold": [],
+      "bonustext2": "",
+      "casinos": [
+        "mrgreen",
+        "hajper",
+        "videoslots",
+        "casumo",
+        "unibet",
+        "playojo"
+      ]
     }
   ]
 }

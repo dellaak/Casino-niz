@@ -139,8 +139,8 @@ background-color: #ffc10736 !important;
                     <ul>
                         <li>RTP: <b>{props.slot.rtp} %</b></li>
                         <li>Max-vinst(mynt): <b>{props.slot.maxwin.toLocaleString()}</b></li>
-                        <li>Vinstlinjer:<b>{props.slot.winlines.toLocaleString()}</b></li>
-                        <li>Spelleverantör:<b>{props.slot.provider}</b></li>
+                        <li>Vinstlinjer:<b> {props.slot.winlines.toLocaleString()}</b></li>
+                        <li>Spelleverantör:<b> {props.slot.provider}</b></li>
                     </ul>
                     <div className="slot-review">
                         <p>{props.slot.firstp} </p>

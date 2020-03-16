@@ -1941,14 +1941,14 @@
       "color": "#142127",
       "textcolor": "#e0b438",
       "slogan": "Svenskt casino - Omsättningsfria välkomstbonusar!",
-      "depositbonus": "Sätt in 200 KR och få 400 kr att spela för! Vinster utan omsättningskrav!",
+      "depositbonus": "100% insättningsbonus upp till 5000 kr",
       "mylink": "https://affiliatemedia.noaccountcasino.com/redirect.aspx?pid=4468&bid=1586&redirectURL=https://www.noaccountcasino.com/",
       "rules": "https://www.noaccountcasino.com/sv/terms",
       "caslogo": "/images/noaccountlogo.svg",
-      "wager": 1,
-      "setTop": true,
-      "maxbonus": 200,
-      "doubleup": 400,
+      "casinobonuswager": true,
+      "wager": 35,
+      "setTop": false,
+      "maxbonus": 5000,
       "maxbonussports": 0,
       "sportsbonus": "Se NoAccountBet",
       "sportswager": "x",
@@ -1973,13 +1973,8 @@
           "secondrec": "NoAccountCasino har et väldigt bra slotsutbud. Med över 1500 spel så finns det spel för just det som du tycker är kul. Casinot erbjuder högkvalitativa slots från de bästa videospels leverantörer på marknaden. Spela på flera av marknadens kändaste slots som Bonanza, Book of Dead, Gonzo Quest, Raging Rhino Dead or Alive2 och många fler!. Layouten på casinosektionen är väldigt simpel och casinot har en väldigt bra filterfunktion. Där kan du filtrera efter just dina önskemål för att hitta den videoautomaten som passar just dig. Vill du spela på något annat än slots så erbjuder NoAccountCasino spel på livecasino.",
           "sportsrec": "Erbjuder tyvärr ingen sportsbetting",
           "welcomeoffer": "Sätt in 200 KR och få 400 kr att spela för! Alla vinster utan omsättningskrav!",
-          "bonusterms": [
-            "För att kvalificera sig till kampanjen måste man göra en första insättning på minst 200 kr."
-          ],
-          "casinoterms": [
-            "Vinster med bonuspengar blir till kontanter när man spelat för hela bonusbeloppet. Vinsterna har inget omsättningskrav utan är kontanter dock först efter att hela bonusen använts. Men måste alltså satsa hela bonusbeloppet på 200 kr innan vinsterna kan tas ut",
-            "Spel sker först med riktiga pengar (insättning och vinster från spel med insatt belopp) och därefter med bonuspengar"
-          ],
+          "bonusterms": ["GÄLLER NYA INSÄTTANDE KUNDER."],
+          "casinoterms": ["50 kr maxbet", "Minsta insättning är 100kr."],
           "sportsterms": ["Besök NoAccountBet för sport"],
           "topslotgames": "Över 1500+ slots av hög kvalitet. Med kända leverantörer som Evolution, Microgaming, NetEnt, PLAY'n GO, Yggdrasil, SG, Elk Studios, PragmaticPlay och många fler!",
           "deposittypes": "Trustly",
@@ -3924,6 +3919,7 @@
       "mylink": "https://affiliatemedia.noaccountbet.com/redirect.aspx?pid=4468&bid=1589",
       "rules": "https://affiliatemedia.noaccountbet.com/redirect.aspx?pid=4468&bid=1588",
       "caslogo": "/images/noaccountbet.svg",
+      "casinobonuswager": true,
       "wager": 1,
       "sportswager": 1,
       "maxbonus": 200,
@@ -5013,7 +5009,7 @@
       "color": "#efefef",
       "textcolor": "#000",
       "setTop": false,
-      "depositbonus": "Exklusiv Insättningsbonus på 50% upp till 1000kr via vår länk!",
+      "depositbonus": "Insättningsbonus på 50% upp till 1000kr!",
       "sportsbonus": "Insättningsbonus på 100% upp till 500kr. Bonuskod : IN10'",
       "mylink": "https://track.10bet.com/C.ashx?btag=a_53735b_5029c_&affid=1680928&siteid=53735&adid=5029&c=",
       "rules": "https://track.10bet.com/C.ashx?btag=a_53735b_5382c_&affid=1680928&siteid=53735&adid=5382&c=",
@@ -5637,6 +5633,89 @@
           "swish": false,
           "livechat": true,
           "summering": "CasinoCalzone är det ultimata casinot för personer som tycker om pizza och slots. Har en väldigt snygg deisgn och väldigt användarvänlig sida. Casinot erbjuder ett bra utbud av slots och spel på Live Casino och Borddspel. Minsta insättningen samt uttag ligger på 100kr. Registreringen går väldigt smidigt till med hjälp av moil bank identifiering. Insättningarna samt uttagen går väldigt snabbt med hjälp av betalningsmetoden Trustly. Har livechatt och en supportersektion. Grymt casino för alla slots och pizza älskare! "
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "faq": true,
+      "q1": {
+        "@type": "Question",
+        "name": "💰Vad är minsta insättningen samt uttag hos Spela?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minsta insättningen hos Spela är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+        }
+      },
+      "q2": {
+        "@type": "Question",
+        "name": "✨Erbjuder Spela insättningar med faktura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, det gör dem tyvärr inte. Spela erbjuder endast insättningar samt uttag via den populära betalningsmetoden Trustly."
+        }
+      },
+      "q3": {
+        "@type": "Question",
+        "name": "❓Har Spela svensk spellicense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Spela har svensk spellicens ."
+        }
+      },
+      "casinospecialterms": "Endast nya spelare",
+      "title": "Spela",
+      "slogan": "Casino med Trustly",
+      "color": "#081e24",
+      "textcolor": "#fff",
+      "setTop": false,
+      "depositbonus": "50 välkomstsnurr på Starburst",
+      "sportsbonus": "Ingen sport bonus",
+      "mylink": "https://spela.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=4727",
+      "rules": "https://spela.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=4607",
+      "caslogo": "/images/spelalogo.svg",
+      "casinobonuswager":true,
+      "wager": 40,
+      "sportswager": "x",
+      "extratext": "",
+      "sports": false,
+      "freespins": 50,
+      "maxbonus": 0,
+      "maxbonussports": 0,
+      "activebonus": true,
+      "bankid": true,
+      "publishdate": "16 Mars 2020",
+      "freefromwager": false,
+      "depositpercent": 0,
+      "faktura": false,
+      "fakturatype": [],
+      "recension": [
+        {
+          "gamebar": 95,
+          "experience": 90,
+          "support": 75,
+          "egentitel": "Casino med Trustly",
+          "egentitel2": false,
+          "toprecension": "Spela är ett casino som grundades 2018. Bolaget bakom Spela är Genesis Global Limited, som har flera års erfarenhet av online casinon. Spela.com har en snygg och användarvänlig sida. Casinot erbjuder enkel registrering och erbjuder endast insättning och uttag via den väldigt populära betalningsmetoden Trustly. Har ett väldigt bra uttbud av spel på sidan. Spela erbjuder ingen sportbetting utan endast spel på slots och live casino. När det gäller support har dem en liten supportersektion där man hittar dem vanligaste frågorna samt svaren på frågorna. Erbjuder tyvärr ingen livechatt. Vill man komma i kontakt med kundservice får man ringa eller skicka ett mejl. ",
+          "secondrec": "Spela.com har ett väldigt bra spelutbud. Med flera favoritslots som Gonzo's Quest, Book of Dead, Dead or Alive, Rainbow Jackpots och många fler slots från välkända leverantörer som NetEnt,Play n Go och många fler. Utöver slots så erbjuder Spela även spel på Live Casino. Casinosektionen är snygg och simpel. Har direkt ingen filterfunktion för slots men du kan söka efter dina favoritslots. Har ett dussintal slots med aktiva jackpots just nu. Spela erbjuder bank identifiering vid inloggning och registrering. Vilket innebär att det är enkelt att logga in samt att registrera sig.",
+          "sportsrec": "Spela erbjuder tyvärr ingen sportsbetting.",
+          "welcomeoffer": "Ingen bonus just nu",
+          "bonusterms": [
+            "50 välkomstsnurr kommer att läggas till på en gång efter din första insättning på 200 SEK på Starburst",
+            "Från och med 1 Januari 2019 gäller följande; om kunden har accepterat en välkomstbonus på en av Genesis Global casinon så kommer inga andra bonusar att tilldelas på någon av de övriga casinon. Föreskriften gäller både existerande och nyregistrerade konton hos Genesis Global Limited"
+          ],
+          "casinoterms": [
+            "Alla välkomstsnurr är giltiga i 72 timmar efter aktivering, om inget annat anges.",
+            "Det maximala uttagsbeloppet från vinster som erhålls från dina välkomstsnurr är 1 000 kr(eller motsvarande valuta)."
+          ],
+          "sportsterms": [""],
+          "topslotgames": "1,200+ spel från välkända leverantörer som NetEnt, NYX, Evolution, Microgaming, Play N Go, Quickspin, Yggdrasil, Red Tiger, iSoftbet, Relax Gaming & Skywind Group!",
+          "deposittypes": "Trustly",
+          "mindeposit": 200,
+          "minout": 200,
+          "swish": false,
+          "livechat": false,
+          "summering": "Spela är en snygg och användarvänlig sida. Casinot erbjuder enkel registrering samt inloggning via bank identifiering. Spela har ett bra spelutbud på över 1,200+ spel. När det gäller support erbjuder spela tyvärr ingen livechatt. De har dock en supportsektion med svar på dem vanligaste frågorna. Vill man komma i kontakt med kundservicen är det mejl eller telefon som gäller. Minsta uttag samt insättning ligger på 200 SEK. Erbjuder spel på Live casino och slots. Ett bra och simpelt casino utan krångel. "
         }
       ]
     }

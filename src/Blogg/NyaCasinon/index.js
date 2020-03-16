@@ -10,37 +10,34 @@ import BottomInfoNyaCasino from "../../AllBottomInfo/BottomInfoNyaCasino";
 
 const NyaCasino = (props) => {
 
-    const [topArr] = useState(['luckyvegas'])
-    const [topCasinon, setTopList] = useState([])
+  const topArr = ['luckyvegas', 'spela']
+  const [topCasinon, setTopList] = useState([])
 
 
-    useEffect(() => {
-
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        let list = [...props.list.Casinon]
-        let top = []
+  useEffect(() => {
+    let list = [...props.list.Casinon]
+    let top = []
 
 
-        list.filter(i => {
-            i.title = i.title.toLowerCase()
-            if (topArr.includes(i.title)) {
-                top.push(i)
-            }
-            return list
-        })
+    list.filter(i => {
+      i.title = i.title.toLowerCase()
+      if (topArr.includes(i.title)) {
+        top.push(i)
+      }
+      return list
+    })
 
-        top.sort(function (a, b) {
+    top.sort(function (a, b) {
 
-            return topArr.indexOf(a.title) - topArr.indexOf(b.title);
-        });
+      return topArr.indexOf(a.title) - topArr.indexOf(b.title);
+    });
 
-        return setTopList(top)
+    return setTopList(top)
 
-    }, [props.list.Casinon, topArr])
+  }, [props.list.Casinon])
 
 
-    const StyledWrapper = styled(Container)`
+  const StyledWrapper = styled(Container)`
     display:flex;
     background-color:white;
     flex-direction: column;
@@ -48,7 +45,7 @@ const NyaCasino = (props) => {
     margin:0 auto;
     `
 
-    const StyledDiv = styled.div`
+  const StyledDiv = styled.div`
     padding: 0 20px;
     border-radius:9px;
     flex-direction: column;
@@ -61,19 +58,19 @@ const NyaCasino = (props) => {
     }
     `
 
-    return (<StyledWrapper>
-        <Helmet>
-            <title>Nya Casino 2020 (På riktigt) » Alla med svensk licens | Casinoniz</title>
-            <link rel="canonical" href="https://www.casinoniz.se/nya-casino-2020" />
-            <meta
-                name="description"
-                content="Ny lista för nya casino 2020 ✅ ➼ Här hittar du nya lanserade casinon från 2020. Alla casinon är nya svenska casinon med licens. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
-            />
-            <meta
-                name="keywords"
-                content="Casino, Casinobonusar, välkomstbonus, 2019,2020, bonus, spela, insättningsbonus, free spins, faktura casino, casino faktura, bästa casinon,nya,publicerade,licenserade,svenska,casinon, bästa casinon 2020, top5 , top10 casino"
-            />
-            <script type="application/ld+json">{`
+  return (<StyledWrapper>
+    <Helmet>
+      <title>Nya Casino 2020 (På riktigt) » Alla med svensk licens | Casinoniz</title>
+      <link rel="canonical" href="https://www.casinoniz.se/nya-casino-2020" />
+      <meta
+        name="description"
+        content="Ny lista för nya casino 2020 ✅ ➼ Här hittar du nya lanserade casinon från 2020. Alla casinon är nya svenska casinon med licens. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
+      />
+      <meta
+        name="keywords"
+        content="Casino, Casinobonusar, välkomstbonus, 2019,2020, bonus, spela, insättningsbonus, free spins, faktura casino, casino faktura, bästa casinon,nya,publicerade,licenserade,svenska,casinon, bästa casinon 2020, top5 , top10 casino"
+      />
+      <script type="application/ld+json">{`
       {
         "@context": "https://schema.org",
          "@type": "FAQPage",
@@ -108,39 +105,52 @@ const NyaCasino = (props) => {
         }]
       }
       `}</script>
-        </Helmet>
+    </Helmet>
 
 
 
-        <h1 className="banners">Nya Casino 2020 </h1>
-        <small> Publicerad: 14 Januari 2020</small>
-        <p>Nya casino 2020</p>
-        <p>Vi listar nya casinon för detta året. Denna sektionen kommer uppdateras kontinuerligt så håll koll på denna sidan. Vi på Casinoniz.se tror att detta året kommer bjuda oss på nya spännande casinon med väldigt spännande teman. Senaste tiden så har casinon satsat väldigt hårt på sina teman. </p>
+    <h1 className="banners">Nya Casino 2020 </h1>
+    <small> Publicerad: 14 Januari 2020</small>
+    <p>Nya casino 2020</p>
+    <p>Vi listar nya casinon för detta året. Denna sektionen kommer uppdateras kontinuerligt så håll koll på denna sidan. Vi på Casinoniz.se tror att detta året kommer bjuda oss på nya spännande casinon med väldigt spännande teman. Senaste tiden så har casinon satsat väldigt hårt på sina teman. </p>
 
-        <p>Det tycker vi är bra, vilket ger spelaren en helt ny spelupplevelse. Vi kommer endast lista nya casinon här.</p>
-        <StyledDiv>
+    <p>Det tycker vi är bra, vilket ger spelaren en helt ny spelupplevelse. Vi kommer endast lista nya casinon här.</p>
+    <StyledDiv>
 
-            <h2>Nya casino - LuckyVegas</h2>
-            {topCasinon.length > 0 ? <div><p>LuckyVegas är först ut 2020. Bolaget som står bakom detta nya casinot är SkillOnNet som står bakom populära <Link to={{ pathname: `/recension/playojo`, match: `playojo` }} >
-                PlayOJO</Link>. Casinot erbjuder en Las Vegas känsla på sin sida. LuckyVegas har svensk spellicens med det innebär det att alla vinster är skattefria.</p></div> : ''}
-            <div className="casino-wrap">
-                {topCasinon.slice(0, 1).map((casino) =>
-                    < Casinon
-                        key={casino.id + casino.title}
-                        casino={casino}
-                        isBlocked={props.isBlocked}
-                    />)}
-            </div>
-        </StyledDiv>
+      <h2>Nytt casino - LuckyVegas</h2>
+      {topCasinon.length > 0 ? <div><p>LuckyVegas är först ut 2020. Bolaget som står bakom detta nya casinot är SkillOnNet som står bakom populära <Link to={{ pathname: `/recension/playojo`, match: `playojo` }} >
+        PlayOJO</Link>. Casinot erbjuder en Las Vegas känsla på sin sida. LuckyVegas har svensk spellicens vilket innebär att alla vinster är skattefria.</p></div> : ''}
+      <div className="casino-wrap">
+        {topCasinon.slice(0, 1).map((casino) =>
+          < Casinon
+            key={casino.id + casino.title}
+            casino={casino}
+            isBlocked={props.isBlocked}
+          />)}
+      </div>
+    </StyledDiv>
+
+    <StyledDiv>
+
+      <h2>Nytt casino - Spela.com</h2>
+      {topCasinon.length > 0 ? <div><p>Genesis Global Limited erbjuder nu officiellt registrering av svenska spelare på Spela.com. Casinot erbjuder ett väldigt stort spelutbud på över 1,200+ spel. Spela har svensk spellicens vilket innebär att alla vinster är skattefria.</p></div> : ''}
+      <div className="casino-wrap">
+        {topCasinon.slice(1, 2).map((casino) =>
+          < Casinon
+            key={casino.id + casino.title}
+            casino={casino}
+            isBlocked={props.isBlocked}
+          />)}
+      </div>
+    </StyledDiv>
 
 
 
+    <RandomCasinos list={[...props.list.Casinon]} />
 
-        <RandomCasinos list={[...props.list.Casinon]} />
-
-        <BottomInfoNyaCasino />
-        <p className="update-text">Senast uppdaterad: 1 februari 2020</p>
-    </StyledWrapper>)
+    <BottomInfoNyaCasino />
+    <p className="update-text">Senast uppdaterad: 16 mars 2020</p>
+  </StyledWrapper>)
 }
 
 export default NyaCasino
