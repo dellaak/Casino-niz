@@ -5720,6 +5720,85 @@
           "summering": "Spela är en snygg och användarvänlig sida. Casinot erbjuder enkel registrering samt inloggning via bank identifiering. Spela har ett bra spelutbud på över 1,200+ spel. När det gäller support erbjuder spela tyvärr ingen livechatt. De har dock en supportsektion med svar på dem vanligaste frågorna. Vill man komma i kontakt med kundservicen är det mejl eller telefon som gäller. Minsta uttag samt insättning ligger på 200 SEK. Erbjuder spel på Live casino och slots. Ett bra och simpelt casino utan krångel. "
         }
       ]
+    },
+    {
+      "id": 72,
+      "faq": true,
+      "q1": {
+        "@type": "Question",
+        "name": "💰Vad är minsta insättningen samt uttag hos Yoyo Casino?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minsta insättningen hos Spela är 100 kr. För att göra ett uttag är minsta beloppet 200 kr."
+        }
+      },
+      "q2": {
+        "@type": "Question",
+        "name": "✨Erbjuder Yoyo Casino insättningar med faktura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, det gör dem tyvärr inte. Yoyo casino erbjuder endast insättningar samt uttag via den populära betalningsmetoden Trustly."
+        }
+      },
+      "q3": {
+        "@type": "Question",
+        "name": "❓Har Yoyo Casino svensk spellicense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Yoyo Casino har svensk spellicens ."
+        }
+      },
+      "title": "Yoyocasino",
+      "slogan": "Casino med Trustly",
+      "color": "#f9fbe7",
+      "textcolor": "#9845a5",
+      "setTop": false,
+      "depositbonus": "100% upp till 5,000 kr  + 50 Cash Spins",
+      "sportsbonus": "Ingen sport bonus",
+      "mylink": "https://media.yoyocasino.se/redirect.aspx?pid=935227&lpid=14535&bid=6650",
+      "rules": "https://yoyocasino.se/sv/rules",
+      "caslogo": "/images/yoyologo.svg",
+      "wager": 20,
+      "sportswager": "x",
+      "extratext": "",
+      "sports": false,
+      "freespins": 50,
+      "maxbonus": 5000,
+      "maxbonussports": 0,
+      "activebonus": true,
+      "bankid": true,
+      "publishdate": "23 Mars 2020",
+      "freefromwager": true,
+      "depositpercent": 100,
+      "faktura": false,
+      "fakturatype": [],
+      "recension": [
+        {
+          "gamebar": 100,
+          "experience": 100,
+          "support": 100,
+          "egentitel": "Nytt Casino 2020 med Trustly ",
+          "egentitel2": false,
+          "toprecension": "Yoyo casino är ett nytt svenskt casino som grundades 2020. Bolaget bakom casinot är Romix Limited som innehar svensk spellicens. Casinot är väldigt användarvänligt och flyter på väldigt bra. Layouten på sidan är väldigt snygg. Utbudet av casinospel är väldigt stort hos Yoyocasino. Har just nu inte live casino utan endast slots och kortspel. Casinot erbjuder endast insättningar via betalmetoden Trustly. Insättningarna samt uttagen går väldigt snabbt och säkert. Ett grymt och modernt casino. Är man i behov av support så har dem en livechatt som har öppet 24/7. Vissa tider (oftast natt) är supporten engelsktalande, resterande tid är supporten på svenska.",
+          "secondrec": "Casinosektionen är väldigt bra hos Yoyocasino. Har ingen direkt filterfunktion på casino sektionen. Du kan sortera spel på nya slots, populära och toppspel. Utbudet av slots är väldigt bra och håller hög kvalitet. Här finns favoriter som Gonzo's Quest, Aloha, Immortal Romance, Dead or Alive och många fler. Registreringen samt inloggningen är väldigt simpel tack vare bankd identifiering. ",
+          "sportsrec": "Yoyocasino erbjuder tyvärr ingen sportsbetting.",
+          "welcomeoffer": "Ingen bonus just nu",
+          "bonusterms": [
+            "Minsta insättningen för att kvalificera sig till välkomstbonusen är 200kr","Denna kampanjen är tillgänglig för nya kunder som registrerar ett nytt konto hos Yoyocasino"
+          ],
+          "casinoterms": [
+            "Maximal tillåten insats när du spelar med din bonus är 50kr","Alla vinster från cash spins kommer att betalas ut i riktiga pengar utan omsättningskrav"
+          ],
+          "sportsterms": [""],
+          "topslotgames": "1,000 spel från välkända leverantörer som Pragmatic Play, Quickspin, Yggdrasil, Push Gaming, Net Ent, Relax Gaming, Evolution, Leap och fler!",
+          "deposittypes": "Trustly",
+          "mindeposit": 100,
+          "minout": 200,
+          "swish": false,
+          "livechat": true,
+          "summering": "Yoyocasino är en riktig tuff konkurent på marknaden. Vi kan se att Yoyocasino kommer att växa i rekordfart eftersom dem har bra utbud av spel, snygg layout och smidiga insättningar samt uttag. Minsta insättningen är 100kr och minsta uttagen ligger på 200k. Erbjuder livechatt på svenska under dagar/kvällar. Resterande tid är det engelska som gäller. Insättningar sker via Trustly vilket ger dig som spelare säkerhet. Yoyocasino har svensk spellicense. Vi ger casinot full pott!"
+        }
+      ]
     }
   ]
 }

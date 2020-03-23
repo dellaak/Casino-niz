@@ -223,9 +223,9 @@
     },
     {
       "id": 9,
-      "coming": true,
+      "coming": false,
       "name": "Gods of Death",
-      "extratitle": "Publiceras 23 Mars ",
+      "extratitle": "Grym slot!",
       "img": "/images/godsslot.png",
       "provider": "StakeLogic",
       "rtp": 96,

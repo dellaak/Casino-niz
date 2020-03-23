@@ -7,13 +7,13 @@ import "./style.scss"
 
 const MonthCasino = (props) => {
 
-    const month = 'gogocasino'
+    const month = 'yoyocasino'
 
     return (<div className="month-wrap">
         <NavLink
             to={{ pathname: `/recension/${month}`, match: `${month}` }} >
             <div className="this-month-div">
-                <img src="/images/gogocasino.svg" alt="gogocasino-logo" />
+                <img src="/images/yoyologo.svg" alt="yoyocasino-logo" />
                 <p className="recommend-text-top">Månadens doldis </p>
             </div>
         </NavLink>

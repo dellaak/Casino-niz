@@ -10,7 +10,7 @@ import BottomInfoNyaCasino from "../../AllBottomInfo/BottomInfoNyaCasino";
 
 const NyaCasino = (props) => {
 
-  const topArr = ['luckyvegas', 'spela']
+  const topArr = ['luckyvegas', 'spela', 'yoyocasino']
   const [topCasinon, setTopList] = useState([])
 
 
@@ -115,10 +115,26 @@ const NyaCasino = (props) => {
     <p>Vi listar nya casinon för detta året. Denna sektionen kommer uppdateras kontinuerligt så håll koll på denna sidan. Vi på Casinoniz.se tror att detta året kommer bjuda oss på nya spännande casinon med väldigt spännande teman. Senaste tiden så har casinon satsat väldigt hårt på sina teman. </p>
 
     <p>Det tycker vi är bra, vilket ger spelaren en helt ny spelupplevelse. Vi kommer endast lista nya casinon här.</p>
+
     <StyledDiv>
 
-      <h2>Nytt casino - LuckyVegas</h2>
-      {topCasinon.length > 0 ? <div><p>LuckyVegas är först ut 2020. Bolaget som står bakom detta nya casinot är SkillOnNet som står bakom populära <Link to={{ pathname: `/recension/playojo`, match: `playojo` }} >
+      <h2>Nytt casino 2020- Yoyocasino</h2>
+      {topCasinon.length > 0 ? <div><p>YoyoCasino är ett nytt casino för svenska spelare. Casinot har en väldigt snygg och användarvänlig sida med över 1000 casinospel. Ett grymt casino för alla som tycker om att spela på slots.</p></div> : ''}
+      <div className="casino-wrap">
+        {topCasinon.slice(2, 3).map((casino) =>
+          < Casinon
+            key={casino.id + casino.title}
+            casino={casino}
+            isBlocked={props.isBlocked}
+          />)}
+      </div>
+    </StyledDiv>
+
+
+    <StyledDiv>
+
+      <h2>Nytt casino 2020- LuckyVegas</h2>
+      {topCasinon.length > 0 ? <div><p> Bolaget som står bakom detta nya casinot är SkillOnNet som står bakom populära <Link to={{ pathname: `/recension/playojo`, match: `playojo` }} >
         PlayOJO</Link>. Casinot erbjuder en Las Vegas känsla på sin sida. LuckyVegas har svensk spellicens vilket innebär att alla vinster är skattefria.</p></div> : ''}
       <div className="casino-wrap">
         {topCasinon.slice(0, 1).map((casino) =>
@@ -132,7 +148,7 @@ const NyaCasino = (props) => {
 
     <StyledDiv>
 
-      <h2>Nytt casino - Spela.com</h2>
+      <h2>Nytt casino 2020- Spela.com</h2>
       {topCasinon.length > 0 ? <div><p>Genesis Global Limited erbjuder nu officiellt registrering av svenska spelare på Spela.com. Casinot erbjuder ett väldigt stort spelutbud på över 1,200+ spel. Spela har svensk spellicens vilket innebär att alla vinster är skattefria.</p></div> : ''}
       <div className="casino-wrap">
         {topCasinon.slice(1, 2).map((casino) =>
@@ -149,7 +165,7 @@ const NyaCasino = (props) => {
     <RandomCasinos list={[...props.list.Casinon]} />
 
     <BottomInfoNyaCasino />
-    <p className="update-text">Senast uppdaterad: 16 mars 2020</p>
+    <p className="update-text">Senast uppdaterad: 23 mars 2020</p>
   </StyledWrapper>)
 }
 

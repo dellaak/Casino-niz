@@ -460,3 +460,10 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/spela"}
 
+
+ [[redirects]]
+ from = "/Go/yoyocasino"
+  to = "https://media.yoyocasino.se/redirect.aspx?pid=935227&lpid=14535&bid=6650"
+  status = 301
+  query = {path = "/Go/yoyocasino"}
+
