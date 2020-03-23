@@ -71,7 +71,7 @@ const RandomCasinos =(props)=> {
       <div className="rec-buttonbox">
         <Link target={props.isBlocked ? '' : "_blank"}
               rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${casino.title}`, match: `${casino.title}` }}>
-              <Button className="rec-botton">Hämta bonus</Button></Link>
+              <Button className="rec-botton">Till Casinot</Button></Link>
         <p className="top3rules" >18+ | <a href={casino.rules}>Regler & Villkor gäller</a></p>
         </div>
         </div>

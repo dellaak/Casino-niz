@@ -5784,10 +5784,12 @@
           "sportsrec": "Yoyocasino erbjuder tyvärr ingen sportsbetting.",
           "welcomeoffer": "Ingen bonus just nu",
           "bonusterms": [
-            "Minsta insättningen för att kvalificera sig till välkomstbonusen är 200kr","Denna kampanjen är tillgänglig för nya kunder som registrerar ett nytt konto hos Yoyocasino"
+            "Minsta insättningen för att kvalificera sig till välkomstbonusen är 200kr",
+            "Denna kampanjen är tillgänglig för nya kunder som registrerar ett nytt konto hos Yoyocasino"
           ],
           "casinoterms": [
-            "Maximal tillåten insats när du spelar med din bonus är 50kr","Alla vinster från cash spins kommer att betalas ut i riktiga pengar utan omsättningskrav"
+            "Maximal tillåten insats när du spelar med din bonus är 50kr",
+            "Alla vinster från cash spins kommer att betalas ut i riktiga pengar utan omsättningskrav"
           ],
           "sportsterms": [""],
           "topslotgames": "1,000 spel från välkända leverantörer som Pragmatic Play, Quickspin, Yggdrasil, Push Gaming, Net Ent, Relax Gaming, Evolution, Leap och fler!",
@@ -5797,6 +5799,81 @@
           "swish": false,
           "livechat": true,
           "summering": "Yoyocasino är en riktig tuff konkurent på marknaden. Vi kan se att Yoyocasino kommer att växa i rekordfart eftersom dem har bra utbud av spel, snygg layout och smidiga insättningar samt uttag. Minsta insättningen är 100kr och minsta uttagen ligger på 200k. Erbjuder livechatt på svenska under dagar/kvällar. Resterande tid är det engelska som gäller. Insättningar sker via Trustly vilket ger dig som spelare säkerhet. Yoyocasino har svensk spellicense. Vi ger casinot full pott!"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "faq": true,
+      "q1": {
+        "@type": "Question",
+        "name": "💰Vad är minsta insättningen samt uttag hos JallaCasino?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minsta insättningen hos Spela är 150 kr. För att göra ett uttag är minsta beloppet 100 kr."
+        }
+      },
+      "q2": {
+        "@type": "Question",
+        "name": "✨Erbjuder JallaCasino insättningar med faktura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, det gör dem tyvärr inte. Jallacasino erbjuder insättningar samt uttag via den populära betalningsmetoden Trustly samt insättning via Swish."
+        }
+      },
+      "q3": {
+        "@type": "Question",
+        "name": "❓Har JallaCasino svensk spellicense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, JallaCasino har svensk spellicens ."
+        }
+      },
+      "title": "JallaCasino",
+      "slogan": "Casino med Swish",
+      "color": "#441e60",
+      "textcolor": "#fede17",
+      "setTop": false,
+      "depositbonus": "Ingen casino bonus",
+      "sportsbonus": "Ingen sport bonus",
+      "mylink": "https://record.jallacasino.se/_zwvwrZh854oBdnrXAWEQVGNd7ZgqdRLk/1/",
+      "rules": "https://record.jallacasino.se/_zwvwrZh854puEPl3i6SOTmNd7ZgqdRLk/1/",
+      "caslogo": "/images/jallalogo.svg",
+      "wager": "x",
+      "sportswager": "x",
+      "extratext": "",
+      "sports": false,
+      "freespins": 0,
+      "maxbonus": 0,
+      "maxbonussports": 0,
+      "activebonus": false,
+      "bankid": true,
+      "publishdate": "23 Mars 2020",
+      "freefromwager": false,
+      "depositpercent": 0,
+      "faktura": false,
+      "fakturatype": [],
+      "recension": [
+        {
+          "gamebar": 100,
+          "experience": 100,
+          "support": 100,
+          "egentitel": "Nytt Casino 2020 med Trustly ",
+          "egentitel2": false,
+          "toprecension": "Jalla casino är ett nytt och modernt casino 2020. Bolaget bakom casinot är Auto Nordic Ltd.  Casinot har en väldigt snygg layout med snygga färger samt en väldigt användarvänlig sida. Casinot erbjuder insättningar via Swish och Trustly. Skulle man vara i behov av support så har JallaCasino en livechatt som har öppet dygnet runt. Casinot erbjuder spel på Slots, Live casino och bordsspel. Ett grymt casino för alla som tycker om slots. Insättningar och uttag går väldigt snabbt på JallaCasino. Registreringen hos JallaCasino är väldigt smidig med hjälp av bank identifiering",
+          "secondrec": "Casinosektionen hos Jallacasino är väldigt bra. Erbjuder ett väldigt stort utbud av slots och andra spel. Du kan filtrera spel via namn och senast tillagda slots. Du kan även söka efter din favoritslot. Alla slots kommer från välkända leverantörer och håller högsta kvaliten. Här finns favoriter som Gonzo's Quest, Bonanza, Piggy Riches Megaways, Dead or Alive och många fler. Registreringen samt inloggningen är väldigt simpel tack vare bankd identifiering. ",
+          "sportsrec": "JallaCasino erbjuder tyvärr ingen sportsbetting.",
+          "welcomeoffer": "Ingen bonus just nu",
+          "bonusterms": [""],
+          "casinoterms": [""],
+          "sportsterms": [""],
+          "topslotgames": "1,200 spel från välkända leverantörer som SG Digitals, Quickspin, Yggdrasil, Push Gaming, Net Ent, Big Time Gaming, Microgaming och många fler!",
+          "deposittypes": "Trustly,Swish",
+          "mindeposit": 150,
+          "minout": 100,
+          "swish": true,
+          "livechat": true,
+          "summering": "JallaCasino är ett av de senaste tillskotten på den svenska marknaden. Casinot har en extremt snygg design och är väldigt användarvänligt. Minsta insättningen ligger på 150 kr och minsta uttaget ligger på 100 kr. Insättningarna och uttagen går väldigt snabbt. Erbjuder support via livechatt dygnet runt. Har en extremt snygg casinosektion med ett enormt utbud av slots. JallaCasino erbjuder spel på Slots, Live Casino, Bordsspel och kortspel. Insättningsmetoderna som erbjuds är Swish och Trustly. Ett grymt casino som vi ger full pott!."
         }
       ]
     }

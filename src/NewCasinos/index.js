@@ -71,7 +71,7 @@ const NewCasinos =(props)=> {
               rel="noopener noreferrer nofollow "
               to={{ pathname: `/Redirect/${casino.title}`, match: `${casino.title}` }}>
             
-              <Button className="newcas-botton">Hämta bonus</Button>
+              <Button className="newcas-botton">Till Casinot</Button>
             </Link>
 
             <StyledNavlink 

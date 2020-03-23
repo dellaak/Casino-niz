@@ -10,7 +10,7 @@ import BottomInfoNyaCasino from "../../AllBottomInfo/BottomInfoNyaCasino";
 
 const NyaCasino = (props) => {
 
-  const topArr = ['luckyvegas', 'spela', 'yoyocasino']
+  const topArr = ['luckyvegas', 'spela', 'yoyocasino', 'jallacasino']
   const [topCasinon, setTopList] = useState([])
 
 
@@ -52,7 +52,7 @@ const NyaCasino = (props) => {
     margin: 40px 0;
     margin-bottom:0px ;
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid lightgray;
     h2 {
     margin-top: 30px;
     }
@@ -122,6 +122,21 @@ const NyaCasino = (props) => {
       {topCasinon.length > 0 ? <div><p>YoyoCasino är ett nytt casino för svenska spelare. Casinot har en väldigt snygg och användarvänlig sida med över 1000 casinospel. Ett grymt casino för alla som tycker om att spela på slots.</p></div> : ''}
       <div className="casino-wrap">
         {topCasinon.slice(2, 3).map((casino) =>
+          < Casinon
+            key={casino.id + casino.title}
+            casino={casino}
+            isBlocked={props.isBlocked}
+          />)}
+      </div>
+    </StyledDiv>
+
+
+    <StyledDiv>
+
+      <h2>Nytt casino 2020 - JallaCasino</h2>
+      {topCasinon.length > 0 ? <div><p>JallaCasino är ett nytt casino på den svenska marknaden. Med deras extremt snygga design så tror vi att dem kommer växa sig stora på marknaden. Erbjuder över 1200 casinospel. Du kan spela på Slots, Live Casino och bordsspel hos JallaCasino.</p></div> : ''}
+      <div className="casino-wrap">
+        {topCasinon.slice(3, 4).map((casino) =>
           < Casinon
             key={casino.id + casino.title}
             casino={casino}

@@ -128,7 +128,7 @@ const Casinon = (props) => {
           </div>
           <Link target={props.isBlocked ? '' : "_blank"}
             rel="noopener noreferrer nofollow " to={{ pathname: `/Redirect/${props.casino.title}`, match: `${props.casino.title}` }}>
-            <Button className="to-botton">Hämta bonus</Button>
+            <Button className="to-botton">Till Casinot</Button>
           </Link>
 
 

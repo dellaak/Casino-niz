@@ -467,3 +467,12 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/yoyocasino"}
 
+
+
+[[redirects]]
+ from = "/Go/jallacasino"
+  to = "https://record.jallacasino.se/_zwvwrZh854oBdnrXAWEQVGNd7ZgqdRLk/1/"
+  status = 301
+  query = {path = "/Go/jallacasino"}
+ 
+
