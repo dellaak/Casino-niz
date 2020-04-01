@@ -68,6 +68,9 @@ const NewsSection = (props) => {
       <BloggSection>
 
 
+        <Kampanj title="Legolasbet - Casinot stänger pga virus" text='Legolas Invest Limited är bolaget som driver Legolasbet. Bolaget har valt att stänga ner all sin verksamhet pga av Covid-19 viruset. ' bild="/images/legolasclose.png" publicerad="1 April 2020" link="legolasbet-stanger" alttxt="legolasbetclose" />
+
+
         <Kampanj title="Highroller - Casinot stänger verksamhet i Sverige" text='Zecure Gaming Limited är bolaget som driver Highroller. Bolaget har valt att stänga ner Highroller för svenska spelare och hänvisar istället till deras systercasino som är Casinoroom.se' bild="/images/highrollerclose.png" publicerad="16 februari 2020" link="highroller-stanger" alttxt="highrollerclose" />
 
         <Kampanj title="Nytt casino lanseras 2020 - förhoppningsvis under februari" text='Nu är det dags för ett nytt casino 2020. Casinot är SlotV.com. Casinot grundades 2017 och är aktiva i över 20 länder just nu. Bolaget bakom casinot är Avento MT Limited.' bild="/images/slotvimg.png" publicerad="1 februari 2020" link="slotv-nyttcasino" alttxt="slotvlogo" />

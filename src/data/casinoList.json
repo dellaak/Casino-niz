@@ -31,26 +31,26 @@
       "color": "#373942",
       "textcolor": "#8eb50c",
       "slogan": "Casinobonus Comeon - välkomstbonus ",
-      "depositbonus": "Sätt in 500kr - Få 1500kr att spela för",
-      "sportsbonus": "Sätt in 500kr - Få 1500kr att spela för",
+      "depositbonus": "Insättningsbonus på 100% upp till 5000kr!",
+      "sportsbonus": "Ingen bonus just nu",
       "mylink": "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1753&sid=354226&pid=457",
       "rules": "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1764&sid=354226&pid=469",
       "caslogo": "/images/comeonlogo.svg",
       "extratext": "",
       "wager": 35,
-      "specialbonus": true,
+      "specialbonus": false,
       "setTop": false,
-      "sportswager": 8,
+      "sportswager": "x",
       "freespins": 0,
       "activebonus": true,
       "bankid": true,
       "sports": true,
-      "minodds": 2.0,
-      "maxbonus": 500,
-      "maxbonussports": 500,
+      "minodds": "x",
+      "maxbonus": 5000,
+      "maxbonussports": "x",
       "freefromwager": false,
-      "depositpercentsports": 200,
-      "depositpercent": 200,
+      "depositpercentsports": "x",
+      "depositpercent": 100,
       "faktura": true,
       "publishdate": "6 Februari 2020",
       "fakturatype": ["Siru", "Zimpler", "SMS-voucher"],
@@ -67,17 +67,13 @@
           "welcomeoffer": "",
           "bonusterms": [
             "Detta erbjudande är giltigt för kunder som inte har placerat ett spel sedan 01/01/2019.",
-            "Denna bonus kan användas både i casinot och på odds."
+            "Denna bonus kan endast användas i casinot."
           ],
           "casinoterms": [
             "Du har totalt 60 dagar på dig att omsätta bonusen.",
             "Du måste satsa 35x (din insats + bonusbelopp) för att fullfölja kraven för denna bonus."
           ],
-          "sportsterms": [
-            "Insatsbelopp: 8x (din insats + bonusbelopp)",
-            "Minimum odds för varje insats: 2.0",
-            "Minimum antal val med dessa odds: 2"
-          ],
+          "sportsterms": ["Ingen bonus just nu"],
           "topslotgames": [
             "Netent, Microgaming, Play N Go, Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX, Thunderkick, Evolution, Nextgen, ELK "
           ],
@@ -2167,15 +2163,15 @@
       "textcolor": "#6bcb88",
       "setTop": false,
       "slogan": "Svenskt casino med snabba uttag",
-      "depositbonus": "Insättningsbonus på 200% upp till 2000 kr!",
+      "depositbonus": "Insättningsbonus på 100% upp till 1000 kr + 20 gratisspel(Gratisspel utan omsättningskrav)!",
       "sportsbonus": "Ingen bonus just nu!",
       "mylink": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=1968&sid=354226&pid=640",
       "rules": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=2758&sid=354226&pid=841",
       "caslogo": "/images/hajperlogo.svg",
       "wager": 20,
       "sportswager": "x",
-      "freespins": 0,
-      "maxbonus": 2000,
+      "freespins": 20,
+      "maxbonus": 1000,
       "maxbonussports": 0,
       "publishdate": "7 Januari 2020",
       "activebonus": true,
@@ -2183,8 +2179,8 @@
       "bankid": true,
       "sports": true,
       "minodds": 0,
-      "freefromwager": false,
-      "depositpercent": 200,
+      "freefromwager": true,
+      "depositpercent": 100,
       "depositpercentsports": 0,
       "faktura": false,
       "fakturatype": [],
@@ -3599,102 +3595,6 @@
           "swish": false,
           "livechat": true,
           "summering": "Hyper är ett väldigt modernt och säkert casino. Sidan har svensk spellicens så du som spelare känna trygghet på Hyper. Alla vinster är skattefria. Erbjuder många insättningsmetoder samt insättning via faktura. Uttagen skrev snabbt och oftast inom 15 minuter. Har väldigt bra casinosektion med fler favort slots från kända leverantörer med hög kvalitet på spelen. Minsta insättningen är 100 kr och högsta uttag per dag är 50 000 kr. Erbjuder livechatt och har en bra support. Enkel registrering med bankid. "
-        }
-      ]
-    },
-    {
-      "id": 46,
-      "faq": true,
-      "q1": {
-        "@type": "Question",
-        "name": "💰Vad är minsta insättningen samt uttag hos LegolasBet?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Minsta insättningen hos LegolasBet är 100 kr. För att göra ett uttag är minsta beloppet 100 kr."
-        }
-      },
-      "q2": {
-        "@type": "Question",
-        "name": "✨Erbjuder LegolasBet insättningar via faktura?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nej, det gör dem inte. LegolasBet erbjuder VISA, Mastercard, Neteller, Skrill och Trustly som insättningsmetoder."
-        }
-      },
-      "q3": {
-        "@type": "Question",
-        "name": "❓Har LegolasBet svensk spellicens?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja, det har dem. LegolasBet har haft svensk spellicens sedan 2019-01-17."
-        }
-      },
-      "title": "LegolasBet",
-      "color": "#fff",
-      "textcolor": "#f02e3a",
-      "setTop": false,
-      "slogan": "Casino med många spel",
-      "depositbonus": "Insättningsbonus på 100% Upp till 1,000 SEK + 25 Free Spins i Dawn of Egypt",
-      "mylink": "https://www.legolas.bet/affiliates/?btag=103909",
-      "rules": "https://www.legolas.bet/affiliates/?btag=10n 0.10.333909_l46248",
-      "caslogo": "/images/legolasbet.svg",
-      "wager": 35,
-      "sportsbonus": "Insättningsbonus på 100% upp till 1000 kr",
-      "sportswager": 0,
-      "extratext": "",
-      "bankid": true,
-      "sports": true,
-      "minodds": 1.3,
-      "freespins": 25,
-      "maxbonus": 1000,
-      "maxbonussports": 1000,
-      "freefromwager": false,
-      "depositpercent": 100,
-      "depositpercentsports": 100,
-      "faktura": false,
-      "publishdate": "29 Februari 2020",
-      "activebonus": true,
-      "fakturatype": [],
-      "recension": [
-        {
-          "gamebar": 75,
-          "experience": 100,
-          "support": 95,
-          "egentitel": "Svenskt casino",
-          "egentitel2": "Esportbetting och sport",
-          "toprecension": "Legolasbet är ett svenskt casino som lanserades 2017. När man landar på Legolasbet så möts man av en snygg men simpel sida. Övergripande designen är röd och vit. Sidan är snygg och lätt att navigera sig runt. Legolasbet erbjuder fyra av de vanligaste insättningsmetoderna. Beroende på uttagsmetod så går uttagen snabbt. Har en livechatt men den har särskila öppettider. Erbjuder spel på odds, casino och livebetting. Trav finns också som ett alternativ men är just nu ur funktion.",
-          "secondrec": "Casinosektionen på Legolasbet är inte så stor. Erbjuder slots från NetEnt och Pragmatic Play, med favoritslots som Dead or Alive, Starbust, Gonzo Quest och fler. Casinosektionen är väldigt simpel och du kan filtrera casinon på leverantör samt söka efter spel. Utöver slots så erbjuder Legolasbet även videopoker och bordsspel på casinosektionen. ",
-          "sportsrec": "Man märker att Legolasbet satsar på betting, det står ju i namnet också. Legolasbet sportssektion är väldigt bra. Erbjuder betting på många kategorier inklusive esport betting. Med spel som CSGO, Starcraft2, Dota2 och andra esporter. Navigering på sportsektionen är okej men det kan kännas lite rörigt ibland när man får upp flera rutor. Har även en sportsbonus för nya kunder. Du kan välja din egen bonus. Det som de erbjuder är en insättningsbonus på 50%,100% eller 400%. ",
-          "welcomeoffer": "",
-          "bonusterms": [
-            "nsättningar genom Neteller, EcoPayz or Skrill räknas inte till erbjudandet.",
-            "Den maximala insatsen som tillåts vid en aktiv bonus är 50kr per spelrunda. Alla insatser som överskrider denna gräns kan leda till avstängning av kontot, nollställning av ditt bonussaldo och vinster från bonusen."
-          ],
-          "casinoterms": [
-            "Lägsta insättningsbeloppet för att ta del av erbjudandet är 500 kr."
-          ],
-          "sportsterms": [
-            "Gör en första insättning på minst 200 kronor inom 7 dagar från registreringsdagen",
-            "Placera ett kombinationsspel med minst 3 matcher, varje match med minimumodds 1,30. Minsta insats för att kvalificera sig för bonusen är 100 kronor. Du har 60 dagar på dej från den första insättningen att lägga det kvalificerade spelet."
-          ],
-          "topslotgames": "Över 100+ slots! Från kända leverantörer som NetEnt och Pragmatic Play",
-          "deposittypes": "VISA, Mastercard, Neteller, Skrill, Trustly ",
-          "mindeposit": 100,
-          "minout": 100,
-          "swish": false,
-          "livechat": true,
-          "summering": "Legolasbet är en simpel sida. Casinosektionen är inte den ultimata när det gäller spelare som vill spela på slots. Deras sportsektion är dock väldigt bra. Erbjuder betting på flera sporter inklusive esport betting. På spel som CSGO, Starcraft2, Dota2 och fler! Erbjuder vanliga insättninsmetoder. Uttagen går snabbt beroende på uttagsmetod. Har en bra supportsida med svaren på de vanligaste frågorna och sidan är väldigt informativ. Har en livechatt med särskilda öppettider.   "
-        }
-      ],
-      "esportinfo": [
-        {
-          "csgo": true,
-          "dota2": true,
-          "leagueoflegends": true,
-          "overwatch": false,
-          "starcraft2": true,
-          "other": true,
-          "spel": "CS:GO - League of Legends - Dota2-  StarCraft 2 - Rocket Leauge - Rainbow Six"
         }
       ]
     },
