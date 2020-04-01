@@ -68,7 +68,6 @@ const NewsSection = (props) => {
       <BloggSection>
 
 
-        <Kampanj title="Legolasbet - Casinot stänger pga virus" text='Legolas Invest Limited är bolaget som driver Legolasbet. Bolaget har valt att stänga ner all sin verksamhet pga av Covid-19 viruset. ' bild="/images/legolasclose.png" publicerad="1 April 2020" link="legolasbet-stanger" alttxt="legolasbetclose" />
 
 
         <Kampanj title="Highroller - Casinot stänger verksamhet i Sverige" text='Zecure Gaming Limited är bolaget som driver Highroller. Bolaget har valt att stänga ner Highroller för svenska spelare och hänvisar istället till deras systercasino som är Casinoroom.se' bild="/images/highrollerclose.png" publicerad="16 februari 2020" link="highroller-stanger" alttxt="highrollerclose" />

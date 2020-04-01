@@ -310,11 +310,6 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/hyper"}
 
-              [[redirects]]
-  from = "/Go/legolasbet"
-  to = "https://www.legolas.bet/affiliates/?btag=103909"
-  status = 301
-  query = {path = "/Go/legolasbet"}
 
                 [[redirects]]
   from = "/Go/coolbet"
