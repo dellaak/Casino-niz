@@ -31,8 +31,8 @@
       "color": "#373942",
       "textcolor": "#8eb50c",
       "slogan": "Casinobonus Comeon - välkomstbonus ",
-      "depositbonus": "Insättningsbonus på 300& upp till 750kr + 100 omsättningsfria gratissnurr!",
-      "sportsbonus": "Ingen bonus just nu",
+      "depositbonus": "Välj mellan 2 insättningarbonusar 300% upp till 750 kr eller 100% upp till 5000kr.",
+      "sportsbonus": "300% upp till 750 kr",
       "mylink": "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1753&sid=354226&pid=457",
       "rules": "https://media.comeon.com/tracking.php?tracking_code&aid=107839&mid=1764&sid=354226&pid=469",
       "caslogo": "/images/comeonlogo.svg",
@@ -40,17 +40,17 @@
       "wager": 35,
       "specialbonus": false,
       "setTop": false,
-      "sportswager": "x",
+      "sportswager": 8,
       "freespins": 100,
       "activebonus": true,
       "bankid": true,
       "sports": true,
-      "minodds": "x",
-      "maxbonus": 750,
-      "maxbonussports": "x",
+      "minodds": 2.0,
+      "maxbonus": 5000,
+      "maxbonussports": 300,
       "freefromwager": true,
-      "depositpercentsports": "x",
-      "depositpercent": 300,
+      "depositpercentsports": 300,
+      "depositpercent": 100,
       "faktura": true,
       "publishdate": "6 Februari 2020",
       "fakturatype": ["Siru", "Zimpler", "SMS-voucher"],
@@ -73,7 +73,9 @@
             "Du har totalt 60 dagar på dig att omsätta bonusen.",
             "Du måste satsa 35x (din insats + bonusbelopp) för att fullfölja kraven för denna bonus."
           ],
-          "sportsterms": ["Ingen bonus just nu"],
+          "sportsterms": [
+            "Insättning + bonus måste omsättas 8x på odds. Singel- eller kombospel med minst 2.0 i odds."
+          ],
           "topslotgames": [
             "Netent, Microgaming, Play N Go, Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX, Thunderkick, Evolution, Nextgen, ELK "
           ],
@@ -4718,87 +4720,6 @@
           "swish": false,
           "livechat": true,
           "summering": "InAndOutBet är ett väldigt bra casino! Casinot har väldigt snabba insättningar och uttag. Vill man ha hjälp så finns det livechatt mellan 08:00 - 00:30 alla dagar. Minsta insättningen samt uttag är på minst 200 kr. Registrering av nytt konto går extremt snabbt med hjälp av bankidentifiering. Ett riktigt bra casino för personen som tycker om slots!"
-        }
-      ]
-    },
-    {
-      "id": 61,
-      "faq": true,
-      "q1": {
-        "@type": "Question",
-        "name": "💰Vad är minsta insättningen samt uttag hos Gate777?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Minsta insättningen hos Gate777 är 200 kr. För att göra ett uttag är minsta beloppet 250 kr."
-        }
-      },
-      "q2": {
-        "@type": "Question",
-        "name": "✨Erbjuder Gate777 insättningar via faktura?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nej, det gör dem inte. Gate777 erbjuder insättningar via Trustly, Visa, Mastercard, Skrill, Neteller, PaysafeCard och Banköverföring."
-        }
-      },
-      "q3": {
-        "@type": "Question",
-        "name": "❓Har Gate777 svensk spellicens?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja,det har dem. Gate777 har haft svensk spellicens sedan 2018-12-27."
-        }
-      },
-      "title": "Gate777",
-      "slogan": "Casino med Trustly",
-      "color": "#232629",
-      "textcolor": "#23d1ad",
-      "setTop": false,
-      "depositbonus": "Insättningsbonus på 150% upp till 2500kr + 77 freespins",
-      "sportsbonus": "ingen sports bonus",
-      "mylink": "https://begin.gate777.com/redirect.aspx?pid=5933&lpid=75&bid=1794",
-      "rules": "https://begin.gate777.com/redirect.aspx?pid=5933&bid=1892",
-      "caslogo": "/images/gate777logo.png",
-      "casinobonuswager": true,
-      "wager": 35,
-      "sportswager": "x",
-      "extratext": "",
-      "maxbonus": 2500,
-      "maxbonussports": 0,
-      "sports": false,
-      "freespins": 77,
-      "activebonus": true,
-      "bankid": false,
-      "publishdate": "15 Januari 2020",
-      "freefromwager": false,
-      "depositpercent": 150,
-      "faktura": false,
-      "fakturatype": [],
-      "recension": [
-        {
-          "gamebar": 100,
-          "experience": 94,
-          "support": 94,
-          "egentitel": "Ett Snyggt casino",
-          "egentitel2": false,
-          "toprecension": "Gate777 är ett casino som lanseradess 2018. Casinot har svenskt spellicens vilket ger dig som spelare skattefria vinster. Sidan är väldigt väldesignad och har ett väldigt brett utbud av spel. Casinot är väldigt användarvänligt med enkel navigering. Har en bra supportsektion med svar på dem vanligaste frågorna. Räcker inte det finns det även en livechatt som har öppet dygnet runt alla dagar. Vill man chatta med svensktalande support så är det mellan 08:00 - 24:00. Resterande tid så får man hjälp av en engelsk talande support. Supporten är väldigt kunnig och trevlig. Det är väldigt enkelt att göra insättningar samt begära ut ett uttag. Eftersom casinot har Trustly så har du ditt uttag inom 24 timmar, oftast inom 15 minuter!",
-          "secondrec": "Casinosektionen på Gate777 är väldigt bra. Har ett väldigt brett utbud av slots med favoriter som Gonzo's Quest, Book of Dead, Dead or Alive, Mega Molah och många andra spel. Du kan sortera slots baserat på leverantör vilket vi tycker är bra. Man kan även söka efter sina favoritslots. I skrivandet stund så finns det över 28st slots med jackpottar. Gate777 erbjuder över 1200+ spel. Vill man spela på något annat än slots så finns det även Live Casino och Bordsspel.",
-          "sportsrec": "Ingen sport sektion.",
-          "welcomeoffer": "Insättningsbonus på 150% upp till 2500kr + 77 freespins",
-          "bonusterms": [
-            "Minsta insättningsbeloppet som krävs för att få din välkomstbonus är 200 kr",
-            "Din välkomst bonus måste användas inom [60 dagar] efter att den krediterats till ditt konto"
-          ],
-          "casinoterms": [
-            "Olika spel bidrar olika procent mot omsättnings kravet. Omsättningskravet är den totala summa som måste satsas på tillgängliga spel för att omvandla en bonus."
-          ],
-          "sportsterms": ["Ingen sports sektion"],
-          "topslotgames": "Över 800+ slots från kända leverantörer som  Microgaming, NetEnt, Big Time Gaming, Blueprint, Quickspin, Play n Go och många fler !",
-          "deposittypes": "Trustly, Visa, Mastercard, Skrill, Neteller, PaysafeCard och Banköverföring",
-          "mindeposit": 200,
-          "minout": 250,
-          "swish": false,
-          "livechat": true,
-          "summering": "Gate777 är ett väldigt bra casino med en väldesignad sida samt väldigt användarvänlig. Att göra insättningar samt begära ut ett uttag går väldigt snabbt och smidigt. Har ett väldigt brett spelsortiment med över 1200+ spel från branschens bästa leverantörer. Supporten hos Gate777 är väldigt professionell. Livechatt på svenska finns tillgängligt mellan 08:00-24:00, resterande tid är det engelska som gäller. Erbjuder flera kända insättningsmetoder som t.ex. Trustly, Visa m.m. Vill man flyga iväg i tankarna och få en annourlunda spelupplevelse så är Gate777 casinot för dig! "
         }
       ]
     },
