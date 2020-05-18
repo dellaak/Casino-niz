@@ -88,11 +88,6 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/888casino"}
   
-              [[redirects]]
-  from = "/Go/cherrycasino"
-  to = "https://ads.cherrycasino.com/tracking.php?tracking_code&aid=107839&mid=2545&sid=354226&pid=802"
-  status = 301
-  query = {path = "/Go/cherrycasino"}
 
                 [[redirects]]
   from = "/Go/sverigeautomaten"
