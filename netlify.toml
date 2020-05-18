@@ -107,11 +107,6 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/betsson"}
 
-                     [[redirects]]
-  from = "/Go/sveacasino"
-  to = "https://ads.sveacasino.com/tracking.php?tracking_code&aid=107839&mid=1135&sid=354226&pid=201"
-  status = 301
-  query = {path = "/Go/sveacasino"}
 
                        [[redirects]]
   from = "/Go/betsafe"
