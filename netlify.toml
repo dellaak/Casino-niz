@@ -428,7 +428,6 @@ baseURL = "/"
   query = {path = "/Go/hellocasino"}
 
 
-
  [[redirects]]
  from = "/Go/spela"
   to = "https://spela.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=4727"
