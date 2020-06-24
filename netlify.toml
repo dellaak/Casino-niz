@@ -313,11 +313,6 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/noaccountbet"}
 
-                  [[redirects]]
-  from = "/Go/igame"
-  to = "https://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=34376"
-  status = 301
-  query = {path = "/Go/igame"}
 
                     [[redirects]]
   from = "/Go/mariacasino"
