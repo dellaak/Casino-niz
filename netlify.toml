@@ -88,13 +88,6 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/888casino"}
   
-
-                [[redirects]]
-  from = "/Go/sverigeautomaten"
-  to = "https://record.sverigeautomaten.com/_zwvwrZh854qe7oPsq8PuNGNd7ZgqdRLk/1/"
-  status = 301
-  query = {path = "/Go/sverigeautomaten"}
-
                   [[redirects]]
   from = "/Go/bethard"
   to = "http://wleuroearners.adsrv.eacdn.com/C.ashx?btag=a_9093b_2758c_&affid=2853&siteid=9093&adid=2758&c="
@@ -332,11 +325,6 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/prankcasino"}
 
-                         [[redirects]]
-  from = "/Go/karlcasino"
-  to = "http://www.karlaffiliates.com/redirector?url=http://www.karlcasino.com&userid=580&tracker=36635"
-  status = 301
-  query = {path = "/Go/karlcasino"}
 
                            [[redirects]]
   from = "/Go/gogocasino"
@@ -355,13 +343,6 @@ baseURL = "/"
   to = "https://m.vegasfolks.com/Redirect.aspx?mid=4&sid=91&cid=XXX&pid=&affid=63"
   status = 301
   query = {path = "/Go/luckyvegas"}
-
-
-                             [[redirects]]
-  from = "/Go/dreamz"
-  to = "https://wlarmstrongaffiliates.adsrv.eacdn.com/C.ashx?btag=a_1024b_9c_&affid=372&siteid=1024&adid=9&c="
-  status = 301
-  query = {path = "/Go/dreamz"}
 
 
                              [[redirects]]
