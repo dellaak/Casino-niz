@@ -328,7 +328,7 @@ const Sports = (props) => {
                     )}
             </div>
 
-            <CalcSearch calculateBonus={calculateBonus} value={searchNr} />
+            {/* <CalcSearch calculateBonus={calculateBonus} value={searchNr} /> */}
             <SportsFilter
                 id="filterid"
                 wager={wagerbutton}

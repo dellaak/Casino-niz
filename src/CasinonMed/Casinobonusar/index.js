@@ -473,7 +473,7 @@ background-color: ${props => props.isactivebutton ? ' #e0b438 ' : 'rgba(8, 91, 1
 
 
             <StyledH3>Alla casinon med bonusar</StyledH3>
-            <CalcSearch calculateBonus={calculateBonus} value={searchNr} />
+            {/* <CalcSearch calculateBonus={calculateBonus} value={searchNr} /> */}
             <StyledSecondFilter>
                 <span>Visa endast casinon som har:  </span><StyledButton onClick={() => { setSports(!sports) }} isactivebutton={sports ? 1 : undefined}>Sportsbonus</StyledButton>
 

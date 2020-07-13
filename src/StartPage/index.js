@@ -452,7 +452,7 @@ const StartPage = (props) => {
       </section>
 
       <Container className="wrapit">
-        <CalcSearch calculateBonus={calculateBonus} value={searchNr} />
+        {/* <CalcSearch calculateBonus={calculateBonus} value={searchNr} /> */}
         <div ref={myRef} className="top-box" />
         <Filter
           id="filterid"

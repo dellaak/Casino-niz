@@ -280,7 +280,7 @@
     {
       "id": 4,
       "faq": true,
-      "casinospecialterms": "Erbjudandet gäller nya spelare från 20 maj 2019 och framåt. Min. insättning 100 kr. 15x omsättningskrav. Bonusen är giltig i 60 dagar. Cash Free Spins är omsättningsfria, ev. vinster är riktiga pengar",
+      "casinospecialterms": "Erbjudandet gäller nya spelare från 1 juli 2020 och framåt. Min. insättning 100 kr. 10x omsättningskrav. Bonusen är giltig i 60 dagar. Läs fullständiga regler och villkor",
       "q1": {
         "@type": "Question",
         "name": "💰Vad är minsta insättningen samt uttag hos LeoVegas?",
@@ -310,8 +310,8 @@
       "textcolor": "#fff",
       "setTop": false,
       "slogan": "Svenskt casino",
-      "depositbonus": "100 kr i välkomstbonus vid första insättningen!",
-      "sportsbonus": "Matchar ditt första kvalificerande spel med ett gratisspel upp till 100 k",
+      "depositbonus": "Sätt in 100kr och omsätt 1000kr. Få 100kr",
+      "sportsbonus": "Sätt in 200 kr, Få 100 kr matchat gratisspel",
       "mylink": "https://ads.leovegas.com/redirect.aspx?pid=3599439&bid=16049",
       "rules": "https://www.leovegas.com/sv-se/villkor",
       "caslogo": "/images/leovegaslogo.png",
@@ -321,7 +321,7 @@
       "maxbonus": 100,
       "maxbonussports": 100,
       "activebonus": true,
-      "extratext": "Bonusen är giltig i 60 dagar. Cash Free Spins är omsättningsfria så ev vinster sker i riktiga pengar.",
+      "extratext": "Erbjudandet gäller nya spelare från 1 juli 2020 och framåt. Min. insättning 100 kr. Gratisspelet är giltig i 60 dagar. Minimum odds 1.8",
       "bankid": true,
       "sports": true,
       "minodds": 1.8,
