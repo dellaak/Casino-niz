@@ -142,8 +142,8 @@ const SportCasino = (props) => {
                             `${props.casinon.maxbonus <= parseInt(props.calcVal) ? props.casinon.maxbonus : 0}` : props.calcVal}` : `${props.casinon.casinobonuswager ? bonusVal * props.casinon.sportswager : value * props.casinon.sportswager}`}kr</b ></p> : ''}
 
             </div>
-            {props.calc && props.casinon.depositpercentsports > 0 && props.calcVal <= props.casinon.maxbonus && props.calcVal >= 100 ? <p className="calc-small">Detta är en uppskattad bonus. Läs igenom regler & villkor för varje enskild bonus</p> : ''}
-            {props.casinon.casinospecialterms ? <div className="extra-text"><span>{props.casinon.casinospecialterms}</span></div> : ''}
+          
+            {props.casinon.sportsTerms ? <div className="extra-text"><span>{props.casinon.sportsTerms}</span></div> : ''}
 
 
 
