@@ -146,7 +146,7 @@ const Casinon = (props) => {
 
       </div>
       {props.calc && props.casino.depositpercent > 0 && props.calcVal <= props.casino.maxbonus && props.calcVal >= 100 ? <p className="calc-small">Detta är en uppskattad bonus. Läs igenom regler & villkor för varje enskild bonus</p> : ''}
-      {props.casino.casinospecialterms ? <div className="extra-text"><span>{props.casino.casinospecialterms}</span></div> : ''}
+      {props.casino.casinospecialterms ? <div className="extra-text"><span>{props.casino.extratext}</span></div> : ''}
 
 
 
