@@ -1,9 +1,9 @@
-import React from 'react';
-import { Container } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
-import './style.scss';
+import React from "react";
+import { Container } from "reactstrap";
+import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import styled from "styled-components";
+import "./style.scss";
 
 const BloggSection = styled.section`
   display: flex;
@@ -11,8 +11,8 @@ const BloggSection = styled.section`
   flex-wrap: wrap;
 `;
 
-const NewsSection = props => {
-  const Kampanj = props => {
+const NewsSection = (props) => {
+  const Kampanj = (props) => {
     let { text, bild, publicerad, link, title, alttxt } = props;
     return (
       <section className="kampanj">
@@ -76,11 +76,19 @@ const NewsSection = props => {
           Vill du hålla dig uppdaterad om nyheter inom casinobranschen ? Här har
           vi en liten nyhetssida där vi släpper intressanta nyheter om vad som
           händer inom casinobranschen. Hoppas att det vi skriver ut här får dig
-          som läsare att finna det intressant :){' '}
+          som läsare att finna det intressant :){" "}
         </p>
 
         <h2>Casino Nyheter 2020</h2>
         <BloggSection>
+          <Kampanj
+            title="Reactoonz 2 ute på marknaden"
+            text="Första spelet blev en succé. Nu har tillverkarna släppt en uppföljare nämligen Reactoonz 2. Spelet finns på dem flesta svenska spelsidor där man erbjuder spel från Play N Go. "
+            bild="/images/reactoonz-2.jpg"
+            publicerad="14 Oktober 2020"
+            link="reactoonz-2-2020"
+            alttxt="reactoonz-2"
+          />
           <Kampanj
             title="Casinon som stänger i Sverige"
             text="Flera svenska välkända casinon har valt att stänga ner sin verksamhet i Sverige. Dem har valt att inte ansöka om svensk spellicens för närvarande och stänger därmed registreringen för svenska spelare"

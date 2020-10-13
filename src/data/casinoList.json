@@ -72,9 +72,7 @@
           "casinoterms": [
             "Alla gratissnurr är värda 1 kr/st och är omsättningsfria. De blir tillgängliga när en kvalificerande insättning gjorts."
           ],
-          "sportsterms": [
-            "Ingen minsta insättning",""
-          ],
+          "sportsterms": ["Ingen minsta insättning", ""],
           "topslotgames": [
             "Netent, Microgaming, Play N Go, Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX, Thunderkick, Evolution, Nextgen, ELK "
           ],
@@ -263,9 +261,7 @@
           "bonusterms": [
             "Freespins måste användas inom 60 dagar från aktivering för att inte gå förlorade."
           ],
-          "casinoterms": [
-            "Vinster från freespins är omsättningsfria"
-          ],
+          "casinoterms": ["Vinster från freespins är omsättningsfria"],
           "sportsterms": ["Ingen sports sektion"],
           "topslotgames": "Över 800+ slots från leverantörer som Netent, Microgaming, Play N Go, Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX ,Thunderkick, Evolution, Nextgen, ELK",
           "deposittypes": "Maestro, MasterCard, Paysafe Card, Visa, Electron, Entropay,Skrill, Neteller, Siru,Zimpler, Trustly, SMS-voucher, Paypal,Swish",
@@ -322,7 +318,7 @@
       "maxbonussports": 100,
       "activebonus": true,
       "extratext": "Erbjudandet gäller nya spelare från 1 september 2020 och framåt. Min. insättning 100 kr. Cash Free Spins är giltiga i 60 dagar.Cash Free Spins är omsättningsfria, ev. vinster är riktiga pengar. Läs fullständiga regler och villkor",
-      "sportsTerms":"Erbjudandet gäller nya spelare från 1 juli 2020 och framåt. Min. insättning 100 kr. Gratisspelet är giltig i 60 dagar. Minimum odds 1.8 ",
+      "sportsTerms": "Erbjudandet gäller nya spelare från 1 juli 2020 och framåt. Min. insättning 100 kr. Gratisspelet är giltig i 60 dagar. Minimum odds 1.8 ",
       "bankid": true,
       "sports": true,
       "minodds": 1.8,
@@ -348,10 +344,12 @@
             "Casinobonusen för nya spelare är endast tillgänglig för spelare bosatta i Sverige som inte tidigare spelat hos LeoVegas och som registrerar sig från den 1 juli 2020 och framåt och som valt välkomsterbjudandet för casino."
           ],
           "casinoterms": [
-            "För att ta del av insättningsbonusen behöver spelaren göra en första insättning på minst 100 kr.","Spelaren måste omsätta summan av Casinobonusen för nya spelare 10 gånger med riktiga pengar innan de kan hämta och ta ut erbjudandesumman."
+            "För att ta del av insättningsbonusen behöver spelaren göra en första insättning på minst 100 kr.",
+            "Spelaren måste omsätta summan av Casinobonusen för nya spelare 10 gånger med riktiga pengar innan de kan hämta och ta ut erbjudandesumman."
           ],
           "sportsterms": [
-            "Det kvalificerande spelet matchas med ett gratisspel till ett värde av 50%.","Utan omsättningskrav"
+            "Det kvalificerande spelet matchas med ett gratisspel till ett värde av 50%.",
+            "Utan omsättningskrav"
           ],
           "topslotgames": "Över 1050 slotar. Med leverantörer som NetEnt, Evolution Gaming, Quickfire, Play’n GO,SG Interactive (WMS, Bally, SM & Barcrest),Skillzgaming, Yggdrasil och massa andra!.",
           "deposittypes": "Visa, MasterCard,  Banköverföring, Trustly, Swish",
@@ -431,10 +429,12 @@
             "Endast den första insättningen som görs på fullt verifierade konton, ska vara kvalificerade att motta insättningsbonusen"
           ],
           "casinoterms": [
-            "Minsta insättnings är 100kr","Vinster utan omsättningskrav"
+            "Minsta insättnings är 100kr",
+            "Vinster utan omsättningskrav"
           ],
           "sportsterms": [
-            "Vinster betalas ut minus insatssumman, utan omsättningkrav","Insättning och spel på 100 kr. (min. odds 1.6) eller mer inom 60 dagar krävs"
+            "Vinster betalas ut minus insatssumman, utan omsättningkrav",
+            "Insättning och spel på 100 kr. (min. odds 1.6) eller mer inom 60 dagar krävs"
           ],
           "topslotgames": "Videoslots från Net Entertainment, Thunderkick, Greentube, IGT, Play ‘n Go, Quickspin, Williams Interactive, Bally, Barcrest , Shuffle Master och många fler!.",
           "deposittypes": "Swish, VISA, Mastercard, Skrill, Neteller, Zimpler, Apple Pay och Banköverföring",
@@ -520,12 +520,8 @@
           "secondrec": "Sidan ser bra ut och är enkel att navigera sig runt i. Kollar man på casinosidan så listar de alla videoslots. Casinoniz hade velat se en filter funktion för varje leverantör. Med favoritspel som Bonanza, Book of Dead, Dead or Alive och många fler så vet vi att man kan ha kul där. Enkelt och snabbt utan krångel. Supporten är öppen 24/7, svensktalande på dagtid och engelsktalande på kvällstid. ",
           "sportsrec": "SpeedyBet är deras sportsektion, vilket är en annan sida.",
           "welcomeoffer": "Insättningsbonus på 100% upp till 5 000 kr",
-          "bonusterms": [
-            "Ingen bonus"
-          ],
-          "casinoterms": [
-            "Ingen bonus"
-          ],
+          "bonusterms": ["Ingen bonus"],
+          "casinoterms": ["Ingen bonus"],
           "sportsterms": [""],
           "topslotgames": "Ca 500+ slots från leverantörer som NetEnt,Big Time Gaming, Pushgaming,Play’n GO, RedTider och fler.",
           "deposittypes": "Trustly",
@@ -605,7 +601,8 @@
             "Omsättningskravet måste uppfyllas inom 60 dagar, annars kommer bonuspengar och vinster i samband med bonusen att konfiskeras"
           ],
           "casinoterms": [
-            " Din bonus betalas ut automatiskt omedelbart efter en insättning på 100 kr eller mer","Vinster från bonusspinn har ett omsättningskrav på 40x och kan användas på alla spel."
+            " Din bonus betalas ut automatiskt omedelbart efter en insättning på 100 kr eller mer",
+            "Vinster från bonusspinn har ett omsättningskrav på 40x och kan användas på alla spel."
           ],
           "sportsterms": ["Ingen sport sektion"],
           "topslotgames": "Över 1200+ spel. Hög kvalitet på videoslots från leverantörer som NetEnt,Microgaming,PlayNGo,Yggdrasil,Quickspin,Scientific Games och många fler!",
@@ -687,9 +684,7 @@
             "Bonusen måste hämtas inom 60 dagar efter insättning",
             "Freespins är giltiga på utvalda spel och löper ut efter 14 dagar"
           ],
-          "casinoterms": [
-            "Bonusvinster har ett maxtak på 2500 kr •"
-          ],
+          "casinoterms": ["Bonusvinster har ett maxtak på 2500 kr •"],
           "sportsterms": [
             "Insättningar med Neteller eller Skrill kommer inte att vara berättigade till bonusen.",
             "Omsättningskravet på sports är 8x och man måste satsa med ett total odds på 1,8 eller högre."
@@ -1058,11 +1053,10 @@
             "Om du ej uppnår omsättningskraven inom 60 dagar kommer bonusen och eventuella bonuspengar att tas bort från ditt konto"
           ],
           "casinoterms": [
-            "I samband med insättning aktiveras 100 omsättningsfria rundor. 10 rundor på 10 olika spel.","Vinster från rundor är fria från omsättningskrav."
+            "I samband med insättning aktiveras 100 omsättningsfria rundor. 10 rundor på 10 olika spel.",
+            "Vinster från rundor är fria från omsättningskrav."
           ],
-          "sportsterms": [
-            "Ingen bonus just nu"
-          ],
+          "sportsterms": ["Ingen bonus just nu"],
           "topslotgames": "Över 600+ slots av hög kvalitet.Leverantörer som Netent, Microgaming, Play N Go Nolimitcity, Yggdrasil, Betsoft, Quickspin, WMS, NYX, Thunderkick, Evolution och fler!",
           "deposittypes": "Trustly, Visa, Mastercard, Skrill, Paysafecard,Zimpler, Swish, Neteller, Banköverföring",
           "mindeposit": 100,
@@ -1272,9 +1266,7 @@
           "sportsrec": "Ingen sportsektion",
           "welcomeoffer": "Insättningsbonus på 200 % upp till 1000 kr i bonus + 50 omsättningsfria Free Spins",
           "bonusterms": ["Gäller endast nya kunder"],
-          "casinoterms": [
-            "Minsta insättnings 100kr","Max insats 50kr"
-          ],
+          "casinoterms": ["Minsta insättnings 100kr", "Max insats 50kr"],
           "sportsterms": ["Ingen välkomstbonus just nu"],
           "topslotgames": "Över 800+ slots av hög kvalitet. Leverantörer som NetEnt, NYX Gaming, Play `n GO, Quickspin, Rabcat, Thunderkick, Scientific Games, Yggdrasil, Red Tiger Gaming, NoLimit City, Pragmatic Play, NextGen och många fler!",
           "deposittypes": "Visa,Mastercard,Zimpler,Skrill,Paysafecard,Neteller,Trustly, Banköverföring",
@@ -1613,7 +1605,7 @@
             "30x omsättningskrav gäller",
             " Minsta insättning 100 kr. Giltiga insättningsmetoder: kredit-/betalkort, Zimpler, Paysafe, Instant Banking eller Entropay"
           ],
-          "sportsterms": [    
+          "sportsterms": [
             " Gilitig insättningsmetod med bank- och kredikort endast",
             "6x omsättningskrav på sport endast"
           ],
@@ -1810,7 +1802,7 @@
       "wager": 0,
       "maxbonus": 0,
       "maxbonussports": 100,
-      "sportswager":1,
+      "sportswager": 1,
       "freespins": 40,
       "activebonus": true,
       "extratext": "Bonuserbjudandet gäller endast nya kunder vid första speltillfälle 2020 och kan endast omsättas på Casino",
@@ -1838,9 +1830,7 @@
             "Maximalt bonusbelopp per kund är 2 500 kr",
             "Erbjudandet gäller fram till den 31 januari 2020"
           ],
-          "casinoterms": [
-            "Varje jackpott spin är värd 2.50kr/spin"
-          ],
+          "casinoterms": ["Varje jackpott spin är värd 2.50kr/spin"],
           "sportsterms": ["Omsättningskrav på 1x"],
           "topslotgames": "Över 500+ slots av hög kvalitet. Med flera välkända leverantörer som NetEnt, Microgaming, Play'N Go, Yggdrasil, Thunderkick, NolimitCity Casino, Evolution gaming och många fler!!",
           "deposittypes": "Trustly, Swish",
@@ -1933,7 +1923,9 @@
           "casinoterms": [
             "Bonus utan insättning (100 kr) måste omsättas 50 gånger på casinospel eller 20 gånger på betting med ett minimum oddskrav på 1.40 för att ett spel skall räknas mot omsättningskravet."
           ],
-          "sportsterms": ["10x på betting med ett minimum oddskrav på 1.40 för att ett spel skall räknas mot omsättningskrave"],
+          "sportsterms": [
+            "10x på betting med ett minimum oddskrav på 1.40 för att ett spel skall räknas mot omsättningskrave"
+          ],
           "topslotgames": "Över 650+ slots av hög kvalitet. Med flera välkända leverantörer som NetEnt, Microgaming, Play'N Go, Yggdrasil, Thunderkick, NolimitCity Casino, Evolution gaming och många fler!!",
           "deposittypes": "Trustly, Swish",
           "mindeposit": 50,
@@ -2148,7 +2140,7 @@
       "setTop": false,
       "slogan": "Esport betting & Esport casino",
       "depositbonus": "Ingen bonus just nu",
-      "mylink": "https://ads.pixel.bet/redirect.aspx?pid=3216&bid=1639",
+      "mylink": "https://ntrfr.pixel.bet/redirect.aspx?pid=3665461&bid=16706",
       "rules": "https://www.pixel.bet/sv/info/tac",
       "caslogo": "/images/pixelbet.svg",
       "wager": "x",
@@ -2330,7 +2322,7 @@
       "sports": true,
       "minodds": 0,
       "maxbonus": 0,
-      "maxbonussports":0,
+      "maxbonussports": 0,
       "freefromwager": true,
       "depositpercent": 0,
       "depositpercentsports": 0,
@@ -2349,9 +2341,7 @@
           "secondrec": "Casinosektionen hos Paf är väldigt snygg och enkel. Har en bra filteringsfunktion. Casinot har spel som Cash&Carry som har en hög jackpot. Cash&Carry är ett av många spel som Paf skapat själva. Paf erbjuder Novomatic slots och Novomatic tycker vi på Casinoniz om.  Väldigt stort utbud av spel som håller hög kvalitet. Vill man spela på något annat än slots så erbjuder paf spel i livecasino,poker,betting och bingo. ",
           "sportsrec": "Väldigt bra sportsutbud med flera sporter. Nu när esporten växer så väljer många casinon att lägga till esport som en kategori. Paf är ett av casinon som har esportsbetting och det är riktigt bra. Där kan man betta på esports spel som overwatch,csgo,dota2,starcraft2 och många mer.",
           "welcomeoffer": "Vinn upp till 25 freespins UTAN insättning & omsättningskrav! Få även 100KR EXTRA på din första insättning.",
-          "bonusterms": [
-            "Freespins i Night Sky, direkt vid insättning."
-          ],
+          "bonusterms": ["Freespins i Night Sky, direkt vid insättning."],
           "casinoterms": [
             "Freespinsen är värda 1 kr styck, har inga omsättningskrav och är giltiga i 60 dagar."
           ],
@@ -3358,7 +3348,7 @@
       "slogan": "Svenskt Casino",
       "depositbonus": "Insättning på minst 100 kr och få 100 freespins utan omsättningskrav!",
       "sportsbonus": "Insättning på minst 100 kronor få ett gratisspel värt 100 kronor",
-      "mylink": "http://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=35742",
+      "mylink": "https://b1.trickyrock.com/redirect.aspx?pid=3096473&bid=35742",
       "rules": "https://www.unibet.se/general-info/terms",
       "caslogo": "/images/unibetlogo.svg",
       "casinobonuswager": false,
@@ -3394,7 +3384,8 @@
             "Bonusen är endast giltig i 60 dagar efter bonusen mottagits"
           ],
           "casinoterms": [
-            "Du kommer inte att kunna få bonuserbjudandet om du gör en insättning med någon av följande insättningsmetoder: Entercash, Hipaymistercash, Paysafecard, Neteller, Skrill","Free Spins är omsättningsfria och betalas ut som riktiga pengar."
+            "Du kommer inte att kunna få bonuserbjudandet om du gör en insättning med någon av följande insättningsmetoder: Entercash, Hipaymistercash, Paysafecard, Neteller, Skrill",
+            "Free Spins är omsättningsfria och betalas ut som riktiga pengar."
           ],
           "sportsterms": [
             "Det finns inget omsättningskrav på den eventuella vinsten utan uttag kan göras direkt"
@@ -3463,7 +3454,7 @@
       "extratext": "Erbjudandet gäller endast nya kunder",
       "bankid": true,
       "sports": true,
-      "minodds": 1.80,
+      "minodds": 1.8,
       "freespins": 0,
       "maxbonus": 100,
       "maxbonussports": 100,
@@ -3619,7 +3610,7 @@
       "slogan": "Svenskt casino med generösa välkomstbonusar",
       "depositbonus": "Insättningsbonus på 50%! Välj mellan upp till 50 kr (utan omsättningskrav) eller 50 freespins. ",
       "sportsbonus": "Erbjuder ingen välkomstbonus just nu",
-      "mylink": "http://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=35764",
+      "mylink": "https://b1.trickyrock.com/redirect.aspx?pid=3096473&bid=35764",
       "rules": "https://www.mariacasino.se/general/terms-and-conditions",
       "caslogo": "/images/marialogo.svg",
       "wager": 0,
@@ -3699,10 +3690,10 @@
       "slogan": "Svenskt casino med bra casinobonus",
       "depositbonus": "Insättningsbonus på 50%! Välj mellan upp till 50 kr (utan omsättningskrav) eller 50 freespins.",
       "sportsbonus": "Erbjuder ingen välkomstbonus just nu",
-      "mylink": "http://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=35803",
+      "mylink": "https://b1.trickyrock.com/redirect.aspx?pid=3096473&bid=35803",
       "rules": "https://se.bingo.com/general-info/terms",
       "caslogo": "/images/bingologo.svg",
-      "casinobonuswager":false,
+      "casinobonuswager": false,
       "wager": 0,
       "maxbonus": 100,
       "maxbonussports": 0,
@@ -3779,7 +3770,7 @@
       "setTop": false,
       "depositbonus": "Insättning på minst 100kr och få 100 freespins på Book of Dead (utan omsättningskrav)",
       "sportsbonus": "ingen bonus",
-      "mylink": "http://dspk.kindredplc.com/redirect.aspx?pid=30964730&bid=35762",
+      "mylink": "https://b1.trickyrock.com/redirect.aspx?pid=3096473&bid=35762",
       "rules": "https://www.storspelare.se/general-info/terms",
       "caslogo": "/images/storspelare.svg",
       "wager": 0,
@@ -4319,7 +4310,7 @@
       "casinobonuswager": true,
       "wager": "x",
       "sportswager": 0,
-      "minodds":1.5,
+      "minodds": 1.5,
       "extratext": "",
       "sports": true,
       "freespins": 0,
@@ -4347,9 +4338,7 @@
           "bonusterms": [
             "Extra vinst” krediteras ditt sportspelkonto vid betting där insatsen görs med verkliga pengar."
           ],
-          "casinoterms": [
-            "Ingen bonus just nu"
-          ],
+          "casinoterms": ["Ingen bonus just nu"],
           "sportsterms": [
             "Minsta kvalificerade insättning för denna kampanj är 100 kr",
             "Insättning med Skrill eller Neteller är inte en kvalificerad insättning."
@@ -4438,9 +4427,7 @@
           "sportsrec": "Ingen sport sektion.",
           "welcomeoffer": "Ingen bonus",
           "bonusterms": ["Ingen aktiv bonus just nu"],
-          "casinoterms": [
-            "Ingen bonus just nu"
-          ],
+          "casinoterms": ["Ingen bonus just nu"],
           "sportsterms": ["Ingen sports sektion"],
           "topslotgames": "Över 650+ slots från kända leverantörer som  Netent, Evolution, Microgaming, Blueprint, Nyx, Play n Go och många fler !",
           "deposittypes": "Trustly, Visa, Mastercard, Paysafecard,Skrill, Neteller, Banköverföring",
