@@ -426,3 +426,13 @@ baseURL = "/"
   query = {path = "/Go/jallacasino"}
  
 
+
+[[redirects]]
+ from = "/Go/klirr"
+  to = "https://record.epic.partners/_uUCqChjU8D4r8Syj4RJS-mNd7ZgqdRLk/1/"
+  status = 301
+  query = {path = "/Go/klirr"}
+
+
+
+
