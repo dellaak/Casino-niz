@@ -5089,6 +5089,85 @@
           "summering": "JallaCasino är ett av de senaste tillskotten på den svenska marknaden. Casinot har en extremt snygg design och är väldigt användarvänligt. Minsta insättningen ligger på 150 kr och minsta uttaget ligger på 100 kr. Insättningarna och uttagen går väldigt snabbt. Erbjuder support via livechatt dygnet runt. Har en extremt snygg casinosektion med ett enormt utbud av slots. JallaCasino erbjuder spel på Slots, Live Casino, Bordsspel och kortspel. Insättningsmetoderna som erbjuds är Swish och Trustly. Ett grymt casino som vi ger full pott!."
         }
       ]
+    },
+    {
+      "id": 74,
+      "faq": true,
+      "q1": {
+        "@type": "Question",
+        "name": "💰Vad är minsta insättningen samt uttag hos Klirr?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minsta insättningen hos Klirr är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+        }
+      },
+      "q2": {
+        "@type": "Question",
+        "name": "✨Erbjuder JallaCasino insättningar med faktura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, det gör dem tyvärr inte. Jallacasino erbjuder insättningar samt uttag via den populära betalningsmetoden Trustly samt insättning via Swish."
+        }
+      },
+      "q3": {
+        "@type": "Question",
+        "name": "❓Har Klirr svensk spellicense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Klirr har svensk spellicens ."
+        }
+      },
+      "title": "Klirr",
+      "slogan": "Pay N Play Casino",
+      "color": "#181818",
+      "textcolor": "#f23007",
+      "setTop": false,
+      "depositbonus": "Nya spelare får 100 kr omsättningsfritt när de sätter in minst 200kr",
+      "sportsbonus": "Ingen sport bonus",
+      "mylink": "https://record.epic.partners/_uUCqChjU8D4r8Syj4RJS-mNd7ZgqdRLk/1/",
+      "rules": "https://record.epic.partners/_uUCqChjU8D5oofBpZ-qTpmNd7ZgqdRLk/1/",
+      "caslogo": "/images/klirr.svg",
+      "wager": 0,
+      "sportswager": "x",
+      "extratext": "",
+      "sports": false,
+      "freespins": 0,
+      "maxbonus": 0,
+      "maxbonussports": 0,
+      "activebonus": true,
+      "bankid": true,
+      "publishdate": "23 Oktober 2020",
+      "freefromwager": true,
+      "depositpercent": 0,
+      "faktura": false,
+      "fakturatype": [],
+      "recension": [
+        {
+          "gamebar": 100,
+          "experience": 100,
+          "support": 90,
+          "egentitel": "Nytt Casino 2020 med Trustly ",
+          "egentitel2": false,
+          "toprecension": "Ett nytt svensk casino är ute. Bolaget XC Gaming Sweden driver casinot Klirr. De står även bakom succen Frank&Fred Casinot. Klirr casinot är en väldigt modern sida som står ut från dem andra casino sidorna. Det är väldigt enkelt att navigera runt på sidan och har grym layout. Det är väldigt simpelt att börja spela hos Klirr. Du kan endast göra insättningar samt uttag via Trustly. Insättningar och uttag går väldigt snabbt. Erbjuder även en livechat som svarar snabbt. Förutom slots so erbjuder Klirr även Live Casino.",
+          "secondrec": "Casinosektionen hos Klirr är väldigt bra. Erbjuder ett enormt stort utbud av slots och andra spel. Du kan filtrera spel via namn och senast tillagda slots. Du kan även söka efter din favoritslot. Alla slots kommer från välkända leverantörer och håller högsta kvaliten. Här finns favoriter som Gonzo's Quest, Bonanza, Piggy Riches Megaways, Dead or Alive och många fler. Registreringen samt inloggningen är väldigt simpel tack vare bankd identifiering. ",
+          "sportsrec": "Klirr erbjuder tyvärr ingen sportsbetting.",
+          "welcomeoffer": "Ingen bonus just nu",
+          "bonusterms": [
+            "För att ta del av välkomstbonusen behöver kunden göra en första insättning på minst 200 kr via betaltjänsten Trustly."
+          ],
+          "casinoterms": [
+            "Välkomstbonusen på 100kr kommer utan omsättningskrav"
+          ],
+          "sportsterms": [""],
+          "topslotgames": "Över 600 spel från välkända leverantörer som Quickspin,Push Gaming, Net Ent, Big Time Gaming, Microgaming och många fler!",
+          "deposittypes": "Trustly",
+          "mindeposit": 200,
+          "minout": 200,
+          "swish": false,
+          "livechat": true,
+          "summering": "Klirr är ett nytt casino 2020 som har stor potential. Casinot har en snygg och lyxig design. Navigering på sidan är väldigt simpel. Du kan börja spela simpelt med hjälp av bankidentifiering. Minsta uttag och insättning är 200kr. Har ett stort uttbud av slots. Erbjuder även Live Casino. Vi tyckte om casinot."
+        }
+      ]
     }
   ]
 }
