@@ -1885,19 +1885,19 @@
       "textcolor": "#6bcb88",
       "setTop": true,
       "slogan": "Svenskt casino med snabba uttag",
-      "depositbonus": "100KR I  BONUS - INGEN INSÄTTNING KRÄVS",
-      "sportsbonus": "100kr bonus - Ingen insättning krävs",
+      "depositbonus": "Sätt in 100kr - Spela för 200kr!",
+      "sportsbonus": "Sätt in 100kr  - Spela för 200kr!",
       "mylink": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=1968&sid=354226&pid=640",
       "rules": "https://media.hajper.com/tracking.php?tracking_code&aid=107839&mid=2758&sid=354226&pid=841",
       "caslogo": "/images/hajperlogo.svg",
-      "wager": 50,
+      "wager": 1,
       "sportswager": 20,
       "freespins": 0,
       "maxbonus": 0,
       "maxbonussports": 0,
       "publishdate": "7 Januari 2020",
       "activebonus": true,
-      "extratext": "Endast nya spelare. Du kan välja att hämta din bonus UTAN insättning genom Hämta saldo och verifiera med BankID.",
+      "extratext": "Omsättningskravet är 1x på både casino och sports!",
       "bankid": true,
       "sports": true,
       "minodds": 0,
@@ -1917,15 +1917,9 @@
           "secondrec": "Casinosektion har ett stort utbud med slots. Erbjuder flera favoriter som Reel Rush, Hall of Gods, Mega Fortune Dreams, Immortal Romance, Book of Dead, Bonanza och många fler! Du kan inte filtrera slots men du kan söka efter ditt favoritspel. Hajper har tre slots med väldigt höga jackpots just nu där högsta jackpotten ligger på över 21 MILJONER kronor. Spelet heter Mega Fortune och är en klassiker på marknaden. Utöver filterfunktionen som vi på Casinoniz saknar så är casinosektionen väldigt stilren och bra. Det som vi tycker är riktigt bra hos Hajper är någon som de kallar för Hajpermiljonen. Vad är Hajpermiljonen ? Jo, det är jackpots som Hajper erbjuder på utvalda slots. Så om du klickar in dig på fliken Hajpermiljonen så hittar du alla slots som Hajper erbjuder jackpots på!",
           "sportsrec": "Hajper har en väldigt bra sportsektion. Med höga odds och ett väldigt stort utbud av sporter. Oavsett om det är fotboll,tennis, hockey eller någon annan sport så har dom det. Hajper erbjuder även esport betting vilket vi på Casinoniz tycker är RIKTIGT grymt!. De erbjuder esport betting på spel som CSGO, Dota2, Warcraft 3, Starcraft och fler spel. Det som Hajper är bra på är spelupplevelsen på spelsektionen. Du kan enkelt lägga ett spel, starta en livestream och njuta av matchen. Med flera tusen direktsända sporter. Detta tycker vi är najs! ",
           "welcomeoffer": "Insättningsbonus på 200% upp till 2000 kr!",
-          "bonusterms": [
-            "Aktivera 100 kr bonusen utan att göra en insättning genom 'Hämta saldo' i höger topp."
-          ],
-          "casinoterms": [
-            "Bonus utan insättning (100 kr) måste omsättas 50 gånger på casinospel eller 20 gånger på betting med ett minimum oddskrav på 1.40 för att ett spel skall räknas mot omsättningskravet."
-          ],
-          "sportsterms": [
-            "10x på betting med ett minimum oddskrav på 1.40 för att ett spel skall räknas mot omsättningskrave"
-          ],
+          "bonusterms": ["Sätt in 100 kr och få 100kr extra att spela för!"],
+          "casinoterms": ["Omsättningskrav på 1x."],
+          "sportsterms": ["Omsättningskrav på 1x"],
           "topslotgames": "Över 650+ slots av hög kvalitet. Med flera välkända leverantörer som NetEnt, Microgaming, Play'N Go, Yggdrasil, Thunderkick, NolimitCity Casino, Evolution gaming och många fler!!",
           "deposittypes": "Trustly, Swish",
           "mindeposit": 50,
