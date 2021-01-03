@@ -1,241 +1,215 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
 import EsportFilter from "../EsportFilter/index";
-import BottomInfoEsport from "../AllBottomInfo/BottomInfoEsport/index"
+import BottomInfoEsport from "../AllBottomInfo/BottomInfoEsport/index";
 import { Container, Button } from "reactstrap";
 import EsportCasinoComp from "../EsportCasinoComp/index";
 import { Helmet } from "react-helmet";
-import LatestUpdate from "../LastUpdated"
+import LatestUpdate from "../LastUpdated";
 
 const Esport = (props) => {
+  const [casinon, setCasinon] = useState([]);
+  const [selectedGame, setSelectedGame] = useState(false);
 
-    const [casinon, setCasinon] = useState([])
-    const [selectedGame, setSelectedGame] = useState(false)
+  const [readmore, setReadMore] = useState(false);
+  const [fade, setFade] = useState(false);
+  const [size, setSize] = useState(9);
 
-    const [readmore, setReadMore] = useState(false);
-    const [fade, setFade] = useState(false)
-    const [size, setSize] = useState(9)
+  useEffect(() => {
+    let list = [...props.list.Casinon];
+    let esportCasinos = [];
+    let top;
+    list.forEach((cas) => {
+      if (cas.esportinfo) {
+        esportCasinos.push(cas);
+      }
+    });
 
+    top = esportCasinos.filter(function (i) {
+      if (i.recension && i.esportinfo) {
+        return (
+          i.recension[0].gamebar === 100 &&
+          i.recension[0].experience === 100 &&
+          i.recension[0].support === 100
+        );
+      }
+      return top;
+    });
 
+    esportCasinos = esportCasinos.filter((item) => !top.includes(item));
+    esportCasinos = top.concat(esportCasinos);
 
+    return setCasinon(esportCasinos);
+  }, [props.list.Casinon]);
 
+  const depositbutton = () => {
+    let list = [...casinon];
 
-    useEffect(() => {
-        let list = [...props.list.Casinon]
-        let esportCasinos = []
-        let top;
-        list.forEach((cas) => {
-            if (cas.esportinfo) {
-                esportCasinos.push(cas)
+    let wagerarr = [];
+    let delItems = [];
+    if (selectedGame) {
+      for (let i of list) {
+        for (let [key, value] of Object.entries(i.esportinfo[0])) {
+          if (selectedGame === key && value === true) {
+            if (i.depositpercent > 0) {
+              wagerarr.push(i);
+            } else {
+              delItems.push(i);
             }
-        });
-
-        top = esportCasinos.filter(function (i) {
-            if (i.recension && i.esportinfo) {
-                return (
-                    i.recension[0].gamebar === 100 &&
-                    i.recension[0].experience === 100 &&
-                    i.recension[0].support === 100
-                );
-            }
-            return top;
-        });
-
-        esportCasinos = esportCasinos.filter(item => !top.includes(item));
-        esportCasinos = top.concat(esportCasinos);
-
-        return setCasinon(esportCasinos)
-    }, [props.list.Casinon])
-
-    const depositbutton = () => {
-        let list = [...casinon]
-
-        let wagerarr = [];
-        let delItems = []
-        if (selectedGame) {
-            for (let i of list) {
-                for (let [key, value] of Object.entries(i.esportinfo[0])) {
-                    if (selectedGame === key && value === true) {
-                        if (i.depositpercent > 0) {
-                            wagerarr.push(i);
-                        } else {
-
-                            delItems.push(i)
-                        }
-                    }
-                }
-            }
+          }
+        }
+      }
+    } else {
+      for (let i of list) {
+        if (i.depositpercent > 0) {
+          wagerarr.push(i);
         } else {
-            for (let i of list) {
-                if (i.depositpercent > 0) {
-                    wagerarr.push(i);
-                } else {
-
-                    delItems.push(i)
-                }
-            }
+          delItems.push(i);
         }
-
-        wagerarr.sort((a, b) => {
-            return b.depositpercent - a.depositpercent;
-        });
-
-        if (delItems.length > 1) {
-            wagerarr.concat(delItems)
-        }
-        setCasinon(wagerarr)
-        setSize(9)
-        setFade(true)
-        setTimeout(() => {
-            setFade(false);
-        }, 1000);
+      }
     }
 
-    const wagerbutton = () => {
-        let list = [...casinon]
-        let wagerarr = [];
-        let delItems = []
+    wagerarr.sort((a, b) => {
+      return b.depositpercent - a.depositpercent;
+    });
 
-        if (selectedGame) {
-            for (let i of list) {
-                for (let [key, value] of Object.entries(i.esportinfo[0])) {
-                    if (selectedGame === key && value === true) {
-                        if (i.sportswager === "x") {
-                            delItems.push(i);
-                        } else {
-                            wagerarr.push(i);
-                        }
-                    }
-                }
+    if (delItems.length > 1) {
+      wagerarr.concat(delItems);
+    }
+    setCasinon(wagerarr);
+    setSize(9);
+    setFade(true);
+    setTimeout(() => {
+      setFade(false);
+    }, 1000);
+  };
+
+  const wagerbutton = () => {
+    let list = [...casinon];
+    let wagerarr = [];
+    let delItems = [];
+
+    if (selectedGame) {
+      for (let i of list) {
+        for (let [key, value] of Object.entries(i.esportinfo[0])) {
+          if (selectedGame === key && value === true) {
+            if (i.sportswager === "x") {
+              delItems.push(i);
+            } else {
+              wagerarr.push(i);
             }
+          }
+        }
+      }
+    } else {
+      for (let i of list) {
+        if (i.sportswager === "x") {
+          delItems.push(i);
         } else {
-            for (let i of list) {
-                if (i.sportswager === "x") {
-                    delItems.push(i);
-                } else {
-                    wagerarr.push(i);
-                }
-            }
+          wagerarr.push(i);
         }
-
-        wagerarr.sort(function (a, b) {
-            return a.sportswager - b.sportswager;
-        });
-
-
-
-        setCasinon(wagerarr.concat(delItems))
-        setSize(9)
-        setFade(true)
-        setTimeout(() => {
-            setFade(false);
-        }, 1000);
+      }
     }
 
+    wagerarr.sort(function (a, b) {
+      return a.sportswager - b.sportswager;
+    });
 
+    setCasinon(wagerarr.concat(delItems));
+    setSize(9);
+    setFade(true);
+    setTimeout(() => {
+      setFade(false);
+    }, 1000);
+  };
 
+  const hardReset = () => {
+    let list = [...props.list.Casinon];
+    let esportCasinos = [];
+    let top;
+    list.forEach((cas) => {
+      if (cas.esportinfo) {
+        esportCasinos.push(cas);
+      }
+    });
 
+    top = esportCasinos.filter(function (i) {
+      if (i.recension && i.esportinfo) {
+        return (
+          i.recension[0].gamebar === 100 &&
+          i.recension[0].experience === 100 &&
+          i.recension[0].support === 100
+        );
+      }
+      return top;
+    });
 
-    const hardReset = () => {
+    esportCasinos = esportCasinos.filter((item) => !top.includes(item));
+    esportCasinos = top.concat(esportCasinos);
 
-        let list = [...props.list.Casinon]
-        let esportCasinos = []
-        let top;
-        list.forEach((cas) => {
-            if (cas.esportinfo) {
-                esportCasinos.push(cas)
-            }
-        });
+    setCasinon(esportCasinos);
+    setSize(9);
+    setFade(true);
+    setTimeout(() => {
+      setFade(false);
+    }, 1000);
+  };
 
-        top = esportCasinos.filter(function (i) {
-            if (i.recension && i.esportinfo) {
-                return (
-                    i.recension[0].gamebar === 100 &&
-                    i.recension[0].experience === 100 &&
-                    i.recension[0].support === 100
-                );
-            }
-            return top;
-        });
+  const sortFunc = async (val) => {
+    let list = [...props.list.Casinon];
+    let esportCasinos = [];
+    let casinoarr = [];
+    list.forEach((cas) => {
+      if (cas.esportinfo) {
+        esportCasinos.push(cas);
+      }
+    });
 
-        esportCasinos = esportCasinos.filter(item => !top.includes(item));
-        esportCasinos = top.concat(esportCasinos);
-
-        setCasinon(esportCasinos)
-        setSize(9)
-        setFade(true)
-        setTimeout(() => {
-            setFade(false)
-        }, 1000);
-    }
-
-
-
-    const sortFunc = async (val) => {
-        let list = [...props.list.Casinon]
-        let esportCasinos = []
-        let casinoarr = []
-        list.forEach((cas) => {
-            if (cas.esportinfo) {
-                esportCasinos.push(cas)
-            }
-
-        });
-
-
-        for (let i of esportCasinos) {
-
-            for (let [key, value] of Object.entries(i.esportinfo[0])) {
-
-                if (val === key && value === true) {
-                    casinoarr.push(i);
-                }
-            }
+    for (let i of esportCasinos) {
+      for (let [key, value] of Object.entries(i.esportinfo[0])) {
+        if (val === key && value === true) {
+          casinoarr.push(i);
         }
-
-        setCasinon(casinoarr)
-        setSize(9)
-        setFade(true)
-        setSelectedGame(val)
-        setTimeout(() => {
-            setFade(false)
-        }, 1000);
+      }
     }
 
+    setCasinon(casinoarr);
+    setSize(9);
+    setFade(true);
+    setSelectedGame(val);
+    setTimeout(() => {
+      setFade(false);
+    }, 1000);
+  };
 
+  const readMore = () => {
+    setReadMore(!readmore);
+  };
 
-    const readMore = () => {
-        setReadMore(!readmore);
-    };
+  const loadMore = () => {
+    return setSize((prevState) => prevState + 8);
+  };
 
+  const loadLess = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    return setSize(9);
+  };
 
-
-    const loadMore = () => {
-        return setSize(prevState => prevState + 8)
-
-    }
-
-    const loadLess = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        return setSize(9)
-
-    }
-
-    return (
-        <Container className="wrapit">
-            <Helmet>
-                <title>CSGO Betting & Esport betting 🎮 | Casinoniz</title>
-                <link rel="canonical" href="https://www.casinoniz.se/esportbetting" />
-                <meta
-                    name="description"
-                    content="[Uppdaterad 2020✅] CSGO Betting och Esportbetting med flera spel ➼ Vi listar casinon som har esport betting. Självklart med välkomstbonus vid registrering"
-                />
-                <meta
-                    name="keywords"
-                    content="Casino, Casinobonusar, bettingsidor csgo, välkomstbonus esport, välkomnstbonus, 2019,2020, bonus,bettingsidor esport, spela, esportbetting, esport betting,fornite betting, fortnite,  insättningsbonus, free spins, esports,betting, csgo betting, starcraft2, lol, leauge of legends, overwatch, dota2, the international betting"
-                />
-                <script type="application/ld+json">{`
+  return (
+    <Container className="wrapit">
+      <Helmet>
+        <title>CSGO Betting & Esport betting 🎮 | Casinoniz</title>
+        <link rel="canonical" href="https://www.casinoniz.se/esportbetting" />
+        <meta
+          name="description"
+          content="[Uppdaterad 2021✅] CSGO Betting och Esportbetting med flera spel ➼ Vi listar casinon som har esport betting. Självklart med välkomstbonus vid registrering"
+        />
+        <meta
+          name="keywords"
+          content="Casino, Casinobonusar, bettingsidor csgo, välkomstbonus esport, välkomnstbonus, 2019,2020, bonus,bettingsidor esport, spela, esportbetting, esport betting,fornite betting, fortnite,  insättningsbonus, free spins, esports,betting, csgo betting, starcraft2, lol, leauge of legends, overwatch, dota2, the international betting"
+        />
+        <script type="application/ld+json">{`
       {
         "@context": "https://schema.org",
          "@type": "FAQPage",
@@ -299,109 +273,105 @@ const Esport = (props) => {
         }]
       }
       `}</script>
-            </Helmet>
+      </Helmet>
 
-            <h1 className="banners">
-                Csgo Betting och Esport betting
-            </h1>
+      <h1 className="banners">Csgo Betting och Esport betting</h1>
 
-            <div className="welcome-box-esport">
-                <h3 className="second-welcome-title"> Esport Betting - Här listar vi endast casinon som har esport betting t.ex. CSGO Betting</h3>
-                <div className="welcome-text-esport">
-                    <p>
-                        Senaste inom esport betting. CSGO, Dota2, League of Legends(LoL) och fler esport spel. Vi listar de bästa betting sidorna för esport betting. Vi på Casinoniz älskar E-sport.
-                        Därför har vi valt att endast
-                         lista licensierade esport bettingsidor som erbjuder esport betting. För
-                         att göra det så enkelt som möjligt för dig att hitta ditt
-                         casino, så har vi lagt till en filterfunktion som kan hjälpa dig
-                         att hitta din sida som du vill spela på.
+      <div className="welcome-box-esport">
+        <h3 className="second-welcome-title">
+          {" "}
+          Esport Betting - Här listar vi endast casinon som har esport betting
+          t.ex. CSGO Betting
+        </h3>
+        <div className="welcome-text-esport">
+          <p>
+            Senaste inom esport betting. CSGO, Dota2, League of Legends(LoL) och
+            fler esport spel. Vi listar de bästa betting sidorna för esport
+            betting. Vi på Casinoniz älskar E-sport. Därför har vi valt att
+            endast lista licensierade esport bettingsidor som erbjuder esport
+            betting. För att göra det så enkelt som möjligt för dig att hitta
+            ditt casino, så har vi lagt till en filterfunktion som kan hjälpa
+            dig att hitta din sida som du vill spela på.
+          </p>
+          <p>
+            Casinoniz har samlat de senaste Esport bettingbonusar från svenska
+            casinon. Vi väljer att endast lista bettingsidor med svensk
+            spellicens eftersom det ger dig som spelare ett säkrare casino att
+            spela på.
+          </p>
+          {readmore ? (
+            <div>
+              <p>
+                Längst ner på sidan så berättar vi mer om de olika spelen och de
+                kändaste lagen inom esports världen. Vi rekommenderar att man är
+                intresserad av esports eller har koll på de olika esports lagen
+                innan man satsar pengar på det. Då minskar du risken att förlora
+                pengar.
               </p>
-                    <p>
-                        Casinoniz har samlat de senaste Esport bettingbonusar från
-                        svenska casinon. Vi väljer att endast lista bettingsidor med
-                        svensk spellicens eftersom det ger dig som spelare ett säkrare
-                        casino att spela på.
+            </div>
+          ) : (
+            ""
+          )}
+
+          {readmore ? (
+            <div>
+              <p onClick={readMore} className="readmorebutton">
+                Läs mindre
               </p>
-                    {readmore ? (
-                        <div>
-                            <p>
-                                Längst ner på sidan så berättar vi mer om de olika spelen
-                                och de kändaste lagen inom esports världen. Vi rekommenderar
-                                att man är intresserad av esports eller har koll på de olika
-                                esports lagen innan man satsar pengar på det. Då minskar du
-                                risken att förlora pengar.
-                  </p>
-                        </div>
-                    ) : (
-                            ""
-                        )}
-
-                    {readmore ? (
-                        <div>
-                            <p onClick={readMore} className="readmorebutton">
-                                Läs mindre
-                  </p>
-                        </div>
-                    ) : (
-                            <div>
-                                <p onClick={readMore} className="readmorebutton">
-                                    Läs mer
-                  </p>
-                            </div>
-                        )}
-                </div>
             </div>
-
-
-            <EsportFilter
-                id="esportsfilterid"
-                csgo={sortFunc}
-                dota={sortFunc}
-                lol={sortFunc}
-                overwatch={sortFunc}
-                starcraft={sortFunc}
-                other={sortFunc}
-                reset={hardReset}
-                ewager={wagerbutton}
-                edeposit={depositbutton}
-            />
-            <div className={fade ? "fade-in" : "casino-wrap"}>
-                {casinon.length > 1 ? casinon.slice(0, size).map(casino => (
-
-                    < EsportCasinoComp
-                        key={casino.title}
-                        casino={casino}
-                        isBlocked={props.isBlocked}
-                    />
-                )) : ''}
+          ) : (
+            <div>
+              <p onClick={readMore} className="readmorebutton">
+                Läs mer
+              </p>
             </div>
-            {size <= casinon.length ? (
-                <div className="morebonus-box">
-                    <Button
-                        className="button-recension blink"
-                        onClick={loadMore}
-                    >
-                        Hämta fler bonusar{" "}
-                    </Button>
-                </div>
-            ) : (
-                    <div className="no-more-bonuses">
-                        <Button
-                            className="show-less-btn"
-                            onClick={loadLess}
-                        >
-                            Finns inte fler casinon att visa - Stäng{" "}
-                        </Button>
-                    </div>
-                )}
+          )}
+        </div>
+      </div>
 
+      <EsportFilter
+        id="esportsfilterid"
+        csgo={sortFunc}
+        dota={sortFunc}
+        lol={sortFunc}
+        overwatch={sortFunc}
+        starcraft={sortFunc}
+        other={sortFunc}
+        reset={hardReset}
+        ewager={wagerbutton}
+        edeposit={depositbutton}
+      />
+      <div className={fade ? "fade-in" : "casino-wrap"}>
+        {casinon.length > 1
+          ? casinon
+              .slice(0, size)
+              .map((casino) => (
+                <EsportCasinoComp
+                  key={casino.title}
+                  casino={casino}
+                  isBlocked={props.isBlocked}
+                />
+              ))
+          : ""}
+      </div>
+      {size <= casinon.length ? (
+        <div className="morebonus-box">
+          <Button className="button-recension blink" onClick={loadMore}>
+            Hämta fler bonusar{" "}
+          </Button>
+        </div>
+      ) : (
+        <div className="no-more-bonuses">
+          <Button className="show-less-btn" onClick={loadLess}>
+            Finns inte fler casinon att visa - Stäng{" "}
+          </Button>
+        </div>
+      )}
 
-            <BottomInfoEsport />
-            <LatestUpdate />
-
-        </Container>
-    );
-}
-
+      <BottomInfoEsport />
+      <LatestUpdate />
+    </Container>
+  );
+};
 
 export default Esport;

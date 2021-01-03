@@ -1,84 +1,84 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { Container, Button } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
-import Casinon from "../Casinon/index"
-import Filter from "../Filter/index"
-import AnimatedCount from "../AnimatedCount"
-import Bottominfo from "../AllBottomInfo/Bottominfo/index"
+import Casinon from "../Casinon/index";
+import Filter from "../Filter/index";
+import AnimatedCount from "../AnimatedCount";
+import Bottominfo from "../AllBottomInfo/Bottominfo/index";
 import OurRec from "../OurRec/index";
 import Recommended from "../Recommended/index";
 import NewCasinos from "../NewCasinos";
 import star from "../images/fullstar.svg";
-import LatestUpdate from "../LastUpdated"
-import "./style.scss"
-import MonthCasino from "../MonthCasino"
-import SearchComp from '../SearchComp';
-import CalcSearch from '../SearchComp/calcSearch';
+import LatestUpdate from "../LastUpdated";
+import "./style.scss";
+import MonthCasino from "../MonthCasino";
+import SearchComp from "../SearchComp";
+import CalcSearch from "../SearchComp/calcSearch";
 
-
-
-
-
-
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
-
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const StartPage = (props) => {
-  const [casinoList, setCasinoList] = useState({ Casino: props.start.Casinon, showOrder: false });
-  const [size, setSize] = useState(9)
+  const [casinoList, setCasinoList] = useState({
+    Casino: props.start.Casinon,
+    showOrder: false,
+  });
+  const [size, setSize] = useState(9);
   const [readmore, setReadMore] = useState(false);
   const [showmedalj, setShowMedalj] = useState(true);
   const [fade, setFade] = useState(false);
   const [calculate, setCalculate] = useState(false);
-  const [buttons, setButtons] = useState({ activebuttonfree: false, activebuttondep: false, activebuttonwager: false })
-  const myRef = useRef(null)
+  const [buttons, setButtons] = useState({
+    activebuttonfree: false,
+    activebuttondep: false,
+    activebuttonwager: false,
+  });
+  const myRef = useRef(null);
   const [searchTerm, setSearchTerm] = useState("");
-  const [searchNr, setSearchNr] = useState('');
-
+  const [searchNr, setSearchNr] = useState("");
 
   useEffect(() => {
-
-    let list = [...props.start.Casinon]
-    let newTop = []
+    let list = [...props.start.Casinon];
+    let newTop = [];
     const getAllCas = () => {
       list.forEach((i) => {
-        if (i.recension[0].gamebar === 100 && i.recension[0].experience === 100 && i.recension[0].support === 100) {
-          newTop.push(i)
+        if (
+          i.recension[0].gamebar === 100 &&
+          i.recension[0].experience === 100 &&
+          i.recension[0].support === 100
+        ) {
+          newTop.push(i);
         }
-
       });
 
-
-
-      list.filter(item => !newTop.includes(item))
-      newTop.concat(list)
+      list.filter((item) => !newTop.includes(item));
+      newTop.concat(list);
 
       list.sort((a, b) => {
-        return (b.recension[0].gamebar + b.recension[0].experience + b.recension[0].support) - (a.recension[0].gamebar + a.recension[0].experience + a.recension[0].support)
+        return (
+          b.recension[0].gamebar +
+          b.recension[0].experience +
+          b.recension[0].support -
+          (a.recension[0].gamebar +
+            a.recension[0].experience +
+            a.recension[0].support)
+        );
       });
 
-      return setCasinoList({ ...casinoList, Casino: list })
-
-    }
-    getAllCas()
-
-
+      return setCasinoList({ ...casinoList, Casino: list });
+    };
+    getAllCas();
 
     return () => {
-      setCasinoList({ ...casinoList, Casino: [...props.start.Casinon] })
+      setCasinoList({ ...casinoList, Casino: [...props.start.Casinon] });
     };
-
 
     // eslint-disable-next-line
   }, [props.start.Casinon]);
 
-
-
   const wagerbutton = () => {
-
-    resetList()
-    let orlist = [...props.start.Casinon]
+    resetList();
+    let orlist = [...props.start.Casinon];
     let delItems = [];
     let wagerarr = [];
     for (let i of orlist) {
@@ -93,28 +93,32 @@ const StartPage = (props) => {
       return a.wager - b.wager;
     });
 
-    setShowMedalj(false)
-    setCasinoList({ ...casinoList, Casino: wagerarr.concat(delItems), showOrder: false })
-    setSize(9)
-    setButtons({ activebuttondep: false, activebuttonwager: true, activebuttonfree: false })
-    setFade(true)
-
+    setShowMedalj(false);
+    setCasinoList({
+      ...casinoList,
+      Casino: wagerarr.concat(delItems),
+      showOrder: false,
+    });
+    setSize(9);
+    setButtons({
+      activebuttondep: false,
+      activebuttonwager: true,
+      activebuttonfree: false,
+    });
+    setFade(true);
 
     setTimeout(() => {
       setFade(false);
     }, 1000);
-
-
-  }
+  };
 
   const depositbutton = () => {
-    resetList()
-    let orlist = [...props.start.Casinon]
+    resetList();
+    let orlist = [...props.start.Casinon];
 
     let wagerarr = [];
     let depositdelete = [];
     for (let i of orlist) {
-
       if (i.depositpercent === "x") {
         depositdelete.push(i);
       } else {
@@ -126,191 +130,214 @@ const StartPage = (props) => {
       return b.depositpercent - a.depositpercent;
     });
 
-
-    setShowMedalj(false)
-    setCasinoList({ ...casinoList, Casino: wagerarr.concat(depositdelete), showOrder: false })
-    setSize(9)
-    setButtons({ activebuttonwager: false, activebuttondep: true, activebuttonfree: false })
-    setFade(true)
+    setShowMedalj(false);
+    setCasinoList({
+      ...casinoList,
+      Casino: wagerarr.concat(depositdelete),
+      showOrder: false,
+    });
+    setSize(9);
+    setButtons({
+      activebuttonwager: false,
+      activebuttondep: true,
+      activebuttonfree: false,
+    });
+    setFade(true);
 
     setTimeout(() => {
       setFade(false);
     }, 1000);
-  }
-
-
-
-
+  };
 
   const readMore = () => {
     setReadMore(!readmore);
-  }
+  };
 
   const resetList = () => {
-    let orlist = [...props.start.Casinon]
+    let orlist = [...props.start.Casinon];
     let newTop = orlist.filter(function (i) {
       if (i.recension) {
-        return i.recension[0].gamebar === 100 && i.recension[0].experience === 100 && i.recension[0].support === 100
+        return (
+          i.recension[0].gamebar === 100 &&
+          i.recension[0].experience === 100 &&
+          i.recension[0].support === 100
+        );
       }
-      return newTop
-    })
-
-    orlist.filter(item => !newTop.includes(item))
-    newTop.concat(orlist)
-    orlist.sort(function (a, b) {
-      return (b.recension[0].gamebar + b.recension[0].experience + b.recension[0].support) - (a.recension[0].gamebar + a.recension[0].experience + a.recension[0].support)
+      return newTop;
     });
-    setSearchTerm("")
-    setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
+
+    orlist.filter((item) => !newTop.includes(item));
+    newTop.concat(orlist);
+    orlist.sort(function (a, b) {
+      return (
+        b.recension[0].gamebar +
+        b.recension[0].experience +
+        b.recension[0].support -
+        (a.recension[0].gamebar +
+          a.recension[0].experience +
+          a.recension[0].support)
+      );
+    });
+    setSearchTerm("");
+    setButtons({
+      activebuttonwager: false,
+      activebuttondep: false,
+      activebuttonfree: false,
+    });
 
     if (searchNr.length > 0) {
-      setSearchNr(searchNr)
+      setSearchNr(searchNr);
     } else {
-      setSearchNr("")
+      setSearchNr("");
     }
 
-
-    setSize(9)
-    return setCasinoList({ Casino: orlist, showOrder: true })
-  }
-
+    setSize(9);
+    return setCasinoList({ Casino: orlist, showOrder: true });
+  };
 
   const hardReset = () => {
-    let orlist = [...props.start.Casinon]
+    let orlist = [...props.start.Casinon];
     let newTop = orlist.filter(function (i) {
       if (i.recension) {
-        return i.recension[0].gamebar === 100 && i.recension[0].experience === 100 && i.recension[0].support === 100
+        return (
+          i.recension[0].gamebar === 100 &&
+          i.recension[0].experience === 100 &&
+          i.recension[0].support === 100
+        );
       }
-      return newTop
-    })
-
-    orlist.filter(item => !newTop.includes(item))
-    newTop.concat(orlist)
-    orlist.sort(function (a, b) {
-      return (b.recension[0].gamebar + b.recension[0].experience + b.recension[0].support) - (a.recension[0].gamebar + a.recension[0].experience + a.recension[0].support)
+      return newTop;
     });
-    setSearchTerm("")
-    setSearchNr('')
-    setCalculate(false)
-    setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: false })
-    setSize(9)
-    return setCasinoList({ Casino: orlist, showOrder: true })
-  }
+
+    orlist.filter((item) => !newTop.includes(item));
+    newTop.concat(orlist);
+    orlist.sort(function (a, b) {
+      return (
+        b.recension[0].gamebar +
+        b.recension[0].experience +
+        b.recension[0].support -
+        (a.recension[0].gamebar +
+          a.recension[0].experience +
+          a.recension[0].support)
+      );
+    });
+    setSearchTerm("");
+    setSearchNr("");
+    setCalculate(false);
+    setButtons({
+      activebuttonwager: false,
+      activebuttondep: false,
+      activebuttonfree: false,
+    });
+    setSize(9);
+    return setCasinoList({ Casino: orlist, showOrder: true });
+  };
 
   const freewagerbutton = () => {
-    resetList()
-    let orlist = [...props.start.Casinon]
+    resetList();
+    let orlist = [...props.start.Casinon];
 
     let wagerarr = [];
     for (let i of orlist) {
       if (i.freefromwager === true && i.freespins > 2) {
         wagerarr.push(i);
-
       }
     }
 
-    setShowMedalj(false)
-    setCasinoList({ ...casinoList, Casino: wagerarr, showOrder: false })
-    setSize(9)
-    setButtons({ activebuttonwager: false, activebuttondep: false, activebuttonfree: true })
-    setFade(true)
+    setShowMedalj(false);
+    setCasinoList({ ...casinoList, Casino: wagerarr, showOrder: false });
+    setSize(9);
+    setButtons({
+      activebuttonwager: false,
+      activebuttondep: false,
+      activebuttonfree: true,
+    });
+    setFade(true);
 
     setTimeout(() => {
       setFade(false);
     }, 1000);
-
-
-
-  }
-
+  };
 
   const loadMore = () => {
-
-    return setSize(prevState => prevState + 12)
-
-  }
-
+    return setSize((prevState) => prevState + 12);
+  };
 
   const loadLess = () => {
-    scrollToRef(myRef)
+    scrollToRef(myRef);
 
-    return setSize(9)
-
-  }
+    return setSize(9);
+  };
 
   const showAll = () => {
+    return setSize(casinoList.Casino.length);
+  };
 
-    return setSize(casinoList.Casino.length)
-
-  }
-
-  const handleChange = event => {
-    event.target.value = event.target.value.toLowerCase()
-    let orlist = [...props.start.Casinon]
+  const handleChange = (event) => {
+    event.target.value = event.target.value.toLowerCase();
+    let orlist = [...props.start.Casinon];
     let wagerarr = [];
     if (event.target.value.length > 0) {
       for (let i of orlist) {
-        i.title = i.title.toLowerCase()
+        i.title = i.title.toLowerCase();
         if (i.title.includes(event.target.value)) {
           wagerarr.push(i);
-          setCasinoList({ ...casinoList, Casino: wagerarr })
-          setSize(9)
+          setCasinoList({ ...casinoList, Casino: wagerarr });
+          setSize(9);
         }
       }
-
     } else {
-      return resetList()
+      return resetList();
     }
 
     setSearchTerm(event.target.value);
   };
 
-
-  const calculateBonus = event => {
+  const calculateBonus = (event) => {
     if (event.target.value.length === 0) {
-      setCalculate(false)
-      return setSearchNr('')
+      setCalculate(false);
+      return setSearchNr("");
     }
     let regex = /^\d+$/;
     if (!event.target.value.match(regex)) {
-      return
+      return;
     }
     if (event.target.value.length > 5) {
       return;
     }
 
-    let orlist = [...props.start.Casinon]
+    let orlist = [...props.start.Casinon];
     if (event.target.value.length > 0 && event.target.value > 0) {
       for (let i of orlist) {
         if (i.depositpercent > 0) {
-
-          setCalculate(true)
-          setSize(9)
+          setCalculate(true);
+          setSize(9);
         }
-
       }
-
     } else {
-      return resetList()
+      return resetList();
     }
 
     setSearchNr(event.target.value);
   };
 
-  return (<React.Fragment>
-    <section >
-      <Helmet>
-        <title>Svenska Casino 2020 ⭐ » Jämför och Beräkna Din Casino Bonus | Casinoniz</title>
-        <link rel="canonical" href="https://www.casinoniz.se/" />
-        <meta
-          name="description"
-          content="[Uppdaterad 2020✅] Svenska casinon och casino bonusar ➼ Jämför bonusar och filtrera casinon efter dina önskemål. Du kan även beräkna din bonus! Hitta en välkomstbonus samt casino bonus som passar just dig. Beräkna din "
-        />
-        <meta
-          name="keywords"
-          content="Casino,faktura casino,välkomstbonus, julbonusar, casinobonusar jul, jul casino,välkomnstbonus, insättningsbonus,beräkna, filtrer, filtrera casino faktura, svensk casino , svenska casinon, Casinobonusar,2020,omsättningsfritt, recension, review, recension casinon, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
-        />
-        <script type="application/ld+json">{`
+  return (
+    <React.Fragment>
+      <section>
+        <Helmet>
+          <title>
+            Svenska Casino 2021 ⭐ » Jämför och Beräkna Din Casino Bonus |
+            Casinoniz
+          </title>
+          <link rel="canonical" href="https://www.casinoniz.se/" />
+          <meta
+            name="description"
+            content="[Uppdaterad 2021✅] Svenska casinon och casino bonusar ➼ Jämför bonusar och filtrera casinon efter dina önskemål. Du kan även beräkna din bonus! Hitta en välkomstbonus samt casino bonus som passar just dig. Beräkna din "
+          />
+          <meta
+            name="keywords"
+            content="Casino,faktura casino,välkomstbonus,2021, julbonusar, casinobonusar jul, jul casino,välkomnstbonus, insättningsbonus,beräkna, filtrer, filtrera casino faktura, svensk casino , svenska casinon, Casinobonusar,2020,omsättningsfritt, recension, review, recension casinon, 2019,bonus, spela, insättningsbonus, free spins, esports,betting,omsättningsfria bonusar"
+          />
+          <script type="application/ld+json">{`
       {
         "@context": "https://schema.org",
          "@type": "FAQPage",
@@ -377,148 +404,150 @@ const StartPage = (props) => {
         }]
       }
       `}</script>
+        </Helmet>
 
-      </Helmet>
+        <h1 className="welcome-title">Svenska Casinon 2021</h1>
+        <div className="top-casinos-rec">
+          <OurRec />
 
+          <MonthCasino list={props.start.Casinon} />
+          <AnimatedCount list={props.start.Casinon} />
+        </div>
 
+        <section className="welcome-box">
+          <section className="welcome-text">
+            <Recommended
+              list={[...props.start.Casinon]}
+              isBlocked={props.isBlocked}
+            ></Recommended>
 
-
-      <h1 className="welcome-title">Svenska Casinon 2020</h1>
-      <div className="top-casinos-rec">
-
-        <OurRec />
-
-
-        <MonthCasino list={props.start.Casinon} />
-        <AnimatedCount list={props.start.Casinon} />
-
-
-      </div>
-
-      <section className="welcome-box">
-        <section className="welcome-text">
-          <Recommended list={[...props.start.Casinon]} isBlocked={props.isBlocked}></Recommended>
-
-          <p>
-            Svenska casino som erbjuder välkomstbonus även känt som casino bonus är något som har gynnat spelare i den svenska spelmarknaden. Välkommen till kanske Sverige bästa filterfunktion för  casino bonusar!
- Du hittar alla casinon med <Link to="/casino-bonus">aktiv casino bonus</Link> på vår bonus sektion. Den vanligaste casinobonusen som brukar erbjudas är en insättningsbonus. Vi listar dem senaste Casino bonusar och alla från casinon med svensk spellicens! Efter den nya lagändringen så vill man som spelare helst spela på svenska casinon med svensk spellicens. Casino bonus även kallat välkomstbonus är en bonus där man som spelare kan få lite extra pengar att spela med. Vi listar casinon som erbjuder spel på faktura och esport betting.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Välkommen!
+            <p>
+              Svenska casino som erbjuder välkomstbonus även känt som casino
+              bonus är något som har gynnat spelare i den svenska spelmarknaden.
+              Välkommen till kanske Sverige bästa filterfunktion för casino
+              bonusar! Du hittar alla casinon med{" "}
+              <Link to="/casino-bonus">aktiv casino bonus</Link> på vår bonus
+              sektion. Den vanligaste casinobonusen som brukar erbjudas är en
+              insättningsbonus. Vi listar dem senaste Casino bonusar och alla
+              från casinon med svensk spellicens! Efter den nya lagändringen så
+              vill man som spelare helst spela på svenska casinon med svensk
+              spellicens. Casino bonus även kallat välkomstbonus är en bonus där
+              man som spelare kan få lite extra pengar att spela med. Vi listar
+              casinon som erbjuder spel på faktura och esport betting.
+              Välkommen!
             </p>
-          <p>
-            Betta på E-sport ? Vi har även en esport sektion där vi listar
+            <p>
+              Betta på E-sport ? Vi har även en esport sektion där vi listar
               casinon med esport betting.{" "}
-            <NavLink
-              className="link-start"
-              to="/Esportbetting"
-              activeClassName="active"
-            >
-              Klicka här för att komma till esport betting.
+              <NavLink
+                className="link-start"
+                to="/Esportbetting"
+                activeClassName="active"
+              >
+                Klicka här för att komma till esport betting.
               </NavLink>{" "}
-          </p>
-          {readmore ? (
-            <div>
-              <p>Man kan även få så kallade
-            Freespins, som ger spelaren gratissnurr på utvalda slotmaskiner.
-            Vissa casinon erbjuder även en kombo av freespins och en
-            insättningsbonus.
-                På Casinoniz har vi samlat de senaste casino bonusar från
-                svenska casinon. Vi väljer att endast lista casinon med svensk
-                spellicens eftersom det ger dig som spelare ett säkrare casino
-                att spela på. På både epsort betting och casino faktura sektionen kan du filtrera casinon efter just dina önskemål.
+            </p>
+            {readmore ? (
+              <div>
+                <p>
+                  Man kan även få så kallade Freespins, som ger spelaren
+                  gratissnurr på utvalda slotmaskiner. Vissa casinon erbjuder
+                  även en kombo av freespins och en insättningsbonus. På
+                  Casinoniz har vi samlat de senaste casino bonusar från svenska
+                  casinon. Vi väljer att endast lista casinon med svensk
+                  spellicens eftersom det ger dig som spelare ett säkrare casino
+                  att spela på. På både epsort betting och casino faktura
+                  sektionen kan du filtrera casinon efter just dina önskemål.
                 </p>
-            </div>
-          ) : (
+              </div>
+            ) : (
               ""
             )}
 
-          {readmore ? (
-            <div>
-              <p onClick={readMore} className="readmorebutton">
-                Läs mindre
+            {readmore ? (
+              <div>
+                <p onClick={readMore} className="readmorebutton">
+                  Läs mindre
                 </p>
-            </div>
-          ) : (
+              </div>
+            ) : (
               <div>
                 <p onClick={readMore} className="readmorebutton">
                   Läs mer
                 </p>
               </div>
             )}
+          </section>
 
+          <NewCasinos {...props} isBlocked={props.isBlocked} />
         </section>
 
+        <Container className="wrapit">
+          {/* <CalcSearch calculateBonus={calculateBonus} value={searchNr} /> */}
+          <div ref={myRef} className="top-box" />
+          <Filter
+            id="filterid"
+            wager={wagerbutton}
+            free={freewagerbutton}
+            deposit={depositbutton}
+            activebuttonwager={buttons.activebuttonwager}
+            activebuttonfree={buttons.activebuttonfree}
+            activebuttondep={buttons.activebuttondep}
+            reset={hardReset}
+          />
+          <SearchComp handleChange={handleChange} value={searchTerm} />
 
-        <NewCasinos {...props} isBlocked={props.isBlocked} />
-      </section>
+          {showmedalj ? (
+            <section className="medalj-box">
+              <p>
+                <i>
+                  Ordningen på listan är just nu är baserad på vår recension. Ju
+                  högre poäng desto högre upp på listan är casinot.
+                </i>
+              </p>
+              <small className="medalj-text">
+                <img src={star} className="top-star" alt="star" />
+                <i>
+                  Medaljen visar casinon som har fått fulla poäng av oss i våran
+                  casino recension.
+                </i>
+              </small>
+            </section>
+          ) : null}
 
-      <Container className="wrapit">
-        {/* <CalcSearch calculateBonus={calculateBonus} value={searchNr} /> */}
-        <div ref={myRef} className="top-box" />
-        <Filter
-          id="filterid"
-          wager={wagerbutton}
-          free={freewagerbutton}
-          deposit={depositbutton}
-          activebuttonwager={buttons.activebuttonwager}
-          activebuttonfree={buttons.activebuttonfree}
-          activebuttondep={buttons.activebuttondep}
-          reset={hardReset}
-
-        />
-        <SearchComp handleChange={handleChange} value={searchTerm} />
-
-
-        {showmedalj ? (<section className="medalj-box">
-          <p><i>Ordningen på listan är just nu är baserad på vår recension. Ju högre poäng desto högre upp på listan är casinot.</i></p>
-          <small className="medalj-text"><img src={star} className="top-star" alt="star" /><i>Medaljen visar casinon som har fått fulla poäng av oss i våran casino recension.</i></small>
-        </section>) : null}
-
-
-
-        <div className={fade ? "fade-in" : "casino-wrap"}>
-          {casinoList.Casino.slice(0, size).map((casino, e) =>
-            < Casinon
-              key={casino.id + casino.title}
-              casino={casino}
-              reset={resetList}
-              isBlocked={props.isBlocked}
-              calc={calculate}
-              calcVal={searchNr}
-
-            />
-          )}
-        </div>
-        {size >= casinoList.Casino.length ? (
-          <div className="no-more-bonuses">
-            <Button
-              className="show-less-btn"
-              onClick={loadLess}
-            >
-              Finns inte fler casinon att visa - Stäng{" "}
-            </Button>
+          <div className={fade ? "fade-in" : "casino-wrap"}>
+            {casinoList.Casino.slice(0, size).map((casino, e) => (
+              <Casinon
+                key={casino.id + casino.title}
+                casino={casino}
+                reset={resetList}
+                isBlocked={props.isBlocked}
+                calc={calculate}
+                calcVal={searchNr}
+              />
+            ))}
           </div>
-        ) : (
-
+          {size >= casinoList.Casino.length ? (
+            <div className="no-more-bonuses">
+              <Button className="show-less-btn" onClick={loadLess}>
+                Finns inte fler casinon att visa - Stäng{" "}
+              </Button>
+            </div>
+          ) : (
             <div className="morebonus-box">
-              <Button
-                className="button-recension blink"
-                onClick={loadMore}
-              >
+              <Button className="button-recension blink" onClick={loadMore}>
                 Hämta fler bonusar{" "}
               </Button>
 
               <span onClick={showAll}>Visa alla casinon</span>
             </div>
           )}
-        <Bottominfo />
-        <LatestUpdate />
-
-      </Container>
-
-    </section>
-  </React.Fragment>)
-}
-
-
+          <Bottominfo />
+          <LatestUpdate />
+        </Container>
+      </section>
+    </React.Fragment>
+  );
+};
 
 export default StartPage;

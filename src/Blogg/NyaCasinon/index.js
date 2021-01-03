@@ -56,16 +56,16 @@ const NyaCasino = (props) => {
     <StyledWrapper>
       <Helmet>
         <title>
-          Nya Casino 2020 (På riktigt) » Alla med svensk licens | Casinoniz
+          Nya Casino 2021 (På riktigt) » Alla med svensk licens | Casinoniz
         </title>
         <link rel="canonical" href="https://www.casinoniz.se/nya-casino-2020" />
         <meta
           name="description"
-          content="Ny lista för nya casino 2020 ✅ ➼ Här hittar du nya lanserade casinon från 2020. Alla casinon är nya svenska casinon med licens. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
+          content="Ny lista för nya casino 2021 ✅ ➼ Här hittar du nya lanserade casinon från 2021. Alla casinon är nya svenska casinon med licens. Vi kommer att uppdatera listan löpande. Så håll utkik!  "
         />
         <meta
           name="keywords"
-          content="Casino, Casinobonusar, välkomstbonus, 2019,2020, bonus, spela, insättningsbonus, free spins, faktura casino, casino faktura, bästa casinon,nya,publicerade,licenserade,svenska,casinon, bästa casinon 2020, top5 , top10 casino"
+          content="Casino, Casinobonusar, välkomstbonus, 2019,2020,2021, bonus, spela, insättningsbonus, free spins, faktura casino, casino faktura, bästa casinon,nya,publicerade,licenserade,svenska,casinon, bästa casinon 2020, top5 , top10 casino"
         />
         <script type="application/ld+json">{`
       {
@@ -73,17 +73,17 @@ const NyaCasino = (props) => {
          "@type": "FAQPage",
          "mainEntity": [{
           "@type": "Question",
-          "name": "❓ Tänka på när man väljer nytt casino 2020?",
+          "name": "❓ Tänka på när man väljer nytt casino 2021?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Det släpps nya casinon till och från. Det viktigaste man ska tänka på när man väljer ett nytt casino är att casinot har svensk spellicens. Det ger dig som spelare en säkrare spelupplevelse och ett bättre skydd. Alla eventuella vinster är även skattefria."
           }
         }, {
           "@type": "Question",
-           "name": "✨ Listar Casinoniz alla nya casinon 2020?",
+           "name": "✨ Listar Casinoniz alla nya casinon 2021?",
            "acceptedAnswer": {
              "@type": "Answer",
-            "text": "Ja, Casinoniz.se kommer endast lista alla nya casinon som lanseras eller registreras under 2020 med svensk spellicens."
+            "text": "Ja, Casinoniz.se kommer endast lista alla nya casinon som lanseras eller registreras under 2021 med svensk spellicens."
           }
         }, {
           "@type": "Question",
@@ -94,7 +94,7 @@ const NyaCasino = (props) => {
           }
         }, {
           "@type": "Question",
-          "name": "⭐ Vad förväntas man av dem nya casinon 2020?",
+          "name": "⭐ Vad förväntas man av dem nya casinon 2021?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Eftersom konkurrensen är så tuff inom casinobranschen så förväntas dem nya casinon ha ett väldigt snyggt tema, bra säkerhet, grym support med livechatt, snabba insättningar samt uttag och ett bra spelutbud. Har casinot även ett grymt välkomsterbjudanden är det ännu bättre."
@@ -104,9 +104,9 @@ const NyaCasino = (props) => {
       `}</script>
       </Helmet>
 
-      <h1 className="banners">Nya Casino 2020 </h1>
+      <h1 className="banners">Nya Casino 2021 </h1>
       <small> Publicerad: 14 Januari 2020</small>
-      <p>Nya casino 2020</p>
+      <p>Nya casino 2021</p>
       <p>
         Vi listar nya casinon för detta året. Denna sektionen kommer uppdateras
         kontinuerligt så håll koll på denna sidan. Vi på Casinoniz.se tror att
@@ -121,7 +121,7 @@ const NyaCasino = (props) => {
       </p>
 
       <StyledDiv>
-        <h2>Nytt casino 2020 - Klirr</h2>
+        <h2>Nytt casino 2021 - Klirr</h2>
         {topCasinon.length > 0 ? (
           <div>
             <p>
@@ -147,7 +147,7 @@ const NyaCasino = (props) => {
       </StyledDiv>
 
       <StyledDiv>
-        <h2>Nytt casino 2020- Yoyocasino</h2>
+        <h2>Nytt casino 2021- Yoyocasino</h2>
         {topCasinon.length > 0 ? (
           <div>
             <p>
@@ -171,7 +171,7 @@ const NyaCasino = (props) => {
       </StyledDiv>
 
       <StyledDiv>
-        <h2>Nytt casino 2020 - JallaCasino</h2>
+        <h2>Nytt casino 2021 - JallaCasino</h2>
         {topCasinon.length > 0 ? (
           <div>
             <p>
@@ -196,7 +196,7 @@ const NyaCasino = (props) => {
       </StyledDiv>
 
       <StyledDiv>
-        <h2>Nytt casino 2020- LuckyVegas</h2>
+        <h2>Nytt casino 2021- LuckyVegas</h2>
         {topCasinon.length > 0 ? (
           <div>
             <p>
@@ -225,7 +225,7 @@ const NyaCasino = (props) => {
       </StyledDiv>
 
       <StyledDiv>
-        <h2>Nytt casino 2020- Spela.com</h2>
+        <h2>Nytt casino 2021- Spela.com</h2>
         {topCasinon.length > 0 ? (
           <div>
             <p>
@@ -252,7 +252,7 @@ const NyaCasino = (props) => {
       <RandomCasinos list={[...props.list.Casinon]} />
 
       <BottomInfoNyaCasino />
-      <p className="update-text">Senast uppdaterad: 23 mars 2020</p>
+      <p className="update-text">Senast uppdaterad: 1 Januari 2021</p>
     </StyledWrapper>
   );
 };
