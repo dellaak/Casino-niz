@@ -58,7 +58,7 @@ const NewsSection = (props) => {
           content="Casino, Casinobonusar, kasino, kasinobonusar,välkomstbonus, 2019,2020, casinonyheter,nyheter om casino, casinoblogg, kasinonyheter,casinonews"
         />
 
-        <meta property="og:title" content="Nyheter om casinobranschen 2020. " />
+        <meta property="og:title" content="Nyheter om casinobranschen 2021. " />
         <meta
           property="og:description"
           content="Vill du hålla dig uppdaterad om vilka casinon som t.ex. blir av med sin svenska spellicens eller liknande så hittar du det här."
