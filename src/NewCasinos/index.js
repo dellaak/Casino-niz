@@ -43,7 +43,7 @@ const NewCasinos = (props) => {
   return (
     <aside className="new-casinos">
       <div className="title-box">
-        <h5 className="latest-title">Senast tillagda casino bonusar 20201</h5>
+        <h5 className="latest-title">Senast tillagda casino bonusar 2021</h5>
       </div>
 
       {newCasino.slice(0, 5).map((casino) => (

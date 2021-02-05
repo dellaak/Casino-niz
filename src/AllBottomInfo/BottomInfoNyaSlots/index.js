@@ -250,7 +250,7 @@ const BottomInfoNyaSlots = (props) => {
         </div>
 
         <div className="info-bottom-box-img">
-          <h2>Nya videoslots 2020 </h2>
+          <h2>Nya videoslots 2021 </h2>
           <div>
             <p>
               Här har vi har samlat lite allmän information om <b>Nya Slots</b>{" "}
@@ -308,13 +308,13 @@ const BottomInfoNyaSlots = (props) => {
         </div>
 
         <div className="info-bottom-box">
-          <h3>Slots - Bästa videoslots 2020?</h3>
+          <h3>Slots - Bästa videoslots 2021?</h3>
 
           <p>
             Listan kommer att uppdateras med jämna mellanrum. Vi letar efter
             slots som vi tycker är underhållande. Att välja den bästa
             videoslotten för 2020 är lite svårt just nu. Vi kan nog göra en{" "}
-            <b>Top 10 slots 2020</b> i slutet på året någongång.{" "}
+            <b>Top 10 slots 2021</b> i slutet på året någongång.{" "}
           </p>
 
           <h3>Megaways slot</h3>

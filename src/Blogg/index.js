@@ -74,7 +74,7 @@ const Top5 = (props) => {
         <title>Casino Kampanjer & Tips 2021 | Casinoniz</title>
         <link
           rel="canonical"
-          href="https://www.casinoniz.se/kampanjer-casino-2020"
+          href="https://www.casinoniz.se/kampanjer-casino-2021"
         />
         <meta
           name="description"
@@ -104,14 +104,14 @@ const Top5 = (props) => {
             text="Hur roligt är det inte med nya och bra slots? Vi listar nya slots 2020. Listan är baserad på spel som vi tror man borde prova. Listan kommer uppdateras med nya slots under året 2020. Så håll utkik"
             bild="/images/newslots.svg"
             publicerad="22 Januari 2020"
-            link="nya-slots-2020"
+            link="nya-slots-2021"
           />
 
           <Kampanj
             text="I år tror vi att casinon kommer att fokusera på tema och upplevelse.Här har du en lista på alla nya casino som lanserats under 2020. Listan kommer uppdateras med alla nya casino 2020 kontinuerligt. Så håll utkik"
             bild="/images/2020new.svg"
             publicerad="14 Januari 2020"
-            link="nya-casino-2020"
+            link="nya-casino-2021"
           />
 
           <Kampanj

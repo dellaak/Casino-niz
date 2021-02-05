@@ -73,10 +73,10 @@ const Footer = () => {
             </NavLink>
             <NavLink
               className="footer-link"
-              to="/nya-casino-2020"
+              to="/nya-casino-2021"
               activeClassName="active"
             >
-              Nya Casino 2020
+              Nya Casino 2021
             </NavLink>
             <NavLink
               className="footer-link"
@@ -90,14 +90,14 @@ const Footer = () => {
               to="/minsta-insattning-casino"
               activeClassName="active"
             >
-              Minsta insättning casino 2020
+              Minsta insättning casino 2021
             </NavLink>
             <NavLink
               className="footer-link"
-              to="/nya-slots-2020"
+              to="/nya-slots-2021"
               activeClassName="active"
             >
-              Nya slots 2020
+              Nya slots 2021
             </NavLink>
             <NavLink
               className="footer-link"

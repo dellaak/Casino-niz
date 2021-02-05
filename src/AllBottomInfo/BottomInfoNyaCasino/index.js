@@ -51,10 +51,10 @@ const BottomInfoNyaCasino = (props) => {
       <div className="bottom-container">
         <div className="question-wrap">
           <div className="head-q">
-            <h2>Nya Casinon 2020 - Frågor och svar </h2>
+            <h2>Nya Casinon 2021 - Frågor och svar </h2>
             <p>
               Här har vi har samlat några av svaren på några frågorna gällande{" "}
-              <b>Nya Casinon 2020</b>. Har du fler frågar kan du alltid kontakta
+              <b>Nya Casinon 2021</b>. Har du fler frågar kan du alltid kontakta
               oss. Casinoniz listar casinon som erbjuder esportsbetting, casino
               med faktura och odds. Alla casinon som vi listar har svensk
               spellicens!{" "}
@@ -75,7 +75,7 @@ const BottomInfoNyaCasino = (props) => {
                     <span className="q1logo" role="img" aria-hidden="true">
                       ❓
                     </span>{" "}
-                    <span>Tänka på när man väljer nytt casino 2020?</span>{" "}
+                    <span>Tänka på när man väljer nytt casino 2021?</span>{" "}
                     <StyledSpan rotate={q1 ? 1 : undefined}>
                       <svg
                         focusable="false"
@@ -121,7 +121,7 @@ const BottomInfoNyaCasino = (props) => {
                     <span className="q1logo" role="img" aria-hidden="true">
                       ✨
                     </span>
-                    <span>Listar Casinoniz alla nya casinon 2020?</span>
+                    <span>Listar Casinoniz alla nya casinon 2021?</span>
                     <StyledSpan rotate={q2 ? 1 : undefined}>
                       <svg
                         focusable="false"
@@ -140,7 +140,7 @@ const BottomInfoNyaCasino = (props) => {
                           <div>
                             <p>
                               Ja,Casinoniz.se kommer endast lista alla nya
-                              casinon som lanseras eller registreras under 2020
+                              casinon som lanseras eller registreras under 2021
                               med svensk spellicens.{" "}
                             </p>
                           </div>
@@ -211,7 +211,7 @@ const BottomInfoNyaCasino = (props) => {
                     <span className="q1logo" role="img" aria-hidden="true">
                       ⭐
                     </span>
-                    <span>Vad förväntas man av dem nya casinon 2020?</span>
+                    <span>Vad förväntas man av dem nya casinon 2021?</span>
                     <StyledSpan rotate={q4 ? 1 : undefined}>
                       <svg
                         focusable="false"
@@ -246,7 +246,7 @@ const BottomInfoNyaCasino = (props) => {
         </div>
 
         <div className="info-bottom-box-img">
-          <h2>Nya Casinon 2020 </h2>
+          <h2>Nya Casinon 2021 </h2>
           <div>
             <p>
               Här har vi har samlat lite allmän information om{" "}
@@ -260,7 +260,7 @@ const BottomInfoNyaCasino = (props) => {
         </div>
 
         <div className="info-bottom-box">
-          <h3>Casino bonus hos nya casinon 2020 </h3>
+          <h3>Casino bonus hos nya casinon 2021 </h3>
           <p>
             När man väljer att nyttja en casino bonus hos ett nytt casino 2020,
             måste man vara säker på att man inte har nyttjat en casino bonus
@@ -328,7 +328,7 @@ const BottomInfoNyaCasino = (props) => {
             på sin sida. Alla videoslots kommer oftast från en tredje part, med
             undantag ifall casinot själva har utvecklat en egen slot. Du hittar
             alla nya slots som vi tycker är värda att dela på{" "}
-            <Link to="/nya-slots-2020">vår nya slots sida</Link>.{" "}
+            <Link to="/nya-slots-2021">vår nya slots sida</Link>.{" "}
           </p>
 
           <p>

@@ -58,7 +58,7 @@ const NyaCasino = (props) => {
         <title>
           Nya Casino 2021 (På riktigt) » Alla med svensk licens | Casinoniz
         </title>
-        <link rel="canonical" href="https://www.casinoniz.se/nya-casino-2020" />
+        <link rel="canonical" href="https://www.casinoniz.se/nya-casino-2021" />
         <meta
           name="description"
           content="Ny lista för nya casino 2021 ✅ ➼ Här hittar du nya lanserade casinon från 2021. Alla casinon är nya svenska casinon med licens. Vi kommer att uppdatera listan löpande. Så håll utkik!  "

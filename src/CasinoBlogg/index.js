@@ -46,7 +46,7 @@ const NewsSection = (props) => {
     <Container>
       <Helmet>
         <title>
-          Casino Nyheter 2020 » Nyheter Inom Svenska Casinobranschen | Casinoniz
+          Casino Nyheter 2021 » Nyheter Inom Svenska Casinobranschen | Casinoniz
         </title>
         <link rel="canonical" href="https://www.casinoniz.se/casino-nyheter" />
         <meta

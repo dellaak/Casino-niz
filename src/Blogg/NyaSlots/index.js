@@ -71,7 +71,7 @@ const NyaSlots = (props) => {
     <StyledWrapper>
       <Helmet>
         <title>Nya Slots 2021 » Prova Årets Hetaste Slots🔥 | Casinoniz</title>
-        <link rel="canonical" href="https://www.casinoniz.se/nya-slots-2020" />
+        <link rel="canonical" href="https://www.casinoniz.se/nya-slots-2021" />
         <meta
           name="description"
           content="Nya Slots 2021 ✅ ➼ Prova årets nyaste och hetaste videoslots. Vi listar svenska casinon som släpper nya och grymma slots. Vi kommer att uppdatera listan löpande. Så håll utkik!  "

@@ -56,9 +56,9 @@
       "/odds",
       "/5-basta-casinon-2020",
       "/minsta-insattning-casino",
-      "/kampanjer-casino-2020",
-      "/nya-casino-2020",
-      "/nya-slots-2020",
+      "/kampanjer-casino-2021",
+      "/nya-casino-2021",
+      "/nya-slots-2021",
       "/slotsons-laggerner",
       "/highroller-stanger",
       "/flera-casino-stanger",
@@ -198,8 +198,7 @@
       "/Redirect/mariacasino",
       "/Redirect/bingocom",
       "/Redirect/storspelare",
-      "/Redirect/prankcasino",
-      "/Redirect/Turbico"
+      "/Redirect/prankcasino"
     ],
     "exclude": [
       "/Go/**"
