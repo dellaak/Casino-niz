@@ -71,7 +71,7 @@ const NewsSection = (props) => {
       </Helmet>
 
       <section className="blogg">
-        <h1 className="banners">Casino nyheter 2020 </h1>
+        <h2 className="banners">Casino nyheter 2021 </h2>
         <p>
           Vill du hålla dig uppdaterad om nyheter inom casinobranschen ? Här har
           vi en liten nyhetssida där vi släpper intressanta nyheter om vad som
@@ -79,7 +79,7 @@ const NewsSection = (props) => {
           som läsare att finna det intressant :){" "}
         </p>
 
-        <h2>Casino Nyheter 2020</h2>
+        <h2>Casino Nyheter 2021</h2>
         <BloggSection>
           <Kampanj
             title="Reactoonz 2 ute på marknaden"
