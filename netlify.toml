@@ -332,11 +332,7 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/gogocasino"}
 
-                             [[redirects]]
-  from = "/Go/turbico"
-  to = "https://wlturbico.adsrv.eacdn.com/C.ashx?btag=a_17781b_1621c_&affid=4979&siteid=17781&adid=1621&c="
-  status = 301
-  query = {path = "/Go/turbico"}
+
 
                              [[redirects]]
   from = "/Go/luckyvegas"
