@@ -184,7 +184,7 @@ const App = () => {
 
             {/* BLOGG */}
             <Route
-              path="/5-basta-casinon-2020"
+              path="/5-basta-casinon-2021"
               render={(props) => (
                 <Top5 list={Casinolist} isBlocked={adBlockEnabled} {...props} />
               )}

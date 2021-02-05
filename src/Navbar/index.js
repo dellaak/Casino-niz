@@ -147,7 +147,7 @@ const NavBarApp = (props) => {
                     to="/nya-slots-2021"
                     activeClassName="activenav"
                   >
-                    Nya Slots 2020
+                    Nya Slots 2021
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem className="drop-nav">
@@ -156,7 +156,7 @@ const NavBarApp = (props) => {
                     to="/nya-casino-2021"
                     activeClassName="activenav"
                   >
-                    Nya casino 2020
+                    Nya casino 2021
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem className="drop-nav">
@@ -172,10 +172,10 @@ const NavBarApp = (props) => {
                 <DropdownItem className="drop-nav">
                   <NavLink
                     className="nav-link"
-                    to="/5-basta-casinon-2020"
+                    to="/5-basta-casinon-2021"
                     activeClassName="activenav"
                   >
-                    Bästa Casinon 2020
+                    Bästa Casinon 2021
                   </NavLink>
                 </DropdownItem>
               </StyledDownMenu>

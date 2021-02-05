@@ -125,7 +125,7 @@ const Top5 = (props) => {
             text="Casinon vi listar här är några casinon som vi tycker sticker ut lite extra. Det vi har tänkt på när vi valde ut fem casinon är layouten, spelutbudet på slots, supporten och även"
             bild="/images/top5.png"
             publicerad="3 Januari 2020"
-            link="5-basta-casinon-2020"
+            link="5-basta-casinon-2021"
           />
         </BloggSection>
       </section>

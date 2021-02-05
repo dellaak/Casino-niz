@@ -83,7 +83,7 @@ const Top5 = (props) => {
         <title>5 Bästa Casinon 2021 » (Med Casino Bonus) | Casinoniz</title>
         <link
           rel="canonical"
-          href="https://www.casinoniz.se/5-basta-casinon-2020"
+          href="https://www.casinoniz.se/5-basta-casinon-2021"
         />
         <meta
           name="description"
