@@ -405,6 +405,20 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/yoyocasino"}
 
+  [[redirects]]
+ from = "/Go/casinogods"
+  to = "https://casinogods.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=6488"
+  status = 301
+  query = {path = "/Go/casinogods"}
+
+
+
+  [[redirects]]
+ from = "/Go/pelaa"
+  to = "https://pelaa.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=5200"
+  status = 301
+  query = {path = "/Go/pelaa"}
+  
 
 
 [[redirects]]

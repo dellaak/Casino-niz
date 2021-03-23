@@ -9,7 +9,15 @@ import BottomInfoNyaCasino from "../../AllBottomInfo/BottomInfoNyaCasino";
 // import "./style.scss"
 
 const NyaCasino = (props) => {
-  const topArr = ["luckyvegas", "spela", "yoyocasino", "jallacasino", "klirr"];
+  const topArr = [
+    "luckyvegas",
+    "spela",
+    "yoyocasino",
+    "jallacasino",
+    "klirr",
+    "pelaa",
+    "casinogods",
+  ];
   const [topCasinon, setTopList] = useState([]);
 
   useEffect(() => {
@@ -137,6 +145,55 @@ const NyaCasino = (props) => {
         )}
         <div className="casino-wrap">
           {topCasinon.slice(4, 5).map((casino) => (
+            <Casinon
+              key={casino.id + casino.title}
+              casino={casino}
+              isBlocked={props.isBlocked}
+            />
+          ))}
+        </div>
+      </StyledDiv>
+
+      <StyledDiv>
+        <h2>Nytt casino 2021- CasinoGods</h2>
+        {topCasinon.length > 0 ? (
+          <div>
+            <p>
+              Casingods är det nya tillskottet från Genesis Global Limited.
+              Bolaget har nyligen inskaffat svensk spellicense. Casinot har
+              väldigt många slots och har en grym design. Bolaget står även
+              bakom Pelaa.
+            </p>
+          </div>
+        ) : (
+          ""
+        )}
+        <div className="casino-wrap">
+          {topCasinon.slice(6, 7).map((casino) => (
+            <Casinon
+              key={casino.id + casino.title}
+              casino={casino}
+              isBlocked={props.isBlocked}
+            />
+          ))}
+        </div>
+      </StyledDiv>
+
+      <StyledDiv>
+        <h2>Nytt casino 2021- Pelaa</h2>
+        {topCasinon.length > 0 ? (
+          <div>
+            <p>
+              Pelaa är ett nytt casino 2021 för svenska spelare. Casinot har en
+              väldigt snygg och användarvänlig sida med flera kvalitativa slots.
+              Ett grymt casino för alla som tycker om att spela på slots.
+            </p>
+          </div>
+        ) : (
+          ""
+        )}
+        <div className="casino-wrap">
+          {topCasinon.slice(5, 6).map((casino) => (
             <Casinon
               key={casino.id + casino.title}
               casino={casino}

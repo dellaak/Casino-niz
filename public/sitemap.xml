@@ -9,20 +9,20 @@
 
 <url>
   <loc>https://www.casinoniz.se/</loc>
-  <lastmod>2021-02-06T00:00:00+01:00</lastmod>
+  <lastmod>2021-03-23T23:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.casinoniz.se/esportbetting</loc>
-  <lastmod>2021-02-06T00:00:00+01:00</lastmod>
+  <lastmod>2021-03-23T23:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://www.casinoniz.se/faktura-casino</loc>
- <lastmod>2021-02-06T00:00:00+01:00</lastmod>
+ <lastmod>2021-03-23T23:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
@@ -37,7 +37,7 @@
 
 <url>
   <loc>https://www.casinoniz.se/casino-bonus</loc>
-  <lastmod>2021-02-06T00:00:00+01:00</lastmod>
+  <lastmod>2021-03-23T23:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
@@ -45,21 +45,21 @@
 
 <url>
   <loc>https://www.casinoniz.se/casino-swish</loc>
- <lastmod>2021-02-06T00:00:00+01:00</lastmod>
+ <lastmod>2021-03-23T23:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://www.casinoniz.se/casino-trustly</loc>
-  <lastmod>2021-02-06T00:00:00+01:00</lastmod>
+  <lastmod>2021-03-23T23:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://www.casinoniz.se/nya-slots-2021</loc>
-  <lastmod>2020-04-28T00:00:00+01:00</lastmod>
+  <lastmod>2021-03-23T23:00:00+01:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
@@ -499,6 +499,20 @@
 </url>
 
 <url>
+  <loc>https://www.casinoniz.se/recension/casinogods</loc>
+ <lastmod>2021-03-23T22:00:00+01:00</lastmod>
+  <priority>0.50</priority>
+</url>
+
+
+<url>
+  <loc>https://www.casinoniz.se/recension/pelaa</loc>
+ <lastmod>2021-03-23T22:00:00+01:00</lastmod>
+  <priority>0.50</priority>
+</url>
+
+
+<url>
   <loc>https://www.casinoniz.se/404</loc>
   <lastmod>2020-01-29T01:00:01+00:00</lastmod>
   <priority>0.50</priority>
@@ -513,6 +527,8 @@
   <lastmod>2019-12-31T01:05:48+00:00</lastmod>
   <priority>0.50</priority>
 </url>
+
+
 
 
 

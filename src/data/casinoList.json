@@ -5007,6 +5007,170 @@
           "summering": "Klirr är ett nytt casino 2020 som har stor potential. Casinot har en snygg och lyxig design. Navigering på sidan är väldig simpel. Du kan börja spela simpelt med hjälp av bankidentifiering. Minsta uttag och insättning är 200kr. Har ett stort uttbud av slots. Erbjuder även Live Casino. Vi tyckte om casinot och rekommenderar det."
         }
       ]
+    },
+    {
+      "id": 75,
+      "faq": true,
+      "q1": {
+        "@type": "Question",
+        "name": "💰Vad är minsta insättningen samt uttag hos CasinoGods",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minsta insättningen hos CasinoGods är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+        }
+      },
+      "q2": {
+        "@type": "Question",
+        "name": "✨Erbjuder CasinoGods insättningar med faktura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, det gör dem tyvärr inte. CasinoGods erbjuder endast insättningar samt uttag via den populära betalningsmetoden Trustly"
+        }
+      },
+      "q3": {
+        "@type": "Question",
+        "name": "❓Har CasinoGods svensk spellicense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, CasinoGods har svensk spellicens ."
+        }
+      },
+      "title": "CasinoGods",
+      "slogan": "Välkomstsnurr",
+      "color": "#eef0f6",
+      "textcolor": "#2d2d4e",
+      "setTop": false,
+      "depositbonus": "Nya spelare får 100 välkomstsnurr på Book of Dead efter insättning.",
+      "sportsbonus": "Ingen sport bonus",
+      "mylink": "https://casinogods.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=6488",
+      "rules": "https://casinogods.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=6502",
+      "caslogo": "/images/casinogods.png",
+      "wager": 40,
+      "sportswager": "x",
+      "casinospecialterms": true,
+      "extratext": "Endast nya spelare. Minsta insättning: 200 kr. Endast 1 bonus per Genesis Global Limited-varumärken. 40 x omsättning inom 60 dagar. Välkomstsnurr är endast på Book of Dead och giltiga i 72 timmar. Högsta tillåtna uttag från välkomstsnurr vinster är 1000 kr",
+      "sports": false,
+      "casinobonuswager": true,
+      "freespins": 100,
+      "maxbonus": 0,
+      "maxbonussports": 0,
+      "activebonus": true,
+      "bankid": true,
+      "publishdate": "23 Mars 2021",
+      "freefromwager": false,
+      "depositpercent": 0,
+      "faktura": false,
+      "fakturatype": [],
+      "recension": [
+        {
+          "gamebar": 90,
+          "experience": 100,
+          "support": 75,
+          "egentitel": "Nytt Casino 2021 med Trustly ",
+          "egentitel2": false,
+          "toprecension": "Ett nytt svensk casino är ute på marknaden. Bolaget Genesis Global Limited driver casinot CasinoGods. De står även bakom succen Pelaa. CasinoGods casinot är en väldigt modern sida. Det är väldigt enkelt att navigera sig runt på sidan och casinot har grym layout. Det är väldigt simpelt att börja spela hos CasinoGods. Du kan endast göra insättningar samt uttag via Trustly. Insättningar och uttag går väldigt snabbt, oftast inom 15 minuter. Ibland så kan dokumentation krävas för uttag. Det som vi tyckte var mindre bra var att de kan ta ut en avgift på 2% vid uttag. Supporten nås via telefon samt epost.",
+          "secondrec": "Casinosektionen hos CasinoGods är väldigt bra. Erbjuder ett enormt stort utbud av slots och andra spel. Du kan filtrera spel via namn och senast tillagda slots. Du kan även söka efter din favoritslot. Alla slots kommer från välkända leverantörer och håller högsta kvaliten. Här finns favoriter som Gonzo's Quest, Bonanza, Piggy Riches Megaways, Dead or Alive och många fler. Registreringen samt inloggningen är väldigt simpel tack vare bankd identifiering.",
+          "sportsrec": "CasinoGods erbjuder tyvärr ingen sportsbetting.",
+          "welcomeoffer": "Ingen bonus just nu",
+          "bonusterms": [
+            "För att ta del av välkomstbonusen behöver kunden göra en första insättning på minst 200 kr via betaltjänsten Trustly."
+          ],
+          "casinoterms": [
+            "Du kan max ta ut 1000kr från freespins",
+            "Minsta insättning 200 kr för att få välkomstsnurr."
+          ],
+          "sportsterms": [""],
+          "topslotgames": "Spel från välkända leverantörer som Quickspin,Push Gaming, Net Ent, Big Time Gaming, Microgaming och många fler!",
+          "deposittypes": "Trustly",
+          "mindeposit": 200,
+          "minout": 200,
+          "swish": false,
+          "livechat": false,
+          "summering": "Casinogods är ett nytt casino 2021 som har stor potential. Casinot har en snygg layout. Navigering på sidan är väldig simpel. Du kan börja spela simpelt med hjälp av bankidentifiering. Minsta uttag och insättning är 200kr. Har ett stort uttbud av slots. Erbjuder även Live Casino."
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "faq": true,
+      "q1": {
+        "@type": "Question",
+        "name": "💰Vad är minsta insättningen samt uttag hos Pelaa",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minsta insättningen hos Pelaa är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+        }
+      },
+      "q2": {
+        "@type": "Question",
+        "name": "✨Erbjuder Pelaa insättningar med faktura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, det gör dem tyvärr inte. Pelaa erbjuder endast insättningar samt uttag via den populära betalningsmetoden Trustly"
+        }
+      },
+      "q3": {
+        "@type": "Question",
+        "name": "❓Har Pelaa svensk spellicense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Pelaa har svensk spellicens ."
+        }
+      },
+      "title": "Pelaa",
+      "slogan": "30 Välkomstsnurr",
+      "color": "#183689",
+      "textcolor": "#fff",
+      "setTop": false,
+      "depositbonus": "Nya spelare får 30 välkomstsnurr på Gonzos Quest efter insättning.",
+      "sportsbonus": "Ingen sport bonus",
+      "mylink": "https://pelaa.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=5200",
+      "rules": "https://pelaa.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=5214",
+      "caslogo": "/images/pelaa.svg",
+      "wager": 40,
+      "sportswager": "x",
+      "casinospecialterms": true,
+      "extratext": "Endast nya spelare. Minsta insättning: 200 kr. Endast 1 bonus per Genesis Global Limited-varumärken. 40 x omsättning inom 60 dagar. Välkomstsnurr är endast på Gonzo Quest och giltiga i 72 timmar. Högsta tillåtna uttag från välkomstsnurr vinster är 1000 kr",
+      "sports": false,
+      "casinobonuswager": true,
+      "freespins": 30,
+      "maxbonus": 0,
+      "maxbonussports": 0,
+      "activebonus": true,
+      "bankid": true,
+      "publishdate": "23 Mars 2021",
+      "freefromwager": false,
+      "depositpercent": 0,
+      "faktura": false,
+      "fakturatype": [],
+      "recension": [
+        {
+          "gamebar": 90,
+          "experience": 100,
+          "support": 75,
+          "egentitel": "Nytt Casino 2021 med Trustly ",
+          "egentitel2": false,
+          "toprecension": "Ett nytt svensk casino är ute på marknaden. Bolaget Genesis Global Limited driver casinot Pelaa. De står även bakom Casinogods. Pelaa casinot är en väldigt modern sida. Det är väldigt enkelt att navigera sig runt på sidan och casinot har grym layout. Det är väldigt simpelt att börja spela hos Pelaa. Du kan endast göra insättningar samt uttag via Trustly. Insättningar och uttag går väldigt snabbt, oftast inom 15 minuter. Ibland så kan dokumentation krävas för uttag. Supporten nås via telefon samt epost.",
+          "secondrec": "Casinosektionen hos Pelaa är väldigt bra. Erbjuder ett enormt stort utbud av slots och andra spel. Du kan filtrera spel via namn och senast tillagda slots. Du kan även söka efter din favoritslot. Alla slots kommer från välkända leverantörer och håller högsta kvaliten. Här finns favoriter som Gonzo's Quest, Bonanza, Piggy Riches Megaways, Dead or Alive och många fler. Registreringen samt inloggningen är väldigt simpel tack vare bankd identifiering.",
+          "sportsrec": "Pelaa erbjuder tyvärr ingen sportsbetting.",
+          "welcomeoffer": "Ingen bonus just nu",
+          "bonusterms": [
+            "För att ta del av välkomstbonusen behöver kunden göra en första insättning på minst 200 kr via betaltjänsten Trustly."
+          ],
+          "casinoterms": [
+            "Du kan max ta ut 1000kr från freespins",
+            "Minsta insättning 200 kr för att få välkomstsnurr."
+          ],
+          "sportsterms": [""],
+          "topslotgames": "Spel från välkända leverantörer som Quickspin,Push Gaming, Net Ent, Big Time Gaming, Microgaming och många fler!",
+          "deposittypes": "Trustly",
+          "mindeposit": 200,
+          "minout": 200,
+          "swish": false,
+          "livechat": false,
+          "summering": "Pelaa är ett nytt casino 2021 som har stor potential. Casinot har en snygg layout. Navigering på sidan är väldig simpel. Du kan börja spela simpelt med hjälp av bankidentifiering. Minsta uttag och insättning är 200kr. Har ett stort uttbud av slots. Erbjuder även Live Casino."
+        }
+      ]
     }
   ]
 }
