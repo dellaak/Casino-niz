@@ -437,7 +437,7 @@ baseURL = "/"
 
 [[redirects]]
  from = "/Go/casinoplanet"
-  to = "https://casinoplanet.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=8443
+  to = "https://casinoplanet.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=8443"
   status = 301
   query = {path = "/Go/casinoplanet"}
 
