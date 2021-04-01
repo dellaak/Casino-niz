@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 import "./style.scss";
 
 const MonthCasino = (props) => {
-  const month = "klirr";
+  const month = "casinoplanet";
 
   return (
     <div className="month-wrap">
       <NavLink to={{ pathname: `/recension/${month}`, match: `${month}` }}>
         <div className="this-month-div">
-          <img src="/images/klirr.svg" alt="klirr-logo" />
+          <img src="/images/casinoplanet.svg" alt="klirr-logo" />
           <p className="recommend-text-top">Månadens doldis </p>
         </div>
       </NavLink>

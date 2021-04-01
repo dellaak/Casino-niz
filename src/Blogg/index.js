@@ -52,11 +52,17 @@ const StyledKampanj = styled.section`
 
 const Top5 = (props) => {
   const Kampanj = (props) => {
-    let { text, bild, publicerad, link } = props;
+    let { text, bild, publicerad, link, imgtext } = props;
     return (
       <StyledKampanj>
         <NavLink to={link}>
-          <img src={bild} alt="blogg-img" />
+          {imgtext ? (
+            <div className="img-text">
+              <h3>{imgtext}</h3>
+            </div>
+          ) : (
+            <img src={bild} alt="blogg-img" />
+          )}
         </NavLink>
         <p>{text}...</p>
         <NavLink className="readmore-blogg" to={link}>
@@ -87,7 +93,7 @@ const Top5 = (props) => {
       </Helmet>
 
       <section className="blogg">
-        <h1 className="banners">Kampanjer casino 2020 </h1>
+        <h1 className="banners">Kampanjer casino 2021 </h1>
         <p>
           Välkomna till Casinoniz kampanjer/casinoblogg. Här skriver vi ut allt
           som har med casino bonus, betting, sports,esport, slots och massa
@@ -98,20 +104,21 @@ const Top5 = (props) => {
           Hoppas att det vi skriver ut här får dig som läsare att finna det
           intressant :)
         </p>
-        <h2>Våra kampanjer 2020</h2>
+        <h2>Våra kampanjer 2021</h2>
         <BloggSection>
           <Kampanj
-            text="Hur roligt är det inte med nya och bra slots? Vi listar nya slots 2020. Listan är baserad på spel som vi tror man borde prova. Listan kommer uppdateras med nya slots under året 2020. Så håll utkik"
+            text="Hur roligt är det inte med nya och bra slots? Vi listar nya slots 2021. Listan är baserad på spel som vi tror man borde prova. Listan kommer uppdateras med nya slots under året 2021. Så håll utkik"
             bild="/images/newslots.svg"
             publicerad="22 Januari 2020"
             link="nya-slots-2021"
           />
 
           <Kampanj
-            text="I år tror vi att casinon kommer att fokusera på tema och upplevelse.Här har du en lista på alla nya casino som lanserats under 2020. Listan kommer uppdateras med alla nya casino 2020 kontinuerligt. Så håll utkik"
+            text="I år tror vi att casinon kommer att fokusera på tema och upplevelse.Här har du en lista på alla nya casino som lanserats under 2021. Listan kommer uppdateras med alla nya casino 2021 kontinuerligt. Så håll utkik"
             bild="/images/2020new.svg"
             publicerad="14 Januari 2020"
             link="nya-casino-2021"
+            imgtext="Nya casinon 2021"
           />
 
           <Kampanj

@@ -5171,6 +5171,88 @@
           "summering": "Pelaa är ett nytt casino 2021 som har stor potential. Casinot har en snygg layout. Navigering på sidan är väldig simpel. Du kan börja spela simpelt med hjälp av bankidentifiering. Minsta uttag och insättning är 200kr. Har ett stort uttbud av slots. Erbjuder även Live Casino."
         }
       ]
+    },
+    {
+      "id": 77,
+      "faq": true,
+      "q1": {
+        "@type": "Question",
+        "name": "💰Vad är minsta insättningen samt uttag hos CasinoPlanet",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minsta insättningen hos CasinoPlanet är 200 kr. För att göra ett uttag är minsta beloppet 200 kr."
+        }
+      },
+      "q2": {
+        "@type": "Question",
+        "name": "✨Erbjuder CasinoPlanet insättningar med faktura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej, det gör dem tyvärr inte. CasinoPlanet erbjuder endast insättningar samt uttag via den populära betalningsmetoden Trustly"
+        }
+      },
+      "q3": {
+        "@type": "Question",
+        "name": "❓Har CasinoPlanet svensk spellicense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, CasinoPlanet har svensk spellicens ."
+        }
+      },
+      "title": "CasinoPlanet",
+      "slogan": "100 Välkomstsnurr",
+      "color": "#0e2031",
+      "textcolor": "#fff",
+      "setTop": false,
+      "depositbonus": "Nya spelare får 100 välkomstsnurr på Gonzos Quest efter en första insättning.",
+      "sportsbonus": "Ingen sport bonus",
+      "mylink": "https://casinoplanet.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=8443",
+      "rules": "https://casinoplanet.tracking-genesisaffiliates.com/redirect.aspx?pid=108169&bid=8445",
+      "caslogo": "/images/casinoplanet.png",
+      "wager": 40,
+      "sportswager": "x",
+      "casinospecialterms": true,
+      "extratext": "Endast nya spelare. Minsta insättning: 200 kr. Endast 1 bonus per Genesis Global Limited-varumärken. 40 x omsättning inom 60 dagar. Välkomstsnurr är endast på Adventures of Doubloon Island och giltiga i 72 timmar. Högsta tillåtna uttag från välkomstsnurr vinster är 1000 kr",
+      "sports": false,
+      "casinobonuswager": true,
+      "freespins": 100,
+      "maxbonus": 0,
+      "maxbonussports": 0,
+      "activebonus": true,
+      "bankid": true,
+      "publishdate": "1 April 2021",
+      "freefromwager": false,
+      "depositpercent": 0,
+      "faktura": false,
+      "fakturatype": [],
+      "recension": [
+        {
+          "gamebar": 90,
+          "experience": 100,
+          "support": 75,
+          "egentitel": "Nytt Casino 2021 med Trustly ",
+          "egentitel2": false,
+          "toprecension": "Vi är glada att få presentera en nykomling på den svenska spelmarknaden: Casino Planet. Tänk dig en gränslös upplaga av de senaste spelen, innovativ teknik och grymma animationer som tillsammans bildar en pulserande värld som aldrig sover! Bakom casinosajten står det etablerade spelbolaget Genesis Global Ltd som erhåller den nya svenska spellicensen. Vi kan med andra ord känna oss trygga när vi lirar runt med vetskapen att allt går rätt och riktigt till. Erbjuder bankid för insättningar!",
+          "secondrec": "Med så många online casinon på marknaden gäller det att sticka ut ur mängden och erbjuda något nytt, och det lyckas Casino Planet bra med. Här kan vi välja och vraka bland över 1300 speltitlar som levereras av marknadens främsta spelutvecklare. Du har säkert hört talas om NetEnt, Yggdrasil, Microgaming och Evolution Gaming innan. Dessa är bara några av de jättar som presenterar sina spel under sektionerna; slotmaskiner och jackpotts - där vi kan spela på klassiska maskiner, de allra senaste videoslotarna samt progressiva spel. Det finns en separat del för bordsspel i video-version samt live casino med bord för Casino Hold´em, Roulette, Dream Catcher, Baccarat och Blackjack, för att nämna några. Det breda utbudet ger oss chans att prova på alla former av casinospel. För att göra det hela lite smidigare finns det en sökfunktion högst upp på sidan som gör det enklare att hitta ett visst sorts spel samt att spelen även listas under dess leverantör.  ",
+          "sportsrec": "Casinoplanet erbjuder tyvärr ingen sportsbetting.",
+          "welcomeoffer": "Ingen bonus just nu",
+          "bonusterms": [
+            "För att ta del av välkomstbonusen behöver kunden göra en första insättning på minst 200 kr via betaltjänsten Trustly."
+          ],
+          "casinoterms": [
+            "Du kan max ta ut 1000kr från freespins",
+            "Minsta insättning 200 kr för att få välkomstsnurr."
+          ],
+          "sportsterms": [""],
+          "topslotgames": "Spel från välkända leverantörer som  NetEnt, Yggdrasil, Microgaming och Evolution Gaming och många fler!",
+          "deposittypes": "Trustly",
+          "mindeposit": 200,
+          "minout": 200,
+          "swish": false,
+          "livechat": false,
+          "summering": "CasinoPlanet är ett nytt casino 2021 som har stor potential. Casinot har en snygg layout. Navigering på sidan är väldig simpel. Du kan börja spela simpelt med hjälp av bankidentifiering. Minsta uttag och insättning är 200kr. Har ett stort uttbud av slots. Erbjuder även Live Casino."
+        }
+      ]
     }
   ]
 }

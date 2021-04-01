@@ -33,3 +33,17 @@
   text-align: center;
   padding: 60px;
 }
+
+.img-text {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: 175px;
+  font-size: 2rem;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    text-transform: none;
+  }
+}

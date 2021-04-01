@@ -136,6 +136,7 @@ const MinstaInsCasino = (props) => {
       <h1 className="banners">Minsta insättning casino</h1>
       <Styledtopwrap>
         <small> Publicerad: 11 Januari 2020</small>
+        <small> Uppdaterad: 1 April 2021</small>
 
         <h2>Minsta insättning casino</h2>
         <p>

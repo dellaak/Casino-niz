@@ -82,6 +82,14 @@ const NewsSection = (props) => {
         <h2>Casino Nyheter 2021</h2>
         <BloggSection>
           <Kampanj
+            title="Genesis Global Limited etablerar sig på den svenska marknaden"
+            text="Gensis global har sitt huvudsäte i Malta och startades 2014 av ett gäng från spelbranschen. Visionen är att skapa den ultimate upplevelsen för spelare."
+            bild="/images/genesis.png"
+            publicerad="1 April 2021"
+            link="genesis-sverige-2021"
+            alttxt="genesis-svensk-license"
+          />
+          <Kampanj
             title="Reactoonz 2 ute på marknaden"
             text="Första spelet blev en succé. Nu har tillverkarna släppt en uppföljare nämligen Reactoonz 2. Spelet finns på dem flesta svenska spelsidor där man erbjuder spel från Play N Go. "
             bild="/images/reactoonz-2.jpg"

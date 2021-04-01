@@ -17,6 +17,7 @@ const NyaCasino = (props) => {
     "klirr",
     "pelaa",
     "casinogods",
+    "casinoplanet",
   ];
   const [topCasinon, setTopList] = useState([]);
 
@@ -114,6 +115,7 @@ const NyaCasino = (props) => {
 
       <h1 className="banners">Nya Casino 2021 </h1>
       <small> Publicerad: 14 Januari 2020</small>
+      <small> Uppdaterad: 1 April 2021</small>
       <p>Nya casino 2021</p>
       <p>
         Vi listar nya casinon för detta året. Denna sektionen kommer uppdateras
@@ -127,6 +129,31 @@ const NyaCasino = (props) => {
         Det tycker vi är bra, vilket ger spelaren en helt ny spelupplevelse. Vi
         kommer endast lista nya casinon här.
       </p>
+
+      <StyledDiv>
+        <h2>Nytt casino 2021- CasinoPlanet</h2>
+        {topCasinon.length > 0 ? (
+          <div>
+            <p>
+              Casinoplanet är ett nytt casino 2021 för svenska spelare. Casinot
+              har en väldigt snygg och användarvänlig sida med flera kvalitativa
+              slots från välkända leverantörer. Ett grymt Pay n Play casino med
+              bankidentifiering.
+            </p>
+          </div>
+        ) : (
+          ""
+        )}
+        <div className="casino-wrap">
+          {topCasinon.slice(7, 8).map((casino) => (
+            <Casinon
+              key={casino.id + casino.title}
+              casino={casino}
+              isBlocked={props.isBlocked}
+            />
+          ))}
+        </div>
+      </StyledDiv>
 
       <StyledDiv>
         <h2>Nytt casino 2021 - Klirr</h2>
