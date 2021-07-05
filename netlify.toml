@@ -131,11 +131,6 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/rizk"}
 
-                        [[redirects]]
-  from = "/Go/casilando"
-  to = "http://welcome.branders.partners/afs/come.php?id=4145&cid=19911&ctgid=1067&atype=1"
-  status = 301
-  query = {path = "/Go/casilando"}
 
                           [[redirects]]
   from = "/Go/casinoheroes"

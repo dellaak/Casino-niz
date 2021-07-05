@@ -336,7 +336,7 @@ const NyaCasino = (props) => {
       <RandomCasinos list={[...props.list.Casinon]} />
 
       <BottomInfoNyaCasino />
-      <p className="update-text">Senast uppdaterad: 1 Januari 2021</p>
+      <p className="update-text">Senast uppdaterad: 5 Juli 2021</p>
     </StyledWrapper>
   );
 };
