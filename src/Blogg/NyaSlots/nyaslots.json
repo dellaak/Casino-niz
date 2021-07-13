@@ -80,14 +80,7 @@
         "Efter freespins"
       ],
       "bonustext2": "Ett extremt roligt slotspel med väldigt många extra triggers och funktioner direkt hämtade från det klassiska brädspelet Monopol. Tror du att du kan äga flera fastigeter? In och prova.",
-      "casinos": [
-        "casimba",
-        "playojo",
-        "videoslots",
-        "snabbis",
-        "mrgreen",
-        "leovegas"
-      ]
+      "casinos": ["playojo", "videoslots", "snabbis", "mrgreen", "leovegas"]
     },
     {
       "id": 4,
@@ -134,13 +127,7 @@
       "bonuslist": [],
       "bonuslistbold": [],
       "bonustext2": "",
-      "casinos": [
-        "leovegas",
-        "unibet",
-        "comeon",
-        "hajper",
-        "snabbare"
-      ]
+      "casinos": ["leovegas", "unibet", "comeon", "hajper", "snabbare"]
     },
     {
       "id": 6,
