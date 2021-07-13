@@ -343,12 +343,6 @@ baseURL = "/"
   query = {path = "/Go/inandoutbet"}
 
 
-                               [[redirects]]
-  from = "/Go/spinstationx"
-  to = "http://wlivyaffiliates.adsrv.eacdn.com/C.ashx?btag=a_7131b_114c_&affid=1491&siteid=7131&adid=114&c="
-  status = 301
-  query = {path = "/Go/spinstationx"}
-
 [[redirects]]
  from = "/Go/10bet"
   to = "https://track.10bet.com/C.ashx?btag=a_53735b_5382c_&affid=1680928&siteid=53735&adid=5382&c="
@@ -361,12 +355,6 @@ baseURL = "/"
   status = 301
   query = {path = "/Go/yobetit"}
 
-
-   [[redirects]]
- from = "/Go/21casino"
-  to = "https://welcome.twentyoneaffiliates.com/afs/come.php?cid=27871&ctgid=1044&atype=1&brandid=17"
-  status = 301
-  query = {path = "/Go/21casino"}
 
 
    [[redirects]]
